@@ -1,0 +1,29 @@
+\select@language {ngerman}
+\contentsline {section}{\numberline {1}Einleitung}{4}{section.1}
+\contentsline {section}{\numberline {2}Abstract}{5}{section.2}
+\contentsline {section}{\numberline {3}Grundlagen}{6}{section.3}
+\contentsline {subsection}{\numberline {3.1}Nagios}{6}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}Aufbau (von Nagios)}{7}{subsubsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.2}Service Checks und deren / ihre Realisierung / Ausf\IeC {\"u}hrung / (\IeC {\"U}berpr\IeC {\"u}fungs)Methoden}{11}{subsubsection.3.1.2}
+\contentsline {paragraph}{Variante / Methode / Client 1}{11}{section*.2}
+\contentsline {paragraph}{Variante / Methode / Client 2}{12}{section*.3}
+\contentsline {paragraph}{Variante / Methode / Client 3}{13}{section*.4}
+\contentsline {paragraph}{Variante / Methode / Client 4}{14}{section*.5}
+\contentsline {paragraph}{passive}{14}{section*.6}
+\contentsline {subsubsection}{\numberline {3.1.3}Konfigurationsdateien?}{15}{subsubsection.3.1.3}
+\contentsline {subsubsection}{\numberline {3.1.4}Plugins}{16}{subsubsection.3.1.4}
+\contentsline {subsubsection}{\numberline {3.1.5}(Windows) Agenten oder allgemein Einholen von Infos}{16}{subsubsection.3.1.5}
+\contentsline {subsection}{\numberline {3.2}Stellent/Oracle UCM}{17}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}\IeC {\"U}berwachungselemente}{18}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}Status Checks}{18}{subsubsection.3.3.1}
+\contentsline {paragraph}{System}{18}{section*.7}
+\contentsline {paragraph}{Prozesse}{19}{section*.8}
+\contentsline {paragraph}{Services}{19}{section*.9}
+\contentsline {subsubsection}{\numberline {3.3.2}Funktions Checks}{19}{subsubsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.3}Log Checks}{19}{subsubsection.3.3.3}
+\contentsline {section}{\numberline {4}Architektur}{21}{section.4}
+\contentsline {section}{\numberline {5}Umsetzung}{22}{section.5}
+\contentsline {subsection}{\numberline {5.1}\IeC {\"U}berpr\IeC {\"u}fen der Prozesse und Services}{22}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Einrichten des Windows Agenten}{22}{subsection.5.2}
+\contentsline {section}{\numberline {6}Abbildungsverzeichnis}{23}{section.6}
+\contentsline {section}{\numberline {7}Literaturverzeichnis}{24}{section.7}
