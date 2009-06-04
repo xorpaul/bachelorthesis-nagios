@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2009.1.26)  4 JUN 2009 14:01
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2009.1.26)  4 JUN 2009 15:27
 entering extended mode
  %&-line parsing enabled.
 **bach.tex
@@ -497,7 +497,7 @@ Overfull \vbox (3.86385pt too high) has occurred while \output is active []
 
 
 [5] (./tex/grundlagen.tex
-Overfull \hbox (6.74178pt too wide) in paragraph at lines 15--18
+Overfull \hbox (6.74178pt too wide) in paragraph at lines 17--20
 []\T1/aer/m/n/12 Nagios er-freut sich ho-her Be-liebt-heit auf-grund der (be-re
 its vor-han-de-nen [macht
  []
@@ -699,12 +699,12 @@ Overfull \vbox (3.86385pt too high) has occurred while \output is active []
 
 
 [17 <./bilder/unix-agents.png (PNG copy)>]
-<bilder/win-agents.png, id=310, 572.1375pt x 391.4625pt>
+<bilder/win-agents.png, id=312, 572.1375pt x 391.4625pt>
 File: bilder/win-agents.png Graphic file (type png)
 
 <use bilder/win-agents.png> (./tex/stellent.tex
 
-LaTeX Warning: Reference `Huff06' on page 18 undefined on input line 10.
+LaTeX Warning: Reference `Huff06' on page 18 undefined on input line 11.
 
 File: bilder/fzk2.png Graphic file (type png)
 <use bilder/fzk2.png>
@@ -718,13 +718,13 @@ Overfull \vbox (3.86385pt too high) has occurred while \output is active []
 
 
 [19]
-Overfull \hbox (1.49574pt too wide) in paragraph at lines 33--34
+Overfull \hbox (1.49574pt too wide) in paragraph at lines 36--37
 []\T1/aer/bx/n/12 Festplattenspeicherausnutzung \T1/aer/m/n/12 Über-wacht die S
 pei-cher-platzaus-las-
  []
 
 
-Overfull \hbox (15.20657pt too wide) in paragraph at lines 46--47
+Overfull \hbox (15.20657pt too wide) in paragraph at lines 50--51
 []\T1/aer/bx/n/12 IdcContentService??? \T1/aer/m/n/12 Den Zu-stand des ^^RConte
 nt-Dienstes^^P-^^R\T1/aett/m/n/12 sccdms01\T1/aer/m/n/12 ^^P
  []
@@ -740,19 +740,25 @@ File: bilder/fzk2.png Graphic file (type png)
 Overfull \vbox (3.86385pt too high) has occurred while \output is active []
 
 
-[21]))
+[21]
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png>
 Overfull \vbox (3.86385pt too high) has occurred while \output is active []
 
 
-[22] (./tex/architektur.tex)
+[22]))
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png>
 Overfull \vbox (3.86385pt too high) has occurred while \output is active []
 
 
-[23] (./tex/umsetzung.tex (/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
+[23] (./tex/architektur.tex)
+File: bilder/fzk2.png Graphic file (type png)
+ <use bilder/fzk2.png>
+Overfull \vbox (3.86385pt too high) has occurred while \output is active []
+
+
+[24] (./tex/umsetzung.tex (/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
 File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 ))
 File: bilder/fzk2.png Graphic file (type png)
@@ -761,7 +767,7 @@ File: bilder/fzk2.png Graphic file (type png)
 Overfull \vbox (3.86385pt too high) has occurred while \output is active []
 
 
-[24] (./bach.lof
+[25] (./bach.lof
 Runaway argument?
 {\numberline {1}{\ignorespaces Logische Nagios Struktur\let \reserved@d \ETC.
 ! Paragraph ended before \contentsline was complete.
@@ -800,7 +806,7 @@ File: bilder/fzk2.png Graphic file (type png)
 Overfull \vbox (3.86385pt too high) has occurred while \output is active []
 
 
-[25]
+[26]
 Underfull \hbox (badness 3078) in paragraph at lines 127--128
 []\T1/aer/m/n/12 Wolfgang Barth (2008) ^^RNa-gi-os - System- und Netzwerk-
  []
@@ -810,14 +816,17 @@ File: bilder/fzk2.png Graphic file (type png)
 Overfull \vbox (3.86385pt too high) has occurred while \output is active []
 
 
-[26] (./bach.aux)
+[27] (./bach.aux)
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 8691 strings out of 94074
- 116851 string characters out of 1165153
+ 8699 strings out of 94074
+ 116981 string characters out of 1165153
  222668 words of memory out of 1500000
  11625 multiletter control sequences out of 10000+50000
  40215 words of font info for 88 fonts, out of 1200000 for 2000
@@ -865,6 +874,21 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 , replaced by a fixed one
 
+pdfTeX warning (dest): name{subsubsection.3.5.5} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.3.5.4} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.3.5.3} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.3.5.2} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.3.5.1} has been referenced but does n
+ot exist, replaced by a fixed one
+
 </usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmbx12.pfb></usr/share/texmf-t
 exlive/fonts/type1/bluesky/cm/cmmi12.pfb></usr/share/texmf-texlive/fonts/type1/
 bluesky/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmr12.pfb
@@ -874,9 +898,9 @@ esky/cm/cmsl12.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmsy10.pfb>
 </usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmti12.pfb></usr/share/texmf-t
 exlive/fonts/type1/bluesky/cm/cmtt12.pfb></usr/share/texmf-texlive/fonts/type1/
 bluesky/cm/cmtt8.pfb>
-Output written on bach.pdf (26 pages, 996120 bytes).
+Output written on bach.pdf (27 pages, 1000610 bytes).
 PDF statistics:
- 436 PDF objects out of 1000 (max. 8388607)
- 107 named destinations out of 1000 (max. 131072)
+ 450 PDF objects out of 1000 (max. 8388607)
+ 115 named destinations out of 1000 (max. 131072)
  284 words of extra memory for PDF output out of 10000 (max. 10000000)
 
