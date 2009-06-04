@@ -5,17 +5,19 @@
 \BOOKMARK [2][-]{subsection.3.2}{cronjobs}{section.3}
 \BOOKMARK [2][-]{subsection.3.3}{evtl Oracle DB}{section.3}
 \BOOKMARK [2][-]{subsection.3.4}{false+-true+-}{section.3}
-\BOOKMARK [2][-]{subsection.3.5}{Nagios}{section.3}
-\BOOKMARK [3][-]{subsubsection.3.5.1}{Aufbau \(von Nagios\)}{subsection.3.5}
-\BOOKMARK [3][-]{subsubsection.3.5.2}{Service Checks und deren / ihre Realisierung / Ausf\374hrung / \(\334berpr\374fungs\)Methoden}{subsection.3.5}
-\BOOKMARK [3][-]{subsubsection.3.5.3}{Konfigurationsdateien?}{subsection.3.5}
-\BOOKMARK [3][-]{subsubsection.3.5.4}{Plugins}{subsection.3.5}
-\BOOKMARK [3][-]{subsubsection.3.5.5}{\(Windows\) Agenten oder allgemein Einholen von Infos}{subsection.3.5}
-\BOOKMARK [2][-]{subsection.3.6}{Stellent/Oracle UCM}{section.3}
-\BOOKMARK [2][-]{subsection.3.7}{\334berwachungselemente}{section.3}
-\BOOKMARK [3][-]{subsubsection.3.7.1}{Status Checks}{subsection.3.7}
-\BOOKMARK [3][-]{subsubsection.3.7.2}{Funktions Checks}{subsection.3.7}
-\BOOKMARK [3][-]{subsubsection.3.7.3}{Log Checks}{subsection.3.7}
+\BOOKMARK [2][-]{subsection.3.5}{Farbraum}{section.3}
+\BOOKMARK [2][-]{subsection.3.6}{Metadaten}{section.3}
+\BOOKMARK [2][-]{subsection.3.7}{Nagios}{section.3}
+\BOOKMARK [3][-]{subsubsection.3.7.1}{Aufbau \(von Nagios\)}{subsection.3.7}
+\BOOKMARK [3][-]{subsubsection.3.7.2}{Service Checks und deren / ihre Realisierung / Ausf\374hrung / \(\334berpr\374fungs\)Methoden}{subsection.3.7}
+\BOOKMARK [3][-]{subsubsection.3.7.3}{Konfigurationsdateien?}{subsection.3.7}
+\BOOKMARK [3][-]{subsubsection.3.7.4}{Plugins}{subsection.3.7}
+\BOOKMARK [3][-]{subsubsection.3.7.5}{\(Windows\) Agenten oder allgemein Einholen von Infos}{subsection.3.7}
+\BOOKMARK [2][-]{subsection.3.8}{Stellent/Oracle UCM}{section.3}
+\BOOKMARK [2][-]{subsection.3.9}{\334berwachungselemente}{section.3}
+\BOOKMARK [3][-]{subsubsection.3.9.1}{Statusabfragen}{subsection.3.9}
+\BOOKMARK [3][-]{subsubsection.3.9.2}{\334berwachung der Funktionalit\344t}{subsection.3.9}
+\BOOKMARK [3][-]{subsubsection.3.9.3}{Auswerten von Logdateien}{subsection.3.9}
 \BOOKMARK [1][-]{section.4}{Architektur}{}
 \BOOKMARK [1][-]{section.5}{Umsetzung}{}
 \BOOKMARK [2][-]{subsection.5.1}{\334berpr\374fen der Prozesse und Services}{section.5}
