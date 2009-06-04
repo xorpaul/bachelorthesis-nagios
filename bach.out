@@ -1,17 +1,21 @@
 \BOOKMARK [1][-]{section.1}{Einleitung}{}
 \BOOKMARK [1][-]{section.2}{Abstract}{}
 \BOOKMARK [1][-]{section.3}{Grundlagen}{}
-\BOOKMARK [2][-]{subsection.3.1}{Nagios}{section.3}
-\BOOKMARK [3][-]{subsubsection.3.1.1}{Aufbau \(von Nagios\)}{subsection.3.1}
-\BOOKMARK [3][-]{subsubsection.3.1.2}{Service Checks und deren / ihre Realisierung / Ausf\374hrung / \(\334berpr\374fungs\)Methoden}{subsection.3.1}
-\BOOKMARK [3][-]{subsubsection.3.1.3}{Konfigurationsdateien?}{subsection.3.1}
-\BOOKMARK [3][-]{subsubsection.3.1.4}{Plugins}{subsection.3.1}
-\BOOKMARK [3][-]{subsubsection.3.1.5}{\(Windows\) Agenten oder allgemein Einholen von Infos}{subsection.3.1}
-\BOOKMARK [2][-]{subsection.3.2}{Stellent/Oracle UCM}{section.3}
-\BOOKMARK [2][-]{subsection.3.3}{\334berwachungselemente}{section.3}
-\BOOKMARK [3][-]{subsubsection.3.3.1}{Status Checks}{subsection.3.3}
-\BOOKMARK [3][-]{subsubsection.3.3.2}{Funktions Checks}{subsection.3.3}
-\BOOKMARK [3][-]{subsubsection.3.3.3}{Log Checks}{subsection.3.3}
+\BOOKMARK [2][-]{subsection.3.1}{ads - ADS Benutzer}{section.3}
+\BOOKMARK [2][-]{subsection.3.2}{cronjobs}{section.3}
+\BOOKMARK [2][-]{subsection.3.3}{evtl Oracle DB}{section.3}
+\BOOKMARK [2][-]{subsection.3.4}{false+-true+-}{section.3}
+\BOOKMARK [2][-]{subsection.3.5}{Nagios}{section.3}
+\BOOKMARK [3][-]{subsubsection.3.5.1}{Aufbau \(von Nagios\)}{subsection.3.5}
+\BOOKMARK [3][-]{subsubsection.3.5.2}{Service Checks und deren / ihre Realisierung / Ausf\374hrung / \(\334berpr\374fungs\)Methoden}{subsection.3.5}
+\BOOKMARK [3][-]{subsubsection.3.5.3}{Konfigurationsdateien?}{subsection.3.5}
+\BOOKMARK [3][-]{subsubsection.3.5.4}{Plugins}{subsection.3.5}
+\BOOKMARK [3][-]{subsubsection.3.5.5}{\(Windows\) Agenten oder allgemein Einholen von Infos}{subsection.3.5}
+\BOOKMARK [2][-]{subsection.3.6}{Stellent/Oracle UCM}{section.3}
+\BOOKMARK [2][-]{subsection.3.7}{\334berwachungselemente}{section.3}
+\BOOKMARK [3][-]{subsubsection.3.7.1}{Status Checks}{subsection.3.7}
+\BOOKMARK [3][-]{subsubsection.3.7.2}{Funktions Checks}{subsection.3.7}
+\BOOKMARK [3][-]{subsubsection.3.7.3}{Log Checks}{subsection.3.7}
 \BOOKMARK [1][-]{section.4}{Architektur}{}
 \BOOKMARK [1][-]{section.5}{Umsetzung}{}
 \BOOKMARK [2][-]{subsection.5.1}{\334berpr\374fen der Prozesse und Services}{section.5}

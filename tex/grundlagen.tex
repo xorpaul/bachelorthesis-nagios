@@ -1,6 +1,11 @@
 \section{Grundlagen}
 Was wird in diesem Kapitel erklärt -> Unterkapitel
 
+\subsection{ads - ADS Benutzer}
+\subsection{cronjobs}
+\subsection{evtl Oracle DB}
+\subsection{false+-true+-}
+
 \subsection{Nagios}
 Nagios dient zum Überwachen von Hosts und deren Services in komplexen Infrastrukturen(Host und Services erklären?) und wurde von dem Amerikaner Ethan Galstad seit 1999\footnote{Quelle: http://www.netsaint.org/changelog.php} - damals unter der Vorgängerversion NetSaint - entwickelt und bis heute gepflegt.
 Galstad gründete aufgrund der vielfältigen(ansturmmäßig) und positiven Resonanz am 9. November 2007 die "`Nagios Enterprises LLC"', welche Nagios als kommerzielle Dienstleistung anbietet.
@@ -59,62 +64,7 @@ Erwähne sichheitsstechnisch Parameter erlauben oder nicht erlauben
 
 Dabei sagen, dass wenn nicht erlaubt sind keine zentrale Konfiguration der Checks auf dem Nagios server möglich ist -> abwägen
 
-\subsection{Stellent/Oracle UCM}
-Für was ist diese Anwendung geeignet -> universell
-
-\begin{center}
-Bild \ref{Huff06} S 17
-\end{center}
-
-Für was wird sie im FZK benutzt, auch Windows nennen
-
-Einchecken -> Konvertieren -> Indexieren
-\subsection{Überwachungselemente}
-Die Überwachung einer Dienstes über ein Netzwerk verteilt sich auf verschiedenen Ebenen mit unterschiedlichen Gewichtungen.
-Zum Beispiel stellt das simple Senden eines Pings an den entsprechenden Server die niedrigste und primitivste Stufe dar, da hier lediglich die Netzwerkschnittstelle des Servers auf ihre Funktionalität und dabei der Status der Netzwerkstrecke getestet wird.(Rechner an und Netzwerk ok)
-Ob die Anwendung überhaupt auf dem Server läuft und wenn, in welchem Zustand sie sich befindet (betriebsfähig, reagiert nicht mehr usw.), muss auf eine andere Weise herausgefunden werden.
-
-Dabei lässt sich aus den verschiedenen Überwachungselemente folgende drei Kategorien bilden/ableiten:
-
-\subsubsection{Status Checks}
-Diese Kategorie besteht aus einfacheren Überprüfungen, die jeweils den Status des Überwachungselementes überwachen.
-Dabei können weitere Untergruppen gebildet werden.
-
-(Irgendwie Hierarchie verdeutlichen: zuerst ping als Grundlage, dann prozesse und services dann funktionschecks, bloss wie? Visio Bild?)
-
-\paragraph{System}
-\begin{itemize}
-\item \textbf{Ping} Überprüft, ob der Rechner vom Nagios-Server über das Netzwerk erreichbar ist.
-\item \textbf{Prozessorauslastung} Überwacht die Auslastung des Prozessors und schlägt bei ungewöhnlich hohen Werten Alarm.
-\item \textbf{Festplattenspeicherausnutzung} Überwacht die Speicherplatzauslastungen der verschiedenen Festplattenpartitionen, damit immer genügend Speicherplatz für Anwendungen und Betriebssystem verfügbar ist.
-\item Temperatur ??? Die ganzen Standardüberwachungen -> Jäger
-\end{itemize}
-
-\paragraph{Prozesse}
-\begin{itemize}
-\item \textbf{IdcServerNT.exe} Der Windowsprozess des Stellent-Servers
-\item \textbf{IdcAdminNT.exe} Der Windowsprozess für die Administration (Webinterface?) des Stellent-Servers
-\item \textbf{w3wp.exe} Der Windowsprozess des Microsoft "`Internet Information Services"'
-\end{itemize}
-
-\paragraph{Services}
-\begin{itemize}
-\item \textbf{IdcContentService???}  Den Zustand des "`Content-Dienstes"'-\pictext{sccdms01} überprüfen.
-\item \textbf{IdcAdminService???}  Den Zustand des "`Administrations-Dienstes"'-\pictext{sccdms01\_admin} überprüfen.
-\item \textbf{Zeitsynchronisationsdienst:} Überprüfen, ob der \pictext{W32TIME}-Dienst, der für den Zeitabgleich mit einem Zeitserver zuständig ist, läuft und die Abweichung zwischen Client und Zeitserver festhalten.
-\item \textbf{Antivirusdienst}: Den Zustand den Dienstes überprüfen, der für die ständig Updates des Virusscanners Symantec AntiVirus notwendig ist.
-\end{itemize}
-
-\subsubsection{Funktions Checks}
-Durch die vorherigen Tests kann herausgefunden werden, ob eine Anwendung oder ein Dienst auf dem Server gestarten wurde.
-Die Funktionalität kann durch solche Überprüfungen jedoch \textbf{nicht} sichergestellt werden, da beispielsweise der Webserver aufgrund eines kritischen Fehlers nicht erreichbar ist; der Prozess bzw. Dienst dennoch läuft.
-Daher muss eine weitere
-
-\subsubsection{Log Checks}
-wieso nur plugin check\_log und nicht einfahc umfangreicheres Standalone Programmw ie syslog\_nd oder 8pussy
-
-
-Übersichttabelle? wie mit beschreibung verbinden?
+\input{tex/stellent.tex}
 
 
 

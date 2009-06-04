@@ -1,0 +1,46 @@
+real initial release
+--This line, and those below, will be ignored--
+
+A    tex
+A    tex/umsetzung.tex
+A    tex/services.tex
+A    tex/einleitung.tex
+A    tex/aufbau.tex
+A    tex/abstract.tex
+A    tex/architektur.tex
+A    tex/grundlagen.tex
+A    tex/preamble.tex
+AM   Titelblatt.pdf
+A    bach.toc
+A    bilder
+AM   bilder/check-swap-black.png
+AM   bilder/ndoutils.png
+AM   bilder/unix-agents.png
+AM   bilder/check-swap-white.png
+AM   bilder/nrpe.png
+AM   bilder/nsca2.png
+AM   bilder/hs-states.png
+AM   bilder/win-agents.png
+AM   bilder/fzk2.png
+AM   bilder/dist_mon.png
+AM   bilder/nagios-kern.png
+AM   bilder/monitoring-windows.png
+A    bilder/fzk2.eps
+AM   bilder/nagios-proc.png
+AM   bilder/nsca.png
+AM   bilder/dhbw.png
+AM   bilder/check_by_ssh.png
+AM   bilder/nrpe2.png
+AM   bilder/nagios-4state-tab.png
+A    bilder/dhbw.eps
+AM   bilder/check-http.png
+A    bach.out
+A    bach.pdf
+AM   nagios-4state.ods
+A    bach.aux
+AM   nagios-4state.pdf
+A    bach.lof
+A    bach.tex
+A    bach.log
+AM   Titelblatt.odt
+AM   bach.dvi
