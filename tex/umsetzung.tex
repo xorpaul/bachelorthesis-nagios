@@ -1,0 +1,26 @@
+\section{Umsetzung}
+In diesem Kapitel wird die Vorgehensweise der zuvor beschriebenen Problemstellungen erörtert.
+
+\subsection{Überprüfen der Prozesse und Services}
+\begin{itemize}
+\item Prozesse
+\item Services
+\item Bsp Aufruf
+\end{itemize}
+
+\subsection{Einrichten des Windows Agenten}
+\begin{itemize}
+\item Port ändern -> RPC
+\item Verschlüsselung durch PW und Algo
+\item Hinzufügen der Plugins
+\item Bsp Aufruf aktiver Check
+\end{itemize}
+
+\begin{lstlisting}[captionpos=b, caption=Aufruf eines aktiven Checks, label=activecheckexample, breaklines = true, language=bash]
+root@iwrpaul:/usr/local/nagios/libexec# ./check_nc_net -H secret.kit.edu -p 123456 -s secret -v RUNSCRIPT -l check_uname.exe
+Operating System OK - Microsoft(R) Windows(R) Server 2003 Standard Edition Service Pack 2
+\end{lstlisting}
+
+Das auf dem Nagios Server liegende Script \pictext{check\_nc\_net} stellt eine Verbindung zum angegebenen Server her und führt die mit dem Parameter \pictext{l} angegebene Datei aus. Dafür muss sich diese Datei in dem Script Verzeichnis des NC\_Net befinden.
+
+
