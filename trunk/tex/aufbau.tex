@@ -2,18 +2,19 @@
 \subsubsection{Aufbau (von Nagios)}
 
 
-Barth schreibt über Nagios: \begin{quote}"`Die große Stärke von Nagios - auch im Vergleich zu anderen Netzwerküberwachungstools - liegt in seinem modularen Aufbau: Der Nagios-Kern enthält keinen einzigen Test, stattdessen verwendet er für Service- und Host-Checks externe Programme, die als \textit{Plugins} bezeichnet werden."' \begin{flushright}\cite{Barth08} S. 25\end{flushright}\end{quote} 
+Barth schreibt über Nagios: \begin{quote}"`Die große Stärke von Nagios - auch im Vergleich zu anderen Netzwerküberwachungstools - liegt in seinem modularen Aufbau: Der Nagios-Kern enthält keinen einzigen Test, stattdessen verwendet er für Service- und Host-Checks externe Programme, die als \textit{Plugins} bezeichnet werden."'
+\begin{flushright}\cite{Barth08} S. 25\end{flushright}\end{quote} 
 
 Dieser "`Kern"' beinhaltet das komplette Benachrichtigungssystem mit Kontaktadressen und Benachrichtigungsvorgaben (Zeit, Art, zusätzliche Kriterien), die Hosts- und Servicedefinitionen inklusive deren Gruppierungen und schließlich das Webinterface.
-Siehe hierfür auch Abbildung \ref{nagios-kern}.
+Siehe hierfür auch Abbildung \ref{nagios-proc}.
 
 \begin{figure}[ht]
 	\centering
-	   \fbox{\includegraphics[width=0.85\textwidth]{bilder/nagios-proc.png}}
-		\caption{Logische Nagios Struktur\footnote{http://www.nagioswiki.org/w/images/8/81/Plugins.png}}
+	   \fbox{\includegraphics[width=0.9\textwidth]{bilder/nagios-proc.png}}
+		\caption[Logische Nagios Struktur]{Logische Nagios Struktur\protect\footnote}
 		\label{nagios-proc}
 \end{figure}
-
+\footnotetext{Quelle: http://www.nagioswiki.org/w/images/8/81/Plugins.png}
 
 Die Plugins werden durch die Servicedefinitionen mit den jeweiligen Hosts verbunden und werden durch eine Befehlskonfigurationsdatei mit ggf. veränderten Parametern durch Nagios aufgerufen.
 
@@ -54,20 +55,20 @@ Dabei wird in vier verschiedene Rückgabewerte / Antworten der Plugins unterschi
 \begin{figure}[ht]
 	\centering
 	   \fbox{\includegraphics[width=0.85\textwidth]{bilder/nagios-4state-tab.png}}
-		\caption{Rückgabewerte für Nagios Plugins}\footnote{Quelle: \cite{Barth08} S. 105f}
+		\caption[Rückgabewerte für Nagios Plugins]{Rückgabewerte für Nagios Plugins\protect\footnote}
 		\label{nagios-4states}
 \end{figure}
-
+\footnotetext{Quelle: \cite{Barth08} S. 105f}
 Anhand dieser Werte wertet Nagios gezielt den Status des jeweiligen Objektes (Host oder Service) aus.
 Weiterhin gibt es weiche (Soft States) und harte Zustände (Hard States):
 
 \begin{figure}[ht]
 	\centering
 	   \fbox{\includegraphics[width=0.85\textwidth]{bilder/hs-states.png}}
-		\caption{Beispiel für den zeitlichen Verlauf von Zuständen eines überwachten Dienstes}\footnote{Quelle: \cite{Barth08} S. 95}
+		\caption[Beispiel für den zeitlichen Verlauf durch vers. Zustände]{Beispiel für den zeitlichen Verlauf durch vers. Zustände\protect\footnote}
 		\label{hs-states}
 \end{figure}
-
+\footnotetext{Quelle: \cite{Barth08} S. 95}
 Ausgehend von einem OK Zustand wird in diesem Beispiel jede fünf Minuten periodisch überprüft, ob sich der Status des übwachten Objektes verändert hat.
 Nach zehn Minuten                                                                                                                                                                                             wird ein Umschwenken / Änderung des Zustandes durch das jeweilige Plugin gemeldet\begin{quote}"`; der Zustand wechselt nach CRITICAL, zunächst allerdings als Soft State.
 Zu diesem Zeitpunkt löst Nagios noch keine Benachrichtigung aus"'\end{quote}, da es sich um eine Falschmeldung, auch False Positive genannt, handeln kann, aufgrund einer kurzweiligen / kurzfristigen (besseres Wort? peak mäßig) hohen Auslastung des Netzwerkes oder um ein kurzzeitiges Problem, welches sich von alleine wieder normalisiert. (Bspw. Prozessorauslastung)

@@ -1,35 +1,39 @@
 \select@language {ngerman}
-\contentsline {section}{\numberline {1}Einleitung}{4}{section.1}
-\contentsline {section}{\numberline {2}Abstract}{5}{section.2}
-\contentsline {section}{\numberline {3}Grundlagen}{6}{section.3}
-\contentsline {subsection}{\numberline {3.1}ads - ADS Benutzer}{6}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}cronjobs}{6}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}evtl Oracle DB}{6}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}false+-true+-}{6}{subsection.3.4}
-\contentsline {subsection}{\numberline {3.5}Farbraum}{6}{subsection.3.5}
-\contentsline {subsection}{\numberline {3.6}Metadaten}{6}{subsection.3.6}
-\contentsline {subsection}{\numberline {3.7}Nagios}{6}{subsection.3.7}
-\contentsline {subsubsection}{\numberline {3.7.1}Aufbau (von Nagios)}{8}{subsubsection.3.7.1}
-\contentsline {subsubsection}{\numberline {3.7.2}Service Checks und deren / ihre Realisierung / Ausf\IeC {\"u}hrung / (\IeC {\"U}berpr\IeC {\"u}fungs)Methoden}{12}{subsubsection.3.7.2}
-\contentsline {paragraph}{Variante / Methode / Client 1}{12}{section*.2}
-\contentsline {paragraph}{Variante / Methode / Client 2}{13}{section*.3}
-\contentsline {paragraph}{Variante / Methode / Client 3}{14}{section*.4}
-\contentsline {paragraph}{Variante / Methode / Client 4}{15}{section*.5}
-\contentsline {paragraph}{passive}{15}{section*.6}
-\contentsline {subsubsection}{\numberline {3.7.3}Konfigurationsdateien?}{16}{subsubsection.3.7.3}
-\contentsline {subsubsection}{\numberline {3.7.4}Plugins}{17}{subsubsection.3.7.4}
-\contentsline {subsubsection}{\numberline {3.7.5}(Windows) Agenten oder allgemein Einholen von Infos}{17}{subsubsection.3.7.5}
-\contentsline {subsection}{\numberline {3.8}Stellent/Oracle UCM}{18}{subsection.3.8}
-\contentsline {subsection}{\numberline {3.9}\IeC {\"U}berwachungselemente}{19}{subsection.3.9}
-\contentsline {subsubsection}{\numberline {3.9.1}Statusabfragen}{19}{subsubsection.3.9.1}
-\contentsline {paragraph}{System}{19}{section*.7}
-\contentsline {paragraph}{Prozesse}{20}{section*.8}
-\contentsline {paragraph}{Services}{20}{section*.9}
-\contentsline {subsubsection}{\numberline {3.9.2}\IeC {\"U}berwachung der Funktionalit\IeC {\"a}t}{21}{subsubsection.3.9.2}
-\contentsline {subsubsection}{\numberline {3.9.3}Auswerten von Logdateien}{23}{subsubsection.3.9.3}
-\contentsline {section}{\numberline {4}Architektur}{24}{section.4}
-\contentsline {section}{\numberline {5}Umsetzung}{25}{section.5}
-\contentsline {subsection}{\numberline {5.1}\IeC {\"U}berpr\IeC {\"u}fen der Prozesse und Services}{25}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Einrichten des Windows Agenten}{25}{subsection.5.2}
-\contentsline {section}{\numberline {6}Abbildungsverzeichnis}{26}{section.6}
-\contentsline {section}{\numberline {7}Literaturverzeichnis}{27}{section.7}
+\contentsline {section}{\numberline {1}Einleitung}{5}{section.1}
+\contentsline {section}{\numberline {2}Abstract}{6}{section.2}
+\contentsline {section}{\numberline {3}Aufgabenstellung}{7}{section.3}
+\contentsline {section}{\numberline {4}Grundlagen}{8}{section.4}
+\contentsline {subsection}{\numberline {4.1}Dokumenten-Management-System}{8}{subsection.4.1}
+\contentsline {subsubsection}{\numberline {4.1.1}CMS}{10}{subsubsection.4.1.1}
+\contentsline {subsubsection}{\numberline {4.1.2}ECM}{10}{subsubsection.4.1.2}
+\contentsline {subsection}{\numberline {4.2}ads - ADS Benutzer}{11}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}cronjobs}{11}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}evtl Oracle DB}{11}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.5}false+-true+-}{11}{subsection.4.5}
+\contentsline {subsection}{\numberline {4.6}Farbraum}{11}{subsection.4.6}
+\contentsline {subsection}{\numberline {4.7}Metadaten}{11}{subsection.4.7}
+\contentsline {subsection}{\numberline {4.8}Nagios}{11}{subsection.4.8}
+\contentsline {subsubsection}{\numberline {4.8.1}Aufbau (von Nagios)}{13}{subsubsection.4.8.1}
+\contentsline {subsubsection}{\numberline {4.8.2}Service Checks und deren / ihre Realisierung / Ausf\IeC {\"u}hrung / (\IeC {\"U}berpr\IeC {\"u}fungs)Methoden}{17}{subsubsection.4.8.2}
+\contentsline {paragraph}{Variante / Methode / Client 1}{17}{section*.2}
+\contentsline {paragraph}{Variante / Methode / Client 2}{18}{section*.3}
+\contentsline {paragraph}{Variante / Methode / Client 3}{19}{section*.4}
+\contentsline {paragraph}{Variante / Methode / Client 4}{20}{section*.5}
+\contentsline {paragraph}{passive}{21}{section*.6}
+\contentsline {subsubsection}{\numberline {4.8.3}Konfigurationsdateien?}{21}{subsubsection.4.8.3}
+\contentsline {subsubsection}{\numberline {4.8.4}Plugins}{22}{subsubsection.4.8.4}
+\contentsline {subsubsection}{\numberline {4.8.5}(Windows) Agenten oder allgemein Einholen von Infos}{22}{subsubsection.4.8.5}
+\contentsline {subsection}{\numberline {4.9}Stellent/Oracle UCM}{23}{subsection.4.9}
+\contentsline {subsection}{\numberline {4.10}\IeC {\"U}berwachungselemente}{24}{subsection.4.10}
+\contentsline {subsubsection}{\numberline {4.10.1}Statusabfragen}{24}{subsubsection.4.10.1}
+\contentsline {paragraph}{System}{24}{section*.7}
+\contentsline {paragraph}{Prozesse}{25}{section*.8}
+\contentsline {paragraph}{Services}{25}{section*.9}
+\contentsline {subsubsection}{\numberline {4.10.2}\IeC {\"U}berwachung der Funktionalit\IeC {\"a}t}{26}{subsubsection.4.10.2}
+\contentsline {subsubsection}{\numberline {4.10.3}Auswerten von Logdateien}{28}{subsubsection.4.10.3}
+\contentsline {section}{\numberline {5}Architektur}{30}{section.5}
+\contentsline {section}{\numberline {6}Umsetzung}{31}{section.6}
+\contentsline {subsection}{\numberline {6.1}\IeC {\"U}berpr\IeC {\"u}fen der Prozesse und Services}{31}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Einrichten des Windows Agenten}{31}{subsection.6.2}
+\contentsline {section}{\numberline {7}Abbildungsverzeichnis}{32}{section.7}
+\contentsline {section}{\numberline {8}Literaturverzeichnis}{33}{section.8}
