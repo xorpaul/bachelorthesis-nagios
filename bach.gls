@@ -2,37 +2,45 @@
 
 \gloitem {\glosslabel{glo:CMS}{CMS}}Content-Management-System\relax
 \glodelim 
-		\glsnumformat{9}\delimT \gloskip \glogroupD
+		\glsnumformat{6}\delimT \gloskip \glogroupD
 
 \gloitem {\glosslabel{glo:DMS}{DMS}}Dokumenten-Management-System\relax
 \glodelim 
-		\glsnumformat{7}\delimT 
+		\glsnumformat{4}\delimT 
 
 \gloitem {\glosslabel{glo:DNS}{DNS}}Domain Name System\relax
 \glodelim 
-		\glsnumformat{21}\delimT \gloskip \glogroupL
+		\glsnumformat{15}\delimT \gloskip \glogroupE
+
+\gloitem {\glosslabel{glo:ECM}{ECM}}Content-Management-System\relax
+\glodelim 
+		\glsnumformat{7}\delimT \gloskip \glogroupF
+
+\gloitem {\glosslabel{glo:FTP}{FTP}}File Transfer Protocol\relax
+\glodelim 
+		\glsnumformat{12}\delimT \gloskip \glogroupL
 
 \gloitem {\glosslabel{glo:LDAP}{LDAP}}Lightweight Directory Access Protocol\relax
 \glodelim 
-		\glsnumformat{21}\delimT \gloskip \glogroupM
+		\glsnumformat{15}\delimT \gloskip \glogroupM
 
 \gloitem {\glosslabel{glo:MIB}{MIB}}Management Information Base\relax
 \glodelim 
-		\glsnumformat{21}\delimT \gloskip \glogroupN
+		\glsnumformat{15}\delimT \gloskip \glogroupN
 
 \gloitem {\glosslabel{glo:NRPE}{NRPE}}Nagios Remote Plugin Executor\relax
 \glodelim 
-		\glsnumformat{19}\delimT 
+		\glsnumformat{14}\delimT 
 
 \gloitem {\glosslabel{glo:NSCA}{NSCA}}Nagios Service Check Acceptor\relax
 \glodelim 
-		\glsnumformat{21}\delimT \gloskip \glogroupS
+		\glsnumformat{16}\delimT \gloskip \glogroupS
 
 \gloitem {\glosslabel{glo:SNMP}{SNMP}}Simple Network Management Protocol\relax
 \glodelim 
-		\glsnumformat{21}\delimT 
+		\glsnumformat{15}\delimT 
 
 \gloitem {\glosslabel{glo:SSH}{SSH}}Secure Shell\relax
 \glodelim 
-		\glsnumformat{17}\delimT 
+		\glsnumformat{14}\delimT 
 \end{theglossary}

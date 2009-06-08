@@ -1,9 +1,11 @@
-\glossaryentry{DMS@{\glosslabel{glo:DMS}{DMS}}Dokumenten-Management-System\relax|glsnumformat}{7}
-\glossaryentry{CMS@{\glosslabel{glo:CMS}{CMS}}Content-Management-System\relax|glsnumformat}{9}
-\glossaryentry{SSH@{\glosslabel{glo:SSH}{SSH}}Secure Shell\relax|glsnumformat}{17}
-\glossaryentry{NRPE@{\glosslabel{glo:NRPE}{NRPE}}Nagios Remote Plugin Executor\relax|glsnumformat}{19}
-\glossaryentry{SNMP@{\glosslabel{glo:SNMP}{SNMP}}Simple Network Management Protocol\relax|glsnumformat}{21}
-\glossaryentry{MIB@{\glosslabel{glo:MIB}{MIB}}Management Information Base\relax|glsnumformat}{21}
-\glossaryentry{DNS@{\glosslabel{glo:DNS}{DNS}}Domain Name System\relax|glsnumformat}{21}
-\glossaryentry{LDAP@{\glosslabel{glo:LDAP}{LDAP}}Lightweight Directory Access Protocol\relax|glsnumformat}{21}
-\glossaryentry{NSCA@{\glosslabel{glo:NSCA}{NSCA}}Nagios Service Check Acceptor\relax|glsnumformat}{21}
+\glossaryentry{DMS@{\glosslabel{glo:DMS}{DMS}}Dokumenten-Management-System\relax|glsnumformat}{4}
+\glossaryentry{CMS@{\glosslabel{glo:CMS}{CMS}}Content-Management-System\relax|glsnumformat}{6}
+\glossaryentry{ECM@{\glosslabel{glo:ECM}{ECM}}Content-Management-System\relax|glsnumformat}{7}
+\glossaryentry{FTP@{\glosslabel{glo:FTP}{FTP}}File Transfer Protocol\relax|glsnumformat}{12}
+\glossaryentry{NRPE@{\glosslabel{glo:NRPE}{NRPE}}Nagios Remote Plugin Executor\relax|glsnumformat}{14}
+\glossaryentry{SSH@{\glosslabel{glo:SSH}{SSH}}Secure Shell\relax|glsnumformat}{14}
+\glossaryentry{SNMP@{\glosslabel{glo:SNMP}{SNMP}}Simple Network Management Protocol\relax|glsnumformat}{15}
+\glossaryentry{NSCA@{\glosslabel{glo:NSCA}{NSCA}}Nagios Service Check Acceptor\relax|glsnumformat}{16}
+\glossaryentry{MIB@{\glosslabel{glo:MIB}{MIB}}Management Information Base\relax|glsnumformat}{15}
+\glossaryentry{DNS@{\glosslabel{glo:DNS}{DNS}}Domain Name System\relax|glsnumformat}{15}
+\glossaryentry{LDAP@{\glosslabel{glo:LDAP}{LDAP}}Lightweight Directory Access Protocol\relax|glsnumformat}{15}
