@@ -1,12 +1,12 @@
 \select@language {ngerman}
-\contentsline {figure}{\numberline {1}{\ignorespaces Logische Nagios Struktur}}{13}{figure.1}
-\contentsline {figure}{\numberline {2}{\ignorespaces Beispielhafte manuelle Ausf\IeC {\"u}hrung eines Servicechecks}}{15}{figure.2}
-\contentsline {figure}{\numberline {3}{\ignorespaces R\IeC {\"u}ckgabewerte f\IeC {\"u}r Nagios Plugins}}{15}{figure.3}
-\contentsline {figure}{\numberline {4}{\ignorespaces Beispiel f\IeC {\"u}r den zeitlichen Verlauf durch vers. Zust\IeC {\"a}nde}}{15}{figure.4}
-\contentsline {figure}{\numberline {5}{\ignorespaces Beispielhafte manuelle Ausf\IeC {\"u}hrung eines netzwerkbasierenden Servicechecks / HTTP Server Check}}{17}{figure.5}
-\contentsline {figure}{\numberline {6}{\ignorespaces Verschiedene \IeC {\"U}berwachungsm\IeC {\"o}glichkeiten von Nagios}}{18}{figure.6}
-\contentsline {figure}{\numberline {7}{\ignorespaces Beispielhafte manuelle Ausf\IeC {\"u}hrung eines Servicechecks \IeC {\"u}ber SSH}}{19}{figure.7}
-\contentsline {figure}{\numberline {8}{\ignorespaces Passive Checks mit NSCA}}{21}{figure.8}
-\contentsline {figure}{\numberline {9}{\ignorespaces Aktive Checks mit NRPE}}{21}{figure.9}
-\contentsline {figure}{\numberline {10}{\ignorespaces \IeC {\"U}bersicht der verschiedenen Unix Agenten\footnotemark }}{22}{figure.10}
-\contentsline {figure}{\numberline {11}{\ignorespaces \IeC {\"U}bersicht der verschiedenen Windows Agenten}}{23}{figure.11}
+\contentsline {figure}{\numberline {1}{\ignorespaces Logische Nagios Struktur}}{9}{figure.1}
+\contentsline {figure}{\numberline {2}{\ignorespaces Beispielhafte manuelle Ausf\IeC {\"u}hrung eines Servicechecks}}{11}{figure.2}
+\contentsline {figure}{\numberline {3}{\ignorespaces R\IeC {\"u}ckgabewerte f\IeC {\"u}r Nagios Plugins}}{11}{figure.3}
+\contentsline {figure}{\numberline {4}{\ignorespaces Beispiel f\IeC {\"u}r den zeitlichen Verlauf durch vers. Zust\IeC {\"a}nde}}{11}{figure.4}
+\contentsline {figure}{\numberline {5}{\ignorespaces Beispielhafte manuelle Ausf\IeC {\"u}hrung eines netzwerkbasierenden Servicechecks / HTTP Server Check}}{13}{figure.5}
+\contentsline {figure}{\numberline {6}{\ignorespaces Verschiedene \IeC {\"U}berwachungsm\IeC {\"o}glichkeiten von Nagios}}{14}{figure.6}
+\contentsline {figure}{\numberline {7}{\ignorespaces Beispielhafte manuelle Ausf\IeC {\"u}hrung eines Servicechecks \IeC {\"u}ber SSH}}{15}{figure.7}
+\contentsline {figure}{\numberline {8}{\ignorespaces Passive Checks mit NSCA}}{17}{figure.8}
+\contentsline {figure}{\numberline {9}{\ignorespaces Aktive Checks mit NRPE}}{17}{figure.9}
+\contentsline {figure}{\numberline {10}{\ignorespaces \IeC {\"U}bersicht der verschiedenen Unix Agenten\footnotemark }}{18}{figure.10}
+\contentsline {figure}{\numberline {11}{\ignorespaces \IeC {\"U}bersicht der verschiedenen Windows Agenten}}{19}{figure.11}

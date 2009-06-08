@@ -2,29 +2,22 @@
 \BOOKMARK [1][-]{section.2}{Abstract}{}
 \BOOKMARK [1][-]{section.3}{Aufgabenstellung}{}
 \BOOKMARK [1][-]{section.4}{Grundlagen}{}
-\BOOKMARK [2][-]{subsection.4.1}{Dokumenten-Management-System}{section.4}
-\BOOKMARK [3][-]{subsubsection.4.1.1}{CMS}{subsection.4.1}
-\BOOKMARK [3][-]{subsubsection.4.1.2}{ECM}{subsection.4.1}
-\BOOKMARK [2][-]{subsection.4.2}{ads - ADS Benutzer}{section.4}
-\BOOKMARK [2][-]{subsection.4.3}{cronjobs}{section.4}
-\BOOKMARK [2][-]{subsection.4.4}{evtl Oracle DB}{section.4}
-\BOOKMARK [2][-]{subsection.4.5}{false+-true+-}{section.4}
-\BOOKMARK [2][-]{subsection.4.6}{Farbraum}{section.4}
-\BOOKMARK [2][-]{subsection.4.7}{Metadaten}{section.4}
-\BOOKMARK [2][-]{subsection.4.8}{Nagios}{section.4}
-\BOOKMARK [3][-]{subsubsection.4.8.1}{Aufbau \(von Nagios\)}{subsection.4.8}
-\BOOKMARK [3][-]{subsubsection.4.8.2}{Service Checks und deren / ihre Realisierung / Ausf\374hrung / \(\334berpr\374fungs\)Methoden}{subsection.4.8}
-\BOOKMARK [3][-]{subsubsection.4.8.3}{Konfigurationsdateien?}{subsection.4.8}
-\BOOKMARK [3][-]{subsubsection.4.8.4}{Plugins}{subsection.4.8}
-\BOOKMARK [3][-]{subsubsection.4.8.5}{\(Windows\) Agenten oder allgemein Einholen von Infos}{subsection.4.8}
-\BOOKMARK [2][-]{subsection.4.9}{Stellent/Oracle UCM}{section.4}
-\BOOKMARK [2][-]{subsection.4.10}{\334berwachungselemente}{section.4}
-\BOOKMARK [3][-]{subsubsection.4.10.1}{Statusabfragen}{subsection.4.10}
-\BOOKMARK [3][-]{subsubsection.4.10.2}{\334berwachung der Funktionalit\344t}{subsection.4.10}
-\BOOKMARK [3][-]{subsubsection.4.10.3}{Auswerten von Logdateien}{subsection.4.10}
-\BOOKMARK [1][-]{section.5}{Architektur}{}
-\BOOKMARK [1][-]{section.6}{Umsetzung}{}
-\BOOKMARK [2][-]{subsection.6.1}{\334berpr\374fen der Prozesse und Services}{section.6}
-\BOOKMARK [2][-]{subsection.6.2}{Einrichten des Windows Agenten}{section.6}
-\BOOKMARK [1][-]{section.7}{Abbildungsverzeichnis}{}
-\BOOKMARK [1][-]{section.8}{Literaturverzeichnis}{}
+\BOOKMARK [2][-]{subsection.4.1}{ads - ADS Benutzer}{section.4}
+\BOOKMARK [2][-]{subsection.4.2}{cronjobs}{section.4}
+\BOOKMARK [2][-]{subsection.4.3}{evtl Oracle DB}{section.4}
+\BOOKMARK [2][-]{subsection.4.4}{false+-true+-}{section.4}
+\BOOKMARK [2][-]{subsection.4.5}{Farbraum}{section.4}
+\BOOKMARK [2][-]{subsection.4.6}{Metadaten}{section.4}
+\BOOKMARK [2][-]{subsection.4.7}{Nagios}{section.4}
+\BOOKMARK [3][-]{subsubsection.4.7.1}{Aufbau \(von Nagios\)}{subsection.4.7}
+\BOOKMARK [3][-]{subsubsection.4.7.2}{Service Checks und deren / ihre Realisierung / Ausf\374hrung / \(\334berpr\374fungs\)Methoden}{subsection.4.7}
+\BOOKMARK [3][-]{subsubsection.4.7.3}{Konfigurationsdateien?}{subsection.4.7}
+\BOOKMARK [3][-]{subsubsection.4.7.4}{Plugins}{subsection.4.7}
+\BOOKMARK [3][-]{subsubsection.4.7.5}{\(Windows\) Agenten oder allgemein Einholen von Infos}{subsection.4.7}
+\BOOKMARK [2][-]{subsection.4.8}{Stellent/Oracle UCM}{section.4}
+\BOOKMARK [2][-]{subsection.4.9}{\334berwachungselemente}{section.4}
+\BOOKMARK [3][-]{subsubsection.4.9.1}{Statusabfragen}{subsection.4.9}
+\BOOKMARK [3][-]{subsubsection.4.9.2}{\334berwachung der Funktionalit\344t}{subsection.4.9}
+\BOOKMARK [3][-]{subsubsection.4.9.3}{Auswerten von Logdateien}{subsection.4.9}
+\BOOKMARK [1][-]{section.5}{Abbildungsverzeichnis}{}
+\BOOKMARK [1][-]{section.6}{Literaturverzeichnis}{}

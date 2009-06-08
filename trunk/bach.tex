@@ -17,6 +17,10 @@
 %\usepackage{fancyhd}
 \usepackage{pdfpages}
 \usepackage{listings}
+
+\usepackage{glossary}
+
+
  \usepackage{verbatim} %Mehrzeilige Kommentare durch \begin{comment} mglich  ??
 \usepackage{blindtext} % Erzeugung von lngeren Textpassagen
 \usepackage{xcolor}  
@@ -106,8 +110,8 @@ Die Arbeit wurde bisher keiner Prüfungsbehörde vorgelegt und auch noch nicht v
 \input{tex/abstract.tex} \newpage
 \input{tex/aufgabenstellung.tex} \newpage
 \input{tex/grundlagen.tex} \newpage
-\input{tex/architektur.tex} \newpage
-\input{tex/umsetzung.tex} \newpage
+%\input{tex/architektur.tex} \newpage
+%\input{tex/umsetzung.tex} \newpage
 %\input{/16/docs/_praxis3/tex/ziele.tex} \newpage
 %\input{/16/docs/_praxis3/tex/programmaufbau.tex} \newpage
 %\input{tex/anpassungen.tex} \newpage
@@ -135,10 +139,11 @@ Die Arbeit wurde bisher keiner Prüfungsbehörde vorgelegt und auch noch nicht v
 	 
 	 \bibitem[Huff06]{Huff06}Brian Huff (2006) "`The Definitive Guide to Stellent Content Server Development"', \newline ISBN13: 978-1-59059-684-5, \newline Stand: ????, Einsichtnahme: 15.05.2009
 	 
-	 	 \bibitem[UCMlog09]{UCMlog09} Unbekannter Author "`vramanat"' (2009) "`Universal Content Management 10gR3 - Content Server Log File Information"', \\ Quelle: http://www.oracle.com/technology/products/content-management/cdbs/loginfo.pdf \newline Stand: 20.01.2009, Einsichtnahme: 05.06.2009
+	 	 \bibitem[UCMlog09]{UCMlog09} Unbekannter Author "`vramanat"' (2009) "`Universal Content Management 10gR3 - Content Server Log File Information"', \\ Quelle: \url{http://www.oracle.com/technology/products/content-management/cdbs/loginfo.pdf} \newline Stand: 20.01.2009, Einsichtnahme: 05.06.2009
 \end{thebibliography}\newpage
-
-
+\makeindex
+\makeglossary
+\printglossary
 
 \end{document}
 
