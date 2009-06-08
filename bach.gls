@@ -2,11 +2,19 @@
 
 \gloitem {\glosslabel{glo:CMS}{CMS}}Content-Management-System\relax
 \glodelim 
-		\glsnumformat{10}\delimT \gloskip \glogroupD
+		\glsnumformat{9}\delimT \gloskip \glogroupD
 
 \gloitem {\glosslabel{glo:DMS}{DMS}}Dokumenten-Management-System\relax
 \glodelim 
-		\glsnumformat{8}\delimT \gloskip \glogroupM
+		\glsnumformat{7}\delimT 
+
+\gloitem {\glosslabel{glo:DNS}{DNS}}Domain Name System\relax
+\glodelim 
+		\glsnumformat{21}\delimT \gloskip \glogroupL
+
+\gloitem {\glosslabel{glo:LDAP}{LDAP}}Lightweight Directory Access Protocol\relax
+\glodelim 
+		\glsnumformat{21}\delimT \gloskip \glogroupM
 
 \gloitem {\glosslabel{glo:MIB}{MIB}}Management Information Base\relax
 \glodelim 
@@ -14,7 +22,7 @@
 
 \gloitem {\glosslabel{glo:NRPE}{NRPE}}Nagios Remote Plugin Executor\relax
 \glodelim 
-		\glsnumformat{20}\delimT 
+		\glsnumformat{19}\delimT 
 
 \gloitem {\glosslabel{glo:NSCA}{NSCA}}Nagios Service Check Acceptor\relax
 \glodelim 
@@ -26,5 +34,5 @@
 
 \gloitem {\glosslabel{glo:SSH}{SSH}}Secure Shell\relax
 \glodelim 
-		\glsnumformat{19}\delimT 
+		\glsnumformat{17}\delimT 
 \end{theglossary}

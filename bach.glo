@@ -1,7 +1,9 @@
 \glossaryentry{DMS@{\glosslabel{glo:DMS}{DMS}}Dokumenten-Management-System\relax|glsnumformat}{7}
 \glossaryentry{CMS@{\glosslabel{glo:CMS}{CMS}}Content-Management-System\relax|glsnumformat}{9}
-\glossaryentry{NRPE@{\glosslabel{glo:NRPE}{NRPE}}Nagios Remote Plugin Executor\relax|glsnumformat}{17}
 \glossaryentry{SSH@{\glosslabel{glo:SSH}{SSH}}Secure Shell\relax|glsnumformat}{17}
-\glossaryentry{SNMP@{\glosslabel{glo:SNMP}{SNMP}}Simple Network Management Protocol\relax|glsnumformat}{18}
-\glossaryentry{NSCA@{\glosslabel{glo:NSCA}{NSCA}}Nagios Service Check Acceptor\relax|glsnumformat}{19}
-\glossaryentry{MIB@{\glosslabel{glo:MIB}{MIB}}Management Information Base\relax|glsnumformat}{19}
+\glossaryentry{NRPE@{\glosslabel{glo:NRPE}{NRPE}}Nagios Remote Plugin Executor\relax|glsnumformat}{19}
+\glossaryentry{SNMP@{\glosslabel{glo:SNMP}{SNMP}}Simple Network Management Protocol\relax|glsnumformat}{21}
+\glossaryentry{MIB@{\glosslabel{glo:MIB}{MIB}}Management Information Base\relax|glsnumformat}{21}
+\glossaryentry{DNS@{\glosslabel{glo:DNS}{DNS}}Domain Name System\relax|glsnumformat}{21}
+\glossaryentry{LDAP@{\glosslabel{glo:LDAP}{LDAP}}Lightweight Directory Access Protocol\relax|glsnumformat}{21}
+\glossaryentry{NSCA@{\glosslabel{glo:NSCA}{NSCA}}Nagios Service Check Acceptor\relax|glsnumformat}{21}

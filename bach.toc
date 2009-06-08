@@ -8,24 +8,24 @@
 \contentsline {subsubsection}{\numberline {4.1.2}ECM}{10}{subsubsection.4.1.2}
 \contentsline {subsection}{\numberline {4.2}Nagios}{11}{subsection.4.2}
 \contentsline {subsubsection}{\numberline {4.2.1}Aufbau (von Nagios)}{12}{subsubsection.4.2.1}
-\contentsline {subsubsection}{\numberline {4.2.2}Service Checks und deren / ihre Realisierung / Ausf\IeC {\"u}hrung / (\IeC {\"U}berpr\IeC {\"u}fungs)Methoden}{15}{subsubsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.2}Service Checks und deren / ihre Realisierung / Ausf\IeC {\"u}hrung / (\IeC {\"U}berpr\IeC {\"u}fungs)Methoden}{17}{subsubsection.4.2.2}
 \contentsline {paragraph}{Variante / Methode / Client 1}{17}{section*.2}
-\contentsline {paragraph}{Variante / Methode / Client 2}{17}{section*.3}
-\contentsline {paragraph}{Variante / Methode / Client 3}{17}{section*.4}
-\contentsline {paragraph}{Variante / Methode / Client 4}{18}{section*.5}
-\contentsline {paragraph}{passive}{19}{section*.6}
-\contentsline {subsubsection}{\numberline {4.2.3}Konfigurationsdateien?}{20}{subsubsection.4.2.3}
-\contentsline {subsubsection}{\numberline {4.2.4}Plugins}{20}{subsubsection.4.2.4}
-\contentsline {subsubsection}{\numberline {4.2.5}(Windows) Agenten oder allgemein Einholen von Infos}{21}{subsubsection.4.2.5}
-\contentsline {subsection}{\numberline {4.3}Stellent/Oracle UCM}{22}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}\IeC {\"U}berwachungselemente}{22}{subsection.4.4}
-\contentsline {subsubsection}{\numberline {4.4.1}Statusabfragen}{22}{subsubsection.4.4.1}
-\contentsline {paragraph}{System}{23}{section*.7}
-\contentsline {paragraph}{Prozesse}{23}{section*.8}
-\contentsline {paragraph}{Services}{23}{section*.9}
-\contentsline {subsubsection}{\numberline {4.4.2}\IeC {\"U}berwachung der Funktionalit\IeC {\"a}t}{24}{subsubsection.4.4.2}
-\contentsline {subsubsection}{\numberline {4.4.3}Auswerten von Logdateien}{26}{subsubsection.4.4.3}
-\contentsline {section}{\numberline {5}Abbildungsverzeichnis}{27}{section.5}
-\contentsline {section}{\numberline {6}Codelistingverzeichnis}{28}{section.6}
-\contentsline {section}{\numberline {7}Literaturverzeichnis}{29}{section.7}
-\contentsline {section}{\numberline {8}Glossar}{30}{section.8}
+\contentsline {paragraph}{Variante / Methode / Client 2}{18}{section*.3}
+\contentsline {paragraph}{Variante / Methode / Client 3}{19}{section*.4}
+\contentsline {paragraph}{Variante / Methode / Client 4}{21}{section*.5}
+\contentsline {paragraph}{passive}{22}{section*.6}
+\contentsline {subsubsection}{\numberline {4.2.3}Konfigurationsdateien?}{23}{subsubsection.4.2.3}
+\contentsline {subsubsection}{\numberline {4.2.4}Plugins}{23}{subsubsection.4.2.4}
+\contentsline {subsubsection}{\numberline {4.2.5}(Windows) Agenten oder allgemein Einholen von Infos}{24}{subsubsection.4.2.5}
+\contentsline {subsection}{\numberline {4.3}Stellent/Oracle UCM}{26}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}\IeC {\"U}berwachungselemente}{26}{subsection.4.4}
+\contentsline {subsubsection}{\numberline {4.4.1}Statusabfragen}{26}{subsubsection.4.4.1}
+\contentsline {paragraph}{System}{27}{section*.7}
+\contentsline {paragraph}{Prozesse}{27}{section*.8}
+\contentsline {paragraph}{Services}{27}{section*.9}
+\contentsline {subsubsection}{\numberline {4.4.2}\IeC {\"U}berwachung der Funktionalit\IeC {\"a}t}{28}{subsubsection.4.4.2}
+\contentsline {subsubsection}{\numberline {4.4.3}Auswerten von Logdateien}{29}{subsubsection.4.4.3}
+\contentsline {section}{\numberline {5}Abbildungsverzeichnis}{31}{section.5}
+\contentsline {section}{\numberline {6}Codelistingverzeichnis}{32}{section.6}
+\contentsline {section}{\numberline {7}Literaturverzeichnis}{33}{section.7}
+\contentsline {section}{\numberline {8}Glossar}{34}{section.8}
