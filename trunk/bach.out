@@ -2,9 +2,9 @@
 \BOOKMARK [1][-]{section.2}{Abstract}{}
 \BOOKMARK [1][-]{section.3}{Aufgabenstellung}{}
 \BOOKMARK [1][-]{section.4}{Grundlagen}{}
-\BOOKMARK [2][-]{subsection.4.1}{Dokumenten-Management-System}{section.4}
-\BOOKMARK [3][-]{subsubsection.4.1.1}{Content-Management-System}{subsection.4.1}
-\BOOKMARK [3][-]{subsubsection.4.1.2}{ECM}{subsection.4.1}
+\BOOKMARK [2][-]{subsection.4.1}{Dokumenten-Management-Systeme}{section.4}
+\BOOKMARK [3][-]{subsubsection.4.1.1}{Content-Management-Systeme}{subsection.4.1}
+\BOOKMARK [3][-]{subsubsection.4.1.2}{Enterprise-Content-Management-Systeme - optional}{subsection.4.1}
 \BOOKMARK [2][-]{subsection.4.2}{Nagios}{section.4}
 \BOOKMARK [3][-]{subsubsection.4.2.1}{Aufbau \(von Nagios\)}{subsection.4.2}
 \BOOKMARK [3][-]{subsubsection.4.2.2}{Service Checks und deren / ihre Realisierung / Ausf\374hrung / \(\334berpr\374fungs\)Methoden}{subsection.4.2}

@@ -1,6 +1,7 @@
 \glossaryentry{DMS@{\glosslabel{glo:DMS}{DMS}}Dokumenten-Management-System\relax|glsnumformat}{4}
 \glossaryentry{CMS@{\glosslabel{glo:CMS}{CMS}}Content-Management-System\relax|glsnumformat}{6}
-\glossaryentry{ECM@{\glosslabel{glo:ECM}{ECM}}Content-Management-System\relax|glsnumformat}{7}
+\glossaryentry{ECM@{\glosslabel{glo:ECM}{ECM}}Enterprise-Content-Management\relax|glsnumformat}{7}
+\glossaryentry{AIIM@{\glosslabel{glo:AIIM}{AIIM}}Association for Information and Image Management \\ Die AIIM ist eine Gesellschaft von internationalen Herstellern und Anwendern von Informations- und Dokumenten-Mangement-Systemen\relax|glsnumformat}{7}
 \glossaryentry{FTP@{\glosslabel{glo:FTP}{FTP}}File Transfer Protocol\relax|glsnumformat}{12}
 \glossaryentry{NRPE@{\glosslabel{glo:NRPE}{NRPE}}Nagios Remote Plugin Executor\relax|glsnumformat}{14}
 \glossaryentry{SSH@{\glosslabel{glo:SSH}{SSH}}Secure Shell\relax|glsnumformat}{14}

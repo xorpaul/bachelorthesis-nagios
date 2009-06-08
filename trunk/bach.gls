@@ -1,4 +1,8 @@
-\begin{theglossary}\glogroupC
+\begin{theglossary}\glogroupA
+
+\gloitem {\glosslabel{glo:AIIM}{AIIM}}Association for Information and Image Management \\ Die AIIM ist eine Gesellschaft von internationalen Herstellern und Anwendern von Informations- und Dokumenten-Mangement-Systemen\relax
+\glodelim 
+		\glsnumformat{7}\delimT \gloskip \glogroupC
 
 \gloitem {\glosslabel{glo:CMS}{CMS}}Content-Management-System\relax
 \glodelim 
@@ -12,7 +16,7 @@
 \glodelim 
 		\glsnumformat{15}\delimT \gloskip \glogroupE
 
-\gloitem {\glosslabel{glo:ECM}{ECM}}Content-Management-System\relax
+\gloitem {\glosslabel{glo:ECM}{ECM}}Enterprise-Content-Management\relax
 \glodelim 
 		\glsnumformat{7}\delimT \gloskip \glogroupF
 
