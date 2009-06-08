@@ -1,9 +1,9 @@
 \subsubsection{Service Checks und deren / ihre Realisierung / Ausführung / (Überprüfungs)Methoden}
 
-Dienste, die im Netzwerk zur Verfügung stehen (Netzwerkdienste), wie ein Web- oder FTP-Server, lassen sich einfach / simpel direkt über das Netz auf ihren Zustand (hin) überprüfen /  testen.
+Dienste, die im Netzwerk zur Verfügung stehen (Netzwerkdienste), wie ein Web- oder FTP-Server glossary{name={FTP}, description={File Transfer Protocol}}, lassen sich einfach / simpel direkt über das Netz auf ihren Zustand (hin) überprüfen /  testen.
 Hierfür muss dem entsprechende Plugin lediglich die Netzwerkadresse mitgeteilt werden, siehe Abbildung \ref{check-http} als beispielhafte Überprüfung eines Webservers.
 
-\begin{figure}[ht]
+\begin{figure}[ht]  
 	\centering
 	   \fbox{\includegraphics[width=0.85\textwidth]{bilder/check-http.png}}
 		\caption{Beispielhafte manuelle Ausführung eines netzwerkbasierenden Servicechecks / HTTP Server Check}
@@ -67,7 +67,7 @@ Diese Variante wird nur grob angerissen / kurz / verkürzt behandelt, da sich di
 Barth schreibt über diese Variante / Überwachungsmethode:
 \begin{quote}"`Mit dem Simple Network Management Protocol SNMP lassen sich ebenfalls lokale Ressourcen übers Netz abfragen [...]. Ist auf dem Zielhost ein SNMP-Daemon installiert [...] kann Nagios ihn nutzen, um lokale Ressourcen wie Prozesse, Festplatten oder Interface-Auslastung abzufragen."' \begin{flushright}\cite{Barth08} S. 101\end{flushright}\end{quote} 
 
-Durch SNMP kann auf die strukturierte Datenhaltung der MIB\footnote{Die Management Information Base (MIB) \glossary{name={MIB}, description={Management Information Base}} dient als SNMP-Informationstruktur und besteht aus einem hierarchischen, aus Zahlen aufgebauten Namensraum. Ähnliche Struktur wie andere hierarchische Verzeichnisdiensten wie DNS oder LDAP. Quelle: \cite{Barth08} S.233} in den entfernten Netzwerkknoten zugegriffen werden.
+Durch SNMP kann auf die strukturierte Datenhaltung der MIB\footnote{Die Management Information Base (MIB) \glossary{name={MIB}, description={Management Information Base}} dient als SNMP-Informationstruktur und besteht aus einem hierarchischen, aus Zahlen aufgebauten Namensraum. Ähnliche Struktur wie andere hierarchische Verzeichnisdiensten wie DNS \glossary{name={DNS}, description={Domain Name System}} oder LDAP \glossary{name={LDAP}, description={Lightweight Directory Access Protocol}}. Quelle: \cite{Barth08} S.233} in den entfernten Netzwerkknoten zugegriffen werden.
 
 \begin{center}
 TODO: SNMP MIB?

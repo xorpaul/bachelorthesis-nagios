@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2009.1.26)  8 JUN 2009 11:27
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2009.1.26)  8 JUN 2009 11:31
 entering extended mode
  %&-line parsing enabled.
 **bach.tex
@@ -84,11 +84,10 @@ Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 (/etc/texmf/tex/latex/config/graphics.cfg
 File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
-Package graphics Info: Driver file: pdftex.def on input line 90.
+Package graphics Info: Driver file: dvips.def on input line 90.
 
-(/usr/share/texmf-texlive/tex/latex/pdftex-def/pdftex.def
-File: pdftex.def 2007/01/08 v0.04d Graphics/color for pdfTeX
-\Gread@gobject=\count89
+(/usr/share/texmf-texlive/tex/latex/graphics/dvips.def
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
 ))
 \Gin@req@height=\dimen104
 \Gin@req@width=\dimen105
@@ -104,10 +103,10 @@ Package: subfigure 2002/03/15 v2.1.5 subfigure package
 \subfigbottomskip=\skip45
 \subfigcapmargin=\dimen107
 \subfiglabelskip=\skip46
-\c@subfigure=\count90
-\c@lofdepth=\count91
-\c@subtable=\count92
-\c@lotdepth=\count93
+\c@subfigure=\count89
+\c@lofdepth=\count90
+\c@subtable=\count91
+\c@lotdepth=\count92
 
 ****************************************
 * Local config file subfigure.cfg used *
@@ -151,13 +150,13 @@ Package: amsbsy 1999/11/29 v1.2d
 (/usr/share/texmf-texlive/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count94
+\inf@bad=\count93
 LaTeX Info: Redefining \frac on input line 211.
-\uproot@=\count95
-\leftroot@=\count96
+\uproot@=\count94
+\leftroot@=\count95
 LaTeX Info: Redefining \overline on input line 307.
-\classnum@=\count97
-\DOTSCASE@=\count98
+\classnum@=\count96
+\DOTSCASE@=\count97
 LaTeX Info: Redefining \ldots on input line 379.
 LaTeX Info: Redefining \dots on input line 382.
 LaTeX Info: Redefining \cdots on input line 467.
@@ -166,15 +165,15 @@ LaTeX Info: Redefining \cdots on input line 467.
 \big@size=\dimen110
 LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
-\macc@depth=\count99
-\c@MaxMatrixCols=\count100
+\macc@depth=\count98
+\c@MaxMatrixCols=\count99
 \dotsspace@=\muskip10
-\c@parentequation=\count101
-\dspbrk@lvl=\count102
+\c@parentequation=\count100
+\dspbrk@lvl=\count101
 \tag@help=\toks21
-\row@=\count103
-\column@=\count104
-\maxfields@=\count105
+\row@=\count102
+\column@=\count103
+\maxfields@=\count104
 \andhelp@=\toks22
 \eqnshift@=\dimen111
 \alignsep@=\dimen112
@@ -201,16 +200,16 @@ Package: amssymb 2002/01/22 v2.2d
 )
 (/usr/share/texmf-texlive/tex/latex/floatflt/floatflt.sty
 Package: floatflt 1997/07/16 v. 1.31
-\c@OptionTest=\count106
+\c@OptionTest=\count105
 \figbox=\box28
 \tabbox=\box29
 \pagebox=\box30
-\ffigcount=\count107
-\ftabcount=\count108
-\fftest=\count109
-\hangcount=\count110
-\nosuccesstryfig=\count111
-\nosuccesstrytab=\count112
+\ffigcount=\count106
+\ftabcount=\count107
+\fftest=\count108
+\hangcount=\count109
+\nosuccesstryfig=\count110
+\nosuccesstrytab=\count111
 \figgutter=\dimen117
 \tabgutter=\dimen118
 \htdone=\dimen119
@@ -229,15 +228,15 @@ Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
 (/usr/share/texmf-texlive/tex/latex/tools/calc.sty
 Package: calc 2005/08/06 v4.2 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count113
-\calc@Bcount=\count114
+\calc@Acount=\count112
+\calc@Bcount=\count113
 \calc@Adimen=\dimen125
 \calc@Bdimen=\dimen126
 \calc@Askip=\skip52
 \calc@Bskip=\skip53
 LaTeX Info: Redefining \setlength on input line 75.
 LaTeX Info: Redefining \addtolength on input line 76.
-\calc@Ccount=\count115
+\calc@Ccount=\count114
 \calc@Cskip=\skip54
 )
 (/usr/share/texmf-texlive/tex/latex/eso-pic/eso-pic.sty
@@ -248,24 +247,32 @@ Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
 (/usr/share/texmf-texlive/tex/latex/pdfpages/pppdftex.def
 File: pppdftex.def 2006/08/12 v0.4a Pdfpages driver for pdfTeX (AM)
-)
+
+(/usr/share/texmf-texlive/tex/latex/pdfpages/ppnull.def
+File: ppnull.def 2006/08/12 v0.4a Pdfpages' dummy driver (AM)
+
+
+Package pdfpages Warning: I will use a dummy \includepdf command
+(pdfpages)                which will NOT insert any pages, because
+(pdfpages)                you are producing DVI output.
+
+))
 \AM@pagebox=\box31
 \AM@toc@title=\toks26
-\c@AM@survey=\count116
-)
-(/usr/share/texmf-texlive/tex/latex/listings/listings.sty
-\lst@mode=\count117
+\c@AM@survey=\count115
+) (/usr/share/texmf-texlive/tex/latex/listings/listings.sty
+\lst@mode=\count116
 \lst@gtempboxa=\box32
 \lst@token=\toks27
-\lst@length=\count118
+\lst@length=\count117
 \lst@currlwidth=\dimen127
-\lst@column=\count119
-\lst@pos=\count120
+\lst@column=\count118
+\lst@pos=\count119
 \lst@lostspace=\dimen128
 \lst@width=\dimen129
-\lst@newlines=\count121
-\lst@lineno=\count122
-\c@lstlisting=\count123
+\lst@newlines=\count120
+\lst@lineno=\count121
+\c@lstlisting=\count122
 \lst@maxwidth=\dimen130
 
 (/usr/share/texmf-texlive/tex/latex/listings/lstpatch.sty
@@ -273,8 +280,8 @@ File: lstpatch.sty 2004/10/17 1.3b (Carsten Heinz)
 )
 (/usr/share/texmf-texlive/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2004/09/07 1.3 (Carsten Heinz)
-\c@lstnumber=\count124
-\lst@skipnumbers=\count125
+\c@lstnumber=\count123
+\lst@skipnumbers=\count124
 \lst@framebox=\box33
 )
 (/usr/share/texmf-texlive/tex/latex/listings/listings.cfg
@@ -284,7 +291,7 @@ Package: listings 2004/10/17 1.3b (Carsten Heinz)
 
 (/usr/share/texmf-texlive/tex/latex/glossary/glossary.sty
 Package: glossary 2006/07/20 2.4 (NLCT)
-\gls@cols=\count126
+\gls@cols=\count125
 
 No configuration file glossary.cfg found
 (/usr/share/texmf-texlive/tex/latex/tools/longtable.sty
@@ -293,16 +300,16 @@ Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
 \LTright=\skip56
 \LTpre=\skip57
 \LTpost=\skip58
-\LTchunksize=\count127
+\LTchunksize=\count126
 \LTcapwidth=\dimen131
 \LT@head=\box34
 \LT@firsthead=\box35
 \LT@foot=\box36
 \LT@lastfoot=\box37
-\LT@cols=\count128
-\LT@rows=\count129
-\c@LT@tables=\count130
-\c@LT@chunks=\count131
+\LT@cols=\count127
+\LT@rows=\count128
+\c@LT@tables=\count129
+\c@LT@chunks=\count130
 \LT@p@ftn=\toks28
 )
 \descriptionwidth=\skip59
@@ -320,17 +327,17 @@ Package: blindtext 2006/11/21 V1.7 blindtext-Package
 (/usr/share/texmf-texlive/tex/latex/tools/xspace.sty
 Package: xspace 2006/05/08 v1.12 Space after command names (DPC,MH)
 )
-\c@blindtext=\count132
-\c@Blindtext=\count133
-\blind@countxx=\count134
-\blindtext@numBlindtext=\count135
-\blind@countyy=\count136
-\c@blindlist=\count137
-\c@blindlistlevel=\count138
-\c@blindlist@level=\count139
-\blind@listitem=\count140
-\c@blind@listcount=\count141
-\c@blind@levelcount=\count142
+\c@blindtext=\count131
+\c@Blindtext=\count132
+\blind@countxx=\count133
+\blindtext@numBlindtext=\count134
+\blind@countyy=\count135
+\c@blindlist=\count136
+\c@blindlistlevel=\count137
+\c@blindlist@level=\count138
+\blind@listitem=\count139
+\c@blind@listcount=\count140
+\c@blind@levelcount=\count141
 )
 (/usr/share/texmf/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
@@ -338,9 +345,8 @@ Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 (/etc/texmf/tex/latex/config/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Driver file: dvips.def on input line 225.
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
 Package xcolor Info: Model `RGB' extended on input line 1353.
 Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
 Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
@@ -352,8 +358,8 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 (/usr/share/texmf-texlive/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2007/02/07 v6.75r Hypertext links for LaTeX
 \@linkdim=\dimen132
-\Hy@linkcounter=\count143
-\Hy@pagecounter=\count144
+\Hy@linkcounter=\count142
+\Hy@pagecounter=\count143
 
 (/usr/share/texmf-texlive/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2007/02/07 v6.75r Hyperref: PDFDocEncoding definition (HO)
@@ -378,7 +384,7 @@ Package hyperref Info: Bookmarks ON on input line 2444.
 Package: url 2005/06/27  ver 3.2  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 2599.
-\Fld@menulength=\count145
+\Fld@menulength=\count144
 \Field@Width=\dimen133
 \Fld@charsize=\dimen134
 \Choice@toks=\toks31
@@ -388,18 +394,25 @@ Package hyperref Info: Link nesting OFF on input line 3107.
 Package hyperref Info: Hyper index ON on input line 3110.
 Package hyperref Info: backreferencing OFF on input line 3117.
 Package hyperref Info: Link coloring OFF on input line 3122.
-\Hy@abspage=\count146
-\c@Item=\count147
-\c@Hfootnote=\count148
+\Hy@abspage=\count145
+\c@Item=\count146
+\c@Hfootnote=\count147
 )
-*hyperref using default driver hpdftex*
-(/usr/share/texmf-texlive/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2007/02/07 v6.75r Hyperref driver for pdfTeX
-\Fld@listcount=\count149
-)
+*hyperref using default driver hdvips*
+(/usr/share/texmf-texlive/tex/latex/hyperref/hdvips.def
+File: hdvips.def 2007/02/07 v6.75r Hyperref driver for dvips
+
+(/usr/share/texmf-texlive/tex/latex/hyperref/pdfmark.def
+File: pdfmark.def 2007/02/07 v6.75r Hyperref definitions for pdfmark specials
+\pdf@docset=\toks33
+\pdf@box=\box38
+\pdf@toks=\toks34
+\pdf@defaulttoks=\toks35
+\Fld@listcount=\count148
+))
 (/usr/share/texmf-texlive/tex/latex/footmisc/footmisc.sty
 Package: footmisc 2005/03/17 v5.3d a miscellany of footnote facilities
-\FN@temptoken=\toks33
+\FN@temptoken=\toks36
 \footnotemargin=\dimen135
 
 
@@ -410,7 +423,7 @@ LaTeX Warning: Command \@makecol  has changed.
 LaTeX Warning: Command \@footnotetext  has changed.
                Check if current package is valid.
 
-\c@pp@next@reset=\count150
+\c@pp@next@reset=\count149
 Package footmisc Info: Declaring symbol style bringhurst on input line 817.
 Package footmisc Info: Declaring symbol style chicago on input line 818.
 Package footmisc Info: Declaring symbol style wiley on input line 819.
@@ -449,19 +462,7 @@ LaTeX Font Info:    ... okay on input line 103.
  (/usr/share/texmf-texlive/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2003/11/29 Fixes to fontencodings LGR, T3
 )
-(/usr/share/texmf/tex/context/base/supp-pdf.tex
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count151
-\scratchdimen=\dimen136
-\scratchbox=\box38
-\nofMPsegments=\count152
-\nofMParguments=\count153
-\everyMPshowfont=\toks34
-\MPscratchCnt=\count154
-\MPscratchDim=\dimen137
-\MPnumerator=\count155
-\everyMPtoPDFconversion=\toks35
-) ABD: EveryShipout initializing macros
+ABD: EveryShipout initializing macros
 Package hyperref Info: Link coloring OFF on input line 103.
 
 (/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
@@ -470,7 +471,7 @@ Package: nameref 2006/12/27 v2.28 Cross-referencing by name of section
 (/usr/share/texmf-texlive/tex/latex/oberdiek/refcount.sty
 Package: refcount 2006/02/20 v3.0 Data extraction from references (HO)
 )
-\c@section@level=\count156
+\c@section@level=\count150
 )
 LaTeX Info: Redefining \ref on input line 103.
 LaTeX Info: Redefining \pageref on input line 103.
@@ -479,28 +480,20 @@ LaTeX Info: Redefining \pageref on input line 103.
 \@outlinefile=\write6
 \openout6 = `bach.out'.
 
- <Titelblatt.pdf, id=97, page=1, 597.23125pt x 845.1575pt>
-File: Titelblatt.pdf Graphic file (type pdf)
 
-<use Titelblatt.pdf, page 1>
-File: Titelblatt.pdf Graphic file (type pdf)
- <use Titelblatt.pdf, page 1>
-File: Titelblatt.pdf Graphic file (type pdf)
 
-<use Titelblatt.pdf, page 1>
-File: Titelblatt.pdf Graphic file (type pdf)
- <use Titelblatt.pdf, page 1>
-File: Titelblatt.pdf Graphic file (type pdf)
+Package hyperref Warning: Rerun to get /PageLabels entry.
 
-<use Titelblatt.pdf, page 1> [1
+
+Package pdfpages Warning: I cannot determine the number of pages of the
+(pdfpages)                included document, while in DVI mode. You can
+(pdfpages)                use the option `lastpage' to give me a hint.
+
+[1
 
 \openout3 = `bach.ist'.
 
- <./Titelblatt.pdf
-
-pdfTeX warning: pdflatex (file ./Titelblatt.pdf): PDF inclusion: Page Group det
-ected which pdfTeX can't handle. Ignoring it.
->] (./bach.toc
+] (./bach.toc
 LaTeX Font Info:    Try loading font information for U+msa on input line 2.
  (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2002/01/19 v2.2g AMS font definitions
@@ -509,11 +502,21 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 2.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2002/01/19 v2.2g AMS font definitions
-))
+)
+Overfull \hbox (208.1759pt too wide) in paragraph at lines 11--11
+ [][] [] [][]  
+ []
+
+
+Overfull \hbox (39.5409pt too wide) in paragraph at lines 19--19
+ [][] [] [][]  
+ []
+
+)
 \tf@toc=\write7
 \openout7 = `bach.toc'.
 
- [2{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./tex/preamble.tex
+ [2] (./tex/preamble.tex
 (/usr/share/texmf-texlive/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2004/10/17 UCS: Unicode data U+0000..U+00FF
 )
@@ -521,26 +524,52 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--2
 
  []
 
-) [3] (./tex/einleitung.tex) <bilder/fzk2.png, id=153, 132.495pt x 231.264pt>
-File: bilder/fzk2.png Graphic file (type png)
+) [3] (./tex/einleitung.tex)
 
-<use bilder/fzk2.png>
-Overfull \vbox (3.86385pt too high) has occurred while \output is active []
+! LaTeX Error: Cannot determine size of graphic in bilder/fzk2.png (no Bounding
+Box).
 
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.125 \newpage
+              
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
-[4 <./bilder/fzk2.png>] (./tex/abstract.tex)
-File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png>
-Overfull \vbox (3.86385pt too high) has occurred while \output is active []
+File: bilder/fzk2.png Graphic file (type eps)
+<bilder/fzk2.png> [4] (./tex/abstract.tex)
 
+! LaTeX Error: Cannot determine size of graphic in bilder/fzk2.png (no Bounding
+Box).
 
-[5] (./tex/aufgabenstellung.tex)
-File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png>
-Overfull \vbox (3.86385pt too high) has occurred while \output is active []
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.126 \input{tex/abstract.tex} \newpage
+                                       
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
+File: bilder/fzk2.png Graphic file (type eps)
+<bilder/fzk2.png> [5] (./tex/aufgabenstellung.tex)
 
-[6] (./tex/grundlagen.tex (./tex/dms.tex
+! LaTeX Error: Cannot determine size of graphic in bilder/fzk2.png (no Bounding
+Box).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.127 \input{tex/aufgabenstellung.tex} \newpage
+                                               
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+File: bilder/fzk2.png Graphic file (type eps)
+<bilder/fzk2.png> [6] (./tex/grundlagen.tex (./tex/dms.tex
 LaTeX Font Info:    Try loading font information for OMS+aer on input line 7.
 
 (/usr/share/texmf-texlive/tex/latex/ae/omsaer.fd
@@ -554,23 +583,42 @@ Overfull \hbox (5.03622pt too wide) in paragraph at lines 7--8
 or-ma-tio-nen struk-
  []
 
-File: bilder/fzk2.png Graphic file (type png)
-<use bilder/fzk2.png>
-Overfull \vbox (3.86385pt too high) has occurred while \output is active []
 
+! LaTeX Error: Cannot determine size of graphic in bilder/fzk2.png (no Bounding
+Box).
 
-[7]
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 ...und zusammengestellt."' \begin{flushright}
+                                                  \cite{DMS08} S. 2\end{flus...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+File: bilder/fzk2.png Graphic file (type eps)
+<bilder/fzk2.png> [7]
 Overfull \hbox (2.51434pt too wide) in paragraph at lines 37--38
 []\T1/aer/m/n/12 ^^RBei \T1/aer/bx/n/12 Dokumenten-Management-Systemen im en-ge
 -ren Sin-
  []
 
-File: bilder/fzk2.png Graphic file (type png)
-<use bilder/fzk2.png>
-Overfull \vbox (3.86385pt too high) has occurred while \output is active []
 
+! LaTeX Error: Cannot determine size of graphic in bilder/fzk2.png (no Bounding
+Box).
 
-[8]
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.38 
+     
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+File: bilder/fzk2.png Graphic file (type eps)
+<bilder/fzk2.png> [8]
 Overfull \hbox (5.57437pt too wide) in paragraph at lines 39--39
 []\T1/aer/m/n/12 Den \T1/aer/bx/n/12 Dokumenten-Management-Systemen im wei-te-r
 en Sin-
@@ -594,43 +642,76 @@ Overfull \hbox (7.01544pt too wide) in paragraph at lines 45--47
 
  []
 
-File: bilder/fzk2.png Graphic file (type png)
-<use bilder/fzk2.png>
-Overfull \vbox (3.86385pt too high) has occurred while \output is active []
 
+! LaTeX Error: Cannot determine size of graphic in bilder/fzk2.png (no Bounding
+Box).
 
-[9])
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.47 \begin{flushright}
+                       \cite{DMS08} S. 114f\end{flushright}\end{quote}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+File: bilder/fzk2.png Graphic file (type eps)
+<bilder/fzk2.png> [9])
 LaTeX Font Info:    Try loading font information for T1+aett on input line 20.
  (/usr/share/texmf-texlive/tex/latex/ae/t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 )
-File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png>
-Overfull \vbox (3.86385pt too high) has occurred while \output is active []
 
+! LaTeX Error: Cannot determine size of graphic in bilder/fzk2.png (no Bounding
+Box).
 
-[10]
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.24 
+     
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+File: bilder/fzk2.png Graphic file (type eps)
+<bilder/fzk2.png> [10]
 Overfull \hbox (6.74178pt too wide) in paragraph at lines 25--28
 []\T1/aer/m/n/12 Nagios er-freut sich ho-her Be-liebt-heit auf-grund der (be-re
 its vor-han-de-nen [macht
  []
 
 (./tex/aufbau.tex
-File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png>
-Overfull \vbox (3.86385pt too high) has occurred while \output is active []
 
+! LaTeX Error: Cannot determine size of graphic in bilder/fzk2.png (no Bounding
+Box).
 
-[11] <bilder/nagios-proc.png, id=212, 409.53pt x 266.9975pt>
-File: bilder/nagios-proc.png Graphic file (type png)
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \newpage
+            
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
-<use bilder/nagios-proc.png>
-File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png>
-Overfull \vbox (3.86385pt too high) has occurred while \output is active []
+File: bilder/fzk2.png Graphic file (type eps)
+<bilder/fzk2.png> [11]
 
+! LaTeX Error: Cannot determine size of graphic in bilder/nagios-proc.png (no B
+oundingBox).
 
-[12 <./bilder/nagios-proc.png (PNG copy)>]
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 ...th=0.9\textwidth]{bilder/nagios-proc.png}}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+File: bilder/nagios-proc.png Graphic file (type eps)
+<bilder/nagios-proc.png>
 (/usr/share/texmf-texlive/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2004/09/05 1.3 listings language file
 )
@@ -640,111 +721,394 @@ File: lstlang1.sty 2004/09/05 1.3 listings language file
 (/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
 File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 )
-<bilder/check-swap-white.png, id=225, 471.7625pt x 29.10875pt>
-File: bilder/check-swap-white.png Graphic file (type png)
 
-<use bilder/check-swap-white.png>
-<bilder/nagios-4state-tab.png, id=226, 496.85625pt x 212.795pt>
-File: bilder/nagios-4state-tab.png Graphic file (type png)
+! LaTeX Error: Cannot determine size of graphic in bilder/fzk2.png (no Bounding
+Box).
 
-<use bilder/nagios-4state-tab.png>
-File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png>
-Overfull \vbox (3.86385pt too high) has occurred while \output is active []
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 N
+      agios überprüft in einem festlegbaren / veränderbaren Zeitintervall...
 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
-[13 <./bilder/check-swap-white.png (PNG copy)>]
-<bilder/hs-states.png, id=248, 762.85pt x 216.81pt>
-File: bilder/hs-states.png Graphic file (type png)
- <use bilder/hs-states.png>
-File: bilder/fzk2.png Graphic file (type png)
+File: bilder/fzk2.png Graphic file (type eps)
+<bilder/fzk2.png> [12]
 
-<use bilder/fzk2.png>
-Overfull \vbox (3.86385pt too high) has occurred while \output is active []
+! LaTeX Error: Cannot determine size of graphic in bilder/check-swap-white.png 
+(no BoundingBox).
 
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.46 ...5\textwidth]{bilder/check-swap-white.png}}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
-[14 <./bilder/nagios-4state-tab.png (PNG copy)> <./bilder/hs-states.png>])
-(./tex/services.tex <bilder/check-http.png, id=263, 638.385pt x 29.10875pt>
-File: bilder/check-http.png Graphic file (type png)
+File: bilder/check-swap-white.png Graphic file (type eps)
+<bilder/check-swap-white.png>
 
-<use bilder/check-http.png>
-File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png>
-Overfull \vbox (3.86385pt too high) has occurred while \output is active []
+! LaTeX Error: Cannot determine size of graphic in bilder/fzk2.png (no Bounding
+Box).
 
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.53 D
+      abei wird in vier verschiedene Rückgabewerte / Antworten der Plugins ...
 
-[15] <bilder/nagios-kern.png, id=269, 860.21375pt x 595.22375pt>
-File: bilder/nagios-kern.png Graphic file (type png)
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
-<use bilder/nagios-kern.png>
-File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png>
-Overfull \vbox (3.86385pt too high) has occurred while \output is active []
+File: bilder/fzk2.png Graphic file (type eps)
+<bilder/fzk2.png> [13]
 
+! LaTeX Error: Cannot determine size of graphic in bilder/nagios-4state-tab.png
+ (no BoundingBox).
 
-[16 <./bilder/check-http.png (PNG copy)> <./bilder/nagios-kern.png>]
-<bilder/check_by_ssh.png, id=283, 718.685pt x 28.105pt>
-File: bilder/check_by_ssh.png Graphic file (type png)
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.57 ...\textwidth]{bilder/nagios-4state-tab.png}}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
-<use bilder/check_by_ssh.png>
-File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png>
-Overfull \vbox (3.86385pt too high) has occurred while \output is active []
+File: bilder/nagios-4state-tab.png Graphic file (type eps)
+<bilder/nagios-4state-tab.png>
 
+! LaTeX Error: Cannot determine size of graphic in bilder/hs-states.png (no Bou
+ndingBox).
 
-[17 <./bilder/check_by_ssh.png (PNG copy)>]
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.67 ...dth=0.85\textwidth]{bilder/hs-states.png}}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+File: bilder/hs-states.png Graphic file (type eps)
+<bilder/hs-states.png>
+
+! LaTeX Error: Cannot determine size of graphic in bilder/fzk2.png (no Bounding
+Box).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.73 ...das jeweilige Plugin gemeldet\begin{quote}
+                                                  "`; der Zustand wechselt n...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+File: bilder/fzk2.png Graphic file (type eps)
+<bilder/fzk2.png> [14]
+
+! LaTeX Error: Cannot determine size of graphic in bilder/fzk2.png (no Bounding
+Box).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.80 
+     
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+File: bilder/fzk2.png Graphic file (type eps)
+<bilder/fzk2.png> [15]
+
+! LaTeX Error: Cannot determine size of graphic in bilder/fzk2.png (no Bounding
+Box).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.87 \item F
+            Lapping \footnote{\url{http://nagios.sourceforge.net/docs/2\_0/f...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+File: bilder/fzk2.png Graphic file (type eps)
+<bilder/fzk2.png> [16]) (./tex/services.tex
+
+! LaTeX Error: Cannot determine size of graphic in bilder/check-http.png (no Bo
+undingBox).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 ...dth=0.85\textwidth]{bilder/check-http.png}}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+File: bilder/check-http.png Graphic file (type eps)
+<bilder/check-http.png>
+
+! LaTeX Error: Cannot determine size of graphic in bilder/nagios-kern.png (no B
+oundingBox).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21 ...h=0.85\textwidth]{bilder/nagios-kern.png}}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+File: bilder/nagios-kern.png Graphic file (type eps)
+<bilder/nagios-kern.png>
+
+! LaTeX Error: Cannot determine size of graphic in bilder/fzk2.png (no Bounding
+Box).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.40 
+     
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+File: bilder/fzk2.png Graphic file (type eps)
+<bilder/fzk2.png> [17]
+
+! LaTeX Error: Cannot determine size of graphic in bilder/fzk2.png (no Bounding
+Box).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.40 
+     
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+File: bilder/fzk2.png Graphic file (type eps)
+<bilder/fzk2.png> [18]
+
+! LaTeX Error: Cannot determine size of graphic in bilder/check_by_ssh.png (no 
+BoundingBox).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.43 ...=0.85\textwidth]{bilder/check_by_ssh.png}}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+File: bilder/check_by_ssh.png Graphic file (type eps)
+<bilder/check_by_ssh.png>
+
+! LaTeX Error: Cannot determine size of graphic in bilder/fzk2.png (no Bounding
+Box).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.57 
+     
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+File: bilder/fzk2.png Graphic file (type eps)
+<bilder/fzk2.png> [19]
+
+! LaTeX Error: Cannot determine size of graphic in bilder/fzk2.png (no Bounding
+Box).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.63 
+     
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+File: bilder/fzk2.png Graphic file (type eps)
+<bilder/fzk2.png> [20]
 Overfull \hbox (21.68184pt too wide) in paragraph at lines 68--68
 \T1/aer/m/n/12 nut-zen, um lo-ka-le Res-sour-cen wie Pro-zes-se, Fest-plat-ten 
 oder Interface-
  []
 
-File: bilder/fzk2.png Graphic file (type png)
-<use bilder/fzk2.png>
-Overfull \vbox (3.86385pt too high) has occurred while \output is active []
+
+! LaTeX Error: Cannot determine size of graphic in bilder/nsca.png (no Bounding
+Box).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.86 ...cs[width=0.85\textwidth]{bilder/nsca.png}}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+File: bilder/nsca.png Graphic file (type eps)
+<bilder/nsca.png>
+
+! LaTeX Error: Cannot determine size of graphic in bilder/fzk2.png (no Bounding
+Box).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.90 
+     
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+File: bilder/fzk2.png Graphic file (type eps)
+<bilder/fzk2.png> [21]
+
+! LaTeX Error: Cannot determine size of graphic in bilder/nrpe.png (no Bounding
+Box).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.94 ...ics[width=0.9\textwidth]{bilder/nrpe.png}}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+File: bilder/nrpe.png Graphic file (type eps)
+<bilder/nrpe.png>
+
+! LaTeX Error: Cannot determine size of graphic in bilder/fzk2.png (no Bounding
+Box).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.105 \item S
+             ervice Definitionen -> mit Host verbinden
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+File: bilder/fzk2.png Graphic file (type eps)
+<bilder/fzk2.png> [22])
+
+! LaTeX Error: Cannot determine size of graphic in bilder/unix-agents.png (no B
+oundingBox).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.42 ...th=0.9\textwidth]{bilder/unix-agents.png}}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+File: bilder/unix-agents.png Graphic file (type eps)
+<bilder/unix-agents.png>
+
+! LaTeX Error: Cannot determine size of graphic in bilder/fzk2.png (no Bounding
+Box).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.51 \subsubsection
+                   {(Windows) Agenten oder allgemein Einholen von Infos}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+File: bilder/fzk2.png Graphic file (type eps)
+<bilder/fzk2.png> [23]
+
+! LaTeX Error: Cannot determine size of graphic in bilder/fzk2.png (no Bounding
+Box).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.59 \item N
+            RPE\_NT
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+File: bilder/fzk2.png Graphic file (type eps)
+<bilder/fzk2.png> [24]
+
+! LaTeX Error: Cannot determine size of graphic in bilder/win-agents.png (no Bo
+undingBox).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.66 ...dth=0.9\textwidth]{bilder/win-agents.png}}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+File: bilder/win-agents.png Graphic file (type eps)
+<bilder/win-agents.png> (./tex/stellent.tex
+
+! LaTeX Error: Cannot determine size of graphic in bilder/fzk2.png (no Bounding
+Box).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 O
+     racle DB als Grundlage
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+File: bilder/fzk2.png Graphic file (type eps)
+<bilder/fzk2.png> [25]
+
+LaTeX Warning: Reference `Huff06' on page 26 undefined on input line 12.
 
 
-[18] <bilder/nsca.png, id=302, 645.41125pt x 202.7575pt>
-File: bilder/nsca.png Graphic file (type png)
- <use bilder/nsca.png>
-<bilder/nrpe.png, id=304, 665.6983pt x 164.89775pt>
-File: bilder/nrpe.png Graphic file (type png)
- <use bilder/nrpe.png>
-File: bilder/fzk2.png Graphic file (type png)
+! LaTeX Error: Cannot determine size of graphic in bilder/fzk2.png (no Bounding
+Box).
 
-<use bilder/fzk2.png>
-Overfull \vbox (3.86385pt too high) has occurred while \output is active []
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.35 \item \textbf
+                  {Ping} Überprüft, ob der Rechner vom Nagios-Server über...
 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
-[19 <./bilder/nsca.png (PNG copy)>])
-<bilder/unix-agents.png, id=315, 622.325pt x 295.1025pt>
-File: bilder/unix-agents.png Graphic file (type png)
-
-<use bilder/unix-agents.png>
-File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png>
-Overfull \vbox (3.86385pt too high) has occurred while \output is active []
-
-
-[20 <./bilder/nrpe.png (PNG copy)> <./bilder/unix-agents.png (PNG copy)>]
-<bilder/win-agents.png, id=326, 572.1375pt x 391.4625pt>
-File: bilder/win-agents.png Graphic file (type png)
-
-<use bilder/win-agents.png>
-File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png>
-Overfull \vbox (3.86385pt too high) has occurred while \output is active []
-
-
-[21 <./bilder/win-agents.png (PNG copy)>] (./tex/stellent.tex
-
-LaTeX Warning: Reference `Huff06' on page 22 undefined on input line 12.
-
-File: bilder/fzk2.png Graphic file (type png)
-<use bilder/fzk2.png>
-Overfull \vbox (3.86385pt too high) has occurred while \output is active []
-
-
-[22]
+File: bilder/fzk2.png Graphic file (type eps)
+<bilder/fzk2.png> [26]
 Overfull \hbox (1.49574pt too wide) in paragraph at lines 37--38
 []\T1/aer/bx/n/12 Festplattenspeicherausnutzung \T1/aer/m/n/12 �ber-wacht die S
 pei-cher-platzaus-las-
@@ -756,48 +1120,115 @@ Overfull \hbox (15.20657pt too wide) in paragraph at lines 51--52
 nt-Dienstes^^P-^^R\T1/aett/m/n/12 sccdms01\T1/aer/m/n/12 ^^P
  []
 
-File: bilder/fzk2.png Graphic file (type png)
-<use bilder/fzk2.png>
-Overfull \vbox (3.86385pt too high) has occurred while \output is active []
+
+! LaTeX Error: Cannot determine size of graphic in bilder/fzk2.png (no Bounding
+Box).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.54 \item \textbf
+                  {Antivirusdienst}: Den Zustand den Dienstes überprüfen, ...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+File: bilder/fzk2.png Graphic file (type eps)
+<bilder/fzk2.png> [27]
+
+! LaTeX Error: Cannot determine size of graphic in bilder/fzk2.png (no Bounding
+Box).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.77 
+     
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+File: bilder/fzk2.png Graphic file (type eps)
+<bilder/fzk2.png> [28]
+
+! LaTeX Error: Cannot determine size of graphic in bilder/fzk2.png (no Bounding
+Box).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.97 
+     
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+File: bilder/fzk2.png Graphic file (type eps)
+<bilder/fzk2.png> [29]))
+
+! LaTeX Error: Cannot determine size of graphic in bilder/fzk2.png (no Bounding
+Box).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.128 \input{tex/grundlagen.tex} \newpage
+                                         
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+File: bilder/fzk2.png Graphic file (type eps)
+<bilder/fzk2.png> [30] (./bach.lof
+Overfull \hbox (180.74754pt too wide) in paragraph at lines 6--6
+ [][] [] [][]  
+ []
 
 
-[23]
-File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png>
-Overfull \vbox (3.86385pt too high) has occurred while \output is active []
+Overfull \hbox (5.4171pt too wide) in paragraph at lines 8--8
+ [][] [] [][]  
+ []
 
-
-[24]
-File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png>
-Overfull \vbox (3.86385pt too high) has occurred while \output is active []
-
-
-[25]))
-File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png>
-Overfull \vbox (3.86385pt too high) has occurred while \output is active []
-
-
-[26] (./bach.lof)
+)
 \tf@lof=\write8
 \openout8 = `bach.lof'.
 
-File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png>
-Overfull \vbox (3.86385pt too high) has occurred while \output is active []
 
 
-[27] (./bach.lol)
+! LaTeX Error: Cannot determine size of graphic in bilder/fzk2.png (no Bounding
+Box).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.143 \newpage
+              
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+File: bilder/fzk2.png Graphic file (type eps)
+<bilder/fzk2.png> [31] (./bach.lol)
 \tf@lol=\write9
 \openout9 = `bach.lol'.
 
-File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png>
-Overfull \vbox (3.86385pt too high) has occurred while \output is active []
 
 
-[28]
+! LaTeX Error: Cannot determine size of graphic in bilder/fzk2.png (no Bounding
+Box).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.148 \newpage
+              
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+File: bilder/fzk2.png Graphic file (type eps)
+<bilder/fzk2.png> [32]
 Underfull \hbox (badness 3590) in paragraph at lines 154--158
 []\T1/aer/m/n/12 G�tzer, Klaus; Schma-le, Ralf; u.a. (2008) ^^RDokumenten-
  []
@@ -808,93 +1239,54 @@ Underfull \hbox (badness 1661) in paragraph at lines 159--162
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 165--166
-\T1/aer/m/n/12 Quelle: []$\T1/aett/m/n/12 http : / / www . oracle . com / techn
-ology / products /
+Overfull \hbox (185.81015pt too wide) in paragraph at lines 165--166
+\T1/aer/m/n/12 Quelle: [][][][] 
  []
 
-File: bilder/fzk2.png Graphic file (type png)
-<use bilder/fzk2.png>
-Overfull \vbox (3.86385pt too high) has occurred while \output is active []
 
+! LaTeX Error: Cannot determine size of graphic in bilder/fzk2.png (no Bounding
+Box).
 
-[29] (./bach.gls)
-File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png>
-Overfull \vbox (3.86385pt too high) has occurred while \output is active []
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.166 \end{thebibliography}\newpage
+                                   
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
+File: bilder/fzk2.png Graphic file (type eps)
+<bilder/fzk2.png> [33] (./bach.gls)
 
-[30] (./bach.aux)
+! LaTeX Error: Cannot determine size of graphic in bilder/fzk2.png (no Bounding
+Box).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.172 \end{document}
+                    
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+File: bilder/fzk2.png Graphic file (type eps)
+<bilder/fzk2.png> [34] (./bach.aux)
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 9080 strings out of 94074
- 121646 string characters out of 1165153
- 234405 words of memory out of 1500000
- 11994 multiletter control sequences out of 10000+50000
- 41062 words of font info for 91 fonts, out of 1200000 for 2000
+ 8612 strings out of 94075
+ 115653 string characters out of 1165176
+ 234425 words of memory out of 1500000
+ 11675 multiletter control sequences out of 10000+50000
+ 30048 words of font info for 56 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
- 36i,16n,51p,554b,1052s stack positions out of 5000i,500n,6000p,200000b,5000s
-pdfTeX warning (dest): name{Hfootnote.15} has been referenced but does not ex
-ist, replaced by a fixed one
+ 36i,12n,51p,1573b,1031s stack positions out of 5000i,500n,6000p,200000b,5000s
 
-pdfTeX warning (dest): name{Hfootnote.14} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{Hfootnote.13} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{Hfootnote.12} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{Hfootnote.11} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{Hfootnote.10} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{Hfootnote.9} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{Hfootnote.8} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{Hfootnote.7} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{Hfootnote.6} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{Hfootnote.5} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{Hfootnote.4} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
-, replaced by a fixed one
-
-</usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmbx12.pfb></usr/share/texmf-t
-exlive/fonts/type1/bluesky/cm/cmmi12.pfb></usr/share/texmf-texlive/fonts/type1/
-bluesky/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmr12.pfb
-></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmr7.pfb></usr/share/texmf-te
-xlive/fonts/type1/bluesky/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/blu
-esky/cm/cmsl12.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmsy10.pfb>
-</usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmti12.pfb></usr/share/texmf-t
-exlive/fonts/type1/bluesky/cm/cmtt10.pfb></usr/share/texmf-texlive/fonts/type1/
-bluesky/cm/cmtt12.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmtt8.pf
-b>
-Output written on bach.pdf (30 pages, 1017186 bytes).
-PDF statistics:
- 470 PDF objects out of 1000 (max. 8388607)
- 112 named destinations out of 1000 (max. 131072)
- 268 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+Output written on bach.dvi (34 pages, 119356 bytes).
