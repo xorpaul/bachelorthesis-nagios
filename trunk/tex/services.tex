@@ -32,7 +32,7 @@ Die Überprüfung von nicht netzwerkbasierenden Diensten soll mit den restlichen
 
 \paragraph{Variante / Methode / Client 2}
 
-Falls es sich beim Client um ein Unixderivat handelt, ist der entfernte Zugriff auf diesen Client per SSH\footnote{Durch eine Secure Shell (SSH) kann man sich eine verschlüsselte Netzwerkverbindung zum entfernten Rechner aufbauen.}-Dienst möglich.
+Falls es sich beim Client um ein Unixderivat handelt, ist der entfernte Zugriff auf diesen Client per SSH\footnote{Durch eine Secure Shell (SSH) \glossary{name={SSH}, description={Secure Shell}} kann man sich eine verschlüsselte Netzwerkverbindung zum entfernten Rechner aufbauen.}-Dienst möglich.
 Dazu muss auf dem Client ein SSH-Benutzerkonto angelegt sein, mit dem sich Nagios anmelden kann und die öffentlichen Schlüssel (zwischen Nagios Server und Client) ausgetauscht werden, damit keine passwortabhängige Benutzerauthentifizierung (Eingabe von PW) notwendig ist.
 Danach können lokale Ressourcen, wie Festplattenkapazität oder Logdateien mit dem entsprechenden Plugin direkt auf dem entfernten Rechner überwacht werden.
 Damit der Client diese Plugins verwenden kann, müssen sich die gewünschten Plugins (auch) auf dem Client (lokal) befinden.
@@ -49,7 +49,7 @@ Eine beispielhafte Verwendung mit dem dafür gedachten Nagios Plugin \pictext{ch
 
 \paragraph{Variante / Methode / Client 3}
 
-Eine alternative Möglichkeit solche Dienste auf entfernten Rechnern zu überwachen, ist durch den sogenannten Nagios Remote Plugin Executor (kurz NRPE).
+Eine alternative Möglichkeit solche Dienste auf entfernten Rechnern zu überwachen, ist durch den sogenannten Nagios Remote Plugin Executor (NRPE) \glossary{name={NRPE}, description={Nagios Remote Plugin Executor}}.
 Hier muss auf dem Client (extra) ein "`Agent"' installiert werden, welcher einen (TCP)-Port öffnet und auf diesem auf Anweisungen durch den Nagios Server horcht.
 
 Der Nagios Server kann diese Anforderungen über das (dafür gedachte) Plugin \pictext{check\_nrpe} an den Client verschicken.
@@ -62,12 +62,12 @@ Daher könnte die SSH Variante (wenn unbehandelt PATH, user einschränken) fatal
 Beide Verfahren (hingegen) unterstützen die Verschlüsselung des Datenaustausches untereinander.
 
 \paragraph{Variante / Methode / Client 4}
-Diese Variante wird nur grob angerissen / kurz / verkürzt behandelt, da sich diese Arbeit hauptsächlich mit der Überwachung von Servern beschäftigt und nicht von Netzwerkkomponenten wie Switches oder Router, die nur per SNMP überwacht werden können, wenn mehr Informationen als eine schlichte Erreichbarkeit überprüft / gesammelt werden soll.
+Diese Variante wird nur grob angerissen / kurz / verkürzt behandelt, da sich diese Arbeit hauptsächlich mit der Überwachung von Servern beschäftigt und nicht von Netzwerkkomponenten wie Switches oder Router, die nur per Simple Network Management Protocol (SNMP) \glossary{name={SNMP}, description={Simple Network Management Protocol}}überwacht werden können, wenn mehr Informationen als eine schlichte Erreichbarkeit überprüft / gesammelt werden soll.
 
 Barth schreibt über diese Variante / Überwachungsmethode:
 \begin{quote}"`Mit dem Simple Network Management Protocol SNMP lassen sich ebenfalls lokale Ressourcen übers Netz abfragen [...]. Ist auf dem Zielhost ein SNMP-Daemon installiert [...] kann Nagios ihn nutzen, um lokale Ressourcen wie Prozesse, Festplatten oder Interface-Auslastung abzufragen."' \begin{flushright}\cite{Barth08} S. 101\end{flushright}\end{quote} 
 
-Durch SNMP kann auf die strukturierte Datenhaltung der MIB\footnote{Die Management Information Base (MIB) dient als SNMP-Informationstruktur und besteht aus einem hierarchischen, aus Zahlen aufgebauten Namensraum. Ähnliche Struktur wie andere hierarchische Verzeichnisdiensten wie DNS oder LDAP. Quelle: \cite{Barth08} S.233} in den entfernten Netzwerkknoten zugegriffen werden.
+Durch SNMP kann auf die strukturierte Datenhaltung der MIB\footnote{Die Management Information Base (MIB) \glossary{name={MIB}, description={Management Information Base}} dient als SNMP-Informationstruktur und besteht aus einem hierarchischen, aus Zahlen aufgebauten Namensraum. Ähnliche Struktur wie andere hierarchische Verzeichnisdiensten wie DNS oder LDAP. Quelle: \cite{Barth08} S.233} in den entfernten Netzwerkknoten zugegriffen werden.
 
 \begin{center}
 TODO: SNMP MIB?
@@ -80,7 +80,7 @@ Man unterscheidet zwischen aktiven und passiven Checks.
 asynchron!
 Bei passiven Tests führt der zu überwachende Computer das statuserzeugende Ergebnis selbst aus und sendet es über ein Plugin zum Nagios Server.
 Hierfür muss das Testprogramm bzw Script und das entsprechende Plugin \pictext{send\_ncsa}, welches zum Versenden der Informationen zuständig ist, auf dem Host vorhanden sein.
-Auf der anderen Seite muss der \pictext{NSCA} (Nagios Service Check Acceptor) als Dämon gestartet sein, damit die übermittelten Ergebnisse entgegengenommen werden können.
+Auf der anderen Seite muss der \pictext{NSCA} (Nagios Service Check Acceptor) \glossary{name={NSCA}, description={Nagios Service Check Acceptor}} als Dämon gestartet sein, damit die übermittelten Ergebnisse entgegengenommen werden können.
 \begin{figure}[ht]
 	\centering
 	   \fbox{\includegraphics[width=0.85\textwidth]{bilder/nsca.png}}

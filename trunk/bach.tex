@@ -8,7 +8,7 @@
 \usepackage{subfigure} 
 
 \usepackage{ae} 
-\pagestyle{scrheadings}
+
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
@@ -18,8 +18,9 @@
 \usepackage{pdfpages}
 \usepackage{listings}
 
-\usepackage{glossary}
-
+\usepackage[style=long,border=none,header=plain,cols=3]{glossary}
+%\usepackage[acronym]{style=long,border=true,cols=2}
+\setglossarystyle[acronym]{style=long,border=plain,cols=2}
 
  \usepackage{verbatim} %Mehrzeilige Kommentare durch \begin{comment} mglich  ??
 \usepackage{blindtext} % Erzeugung von lngeren Textpassagen
@@ -69,6 +70,13 @@ Die Arbeit wurde bisher keiner Prüfungsbehörde vorgelegt und auch noch nicht v
 \setlength{\footnotemargin}{0pt}
 \addto{\captionsngerman}{\renewcommand*{\listfigurename}{}}
 \makeatletter
+\makeindex
+\makeglossary
+
+\renewcommand{\entryname}{K\"urzel}
+\renewcommand{\descriptionname}{Beschreibung}
+
+
 \renewcommand*\l@section{\@dottedtocline{1}{1.5em} {2.3em}}
 \renewcommand*\l@subsection{\@dottedtocline{2}{3.8 em}{3.2em}}
 \renewcommand*\l@subsubsection{\@dottedtocline{3}{ 7.0em}{4.1em}}
@@ -84,24 +92,32 @@ Die Arbeit wurde bisher keiner Prüfungsbehörde vorgelegt und auch noch nicht v
 \renewcommand\subitem{\@idxitem \hspace*{30\p@}}
  % Tiefe der Nummerierung einstellen %
 \setcounter{secnumdepth}{3}
-\setlength{\textheight}{620pt}
+\setlength{\textheight}{660pt}
+\addtolength{\voffset}{-40pt}
 \makeatother 
 \renewcommand{\refname}{Quellenverzeichnis} 
 \linespread{1.50} %zeilenabstand 1.5}
 \setlength{\headheight}{3.0\baselineskip}
 \setlength{\fboxsep}{3mm}
-\ihead{\includegraphics[width=0.06\textwidth]{bilder/fzk2.png}}
-%\chead{\rightmark}
-\chead{\leftmark}
-\cfoot{Andreas Paul - Forschungszentrum Karlsruhe}
+
 \begin{document}
 \setlength{\parindent}{0mm}
 \includepdf{Titelblatt.pdf}
 %\maketitle
 \thispagestyle{empty}
 \newpage 
+
+\thispagestyle{empty}
 \renewcommand{\contentsname}{Inhalt}
 \tableofcontents
+\thispagestyle{empty}
+
+\pagestyle{scrheadings}
+\ihead{\includegraphics[width=0.06\textwidth]{bilder/fzk2.png}}
+%\chead{\rightmark}
+\chead{\leftmark}
+\cfoot{Andreas Paul - Forschungszentrum Karlsruhe}
+
 \newpage
 \input{tex/preamble.tex}
 \newpage
@@ -125,6 +141,13 @@ Die Arbeit wurde bisher keiner Prüfungsbehörde vorgelegt und auch noch nicht v
 \listoffigures
 
 \newpage
+
+\renewcommand{\lstlistlistingname}{}
+\section{Codelistingverzeichnis}
+\lstlistoflistings
+\newpage
+
+
 \renewcommand{\refname}{} 
 \section{Literaturverzeichnis}
 \begin{thebibliography}{xxxxxxxx}
@@ -141,8 +164,9 @@ Die Arbeit wurde bisher keiner Prüfungsbehörde vorgelegt und auch noch nicht v
 	 
 	 	 \bibitem[UCMlog09]{UCMlog09} Unbekannter Author "`vramanat"' (2009) "`Universal Content Management 10gR3 - Content Server Log File Information"', \\ Quelle: \url{http://www.oracle.com/technology/products/content-management/cdbs/loginfo.pdf} \newline Stand: 20.01.2009, Einsichtnahme: 05.06.2009
 \end{thebibliography}\newpage
-\makeindex
-\makeglossary
+
+\section{Glossar}
+\renewcommand{\glossaryname}{}
 \printglossary
 
 \end{document}
