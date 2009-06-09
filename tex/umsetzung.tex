@@ -16,6 +16,15 @@ In diesem Kapitel wird die Vorgehensweise der zuvor beschriebenen Problemstellun
 \item Bsp Aufruf aktiver Check
 \end{itemize}
 
+.Net 2.0 Framework essentiell
+NC\_Net installieren
+nagios server ip zur sicherheit angeben
+port ändern
+pw hinzufügen
+-> dienst starten
+
+test vom nagios host:
+
 \begin{lstlisting}[captionpos=b, caption=Aufruf eines aktiven Checks, label=activecheckexample, breaklines = true, language=bash]
 root@iwrpaul:/usr/local/nagios/libexec# ./check_nc_net -H secret.kit.edu -p 123456 -s secret -v RUNSCRIPT -l check_uname.exe
 Operating System OK - Microsoft(R) Windows(R) Server 2003 Standard Edition Service Pack 2
@@ -24,3 +33,20 @@ Operating System OK - Microsoft(R) Windows(R) Server 2003 Standard Edition Servi
 Das auf dem Nagios Server liegende Script \pictext{check\_nc\_net} stellt eine Verbindung zum angegebenen Server her und führt die mit dem Parameter \pictext{l} angegebene Datei aus. Dafür muss sich diese Datei in dem Script Verzeichnis des NC\_Net befinden.
 
 
+Danach command definition hinzufügen, weil PW und Port verändert wurde:
+\begin{lstlisting}[captionpos=b, caption=Nagios-Befehls Definition für den Host, label=activecheckexample, breaklines = true, language=bash]
+# 'check_nt_bdb' command definition
+#	_NSCLIENT_PORT	13599
+#	_NSCLIENT_PW	KAnqloaQk
+#
+define command{
+    command_name    check_nc_net_bdb
+	command_line 	/usr/lib/nagios/plugins/check_nc_net -H $HOSTNAME$ -p 13599 -s KAnqloaQk -v $ARG1$
+        }
+\end{lstlisting}
+
+Danach
+\begin{itemize}
+\item Logfiles check.exe 
+\item batchloader.exe script
+\end{itemize}
