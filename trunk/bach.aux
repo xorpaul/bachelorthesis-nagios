@@ -12,7 +12,9 @@
 \global \let \hyper@last\relax 
 \fi
 
-\@istfilename {bach.ist}
+\@newglossary{main}{glg}{gls}{glo}
+\@istfilename{bach.ist}
+\@glsorder{word}
 \select@language{ngerman}
 \@writefile{toc}{\select@language{ngerman}}
 \@writefile{lof}{\select@language{ngerman}}
@@ -33,9 +35,15 @@
 \citation{DMS08}
 \citation{DMS08}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.2}Enterprise-Content-Management-Systeme - optional}{7}{subsubsection.4.1.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Nagios}{8}{subsection.4.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}cronjobs}{8}{subsection.4.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Farbraum}{8}{subsection.4.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}ds - ADS Benutzer}{8}{subsection.4.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Metadaten allg}{8}{subsection.4.5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.6}alse+-true+-}{8}{subsection.4.6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.7}evtl Oracle DB}{8}{subsection.4.7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.8}Nagios}{8}{subsection.4.8}}
 \citation{Barth08}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.1}Aufbau (von Nagios)}{9}{subsubsection.4.2.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.8.1}Aufbau (von Nagios)}{9}{subsubsection.4.8.1}}
 \@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Logische Nagios Struktur}}{9}{figure.1}}
 \newlabel{nagios-proc}{{1}{9}{Logische Nagios Struktur\relax }{figure.1}{}}
 \citation{Barth08}
@@ -49,7 +57,7 @@
 \newlabel{nagios-4states}{{3}{11}{Rückgabewerte für Nagios Plugins\relax }{figure.3}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Beispiel f\IeC {\"u}r den zeitlichen Verlauf durch vers. Zust\IeC {\"a}nde}}{11}{figure.4}}
 \newlabel{hs-states}{{4}{11}{Beispiel für den zeitlichen Verlauf durch vers. Zustände\relax }{figure.4}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.2}Service Checks und deren / ihre Realisierung / Ausf\IeC {\"u}hrung / (\IeC {\"U}berpr\IeC {\"u}fungs)Methoden}{12}{subsubsection.4.2.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.8.2}Service Checks und deren / ihre Realisierung / Ausf\IeC {\"u}hrung / (\IeC {\"U}berpr\IeC {\"u}fungs)Methoden}{12}{subsubsection.4.8.2}}
 \citation{Barth08}
 \@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Beispielhafte manuelle Ausf\IeC {\"u}hrung eines netzwerkbasierenden Servicechecks / HTTP Server Check}}{13}{figure.5}}
 \newlabel{check-http}{{5}{13}{Beispielhafte manuelle Ausführung eines netzwerkbasierenden Servicechecks / HTTP Server Check\relax }{figure.5}{}}
@@ -66,29 +74,36 @@
 \@writefile{toc}{\contentsline {paragraph}{passive}{16}{section*.6}}
 \@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Passive Checks mit NSCA}}{16}{figure.8}}
 \newlabel{passivchecks}{{8}{16}{Passive Checks mit NSCA\relax }{figure.8}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.3}Konfigurationsdateien?}{16}{subsubsection.4.2.3}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.8.3}Konfigurationsdateien?}{16}{subsubsection.4.8.3}}
 \@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Aktive Checks mit NRPE}}{17}{figure.9}}
 \newlabel{aktivchecks}{{9}{17}{Aktive Checks mit NRPE\relax }{figure.9}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.4}Plugins}{17}{subsubsection.4.2.4}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.8.4}Plugins}{17}{subsubsection.4.8.4}}
 \@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces \IeC {\"U}bersicht der verschiedenen Unix Agenten\footnotemark }}{17}{figure.10}}
 \newlabel{nix-agents}{{10}{17}{Übersicht der verschiedenen Unix Agenten\protect \footnotemark \relax }{figure.10}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.5}(Windows) Agenten oder allgemein Einholen von Infos}{17}{subsubsection.4.2.5}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.8.5}(Windows) Agenten oder allgemein Einholen von Infos}{17}{subsubsection.4.8.5}}
 \@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces \IeC {\"U}bersicht der verschiedenen Windows Agenten}}{18}{figure.11}}
 \newlabel{win-agents}{{11}{18}{Übersicht der verschiedenen Windows Agenten\relax }{figure.11}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Stellent/Oracle UCM}{18}{subsection.4.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}\IeC {\"U}berwachungselemente}{19}{subsection.4.4}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.1}Statusabfragen}{19}{subsubsection.4.4.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.9}Stellent/Oracle UCM}{18}{subsection.4.9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.10}\IeC {\"U}berwachungselemente}{19}{subsection.4.10}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.10.1}Statusabfragen}{19}{subsubsection.4.10.1}}
 \@writefile{toc}{\contentsline {paragraph}{System}{19}{section*.7}}
 \@writefile{toc}{\contentsline {paragraph}{Prozesse}{20}{section*.8}}
 \@writefile{toc}{\contentsline {paragraph}{Services}{20}{section*.9}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.2}\IeC {\"U}berwachung der Funktionalit\IeC {\"a}t}{21}{subsubsection.4.4.2}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.3}Auswerten von Logdateien}{22}{subsubsection.4.4.3}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.10.2}\IeC {\"U}berwachung der Funktionalit\IeC {\"a}t}{21}{subsubsection.4.10.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.10.3}Auswerten von Logdateien}{22}{subsubsection.4.10.3}}
 \citation{UCMlog09}
-\@writefile{toc}{\contentsline {section}{\numberline {5}Abbildungsverzeichnis}{24}{section.5}}
-\@writefile{toc}{\contentsline {section}{\numberline {6}Codelistingverzeichnis}{25}{section.6}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Architektur}{24}{section.5}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Umsetzung}{25}{section.6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}\IeC {\"U}berpr\IeC {\"u}fen der Prozesse und Services}{25}{subsection.6.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Einrichten des Windows Agenten}{25}{subsection.6.2}}
+\newlabel{activecheckexample}{{2}{25}{Einrichten des Windows Agenten\relax }{lstlisting.2}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {2}Aufruf eines aktiven Checks}{25}{lstlisting.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Anhang}{26}{section.7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1}Abbildungsverzeichnis}{26}{subsection.7.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2}Codelistingverzeichnis}{27}{subsection.7.2}}
 \bibcite{DMS08}{DMS08}
 \bibcite{Barth08}{Barth08}
 \bibcite{Huff06}{Huff06}
 \bibcite{UCMlog09}{UCMlog09}
-\@writefile{toc}{\contentsline {section}{\numberline {7}Literaturverzeichnis}{26}{section.7}}
-\@writefile{toc}{\contentsline {section}{\numberline {8}Glossar}{27}{section.8}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3}Literaturverzeichnis}{28}{subsection.7.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.4}Glossar}{29}{subsection.7.4}}

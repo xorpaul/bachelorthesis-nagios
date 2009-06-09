@@ -1,50 +1,31 @@
-\begin{theglossary}\glogroupA
-
-\gloitem {\glosslabel{glo:AIIM}{AIIM}}Association for Information and Image Management \\ Die AIIM ist eine Gesellschaft von internationalen Herstellern und Anwendern von Informations- und Dokumenten-Mangement-Systemen\relax
-\glodelim 
-		\glsnumformat{7}\delimT \gloskip \glogroupC
-
-\gloitem {\glosslabel{glo:CMS}{CMS}}Content-Management-System\relax
-\glodelim 
-		\glsnumformat{6}\delimT \gloskip \glogroupD
-
-\gloitem {\glosslabel{glo:DMS}{DMS}}Dokumenten-Management-System\relax
-\glodelim 
-		\glsnumformat{4}\delimT 
-
-\gloitem {\glosslabel{glo:DNS}{DNS}}Domain Name System\relax
-\glodelim 
-		\glsnumformat{15}\delimT \gloskip \glogroupE
-
-\gloitem {\glosslabel{glo:ECM}{ECM}}Enterprise-Content-Management\relax
-\glodelim 
-		\glsnumformat{7}\delimT \gloskip \glogroupF
-
-\gloitem {\glosslabel{glo:FTP}{FTP}}File Transfer Protocol\relax
-\glodelim 
-		\glsnumformat{12}\delimT \gloskip \glogroupL
-
-\gloitem {\glosslabel{glo:LDAP}{LDAP}}Lightweight Directory Access Protocol\relax
-\glodelim 
-		\glsnumformat{15}\delimT \gloskip \glogroupM
-
-\gloitem {\glosslabel{glo:MIB}{MIB}}Management Information Base\relax
-\glodelim 
-		\glsnumformat{15}\delimT \gloskip \glogroupN
-
-\gloitem {\glosslabel{glo:NRPE}{NRPE}}Nagios Remote Plugin Executor\relax
-\glodelim 
-		\glsnumformat{14}\delimT 
-
-\gloitem {\glosslabel{glo:NSCA}{NSCA}}Nagios Service Check Acceptor\relax
-\glodelim 
-		\glsnumformat{16}\delimT \gloskip \glogroupS
-
-\gloitem {\glosslabel{glo:SNMP}{SNMP}}Simple Network Management Protocol\relax
-\glodelim 
-		\glsnumformat{15}\delimT 
-
-\gloitem {\glosslabel{glo:SSH}{SSH}}Secure Shell\relax
-\glodelim 
-		\glsnumformat{14}\delimT 
-\end{theglossary}
+\glossarysection[\glossarytoctitle]{\glossarytitle}\glossarypreamble
+\begin{theglossary}\glossaryheader
+\glsgroupheading{A}\relax \glsresetentrylist %
+\glossaryentryfield{AIIM}{\glsnamefont{AIIM}}{Association for Information and Image Management - Die AIIM ist eine Gesellschaft von internationalen Herstellern und Anwendern von Informations- und Dokumenten-Mangement-Systemen.}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{7}}}\glsgroupskip
+\glsgroupheading{C}\relax \glsresetentrylist %
+\glossaryentryfield{CMS}{\glsnamefont{CMS}}{Content-Management-System}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{6}}}\glsgroupskip
+\glsgroupheading{D}\relax \glsresetentrylist %
+\glossaryentryfield{DMS}{\glsnamefont{DMS}}{Dokumenten-Management-System}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{4}}}%
+\glossaryentryfield{DNS}{\glsnamefont{DNS}}{Domain Name System}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{16}}}\glsgroupskip
+\glsgroupheading{E}\relax \glsresetentrylist %
+\glossaryentryfield{ECM}{\glsnamefont{ECM}}{Enterprise-Content-Management}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{7}}}\glsgroupskip
+\glsgroupheading{L}\relax \glsresetentrylist %
+\glossaryentryfield{LDAP}{\glsnamefont{LDAP}}{Lightweight Directory Access Protocol}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{16}}}\glsgroupskip
+\glsgroupheading{M}\relax \glsresetentrylist %
+\glossaryentryfield{MIB}{\glsnamefont{MIB}}{Management Information Base}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{16}}}\glsgroupskip
+\glsgroupheading{N}\relax \glsresetentrylist %
+\glossaryentryfield{NRPE}{\glsnamefont{NRPE}}{Nagios Remote Plugin Executor}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{14}}}%
+\glossaryentryfield{NSCA}{\glsnamefont{NSCA}}{Nagios Service Check Acceptor}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{16}}}\glsgroupskip
+\glsgroupheading{S}\relax \glsresetentrylist %
+\glossaryentryfield{SSH}{\glsnamefont{SSH}}{Secure Shell - Durch eine Secure Shell kann man sich eine verschlüsselte Netzwerkverbindung zum entfernten Rechner aufbauen.}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{14}}}%
+\end{theglossary}\glossarypostamble

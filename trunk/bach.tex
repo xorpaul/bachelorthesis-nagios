@@ -4,6 +4,7 @@
 \usepackage[ngerman]{babel}
 \usepackage{graphicx} 
 \usepackage[automark]{scrpage2}
+\usepackage{hyperref}
 \usepackage{subfigure} 
 \usepackage{ae} 
 \usepackage{amsmath}
@@ -14,11 +15,11 @@
 %\usepackage{fancyhd}
 \usepackage{pdfpages}
 \usepackage{listings}
-\usepackage[style=super,border=none,header=plain,cols=3,hyper=true]{glossary}
+\usepackage[style=super3colheader]{glossaries}
 \usepackage{verbatim} %Mehrzeilige Kommentare durch \begin{comment} mglich  ??
 \usepackage{blindtext} % Erzeugung von lngeren Textpassagen
 \usepackage{xcolor}  
-\usepackage{hyperref}
+
 \definecolor{hellgrau}{rgb}{0.9,0.9,0.9}
 \definecolor{darkgreen}{rgb}{0,0.5,0}
 \definecolor{darkblue}{rgb}{0,0,2}
@@ -31,10 +32,11 @@
 \addto{\captionsngerman}{\renewcommand*{\listfigurename}{}}
 \makeatletter
 \makeindex
-\makeglossary
+\makeglossaries
+\glsenablehyper 
 \renewcommand{\entryname}{K\"urzel}
 \renewcommand{\descriptionname}{Beschreibung}
-\renewcommand{\glspageheader}{S.}
+%\renewcommand{\glspageheader}{S.}
 \renewcommand*\l@section{\@dottedtocline{1}{1.5em} {2.3em}}
 \renewcommand*\l@subsection{\@dottedtocline{2}{3.8 em}{3.2em}}
 \renewcommand*\l@subsubsection{\@dottedtocline{3}{ 7.0em}{4.1em}}
@@ -79,6 +81,8 @@
 \input{tex/preamble.tex}
 \newpage
 
+\input{tex/glossar.tex} 
+
 \pagenumbering{arabic}
 
 \input{tex/einleitung.tex} 
@@ -86,8 +90,8 @@
 \input{tex/abstract.tex} \newpage
 \input{tex/aufgabenstellung.tex} \newpage
 \input{tex/grundlagen.tex} \newpage
-%\input{tex/architektur.tex} \newpage
-%\input{tex/umsetzung.tex} \newpage
+\input{tex/architektur.tex} \newpage
+\input{tex/umsetzung.tex} \newpage
 %\input{/16/docs/_praxis3/tex/ziele.tex} \newpage
 %\input{/16/docs/_praxis3/tex/programmaufbau.tex} \newpage
 %\input{tex/anpassungen.tex} \newpage
@@ -96,20 +100,20 @@
 %\input{/16/docs/_praxis3/tex/einleitung.tex} 
 
 %\newpage
-
-\section{Abbildungsverzeichnis}
+\section{Anhang}
+\subsection{Abbildungsverzeichnis}
 \listoffigures
 
 \newpage
 
 \renewcommand{\lstlistlistingname}{}
-\section{Codelistingverzeichnis}
+\subsection{Codelistingverzeichnis}
 \lstlistoflistings
 \newpage
 
 
 \renewcommand{\refname}{} 
-\section{Literaturverzeichnis}
+\subsection{Literaturverzeichnis}
 \begin{thebibliography}{xxxxxxxx}
 	 \bibitem[DMS08]{DMS08}Götzer, Klaus; Schmale, Ralf; u.a. (2008) "`Dokumenten-Management - Informationen im Internehmen effizient nutzen"' 4. Auflage,\\
 	 dpunkt.verlag GmbH Heidelberg,  
@@ -123,11 +127,12 @@
 	 \bibitem[Huff06]{Huff06}Brian Huff (2006) "`The Definitive Guide to Stellent Content Server Development"', \newline ISBN13: 978-1-59059-684-5, \newline Stand: ????, Einsichtnahme: 15.05.2009
 	 
 	 	 \bibitem[UCMlog09]{UCMlog09} Unbekannter Author "`vramanat"' (2009) "`Universal Content Management 10gR3 - Content Server Log File Information"', \\ Quelle: \url{http://www.oracle.com/technology/products/content-management/cdbs/loginfo.pdf} \newline Stand: 20.01.2009, Einsichtnahme: 05.06.2009
-\end{thebibliography}\newpage
-
-\section{Glossar}
+\end{thebibliography}
+\newpage
+\subsection{Glossar}
 \renewcommand{\glossaryname}{}
-\printglossary
+\makeglossaries
+\printglossaries
 
 \end{document}
 

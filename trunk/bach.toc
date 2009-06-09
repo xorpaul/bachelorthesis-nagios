@@ -6,26 +6,37 @@
 \contentsline {subsection}{\numberline {4.1}Dokumenten-Management-Systeme}{4}{subsection.4.1}
 \contentsline {subsubsection}{\numberline {4.1.1}Content-Management-Systeme}{6}{subsubsection.4.1.1}
 \contentsline {subsubsection}{\numberline {4.1.2}Enterprise-Content-Management-Systeme - optional}{7}{subsubsection.4.1.2}
-\contentsline {subsection}{\numberline {4.2}Nagios}{8}{subsection.4.2}
-\contentsline {subsubsection}{\numberline {4.2.1}Aufbau (von Nagios)}{9}{subsubsection.4.2.1}
-\contentsline {subsubsection}{\numberline {4.2.2}Service Checks und deren / ihre Realisierung / Ausf\IeC {\"u}hrung / (\IeC {\"U}berpr\IeC {\"u}fungs)Methoden}{12}{subsubsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2}cronjobs}{8}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Farbraum}{8}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}ds - ADS Benutzer}{8}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.5}Metadaten allg}{8}{subsection.4.5}
+\contentsline {subsection}{\numberline {4.6}alse+-true+-}{8}{subsection.4.6}
+\contentsline {subsection}{\numberline {4.7}evtl Oracle DB}{8}{subsection.4.7}
+\contentsline {subsection}{\numberline {4.8}Nagios}{8}{subsection.4.8}
+\contentsline {subsubsection}{\numberline {4.8.1}Aufbau (von Nagios)}{9}{subsubsection.4.8.1}
+\contentsline {subsubsection}{\numberline {4.8.2}Service Checks und deren / ihre Realisierung / Ausf\IeC {\"u}hrung / (\IeC {\"U}berpr\IeC {\"u}fungs)Methoden}{12}{subsubsection.4.8.2}
 \contentsline {paragraph}{Variante / Methode / Client 1}{13}{section*.2}
 \contentsline {paragraph}{Variante / Methode / Client 2}{14}{section*.3}
 \contentsline {paragraph}{Variante / Methode / Client 3}{14}{section*.4}
 \contentsline {paragraph}{Variante / Methode / Client 4}{15}{section*.5}
 \contentsline {paragraph}{passive}{16}{section*.6}
-\contentsline {subsubsection}{\numberline {4.2.3}Konfigurationsdateien?}{16}{subsubsection.4.2.3}
-\contentsline {subsubsection}{\numberline {4.2.4}Plugins}{17}{subsubsection.4.2.4}
-\contentsline {subsubsection}{\numberline {4.2.5}(Windows) Agenten oder allgemein Einholen von Infos}{17}{subsubsection.4.2.5}
-\contentsline {subsection}{\numberline {4.3}Stellent/Oracle UCM}{18}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}\IeC {\"U}berwachungselemente}{19}{subsection.4.4}
-\contentsline {subsubsection}{\numberline {4.4.1}Statusabfragen}{19}{subsubsection.4.4.1}
+\contentsline {subsubsection}{\numberline {4.8.3}Konfigurationsdateien?}{16}{subsubsection.4.8.3}
+\contentsline {subsubsection}{\numberline {4.8.4}Plugins}{17}{subsubsection.4.8.4}
+\contentsline {subsubsection}{\numberline {4.8.5}(Windows) Agenten oder allgemein Einholen von Infos}{17}{subsubsection.4.8.5}
+\contentsline {subsection}{\numberline {4.9}Stellent/Oracle UCM}{18}{subsection.4.9}
+\contentsline {subsection}{\numberline {4.10}\IeC {\"U}berwachungselemente}{19}{subsection.4.10}
+\contentsline {subsubsection}{\numberline {4.10.1}Statusabfragen}{19}{subsubsection.4.10.1}
 \contentsline {paragraph}{System}{19}{section*.7}
 \contentsline {paragraph}{Prozesse}{20}{section*.8}
 \contentsline {paragraph}{Services}{20}{section*.9}
-\contentsline {subsubsection}{\numberline {4.4.2}\IeC {\"U}berwachung der Funktionalit\IeC {\"a}t}{21}{subsubsection.4.4.2}
-\contentsline {subsubsection}{\numberline {4.4.3}Auswerten von Logdateien}{22}{subsubsection.4.4.3}
-\contentsline {section}{\numberline {5}Abbildungsverzeichnis}{24}{section.5}
-\contentsline {section}{\numberline {6}Codelistingverzeichnis}{25}{section.6}
-\contentsline {section}{\numberline {7}Literaturverzeichnis}{26}{section.7}
-\contentsline {section}{\numberline {8}Glossar}{27}{section.8}
+\contentsline {subsubsection}{\numberline {4.10.2}\IeC {\"U}berwachung der Funktionalit\IeC {\"a}t}{21}{subsubsection.4.10.2}
+\contentsline {subsubsection}{\numberline {4.10.3}Auswerten von Logdateien}{22}{subsubsection.4.10.3}
+\contentsline {section}{\numberline {5}Architektur}{24}{section.5}
+\contentsline {section}{\numberline {6}Umsetzung}{25}{section.6}
+\contentsline {subsection}{\numberline {6.1}\IeC {\"U}berpr\IeC {\"u}fen der Prozesse und Services}{25}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Einrichten des Windows Agenten}{25}{subsection.6.2}
+\contentsline {section}{\numberline {7}Anhang}{26}{section.7}
+\contentsline {subsection}{\numberline {7.1}Abbildungsverzeichnis}{26}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Codelistingverzeichnis}{27}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Literaturverzeichnis}{28}{subsection.7.3}
+\contentsline {subsection}{\numberline {7.4}Glossar}{29}{subsection.7.4}
