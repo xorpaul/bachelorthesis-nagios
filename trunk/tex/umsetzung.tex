@@ -1,17 +1,24 @@
 \section{Umsetzung}
 In diesem Kapitel wird die Vorgehensweise der zuvor beschriebenen Problemstellungen erörtert.
 
-\subsection{Überprüfen der Prozesse und Services}
+\subsection{Aufbau der Testumgebung}
+
+\subsubsection{Aufsetzen eines Nagios-Test-Systems}
+
+
+\subsubsection{Bilddatenbank als VM}
+
+\subsection{Basisüberwachung - Konfigurationsdateien}
 \begin{itemize}
-\item Prozesse
-\item Services
-\item Bsp Aufruf
+\item Wie/wo werden Hosts eingetragen -> hostgroups
+\item Service Definitionen -> mit Host verbinden
+\item Wer wird wann wegen was wie benachrichtigt -> contacts
 \end{itemize}
 
 \subsection{Einrichten des Windows Agenten}
 \begin{itemize}
 \item Port ändern -> RPC
-\item Verschlüsselung durch PW und Algo
+\item Verschlüsselung durch PW und/oder Algo
 \item Hinzufügen der Plugins
 \item Bsp Aufruf aktiver Check
 \end{itemize}
@@ -49,4 +56,24 @@ Danach
 \begin{itemize}
 \item Logfiles check.exe 
 \item batchloader.exe script
+\end{itemize}
+
+
+\subsection{Überprüfen der Prozesse und Services}
+\begin{itemize}
+\item Prozesse
+\item Services
+\item Bsp Aufruf
+\end{itemize}
+
+\subsection{Umsetzung der Funktionlitätstest}
+\begin{itemize}
+\item batchloader + .blo Dateien
+\item einloggen mit lokalem und ads benutzer
+\end{itemize}
+
+\subsection{Auswertung der Logs + Stopwörterdefinition}
+\begin{itemize}
+\item check\_logfiles
+\item check\_logfiles cfg file inkl. Rotation
 \end{itemize}
