@@ -5,15 +5,18 @@
 \contentsline {section}{\numberline {4}Grundlagen}{4}{section.4}
 \contentsline {subsection}{\numberline {4.1}\IeC {\"U}berwachungssysteme}{4}{subsection.4.1}
 \contentsline {subsection}{\numberline {4.2}Dokumenten-Management-Systeme}{4}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}Eingabe}{6}{subsubsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2}Archivierung und Verwaltung}{6}{subsubsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.3}Ausgabe}{6}{subsubsection.4.2.3}
 \contentsline {subsection}{\numberline {4.3}Content-Management-Systeme}{6}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}Enterprise-Content-Management-Systeme - optional}{8}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.4}[Enterprise-Content-Management-Systeme]}{8}{subsection.4.4}
 \contentsline {subsection}{\numberline {4.5}Universal-Content-Management-Systeme}{9}{subsection.4.5}
-\contentsline {subsection}{\numberline {4.6}cronjobs}{9}{subsection.4.6}
-\contentsline {subsection}{\numberline {4.7}Farbraum}{9}{subsection.4.7}
-\contentsline {subsection}{\numberline {4.8}ds - ADS Benutzer}{9}{subsection.4.8}
-\contentsline {subsection}{\numberline {4.9}Metadaten allg}{9}{subsection.4.9}
-\contentsline {subsection}{\numberline {4.10}alse+-true+-}{9}{subsection.4.10}
-\contentsline {subsection}{\numberline {4.11}evtl Oracle DB}{9}{subsection.4.11}
+\contentsline {subsection}{\numberline {4.6}[cronjobs]}{9}{subsection.4.6}
+\contentsline {subsection}{\numberline {4.7}[Farbraum]}{9}{subsection.4.7}
+\contentsline {subsection}{\numberline {4.8}[ds - ADS Benutzer]}{9}{subsection.4.8}
+\contentsline {subsection}{\numberline {4.9}[Metadaten allg]}{9}{subsection.4.9}
+\contentsline {subsection}{\numberline {4.10}[alse+-true+-]}{9}{subsection.4.10}
+\contentsline {subsection}{\numberline {4.11}[evtl Oracle DB]}{9}{subsection.4.11}
 \contentsline {section}{\numberline {5}Nagios}{10}{section.5}
 \contentsline {subsection}{\numberline {5.1}Allgemein}{10}{subsection.5.1}
 \contentsline {subsection}{\numberline {5.2}Aufbau / Architektur}{11}{subsection.5.2}
@@ -28,18 +31,18 @@
 \contentsline {subsection}{\numberline {5.6}(Windows) Agenten oder allgemein Einholen von Infos}{19}{subsection.5.6}
 \contentsline {section}{\numberline {6}Oracle UCM}{21}{section.6}
 \contentsline {subsection}{\numberline {6.1}Allgemein}{21}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Aufbau / Architektur}{22}{subsection.6.2}
-\contentsline {subsubsection}{\numberline {6.2.1}Content Server}{22}{subsubsection.6.2.1}
-\contentsline {subsubsection}{\numberline {6.2.2}Vault und Web Layout}{22}{subsubsection.6.2.2}
-\contentsline {subsubsection}{\numberline {6.2.3}Inbound Refinery}{22}{subsubsection.6.2.3}
-\contentsline {subsubsection}{\numberline {6.2.4}Search Engine}{22}{subsubsection.6.2.4}
-\contentsline {subsubsection}{\numberline {6.2.5}Webserver}{22}{subsubsection.6.2.5}
+\contentsline {subsection}{\numberline {6.2}Aufbau / Architektur}{21}{subsection.6.2}
+\contentsline {subsubsection}{\numberline {6.2.1}Content Server}{21}{subsubsection.6.2.1}
+\contentsline {subsubsection}{\numberline {6.2.2}Vault und Web Layout}{21}{subsubsection.6.2.2}
+\contentsline {subsubsection}{\numberline {6.2.3}Inbound Refinery}{21}{subsubsection.6.2.3}
+\contentsline {subsubsection}{\numberline {6.2.4}Search Engine}{21}{subsubsection.6.2.4}
+\contentsline {subsubsection}{\numberline {6.2.5}Webserver}{21}{subsubsection.6.2.5}
 \contentsline {subsection}{\numberline {6.3}\IeC {\"U}berwachungselemente}{22}{subsection.6.3}
 \contentsline {subsubsection}{\numberline {6.3.1}Statusabfragen}{22}{subsubsection.6.3.1}
-\contentsline {paragraph}{System}{23}{section*.7}
+\contentsline {paragraph}{System}{22}{section*.7}
 \contentsline {paragraph}{Prozesse}{23}{section*.8}
 \contentsline {paragraph}{Services}{23}{section*.9}
-\contentsline {subsubsection}{\numberline {6.3.2}\IeC {\"U}berwachung der Funktionalit\IeC {\"a}t}{24}{subsubsection.6.3.2}
+\contentsline {subsubsection}{\numberline {6.3.2}\IeC {\"U}berwachung der Funktionalit\IeC {\"a}t}{23}{subsubsection.6.3.2}
 \contentsline {subsubsection}{\numberline {6.3.3}Auswerten von Logdateien}{25}{subsubsection.6.3.3}
 \contentsline {section}{\numberline {7}Umsetzung}{27}{section.7}
 \contentsline {subsection}{\numberline {7.1}Aufbau der Testumgebung}{27}{subsection.7.1}
