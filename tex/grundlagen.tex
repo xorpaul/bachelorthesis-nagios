@@ -1,6 +1,8 @@
 \section{Grundlagen}
 In diesem Kapitel werden die grundlegenden Begriffe erläutert, die für das Verständnis der weiterführenden Kapitel notwendig sind.
 
+\input{tex/monitoring.tex}
+
 \input{tex/dms.tex}
 
 \subsection{cronjobs}
@@ -10,70 +12,6 @@ In diesem Kapitel werden die grundlegenden Begriffe erläutert, die für das Ver
 \subsection{Metadaten allg}
 \subsection{alse+-true+-}
 \subsection{evtl Oracle DB}
-
-\section{Nagios}
-Nagios dient zum Überwachen von Hosts und deren Services in komplexen Infrastrukturen(Host und Services erklären?) und wurde von dem Amerikaner Ethan Galstad seit 1999\footnote{Quelle: \url{http://www.netsaint.org/changelog.php}} - damals unter der Vorgängerversion NetSaint - entwickelt und bis heute gepflegt.
-Galstad gründete aufgrund der vielfältigen(ansturmmäßig) und positiven Resonanz am 9. November 2007 die "`Nagios Enterprises LLC"', welche Nagios als kommerzielle Dienstleistung anbietet.
-Die Software selbst blieb weiterhin unter der freien Lizenz "`GNU General Public License version 2"'\footnote{Quelle: \url{http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt}} verfügbar.
-Diese erlaubt Einblick in den Programmcode und Modifizieren der Anwendung nach eigenen Vorstellungen.
-
-Nagios erfreut sich hoher Beliebtheit aufgrund der (bereits vorhandenen [macht kein sinn hohe beliebtheit aufgrund der großen community?]) großen Community, die Tipps, Ratschläge und auch eigene Nagios-Plugins kostenlos anbietet.
-Außerdem können selbst mit geringen Programmierkenntnissen zusätzliche Skripte zur Überwachung geschrieben werden, wenn ein spezieller Anwendungsfall dies erfordert.
-Warum wird Nagios engesetzt und nicht was anders -> andere kandidaten finden openview, big brother? -> das buch vom jäger verwenden!
-
-OpenSource halt, recht einfach plugins programmierbar (auf plugin kapitel verweisen)
-
-\input{tex/aufbau.tex}
-
-\input{tex/services.tex}
-
-\subsection{Plugins}
-Gedacht für Linux umgebung
-
-Verschiedene Möglichkeiten Checks zu realisieren unter Unix Systemen:
-
-\begin{figure}[ht]
-	\centering
-	   \fbox{\includegraphics[width=0.9\textwidth]{bilder/unix-agents.png}}
-		\caption{Übersicht der verschiedenen Unix Agenten\protect\footnotemark}
-		\label{nix-agents}
-\end{figure}
-\footnotetext{Quelle: \url{http://www.kilala.nl/Sysadmin/index.php?id=708}}
-
-Leicht programmierbar -> perl
-Extra Plugins für Windows
-
-\subsection{(Windows) Agenten oder allgemein Einholen von Infos}
-Warum nicht einfach alles über SNMP? -> ODI muss man erst beantragen, hoher Aufwand und dann doch nicht so universell/alles abdeckend wie aktive checks, man kann keine logfiles durchuchen -> könnte es aber als standalone prog auf dem client laufen lassen und dieser sendet dann passive checks
-
-Sagen das auf alten NSClient verzichtet wird und OpMon Agent nicht behandelt
-\begin{enumerate}
-\item Bilder ausm Nagios Buch Seite 472ff!
-\item NSClient++
-\item NC\_Net
-\item NRPE\_NT
-\end{enumerate}
-
-Zusammenfassung?
-
-\begin{figure}[ht]
-	\centering
-	   \fbox{\includegraphics[width=0.9\textwidth]{bilder/win-agents.png}}
-		\caption{Übersicht der verschiedenen Windows Agenten}\footnote{Quelle: \url{http://www.kilala.nl/Sysadmin/index.php?id=709}}
-		\label{win-agents}
-\end{figure}
-
-Welche wird jetzt eingesetzt und warum?
-
-Erwähne sichheitsstechnisch Parameter erlauben oder nicht erlauben
-
-Dabei sagen, dass wenn nicht erlaubt sind keine zentrale Konfiguration der Checks auf dem Nagios server möglich ist -> abwägen
-
-\input{tex/stellent.tex}
-
-
-
-
 
 
 
