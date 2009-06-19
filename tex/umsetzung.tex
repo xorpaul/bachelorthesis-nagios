@@ -3,10 +3,17 @@ In diesem Kapitel wird die Vorgehensweise der zuvor beschriebenen Problemstellun
 
 \subsection{Aufbau der Testumgebung}
 
-\subsubsection{Aufsetzen eines Nagios-Test-Systems}
 
+
+
+\subsubsection{Aufsetzen eines Nagios-Test-Systems}
+Da die einzelnen Überwachungselemente in der Überwachungssoftware Nagios nach und nach eingetragen (/ definiert / assoziiert / verbunden) werden müssen, ist ein häufiges Neustarten der Nagios Anwendung notwendig, damit die neuen Konfigurationsdateien übernommen werden.
+
+Damit dies nicht auf dem produktiven Nagios-Server durchgeführt werden muss, wird ein Nagios-Testserver für diesen Zwecks eingesetzt.
 
 \subsubsection{Bilddatenbank als VM}
+Für die Simulation der verschiedenen Fehlerzuständen der einzelnen Überwachungselemente wird eine virtuelle Maschine mit einer \gls{OracleUCM} Prototypinstallation, die extra als Entwicklungsplatform erstellt wurde, verwendet.
+
 
 \subsection{Basisüberwachung - Konfigurationsdateien}
 \begin{itemize}
