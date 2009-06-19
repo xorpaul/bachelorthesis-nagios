@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2009.1.26)  16 JUN 2009 15:29
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2009.1.26)  19 JUN 2009 16:35
 entering extended mode
  %&-line parsing enabled.
 **bach.tex
@@ -539,7 +539,7 @@ LaTeX Info: Redefining \pageref on input line 62.
 \openout6 = `bach.out'.
 
  ABD: EveryShipout initializing macros
-<Titelblatt.pdf, id=229, page=1, 597.23125pt x 845.1575pt>
+<Titelblatt.pdf, id=245, page=1, 597.23125pt x 845.1575pt>
 File: Titelblatt.pdf Graphic file (type pdf)
 
 <use Titelblatt.pdf, page 1>
@@ -573,7 +573,14 @@ File: umsb.fd 2002/01/19 v2.2g AMS font definitions
 \tf@toc=\write7
 \openout7 = `bach.toc'.
 
- [3] (./tex/preamble.tex
+ [3]
+<bilder/fzk2.png, id=337, 132.495pt x 231.264pt>
+File: bilder/fzk2.png Graphic file (type png)
+ <use bilder/fzk2.png>
+Overfull \vbox (3.86385pt too high) has occurred while \output is active []
+
+
+[4 <./bilder/fzk2.png>] (./tex/preamble.tex
 (/usr/share/texmf-texlive/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2004/10/17 UCS: Unicode data U+0000..U+00FF
 )
@@ -581,22 +588,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 32--32
 
  []
 
-) [4] (./tex/glossar.tex) (./tex/einleitung.tex)pdfTeX warning (ext4): destinat
+) [5] (./tex/glossar.tex) (./tex/einleitung.tex)pdfTeX warning (ext4): destinat
 ion with the same identifier (name{page.1}) has been already used, duplicate ig
 nored
 <to be read again> 
                    \relax 
 l.89 \newpage
-              <bilder/fzk2.png, id=321, 132.495pt x 231.264pt>
+             
 File: bilder/fzk2.png Graphic file (type png)
-
-<use bilder/fzk2.png>
+ <use bilder/fzk2.png>
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[1 <./bilder/fzk2.png>] (./tex/abstract.tex)pdfTeX warning (ext4): destination 
-with the same identifier (name{page.2}) has been already used, duplicate ignore
-d
+[1] (./tex/abstract.tex)pdfTeX warning (ext4): destination with the same identi
+fier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.90 \input{tex/abstract.tex} \newpage
@@ -617,43 +622,68 @@ File: bilder/fzk2.png Graphic file (type png)
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[3] (./tex/grundlagen.tex (./tex/monitoring.tex) (./tex/dms.tex
-LaTeX Font Info:    Try loading font information for OMS+aer on input line 7.
+[3] (./tex/grundlagen.tex (./tex/monitoring.tex
 
-(/usr/share/texmf-texlive/tex/latex/ae/omsaer.fd
-File: omsaer.fd 1999/12/27
-)
-LaTeX Font Info:    Font shape `OMS/aer/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 7.
+! LaTeX Error: There's no line here to end.
 
-Overfull \hbox (5.03622pt too wide) in paragraph at lines 7--8
-[]\T1/aer/m/n/12 Ein Do-ku-ment fasst in-halt-lich zu-sam-men-ge-hö-ren-de In-f
-or-ma-tio-nen struk-
- []
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21 \newline
+             
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.18 ...und zusammengestellt."' \begin{flushright}
-                                                  \cite{DMS08} S. 2\end{flus...
+l.25 
+     
 File: bilder/fzk2.png Graphic file (type png)
-<use bilder/fzk2.png>
+ <use bilder/fzk2.png>
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
 [4]
-Overfull \hbox (2.51434pt too wide) in paragraph at lines 37--38
-[]\T1/aer/m/n/12 ^^RBei \T1/aer/bx/n/12 Dokumenten-Management-Systemen im en-ge
--ren Sin-
+LaTeX Font Info:    Try loading font information for OMS+aer on input line 32.
+ (/usr/share/texmf-texlive/tex/latex/ae/omsaer.fd
+File: omsaer.fd 1999/12/27
+)
+LaTeX Font Info:    Font shape `OMS/aer/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 32.
+) (./tex/dms.tex
+Overfull \hbox (5.03622pt too wide) in paragraph at lines 7--8
+[]\T1/aer/m/n/12 Ein Do-ku-ment fasst in-halt-lich zu-sam-men-ge-hö-ren-de In-f
+or-ma-tio-nen struk-
  []
 
+pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.18 D
+      ie Begrifflichkeit des \textbf{Dokuments im weiteren Sinne} erweitert ...
 File: bilder/fzk2.png Graphic file (type png)
 <use bilder/fzk2.png>
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
 [5]
+File: bilder/fzk2.png Graphic file (type png)
+ <use bilder/fzk2.png>
+Overfull \vbox (1.68883pt too high) has occurred while \output is active []
+
+
+[6]
+Overfull \hbox (2.51434pt too wide) in paragraph at lines 37--38
+[]\T1/aer/m/n/12 ^^RBei \T1/aer/bx/n/12 Dokumenten-Management-Systemen im en-ge
+-ren Sin-
+ []
+
+
 Overfull \hbox (5.57437pt too wide) in paragraph at lines 39--39
 []\T1/aer/m/n/12 Den \T1/aer/bx/n/12 Dokumenten-Management-Systemen im wei-te-r
 en Sin-
@@ -682,13 +712,13 @@ File: bilder/fzk2.png Graphic file (type png)
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[6]
+[7]
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png>
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[7] <bilder/ucm.png, id=367, 513.92pt x 288.07625pt>
+[8] <bilder/ucm.png, id=399, 513.92pt x 288.07625pt>
 File: bilder/ucm.png Graphic file (type png)
  <use bilder/ucm.png>
 LaTeX Font Info:    Try loading font information for T1+aett on input line 93.
@@ -706,13 +736,13 @@ File: bilder/fzk2.png Graphic file (type png)
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[8 <./bilder/ucm.png (PNG copy)>]))
+[9 <./bilder/ucm.png (PNG copy)>]))
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png>
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[9] (./tex/nagios.tex
+[10] (./tex/nagios.tex
 Overfull \hbox (6.74178pt too wide) in paragraph at lines 9--12
 []\T1/aer/m/n/12 Nagios er-freut sich ho-her Be-liebt-heit auf-grund der (be-re
 its vor-han-de-nen [macht
@@ -724,7 +754,7 @@ File: bilder/fzk2.png Graphic file (type png)
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[10] <bilder/nagios-proc.png, id=410, 409.53pt x 266.9975pt>
+[11] <bilder/nagios-proc.png, id=440, 409.53pt x 266.9975pt>
 File: bilder/nagios-proc.png Graphic file (type png)
 
 <use bilder/nagios-proc.png>
@@ -733,7 +763,7 @@ File: bilder/fzk2.png Graphic file (type png)
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[11 <./bilder/nagios-proc.png (PNG copy)>]
+[12 <./bilder/nagios-proc.png (PNG copy)>]
 (/usr/share/texmf-texlive/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2004/09/05 1.3 listings language file
 )
@@ -746,11 +776,11 @@ nput line 24.
 (/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
 File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 )
-<bilder/check-swap-white.png, id=422, 471.7625pt x 29.10875pt>
+<bilder/check-swap-white.png, id=452, 471.7625pt x 29.10875pt>
 File: bilder/check-swap-white.png Graphic file (type png)
 
 <use bilder/check-swap-white.png>
-<bilder/nagios-4state-tab.png, id=423, 496.85625pt x 212.795pt>
+<bilder/nagios-4state-tab.png, id=453, 496.85625pt x 212.795pt>
 File: bilder/nagios-4state-tab.png Graphic file (type png)
 
 <use bilder/nagios-4state-tab.png>
@@ -759,8 +789,8 @@ File: bilder/fzk2.png Graphic file (type png)
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[12 <./bilder/check-swap-white.png (PNG copy)>]
-<bilder/hs-states.png, id=444, 762.85pt x 216.81pt>
+[13 <./bilder/check-swap-white.png (PNG copy)>]
+<bilder/hs-states.png, id=474, 762.85pt x 216.81pt>
 File: bilder/hs-states.png Graphic file (type png)
  <use bilder/hs-states.png>
 File: bilder/fzk2.png Graphic file (type png)
@@ -769,7 +799,7 @@ File: bilder/fzk2.png Graphic file (type png)
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[13 <./bilder/nagios-4state-tab.png (PNG copy)> <./bilder/hs-states.png>])
+[14 <./bilder/nagios-4state-tab.png (PNG copy)> <./bilder/hs-states.png>])
 (./tex/services.tex
 
 ! Package glossaries Error: Glossary entry `FTP' has not been defined.
@@ -783,7 +813,7 @@ l.3 ...zwerkdienste), wie ein Web- oder \gls{FTP}-
 
 You need to define a glossary entry before you can use it.
 
-<bilder/check-http.png, id=459, 638.385pt x 29.10875pt>
+<bilder/check-http.png, id=490, 638.385pt x 29.10875pt>
 File: bilder/check-http.png Graphic file (type png)
 
 <use bilder/check-http.png>
@@ -792,7 +822,7 @@ File: bilder/fzk2.png Graphic file (type png)
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[14] <bilder/nagios-kern.png, id=466, 860.21375pt x 595.22375pt>
+[15] <bilder/nagios-kern.png, id=497, 860.21375pt x 595.22375pt>
 File: bilder/nagios-kern.png Graphic file (type png)
 
 <use bilder/nagios-kern.png>
@@ -801,8 +831,8 @@ File: bilder/fzk2.png Graphic file (type png)
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[15 <./bilder/check-http.png (PNG copy)> <./bilder/nagios-kern.png>]
-<bilder/check_by_ssh.png, id=482, 718.685pt x 28.105pt>
+[16 <./bilder/check-http.png (PNG copy)> <./bilder/nagios-kern.png>]
+<bilder/check_by_ssh.png, id=512, 718.685pt x 28.105pt>
 File: bilder/check_by_ssh.png Graphic file (type png)
 
 <use bilder/check_by_ssh.png>
@@ -811,7 +841,7 @@ File: bilder/fzk2.png Graphic file (type png)
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[16 <./bilder/check_by_ssh.png (PNG copy)>]
+[17 <./bilder/check_by_ssh.png (PNG copy)>]
 
 ! Package glossaries Error: Glossary entry `SNMP' has not been defined.
 
@@ -835,17 +865,24 @@ File: bilder/fzk2.png Graphic file (type png)
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[17] <bilder/nsca.png, id=507, 645.41125pt x 202.7575pt>
+[18] <bilder/nsca.png, id=537, 645.41125pt x 202.7575pt>
 File: bilder/nsca.png Graphic file (type png)
  <use bilder/nsca.png>
-<bilder/nrpe.png, id=509, 665.6983pt x 164.89775pt>
+<bilder/nrpe.png, id=539, 665.6983pt x 164.89775pt>
 File: bilder/nrpe.png Graphic file (type png)
  <use bilder/nrpe.png>
 Overfull \hbox (2.25175pt too wide) in paragraph at lines 102--102
 []\T1/aer/bx/n/14.4 Überwachungslogik (mit Alar-mie-rung/-Be-nach-rich-
  []
 
-) <bilder/unix-agents.png, id=511, 622.325pt x 295.1025pt>
+)
+File: bilder/fzk2.png Graphic file (type png)
+ <use bilder/fzk2.png>
+Overfull \vbox (1.68883pt too high) has occurred while \output is active []
+
+
+[19 <./bilder/nsca.png (PNG copy)>]
+<bilder/unix-agents.png, id=553, 622.325pt x 295.1025pt>
 File: bilder/unix-agents.png Graphic file (type png)
 
 <use bilder/unix-agents.png>
@@ -854,14 +891,8 @@ File: bilder/fzk2.png Graphic file (type png)
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[18 <./bilder/nsca.png (PNG copy)>]
-File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png>
-Overfull \vbox (1.68883pt too high) has occurred while \output is active []
-
-
-[19 <./bilder/nrpe.png (PNG copy)> <./bilder/unix-agents.png (PNG copy)>]
-<bilder/win-agents.png, id=535, 572.1375pt x 391.4625pt>
+[20 <./bilder/nrpe.png (PNG copy)> <./bilder/unix-agents.png (PNG copy)>]
+<bilder/win-agents.png, id=565, 572.1375pt x 391.4625pt>
 File: bilder/win-agents.png Graphic file (type png)
 
 <use bilder/win-agents.png>)
@@ -870,8 +901,8 @@ File: bilder/fzk2.png Graphic file (type png)
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[20 <./bilder/win-agents.png (PNG copy)>] (./tex/stellent.tex
-<bilder/basic_architecture.png, id=551, 513.92pt x 760.8425pt>
+[21 <./bilder/win-agents.png (PNG copy)>] (./tex/stellent.tex
+<bilder/basic_architecture.png, id=582, 513.92pt x 760.8425pt>
 File: bilder/basic_architecture.png Graphic file (type png)
 
 <use bilder/basic_architecture.png>
@@ -886,7 +917,7 @@ File: bilder/fzk2.png Graphic file (type png)
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[21 <./bilder/basic_architecture.png (PNG copy)>]
+[22 <./bilder/basic_architecture.png (PNG copy)>]
 Overfull \hbox (1.49574pt too wide) in paragraph at lines 60--61
 []\T1/aer/bx/n/12 Festplattenspeicherausnutzung \T1/aer/m/n/12 Über-wacht die S
 pei-cher-platzaus-las-
@@ -897,7 +928,7 @@ File: bilder/fzk2.png Graphic file (type png)
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[22]
+[23]
 Overfull \hbox (15.20657pt too wide) in paragraph at lines 74--75
 []\T1/aer/bx/n/12 IdcContentService??? \T1/aer/m/n/12 Den Zu-stand des ^^RConte
 nt-Dienstes^^P-^^R\T1/aett/m/n/12 sccdms01\T1/aer/m/n/12 ^^P
@@ -908,25 +939,31 @@ File: bilder/fzk2.png Graphic file (type png)
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[23]
-File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png>
-Overfull \vbox (1.68883pt too high) has occurred while \output is active []
-
-
 [24]
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png>
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[25])
+[25]
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png>
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[26] (./tex/umsetzung.tex (/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
+[26])
+File: bilder/fzk2.png Graphic file (type png)
+ <use bilder/fzk2.png>
+Overfull \vbox (1.68883pt too high) has occurred while \output is active []
+
+
+[27] (./tex/umsetzung.tex
+File: bilder/fzk2.png Graphic file (type png)
+ <use bilder/fzk2.png>
+Overfull \vbox (1.68883pt too high) has occurred while \output is active []
+
+
+[28] (/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
 File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 )
 (/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
@@ -937,25 +974,25 @@ File: bilder/fzk2.png Graphic file (type png)
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[27])
+[29])
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png>
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[28] (./tex/ergebnis.tex)
+[30] (./tex/ergebnis.tex)
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png>
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[29] (./tex/ausblick.tex)
+[31] (./tex/ausblick.tex)
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png>
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[30] (./bach.lof)
+[32] (./bach.lof)
 \tf@lof=\write8
 \openout8 = `bach.lof'.
 
@@ -964,7 +1001,7 @@ File: bilder/fzk2.png Graphic file (type png)
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[31] (./bach.lol)
+[33] (./bach.lol)
 \tf@lol=\write9
 \openout9 = `bach.lol'.
 
@@ -973,7 +1010,7 @@ File: bilder/fzk2.png Graphic file (type png)
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[32]
+[34]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -1002,7 +1039,7 @@ File: bilder/fzk2.png Graphic file (type png)
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[33]
+[35]
 Underfull \hbox (badness 10000) in paragraph at lines 146--147
 \T1/aer/m/n/12 Quelle: []$\T1/aett/m/n/12 http : / / download-[]west . oracle .
  com / docs / cd /
@@ -1031,27 +1068,30 @@ File: bilder/fzk2.png Graphic file (type png)
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[34] (./bach.gls)
+[36] (./bach.gls)
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png>
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[35] (./bach.aux)
+[37] (./bach.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 10386 strings out of 94074
- 142035 string characters out of 1165153
- 254847 words of memory out of 1500000
- 13168 multiletter control sequences out of 10000+50000
+ 10418 strings out of 94074
+ 142617 string characters out of 1165153
+ 255157 words of memory out of 1500000
+ 13191 multiletter control sequences out of 10000+50000
  41062 words of font info for 91 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
- 51i,16n,99p,1128b,1551s stack positions out of 5000i,500n,6000p,200000b,5000s
+ 51i,16n,99p,1128b,1102s stack positions out of 5000i,500n,6000p,200000b,5000s
 pdfTeX warning (dest): name{Hfootnote.20} has been referenced but does not ex
 ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{glo:OracleUCM} has been referenced but does not exi
+st, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.19} has been referenced but does not exis
 t, replaced by a fixed one
@@ -1120,9 +1160,9 @@ esky/cm/cmsl12.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmsy10.pfb>
 exlive/fonts/type1/bluesky/cm/cmtt10.pfb></usr/share/texmf-texlive/fonts/type1/
 bluesky/cm/cmtt12.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmtt8.pf
 b>
-Output written on bach.pdf (39 pages, 1120374 bytes).
+Output written on bach.pdf (42 pages, 1130612 bytes).
 PDF statistics:
- 763 PDF objects out of 1000 (max. 8388607)
- 182 named destinations out of 1000 (max. 131072)
- 542 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 800 PDF objects out of 1000 (max. 8388607)
+ 191 named destinations out of 1000 (max. 131072)
+ 574 words of extra memory for PDF output out of 10000 (max. 10000000)
 

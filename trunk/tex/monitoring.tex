@@ -1,1 +1,33 @@
 \subsection{Überwachungssysteme}
+\begin{center}
+was ist wichtig was nicht, gewichtung, klassifizierung, organisationsstrategie
+HOst,Services erklären
+\end{center}
+
+Geräte nicht nur Server bzw. Rechner, sondern auch Switches Router, oder auch explizite Hardwarekomponenten wie Sensoren für Temperatur, Luftfeuchtigkeit oder Rauchmelder.
+
+\subsubsection{Ressourcenbelastung}
+Die Einführung einer Überwachungssoftware bringt bei größeren Serverlandschaften eine nicht zu verachtende Netzwerk- und Prozessorbelastung mit sich.
+Dabei gilt es die anfallende Belastung durch zwei unterschiedliche Arten der Überwachung zu unterscheiden:
+
+\paragraph{Lokale / Zentrale Bearbeitung}
+Die Durchführung der Überprüfungen findet durch einen zentralen Überwachungsserver statt, der die Informationen über die einzelnen Hosts und Services über das Netzwerk abfrägt /  abfragt.
+Diese Methode ist in der Regel vorzuziehen, da hierbei die zu überwachenden Geräte weniger belastet werden und die Konfiguration der einzelnen Kontrollschritte zentral möglich / realisierbar ist.
+
+\paragraph{Entfernte / Ausgelagerte Bearbeitung}
+Bei einer sehr hohen Anzahl von zu überwachenden Objekten ist eine zentralisierte Ausführung nicht mehr von einem einzelnen Server tragbar.
+In diesem Fall ist das Überwachungssystem darauf angewiesen, dass die einzelnen Hosts die kontrollierenden Überprüfungen selbständig durchführen und deren Ergebnisse an den Überwachungsserver weiterzuleiten.
+
+\newline
+
+
+Nagios bietet zusätzlich noch eine weitere, dritte Möglichkeit durch das \textit{Distributed Monitoring} (Verteilte Überwachung) an, siehe Kapitel \ref{dismoni}.
+
+\subsubsection{Netzwerkstruktur und Abhängigkeiten}
+
+
+\subsubsection{Sicherheitsaspekte}
+\subsubsection{Port- versus Anwendungsüberwachung}
+\begin{itemize}
+\item E2E
+\end{itemize}

@@ -80,7 +80,7 @@ Man unterscheidet zwischen aktiven und passiven Checks.
 asynchron!
 Bei passiven Tests führt der zu überwachende Computer das statuserzeugende Ergebnis selbst aus und sendet es über ein Plugin zum Nagios Server.
 Hierfür muss das Testprogramm bzw Script und das entsprechende Plugin \pictext{send\_ncsa}, welches zum Versenden der Informationen zuständig ist, auf dem Host vorhanden sein.
-Auf der anderen Seite muss der \pictext{\gls{NSCA}} (Nagios Service Check Acceptor)  als Dämon gestartet sein, damit die übermittelten Ergebnisse entgegengenommen werden können.
+Auf der anderen Seite muss der \pictext{\gls{NSCA}} (Nagios Service Check Acceptor) als Dämon gestartet sein, damit die übermittelten Ergebnisse entgegengenommen werden können.
 \begin{figure}[ht]
 	\centering
 	   \fbox{\includegraphics[width=0.85\textwidth]{bilder/nsca.png}}
@@ -100,4 +100,7 @@ Auf der anderen Seite muss der \pictext{\gls{NSCA}} (Nagios Service Check Accept
 \end{itemize}
 
 \subsection{Überwachungslogik (mit Alarmierung/Benachrichtigung)}
-
+\label{dismoni}
+\begin{center}
+TODO: Distributed Monitoring bezug auf allg überwachungssysteme
+\end{center}
