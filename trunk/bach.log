@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2009.1.26)  19 JUN 2009 16:35
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2009.1.26)  23 JUN 2009 15:23
 entering extended mode
  %&-line parsing enabled.
 **bach.tex
@@ -865,24 +865,27 @@ File: bilder/fzk2.png Graphic file (type png)
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[18] <bilder/nsca.png, id=537, 645.41125pt x 202.7575pt>
+[18] <bilder/mib.png, id=536, 310.2792pt x 151.767pt>
+File: bilder/mib.png Graphic file (type png)
+ <use bilder/mib.png>
+<bilder/nsca.png, id=540, 645.41125pt x 202.7575pt>
 File: bilder/nsca.png Graphic file (type png)
  <use bilder/nsca.png>
-<bilder/nrpe.png, id=539, 665.6983pt x 164.89775pt>
+<bilder/nrpe.png, id=542, 665.6983pt x 164.89775pt>
 File: bilder/nrpe.png Graphic file (type png)
  <use bilder/nrpe.png>
-Overfull \hbox (2.25175pt too wide) in paragraph at lines 102--102
-[]\T1/aer/bx/n/14.4 Überwachungslogik (mit Alar-mie-rung/-Be-nach-rich-
- []
-
-)
 File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png>
+
+<use bilder/fzk2.png>
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[19 <./bilder/nsca.png (PNG copy)>]
-<bilder/unix-agents.png, id=553, 622.325pt x 295.1025pt>
+[19 <./bilder/mib.png>]
+Overfull \hbox (2.25175pt too wide) in paragraph at lines 119--119
+[]\T1/aer/bx/n/14.4 Überwachungslogik (mit Alar-mie-rung/-Be-nach-rich-
+ []
+
+) <bilder/unix-agents.png, id=558, 622.325pt x 295.1025pt>
 File: bilder/unix-agents.png Graphic file (type png)
 
 <use bilder/unix-agents.png>
@@ -891,8 +894,8 @@ File: bilder/fzk2.png Graphic file (type png)
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[20 <./bilder/nrpe.png (PNG copy)> <./bilder/unix-agents.png (PNG copy)>]
-<bilder/win-agents.png, id=565, 572.1375pt x 391.4625pt>
+[20 <./bilder/nsca.png (PNG copy)> <./bilder/nrpe.png (PNG copy)>]
+<bilder/win-agents.png, id=570, 572.1375pt x 391.4625pt>
 File: bilder/win-agents.png Graphic file (type png)
 
 <use bilder/win-agents.png>)
@@ -901,8 +904,8 @@ File: bilder/fzk2.png Graphic file (type png)
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[21 <./bilder/win-agents.png (PNG copy)>] (./tex/stellent.tex
-<bilder/basic_architecture.png, id=582, 513.92pt x 760.8425pt>
+[21 <./bilder/unix-agents.png (PNG copy)>] (./tex/stellent.tex
+<bilder/basic_architecture.png, id=587, 513.92pt x 760.8425pt>
 File: bilder/basic_architecture.png Graphic file (type png)
 
 <use bilder/basic_architecture.png>
@@ -917,18 +920,19 @@ File: bilder/fzk2.png Graphic file (type png)
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[22 <./bilder/basic_architecture.png (PNG copy)>]
+[22 <./bilder/win-agents.png (PNG copy)>]
+File: bilder/fzk2.png Graphic file (type png)
+ <use bilder/fzk2.png>
+Overfull \vbox (1.68883pt too high) has occurred while \output is active []
+
+
+[23 <./bilder/basic_architecture.png (PNG copy)>]
 Overfull \hbox (1.49574pt too wide) in paragraph at lines 60--61
 []\T1/aer/bx/n/12 Festplattenspeicherausnutzung \T1/aer/m/n/12 Über-wacht die S
 pei-cher-platzaus-las-
  []
 
-File: bilder/fzk2.png Graphic file (type png)
-<use bilder/fzk2.png>
-Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
-
-[23]
 Overfull \hbox (15.20657pt too wide) in paragraph at lines 74--75
 []\T1/aer/bx/n/12 IdcContentService??? \T1/aer/m/n/12 Den Zu-stand des ^^RConte
 nt-Dienstes^^P-^^R\T1/aett/m/n/12 sccdms01\T1/aer/m/n/12 ^^P
@@ -1058,7 +1062,12 @@ ology / products /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 150--151
+Underfull \hbox (badness 10000) in paragraph at lines 150--152
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 153--154
 \T1/aer/m/n/12 Quelle: []$\T1/aett/m/n/12 http : / / www . oracle . com / corpo
 rate / press / 2006 _
  []
@@ -1080,18 +1089,21 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 10418 strings out of 94074
- 142617 string characters out of 1165153
- 255157 words of memory out of 1500000
- 13191 multiletter control sequences out of 10000+50000
+ 10428 strings out of 94074
+ 142746 string characters out of 1165153
+ 255260 words of memory out of 1500000
+ 13197 multiletter control sequences out of 10000+50000
  41062 words of font info for 91 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
  51i,16n,99p,1128b,1102s stack positions out of 5000i,500n,6000p,200000b,5000s
-pdfTeX warning (dest): name{Hfootnote.20} has been referenced but does not ex
+pdfTeX warning (dest): name{Hfootnote.21} has been referenced but does not ex
 ist, replaced by a fixed one
 
 pdfTeX warning (dest): name{glo:OracleUCM} has been referenced but does not exi
 st, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.20} has been referenced but does not exis
+t, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.19} has been referenced but does not exis
 t, replaced by a fixed one
@@ -1160,9 +1172,9 @@ esky/cm/cmsl12.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmsy10.pfb>
 exlive/fonts/type1/bluesky/cm/cmtt10.pfb></usr/share/texmf-texlive/fonts/type1/
 bluesky/cm/cmtt12.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmtt8.pf
 b>
-Output written on bach.pdf (42 pages, 1130612 bytes).
+Output written on bach.pdf (42 pages, 1392392 bytes).
 PDF statistics:
- 800 PDF objects out of 1000 (max. 8388607)
- 191 named destinations out of 1000 (max. 131072)
- 574 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 809 PDF objects out of 1000 (max. 8388607)
+ 194 named destinations out of 1000 (max. 131072)
+ 579 words of extra memory for PDF output out of 10000 (max. 10000000)
 

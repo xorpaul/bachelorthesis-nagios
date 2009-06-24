@@ -50,30 +50,47 @@ Eine beispielhafte Verwendung mit dem dafür gedachten Nagios Plugin \pictext{ch
 \paragraph{Variante / Methode / Client 3}
 
 Eine alternative Möglichkeit solche Dienste auf entfernten Rechnern zu überwachen, ist durch den sogenannten Nagios Remote Plugin Executor (\gls{NRPE}).
-Hier muss auf dem Client (extra) ein "`Agent"' installiert werden, welcher einen (TCP)-Port öffnet und auf diesem auf Anweisungen durch den Nagios Server horcht.
+Hier muss auf dem Client (extra) ein "`Agent"' installiert werden, welcher einen (TCP)-Port öffnet mit dem der Agent mit dem Nagios Server kommuniziert.
 
 Der Nagios Server kann diese Anforderungen über das (dafür gedachte) Plugin \pictext{check\_nrpe} an den Client verschicken.
 Ein Aufruf dieses Plugins ist dem des \pictext{check\_by\_ssh} Plugins, siehe dazu Abbildung \ref{check-ssh}, sehr ähnlich.
 
 Der Nachteil dieser Variante ist ein zusätzlich geöffneter Port und der höhere / erhöhte Aufwand beim Installieren des Agenten im Gegensatz zum (vermutlich /meistens) bereits laufendem SSH-Dienst.
 Zusätzlich gibt es nur die Möglichkeit die Anfragen auf diesem Port auf bestimmte IPs zu beschränken, jedoch nicht den Zugriff durch ein Passwort zu sichern.
-Dafür beschränkt sich der NRPE (lediglich) auf die auf dem entfernten Client liegenden Nagios Plugins und kann nicht System- bzw. Benutzerkommandos aufrufen, wie bspw. das \pictext{rm} Kommando zum Löschen von Dateien, welches durch den Einsatz von \pictext{check\_by\_ssh} standardmäßig möglich wäre.
-Daher könnte die SSH Variante (wenn unbehandelt PATH, user einschränken) fatale Folgen nach sich ziehen, wenn es ein Angreifer schafft die Kontrolle über den Nagios Server zu erlangen.
-Beide Verfahren (hingegen) unterstützen die Verschlüsselung des Datenaustausches untereinander.
+Dafür beschränkt sich der NRPE (lediglich) auf die auf dem entfernten Client liegenden Nagios Plugins und kann nicht System- bzw. Benutzerkommandos aufrufen, wie bspw. das \pictext{rm} Kommando zum Löschen von Dateien, welche durch den Einsatz von \pictext{check\_by\_ssh} standardmäßig möglich wären.
+Sicherheitstechnisch gesehen ist die SSH Variante (wenn unbehandelt PATH, user einschränken) kritischer, da es einem Angreifer ermöglicht auf diese System- bzw. Benutzerkommandos zuzugreifen, wenn er die Kontrolle über den Nagios Server erlangt.
+Beide Verfahren unterstützen die Verschlüsselung der Datenübertragung zwischen Nagios Server und Client.
 
 \paragraph{Variante / Methode / Client 4}
-Diese Variante wird nur grob angerissen / kurz / verkürzt behandelt, da sich diese Arbeit hauptsächlich mit der Überwachung von Servern beschäftigt und nicht von Netzwerkkomponenten wie Switches oder Router, die nur per Simple Network Management Protocol (\gls{SNMP}) überwacht werden können, wenn mehr Informationen als eine schlichte Erreichbarkeit überprüft / gesammelt werden soll.
+Diese Variante wird nur grob angerissen / kurz / verkürzt behandelt, da sich diese Arbeit hauptsächlich mit der Überwachung von Servern beschäftigt und nicht von Netzwerkkomponenten wie Switches oder Router, die nur durch das Simple Network Management Protocol (\gls{SNMP}) überwacht werden können, wenn mehr Informationen als eine schlichte Erreichbarkeit überprüft / gesammelt werden soll.
 
 Barth schreibt über diese Variante / Überwachungsmethode:
 \begin{quote}"`Mit dem Simple Network Management Protocol SNMP lassen sich ebenfalls lokale Ressourcen übers Netz abfragen [...]. Ist auf dem Zielhost ein SNMP-Daemon installiert [...] kann Nagios ihn nutzen, um lokale Ressourcen wie Prozesse, Festplatten oder Interface-Auslastung abzufragen."' \begin{flushright}\cite{Barth08} S. 101\end{flushright}\end{quote} 
 
 Durch SNMP kann auf die strukturierte Datenhaltung der MIB\footnote{Die Management Information Base (\gls{MIB}) dient als SNMP-Informationstruktur und besteht aus einem hierarchischen, aus Zahlen aufgebauten Namensraum. Ähnliche Struktur wie andere hierarchische Verzeichnisdiensten wie \gls{DNS} oder \gls{LDAP}. Quelle: \cite{Barth08} S.233} in den entfernten Netzwerkknoten zugegriffen werden.
+%###########################
+Die MIB-Struktur ist folgendermaßen aufgebaut:
 
-\begin{center}
-TODO: SNMP MIB?
-\end{center}
+\begin{figure}[ht]
+	\centering
+	   \fbox{\includegraphics[width=0.95\textwidth]{bilder/mib.png}}
+		\caption[Struktur der Management Information Base (MIB)]{Struktur der Management Information Base (MIB)\protect\footnotemark}
+		\label{munin-mib}
+\end{figure}
+\footnotetext{Quelle: \cite{Mu08} S. 156}
+Anhand dieser Anordnung können die SNMP-Plugins den gewünschten Wert über das Netzwerk abfragen, ohne, dass auf dem Host ein installiertes Programm bzw. Agent notwendig ist.
 
+%Einen beispielhaften Zugriff auf SNMP-fähige Geräte wird in Abbildung \ref{munin-snmp} gezeigt.
 
+%\begin{figure}[ht]
+%	\centering
+%	   \fbox{\includegraphics[width=0.5\textwidth]{bilder/snmp.png}}
+%		\caption[Beispielhafter Zugriff auf SNMP-fähige Geräte]{Beispielhafter Zugriff auf SNMP-fähige Geräte\protect\footnotemark}
+%		\label{munin-snmp}
+%\end{figure}
+%\footnotetext{Quelle: \cite{Mu08} S. 156}
+
+%##################
 
 Man unterscheidet zwischen aktiven und passiven Checks.
 \paragraph{passive}

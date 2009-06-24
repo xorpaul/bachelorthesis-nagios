@@ -32,24 +32,24 @@
 \contentsline {paragraph}{Variante / Methode / Client 3}{17}{section*.6}
 \contentsline {paragraph}{Variante / Methode / Client 4}{18}{section*.7}
 \contentsline {paragraph}{passive}{19}{section*.8}
-\contentsline {subsection}{\numberline {5.4}\IeC {\"U}berwachungslogik (mit Alarmierung/Benachrichtigung)}{19}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.4}\IeC {\"U}berwachungslogik (mit Alarmierung/Benachrichtigung)}{20}{subsection.5.4}
 \contentsline {subsection}{\numberline {5.5}Plugins}{20}{subsection.5.5}
-\contentsline {subsection}{\numberline {5.6}(Windows) Agenten oder allgemein Einholen von Infos}{20}{subsection.5.6}
+\contentsline {subsection}{\numberline {5.6}(Windows) Agenten oder allgemein Einholen von Infos}{21}{subsection.5.6}
 \contentsline {section}{\numberline {6}Oracle UCM}{22}{section.6}
 \contentsline {subsection}{\numberline {6.1}Allgemein}{22}{subsection.6.1}
 \contentsline {subsection}{\numberline {6.2}Aufbau / Architektur}{22}{subsection.6.2}
-\contentsline {subsubsection}{\numberline {6.2.1}Content Server}{22}{subsubsection.6.2.1}
-\contentsline {subsubsection}{\numberline {6.2.2}Vault und Web Layout}{22}{subsubsection.6.2.2}
-\contentsline {subsubsection}{\numberline {6.2.3}Inbound Refinery}{22}{subsubsection.6.2.3}
-\contentsline {subsubsection}{\numberline {6.2.4}Search Engine}{22}{subsubsection.6.2.4}
-\contentsline {subsubsection}{\numberline {6.2.5}Webserver}{22}{subsubsection.6.2.5}
+\contentsline {subsubsection}{\numberline {6.2.1}Content Server}{23}{subsubsection.6.2.1}
+\contentsline {subsubsection}{\numberline {6.2.2}Vault und Web Layout}{23}{subsubsection.6.2.2}
+\contentsline {subsubsection}{\numberline {6.2.3}Inbound Refinery}{23}{subsubsection.6.2.3}
+\contentsline {subsubsection}{\numberline {6.2.4}Search Engine}{23}{subsubsection.6.2.4}
+\contentsline {subsubsection}{\numberline {6.2.5}Webserver}{23}{subsubsection.6.2.5}
 \contentsline {subsection}{\numberline {6.3}\IeC {\"U}berwachungselemente}{23}{subsection.6.3}
 \contentsline {subsubsection}{\numberline {6.3.1}Statusabfragen}{23}{subsubsection.6.3.1}
-\contentsline {paragraph}{System}{23}{section*.9}
+\contentsline {paragraph}{System}{24}{section*.9}
 \contentsline {paragraph}{Prozesse}{24}{section*.10}
 \contentsline {paragraph}{Services}{24}{section*.11}
-\contentsline {subsubsection}{\numberline {6.3.2}\IeC {\"U}berwachung der Funktionalit\IeC {\"a}t}{24}{subsubsection.6.3.2}
-\contentsline {subsubsection}{\numberline {6.3.3}Auswerten von Logdateien}{26}{subsubsection.6.3.3}
+\contentsline {subsubsection}{\numberline {6.3.2}\IeC {\"U}berwachung der Funktionalit\IeC {\"a}t}{25}{subsubsection.6.3.2}
+\contentsline {subsubsection}{\numberline {6.3.3}Auswerten von Logdateien}{27}{subsubsection.6.3.3}
 \contentsline {section}{\numberline {7}Umsetzung}{28}{section.7}
 \contentsline {subsection}{\numberline {7.1}Aufbau der Testumgebung}{28}{subsection.7.1}
 \contentsline {subsubsection}{\numberline {7.1.1}Aufsetzen eines Nagios-Test-Systems}{28}{subsubsection.7.1.1}

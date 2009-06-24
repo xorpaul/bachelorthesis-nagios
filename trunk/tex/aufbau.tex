@@ -69,11 +69,11 @@ Weiterhin gibt es weiche (Soft States) und harte Zustände (Hard States):
 		\label{hs-states}
 \end{figure}
 \footnotetext{Quelle: \cite{Barth08} S. 95}
-Ausgehend von einem OK Zustand wird in diesem Beispiel jede fünf Minuten periodisch überprüft, ob sich der Status des übwachten Objektes verändert hat.
-Nach zehn Minuten                                                                                                                                                                                             wird ein Umschwenken / Änderung des Zustandes durch das jeweilige Plugin gemeldet\begin{quote}"`; der Zustand wechselt nach CRITICAL, zunächst allerdings als Soft State.
-Zu diesem Zeitpunkt löst Nagios noch keine Benachrichtigung aus"'\end{quote}, da es sich um eine Falschmeldung, auch False Positive genannt, handeln kann, aufgrund einer kurzweiligen / kurzfristigen (besseres Wort? peak mäßig) hohen Auslastung des Netzwerkes oder um ein kurzzeitiges Problem, welches sich von alleine wieder normalisiert. (Bspw. Prozessorauslastung)
+Ausgehend von einem OK Zustand wird in diesem Beispiel jede fünf Minuten periodisch überprüft, ob sich der Status des überwachten Objektes verändert hat.                                                                                                                                                                                         Nach zehn Minuten wird ein Umschwenken / Änderung des Zustandes durch das jeweilige Plugin gemeldet\begin{quote}"`; der Zustand wechselt nach CRITICAL, zunächst allerdings als Soft State.
+Zu diesem Zeitpunkt löst Nagios noch keine Benachrichtigung aus"'\end{quote}, da es sich um eine Falschmeldung, auch False Positive genannt, handeln kann.
+Aufgrund einer kurzweiligen / kurzfristigen (besseres Wort? peak mäßig) hohen Auslastung des Netzwerkes oder um ein kurzzeitiges Problem, welches sich von alleine wieder normalisiert. (Bspw. Prozessorauslastung)
 
-Nun wird der im Soft State befindliche Service bzw. Host mit einer höheren Frequenz überprüft, damit ein False Positive ausgeschlossen werden kann.
+Um einen False Positive auszuschliessen, wird der im Soft State befindliche Service bzw. Host mit einer höheren Frequenz überprüft.
 Sollten diese Überprüfungen den vorherigen Zustand bestätigen, verfestigt sich der aktuelle Zustand, man spricht nun von einem Hard State / wechselt der Zustand in den Hard State.
 Erst in diesem Moment werden die entsprechenden Kontaktpersonen über den in diesem Beispiel kritischen Zustand benachrichtigt.
 Sollte sich der Zustand wieder in den Normalzustand begeben und dieser Zustandsübergang wird von dem (von Nagios ausgeführten) Plugin festgestellt, wird dies an den Nagios Server gemeldet.
@@ -85,4 +85,5 @@ Ein Übergang zu dem OK Status wird sofort als Hard State festgelegt / festgehal
 \item Wie werden die Info von Nagios gesammelt und wie gespeichert -> FlapDetection
 \item \textbf{Performacedaten???}
 \item FLapping \footnote{\url{http://nagios.sourceforge.net/docs/2\_0/flapping.html}}
+\item Benachrichtigung durch email oder sms sogar per Telefon geht usw.
 \end{itemize}
