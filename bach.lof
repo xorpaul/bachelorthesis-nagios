@@ -7,8 +7,9 @@
 \contentsline {figure}{\numberline {6}{\ignorespaces Beispielhafte manuelle Ausf\IeC {\"u}hrung eines netzwerkbasierenden Servicechecks / HTTP Server Check}}{16}{figure.6}
 \contentsline {figure}{\numberline {7}{\ignorespaces Verschiedene \IeC {\"U}berwachungsm\IeC {\"o}glichkeiten von Nagios}}{16}{figure.7}
 \contentsline {figure}{\numberline {8}{\ignorespaces Beispielhafte manuelle Ausf\IeC {\"u}hrung eines Servicechecks \IeC {\"u}ber SSH}}{17}{figure.8}
-\contentsline {figure}{\numberline {9}{\ignorespaces Passive Checks mit NSCA}}{19}{figure.9}
-\contentsline {figure}{\numberline {10}{\ignorespaces Aktive Checks mit NRPE}}{20}{figure.10}
-\contentsline {figure}{\numberline {11}{\ignorespaces \IeC {\"U}bersicht der verschiedenen Unix Agenten\footnotemark }}{20}{figure.11}
-\contentsline {figure}{\numberline {12}{\ignorespaces \IeC {\"U}bersicht der verschiedenen Windows Agenten}}{21}{figure.12}
-\contentsline {figure}{\numberline {13}{\ignorespaces Oracle UCM Architektur}}{22}{figure.13}
+\contentsline {figure}{\numberline {9}{\ignorespaces Struktur der Management Information Base (MIB)}}{19}{figure.9}
+\contentsline {figure}{\numberline {10}{\ignorespaces Passive Checks mit NSCA}}{20}{figure.10}
+\contentsline {figure}{\numberline {11}{\ignorespaces Aktive Checks mit NRPE}}{20}{figure.11}
+\contentsline {figure}{\numberline {12}{\ignorespaces \IeC {\"U}bersicht der verschiedenen Unix Agenten\footnotemark }}{21}{figure.12}
+\contentsline {figure}{\numberline {13}{\ignorespaces \IeC {\"U}bersicht der verschiedenen Windows Agenten}}{22}{figure.13}
+\contentsline {figure}{\numberline {14}{\ignorespaces Oracle UCM Architektur}}{23}{figure.14}
