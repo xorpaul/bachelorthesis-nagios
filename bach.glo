@@ -1,12 +1,14 @@
-\glossaryentry{DMS?\glossaryentryfield{DMS}{\glsnamefont{DMS}}{Dokumenten-Management-System}{\relax }|setentrycounter{page}\glsnumberformat}{5}
-\glossaryentry{CMS?\glossaryentryfield{CMS}{\glsnamefont{CMS}}{Content-Management-System}{\relax }|setentrycounter{page}\glsnumberformat}{7}
-\glossaryentry{ECM?\glossaryentryfield{ECM}{\glsnamefont{ECM}}{Enterprise-Content-Management}{\relax }|setentrycounter{page}\glsnumberformat}{9}
-\glossaryentry{AIIM?\glossaryentryfield{AIIM}{\glsnamefont{AIIM}}{Association for Information and Image Management - Die AIIM ist eine Gesellschaft von internationalen Herstellern und Anwendern von Informations- und Dokumenten-Mangement-Systemen.}{\relax }|setentrycounter{page}\glsnumberformat}{10}
-\glossaryentry{UCM?\glossaryentryfield{UCM}{\glsnamefont{UCM}}{Universal-Content-Management}{\relax }|setentrycounter{page}\glsnumberformat}{10}
-\glossaryentry{NRPE?\glossaryentryfield{NRPE}{\glsnamefont{NRPE}}{Nagios Remote Plugin Executor}{\relax }|setentrycounter{page}\glsnumberformat}{17}
-\glossaryentry{SSH?\glossaryentryfield{SSH}{\glsnamefont{SSH}}{Secure Shell - Durch eine Secure Shell kann man sich eine verschlüsselte Netzwerkverbindung zum entfernten Rechner aufbauen.}{\relax }|setentrycounter{page}\glsnumberformat}{17}
-\glossaryentry{NSCA?\glossaryentryfield{NSCA}{\glsnamefont{NSCA}}{Nagios Service Check Acceptor}{\relax }|setentrycounter{page}\glsnumberformat}{19}
-\glossaryentry{MIB?\glossaryentryfield{MIB}{\glsnamefont{MIB}}{Management Information Base}{\relax }|setentrycounter{page}\glsnumberformat}{19}
-\glossaryentry{DNS?\glossaryentryfield{DNS}{\glsnamefont{DNS}}{Domain Name System}{\relax }|setentrycounter{page}\glsnumberformat}{19}
-\glossaryentry{LDAP?\glossaryentryfield{LDAP}{\glsnamefont{LDAP}}{Lightweight Directory Access Protocol}{\relax }|setentrycounter{page}\glsnumberformat}{19}
-\glossaryentry{OracleUCM?\glossaryentryfield{OracleUCM}{\glsnamefont{OracleUCM}}{Content-Management-System von Oracle}{\relax }|setentrycounter{page}\glsnumberformat}{29}
+\glossaryentry{IP?\glossaryentryfield{IP}{\glsnamefont{IP}}{\textit {Identifikation Protokoll}}{\relax }|setentrycounter{page}\glsnumberformat}{5}
+\glossaryentry{DMS?\glossaryentryfield{DMS}{\glsnamefont{DMS}}{Dokumenten-Management-System}{\relax }|setentrycounter{page}\glsnumberformat}{6}
+\glossaryentry{CMS?\glossaryentryfield{CMS}{\glsnamefont{CMS}}{Content-Management-System}{\relax }|setentrycounter{page}\glsnumberformat}{9}
+\glossaryentry{ECM?\glossaryentryfield{ECM}{\glsnamefont{ECM}}{Enterprise-Content-Management}{\relax }|setentrycounter{page}\glsnumberformat}{11}
+\glossaryentry{AIIM?\glossaryentryfield{AIIM}{\glsnamefont{AIIM}}{Association for Information and Image Management - Die AIIM ist eine Gesellschaft von internationalen Herstellern und Anwendern von Informations- und Dokumenten-Mangement-Systemen.}{\relax }|setentrycounter{page}\glsnumberformat}{11}
+\glossaryentry{UCM?\glossaryentryfield{UCM}{\glsnamefont{UCM}}{Universal-Content-Management}{\relax }|setentrycounter{page}\glsnumberformat}{12}
+\glossaryentry{FTP?\glossaryentryfield{FTP}{\glsnamefont{FTP}}{File Transfer Protokoll}{\relax }|setentrycounter{page}\glsnumberformat}{18}
+\glossaryentry{SSH?\glossaryentryfield{SSH}{\glsnamefont{SSH}}{Secure Shell - Durch eine Secure Shell kann man sich eine verschlüsselte Netzwerkverbindung zum entfernten Rechner aufbauen.}{\relax }|setentrycounter{page}\glsnumberformat}{19}
+\glossaryentry{NRPE?\glossaryentryfield{NRPE}{\glsnamefont{NRPE}}{Nagios Remote Plugin Executor}{\relax }|setentrycounter{page}\glsnumberformat}{20}
+\glossaryentry{MIB?\glossaryentryfield{MIB}{\glsnamefont{MIB}}{Management Information Base}{\relax }|setentrycounter{page}\glsnumberformat}{21}
+\glossaryentry{DNS?\glossaryentryfield{DNS}{\glsnamefont{DNS}}{Domain Name System}{\relax }|setentrycounter{page}\glsnumberformat}{21}
+\glossaryentry{LDAP?\glossaryentryfield{LDAP}{\glsnamefont{LDAP}}{Lightweight Directory Access Protocol}{\relax }|setentrycounter{page}\glsnumberformat}{21}
+\glossaryentry{NSCA?\glossaryentryfield{NSCA}{\glsnamefont{NSCA}}{Nagios Service Check Acceptor}{\relax }|setentrycounter{page}\glsnumberformat}{22}
+\glossaryentry{OracleUCM?\glossaryentryfield{OracleUCM}{\glsnamefont{OracleUCM}}{Content-Management-System von Oracle}{\relax }|setentrycounter{page}\glsnumberformat}{32}

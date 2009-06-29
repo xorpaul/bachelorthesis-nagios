@@ -1,15 +1,16 @@
 \select@language {ngerman}
-\contentsline {figure}{\numberline {1}{\ignorespaces "`any-to-any"' Content-Management Konzept}}{9}{figure.1}
-\contentsline {figure}{\numberline {2}{\ignorespaces Logische Nagios Struktur}}{12}{figure.2}
-\contentsline {figure}{\numberline {3}{\ignorespaces Beispielhafte manuelle Ausf\IeC {\"u}hrung eines Servicechecks}}{13}{figure.3}
-\contentsline {figure}{\numberline {4}{\ignorespaces R\IeC {\"u}ckgabewerte f\IeC {\"u}r Nagios Plugins}}{14}{figure.4}
-\contentsline {figure}{\numberline {5}{\ignorespaces Beispiel f\IeC {\"u}r den zeitlichen Verlauf durch vers. Zust\IeC {\"a}nde}}{14}{figure.5}
-\contentsline {figure}{\numberline {6}{\ignorespaces Beispielhafte manuelle Ausf\IeC {\"u}hrung eines netzwerkbasierenden Servicechecks / HTTP Server Check}}{16}{figure.6}
-\contentsline {figure}{\numberline {7}{\ignorespaces Verschiedene \IeC {\"U}berwachungsm\IeC {\"o}glichkeiten von Nagios}}{16}{figure.7}
-\contentsline {figure}{\numberline {8}{\ignorespaces Beispielhafte manuelle Ausf\IeC {\"u}hrung eines Servicechecks \IeC {\"u}ber SSH}}{17}{figure.8}
-\contentsline {figure}{\numberline {9}{\ignorespaces Struktur der Management Information Base (MIB)}}{19}{figure.9}
-\contentsline {figure}{\numberline {10}{\ignorespaces Passive Checks mit NSCA}}{20}{figure.10}
-\contentsline {figure}{\numberline {11}{\ignorespaces Aktive Checks mit NRPE}}{20}{figure.11}
-\contentsline {figure}{\numberline {12}{\ignorespaces \IeC {\"U}bersicht der verschiedenen Unix Agenten\footnotemark }}{21}{figure.12}
-\contentsline {figure}{\numberline {13}{\ignorespaces \IeC {\"U}bersicht der verschiedenen Windows Agenten}}{22}{figure.13}
-\contentsline {figure}{\numberline {14}{\ignorespaces Oracle UCM Architektur}}{23}{figure.14}
+\contentsline {figure}{\numberline {1}{\ignorespaces Zus\IeC {\"a}tzliche Netzwerkabh\IeC {\"a}ngigkeit und Netzwerkbelastung}}{5}{figure.1}
+\contentsline {figure}{\numberline {2}{\ignorespaces "`any-to-any"' Content-Management Konzept}}{11}{figure.2}
+\contentsline {figure}{\numberline {3}{\ignorespaces Logische Nagios Struktur}}{14}{figure.3}
+\contentsline {figure}{\numberline {4}{\ignorespaces Beispielhafte manuelle Ausf\IeC {\"u}hrung eines Servicechecks}}{15}{figure.4}
+\contentsline {figure}{\numberline {5}{\ignorespaces R\IeC {\"u}ckgabewerte f\IeC {\"u}r Nagios Plugins}}{16}{figure.5}
+\contentsline {figure}{\numberline {6}{\ignorespaces Beispiel f\IeC {\"u}r den zeitlichen Verlauf durch vers. Zust\IeC {\"a}nde}}{16}{figure.6}
+\contentsline {figure}{\numberline {7}{\ignorespaces Beispielhafte manuelle Ausf\IeC {\"u}hrung eines netzwerkbasierenden Servicechecks / HTTP Server Check}}{18}{figure.7}
+\contentsline {figure}{\numberline {8}{\ignorespaces Verschiedene \IeC {\"U}berwachungsm\IeC {\"o}glichkeiten von Nagios}}{19}{figure.8}
+\contentsline {figure}{\numberline {9}{\ignorespaces Beispielhafte manuelle Ausf\IeC {\"u}hrung eines Servicechecks \IeC {\"u}ber SSH}}{20}{figure.9}
+\contentsline {figure}{\numberline {10}{\ignorespaces Struktur der Management Information Base (MIB)}}{22}{figure.10}
+\contentsline {figure}{\numberline {11}{\ignorespaces Passive Checks mit NSCA}}{22}{figure.11}
+\contentsline {figure}{\numberline {12}{\ignorespaces Aktive Checks mit NRPE}}{23}{figure.12}
+\contentsline {figure}{\numberline {13}{\ignorespaces \IeC {\"U}bersicht der verschiedenen Unix Agenten\footnotemark }}{23}{figure.13}
+\contentsline {figure}{\numberline {14}{\ignorespaces \IeC {\"U}bersicht der verschiedenen Windows Agenten}}{24}{figure.14}
+\contentsline {figure}{\numberline {15}{\ignorespaces Oracle UCM Architektur}}{26}{figure.15}

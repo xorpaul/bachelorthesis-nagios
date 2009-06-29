@@ -1,0 +1,20 @@
+% This file was created with JabRef 2.5.
+% Encoding: UTF-8
+
+@BOOK{,
+  title = {Nagios - System- und Netzwerk-Monitoring},
+  publisher = {Open Source Press, München},
+  year = {2008},
+  author = {Wolfgang Barth},
+  owner = {paul},
+  timestamp = {2009.06.29}
+}
+
+@comment{jabref-meta: selector_publisher:}
+
+@comment{jabref-meta: selector_author:}
+
+@comment{jabref-meta: selector_journal:}
+
+@comment{jabref-meta: selector_keywords:}
+
