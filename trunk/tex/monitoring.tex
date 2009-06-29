@@ -24,10 +24,74 @@ In diesem Fall ist das Überwachungssystem darauf angewiesen, dass die einzelnen
 Nagios bietet zusätzlich noch eine weitere, dritte Möglichkeit durch das \textit{Distributed Monitoring} (Verteilte Überwachung) an, siehe Kapitel \ref{dismoni}.
 
 \subsubsection{Netzwerkstruktur und Abhängigkeiten}
+Die Überwachung von Hosts und Services über das Netzwerk erzeugt normalerweise immer zusätzlichen \gls{IP}-Traffic.
+Das bedeutet, dass jede Überquerung weiterer Netzwerkknoten, die zwischen dem Überwachungsserver und den zu überwachenden Geräten liegen, eine weitere Belastung für das Netzwerk bedeutet, sowie eine Abhängigkeit zwischen Host und Server einführt.
 
+\begin{figure}[ht]
+	\centering
+	   %\fbox{\includegraphics[width=0.85\textwidth]{bilder/rechability.png}}
+	   \fbox{Quelle: \cite{Jose07} S. 5}
+		\caption[Zusätzliche Netzwerkabhängigkeit und Netzwerkbelastung]{Zusätzliche Netzwerkabhängigkeit und Netzwerkbelastung\protect\footnote}
+		\label{ucm-a2a}
+\end{figure}
+\footnotetext{Quelle: \cite{Jose07} S. 5}
+
+In der obigen Abbildung erzeugt der Router 1 die zuvor beschriebene zusätzliche Netzwerkabhängigkeit und Netzwerkbelastung, da der Server 1 bei einem Ausfall des Routers nicht mehr durch den Überwachungsserver erreichbar ist und jede Überprüfung, die vom Überwachungsserver gesendet wird den Router mit dem Routing der Pakete belastet.
+
+Deshalb gilt es laut \cite{Jose07} S. 5 folgende zwei Punkte beim Erstellen eines Überwachungssystems zu beachten:
+
+\paragraph{Überwachungsredundanzen vermeiden}
+Redundate Überwachung entsteht dadurch, dass der gleiche Service durch zwei Arten mit unterschiedlichen Tiefen / Tiefgang geprüft wird.
+Ein einfaches Beispiel ist die Überwachung eines Webservers auf dem Standardport 80.
+Eine Überwachungsmethode ist es diesen Port abzufragen und die entsprechende Rückantwort des Servers auszuwerten.
+Soll die auf dem Webserver laufende Webseite überwacht werden, kann die jeweilige Webseite über die Adresse nach einem bestimmten Inhalt untersucht werden.
+
+In beiden Fällen wird getestet, ob der Webserver über das Netzwerk ansprechbar ist, jedoch sagt der zweite Test zusätzlich noch aus, dass die Webseite korrekt angezeigt wird, somit wäre der erste Test überflüssig.
+Jedoch muss zuvor abgewogen werden, ob eine redundante Überwachung nicht sogar hilfreich bei der Ermittlung der Fehlerursache ist.
+Wenn im oberen Beispiel der Inhalt der überwachten Webseite verändert wird, ist nur aus dem zweiten Test nicht ersichtlich, dass der Webserver einwandfrei funktioniert.
+
+\paragraph{Minimale Netzwerkbelastung}
+Um bereits stark belastete Netzwerkpunkte zu entlasten, bietet es sich an die Frequenz mit der die Test über das Netzwerk gesendet werden zu verringern.
+Die Aufstellung des Überwachungsservers ist gerade bei größeren Serverlandschaften sehr wichtig, da durch eine effiziente Platzierung womögliche Flaschenhälse / Engstellen vermieden werden können.
 
 \subsubsection{Sicherheitsaspekte}
+Um erweiterte Statusinformationen über Prozess oder Arbeitsspeicherauslastung auszulesen ist meistens zusätzliche Software auf den Hosts installiert.
+Dadurch erhält der Überwachungsserver Ausführungsrechte auf dem Client, so dass eine weitere potentielle Sicherheitslücke in einem (vermeindlich) zuvor sicheren System entsteht.
+Jeder, der die Kontrolle über den Überwachungsserver besitzt, kontrolliert somit gleichzeitig alle anderen überwachte Hosts.
+
+\begin{itemize}
+\item Verschlüsselung der Informationen, die zwischen dem Server und dem Host hin- und hergesendet werden, damit man nicht die Inforamtionen im Klartext einfach auslesen kann.
+\item Firewall regeln, dazu Bild aus dem Jose07 Buch S9
+\end{itemize
 \subsubsection{Port- versus Anwendungsüberwachung}
 \begin{itemize}
 \item E2E
 \end{itemize}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
