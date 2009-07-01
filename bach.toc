@@ -11,6 +11,7 @@
 \contentsline {paragraph}{\IeC {\"U}berwachungsredundanzen vermeiden}{5}{section*.4}
 \contentsline {paragraph}{Minimale Netzwerkbelastung}{6}{section*.5}
 \contentsline {subsubsection}{\numberline {4.1.3}Sicherheitsaspekte}{6}{subsubsection.4.1.3}
+\contentsline {subsubsection}{\numberline {4.1.4}Port- versus Anwendungs\IeC {\"u}berwachung}{6}{subsubsection.4.1.4}
 \contentsline {subsection}{\numberline {4.2}Dokumenten-Management-Systeme}{6}{subsection.4.2}
 \contentsline {subsubsection}{\numberline {4.2.1}Eingabe}{9}{subsubsection.4.2.1}
 \contentsline {subsubsection}{\numberline {4.2.2}Archivierung und Verwaltung}{9}{subsubsection.4.2.2}
@@ -19,54 +20,52 @@
 \contentsline {subsection}{\numberline {4.4}[Enterprise-Content-Management-Systeme]}{11}{subsection.4.4}
 \contentsline {subsection}{\numberline {4.5}Universal-Content-Management-Systeme}{12}{subsection.4.5}
 \contentsline {subsection}{\numberline {4.6}[cronjobs]}{12}{subsection.4.6}
-\contentsline {subsection}{\numberline {4.7}[Farbraum]}{12}{subsection.4.7}
-\contentsline {subsection}{\numberline {4.8}[ds - ADS Benutzer]}{12}{subsection.4.8}
-\contentsline {subsection}{\numberline {4.9}[Metadaten allg]}{12}{subsection.4.9}
-\contentsline {subsection}{\numberline {4.10}[alse+-true+-]}{12}{subsection.4.10}
-\contentsline {subsection}{\numberline {4.11}[evtl Oracle DB]}{12}{subsection.4.11}
+\contentsline {subsection}{\numberline {4.7}[ds - ADS Benutzer]}{12}{subsection.4.7}
+\contentsline {subsection}{\numberline {4.8}[Metadaten allg]}{12}{subsection.4.8}
+\contentsline {subsection}{\numberline {4.9}[alse+-true+-]}{12}{subsection.4.9}
 \contentsline {section}{\numberline {5}Nagios}{13}{section.5}
 \contentsline {subsection}{\numberline {5.1}Allgemein}{13}{subsection.5.1}
 \contentsline {subsection}{\numberline {5.2}Aufbau / Architektur}{14}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}Service Checks und deren / ihre Realisierung / Ausf\IeC {\"u}hrung / (\IeC {\"U}berpr\IeC {\"u}fungs)Methoden}{18}{subsection.5.3}
-\contentsline {paragraph}{Variante / Methode / Client 1}{18}{section*.6}
+\contentsline {subsection}{\numberline {5.3}\IeC {\"U}berpr\IeC {\"u}fungs-Methoden}{17}{subsection.5.3}
+\contentsline {paragraph}{Variante / Methode / Client 1}{19}{section*.6}
 \contentsline {paragraph}{Variante / Methode / Client 2}{19}{section*.7}
-\contentsline {paragraph}{Variante / Methode / Client 3}{20}{section*.8}
-\contentsline {paragraph}{Variante / Methode / Client 4}{21}{section*.9}
+\contentsline {paragraph}{Variante / Methode / Client 3}{19}{section*.8}
+\contentsline {paragraph}{Variante / Methode / Client 4}{20}{section*.9}
 \contentsline {paragraph}{passive}{21}{section*.10}
 \contentsline {subsection}{\numberline {5.4}\IeC {\"U}berwachungslogik (mit Alarmierung/Benachrichtigung)}{22}{subsection.5.4}
-\contentsline {subsection}{\numberline {5.5}Plugins}{23}{subsection.5.5}
+\contentsline {subsection}{\numberline {5.5}Plugins}{22}{subsection.5.5}
 \contentsline {subsection}{\numberline {5.6}(Windows) Agenten oder allgemein Einholen von Infos}{23}{subsection.5.6}
-\contentsline {subsection}{\numberline {5.7}Visualisierung der eingesammelten Daten}{25}{subsection.5.7}
-\contentsline {section}{\numberline {6}Oracle UCM}{26}{section.6}
-\contentsline {subsection}{\numberline {6.1}Allgemein}{26}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Aufbau / Architektur}{26}{subsection.6.2}
-\contentsline {subsubsection}{\numberline {6.2.1}Content Server}{26}{subsubsection.6.2.1}
-\contentsline {subsubsection}{\numberline {6.2.2}Vault und Web Layout}{26}{subsubsection.6.2.2}
-\contentsline {subsubsection}{\numberline {6.2.3}Inbound Refinery}{26}{subsubsection.6.2.3}
-\contentsline {subsubsection}{\numberline {6.2.4}Search Engine}{26}{subsubsection.6.2.4}
-\contentsline {subsubsection}{\numberline {6.2.5}Webserver}{26}{subsubsection.6.2.5}
-\contentsline {subsection}{\numberline {6.3}\IeC {\"U}berwachungselemente}{27}{subsection.6.3}
-\contentsline {subsubsection}{\numberline {6.3.1}Statusabfragen}{27}{subsubsection.6.3.1}
-\contentsline {paragraph}{System}{27}{section*.11}
-\contentsline {paragraph}{Prozesse}{28}{section*.12}
-\contentsline {paragraph}{Services}{28}{section*.13}
-\contentsline {subsubsection}{\numberline {6.3.2}\IeC {\"U}berwachung der Funktionalit\IeC {\"a}t}{28}{subsubsection.6.3.2}
-\contentsline {subsubsection}{\numberline {6.3.3}Auswerten von Logdateien}{30}{subsubsection.6.3.3}
-\contentsline {section}{\numberline {7}Umsetzung}{32}{section.7}
-\contentsline {subsection}{\numberline {7.1}Aufbau der Testumgebung}{32}{subsection.7.1}
-\contentsline {subsubsection}{\numberline {7.1.1}Aufsetzen eines Nagios-Test-Systems}{32}{subsubsection.7.1.1}
-\contentsline {subsubsection}{\numberline {7.1.2}Bilddatenbank als VM}{32}{subsubsection.7.1.2}
-\contentsline {subsection}{\numberline {7.2}Basis\IeC {\"u}berwachung - Konfigurationsdateien}{32}{subsection.7.2}
-\contentsline {subsection}{\numberline {7.3}Einrichten des Windows Agenten}{32}{subsection.7.3}
-\contentsline {subsection}{\numberline {7.4}\IeC {\"U}berpr\IeC {\"u}fen der Prozesse und Services}{33}{subsection.7.4}
-\contentsline {subsection}{\numberline {7.5}Umsetzung der Funktionlit\IeC {\"a}tstest}{34}{subsection.7.5}
-\contentsline {subsection}{\numberline {7.6}Auswertung der Logs + Stopw\IeC {\"o}rterdefinition}{34}{subsection.7.6}
-\contentsline {section}{\numberline {8}Ergebnis}{35}{section.8}
-\contentsline {section}{\numberline {9}Zusammenfassung und Ausblick}{36}{section.9}
-\contentsline {section}{\numberline {10}Anhang}{37}{section.10}
-\contentsline {subsection}{\numberline {10.1}Abbildungsverzeichnis}{37}{subsection.10.1}
-\contentsline {subsection}{\numberline {10.2}Codelistingverzeichnis}{38}{subsection.10.2}
-\contentsline {subsection}{\numberline {10.3}Quellverzeichnis}{39}{subsection.10.3}
-\contentsline {subsubsection}{\numberline {10.3.1}Literaturverzeichnis}{39}{subsubsection.10.3.1}
-\contentsline {subsubsection}{\numberline {10.3.2}Internetquellen}{40}{subsubsection.10.3.2}
-\contentsline {subsection}{\numberline {10.4}Glossar}{41}{subsection.10.4}
+\contentsline {subsection}{\numberline {5.7}Visualisierung der eingesammelten Daten}{24}{subsection.5.7}
+\contentsline {section}{\numberline {6}Oracle UCM}{25}{section.6}
+\contentsline {subsection}{\numberline {6.1}Allgemein}{25}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Aufbau / Architektur}{25}{subsection.6.2}
+\contentsline {subsubsection}{\numberline {6.2.1}Content Server}{25}{subsubsection.6.2.1}
+\contentsline {subsubsection}{\numberline {6.2.2}Vault und Web Layout}{25}{subsubsection.6.2.2}
+\contentsline {subsubsection}{\numberline {6.2.3}Inbound Refinery}{25}{subsubsection.6.2.3}
+\contentsline {subsubsection}{\numberline {6.2.4}Search Engine}{25}{subsubsection.6.2.4}
+\contentsline {subsubsection}{\numberline {6.2.5}Webserver}{25}{subsubsection.6.2.5}
+\contentsline {subsection}{\numberline {6.3}\IeC {\"U}berwachungselemente}{26}{subsection.6.3}
+\contentsline {subsubsection}{\numberline {6.3.1}Statusabfragen}{26}{subsubsection.6.3.1}
+\contentsline {paragraph}{System}{26}{section*.11}
+\contentsline {paragraph}{Prozesse}{27}{section*.12}
+\contentsline {paragraph}{Services}{27}{section*.13}
+\contentsline {subsubsection}{\numberline {6.3.2}\IeC {\"U}berwachung der Funktionalit\IeC {\"a}t}{27}{subsubsection.6.3.2}
+\contentsline {subsubsection}{\numberline {6.3.3}Auswerten von Logdateien}{29}{subsubsection.6.3.3}
+\contentsline {section}{\numberline {7}Umsetzung}{31}{section.7}
+\contentsline {subsection}{\numberline {7.1}Aufbau der Testumgebung}{31}{subsection.7.1}
+\contentsline {subsubsection}{\numberline {7.1.1}Aufsetzen eines Nagios-Test-Systems}{31}{subsubsection.7.1.1}
+\contentsline {subsubsection}{\numberline {7.1.2}Bilddatenbank als VM}{31}{subsubsection.7.1.2}
+\contentsline {subsection}{\numberline {7.2}Basis\IeC {\"u}berwachung - Konfigurationsdateien}{31}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Einrichten des Windows Agenten}{31}{subsection.7.3}
+\contentsline {subsection}{\numberline {7.4}\IeC {\"U}berpr\IeC {\"u}fen der Prozesse und Services}{32}{subsection.7.4}
+\contentsline {subsection}{\numberline {7.5}Umsetzung der Funktionlit\IeC {\"a}tstest}{32}{subsection.7.5}
+\contentsline {subsection}{\numberline {7.6}Auswertung der Logs + Stopw\IeC {\"o}rterdefinition}{33}{subsection.7.6}
+\contentsline {section}{\numberline {8}Ergebnis}{34}{section.8}
+\contentsline {section}{\numberline {9}Zusammenfassung und Ausblick}{35}{section.9}
+\contentsline {section}{\numberline {10}Anhang}{36}{section.10}
+\contentsline {subsection}{\numberline {10.1}Abbildungsverzeichnis}{36}{subsection.10.1}
+\contentsline {subsection}{\numberline {10.2}Codelistingverzeichnis}{37}{subsection.10.2}
+\contentsline {subsection}{\numberline {10.3}Quellverzeichnis}{38}{subsection.10.3}
+\contentsline {subsubsection}{\numberline {10.3.1}Literaturverzeichnis}{38}{subsubsection.10.3.1}
+\contentsline {subsubsection}{\numberline {10.3.2}Internetquellen}{39}{subsubsection.10.3.2}
+\contentsline {subsection}{\numberline {10.4}Glossar}{40}{subsection.10.4}
