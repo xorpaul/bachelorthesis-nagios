@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2009.1.26)  1 JUL 2009 08:03
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2009.1.26)  2 JUL 2009 15:51
 entering extended mode
  %&-line parsing enabled.
 **bach.tex
@@ -657,20 +657,18 @@ Overfull \hbox (5.07245pt too wide) in paragraph at lines 54--56
  stark be-las-te-te Netz-werk-punk-
  []
 
-LaTeX Font Info:    Try loading font information for OMS+aer on input line 63.
+LaTeX Font Info:    Try loading font information for OMS+aer on input line 67.
 (/usr/share/texmf-texlive/tex/latex/ae/omsaer.fd
 File: omsaer.fd 1999/12/27
 )
 LaTeX Font Info:    Font shape `OMS/aer/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 63.
-) (./tex/dms.tex
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 67.
 File: bilder/fzk2.png Graphic file (type png)
-
-<use bilder/fzk2.png>
+ <use bilder/fzk2.png>
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[6]
+[6]) (./tex/dms.tex
 Overfull \hbox (5.03622pt too wide) in paragraph at lines 7--8
 []\T1/aer/m/n/12 Ein Do-ku-ment fasst in-halt-lich zu-sam-men-ge-hö-ren-de In-f
 or-ma-tio-nen struk-
@@ -687,18 +685,18 @@ Overfull \hbox (2.51434pt too wide) in paragraph at lines 37--38
 -ren Sin-
  []
 
-
-Overfull \hbox (5.57437pt too wide) in paragraph at lines 39--39
-[]\T1/aer/m/n/12 Den \T1/aer/bx/n/12 Dokumenten-Management-Systemen im wei-te-r
-en Sin-
- []
-
 File: bilder/fzk2.png Graphic file (type png)
 <use bilder/fzk2.png>
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
 [8]
+Overfull \hbox (5.57437pt too wide) in paragraph at lines 39--39
+[]\T1/aer/m/n/12 Den \T1/aer/bx/n/12 Dokumenten-Management-Systemen im wei-te-r
+en Sin-
+ []
+
+
 Overfull \hbox (0.28352pt too wide) in paragraph at lines 60--62
 \T1/aer/m/n/12 Content-Management nicht vor-der-grün-dig um die Ver-wal-tung vo
 n
@@ -721,18 +719,18 @@ File: bilder/fzk2.png Graphic file (type png)
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[9] <bilder/ucm.png, id=408, 513.92pt x 288.07625pt>
-File: bilder/ucm.png Graphic file (type png)
- <use bilder/ucm.png>
+[9]
 File: bilder/fzk2.png Graphic file (type png)
-
-<use bilder/fzk2.png>
+ <use bilder/fzk2.png>
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[10]
+[10] <bilder/ucm.png, id=412, 513.92pt x 288.07625pt>
+File: bilder/ucm.png Graphic file (type png)
+ <use bilder/ucm.png>
 LaTeX Font Info:    Try loading font information for T1+aett on input line 93.
- (/usr/share/texmf-texlive/tex/latex/ae/t1aett.fd
+
+(/usr/share/texmf-texlive/tex/latex/ae/t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 )
 Overfull \hbox (1.47629pt too wide) in paragraph at lines 92--95
@@ -928,18 +926,19 @@ File: bilder/fzk2.png Graphic file (type png)
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[25 <./bilder/basic_architecture.png (PNG copy)>]
+[25]
+File: bilder/fzk2.png Graphic file (type png)
+ <use bilder/fzk2.png>
+Overfull \vbox (1.68883pt too high) has occurred while \output is active []
+
+
+[26 <./bilder/basic_architecture.png (PNG copy)>]
 Overfull \hbox (1.49574pt too wide) in paragraph at lines 60--61
 []\T1/aer/bx/n/12 Festplattenspeicherausnutzung \T1/aer/m/n/12 Über-wacht die S
 pei-cher-platzaus-las-
  []
 
-File: bilder/fzk2.png Graphic file (type png)
-<use bilder/fzk2.png>
-Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
-
-[26]
 Overfull \hbox (15.20657pt too wide) in paragraph at lines 74--75
 []\T1/aer/bx/n/12 IdcContentService??? \T1/aer/m/n/12 Den Zu-stand des ^^RConte
 nt-Dienstes^^P-^^R\T1/aett/m/n/12 sccdms01\T1/aer/m/n/12 ^^P
@@ -963,30 +962,24 @@ Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
 [29]
-! Undefined control sequence.
-<recently read> \bottomrule 
-                            
-l.159 \bottomrule
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-)
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png>
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[30] (./tex/umsetzung.tex
+[30])
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png>
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[31] (/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
+[31] (./tex/umsetzung.tex
+File: bilder/fzk2.png Graphic file (type png)
+ <use bilder/fzk2.png>
+Overfull \vbox (1.68883pt too high) has occurred while \output is active []
+
+
+[32] (/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
 File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 )
 (/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
@@ -997,25 +990,25 @@ File: bilder/fzk2.png Graphic file (type png)
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[32])
+[33])
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png>
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[33] (./tex/ergebnis.tex)
+[34] (./tex/ergebnis.tex)
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png>
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[34] (./tex/ausblick.tex)
+[35] (./tex/ausblick.tex)
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png>
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[35] (./bach.lof)
+[36] (./bach.lof)
 \tf@lof=\write8
 \openout8 = `bach.lof'.
 
@@ -1024,7 +1017,7 @@ File: bilder/fzk2.png Graphic file (type png)
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[36] (./bach.lol)
+[37] (./bach.lol)
 \tf@lol=\write9
 \openout9 = `bach.lol'.
 
@@ -1033,7 +1026,7 @@ File: bilder/fzk2.png Graphic file (type png)
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[37]
+[38]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -1062,7 +1055,7 @@ File: bilder/fzk2.png Graphic file (type png)
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[38]
+[39]
 Underfull \hbox (badness 10000) in paragraph at lines 146--147
 \T1/aer/m/n/12 Quelle: []$\T1/aett/m/n/12 http : / / download-[]west . oracle .
  com / docs / cd /
@@ -1096,33 +1089,30 @@ File: bilder/fzk2.png Graphic file (type png)
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[39] (./bach.gls)
+[40] (./bach.gls)
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png>
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[40] (./bach.aux)
+[41] (./bach.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 10496 strings out of 94074
- 143604 string characters out of 1165153
- 256079 words of memory out of 1500000
- 13253 multiletter control sequences out of 10000+50000
+ 10492 strings out of 94074
+ 143560 string characters out of 1165153
+ 256015 words of memory out of 1500000
+ 13250 multiletter control sequences out of 10000+50000
  41062 words of font info for 91 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
  51i,16n,99p,1128b,1102s stack positions out of 5000i,500n,6000p,200000b,5000s
-pdfTeX warning (dest): name{Hfootnote.23} has been referenced but does not ex
+pdfTeX warning (dest): name{Hfootnote.22} has been referenced but does not ex
 ist, replaced by a fixed one
 
 pdfTeX warning (dest): name{glo:OracleUCM} has been referenced but does not exi
 st, replaced by a fixed one
-
-pdfTeX warning (dest): name{Hfootnote.22} has been referenced but does not exis
-t, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.21} has been referenced but does not exis
 t, replaced by a fixed one
@@ -1206,9 +1196,9 @@ esky/cm/cmsl12.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmsy10.pfb>
 exlive/fonts/type1/bluesky/cm/cmtt10.pfb></usr/share/texmf-texlive/fonts/type1/
 bluesky/cm/cmtt12.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmtt8.pf
 b>
-Output written on bach.pdf (44 pages, 1401394 bytes).
+Output written on bach.pdf (45 pages, 1402246 bytes).
 PDF statistics:
- 836 PDF objects out of 1000 (max. 8388607)
- 206 named destinations out of 1000 (max. 131072)
+ 837 PDF objects out of 1000 (max. 8388607)
+ 205 named destinations out of 1000 (max. 131072)
  571 words of extra memory for PDF output out of 10000 (max. 10000000)
 

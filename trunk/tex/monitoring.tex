@@ -55,9 +55,13 @@ Um bereits stark belastete Netzwerkpunkte zu entlasten, bietet es sich an die Fr
 Die Aufstellung des Überwachungsservers ist gerade bei größeren Serverlandschaften sehr wichtig, da durch eine effiziente Platzierung womögliche Flaschenhälse / Engstellen vermieden werden können.
 
 \subsubsection{Sicherheitsaspekte}
-Um erweiterte Statusinformationen über Prozess oder Arbeitsspeicherauslastung auszulesen ist meistens zusätzliche Software auf den Hosts installiert.
+Um erweiterte Statusinformationen über einen Prozess oder über die Arbeitsspeicherauslastung auszulesen ist (meistens) zusätzliche Software auf den Hosts nötig.
 Dadurch erhält der Überwachungsserver Ausführungsrechte auf dem Client, so dass eine weitere potentielle Sicherheitslücke in einem (vermeindlich) zuvor sicheren System entsteht.
-Jeder, der die Kontrolle über den Überwachungsserver besitzt, kontrolliert somit gleichzeitig alle anderen überwachte Hosts.
+Jeder, der die Kontrolle über den Überwachungsserver besitzt oder sich als solcher ausgibt, kontrolliert somit gleichzeitig alle anderen überwachte Hosts.
+
+Um dies zu verhindern gibt es verschiedene Ansätze.
+Als ersten Ansatz sollte der Port durch den der Überwachungsserver mit dem Host kommuniziert vom Standardwert abweichen, damit nicht sofort erkennbar ist, dass sich eine (womöglich) ausnutzbare Überwachungssoftware sich auf dem Rechner befindet.
+Damit die über diesen Port versendeten Informationen nicht für Dritte zugänglich sind, bietet es sich an die auszutauschende Informationen mit einem Algorithmus zu verschlüsseln.
 
 \begin{itemize}
 \item Verschlüsselung der Informationen, die zwischen dem Server und dem Host hin- und hergesendet werden, damit man nicht die Inforamtionen im Klartext einfach auslesen kann.
