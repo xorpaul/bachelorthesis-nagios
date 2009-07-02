@@ -21,7 +21,7 @@ Die Architektur des Oracle UCM Systems gliedert sich in separate Komponenten auf
 
 \begin{figure}[ht]
 	\centering
-	   \fbox{\includegraphics[width=0.06\textwidth]{bilder/basic_architecture.png}}
+	   \fbox{\includegraphics[width=0.5\textwidth]{bilder/basic_architecture.png}}
 		\caption[Oracle UCM Architektur]{Oracle UCM Architektur\protect\footnote}
 		\label{ucm-arch}
 \end{figure}
@@ -112,6 +112,9 @@ Daher müss überprüft werden, ob diese Daten richtig ausgelesen werden, der Da
 
 \item \textbf{Suchfunktion} Nach einer erfolgreichen Indizierung muss das eingecheckte Dokument per Suchanfrage gefunden werden.
 Ob die Suche und Indizierung erfolgreich abgelaufen ist, wird zusätzlich überprüft. 
+
+\item Benutzersimulation!
+
 \end{itemize}
 
 \subsubsection{Auswerten von Logdateien}
@@ -137,31 +140,6 @@ So werden die Logdateien zwangsweise nach 30 Tagen nacheinander überschrieben.
 Diese Rotation der Logdateien muss bei der Durchsuchung nach Signal/Stopwörter beachtet werden, damit stets die aktuelle Logdatei überwacht wird und keine veralteten Informationen für False Positives-Meldungen durch Nagios sorgen.
 
 %wieso nur plugin check\_log und nicht einfahc umfangreicheres Standalone Programmw ie syslog\_nd oder 8pussy
-
-
-\begin{table}[!htbp]
-\centering
-%\begin{twoparttable}
-\begin{tabular}{l l l}
-%\hline
-\textbf{Alter der Daten } \hspace{10 mm} & \textbf{Auflösung} \hspace{10 mm} & \textbf{Auswerten der Logs} \hspace{10 mm}\\
-\hline
-%\textit{features} & complete\tnote{1} & complete\tnote{1} \\
-%\hline
-bis zu 30 Stunden & 5 Minuten  \\
-\hline
-bis zu 9 Tagen & 30 Minuten \\
-\hline
-bis zu 45 Tagen & 2 Stunden \\
-\hline
-bis zu 450 Tagen & 1 Tag \\
-%\hline
-\bottomrule
-\end{tabular}
-\caption[Zeitliche Auflösung der Datenbasis]{Zeitliche Auflösung der Datenbasis\protect\footnotemark}
-\label{timeres-tab}
-%\end{twoparttable}
-\end{table}
 
 
 Übersichttabelle? wie mit beschreibung verbinden?
