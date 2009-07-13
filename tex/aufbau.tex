@@ -59,6 +59,31 @@ Dabei wird in vier verschiedene Rückgabewerte / Antworten der Plugins unterschi
 		\label{nagios-4states}
 \end{figure}
 \footnotetext{Quelle: \cite{Barth08} S. 105f}
+
+\begin{table}[!htbp]
+\centering
+%\begin{twoparttable}
+\begin{tabular}{l l l}
+%\hline
+\textbf{Status} \hspace{2 mm} & \textbf{Bezeichnung} \hspace{3 mm} & \textbf{Beschreibung}\\
+\hline
+%\textit{features} & complete\tnote{1} & complete\tnote{1} \\
+%\hline
+0 & OK & Alles in Ordnung \\
+%\hline
+1 & WARNING & Die Warnschwelle wurde überschritten, die kritische \\ & & Schwelle ist aber noch nicht erreicht.\\
+%\hline
+2 & CRITICAL & Entweder wurde die kritische Schwelle \\ & &  überschritten oder das Plugin hat den Test\\ & & nach einem Timeout  abgebrochen. \\
+%\hline
+3 & UNKNOWN &  Innerhalb des Plugins trat ein Fehler auf (zum \\ & & Beispiel weil falsche Parameter verwendet wurden)\\
+%\hline
+\bottomrule
+\end{tabular}
+\caption[Rückgabewerte für Nagios Plugins]{Rückgabewerte für Nagios Plugins\protect\footnote} %\protect\footnote
+%\end{twoparttable}
+\end{table}
+\footnotetext{Quelle: \cite{Barth08} S. 105f}
+
 Anhand dieser Werte wertet Nagios gezielt den Status des jeweiligen Objektes (Host oder Service) aus.
 Weiterhin gibt es weiche (Soft States) und harte Zustände (Hard States):
 
