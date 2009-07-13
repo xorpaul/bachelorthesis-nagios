@@ -48,11 +48,12 @@ Soll die auf dem Webserver laufende Webseite überwacht werden, kann die jeweili
 
 In beiden Fällen wird getestet, ob der Webserver über das Netzwerk ansprechbar ist, jedoch sagt der zweite Test zusätzlich noch aus, dass die Webseite korrekt angezeigt wird, somit wäre der erste Test überflüssig.
 Jedoch muss zuvor abgewogen werden, ob eine redundante Überwachung nicht sogar hilfreich bei der Ermittlung der Fehlerursache ist.
-Wenn im oberen Beispiel der Inhalt der überwachten Webseite verändert wird, ist nur aus dem zweiten Test nicht ersichtlich, dass der Webserver einwandfrei funktioniert.
+Wenn im oberen Beispiel der Inhalt der überwachten Webseite verändert wird, ist dies nur aus dem zweiten Test ersichtlich.
+%, dass der Webserver einwandfrei funktioniert.
 
 \paragraph{Minimale Netzwerkbelastung}
 Um bereits stark belastete Netzwerkpunkte zu entlasten, bietet es sich an die Frequenz mit der die Test über das Netzwerk gesendet werden zu verringern.
-Die Aufstellung des Überwachungsservers ist gerade bei größeren Serverlandschaften sehr wichtig, da durch eine effiziente Platzierung womögliche Flaschenhälse / Engstellen vermieden werden können.
+Die Aufstellung des Überwachungsservers ist dadurch gerade bei größeren Serverlandschaften sehr wichtig, da durch eine effiziente Platzierung womögliche Flaschenhälse / Engstellen in Form von Switches oder ähnlichem vermieden werden können.
 
 \subsubsection{Sicherheitsaspekte}
 Um erweiterte Statusinformationen über einen Prozess oder über die Arbeitsspeicherauslastung auszulesen ist (meistens) zusätzliche Software auf den Hosts nötig.

@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2009.1.26)  2 JUL 2009 15:51
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2009.1.26)  13 JUL 2009 15:53
 entering extended mode
  %&-line parsing enabled.
 **bach.tex
@@ -652,17 +652,17 @@ Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
 [5]
-Overfull \hbox (5.07245pt too wide) in paragraph at lines 54--56
+Overfull \hbox (5.07245pt too wide) in paragraph at lines 55--57
  \T1/aer/bx/n/12 Mi-ni-ma-le Netz-werk-be-las-tung[] \T1/aer/m/n/12 Um be-reits
  stark be-las-te-te Netz-werk-punk-
  []
 
-LaTeX Font Info:    Try loading font information for OMS+aer on input line 67.
+LaTeX Font Info:    Try loading font information for OMS+aer on input line 68.
 (/usr/share/texmf-texlive/tex/latex/ae/omsaer.fd
 File: omsaer.fd 1999/12/27
 )
 LaTeX Font Info:    Font shape `OMS/aer/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 67.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 68.
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png>
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
@@ -791,13 +791,29 @@ File: bilder/check-swap-white.png Graphic file (type png)
 File: bilder/nagios-4state-tab.png Graphic file (type png)
 
 <use bilder/nagios-4state-tab.png>
+! Undefined control sequence.
+<recently read> \bottomrule 
+                            
+l.80 \bottomrule
+                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (45.55553pt too wide) in paragraph at lines 66--82
+ [][] 
+ []
+
 File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png>
+<use bilder/fzk2.png>
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
 [15 <./bilder/check-swap-white.png (PNG copy)>]
-<bilder/hs-states.png, id=487, 762.85pt x 216.81pt>
+<bilder/hs-states.png, id=489, 762.85pt x 216.81pt>
 File: bilder/hs-states.png Graphic file (type png)
  <use bilder/hs-states.png>
 File: bilder/fzk2.png Graphic file (type png)
@@ -807,22 +823,23 @@ Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
 [16 <./bilder/nagios-4state-tab.png (PNG copy)> <./bilder/hs-states.png>]
-Overfull \hbox (58.05164pt too wide) in paragraph at lines 89--90
+File: bilder/fzk2.png Graphic file (type png)
+
+<use bilder/fzk2.png>
+Overfull \vbox (1.68883pt too high) has occurred while \output is active []
+
+
+[17]
+Overfull \hbox (58.05164pt too wide) in paragraph at lines 114--115
 []\T1/aer/m/n/12 Hierarchie []$\T1/aett/m/n/12 http : / / nagios . sourceforge 
 . net / docs / 3 _ 0 / networkreachability .
  []
 
-) (./tex/services.tex
-File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png>
-Overfull \vbox (1.68883pt too high) has occurred while \output is active []
-
-
-[17] <bilder/check-http.png, id=511, 638.385pt x 29.10875pt>
+) (./tex/services.tex <bilder/check-http.png, id=513, 638.385pt x 29.10875pt>
 File: bilder/check-http.png Graphic file (type png)
 
 <use bilder/check-http.png>
-<bilder/nagios-kern.png, id=512, 860.21375pt x 595.22375pt>
+<bilder/nagios-kern.png, id=514, 860.21375pt x 595.22375pt>
 File: bilder/nagios-kern.png Graphic file (type png)
 
 <use bilder/nagios-kern.png>
@@ -831,8 +848,8 @@ File: bilder/fzk2.png Graphic file (type png)
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[18 <./bilder/check-http.png (PNG copy)> <./bilder/nagios-kern.png>]
-<bilder/check_by_ssh.png, id=527, 718.685pt x 28.105pt>
+[18 <./bilder/check-http.png (PNG copy)>]
+<bilder/check_by_ssh.png, id=529, 718.685pt x 28.105pt>
 File: bilder/check_by_ssh.png Graphic file (type png)
 
 <use bilder/check_by_ssh.png>
@@ -841,7 +858,7 @@ File: bilder/fzk2.png Graphic file (type png)
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[19 <./bilder/check_by_ssh.png (PNG copy)>]
+[19 <./bilder/nagios-kern.png>]
 
 ! Package glossaries Error: Glossary entry `SNMP' has not been defined.
 
@@ -854,30 +871,30 @@ l.65 ...e Network Management Protocol (\gls{SNMP})
 
 You need to define a glossary entry before you can use it.
 
+File: bilder/fzk2.png Graphic file (type png)
+<use bilder/fzk2.png>
+Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
+
+[20 <./bilder/check_by_ssh.png (PNG copy)>]
 Overfull \hbox (21.68184pt too wide) in paragraph at lines 68--68
 \T1/aer/m/n/12 nut-zen, um lo-ka-le Res-sour-cen wie Pro-zes-se, Fest-plat-ten 
 oder Interface-
  []
 
-File: bilder/fzk2.png Graphic file (type png)
-<use bilder/fzk2.png>
-Overfull \vbox (1.68883pt too high) has occurred while \output is active []
-
-
-[20] <bilder/mib.png, id=552, 310.2792pt x 151.767pt>
+<bilder/mib.png, id=556, 310.2792pt x 151.767pt>
 File: bilder/mib.png Graphic file (type png)
  <use bilder/mib.png>
-<bilder/nsca.png, id=556, 645.41125pt x 202.7575pt>
-File: bilder/nsca.png Graphic file (type png)
- <use bilder/nsca.png>
 File: bilder/fzk2.png Graphic file (type png)
 
 <use bilder/fzk2.png>
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[21 <./bilder/mib.png>] <bilder/nrpe.png, id=572, 665.6983pt x 164.89775pt>
+[21 <./bilder/mib.png>] <bilder/nsca.png, id=573, 645.41125pt x 202.7575pt>
+File: bilder/nsca.png Graphic file (type png)
+
+<use bilder/nsca.png> <bilder/nrpe.png, id=575, 665.6983pt x 164.89775pt>
 File: bilder/nrpe.png Graphic file (type png)
 
 <use bilder/nrpe.png>
@@ -885,33 +902,34 @@ Overfull \hbox (2.25175pt too wide) in paragraph at lines 119--119
 []\T1/aer/bx/n/14.4 Überwachungslogik (mit Alar-mie-rung/-Be-nach-rich-
  []
 
-) <bilder/unix-agents.png, id=574, 622.325pt x 295.1025pt>
-File: bilder/unix-agents.png Graphic file (type png)
-
-<use bilder/unix-agents.png>
+)
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png>
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
 [22 <./bilder/nsca.png (PNG copy)> <./bilder/nrpe.png (PNG copy)>]
-<bilder/win-agents.png, id=586, 572.1375pt x 391.4625pt>
+<bilder/unix-agents.png, id=587, 622.325pt x 295.1025pt>
+File: bilder/unix-agents.png Graphic file (type png)
+
+<use bilder/unix-agents.png>
+<bilder/win-agents.png, id=590, 572.1375pt x 391.4625pt>
 File: bilder/win-agents.png Graphic file (type png)
 
-<use bilder/win-agents.png>)
+<use bilder/win-agents.png>
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png>
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[23 <./bilder/unix-agents.png (PNG copy)>]
+[23 <./bilder/unix-agents.png (PNG copy)>])
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png>
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
 [24 <./bilder/win-agents.png (PNG copy)>] (./tex/stellent.tex
-<bilder/basic_architecture.png, id=609, 513.92pt x 760.8425pt>
+<bilder/basic_architecture.png, id=613, 513.92pt x 760.8425pt>
 File: bilder/basic_architecture.png Graphic file (type png)
 
 <use bilder/basic_architecture.png>
@@ -1089,30 +1107,36 @@ File: bilder/fzk2.png Graphic file (type png)
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[40] (./bach.gls)
+[40] (./bach.gls
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png>
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[41] (./bach.aux)
+[41])
+File: bilder/fzk2.png Graphic file (type png)
+ <use bilder/fzk2.png>
+Overfull \vbox (1.68883pt too high) has occurred while \output is active []
+
+
+[42] (./bach.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 10492 strings out of 94074
- 143560 string characters out of 1165153
- 256015 words of memory out of 1500000
- 13250 multiletter control sequences out of 10000+50000
+ 10555 strings out of 94074
+ 144427 string characters out of 1165153
+ 257082 words of memory out of 1500000
+ 13306 multiletter control sequences out of 10000+50000
  41062 words of font info for 91 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
  51i,16n,99p,1128b,1102s stack positions out of 5000i,500n,6000p,200000b,5000s
-pdfTeX warning (dest): name{Hfootnote.22} has been referenced but does not ex
+pdfTeX warning (dest): name{Hfootnote.23} has been referenced but does not ex
 ist, replaced by a fixed one
 
-pdfTeX warning (dest): name{glo:OracleUCM} has been referenced but does not exi
-st, replaced by a fixed one
+pdfTeX warning (dest): name{Hfootnote.22} has been referenced but does not exis
+t, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.21} has been referenced but does not exis
 t, replaced by a fixed one
@@ -1147,9 +1171,6 @@ t, replaced by a fixed one
 pdfTeX warning (dest): name{Hfootnote.11} has been referenced but does not exis
 t, replaced by a fixed one
 
-pdfTeX warning (dest): name{glo:FTP} has been referenced but does not exist, re
-placed by a fixed one
-
 pdfTeX warning (dest): name{Hfootnote.10} has been referenced but does not exis
 t, replaced by a fixed one
 
@@ -1168,9 +1189,6 @@ pdfTeX warning (dest): name{Hfootnote.6} has been referenced but does not exist
 pdfTeX warning (dest): name{Hfootnote.5} has been referenced but does not exist
 , replaced by a fixed one
 
-pdfTeX warning (dest): name{glo:UCM} has been referenced but does not exist, re
-placed by a fixed one
-
 pdfTeX warning (dest): name{Hfootnote.4} has been referenced but does not exist
 , replaced by a fixed one
 
@@ -1183,9 +1201,6 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 , replaced by a fixed one
 
-pdfTeX warning (dest): name{glo:IP} has been referenced but does not exist, rep
-laced by a fixed one
-
 </usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmbx12.pfb></usr/share/texmf-t
 exlive/fonts/type1/bluesky/cm/cmmi12.pfb></usr/share/texmf-texlive/fonts/type1/
 bluesky/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmr12.pfb
@@ -1196,9 +1211,9 @@ esky/cm/cmsl12.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmsy10.pfb>
 exlive/fonts/type1/bluesky/cm/cmtt10.pfb></usr/share/texmf-texlive/fonts/type1/
 bluesky/cm/cmtt12.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmtt8.pf
 b>
-Output written on bach.pdf (45 pages, 1402246 bytes).
+Output written on bach.pdf (46 pages, 1407777 bytes).
 PDF statistics:
- 837 PDF objects out of 1000 (max. 8388607)
- 205 named destinations out of 1000 (max. 131072)
+ 860 PDF objects out of 1000 (max. 8388607)
+ 212 named destinations out of 1000 (max. 131072)
  571 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -26,14 +26,14 @@
 \contentsline {section}{\numberline {5}Nagios}{13}{section.5}
 \contentsline {subsection}{\numberline {5.1}Allgemein}{13}{subsection.5.1}
 \contentsline {subsection}{\numberline {5.2}Aufbau / Architektur}{14}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}\IeC {\"U}berpr\IeC {\"u}fungs-Methoden}{17}{subsection.5.3}
-\contentsline {paragraph}{Variante / Methode / Client 1}{19}{section*.6}
+\contentsline {subsection}{\numberline {5.3}\IeC {\"U}berpr\IeC {\"u}fungs-Methoden}{18}{subsection.5.3}
+\contentsline {paragraph}{Variante / Methode / Client 1}{18}{section*.6}
 \contentsline {paragraph}{Variante / Methode / Client 2}{19}{section*.7}
-\contentsline {paragraph}{Variante / Methode / Client 3}{19}{section*.8}
+\contentsline {paragraph}{Variante / Methode / Client 3}{20}{section*.8}
 \contentsline {paragraph}{Variante / Methode / Client 4}{20}{section*.9}
-\contentsline {paragraph}{passive}{21}{section*.10}
+\contentsline {paragraph}{passive}{22}{section*.10}
 \contentsline {subsection}{\numberline {5.4}\IeC {\"U}berwachungslogik (mit Alarmierung/Benachrichtigung)}{22}{subsection.5.4}
-\contentsline {subsection}{\numberline {5.5}Plugins}{22}{subsection.5.5}
+\contentsline {subsection}{\numberline {5.5}Plugins}{23}{subsection.5.5}
 \contentsline {subsection}{\numberline {5.6}(Windows) Agenten oder allgemein Einholen von Infos}{23}{subsection.5.6}
 \contentsline {subsection}{\numberline {5.7}Visualisierung der eingesammelten Daten}{24}{subsection.5.7}
 \contentsline {section}{\numberline {6}Oracle UCM}{25}{section.6}
@@ -60,6 +60,7 @@
 \contentsline {subsection}{\numberline {7.4}\IeC {\"U}berpr\IeC {\"u}fen der Prozesse und Services}{33}{subsection.7.4}
 \contentsline {subsection}{\numberline {7.5}Umsetzung der Funktionlit\IeC {\"a}tstest}{33}{subsection.7.5}
 \contentsline {subsection}{\numberline {7.6}Auswertung der Logs + Stopw\IeC {\"o}rterdefinition}{34}{subsection.7.6}
+\contentsline {subsection}{\numberline {7.7}Benutzersimulation}{34}{subsection.7.7}
 \contentsline {section}{\numberline {8}Ergebnis}{35}{section.8}
 \contentsline {section}{\numberline {9}Zusammenfassung und Ausblick}{36}{section.9}
 \contentsline {section}{\numberline {10}Anhang}{37}{section.10}
