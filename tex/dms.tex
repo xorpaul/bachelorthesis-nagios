@@ -114,6 +114,12 @@ Wie die Eingabe besteht die Ausgabe aus zwei Funktionen.
 
 \paragraph{Recherche}
 Die Recherche ist die Suche nach einem Dokument entweder durch eine strukturierte Suche anhand von zuvor eingetragenen Attributen (Author, Erstellungsdatum, Speichergröße usw.) oder durch eine Volltextsuche.
+Die \textbf{strukturierte Suche} ist nur bei einer qualitativ hochwertigen Indizierung effizient, bietet dafür auch mit guter zeitlichen Performanz die besten / genauersten Ergebnisse, sofern die Indizierung entsprechend aufgebaut / eingehalten wurde.
+
+Die \textbf{Volltextsuche} durchsucht "`stupide"' den Inhalt der Dokumente nach den eingegebenen Suchbegriffen.
+Daher ist die Qualität der Suchergebnisse unabhängig von der Qualität der Indizierung.
+Jedoch können nur \gls{CI}-Dokumente, deren Informationen auch durch den Computer auslesbar und interpretierbar sind, durchsucht werden.
+\gls{NCI}-Dokumente wie Bilder oder Videos können durch die Volltextsuche nicht gefunden werden.
 
 \paragraph{Reproduktion}
 
@@ -122,7 +128,7 @@ Die Recherche ist die Suche nach einem Dokument entweder durch eine strukturiert
 Bei einem Content-Management-System (\gls{CMS})  steht nicht mehr das eigentliche Dokument im Vordergrund, sondern vielmehr der enthaltene Informationsgehalt des Dokuments.
 Der Unterschied zwischen einem \gls{DMS} und einem \gls{CMS} besteht laut \cite{DMS08} S. 114 im/in Folgenden/m:
 
-\begin{quote}"`Abgrenzend zum Dokumenten-Management handelt es sich beim Content-Management nicht vordergründig um die Verwaltung von Dokumenten, sondern um die Verwaltung von Informationseinheiten, die miteinander verknüpft sein können. [...] Je nach ausprägung kann nun ein konkretes System als Dokumenten-Management-System mit Content-Management-Funktionen definiert werden und umgekehrt. [...]
+\begin{quote}"`Abgrenzend zum Dokumenten-Management handelt es sich beim Content-Management nicht vordergründig um die Verwaltung von Dokumenten, sondern um die Verwaltung von Informationseinheiten, die miteinander verknüpft sein können. [...] Je nach Ausprägung kann nun ein konkretes System als Dokumenten-Management-System mit Content-Management-Funktionen definiert werden und umgekehrt. [...]
 Der Ansatz des Content-Management unterscheidet sich vom "`klassischen"' Dokumenten-Mangement vor allem in Bezug auf die betrachteten Objekte: Ein DMS hat als kleinestes Objekt der Betrachtung eines einzelnen Dokument. [...] Content-Management ist auf logische Informationseinheiten ausgerichtet. Es ist z.B. das Ziel des Content-Managements, Inhalte, die auf mehrere Quellen verteilt sind, neue zusammenzustellen und daraus z.B. ein neues Dokument zu generieren."'
 \begin{flushright}\cite{DMS08} S. 114f\end{flushright}\end{quote}
 
@@ -132,7 +138,7 @@ Die folgende Abbildung soll den (charakteristischen) Unterschied zwischen CMS-Sy
 Bild \cite{DMS08} S. 115
 \end{center}
 
-Wie zuvor beschrieben ist die Sichtweise eines DMS nur auf die einzelnen Dokumente beschränkt, während ein CMS einzelne Elemente / Informationen aus den Dokumenten extrahieren und daraus ggf. ein neues Dokument generieren kann. Die Sichtweise des CMS wird durch das gestrichelte Polygon dargestellt, welches hier dokumentenübergreifend abgebildet ist.
+Wie zuvor beschrieben ist die Sichtweise eines DMS nur auf die einzelnen Dokumente beschränkt, während ein CMS einzelne Elemente / Informationen aus den Dokumenten extrahieren und ggf. zu einem neuen Dokument verschmelzen kann. Die Sichtweise des CMS wird durch das gestrichelte Polygon dargestellt, welches hier dokumentenübergreifend abgebildet ist.
 
 Der (theoretische/beabsichtigte) Zweck, weshalb ein CMS-System eingesetzt wird, ist laut Oracle folgendermaßen definiert:
 
