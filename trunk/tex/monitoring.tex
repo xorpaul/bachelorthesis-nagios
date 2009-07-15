@@ -57,12 +57,18 @@ Die Aufstellung des Überwachungsservers ist dadurch gerade bei größeren Serve
 
 \subsubsection{Sicherheitsaspekte}
 Um erweiterte Statusinformationen über einen Prozess oder über die Arbeitsspeicherauslastung auszulesen ist (meistens) zusätzliche Software auf den Hosts nötig.
-Dadurch erhält der Überwachungsserver Ausführungsrechte auf dem Client, so dass eine weitere potentielle Sicherheitslücke in einem (vermeindlich) zuvor sicheren System entsteht.
-Jeder, der die Kontrolle über den Überwachungsserver besitzt oder sich als solcher ausgibt, kontrolliert somit gleichzeitig alle anderen überwachte Hosts.
+Diese Software benötigt einen zusätzlichen geöffneten Port auf dem zu überwachendem Rechner, die einen neuen Angriffspunkt für Angreifer darstellen kann.
+Außerdem erhält der Überwachungsserver Ausführungsrechte auf dem Client, so dass eine weitere potentielle Sicherheitslücke in einem (vermeindlich) zuvor sicherem System entsteht.
+Jeder, der die Kontrolle über den Überwachungsserver besitzt oder sich als solcher ausgibt, kontrolliert somit gleichzeitig alle anderen überwachten Hosts.
 
 Um dies zu verhindern gibt es verschiedene Ansätze.
 Als ersten Ansatz sollte der Port durch den der Überwachungsserver mit dem Host kommuniziert vom Standardwert abweichen, damit nicht sofort erkennbar ist, dass sich eine (womöglich) ausnutzbare Überwachungssoftware sich auf dem Rechner befindet.
 Damit die über diesen Port versendeten Informationen nicht für Dritte zugänglich sind, bietet es sich an die auszutauschende Informationen mit einem Algorithmus zu verschlüsseln.
+Durch den Einsatz eines Verschlüsselungsalgorithmus werden die Informationen nicht mehr im Klartext ausgetauscht, sondern
+Da die Möglichkeit einer Verschlüsselung der Datenübertragung nicht von jeder Überwachungssoftware angeboten wird, gilt diese Option als Auswahlkriterium im produktivem Betrieb. (Verweiss auf Windows Agenten Übersicht?)
+
+Die Erlaubnis der Abfrage der Überwachungsinformationen sollte anhand der \gls{IP}-Adresse beschränkt werden, so dass der Client nur Anfragen des Überwachungsservers akzeptiert.
+Durch diese Einschränkung kann vermieden werden, dass sensible Informationen aus den Antworten an unberechtigte Dritte übermittelt werden oder ein Denial of Service-Angriff (\gls{DoS}) durch eine übermäßig hohe Anzahl an Anfragen an den Client gesendet wird, um eine Überlastung des Servers zu erreichen und diesen somit arbeitsunfähig zu machen.
 
 \begin{itemize}
 \item Verschlüsselung der Informationen, die zwischen dem Server und dem Host hin- und hergesendet werden, damit man nicht die Inforamtionen im Klartext einfach auslesen kann.
