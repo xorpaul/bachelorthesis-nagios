@@ -16,25 +16,64 @@ Siehe hierfür auch Abbildung \ref{nagios-proc}.
 \end{figure}
 \footnotetext{Quelle: \url{http://www.nagioswiki.org/w/images/8/81/Plugins.png}}
 
-Die Plugins werden durch die Servicedefinitionen mit den jeweiligen Hosts verbunden und werden durch eine Befehlskonfigurationsdatei mit ggf. veränderten Parametern durch Nagios aufgerufen.
+Damit Nagios die gewünschten Server überwachen kann, müssen sie der Anwendung zuerst bekannt gemacht werden.
+Dies wird über das Anlegen einer Konfigurationsdatei mit einem Host-Objekt erreicht.
+Dabei richtet sich die Definition des Host-Objektes nach dem Schema, welches für alle Objektedefinitionen (Services, Kontakt, Gruppen, Kommandos etc.) gilt:
 
-Das bedeutet, dass die gewünschten Plugins explizit aus dem Nagios Repertoire dem zu überwachendem Computer zugeteilt werden müssen.
-Eine beispielhafte Servicedefinition für den Host \textit{iwrpaul.ka.fzk.de} wird in Codelisting \ref{servdef}.
-
-\begin{lstlisting}[captionpos=b, caption=Beispielhafte (Definition) eines Servicechecks, label=servdef, breaklines = true, language=bash]
-# Define a service to check the swap disk space
-# on the local machine.  Warning if < 20% free, 
-# critical if < 10% free space on swap partition.
-
-define service{
- use         generic-service 	;# Name of service template to use
- host_name   iwrpaul.ka.fzk.de 	;# DNS-Name des Hosts
- service_description  Swap Disk Space ;# Beschreibung des Services
- check_command   check_swap!-w 20% -c 10%	;# Angabe des zu verwendenden Plugins mit WARNING (respektiv) CRITICAL Schwellwertparameter
+\begin{lstlisting}[captionpos=b, caption=Nagiosschema für Objektdefinitionen, label=schmeaobj, breaklines = false]
+define object-type {
+	parameter value
+	parameter value
+	...
 }
 \end{lstlisting}
 
-Nagios überprüft in einem festlegbaren / veränderbaren Zeitintervall alle vom Benutzer definierten Host- und Servicechecks und verarbeitet / arbeitet / wertet die Daten / Informationen / Ergebnisse der entsprechenden Plugins aus.
+
+Eine gültige Host-Definition muss mindestens folgende Elemente besitzten:
+
+\begin{lstlisting}[captionpos=b, caption=Definition eines Hostobjektes, label=hostobj, breaklines = true, language=sh]
+define host{
+	host_name		example.kit.edu #Referenzname des Servers
+	alias			Oracle UCM Server #Weitere Bezeichnung
+	address			example.kit.edu #FQDN des Rechners
+	max_check_attempts	4 #Anzahl der Checks zum Wechsel von Hard- zu Soft-State
+	check_period		24x7 #Zeitraum der aktiven Checks
+	contact_groups		UCM-admins #Zu alarmierende Benutzergruppe
+	notification_interval	120 #Minuten bis Alarmierung wiederholt wird
+	notification_period	24x7 #Zeitraum der Benachrichtigungen
+}
+\end{lstlisting}
+
+Gewöhnlich / In der Praxis werden öfters verwendete Attribute wie die Kontaktgruppe oder der Zeitraum für die aktiven Checks durch Verwendung eines übergeordneten Host-Objektes nach unten vererbt.
+Dadurch müssen nurnoch die spezifischen Inforamtionen und der Name des übergeordneten Host-Objektes eingetragen werden.
+\begin{lstlisting}[captionpos=b, caption=Verkürzte Definition eines Hostobjektes, label=vhostobj, breaklines = true, language=sh]
+define host {
+        use             windows-server #Oberklasse dieses Host-Objektes
+        host_name       example.kit.edu
+        alias           Oracle UCM Server
+        address         example.kit.edu
+}
+\end{lstlisting}
+
+Mit dieser Hostdefinition wird der Rechner im Webinterface von Nagios bereits angezeigt.
+Jedoch wird nur die Erreichbarkeit über das Netzwerk mit einem Ping überwacht.
+Umfangreichere / Komplexere / Weitergehende / Um andere Dienste zu überwachen müssen die gewünschten Plugins explizit aus dem Nagios Repertoire dem zu überwachendem Computer mit einem ähnlichen Schema zugeteilt werden.
+
+Eine beispielhafte Servicedefinition für die Überwachung des Webservers auf dem Host \textit{example.kit.edu} wird in Codelisting \ref{servdef} gezeigt.
+
+\begin{lstlisting}[captionpos=b, caption=Verkürzte Definition eines Hostobjektes, label=servdef, breaklines = true, language=sh]
+define service{
+        use                     generic-service #Oberklasse dieses Service-Objektes
+        host_name               example.kit.edu
+        service_description     HTTP Server #Bezeichnung des Checks
+        check_command           check_http #Angabe des NagiosPlugins (hier ohne Parameter)
+        }
+
+\end{lstlisting}
+
+Die Plugins werden durch die Servicedefinitionen mit den jeweiligen Hosts verbunden und durch das Attribut \textit{check\_command} mit ggf. veränderten Parametern durch Nagios aufgerufen.
+
+Nagios wird in einem festlegbarem / veränderbarem Zeitintervall alle vom Benutzer definierten Host- und Servicechecks überprüfen und die Ergebnisse der entsprechenden Plugins verarbeiten / auswerten.
 
 Weiterhin beschreibt Barth die Plugins folgendermaßen:
 \begin{quote}"`Jedes Plugin, das bei Host- und Service-Checks zum Einsatz kommt, ist ein eigenes, selbständiges Programm, das sich auch unabhängig von Nagios benutzen lässt."' \begin{flushright}\cite{Barth08} S. 105\end{flushright}\end{quote} 
@@ -52,18 +91,11 @@ Die Ausgabe des Plugins gibt den Zustand des Services an; in diesem Fall wird ke
 
 Dabei wird in vier verschiedene Rückgabewerte / Antworten der Plugins unterschieden:
 
-\begin{figure}[ht]
-	\centering
-	   \fbox{\includegraphics[width=0.85\textwidth]{bilder/nagios-4state-tab.png}}
-		\caption[Rückgabewerte für Nagios Plugins]{Rückgabewerte für Nagios Plugins\protect\footnote}
-		\label{nagios-4states}
-\end{figure}
-\footnotetext{Quelle: \cite{Barth08} S. 105f}
-
+%\setlength{\tabcolsep}{50pt}
 \begin{table}[!htbp]
 \centering
-%\begin{twoparttable}
-\begin{tabular}{l l l}
+
+\begin{tabular}{l l p{7cm}}
 %\hline
 \textbf{Status} \hspace{2 mm} & \textbf{Bezeichnung} \hspace{3 mm} & \textbf{Beschreibung}\\
 \hline
@@ -71,11 +103,11 @@ Dabei wird in vier verschiedene Rückgabewerte / Antworten der Plugins unterschi
 %\hline
 0 & OK & Alles in Ordnung \\
 %\hline
-1 & WARNING & Die Warnschwelle wurde überschritten, die kritische \\ & & Schwelle ist aber noch nicht erreicht.\\
+1 & WARNING & Die Warnschwelle wurde überschritten, die kritische Schwelle ist aber noch nicht erreicht.\\
 %\hline
-2 & CRITICAL & Entweder wurde die kritische Schwelle \\ & &  überschritten oder das Plugin hat den Test\\ & & nach einem Timeout  abgebrochen. \\
+2 & CRITICAL & Entweder wurde die kritische Schwelle überschritten oder das Plugin hat den Test nach einem Timeout  abgebrochen. \\
 %\hline
-3 & UNKNOWN &  Innerhalb des Plugins trat ein Fehler auf (zum \\ & & Beispiel weil falsche Parameter verwendet wurden)\\
+3 & UNKNOWN &  Innerhalb des Plugins trat ein Fehler auf (zum Beispiel weil falsche Parameter verwendet wurden)\\
 %\hline
 \bottomrule
 \end{tabular}

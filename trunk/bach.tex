@@ -14,7 +14,9 @@
 \usepackage{pdfpages}
 %\usepackage{fancyhd}
 \usepackage{pdfpages}
+\usepackage{struktex}
 \usepackage{listings}
+%\usepackage{listingsutf8}
 \usepackage[style=super3colheader]{glossaries}
 \usepackage{verbatim} %Mehrzeilige Kommentare durch \begin{comment} mglich  ??
 \usepackage{blindtext} % Erzeugung von lngeren Textpassage
@@ -44,6 +46,7 @@
 \renewcommand*\l@subparagraph{\@dottedtocline{5}{1 2em}{6em}}
 \renewcommand*\l@figure{\@dottedtocline{1}{1.5em}{ 2.3em}}
 \newcommand{\pictext}[1]{\glqq\texttt{#1}\grqq }
+\renewcommand{\arraystretch}{1.5} %Tabellenreihenhoehe
 % Abb. anstatt Abbildung verwenden %
 \renewcommand{\figurename}{Abb.}
 % Tab. anstatt Tabelle verwenden %
