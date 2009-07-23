@@ -55,9 +55,18 @@ define host {
 }
 \end{lstlisting}
 
-Mit dieser Hostdefinition wird der Rechner im Webinterface von Nagios bereits angezeigt.
+Mit dieser Hostdefinition wird der Rechner im Webinterface von Nagios bereits angezeigt:
+
+\begin{figure}[ht]
+	\centering
+	   \fbox{\includegraphics[width=0.95\textwidth]{bilder/example-ping.png}}
+		\caption{Anzeige des Servers im Webinterface von Nagios}
+		\label{check-swap}
+\end{figure}
+
 Jedoch wird nur die Erreichbarkeit über das Netzwerk mit einem Ping überwacht.
-Umfangreichere / Komplexere / Weitergehende / Um andere Dienste zu überwachen müssen die gewünschten Plugins explizit aus dem Nagios Repertoire dem zu überwachendem Computer mit einem ähnlichen Schema zugeteilt werden.
+%Umfangreichere / Komplexere / Weitergehende / 
+Um andere Dienste zu überwachen müssen die gewünschten Plugins explizit aus dem Nagios Repertoire dem zu überwachendem Computer mit einem ähnlichen Schema zugeteilt werden.
 
 Eine beispielhafte Servicedefinition für die Überwachung des Webservers auf dem Host \textit{example.kit.edu} wird in Codelisting \ref{servdef} gezeigt.
 
@@ -88,6 +97,23 @@ Daher lassen sich die Parameter eines Plugins folgendermaßen überprüfen:
 \end{figure}
 
 Die Ausgabe des Plugins gibt den Zustand des Services an; in diesem Fall wird kein Schwellwert überschritten, daher die Meldung \pictext{SWAP OK}.
+
+Um diesen Service mit den angegebenen Schwellwerten von Nagios überwachenzulassen, muss folgende Servicedefinition in die Konfigurationsdatei eingetragen werden:
+
+\begin{lstlisting}[captionpos=b, caption=Beispielhafte (Definition) eines Servicechecks, label=servdef, breaklines = true, language=bash]
+# Define a service to check the swap disk space
+# on the local machine.  Warning if =< 20% free, 
+# critical if =< 10% free space on swap partition.
+
+define service{
+ use         generic-service 
+ host_name   example.kit.edu 	
+ service_description  Swap Disk Space
+ check_command   check_swap!-w 20% -c 10%	# Angabe des zu verwendenden Plugins mit WARNING (respektiv) CRITICAL Schwellwertparameter
+}
+\end{lstlisting}
+
+
 
 Dabei wird in vier verschiedene Rückgabewerte / Antworten der Plugins unterschieden:
 
@@ -126,8 +152,9 @@ Weiterhin gibt es weiche (Soft States) und harte Zustände (Hard States):
 		\label{hs-states}
 \end{figure}
 \footnotetext{Quelle: \cite{Barth08} S. 95}
-Ausgehend von einem OK Zustand wird in diesem Beispiel jede fünf Minuten periodisch überprüft, ob sich der Status des überwachten Objektes verändert hat.                                                                                                                                                                                         Nach zehn Minuten wird ein Umschwenken / Änderung des Zustandes durch das jeweilige Plugin gemeldet\begin{quote}"`; der Zustand wechselt nach CRITICAL, zunächst allerdings als Soft State.
-Zu diesem Zeitpunkt löst Nagios noch keine Benachrichtigung aus"'\end{quote}, da es sich um eine Falschmeldung, auch False Positive genannt, handeln kann.
+Ausgehend von einem OK Zustand wird in diesem Beispiel jede fünf Minuten periodisch überprüft, ob sich der Status des überwachten Objektes verändert hat.                                                                                                                                                                                         Nach zehn Minuten wird ein Umschwenken / Änderung des Zustandes durch das jeweilige Plugin gemeldet.
+Hier im Beispiel wechselt der Zustand nach CRITICAL, zunächst allerdings als Soft State
+Daher wird durch Nagios noch keine Benachrichtigung versendet, da es sich um eine Falschmeldung, auch False Positive genannt, handeln kann.
 Aufgrund einer kurzweiligen / kurzfristigen (besseres Wort? peak mäßig) hohen Auslastung des Netzwerkes oder um ein kurzzeitiges Problem, welches sich von alleine wieder normalisiert. (Bspw. Prozessorauslastung)
 
 Um einen False Positive auszuschliessen, wird der im Soft State befindliche Service bzw. Host mit einer höheren Frequenz überprüft.
