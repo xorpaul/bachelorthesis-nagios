@@ -18,7 +18,7 @@ Nagios bietet verschiedene Möglichkeiten an solche Dienste /  Services zu über
 
 \begin{figure}[ht]
 	\centering
-	   \fbox{\includegraphics[width=0.85\textwidth]{bilder/nagios-kern.png}}
+	   \fbox{\includegraphics[width=0.65\textwidth]{bilder/nagios-kern.png}}
 		\caption{Verschiedene Überwachungsmöglichkeiten von Nagios}\footnote{Quelle: \cite{Barth08} S. 98}
 		\label{nagios-kern}
 \end{figure} 
@@ -95,8 +95,8 @@ Anhand dieser Anordnung können die SNMP-Plugins den gewünschten Wert über das
 Man unterscheidet zwischen aktiven und passiven Checks.
 \paragraph{passive}
 asynchron!
-Bei passiven Tests führt der zu überwachende Computer das statuserzeugende Ergebnis selbst aus und sendet es über ein Plugin zum Nagios Server.
-Hierfür muss das Testprogramm bzw Script und das entsprechende Plugin \pictext{send\_ncsa}, welches zum Versenden der Informationen zuständig ist, auf dem Host vorhanden sein.
+Bei passiven Tests führt der zu überwachende Computer das statuserzeugende Plugin selbst aus und sendet es über ein weiteres Plugin zum Nagios Server.
+Hierfür muss das Testprogramm bzw. Script und das entsprechende Plugin \pictext{send\_ncsa}, welches zum Versenden der Informationen zuständig ist, auf dem Host vorhanden sein.
 Auf der anderen Seite muss der \pictext{\gls{NSCA}} (Nagios Service Check Acceptor) als Dämon gestartet sein, damit die übermittelten Ergebnisse entgegengenommen werden können.
 \begin{figure}[ht]
 	\centering
