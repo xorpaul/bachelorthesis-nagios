@@ -12,7 +12,7 @@ Da die einzelnen Überwachungselemente in der Überwachungssoftware Nagios nach 
 Damit dies nicht auf dem produktiven Nagios-Server durchgeführt werden muss, wird ein Nagios-Testserver für diesen Zwecks eingesetzt.
 
 \subsubsection{Bilddatenbank als VM}
-Für die Simulation der verschiedenen Fehlerzuständen der einzelnen Überwachungselemente wird eine virtuelle Maschine mit einer \gls{OracleUCM} Prototypinstallation, die extra als Entwicklungsplatform erstellt wurde, verwendet.
+Für die Simulation der verschiedenen Fehlerzuständen der einzelnen Überwachungselemente wird eine virtuelle Maschine mit einer \gls{OracleUCM} Prototypinstallation, die extra als Entwicklungsplattform erstellt wurde, verwendet.
 
 
 \subsection{Basisüberwachung - Konfigurationsdateien}
@@ -21,6 +21,8 @@ Für die Simulation der verschiedenen Fehlerzuständen der einzelnen Überwachun
 \item Service Definitionen -> mit Host verbinden
 \item Wer wird wann wegen was wie benachrichtigt -> contacts
 \end{itemize}
+
+
 
 \subsection{Einrichten des Windows Agenten}
 \begin{itemize}
@@ -39,7 +41,7 @@ pw hinzufügen
 
 test vom nagios host:
 
-\begin{lstlisting}[captionpos=b, caption=Aufruf eines aktiven Checks, label=activecheckexample, breaklines = true, language=bash]
+\begin{lstlisting}[captionpos=b, caption=Aufruf eines aktiven Checks, label=activecheckexample, breaklines = true]
 root@iwrpaul:/usr/local/nagios/libexec# ./check_nc_net -H secret.kit.edu -p 123456 -s secret -v RUNSCRIPT -l check_uname.exe
 Operating System OK - Microsoft(R) Windows(R) Server 2003 Standard Edition Service Pack 2
 \end{lstlisting}
@@ -48,7 +50,7 @@ Das auf dem Nagios Server liegende Script \pictext{check\_nc\_net} stellt eine V
 
 
 Danach command definition hinzufügen, weil PW und Port verändert wurde:
-\begin{lstlisting}[captionpos=b, caption=Nagios-Befehls Definition für den Host, label=activecheckexample, breaklines = true, language=bash]
+\begin{lstlisting}[captionpos=b, caption=Nagios-Befehls Definition für den Host, label=activecheckexample, breaklines = true, language=sh]
 # 'check_nt_bdb' command definition
 #	_NSCLIENT_PORT	13599
 #	_NSCLIENT_PW	KAnqloaQk
@@ -94,4 +96,9 @@ Danach
 \item max attempts bei Search erhöhen, da Auslastung der InboundRef -> möglichst keine/geringe False Positives -> auf Ausblick verweisen, Rahmenbedingungen müssen im Feld in der Praxis erst noch gefunden werden
 \end{itemize}
 
-
+\begin{figure}[ht]
+	\centering
+	   \includegraphics[width=0.9\textwidth]{bilder/Benutzersimulation.png}
+		\caption{Ablauf der Benutzersimulation}
+		\label{user-sim}
+\end{figure}

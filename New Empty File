@@ -1,0 +1,24 @@
+\begin{lstlisting}[captionpos=b, caption=Nagiosschema für Objektdefinitionen, label=schmeaobj, breaklines = false, language=bash]
+define object-type {
+	parameter value
+	parameter value
+	...
+}
+\end{lstlisting}
+
+
+Eine Host-Definition muss mindestens folgende Elemente besitzten:
+
+\begin{lstlisting}[captionpos=b, caption=Definition eines Hostobjektes, label=hostobj, breaklines = false, language=bash]
+define host{
+	host_name	host_name
+	alias	alias
+	address	address
+	max_check_attempts	#
+	check_period	timeperiod_name
+	contacts	contacts
+	contact_groups	contact_groups
+	notification_interval	#
+	notification_period	timeperiod_name
+}
+\end{lstlisting}

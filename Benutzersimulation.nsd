@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root text="&#34;Benutzersimulation&#34;" comment="&#34;&#34;" color="ffffff" type="program" style="abbr">
+	<children>
+		<instruction text="&#34;Testbild nagiosCheck.png per WebService einchecken&#34;" comment="" color="ffffff" rotated="0"></instruction>
+		<alternative text="&#34;Testdokument von Oracle UCM&#34;,&#34;akzeptiert?&#34;" comment="" color="ffffff">
+			<qTrue>
+				<instruction text="&#34;Per WebService nach Dokument nagiosCheck.png suchen&#34;" comment="" color="ffffff" rotated="0"></instruction>
+				<instruction text="&#34;Originaldatei anfordern und auf Datentyp überprüfen&#34;" comment="" color="ffffff" rotated="0"></instruction>
+				<alternative text="&#34;Testdokument gefunden?&#34;" comment="" color="ffffff">
+					<qTrue>
+						<instruction text="&#34;Konvertierte Dateien anfordern &#34;,&#34;und auf Datentyp überprüfen&#34;" comment="" color="ffffff" rotated="0"></instruction>
+						<alternative text="&#34;Konvertierte Bilder&#34;,&#34;gefunden?&#34;" comment="" color="ffffff">
+							<qTrue>
+								<instruction text="&#34;Testbild nagiosCheck.png&#34;,&#34;per WebService löschen&#34;" comment="" color="ffffff" rotated="0"></instruction>
+								<instruction text="&#34;Exitcode 0 - OK&#34;" comment="" color="0df40d" rotated="0"></instruction>
+							</qTrue>
+							<qFalse>
+								<instruction text="&#34;Testdokument konnte&#34;,&#34;nicht konvertiert werden!&#34;" comment="" color="ffffff" rotated="0"></instruction>
+								<instruction text="&#34;Exitcode 2 - Critical&#34;" comment="" color="f52f2f" rotated="0"></instruction>
+							</qFalse>
+						</alternative>
+					</qTrue>
+					<qFalse>
+						<instruction text="&#34;Testdokument wurde &#34;,&#34;nicht erfolgreich &#34;,&#34;eingecheckt!&#34;" comment="" color="ffffff" rotated="0"></instruction>
+						<instruction text="&#34;Exitcode 2 - Critical&#34;" comment="" color="f52f2f" rotated="0"></instruction>
+					</qFalse>
+				</alternative>
+			</qTrue>
+			<qFalse>
+				<instruction text="&#34;Testdokument wurde &#34;,&#34;nicht erfolgreich &#34;,&#34;eingecheckt!&#34;" comment="" color="ffffff" rotated="0"></instruction>
+				<instruction text="&#34;Exitcode 2 - Critical&#34;" comment="" color="f52f2f" rotated="0"></instruction>
+			</qFalse>
+		</alternative>
+	</children>
+</root>
