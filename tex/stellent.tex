@@ -40,14 +40,14 @@ FZK Bilddatenbank erwähnen
 
 
 Einchecken -> Konvertieren -> Indexieren
-\subsection{Überwachungselemente}
+\section{Überwachungselemente}
 Die Überwachung einer Dienstes über ein Netzwerk verteilt sich auf verschiedenen Ebenen mit unterschiedlichen Gewichtungen.
 Zum Beispiel stellt das simple Senden eines Pings an den entsprechenden Server die niedrigste und primitivste Stufe dar, da hier lediglich die Netzwerkschnittstelle des Servers auf ihre Funktionalität und dabei der Status der Netzwerkstrecke getestet wird.(Rechner an und Netzwerk ok)
 Ob die Anwendung überhaupt auf dem Server läuft und wenn, in welchem Zustand sie sich befindet (betriebsfähig, reagiert nicht mehr usw.), muss auf eine andere Weise herausgefunden werden.
 
 Dabei lässt sich aus den verschiedenen Überwachungselemente folgende drei Kategorien bilden/ableiten:
 
-\subsubsection{Statusabfragen}
+\subsection{Statusabfragen}
 Diese Kategorie besteht aus einfacheren Überprüfungen, die jeweils den Status des Überwachungselementes überwachen.
 Dabei können weitere Untergruppen gebildet werden.
 
@@ -77,7 +77,7 @@ Dabei können weitere Untergruppen gebildet werden.
 \item \textbf{Antivirusdienst}: Den Zustand den Dienstes überprüfen, der für die ständig Updates des Virusscanners Symantec AntiVirus notwendig ist.
 \end{itemize}
 
-\subsubsection{Überwachung der Funktionalität}
+\subsection{Überwachung der Funktionalität}
 Durch die vorherigen Tests kann herausgefunden werden, ob eine Anwendung oder ein Dienst auf dem Server gestarten wurde.
 Die Funktionalität kann durch solche Überprüfungen jedoch \textbf{nicht} sichergestellt werden.
 Da beispielsweise der Prozess bzw. Dienst des Webservers gestartet ist, jedoch keine Webseite aufgerufen werden kann.
@@ -97,6 +97,35 @@ Dies wird mit Anmeldungsdaten eines lokalen Benutzers und eines Active Directory
 
 \item \textbf{Status von Cronjobs} In periodischen Zeitabständen werden Programme aufgerufen, deren Aufruf und Endstatus/Endergebniss überwacht werden muss. 
 Damit nicht das vorherige Ergebnis zu einem False Negative führt, müssen hier zusätzliche Zeitinformationen/zeitliche Parameter beachtet/bedacht werden.
+\end{itemize}
+
+\subsection{Auswerten von Logdateien}
+%Die zwei bisherigen Kategorien beinhalten simple Zustandsüberprüfungen oder aktive Funktionaltests.
+In dieser Kategorie werden zusätzlich verschiedene Logdateien auf spezielle Warnungs- und Fehlermeldungen mit eindeutigen Stopwörtern untersucht.
+Dies ist notwendig um reaktiv Fehlverhalten der Anwendung zu erkennen, das nicht mit den vorherigen Überwachungselementen entdeckt wurde.
+Desweiteren können durch die Analyse der Logdateien etwaige Alarmmeldungen der bisherigen Tests bestätigt, begründet oder aufgehoben werden.
+Somit bietet das Auswerten der Logdateien zusätzliche Sicherheit False Positive- oder False Negative-Meldungen auszuschliessen.
+
+Die Oracle UCM Anwendung erstellt drei verschiedene Arten von Logdateien:\footnote{Quelle: \cite{UCMlog09}}
+
+\begin{itemize}
+\item \textbf{Content Server Log} 
+\item \textbf{Inbound Refinery Log}
+\item \textbf{Archiver Log}
+\end{itemize}
+
+Um alle Logs ohne Probleme im Internetbrowser anzuzeigen, liegen alle Logdateien im HTML-Format vor.
+Alle drei Arten von Logs bestehen jeweils aus 30 verschiedenen Dateien, die sich täglich abwechseln.
+Dadurch wird für jeden Tag im Monat eine separate Datei verwendet, um bei vielen Warnungs- und Fehlermeldungen durch die chronologische Anordnung/Hierarchie den Überblick zu behalten.
+Dabei werden die Logdateien zwangsweise nach 30 Tagen nacheinander überschrieben.
+
+Diese Rotation der Logdateien muss bei der Durchsuchung nach Signal/Stopwörter beachtet werden, damit stets die aktuelle Logdatei überwacht wird und keine veralteten Informationen für False Positives-Meldungen durch Nagios sorgen.
+
+%wieso nur plugin check\_log und nicht einfahc umfangreicheres Standalone Programmw ie syslog\_nd oder 8pussy
+
+\subsection{Benutzersimulation}
+
+\begin{itemize}
 
 \item \textbf{Einchecken von Dokumenten} Damit die eigentliche Aufgabe des Dokumentenverwaltungssystem überwacht werden kann, werden verschiedene Datenformate testweise eingecheckt. 
 Dabei wird die Antwort der Anwendung auf das Hinzufügen der Dateien analysiert.
@@ -112,43 +141,29 @@ Daher müss überprüft werden, ob diese Daten richtig ausgelesen werden, der Da
 
 \item \textbf{Suchfunktion} Nach einer erfolgreichen Indizierung muss das eingecheckte Dokument per Suchanfrage gefunden werden.
 Ob die Suche und Indizierung erfolgreich abgelaufen ist, wird zusätzlich überprüft. 
-
-\item Benutzersimulation!
-
 \end{itemize}
 
-\subsubsection{Auswerten von Logdateien}
-Die zwei bisherigen Kategorien beinhalten simple Zustandsüberprüfungen oder aktive Funktionaltests.
-In dieser Kategorie werden zusätzlich verschiedene Logs auf spezielle Warnungs- und Fehlermeldungen anhand entsprechender eindeutigen Signal/Stopwörter untersucht.
-Dies ist notwendig um Fehlverhalten der Anwendung zu erkennen, das nicht mit den vorherigen Überwachungselementen entdeckt wurde.
-Desweiteren können durch die Analyse der Logdateien etwaige Alarmmeldungen der bisherigen Tests bestätigt, begründet oder aufgehoben werden.
-Somit bietet das Auswerten der Logdateien zusätzliche Sicherheit False Positive- oder False Negative-Meldungen auszuschliessen.
-
-Die Oracle UCM Anwendung erstellt drei verschiedene Arten von Logdateien:\footnote{Quelle: \cite{UCMlog09}}
-
-\begin{itemize}
-\item \textbf{Content Server Log} 
-\item \textbf{Inbound Refinery Log}
-\item \textbf{Archiver Log}
-\end{itemize}
-
-Um alle Logs ohne Probleme im Internetbrowser anzuzeigen, liegen alle Logdateien im HTML-Format vor.
-Alle drei Arten von Logs bestehen jeweils aus 30 verschiedenen Dateien, die sich täglich abwechseln.
-Dadruch wird für jeden Tag im Monat eine separate Datei angelegt, um bei vielen Warnungs- und Fehlermeldungen durch die chronologische Anordnung/Hierarchie den Überblick zu behalten.
-So werden die Logdateien zwangsweise nach 30 Tagen nacheinander überschrieben.
-
-Diese Rotation der Logdateien muss bei der Durchsuchung nach Signal/Stopwörter beachtet werden, damit stets die aktuelle Logdatei überwacht wird und keine veralteten Informationen für False Positives-Meldungen durch Nagios sorgen.
-
-%wieso nur plugin check\_log und nicht einfahc umfangreicheres Standalone Programmw ie syslog\_nd oder 8pussy
-
-
+Alle Überwachungselemente lassen sich inklusive ihrer Abhängigkeiten in einer Pyramide darstellen.
 
 \begin{figure}[ht]
 	\centering
-	   \fbox{\includegraphics[width=1\textwidth]{bilder/pyramide7.png}}
+	   \fbox{\includegraphics[width=1\textwidth]{bilder/pyramide_fertig2.png}}
 		\caption{Überwachungselemente}
 		\label{moniele}
 \end{figure}
+
+
+Die Basis für die alle anderen Tests bildet die Systemüberwachung.
+
+An erster Stelle der Systemüberwachung steht die schlichte Erreichbarkeit über das Netzwerk per Ping.
+Wenn der Server nicht erreichbar ist, können auch keine weiterführende Prüfungen durchgeführt werden.
+Zur Systemüberwachung gehören auch allgemeine Informationen über die Systemressourcen wie freier Festplattenspeicher oder CPU Auslastung.
+
+Die nächste Grundlage für die darüberliegenden Tests bildet die Überprüfung der laufenden Prozesse und der Status verschiedener Dienste bzw. Services.
+Sollten bestimmte Prozesse nicht gefunden werden oder wichtige Dienste nicht gestartet sein, können auf diese Prozesse und Dienste aufbauende Checks nicht funktionieren.
+Beispielweise kann der Funktionalitätstest der Benutzeranmeldung nicht realisierbar sein, wenn bereits zuvor in der Systemüberwachung der Prozess für den Webserver IIS nicht gefunden werden konnte.
+
+
 
 
 

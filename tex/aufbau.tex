@@ -97,6 +97,9 @@ Daher lassen sich die Parameter eines Plugins folgendermaßen überprüfen:
 \end{figure}
 
 Die Ausgabe des Plugins gibt den Zustand des Services an; in diesem Fall wird kein Schwellwert überschritten, daher die Meldung \pictext{SWAP OK}.
+Dieses Plugin liefert noch zusätzliche Performance-Informationen, die mit externen Programmen ausgewertet, gespeichert und visualisiert werden können.
+Standardmäßig werden die Performancedaten von der normalen Ausgabe mit einem \pictext{|} getrennt.
+Jedoch können auch Werte aus der normalen Textausgabe verwendet werden, so dass in diesem Beispiel keine Berechnung des Prozentsatzes notwendig wäre.
 
 Um diesen Service mit den angegebenen Schwellwerten von Nagios überwachenzulassen, muss folgende Servicedefinition in die Konfigurationsdatei eingetragen werden:
 
@@ -167,7 +170,6 @@ Ein Übergang zu dem OK Status wird sofort als Hard State festgelegt / festgehal
 \begin{itemize}
 \item Betroffene OSI Schichten auflisten und erklären
 \item Wie werden die Info von Nagios gesammelt und wie gespeichert -> FlapDetection
-\item \textbf{Performacedaten???}
 \item FLapping \footnote{\url{http://nagios.sourceforge.net/docs/2\_0/flapping.html}}
 \item Benachrichtigung durch email oder sms sogar per Telefon geht usw.
 \item Hierarchie \url{http://nagios.sourceforge.net/docs/3_0/networkreachability.html}

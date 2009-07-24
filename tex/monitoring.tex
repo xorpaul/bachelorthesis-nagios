@@ -53,7 +53,7 @@ Wenn im oberen Beispiel der Inhalt der überwachten Webseite verändert wird, is
 
 \paragraph{Minimale Netzwerkbelastung}
 Um bereits stark belastete Netzwerkpunkte zu entlasten, bietet es sich an die Frequenz mit der die Test über das Netzwerk gesendet werden zu verringern.
-Die Aufstellung des Überwachungsservers ist dadurch gerade bei größeren Serverlandschaften sehr wichtig, da durch eine effiziente Platzierung womögliche Flaschenhälse / Engstellen in Form von Switches oder ähnlichem vermieden werden können.
+Die Aufstellung des Überwachungsservers ist dadurch gerade bei größeren Serverlandschaften sehr wichtig, da durch eine effiziente Platzierung womögliche Flaschenhälse / Engstellen in Form von veralteten Switches oder ähnlichem vermieden werden können.
 
 \subsubsection{Sicherheitsaspekte}
 Um erweiterte Statusinformationen über einen Prozess oder über die Arbeitsspeicherauslastung auszulesen ist (meistens) zusätzliche Software auf den Hosts nötig.
@@ -70,14 +70,14 @@ Da die Möglichkeit einer Verschlüsselung der Datenübertragung nicht von jeder
 Die Erlaubnis der Abfrage der Überwachungsinformationen sollte anhand der \gls{IP}-Adresse beschränkt werden, so dass der Client nur Anfragen des Überwachungsservers akzeptiert.
 Durch diese Einschränkung kann vermieden werden, dass sensible Informationen aus den Antworten an unberechtigte Dritte übermittelt werden oder ein Denial of Service-Angriff (\gls{DoS}) durch eine übermäßig hohe Anzahl an Anfragen an den Client gesendet wird, um eine Überlastung des Servers zu erreichen und diesen somit arbeitsunfähig zu machen.
 
-\begin{itemize}
-\item Verschlüsselung der Informationen, die zwischen dem Server und dem Host hin- und hergesendet werden, damit man nicht die Inforamtionen im Klartext einfach auslesen kann.
-\item Firewall regeln, dazu Bild aus dem Jose07 Buch S9
-\end{itemize}
-\subsubsection{Port- versus Anwendungsüberwachung}
-\begin{itemize}
-\item E2E
-\end{itemize}
+%\begin{itemize}
+%\item Verschlüsselung der Informationen, die zwischen dem Server und dem Host hin- und hergesendet werden, damit man nicht die Inforamtionen im Klartext einfach auslesen kann.
+%\item Firewall regeln, dazu Bild aus dem Jose07 Buch S9
+%\end{itemize}
+%\subsubsection{Port- versus Anwendungsüberwachung}
+%\begin{itemize}
+%\item E2E
+%\end{itemize}
 
 
 
