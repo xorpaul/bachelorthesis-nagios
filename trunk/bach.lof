@@ -8,11 +8,13 @@
 \contentsline {figure}{\numberline {7}{\ignorespaces Beispielhafte manuelle Ausf\IeC {\"u}hrung eines netzwerkbasierenden Servicechecks / HTTP Server Check}}{23}{figure.7}
 \contentsline {figure}{\numberline {8}{\ignorespaces Verschiedene \IeC {\"U}berwachungsm\IeC {\"o}glichkeiten von Nagios}}{24}{figure.8}
 \contentsline {figure}{\numberline {9}{\ignorespaces Beispielhafte manuelle Ausf\IeC {\"u}hrung eines Servicechecks \IeC {\"u}ber SSH}}{25}{figure.9}
-\contentsline {figure}{\numberline {10}{\ignorespaces Struktur der Management Information Base (MIB)}}{26}{figure.10}
-\contentsline {figure}{\numberline {11}{\ignorespaces Passive Checks mit NSCA}}{27}{figure.11}
-\contentsline {figure}{\numberline {12}{\ignorespaces Aktive Checks mit NRPE}}{27}{figure.12}
-\contentsline {figure}{\numberline {13}{\ignorespaces \IeC {\"U}bersicht der verschiedenen Unix Agenten\footnotemark }}{28}{figure.13}
-\contentsline {figure}{\numberline {14}{\ignorespaces \IeC {\"U}bersicht der verschiedenen Windows Agenten}}{29}{figure.14}
-\contentsline {figure}{\numberline {15}{\ignorespaces Oracle UCM Architektur}}{31}{figure.15}
-\contentsline {figure}{\numberline {16}{\ignorespaces \IeC {\"U}berwachungselemente}}{36}{figure.16}
-\contentsline {figure}{\numberline {17}{\ignorespaces Ablauf der Benutzersimulation}}{40}{figure.17}
+\contentsline {figure}{\numberline {10}{\ignorespaces Aktive Checks mit NRPE}}{25}{figure.10}
+\contentsline {figure}{\numberline {11}{\ignorespaces Struktur der Management Information Base}}{27}{figure.11}
+\contentsline {figure}{\numberline {12}{\ignorespaces Passive Checks mit NSCA}}{28}{figure.12}
+\contentsline {figure}{\numberline {13}{\ignorespaces \IeC {\"U}bersicht der verschiedenen Unix Agenten\footnotemark }}{29}{figure.13}
+\contentsline {figure}{\numberline {14}{\ignorespaces \IeC {\"U}bersicht der verschiedenen Windows Agenten}}{30}{figure.14}
+\contentsline {figure}{\numberline {15}{\ignorespaces Oracle UCM Architektur}}{33}{figure.15}
+\contentsline {figure}{\numberline {16}{\ignorespaces \IeC {\"U}berwachungselemente}}{38}{figure.16}
+\contentsline {figure}{\numberline {17}{\ignorespaces Ablauf der Benutzersimulation}}{42}{figure.17}
+\contentsline {figure}{\numberline {18}{\ignorespaces Ablauf der Benutzersimulation}}{43}{figure.18}
+\contentsline {figure}{\numberline {19}{\ignorespaces Webinterface von Nagios}}{44}{figure.19}

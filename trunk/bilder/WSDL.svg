@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+### begin_: file metadata
+    ### <region-file_info>
+    ### main:
+    ###   - name : xml.svg
+    ###     date : created="Fri November 24, 2006, 7:35:17 AM"
+    ###     last : lastmod="Sun 2007-08-12 09:19:01"
+    ###     desc : |
+    ###         Image from the Dreftymac ImgNode Series
+    ###         For more details, see:
+    ###         http://en.wikipedia.org/wiki/User:Dreftymac/Docs/ImageDisclaimer
+    ###     hist : |
+    ###         2007-08-12 ;; created version for upload to wikipedia
+    ### </region-file_info>
+    -->
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://web.resource.org/cc/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.0" x="0.00000000" y="0.00000000" width="220.00000pt" height="250.00000pt" id="svg1332" sodipodi:version="0.32" inkscape:version="0.45.1" sodipodi:docname="WSDL.svg" inkscape:output_extension="org.inkscape.output.svg.inkscape" sodipodi:docbase="D:\">
+  <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="2.32" inkscape:cx="122.09342" inkscape:cy="177.65719" inkscape:window-width="1280" inkscape:window-height="976" inkscape:window-x="1280" inkscape:window-y="20" showguides="true" inkscape:guide-bbox="true" inkscape:current-layer="svg1332"/>
+  <defs id="defs1334">
+    <linearGradient x1="99.777298" y1="15.423800" x2="153.00050" y2="248.63110" id="aigrd1" gradientUnits="userSpaceOnUse">
+      <stop style="stop-color: rgb(24, 67, 117); stop-opacity: 1;" offset="0.00000000" id="stop53300"/>
+      <stop style="stop-color: rgb(200, 189, 220); stop-opacity: 1;" offset="1.0000000" id="stop53302"/>
+    </linearGradient>
+    <linearGradient id="linearGradient3264">
+      <stop style="stop-color: rgb(201, 201, 201); stop-opacity: 1;" offset="0.00000000" id="stop3266"/>
+      <stop style="stop-color: rgb(248, 248, 248); stop-opacity: 1;" offset="0.25000000" id="stop3276"/>
+      <stop style="stop-color: rgb(226, 226, 226); stop-opacity: 1;" offset="0.50000000" id="stop3272"/>
+      <stop style="stop-color: rgb(59, 59, 59); stop-opacity: 1;" offset="0.75000000" id="stop3274"/>
+      <stop style="stop-color: rgb(201, 201, 201); stop-opacity: 1;" offset="1.0000000" id="stop3268"/>
+    </linearGradient>
+    <linearGradient x1="0.052173913" y1="0.97656250" x2="0.78260869" y2="0.0078125000" id="linearGradient1506" xlink:href="#linearGradient1507"/>
+    <linearGradient id="linearGradient1507">
+      <stop style="stop-color: rgb(0, 0, 0); stop-opacity: 0.0955056;" offset="0.00000000" id="stop1508"/>
+      <stop style="stop-color: rgb(0, 0, 0); stop-opacity: 0;" offset="1.0000000" id="stop1510"/>
+    </linearGradient>
+    <linearGradient x1="1.5572519" y1="-0.55303031" x2="0.062992126" y2="0.54687500" id="linearGradient1499" xlink:href="#linearGradient1501"/>
+    <linearGradient id="linearGradient1501">
+      <stop style="stop-color: rgb(255, 255, 255); stop-opacity: 1;" offset="0.00000000" id="stop1502"/>
+      <stop style="stop-color: rgb(255, 255, 255); stop-opacity: 0;" offset="1.0000000" id="stop1504"/>
+    </linearGradient>
+    <linearGradient x1="0.88034189" y1="0.21093750" x2="0.085470088" y2="1.1796875" id="linearGradient1495" xlink:href="#linearGradient1492"/>
+    <linearGradient id="linearGradient1492">
+      <stop style="stop-color: rgb(218, 218, 218); stop-opacity: 1;" offset="0.00000000" id="stop1493"/>
+      <stop style="stop-color: rgb(241, 241, 241); stop-opacity: 1;" offset="0.34923077" id="stop1496"/>
+      <stop style="stop-color: rgb(240, 240, 240); stop-opacity: 1;" offset="1.0000000" id="stop1494"/>
+    </linearGradient>
+    <linearGradient x1="0.63247865" y1="0.32812500" x2="-0.37606838" y2="1.3281250" id="linearGradient1497" xlink:href="#linearGradient1492"/>
+    <linearGradient id="linearGradient2201">
+      <stop style="stop-color: rgb(203, 203, 202); stop-opacity: 1;" offset="0.00000000" id="stop2202"/>
+      <stop style="stop-color: rgb(255, 255, 255); stop-opacity: 1;" offset="1.0000000" id="stop2203"/>
+    </linearGradient>
+    <linearGradient id="linearGradient259">
+      <stop style="stop-color: rgb(250, 250, 250); stop-opacity: 1;" offset="0.00000000" id="stop260"/>
+      <stop style="stop-color: rgb(187, 187, 187); stop-opacity: 1;" offset="1.0000000" id="stop261"/>
+    </linearGradient>
+    <linearGradient id="linearGradient269">
+      <stop style="stop-color: rgb(163, 163, 163); stop-opacity: 1;" offset="0.00000000" id="stop270"/>
+      <stop style="stop-color: rgb(76, 76, 76); stop-opacity: 1;" offset="1.0000000" id="stop271"/>
+    </linearGradient>
+    <linearGradient id="linearGradient15662">
+      <stop style="stop-color: rgb(255, 255, 255); stop-opacity: 1;" offset="0.00000000" id="stop15664"/>
+      <stop style="stop-color: rgb(248, 248, 248); stop-opacity: 1;" offset="1.0000000" id="stop15666"/>
+    </linearGradient>
+    <radialGradient cx="20.892099" cy="114.56840" r="5.2560000" fx="20.892099" fy="114.56840" id="aigrd2" gradientUnits="userSpaceOnUse">
+      <stop style="stop-color: rgb(240, 240, 240); stop-opacity: 1;" offset="0.00000000" id="stop15566"/>
+      <stop style="stop-color: rgb(154, 154, 154); stop-opacity: 1;" offset="1.0000000" id="stop15568"/>
+    </radialGradient>
+    <radialGradient cx="20.892099" cy="64.567902" r="5.2570000" fx="20.892099" fy="64.567902" id="aigrd3" gradientUnits="userSpaceOnUse">
+      <stop style="stop-color: rgb(240, 240, 240); stop-opacity: 1;" offset="0.00000000" id="stop15573"/>
+      <stop style="stop-color: rgb(154, 154, 154); stop-opacity: 1;" offset="1.0000000" id="stop15575"/>
+    </radialGradient>
+  </defs>
+  <path d="M -107.71068,-81.020338 L -107.71068,-37.362645 L -107.71068,6.2950448 L -107.71068,49.952737 L -107.71068,93.610429 L -68.011790,93.610429 L -28.312898,93.610429 L 11.385990,93.610429 L 51.084874,93.610429 L 51.084874,49.952737 L 51.084874,6.2950448 L 51.084874,-37.362645 L 11.385990,-81.020338 L -28.312898,-81.020338 L -68.011790,-81.020338 L -107.71068,-81.020338 z " style="fill: url(#linearGradient1506) rgb(0, 0, 0); fill-opacity: 0.75; fill-rule: evenodd; stroke-width: 0.954075pt;" id="path1505" transform="matrix(1.59178, 0, 0, 1.62345, 182.307, 142.25)"/>
+  <path d="M -107.48888,-81.600638 C -107.48888,-22.811633 -107.48888,35.977367 -107.48888,94.766369 C -53.768362,94.766369 -0.047842466,94.766369 53.672676,94.766369 C 53.672676,50.573257 53.672676,6.3801468 53.672676,-37.812967 C 40.223274,-52.604441 26.778956,-67.400810 13.316700,-82.180903 C -26.951828,-82.180903 -67.220352,-82.180903 -107.48888,-82.180903 C -107.48888,-82.061875 -107.48888,-81.675030 -107.48888,-81.600638 z " style="fill: url(#linearGradient1506) rgb(0, 0, 0); fill-opacity: 0.75; fill-rule: evenodd; stroke-width: 0.954075pt;" id="path1538" transform="matrix(1.59178, 0, 0, 1.62345, 182.307, 142.25)"/>
+  <path d="M -107.61411,-82.761167 C -107.61411,-23.198479 -107.61411,36.364211 -107.61411,95.926899 C -53.102740,95.926899 1.4086235,95.926899 55.919998,95.926899 C 55.919998,51.198157 55.919998,6.4694188 55.919998,-38.259325 C 42.250120,-53.288903 28.585160,-68.323228 14.902438,-83.341432 C -25.936410,-83.341432 -66.775256,-83.341432 -107.61411,-83.341432 C -107.61411,-83.222405 -107.61411,-82.835559 -107.61411,-82.761167 z " style="fill: url(#linearGradient1506) rgb(0, 0, 0); fill-opacity: 0.75; fill-rule: evenodd; stroke-width: 0.954075pt;" id="path1543" transform="matrix(1.59178, 0, 0, 1.62345, 182.307, 142.25)"/>
+  <path d="M -111.00205,-84.420766 L -111.00205,-40.333685 L -111.00205,3.7533948 L -111.00205,47.840475 L -111.00205,91.927555 L -70.768866,91.927555 L -30.535706,91.927555 L 9.6974535,91.927555 L 49.930648,91.927555 L 49.930648,47.840475 L 49.930648,3.7533948 L 49.930648,-40.333685 L 9.6974535,-84.420766 L -30.535706,-84.420766 L -70.768866,-84.420766 L -111.00205,-84.420766 z " style="fill: rgb(255, 255, 255); fill-rule: evenodd; stroke-width: 0.42649; stroke-opacity: 0.36478;" id="path930" transform="matrix(1.59178, 0, 0, 1.62345, 182.307, 142.25)"/>
+  <path d="M -111.32600,-84.202166 L -111.32600,-40.115085 L -111.32600,3.9719948 L -111.32600,48.059095 L -111.32600,92.146155 L -71.092836,92.146155 L -30.859656,92.146155 L 9.3735035,92.146155 L 49.606668,92.146155 L 49.606668,48.059095 L 49.606668,3.9719948 L 49.606668,-40.115085 L 9.3735035,-84.202166 L -30.859656,-84.202166 L -71.092836,-84.202166 L -111.32600,-84.202166 z " style="fill: url(#linearGradient1495) rgb(0, 0, 0); fill-opacity: 1; fill-rule: evenodd; stroke: rgb(0, 0, 0); stroke-width: 0.511788; stroke-opacity: 0.36478;" id="rect900" transform="matrix(1.59178, 0, 0, 1.62345, 182.307, 142.25)"/>
+  <path d="M -107.83333,-72.168402 L -108.55815,89.466198 L 49.452406,89.466198 L 49.543006,49.510538 C 46.009506,50.869578 10.312146,0.31345831 -34.626624,2.4879183 C -79.606204,4.6643583 -67.968304,-65.645043 -107.83333,-72.168402 z " style="fill: url(#linearGradient1499) rgb(0, 0, 0); fill-opacity: 1; fill-rule: evenodd; stroke-width: 1pt;" id="path1500" transform="matrix(1.59178, 0, 0, 1.62345, 182.307, 142.25)"/>
+  <metadata id="metadata82">
+    <rdf:RDF>
+      <cc:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/by-sa/2.5/"/>
+      </cc:Work>
+      <cc:License rdf:about="http://creativecommons.org/licenses/by-sa/2.5/">
+        <cc:permits rdf:resource="http://web.resource.org/cc/Reproduction"/>
+        <cc:permits rdf:resource="http://web.resource.org/cc/Distribution"/>
+        <cc:requires rdf:resource="http://web.resource.org/cc/Notice"/>
+        <cc:requires rdf:resource="http://web.resource.org/cc/Attribution"/>
+        <cc:permits rdf:resource="http://web.resource.org/cc/DerivativeWorks"/>
+        <cc:requires rdf:resource="http://web.resource.org/cc/ShareAlike"/>
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <text x="21.3096" y="34.3494" style="font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; line-height: 100%; text-anchor: start; fill: rgb(0, 0, 0); fill-opacity: 1; stroke: none; stroke-width: 1pt; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1; font-family: courier new;" id="text1230" xml:space="preserve" transform="scale(0.868169, 1.15185)" sodipodi:linespacing="100%"><tspan id="tspan1231" style="font-size: 12px;">&lt;?xml version="1.0" encoding="UT</tspan></text>
+  <text x="34.0398" y="93.5599" style="font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; line-height: 100%; text-anchor: start; fill: rgb(0, 0, 0); fill-opacity: 1; stroke: none; stroke-width: 1pt; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1; font-family: courier new;" id="text990" xml:space="preserve" transform="scale(0.868169, 1.15185)" sodipodi:linespacing="100%"><tspan id="tspan991" style="font-size: 12px;">xmlns="http://schemas.xmlsoap.org/wsd</tspan></text>
+  <text x="21.3096" y="50.1188" style="font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; line-height: 100%; text-anchor: start; fill: rgb(0, 0, 0); fill-opacity: 1; stroke: none; stroke-width: 1pt; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1; font-family: courier new;" id="text1002" xml:space="preserve" transform="scale(0.868169, 1.15185)" sodipodi:linespacing="100%"><tspan id="tspan1003" style="font-size: 12px;">&lt;definitions name="AktienKurs"&gt;</tspan></text>
+  <text x="55.176" y="181.579" style="font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; line-height: 100%; text-anchor: start; fill: rgb(0, 0, 0); fill-opacity: 1; stroke: none; stroke-width: 1pt; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1; font-family: courier new;" id="text1005" xml:space="preserve" transform="scale(0.868169, 1.15185)" sodipodi:linespacing="100%"><tspan id="tspan1006" style="font-size: 12px;">&lt;part name="body" element="xsd:Tra</tspan></text>
+  <text x="55.176" y="137.766" style="font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; line-height: 100%; text-anchor: start; fill: rgb(0, 0, 0); fill-opacity: 1; stroke: none; stroke-width: 1pt; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1; font-family: courier new;" id="text1008" xml:space="preserve" transform="scale(0.868169, 1.15185)" sodipodi:linespacing="100%"><tspan id="tspan1009" style="font-size: 12px;">&lt;soap:address location="http://loc</tspan></text>
+  <text x="44.9807" y="152.501" style="font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; line-height: 100%; text-anchor: start; fill: rgb(0, 0, 0); fill-opacity: 1; stroke: none; stroke-width: 1pt; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1; font-family: courier new;" id="text1011" xml:space="preserve" transform="scale(0.868169, 1.15185)" sodipodi:linespacing="100%"><tspan id="tspan1012" style="font-size: 12px;">&lt;/port&gt;</tspan></text>
+  <text x="34.0574" y="109.06" style="font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; line-height: 100%; text-anchor: start; fill: rgb(0, 0, 0); fill-opacity: 1; stroke: none; stroke-width: 1pt; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1; font-family: courier new;" id="text1014" xml:space="preserve" transform="scale(0.868169, 1.15185)" sodipodi:linespacing="100%"><tspan id="tspan1015" style="font-size: 12px;">&lt;service name="AktienKurs"&gt;</tspan></text>
+  <text x="33.7761" y="64.0894" style="font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; line-height: 100%; text-anchor: start; fill: rgb(0, 0, 0); fill-opacity: 1; stroke: none; stroke-width: 1pt; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1; font-family: courier new;" id="text2374" xml:space="preserve" transform="scale(0.868169, 1.15185)" sodipodi:linespacing="100%"><tspan id="tspan2376" style="font-size: 12px;">targetNamespace="http://localhost/a</tspan></text>
+  <path d="M 48.966248,-40.115085 C 36.836494,-43.706085 21.119074,-43.196885 9.2456135,-41.150125 C 11.295694,-54.304905 11.551954,-70.791106 8.7330735,-84.202166 L 48.966248,-40.115085 z " style="fill: url(#linearGradient1497) rgb(0, 0, 0); fill-opacity: 1; fill-rule: evenodd; stroke-width: 0.954075pt;" id="path906" transform="matrix(1.59178, 0, 0, 1.62345, 182.307, 142.25)"/>
+  <g id="g1022" transform="matrix(2.46495, 0, 0, 2.46202, 181.608, 271.015)">
+    <path d="M 35.997699,13.999941 L 34.994894,13.020969 L 34.975100,0.99486069 L 35.997830,0.0079440893 L 35.997699,13.999941 z " style="fill: rgb(128, 51, 0); fill-rule: evenodd; stroke: none; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1;" id="path1023"/>
+    <rect width="34.007584" height="12.029619" x="0.98731136" y="0.99499226" style="fill: rgb(255, 102, 0); fill-opacity: 1; stroke: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-opacity: 1;" id="rect1024"/>
+    <path d="M 0.00026317800,0.00000000 L 36.001474,0.0040378393 L 34.982912,0.99108607 L 0.99903014,1.0028048 L 0.00026317800,0.00000000 z " style="fill: rgb(255, 204, 170); fill-opacity: 1; fill-rule: evenodd; stroke: none; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1;" id="path1025"/>
+    <path d="M 0.0040378391,14.000263 L 36.001342,14.004038 L 34.994499,13.016990 L 0.98717980,13.016990 L 0.0040378391,14.000263 z " style="fill: rgb(85, 34, 0); fill-opacity: 1; fill-rule: evenodd; stroke: none; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1;" id="path1026"/>
+    <path d="M 0.99512389,13.008723 L 0.00039476700,13.999941 L 0.00000000,4.6800056e-010 L 0.99108604,0.99095444 L 0.99512389,13.008723 z " style="fill: rgb(255, 153, 85); fill-rule: evenodd; stroke: none; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1;" id="path1027"/>
+    <g id="g2802">
+      <text xml:space="preserve" style="font-size: 8.28499px; font-style: normal; font-variant: normal; font-weight: bold; font-stretch: normal; line-height: 100%; text-anchor: start; fill: rgb(0, 0, 0); fill-opacity: 1; stroke: none; stroke-width: 1pt; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1; font-family: verdana;" x="3.96694" y="10.5189" id="text913" sodipodi:linespacing="100%"><tspan x="3.96694" y="10.5189" sodipodi:role="line" id="tspan1537">WSDL</tspan></text>
+      <text xml:space="preserve" style="font-size: 8.28499px; font-style: normal; font-variant: normal; font-weight: bold; font-stretch: normal; line-height: 100%; text-anchor: start; fill: rgb(255, 255, 255); fill-opacity: 1; stroke: none; stroke-width: 1pt; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1; font-family: verdana;" x="4.44135" y="10.032" id="text2165" sodipodi:linespacing="100%"><tspan x="4.44135" y="10.032" sodipodi:role="line" id="tspan2166">WSDL</tspan></text>
+    </g>
+  </g>
+  <text x="44.9807" y="122.761" style="font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; line-height: 100%; text-anchor: start; fill: rgb(0, 0, 0); fill-opacity: 1; stroke: none; stroke-width: 1pt; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1; font-family: courier new;" id="text1004" xml:space="preserve" transform="scale(0.868169, 1.15185)" sodipodi:linespacing="100%"><tspan id="tspan1005" style="font-size: 12px;">&lt;port name="AktienSoapPort" binding</tspan></text>
+  <text x="34.0574" y="226.813" style="font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; line-height: 100%; text-anchor: start; fill: rgb(0, 0, 0); fill-opacity: 1; stroke: none; stroke-width: 1pt; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1; font-family: courier new;" id="text996" xml:space="preserve" transform="scale(0.868169, 1.15185)" sodipodi:linespacing="100%"><tspan id="tspan997" style="font-size: 12px;">&lt;/service&gt;</tspan></text>
+  <text x="21.3096" y="241.548" style="font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; line-height: 100%; text-anchor: start; fill: rgb(0, 0, 0); fill-opacity: 1; stroke: none; stroke-width: 1pt; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1; font-family: courier new;" id="text1003" xml:space="preserve" transform="scale(0.868169, 1.15185)" sodipodi:linespacing="100%"><tspan id="tspan1004" style="font-size: 12px;">&lt;/definitions&gt;</tspan></text>
+  <text x="44.9807" y="166.966" style="font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; line-height: 100%; text-anchor: start; fill: rgb(0, 0, 0); fill-opacity: 1; stroke: none; stroke-width: 1pt; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1; font-family: courier new;" id="text2378" xml:space="preserve" transform="scale(0.868169, 1.15185)" sodipodi:linespacing="100%"><tspan id="tspan2380" style="font-size: 12px;">&lt;message name="Aktie.HoleWert"&gt;</tspan></text>
+  <text x="44.9631" y="208.928" style="font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; line-height: 100%; text-anchor: start; fill: rgb(0, 0, 0); fill-opacity: 1; stroke: none; stroke-width: 1pt; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1; font-family: courier new;" id="text2382" xml:space="preserve" transform="scale(0.868169, 1.15185)" sodipodi:linespacing="100%"><tspan id="tspan2384" style="font-size: 12px;">…</tspan></text>
+  <text x="34.0398" y="78.8246" style="font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; line-height: 100%; text-anchor: start; fill: rgb(0, 0, 0); fill-opacity: 1; stroke: none; stroke-width: 1pt; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1; font-family: courier new;" id="text2503" xml:space="preserve" transform="scale(0.868169, 1.15185)" sodipodi:linespacing="100%"><tspan id="tspan2505" style="font-size: 12px;">xmlns:xsd="http://schemas.xmlsoap.or</tspan></text>
+  <text x="44.9807" y="196.706" style="font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; line-height: 100%; text-anchor: start; fill: rgb(0, 0, 0); fill-opacity: 1; stroke: none; stroke-width: 1pt; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1; font-family: courier new;" id="text2507" xml:space="preserve" transform="scale(0.868169, 1.15185)" sodipodi:linespacing="100%"><tspan id="tspan2509" style="font-size: 12px;">&lt;/message&gt;</tspan></text>
+</svg>

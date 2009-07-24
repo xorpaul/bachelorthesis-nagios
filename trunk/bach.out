@@ -6,7 +6,6 @@
 \BOOKMARK [3][-]{subsubsection.4.1.1}{Ressourcenbelastung}{subsection.4.1}
 \BOOKMARK [3][-]{subsubsection.4.1.2}{Netzwerkstruktur und Abh\344ngigkeiten}{subsection.4.1}
 \BOOKMARK [3][-]{subsubsection.4.1.3}{Sicherheitsaspekte}{subsection.4.1}
-\BOOKMARK [3][-]{subsubsection.4.1.4}{Port- versus Anwendungs\374berwachung}{subsection.4.1}
 \BOOKMARK [2][-]{subsection.4.2}{Dokumenten-Management-Systeme}{section.4}
 \BOOKMARK [3][-]{subsubsection.4.2.1}{Eingabe}{subsection.4.2}
 \BOOKMARK [3][-]{subsubsection.4.2.2}{Verwaltung und Archivierung}{subsection.4.2}
@@ -14,14 +13,10 @@
 \BOOKMARK [2][-]{subsection.4.3}{Content-Management-Systeme}{section.4}
 \BOOKMARK [2][-]{subsection.4.4}{[Enterprise-Content-Management-Systeme]}{section.4}
 \BOOKMARK [2][-]{subsection.4.5}{Universal-Content-Management-Systeme}{section.4}
-\BOOKMARK [2][-]{subsection.4.6}{[cronjobs]}{section.4}
-\BOOKMARK [2][-]{subsection.4.7}{[ds - ADS Benutzer]}{section.4}
-\BOOKMARK [2][-]{subsection.4.8}{[Metadaten allg]}{section.4}
-\BOOKMARK [2][-]{subsection.4.9}{[alse+-true+-]}{section.4}
 \BOOKMARK [1][-]{section.5}{Nagios}{}
 \BOOKMARK [2][-]{subsection.5.1}{Allgemein}{section.5}
 \BOOKMARK [2][-]{subsection.5.2}{Aufbau / Architektur}{section.5}
-\BOOKMARK [2][-]{subsection.5.3}{\334berpr\374fungs-Methoden}{section.5}
+\BOOKMARK [2][-]{subsection.5.3}{\334berpr\374fungsmethoden}{section.5}
 \BOOKMARK [2][-]{subsection.5.4}{\334berwachungslogik \(mit Alarmierung/Benachrichtigung\)}{section.5}
 \BOOKMARK [2][-]{subsection.5.5}{Plugins}{section.5}
 \BOOKMARK [2][-]{subsection.5.6}{\(Windows\) Agenten oder allgemein Einholen von Infos}{section.5}
@@ -34,26 +29,26 @@
 \BOOKMARK [3][-]{subsubsection.6.2.3}{Inbound Refinery}{subsection.6.2}
 \BOOKMARK [3][-]{subsubsection.6.2.4}{Search Engine}{subsection.6.2}
 \BOOKMARK [3][-]{subsubsection.6.2.5}{Webserver}{subsection.6.2}
-\BOOKMARK [2][-]{subsection.6.3}{\334berwachungselemente}{section.6}
-\BOOKMARK [3][-]{subsubsection.6.3.1}{Statusabfragen}{subsection.6.3}
-\BOOKMARK [3][-]{subsubsection.6.3.2}{\334berwachung der Funktionalit\344t}{subsection.6.3}
-\BOOKMARK [3][-]{subsubsection.6.3.3}{Auswerten von Logdateien}{subsection.6.3}
-\BOOKMARK [1][-]{section.7}{Umsetzung}{}
-\BOOKMARK [2][-]{subsection.7.1}{Aufbau der Testumgebung}{section.7}
-\BOOKMARK [3][-]{subsubsection.7.1.1}{Aufsetzen eines Nagios-Test-Systems}{subsection.7.1}
-\BOOKMARK [3][-]{subsubsection.7.1.2}{Bilddatenbank als VM}{subsection.7.1}
-\BOOKMARK [2][-]{subsection.7.2}{Basis\374berwachung - Konfigurationsdateien}{section.7}
-\BOOKMARK [2][-]{subsection.7.3}{Einrichten des Windows Agenten}{section.7}
-\BOOKMARK [2][-]{subsection.7.4}{\334berpr\374fen der Prozesse und Services}{section.7}
-\BOOKMARK [2][-]{subsection.7.5}{Umsetzung der Funktionlit\344tstest}{section.7}
-\BOOKMARK [2][-]{subsection.7.6}{Auswertung der Logs + Stopw\366rterdefinition}{section.7}
-\BOOKMARK [2][-]{subsection.7.7}{Benutzersimulation}{section.7}
-\BOOKMARK [1][-]{section.8}{Ergebnis}{}
-\BOOKMARK [1][-]{section.9}{Zusammenfassung und Ausblick}{}
-\BOOKMARK [1][-]{section.10}{Anhang}{}
-\BOOKMARK [2][-]{subsection.10.1}{Abbildungsverzeichnis}{section.10}
-\BOOKMARK [2][-]{subsection.10.2}{Codelistingverzeichnis}{section.10}
-\BOOKMARK [2][-]{subsection.10.3}{Quellverzeichnis}{section.10}
-\BOOKMARK [3][-]{subsubsection.10.3.1}{Literaturverzeichnis}{subsection.10.3}
-\BOOKMARK [3][-]{subsubsection.10.3.2}{Internetquellen}{subsection.10.3}
-\BOOKMARK [2][-]{subsection.10.4}{Glossar}{section.10}
+\BOOKMARK [1][-]{section.7}{\334berwachungselemente}{}
+\BOOKMARK [2][-]{subsection.7.1}{Statusabfragen}{section.7}
+\BOOKMARK [2][-]{subsection.7.2}{\334berwachung der Funktionalit\344t}{section.7}
+\BOOKMARK [2][-]{subsection.7.3}{Auswerten von Logdateien}{section.7}
+\BOOKMARK [2][-]{subsection.7.4}{Benutzersimulation}{section.7}
+\BOOKMARK [1][-]{section.8}{Umsetzung}{}
+\BOOKMARK [2][-]{subsection.8.1}{Aufbau der Testumgebung}{section.8}
+\BOOKMARK [3][-]{subsubsection.8.1.1}{Aufsetzen eines Nagios-Test-Systems}{subsection.8.1}
+\BOOKMARK [3][-]{subsubsection.8.1.2}{Bilddatenbank als VM}{subsection.8.1}
+\BOOKMARK [2][-]{subsection.8.2}{Einrichten des Windows Agenten}{section.8}
+\BOOKMARK [2][-]{subsection.8.3}{\334berpr\374fen der Prozesse und Services}{section.8}
+\BOOKMARK [2][-]{subsection.8.4}{Umsetzung der Funktionlit\344tstest}{section.8}
+\BOOKMARK [2][-]{subsection.8.5}{Auswertung der Logs + Stopw\366rterdefinition}{section.8}
+\BOOKMARK [2][-]{subsection.8.6}{Benutzersimulation}{section.8}
+\BOOKMARK [1][-]{section.9}{Ergebnis}{}
+\BOOKMARK [1][-]{section.10}{Zusammenfassung und Ausblick}{}
+\BOOKMARK [1][-]{section.11}{Anhang}{}
+\BOOKMARK [2][-]{subsection.11.1}{Abbildungsverzeichnis}{section.11}
+\BOOKMARK [2][-]{subsection.11.2}{Codelistingverzeichnis}{section.11}
+\BOOKMARK [2][-]{subsection.11.3}{Quellverzeichnis}{section.11}
+\BOOKMARK [3][-]{subsubsection.11.3.1}{Literaturverzeichnis}{subsection.11.3}
+\BOOKMARK [3][-]{subsubsection.11.3.2}{Internetquellen}{subsection.11.3}
+\BOOKMARK [2][-]{subsection.11.4}{Glossar}{section.11}
