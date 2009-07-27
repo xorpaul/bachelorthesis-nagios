@@ -17,6 +17,8 @@
 \BOOKMARK [2][-]{subsection.5.1}{Allgemein}{section.5}
 \BOOKMARK [2][-]{subsection.5.2}{Aufbau / Architektur}{section.5}
 \BOOKMARK [2][-]{subsection.5.3}{\334berpr\374fungsmethoden}{section.5}
+\BOOKMARK [3][-]{subsubsection.5.3.1}{Aktive Checks}{subsection.5.3}
+\BOOKMARK [3][-]{subsubsection.5.3.2}{Passive Checks}{subsection.5.3}
 \BOOKMARK [2][-]{subsection.5.4}{\334berwachungslogik \(mit Alarmierung/Benachrichtigung\)}{section.5}
 \BOOKMARK [2][-]{subsection.5.5}{Plugins}{section.5}
 \BOOKMARK [2][-]{subsection.5.6}{\(Windows\) Agenten oder allgemein Einholen von Infos}{section.5}

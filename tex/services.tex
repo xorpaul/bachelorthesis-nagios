@@ -18,12 +18,22 @@ Nagios bietet verschiedene Möglichkeiten an solche Dienste zu überprüfen:
 
 \begin{figure}[ht]
 	\centering
-	   \fbox{\includegraphics[width=0.65\textwidth]{bilder/nagios-kern.png}}
+	   \fbox{\includegraphics[width=0.95\textwidth]{bilder/nagios-kern.png}}
 		\caption[Verschiedene Überwachungsmöglichkeiten von Nagios]{Verschiedene Überwachungsmöglichkeiten von Nagios\protect\footnote}
 		\label{nagios-kern}
 \end{figure} 
 \footnotetext{Quelle: \cite{Barth08} S. 98}
 
+Man unterscheidet generell zwischen aktiven und passiven Checks.
+
+\subsubsection{Aktive Checks}
+asdaasdadasdasdads
+asdasd
+
+\footnotetext{Quelle: \url{http://nagios.sourceforge.net/docs/3_0/images/activechecks.png}}
+asdasdas
+\subsubsection{Passive Checks}
+asdasdasdasdas
 \paragraph{Methode 1 - Netzwerkdienste}
 Der zuvor, in Abbildung \ref{check-http}, gezeigte Test eines netzwerkbasierenden Dienstes wird im obigen Bild mit dem Client-Rechner (mit der Nummer) 1 abgebildet.
 %Die Überprüfung von nicht netzwerkbasierenden Diensten soll mit den restlichen Client-Rechnern aufgezeigt werden.
@@ -119,9 +129,9 @@ Beim letzteren spricht man auch von so genannten \gls{SNMP}-Traps.
 
 %##################
 
-Weiterhin unterscheidet man generell zwischen aktiven und passiven Checks.
 \paragraph{Methode 5 - NSCA}
 %asynchron!
+Diese Methode verwendet passive Checks.
 Bei passiven Tests führt der zu überwachende Computer das statuserzeugende Plugin selbst aus und sendet es über ein weiteres Plugin zum Nagios-Server.
 Hierfür muss das Testprogramm bzw. Script und das entsprechende Plugin \pictext{send\_ncsa}, welches zum Versenden der Informationen zuständig ist, auf dem Host vorhanden sein.
 Auf der anderen Seite muss der \pictext{\gls{NSCA}} (Nagios Service Check Acceptor) auf dem Nagios-Server als Daemon gestartet sein, damit die übermittelten Ergebnisse von Nagios entgegengenommen werden.

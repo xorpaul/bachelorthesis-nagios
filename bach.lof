@@ -1,20 +1,22 @@
 \select@language {ngerman}
 \contentsline {figure}{\numberline {1}{\ignorespaces Zus\IeC {\"a}tzliche Netzwerkabh\IeC {\"a}ngigkeit und Netzwerkbelastung}}{5}{figure.1}
 \contentsline {figure}{\numberline {2}{\ignorespaces "`any-to-any"' Content-Management Konzept}}{15}{figure.2}
-\contentsline {figure}{\numberline {3}{\ignorespaces Logische Nagios Struktur}}{18}{figure.3}
-\contentsline {figure}{\numberline {4}{\ignorespaces Anzeige des Servers im Webinterface von Nagios}}{19}{figure.4}
+\contentsline {figure}{\numberline {3}{\ignorespaces Aktive Checks durch Nagios}}{18}{figure.3}
+\contentsline {figure}{\numberline {4}{\ignorespaces Anzeige des Servers im Webinterface von Nagios}}{20}{figure.4}
 \contentsline {figure}{\numberline {5}{\ignorespaces Beispielhafte manuelle Ausf\IeC {\"u}hrung eines Servicechecks}}{20}{figure.5}
 \contentsline {figure}{\numberline {6}{\ignorespaces Beispiel f\IeC {\"u}r den zeitlichen Verlauf durch vers. Zust\IeC {\"a}nde}}{22}{figure.6}
 \contentsline {figure}{\numberline {7}{\ignorespaces Beispielhafte manuelle Ausf\IeC {\"u}hrung eines netzwerkbasierenden Servicechecks / HTTP Server Check}}{23}{figure.7}
 \contentsline {figure}{\numberline {8}{\ignorespaces Verschiedene \IeC {\"U}berwachungsm\IeC {\"o}glichkeiten von Nagios}}{24}{figure.8}
 \contentsline {figure}{\numberline {9}{\ignorespaces Beispielhafte manuelle Ausf\IeC {\"u}hrung eines Servicechecks \IeC {\"u}ber SSH}}{25}{figure.9}
-\contentsline {figure}{\numberline {10}{\ignorespaces Aktive Checks mit NRPE}}{25}{figure.10}
+\contentsline {figure}{\numberline {10}{\ignorespaces Aktive Checks mit NRPE}}{26}{figure.10}
 \contentsline {figure}{\numberline {11}{\ignorespaces Struktur der Management Information Base}}{27}{figure.11}
-\contentsline {figure}{\numberline {12}{\ignorespaces Passive Checks mit NSCA}}{28}{figure.12}
-\contentsline {figure}{\numberline {13}{\ignorespaces \IeC {\"U}bersicht der verschiedenen Unix Agenten\footnotemark }}{29}{figure.13}
-\contentsline {figure}{\numberline {14}{\ignorespaces \IeC {\"U}bersicht der verschiedenen Windows Agenten}}{30}{figure.14}
-\contentsline {figure}{\numberline {15}{\ignorespaces Oracle UCM Architektur}}{33}{figure.15}
-\contentsline {figure}{\numberline {16}{\ignorespaces \IeC {\"U}berwachungselemente}}{38}{figure.16}
-\contentsline {figure}{\numberline {17}{\ignorespaces Ablauf der Benutzersimulation}}{42}{figure.17}
-\contentsline {figure}{\numberline {18}{\ignorespaces Ablauf der Benutzersimulation}}{43}{figure.18}
-\contentsline {figure}{\numberline {19}{\ignorespaces Webinterface von Nagios}}{44}{figure.19}
+\contentsline {figure}{\numberline {12}{\ignorespaces Passive Checks mit NSCA}}{29}{figure.12}
+\contentsline {figure}{\numberline {13}{\ignorespaces \IeC {\"U}bersicht der verschiedenen Unix Agenten\footnotemark }}{30}{figure.13}
+\contentsline {figure}{\numberline {14}{\ignorespaces \IeC {\"U}bersicht der verschiedenen Windows Agenten}}{31}{figure.14}
+\contentsline {figure}{\numberline {15}{\ignorespaces Oracle UCM Architektur}}{32}{figure.15}
+\contentsline {figure}{\numberline {16}{\ignorespaces Bilddatenbank als Anwendung}}{33}{figure.16}
+\contentsline {figure}{\numberline {17}{\ignorespaces \IeC {\"U}berwachungselemente}}{38}{figure.17}
+\contentsline {figure}{\numberline {18}{\ignorespaces Ablauf der Benutzersimulation}}{41}{figure.18}
+\contentsline {figure}{\numberline {19}{\ignorespaces \IeC {\"U}berpr\IeC {\"u}fung der Benutzersimulation}}{42}{figure.19}
+\contentsline {figure}{\numberline {20}{\ignorespaces Ablauf der Benutzersimulation}}{43}{figure.20}
+\contentsline {figure}{\numberline {21}{\ignorespaces Webinterface von Nagios}}{44}{figure.21}
