@@ -6,16 +6,17 @@ Barth schreibt über Nagios: \begin{quote}"`Die große Stärke von Nagios - auch
 \begin{flushright}\cite{Barth08} S. 25\end{flushright}\end{quote} 
 
 Dieser "`Kern"' beinhaltet das komplette Benachrichtigungssystem mit Kontaktadressen und Benachrichtigungsvorgaben (Zeit, Art, zusätzliche Kriterien), die Hosts- und Servicedefinitionen inklusive deren Gruppierungen und schließlich das Webinterface.
+
 Die eigentlichen Checks in Form der selbständigen Plugins sind abgekapselt von diesem Kern.
 Siehe hierfür auch Abbildung \ref{aktivechecks}.
 
 \begin{figure}[ht]
 	\centering
-	   \fbox{\includegraphics[scale=0.9]{bilder/activechecks.png}}
-		\caption[Aktive Checks durch Nagios]{Aktive Checks durch Nagios\protect\footnote}
+	   \fbox{\includegraphics[scale=0.815]{bilder/activechecks.png}}
+		\caption[Plugins als separate Komponente]{Plugins als separate Komponente\protect\footnote}
 		\label{aktivechecks}
 \end{figure} 
-\footnotetext{Quelle: \url{http://www.nagioswiki.org/w/images/8/81/Plugins.png}}
+\footnotetext{Quelle: \url{http://nagios.sourceforge.net/docs/3_0/images/activechecks.png}}
 
 Damit Nagios die gewünschten Server überwachen kann, müssen sie der Anwendung zuerst bekannt gemacht werden.
 Dies wird über das Anlegen einer Konfigurationsdatei mit einem Host-Objekt erreicht.
@@ -37,7 +38,7 @@ define host{
 	host_name		example.kit.edu #Referenzname des Servers
 	alias			Oracle UCM Server #Weitere Bezeichnung
 	address			example.kit.edu #FQDN des Rechners
-	max_check_attempts	4 #Anzahl der Checks zum Wechsel von Hard- zu Soft-State
+	max_check_attempts	4 #Anzahl der Checks zum Wechsel von Soft- zu Hard-State
 	check_period		24x7 #Zeitraum der aktiven Checks
 	contact_groups		UCM-admins #Zu alarmierende Benutzergruppe
 	notification_interval	120 #Minuten bis Alarmierung wiederholt wird
@@ -45,8 +46,8 @@ define host{
 }
 \end{lstlisting}
 
-Gewöhnlich / In der Praxis werden öfters verwendete Attribute wie die Kontaktgruppe oder der Zeitraum für die aktiven Checks durch Verwendung eines übergeordneten Host-Objektes nach unten vererbt.
-Dadurch müssen nurnoch die spezifischen Inforamtionen und der Name des übergeordneten Host-Objektes eingetragen werden.
+In der Praxis werden öfters verwendete Attribute wie die Kontaktgruppe oder der Zeitraum für die aktiven Checks durch Verwendung eines übergeordneten Host-Objektes nach unten vererbt.
+Dadurch müssen nurnoch die spezifischen Informationen und der Name des übergeordneten Host-Objektes eingetragen werden.
 \begin{lstlisting}[captionpos=b, caption=Verkürzte Definition eines Hostobjektes, label=vhostobj, breaklines = true, language=sh]
 define host {
         use             windows-server #Oberklasse dieses Host-Objektes
@@ -60,7 +61,7 @@ Mit dieser Hostdefinition wird der Rechner im Webinterface von Nagios bereits an
 
 \begin{figure}[ht]
 	\centering
-	   \fbox{\includegraphics[width=0.95\textwidth]{bilder/example-ping.png}}
+	   \fbox{\includegraphics[width=0.9\textwidth]{bilder/example-ping.png}}
 		\caption{Anzeige des Servers im Webinterface von Nagios}
 		\label{check-swap}
 \end{figure}
@@ -100,7 +101,7 @@ Daher lassen sich die Parameter eines Plugins folgendermaßen überprüfen:
 Die Ausgabe des Plugins gibt den Zustand des Services an; in diesem Fall wird kein Schwellwert überschritten, daher die Meldung \pictext{SWAP OK}.
 Dieses Plugin liefert noch zusätzliche Performance-Informationen, die mit externen Programmen ausgewertet, gespeichert und visualisiert werden können.
 Standardmäßig werden die Performancedaten von der normalen Ausgabe mit einem \pictext{|} getrennt.
-Jedoch können auch Werte aus der normalen Textausgabe verwendet werden, so dass in diesem Beispiel keine Berechnung des Prozentsatzes notwendig wäre.
+Jedoch können auch Werte aus der normalen Textausgabe für die Visualisierung verwendet werden, so dass in diesem Beispiel keine Berechnung des Prozentsatzes notwendig wäre.
 
 Um diesen Service mit den angegebenen Schwellwerten von Nagios überwachenzulassen, muss folgende Servicedefinition in die Konfigurationsdatei eingetragen werden:
 

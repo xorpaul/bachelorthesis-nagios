@@ -1,18 +1,18 @@
 \subsection{Überprüfungsmethoden}
-%Service Checks und deren / ihre Realisierung / Ausführung / (
-Dienste, die im Netzwerk zur Verfügung stehen (Netzwerkdienste), wie ein Web- oder \gls{FTP}-Server , lassen sich einfach / simpel direkt über das Netz auf ihren Zustand (hin) überprüfen /  testen.
-Hierfür muss dem entsprechende Plugin lediglich die Netzwerkadresse mitgeteilt werden, siehe Abbildung \ref{check-http} als beispielhafte Überprüfung eines Webservers.
 
-\begin{figure}[ht]  
-	\centering
-	   \fbox{\includegraphics[width=0.85\textwidth]{bilder/check-http.png}}
-		\caption{Beispielhafte manuelle Ausführung eines netzwerkbasierenden Servicechecks / HTTP Server Check}
-		\label{check-http}
-\end{figure}
 
-(Bitte beachten, dass das Plugin immernoch auf dem Nagios Server ausgeführt wird / sich immernoch auf dem Nagios Server befindet)
 
-Dienste, die sich nicht standardmäßig / ohne weiteres / ohne weitere Anpassung(en) über das Netzwerk überprüfen lassen, wie die Kapazität einer Festplatte auf einem entfernten Server(, das (Laufen) eines Prozesses) oder die Durchsuchung einer Logdatei nach bestimmten (Stop)wörtern.
+Man unterscheidet generell zwischen aktiven und passiven Checks.
+
+\subsubsection{Aktive Checks}
+asdaasdadasdasdads
+asdasd
+
+
+asdasdas
+\subsubsection{Passive Checks}
+asdasdasdasdas
+
 
 Nagios bietet verschiedene Möglichkeiten an solche Dienste zu überprüfen:
 
@@ -24,18 +24,20 @@ Nagios bietet verschiedene Möglichkeiten an solche Dienste zu überprüfen:
 \end{figure} 
 \footnotetext{Quelle: \cite{Barth08} S. 98}
 
-Man unterscheidet generell zwischen aktiven und passiven Checks.
 
-\subsubsection{Aktive Checks}
-asdaasdadasdasdads
-asdasd
-
-\footnotetext{Quelle: \url{http://nagios.sourceforge.net/docs/3_0/images/activechecks.png}}
-asdasdas
-\subsubsection{Passive Checks}
-asdasdasdasdas
 \paragraph{Methode 1 - Netzwerkdienste}
-Der zuvor, in Abbildung \ref{check-http}, gezeigte Test eines netzwerkbasierenden Dienstes wird im obigen Bild mit dem Client-Rechner (mit der Nummer) 1 abgebildet.
+
+Dienste, die im Netzwerk zur Verfügung stehen (Netzwerkdienste), wie ein Web- oder \gls{FTP}-Server , lassen sich einfach / simpel direkt über das Netz auf ihren Zustand (hin) überprüfen /  testen.
+Hierfür muss dem entsprechende Plugin lediglich die Netzwerkadresse mitgeteilt werden, siehe Abbildung \ref{check-http} als beispielhafte Überprüfung eines Webservers.
+
+\begin{figure}[ht]  
+	\centering
+	   \fbox{\includegraphics[width=0.85\textwidth]{bilder/check-http.png}}
+		\caption{Beispielhafte manuelle Ausführung eines netzwerkbasierenden Servicechecks / HTTP Server Check}
+		\label{check-http}
+\end{figure}
+
+Der zuvor gezeigte Test eines netzwerkbasierenden Dienstes wird im obigen Bild mit dem Client-Rechner 1 abgebildet.
 %Die Überprüfung von nicht netzwerkbasierenden Diensten soll mit den restlichen Client-Rechnern aufgezeigt werden.
 Dies ist die einfachste Überwachungsmethode, da keine zusätzlichen Programme oder aufwändige Konfiguration benötigt wird.
 Vorteilhaft ist auch, dass der Dienst über das Netzwerk getestet wird, so wie der Benutzer auch auf den Dienst zugreift.
@@ -52,11 +54,9 @@ Eine beispielhafte Verwendung mit dem dafür gedachten Nagios Plugin \pictext{ch
 \begin{figure}[ht]
 	\centering
 	   \fbox{\includegraphics[width=0.85\textwidth]{bilder/check_by_ssh.png}}
-		\caption{Beispielhafte manuelle Ausführung eines Servicechecks über SSH}
+		\caption{Manuelle Ausführung eines Servicechecks über SSH}
 		\label{check-ssh}
 \end{figure}
-
-(Hier beachten, dass kein Passwort abgefragt wird, daher zuvor Schlüsselaustauschen)
 
 \paragraph{Methode 3 - NRPE}
 
@@ -106,7 +106,7 @@ Dessen Konfiguration ist im Vergleich zu den anderen Überwachungsmethoden deutl
 
 Es gibt zwei verschiendene Möglichkeiten Dienste mit \gls{SNMP} zu überwachen.
 Der Server frägt aktiv den Inhalt der entsprechenden MIB Einträgen periodisch ab oder der Client sendet asychron seine Statusmeldungen an den Nagios-Server.
-Beim letzteren spricht man auch von so genannten \gls{SNMP}-Traps.
+Bei der letzteren passiven Variante spricht man auch von sogenannten \gls{SNMP}-Traps.
 
 
 \begin{itemize}
