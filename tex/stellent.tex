@@ -29,6 +29,21 @@ Die Architektur des Oracle UCM Systems gliedert sich in separate Komponenten auf
 
 
 \subsubsection{Content Server}
+Der Content Server ist das Herzstück der Oracle UCM Anwendung.
+Er dient als Grundgerüst (Framework) für darüberliegende Funktionen, da er für die Ablage der Dokumente sowie der Verwaltung der drei Teilbereiche, siehe Abbildung \ref{lifecircle}, verantwortlich ist.
+
+Dieses Framework ist als Service-Oriented Architecture (\gls{SOA}) aufgebaut.
+Im Kontext des Content Servers wird als Service ein diskreter Aufruf einer Funktion verstanden.
+Dabei kann diese Funktion das Hinzufügen, die Bearbeitung, die Konvertierung oder das Herunterladen eines Dokumentes bedeuten.
+Diese Services und ihre einzelnen Funktionen werden durch das \gls{SOA}-Framework verdeckt und stehen durch höhere abstrahierte Dienste zur Verfügung.
+
+
+
+
+
+
+ %steht für Service-Oriented Architecture und benutzt das Simple Object Access Protocol (\gls{SOAP}), welches ein \gls{XML}-basierendes Protokoll zur Ausführung von Programmen / Befehle auf entfernten Rechnern ist.
+
 \subsubsection{Vault und Web Layout}
 \subsubsection{Inbound Refinery}
 \subsubsection{Search Engine}

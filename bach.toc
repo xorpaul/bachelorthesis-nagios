@@ -13,61 +13,62 @@
 \contentsline {subsubsection}{\numberline {4.1.3}Sicherheitsaspekte}{6}{subsubsection.4.1.3}
 \contentsline {subsection}{\numberline {4.2}Dokumenten-Management-Systeme}{7}{subsection.4.2}
 \contentsline {subsubsection}{\numberline {4.2.1}Eingabe}{10}{subsubsection.4.2.1}
-\contentsline {paragraph}{Dokumenteneingang}{10}{section*.6}
+\contentsline {paragraph}{Dokumenteneingang}{11}{section*.6}
 \contentsline {paragraph}{Indizierung}{11}{section*.7}
 \contentsline {subsubsection}{\numberline {4.2.2}Verwaltung und Archivierung}{12}{subsubsection.4.2.2}
-\contentsline {subsubsection}{\numberline {4.2.3}Ausgabe}{12}{subsubsection.4.2.3}
-\contentsline {paragraph}{Recherche}{12}{section*.8}
+\contentsline {subsubsection}{\numberline {4.2.3}Ausgabe}{13}{subsubsection.4.2.3}
+\contentsline {paragraph}{Recherche}{13}{section*.8}
 \contentsline {paragraph}{Reproduktion}{13}{section*.9}
 \contentsline {subsection}{\numberline {4.3}Content-Management-Systeme}{13}{subsection.4.3}
 \contentsline {subsection}{\numberline {4.4}[Enterprise-Content-Management-Systeme]}{15}{subsection.4.4}
-\contentsline {subsection}{\numberline {4.5}Universal-Content-Management-Systeme}{15}{subsection.4.5}
-\contentsline {section}{\numberline {5}Nagios}{17}{section.5}
-\contentsline {subsection}{\numberline {5.1}Allgemein}{17}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Aufbau / Architektur}{18}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}\IeC {\"U}berpr\IeC {\"u}fungsmethoden}{23}{subsection.5.3}
-\contentsline {subsubsection}{\numberline {5.3.1}Aktive Checks}{24}{subsubsection.5.3.1}
-\contentsline {subsubsection}{\numberline {5.3.2}Passive Checks}{24}{subsubsection.5.3.2}
-\contentsline {paragraph}{Methode 1 - Netzwerkdienste}{24}{section*.10}
-\contentsline {paragraph}{Methode 2 - SSH}{25}{section*.11}
-\contentsline {paragraph}{Methode 3 - NRPE}{25}{section*.12}
-\contentsline {paragraph}{Methode 4 - SNMP}{26}{section*.13}
-\contentsline {paragraph}{Methode 5 - NSCA}{28}{section*.14}
-\contentsline {subsection}{\numberline {5.4}\IeC {\"U}berwachungslogik (mit Alarmierung/Benachrichtigung)}{29}{subsection.5.4}
-\contentsline {subsection}{\numberline {5.5}Plugins}{29}{subsection.5.5}
-\contentsline {subsection}{\numberline {5.6}(Windows) Agenten oder allgemein Einholen von Infos}{29}{subsection.5.6}
-\contentsline {subsection}{\numberline {5.7}Visualisierung der eingesammelten Daten}{30}{subsection.5.7}
-\contentsline {section}{\numberline {6}Oracle UCM}{31}{section.6}
-\contentsline {subsection}{\numberline {6.1}Allgemein}{31}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Aufbau / Architektur}{31}{subsection.6.2}
-\contentsline {subsubsection}{\numberline {6.2.1}Content Server}{32}{subsubsection.6.2.1}
-\contentsline {subsubsection}{\numberline {6.2.2}Vault und Web Layout}{32}{subsubsection.6.2.2}
-\contentsline {subsubsection}{\numberline {6.2.3}Inbound Refinery}{32}{subsubsection.6.2.3}
-\contentsline {subsubsection}{\numberline {6.2.4}Search Engine}{32}{subsubsection.6.2.4}
-\contentsline {subsubsection}{\numberline {6.2.5}Webserver}{32}{subsubsection.6.2.5}
-\contentsline {section}{\numberline {7}\IeC {\"U}berwachungselemente}{32}{section.7}
-\contentsline {subsection}{\numberline {7.1}Statusabfragen}{33}{subsection.7.1}
-\contentsline {paragraph}{System}{33}{section*.15}
-\contentsline {paragraph}{Prozesse}{34}{section*.16}
-\contentsline {paragraph}{Services}{34}{section*.17}
-\contentsline {subsection}{\numberline {7.2}\IeC {\"U}berwachung der Funktionalit\IeC {\"a}t}{35}{subsection.7.2}
-\contentsline {subsection}{\numberline {7.3}Auswerten von Logdateien}{36}{subsection.7.3}
-\contentsline {subsection}{\numberline {7.4}Benutzersimulation}{37}{subsection.7.4}
-\contentsline {section}{\numberline {8}Umsetzung}{39}{section.8}
-\contentsline {subsection}{\numberline {8.1}Aufbau der Testumgebung}{39}{subsection.8.1}
-\contentsline {subsubsection}{\numberline {8.1.1}Aufsetzen eines Nagios-Test-Systems}{39}{subsubsection.8.1.1}
-\contentsline {subsubsection}{\numberline {8.1.2}Bilddatenbank als VM}{39}{subsubsection.8.1.2}
-\contentsline {subsection}{\numberline {8.2}Einrichten des Windows Agenten}{39}{subsection.8.2}
-\contentsline {subsection}{\numberline {8.3}\IeC {\"U}berpr\IeC {\"u}fen der Prozesse und Services}{40}{subsection.8.3}
-\contentsline {subsection}{\numberline {8.4}Umsetzung der Funktionlit\IeC {\"a}tstest}{40}{subsection.8.4}
-\contentsline {subsection}{\numberline {8.5}Auswertung der Logs + Stopw\IeC {\"o}rterdefinition}{40}{subsection.8.5}
-\contentsline {subsection}{\numberline {8.6}Benutzersimulation}{41}{subsection.8.6}
-\contentsline {section}{\numberline {9}Ergebnis}{42}{section.9}
-\contentsline {section}{\numberline {10}Zusammenfassung und Ausblick}{43}{section.10}
-\contentsline {section}{\numberline {11}Anhang}{44}{section.11}
-\contentsline {subsection}{\numberline {11.1}Abbildungsverzeichnis}{44}{subsection.11.1}
-\contentsline {subsection}{\numberline {11.2}Codelistingverzeichnis}{46}{subsection.11.2}
-\contentsline {subsection}{\numberline {11.3}Quellverzeichnis}{47}{subsection.11.3}
-\contentsline {subsubsection}{\numberline {11.3.1}Literaturverzeichnis}{47}{subsubsection.11.3.1}
-\contentsline {subsubsection}{\numberline {11.3.2}Internetquellen}{48}{subsubsection.11.3.2}
-\contentsline {subsection}{\numberline {11.4}Glossar}{49}{subsection.11.4}
+\contentsline {subsection}{\numberline {4.5}Universal-Content-Management-Systeme}{16}{subsection.4.5}
+\contentsline {subsection}{\numberline {4.6}Service-Orientierte Architektur}{16}{subsection.4.6}
+\contentsline {section}{\numberline {5}Nagios}{18}{section.5}
+\contentsline {subsection}{\numberline {5.1}Allgemein}{18}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Aufbau / Architektur}{19}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}\IeC {\"U}berpr\IeC {\"u}fungsmethoden}{24}{subsection.5.3}
+\contentsline {subsubsection}{\numberline {5.3.1}Aktive Checks}{25}{subsubsection.5.3.1}
+\contentsline {subsubsection}{\numberline {5.3.2}Passive Checks}{25}{subsubsection.5.3.2}
+\contentsline {paragraph}{Methode 1 - Netzwerkdienste}{25}{section*.10}
+\contentsline {paragraph}{Methode 2 - SSH}{26}{section*.11}
+\contentsline {paragraph}{Methode 3 - NRPE}{26}{section*.12}
+\contentsline {paragraph}{Methode 4 - SNMP}{27}{section*.13}
+\contentsline {paragraph}{Methode 5 - NSCA}{29}{section*.14}
+\contentsline {subsection}{\numberline {5.4}\IeC {\"U}berwachungslogik (mit Alarmierung/Benachrichtigung)}{30}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.5}Plugins}{30}{subsection.5.5}
+\contentsline {subsection}{\numberline {5.6}(Windows) Agenten oder allgemein Einholen von Infos}{30}{subsection.5.6}
+\contentsline {subsection}{\numberline {5.7}Visualisierung der eingesammelten Daten}{31}{subsection.5.7}
+\contentsline {section}{\numberline {6}Oracle UCM}{32}{section.6}
+\contentsline {subsection}{\numberline {6.1}Allgemein}{32}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Aufbau / Architektur}{32}{subsection.6.2}
+\contentsline {subsubsection}{\numberline {6.2.1}Content Server}{33}{subsubsection.6.2.1}
+\contentsline {subsubsection}{\numberline {6.2.2}Vault und Web Layout}{34}{subsubsection.6.2.2}
+\contentsline {subsubsection}{\numberline {6.2.3}Inbound Refinery}{34}{subsubsection.6.2.3}
+\contentsline {subsubsection}{\numberline {6.2.4}Search Engine}{34}{subsubsection.6.2.4}
+\contentsline {subsubsection}{\numberline {6.2.5}Webserver}{34}{subsubsection.6.2.5}
+\contentsline {section}{\numberline {7}\IeC {\"U}berwachungselemente}{34}{section.7}
+\contentsline {subsection}{\numberline {7.1}Statusabfragen}{35}{subsection.7.1}
+\contentsline {paragraph}{System}{35}{section*.15}
+\contentsline {paragraph}{Prozesse}{35}{section*.16}
+\contentsline {paragraph}{Services}{36}{section*.17}
+\contentsline {subsection}{\numberline {7.2}\IeC {\"U}berwachung der Funktionalit\IeC {\"a}t}{36}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Auswerten von Logdateien}{37}{subsection.7.3}
+\contentsline {subsection}{\numberline {7.4}Benutzersimulation}{38}{subsection.7.4}
+\contentsline {section}{\numberline {8}Umsetzung}{41}{section.8}
+\contentsline {subsection}{\numberline {8.1}Aufbau der Testumgebung}{41}{subsection.8.1}
+\contentsline {subsubsection}{\numberline {8.1.1}Aufsetzen eines Nagios-Test-Systems}{41}{subsubsection.8.1.1}
+\contentsline {subsubsection}{\numberline {8.1.2}Bilddatenbank als VM}{41}{subsubsection.8.1.2}
+\contentsline {subsection}{\numberline {8.2}Einrichten des Windows Agenten}{41}{subsection.8.2}
+\contentsline {subsection}{\numberline {8.3}\IeC {\"U}berpr\IeC {\"u}fen der Prozesse und Services}{42}{subsection.8.3}
+\contentsline {subsection}{\numberline {8.4}Umsetzung der Funktionlit\IeC {\"a}tstest}{42}{subsection.8.4}
+\contentsline {subsection}{\numberline {8.5}Auswertung der Logs + Stopw\IeC {\"o}rterdefinition}{42}{subsection.8.5}
+\contentsline {subsection}{\numberline {8.6}Benutzersimulation}{43}{subsection.8.6}
+\contentsline {section}{\numberline {9}Ergebnis}{44}{section.9}
+\contentsline {section}{\numberline {10}Zusammenfassung und Ausblick}{45}{section.10}
+\contentsline {section}{\numberline {11}Anhang}{46}{section.11}
+\contentsline {subsection}{\numberline {11.1}Abbildungsverzeichnis}{46}{subsection.11.1}
+\contentsline {subsection}{\numberline {11.2}Codelistingverzeichnis}{48}{subsection.11.2}
+\contentsline {subsection}{\numberline {11.3}Quellverzeichnis}{49}{subsection.11.3}
+\contentsline {subsubsection}{\numberline {11.3.1}Literaturverzeichnis}{49}{subsubsection.11.3.1}
+\contentsline {subsubsection}{\numberline {11.3.2}Internetquellen}{50}{subsubsection.11.3.2}
+\contentsline {subsection}{\numberline {11.4}Glossar}{51}{subsection.11.4}
