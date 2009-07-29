@@ -1,7 +1,7 @@
 \glossarysection[\glossarytoctitle]{\glossarytitle}\glossarypreamble
 \begin{theglossary}\glossaryheader
 \glsgroupheading{A}\relax \glsresetentrylist %
-\glossaryentryfield{AIIM}{\glsnamefont{AIIM}}{Association for Information and Image\\ Management}{\relax }{\glossaryentrynumbers{\relax 
+\glossaryentryfield{AIIM}{\glsnamefont{AIIM}}{Association for Information and Image Management}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter{page}\glsnumberformat{15}}}\glsgroupskip
 \glsgroupheading{C}\relax \glsresetentrylist %
 \glossaryentryfield{CI}{\glsnamefont{CI}}{Coded Information}{\relax }{\glossaryentrynumbers{\relax 
@@ -56,7 +56,7 @@
 		\setentrycounter{page}\glsnumberformat{11}}}\glsgroupskip
 \glsgroupheading{S}\relax \glsresetentrylist %
 \glossaryentryfield{SNMP}{\glsnamefont{SNMP}}{Simple Network Management Protocol}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter{page}\glsnumberformat{30\delimR 32}}}%
+		\setentrycounter{page}\glsnumberformat{30\delimN 31}}}%
 \glossaryentryfield{SOA}{\glsnamefont{SOA}}{Service-Oriented Architecture}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter{page}\glsnumberformat{16\delimR 18}\delimN 
 		\setentrycounter{page}\glsnumberformat{36}}}%

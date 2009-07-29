@@ -20,14 +20,41 @@ OpenSource halt, recht einfach plugins programmierbar (auf plugin kapitel verwei
 Gedacht für Linux umgebung
 
 Verschiedene Möglichkeiten Checks zu realisieren unter Unix Systemen:
+\newpage
+\begin{table}[!ctbp]
+\centering
+\begin{tabular}{l p{1.3cm} l p{1.3cm} l p{1.3cm} l p{1.3cm} l p{1.3cm} l p{1.3cm} p{1.3cm} p{1.3cm} p{1.3cm} p{1.3cm}}
+ & \begin{turn}{50}\textbf{SSH}\end{turn} & \begin{turn}{50}\textbf{NRPE}\end{turn} & \begin{turn}{50}\textbf{SNMP}\end{turn} & \begin{turn}{50}\textbf{SNMP Traps}\end{turn} & \begin{turn}{50}\textbf{NSCA}\end{turn}\\ 
+\hline
+\textbf{Methode} & & & & & \\
+\textit{aktiv} & \checkmark & \checkmark & \checkmark & - & - \\
+\textit{passiv} & - & - & - & \checkmark & \checkmark\\
+\textbf{Sicherheit} &  &  &  &  &  \\
+\textit{Passwort} & - & - & \checkmark (v3) & \checkmark (v3) & -\\
+\textit{Accesslist} & - &  \checkmark & \checkmark (v2) & \checkmark (v2) & \checkmark \\
+\textit{Verschlüsselung} &  \checkmark & \checkmark & \checkmark (v3) & \checkmark (v3) &  \checkmark \\
+\textbf{Aufwand} & \begin{footnotesize}leicht\end{footnotesize} & \begin{footnotesize}normal\end{footnotesize} & \begin{footnotesize}hoch\end{footnotesize} & \begin{footnotesize}hoch\end{footnotesize} & \begin{footnotesize}normal\end{footnotesize} \\
+\end{tabular}
+\caption{Übersicht der verschiedenen Unix-Agenten}
+\end{table}
 
-\begin{figure}[ht]
-	\centering
-	   \fbox{\includegraphics[width=0.9\textwidth]{bilder/unix-agents.png}}
-		\caption{Übersicht der verschiedenen Unix Agenten\protect\footnotemark}
-		\label{nix-agents}
-\end{figure}
-\footnotetext{Quelle: \url{http://www.kilala.nl/Sysadmin/index.php?id=708}}
+\begin{table}[!ctbp]
+\centering
+\begin{tabular}{l p{1.3cm} l p{1.3cm} l p{1.3cm} l p{1.3cm} l p{1.3cm} l p{1.3cm} l p{1.3cm} p{1.3cm} p{1.3cm} p{1.3cm} p{1.3cm}}
+ & \begin{turn}{50}\textbf{NSClient}\end{turn} & \begin{turn}{50}\textbf{NRPEnt}\end{turn} & \begin{turn}{50}\textbf{NSClient\begin{tiny}++\end{tiny}}\end{turn} & \begin{turn}{50}\textbf{SNMP}\end{turn} & \begin{turn}{50}\textbf{SNMP Traps}\end{turn} & \begin{turn}{50}\textbf{NC\_net}\end{turn}\\ 
+\hline
+\textbf{Methode} & & & & & & \\
+\textit{aktiv} & \checkmark & \checkmark & \checkmark & \checkmark & - & \checkmark\\
+\textit{passiv} & - & - & - & - & \checkmark & \checkmark\\
+\textbf{Sicherheit} &  &  &  &  &  & \\
+\textit{Passwort} & \checkmark & \checkmark & \checkmark & \checkmark (v3) & \checkmark (v3) & -\\
+\textit{Accesslist} & - & - & \checkmark & \checkmark (v2) & \checkmark (v2) & \checkmark\\
+\textit{Verschlüsselung} & - & \checkmark & \checkmark & \checkmark (v3) & \checkmark (v3) & \checkmark\\
+\textbf{Aufwand} & \begin{footnotesize}normal\end{footnotesize} & \begin{footnotesize}normal\end{footnotesize} & \begin{footnotesize}normal\end{footnotesize} & \begin{footnotesize}hoch\end{footnotesize} & \begin{footnotesize}hoch\end{footnotesize} & \begin{footnotesize}normal\end{footnotesize}\\
+\end{tabular}
+\caption{Übersicht der verschiedenen Windows-Agenten}
+\end{table}
+
 
 Leicht programmierbar -> perl
 Extra Plugins für Windows
@@ -45,12 +72,6 @@ Sagen das auf alten NSClient verzichtet wird und OpMon Agent nicht behandelt
 
 Zusammenfassung?
 
-\begin{figure}[ht]
-	\centering
-	   \fbox{\includegraphics[width=0.9\textwidth]{bilder/win-agents.png}}
-		\caption{Übersicht der verschiedenen Windows Agenten}\footnote{Quelle: \url{http://www.kilala.nl/Sysadmin/index.php?id=709}}
-		\label{win-agents}
-\end{figure}
 
 Welche wird jetzt eingesetzt und warum?
 
