@@ -16,7 +16,7 @@ Für die Simulation der verschiedenen Fehlerzuständen der einzelnen Überwachun
 
 
 \subsection{Marktübersicht Nagios-Agenten}
-Im vorherigen Kapitel \ref{methoden} wurde erklärt, dass für das Überwachen von Diensten, die nicht über das Netzwerk zugreifbar sind, ein Agent auf dem jeweiligen Rechner benötigt wird.
+Im vorherigen Kapitel \ref{methoden} wurde erklärt, dass für das Überwachen von Diensten, die nicht über das Netzwerk zugreifbar sind, ein Nagios-Agent auf dem jeweiligen Rechner benötigt wird.
 
 In diesem Unterkapitel werden die populärsten Agenten für Unix und Windows Betriebsysteme aufgelistet und nach/in den Punkten Sicherheit, subjektiver Aufwand für die Konfiguration und Art der Abfragemethode (aktiv oder passiv) vergleicht.
 \newpage
@@ -35,13 +35,14 @@ Bei der \gls{NRPE}-Methode wird eine weitere Softwarekomponente auf dem Client i
 Wie bei dem Aufruf per \gls{SSH} müssen sich hier die Nagios-Plugins bereits auf dem Rechner befinden.
 Dabei gilt als Unterschied dieser zwei ähnlichen Methoden zu beachten, dass für die Ausführung der Checks per \gls{SSH} ein extra Benutzerkonto auf dem Client erstellt werden muss und somit beliebige Systembefehle ausgeführt werden können, während die Ausführung von Kommandos bei \gls{NRPE} nur auf vorkonfigurierte Befehle beschränkt ist.
 Siehe auch Kapitel \ref{sshnrpe}.
-
+\label{unixagents}
 Da \gls{SNMP} plattformunabhängig funktioniert ist es mögliche diese Variante bei Unix- sowie bei Windowsservern einzusetzten.
 Die verwendete \gls{SNMP}-Version bestimmt welche Sicherheitsmerkmale zur Verfügung stehen.
 Zwar gibt es bereits seit Version 1 die Möglichkeit den Zugriff per Passwort in drei Gruppen aufzuteilen: kein Zugriff, Leserecht und Lese- mit Schreibrecht\footnote{Quelle: \cite{Barth08} S. 237}, jedoch wird dieses Passwort im Klartext übertragen, so dass es leicht auslesbar ist.
 Auch noch die Version 2 inklusive der erweiterten Version 2c verwendet die gleiche unsichere Authentifizierung.
 Erst ab Version 3 wird das Passwort verschlüsselt übertragen.
 Während Barth behauptet, dass man bei \gls{SNMP} generell kein Passwort verwenden soll\footnote{Quelle: \cite{Barth08} S. 238}, da es leicht per Netzwerkmitschnittprogramme wie WireShark ausgelesen werden kann, wird in \cite{Jose07} S. 121} klargestellt, dass die Version 3 eine verschlüsselte Authentifizierung durch den MD5- oder SHA-Algorithmus ermöglicht.
+
 Die passive Variante über \gls{SNMP} bei der der Client die Ergebnisse der Checks an den Nagios-Server sendet, auch \gls{SNMP}-Traps genannt, funktioniert nach dem gleichen Prinzip.
 Da das Auslesen der \gls{MIB} per SNMP im Gegensatz zu den anderen Varianten deutlich komplexer ist, wird der Aufwand als hoch eingestuft.
 
@@ -63,17 +64,59 @@ Auch bietet NSClient keine Möglichkeit aktiv vom Nagios-Server aus Nagios-Plugi
 Um dies auch für Windows-Server zu ermöglich gibt es eine auf Windows portierte \gls{NRPE}-Variante, die sich NRPE\_NT nennt.
 Hier lassen sich die Plugins direkt über den Nagios-Server aufrufen und die ausgetauschten Informationen werden verschlüsselt über das Netzwerk übertragen.
 
-Beide bisher genannte Windows-Agenten bieten keine Möglichkeit eine Accesslist anzulegen, erst das Programm NSClient++ bietet diese Möglichkeit inklusive der anderen Sicheheitsmerkmale wie Verschlüsselung und Passwort an.
+Beide bisher genannte Windows-Agenten bieten keine Möglichkeit eine Accesslist anzulegen, erst das Programm NC\_net bietet diese Möglichkeit inklusive dem Sicheheitsmerkmal Verschlüsselung an.
 Außerdem können durch den eingebauten \gls{NRPE}-Dienst aktiv Nagios-Plugins auf dem Client aufgerufen werden.
+Als Besonderheit lassen sich durch NC\_net sowohl aktiv als auch passiv Testergebnisse an den Nagios-Server übertragen. 
+
+Der Nagios-Agent NSClient++ besitzt diesselben Merkmale wie NC\_net, jedoch kann der Nagios-Server noch über ein Passwort zusätzlich verifiziert werden.
+
+Die Möglichkeit Informationen per \gls{SNMP} und \gls{SNMP}-Traps abzufragen ist auch unter Windows möglich.
+Dabei gelten die gleichen Richtlinien, Hinweise und Einschränkungen wie zuvor in Kapitel \ref{unixagents}.
+
+\subsubsection{Auswahl und Konfiguration des Windows-Agenten}
+
+\paragraph{Auswahl}
+Anhand der im vorherigen Kapitel beschriebenen Übersicht der Windows-Agenten und der daraus resultierenden Übersichtstabelle \ref{tab:winagents} wird ein geeigneter Kandidat für die Testumgebung ausgewählt.
+Da nur ein Windows-Agent alle drei Sicherheitsmerkmale anbietet und dabei aktiv und passive (passiv eigntl nicht relevant zur Aufgabenlösung, jedoch nice2have) Überwachungsmethoden erlaubt, fällt die Wahl auf das Programm \textbf{NSClient++}.
+
+\paragraph{Installation und Konfiguration}
+
+Der Nagios-Agent NSClient++ kann im Gegensatz zu den meisten anderen Windows-Agenten komfortabel über eine graphische Benutzerdialog (Installationsroutine) (konfiguriert / eingerichtet) installiert werden.
+
+\begin{figure}[ht]
+	\centering
+	   \fbox{\includegraphics[width=0.85\textwidth]{bilder/nsc1.png}}
+		\caption{Installation des NSClient++ 1}
+		\label{nscs1}
+\end{figure}
+Während der Installation kann auch festgelegt werden welche Komponenten installiert werden sollen.
+
+
+\begin{figure}[ht]
+	\centering
+	   \fbox{\includegraphics[width=0.85\textwidth]{bilder/nsc2.png}}
+		\caption{Installation des NSClient++ 2}
+		\label{nscs2}
+\end{figure}
+Dabei werden diese Komponenten nicht standardmäßig geladen, sondern im nächsten Dialogfenster als Auswahl explizit/extra abgefragt.
+
+
+\begin{figure}[ht]
+	\centering
+	   \fbox{\includegraphics[width=0.85\textwidth]{bilder/nsc3.png}}
+		\caption{Installation des NSClient++ 3}
+		\label{nscs3}
+\end{figure}
 
 
 
-\subsection{Einrichten/Konfiguration der Nagios-Agenten}
+
 \begin{itemize}
 \item Port ändern -> RPC
 \item Verschlüsselung durch PW und/oder Algo
 \item Hinzufügen der Plugins
 \item Bsp Aufruf aktiver Check
+\item WireShark bild von der Verschlüsselung
 \end{itemize}
 
 .Net 2.0 Framework essentiell

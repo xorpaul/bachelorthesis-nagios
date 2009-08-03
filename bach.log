@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2009.1.26)  3 AUG 2009 12:24
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2009.1.26)  3 AUG 2009 15:55
 entering extended mode
  %&-line parsing enabled.
 **bach.tex
@@ -627,7 +627,13 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 2.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2002/01/19 v2.2g AMS font definitions
-) [2{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [3])
+) [2{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (13.0939pt too wide) in paragraph at lines 68--68
+ [][] [][]\T1/aer/m/n/12 Auswahl und Kon-fi-gu-ra-ti-on des Windows-Agenten[] [
+][]  
+ []
+
+[3])
 \tf@toc=\write8
 \openout8 = `bach.toc'.
 
@@ -1173,121 +1179,64 @@ File: bilder/fzk2.png Graphic file (type png)
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[45] (./tex/tab-winagents.tex
-Overfull \hbox (3.94008pt too wide) in paragraph at lines 6--6
-[][]| 
- []
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.6 ...nd{turn} & \begin{turn}{50}\textbf{NRPE_NT}
-                                                  \end{turn} & \begin{turn}{...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-<recently read> \egroup 
-                        
-l.6 ...nd{turn} & \begin{turn}{50}\textbf{NRPE_NT}
-                                                  \end{turn} & \begin{turn}{...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\endturn ->\unskip \egroup 
-                           \Grot@x \z@ \Grot@y \z@ \Grot@box 
-l.6 ... \begin{turn}{50}\textbf{NRPE_NT}\end{turn}
-                                                   & \begin{turn}{50}\textbf...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.6 ... \begin{turn}{50}\textbf{NRPE_NT}\end{turn}
-                                                   & \begin{turn}{50}\textbf...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.6 ... \begin{turn}{50}\textbf{NRPE_NT}\end{turn}
-                                                   & \begin{turn}{50}\textbf...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.6 ... \begin{turn}{50}\textbf{NRPE_NT}\end{turn}
-                                                   & \begin{turn}{50}\textbf...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-Overfull \hbox (13.09242pt too wide) in paragraph at lines 6--6
-[][]| 
- []
-
-
-Overfull \hbox (21.08823pt too wide) in paragraph at lines 6--6
-[][]| 
- []
-
-)
+[45] (./tex/tab-winagents.tex)
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png>
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[46] (/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
-File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
-)
-(/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
-File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
-)
+[46] <bilder/nsc1.png, id=935, 500.87125pt x 386.44376pt>
+File: bilder/nsc1.png Graphic file (type png)
+
+<use bilder/nsc1.png>
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png>
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[47]
-Overfull \hbox (18.04457pt too wide) in paragraph at lines 143--144
-[][]$\T1/aett/m/n/12 http : / / www . w3schools . com / soap / default . asp$[]
- \T1/aer/m/n/12 Web Ser-vices und SOAP 
- []
+[47] <bilder/nsc2.png, id=942, 500.87125pt x 386.44376pt>
+File: bilder/nsc2.png Graphic file (type png)
 
-<bilder/wsdl.png, id=947, 511.511pt x 273.02pt>
-File: bilder/wsdl.png Graphic file (type png)
- <use bilder/wsdl.png>
+<use bilder/nsc2.png> <bilder/nsc3.png, id=943, 667.49374pt x 192.72pt>
+File: bilder/nsc3.png Graphic file (type png)
+
+<use bilder/nsc3.png> (/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
+File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
+)
 File: bilder/fzk2.png Graphic file (type png)
 
 <use bilder/fzk2.png>
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[48] <bilder/wsdl-valid.png, id=955, 1149.29375pt x 715.67375pt>
+[48 <./bilder/nsc1.png>] (/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
+File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
+)
+File: bilder/fzk2.png Graphic file (type png)
+
+<use bilder/fzk2.png>
+Overfull \vbox (1.68883pt too high) has occurred while \output is active []
+
+
+[49 <./bilder/nsc2.png> <./bilder/nsc3.png>]
+Overfull \hbox (18.04457pt too wide) in paragraph at lines 186--187
+[][]$\T1/aett/m/n/12 http : / / www . w3schools . com / soap / default . asp$[]
+ \T1/aer/m/n/12 Web Ser-vices und SOAP 
+ []
+
+File: bilder/fzk2.png Graphic file (type png)
+<use bilder/fzk2.png>
+Overfull \vbox (1.68883pt too high) has occurred while \output is active []
+
+
+[50] <bilder/wsdl.png, id=974, 511.511pt x 273.02pt>
+File: bilder/wsdl.png Graphic file (type png)
+ <use bilder/wsdl.png>
+<bilder/wsdl-valid.png, id=975, 1149.29375pt x 715.67375pt>
 File: bilder/wsdl-valid.png Graphic file (type png)
 
 <use bilder/wsdl-valid.png>
-<bilder/Benutzersimulation.png, id=956, 630.355pt x 472.76625pt>
+<bilder/Benutzersimulation.png, id=976, 630.355pt x 472.76625pt>
 File: bilder/Benutzersimulation.png Graphic file (type png)
 
 <use bilder/Benutzersimulation.png>)
@@ -1296,8 +1245,8 @@ File: bilder/fzk2.png Graphic file (type png)
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[49 <./bilder/wsdl.png>] (./tex/ergebnis.tex
-<bilder/demo.png, id=963, 835.12pt x 687.56876pt>
+[51 <./bilder/wsdl.png>] (./tex/ergebnis.tex
+<bilder/demo.png, id=983, 835.12pt x 687.56876pt>
 File: bilder/demo.png Graphic file (type png)
  <use bilder/demo.png>)
 File: bilder/fzk2.png Graphic file (type png)
@@ -1306,19 +1255,19 @@ File: bilder/fzk2.png Graphic file (type png)
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[50 <./bilder/wsdl-valid.png>] (./tex/ausblick.tex)
+[52 <./bilder/wsdl-valid.png>] (./tex/ausblick.tex)
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png>
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[51 <./bilder/Benutzersimulation.png>] (./bach.lof
+[53 <./bilder/Benutzersimulation.png>] (./bach.lof
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png>
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[52 <./bilder/demo.png (PNG copy)>])
+[54 <./bilder/demo.png (PNG copy)>])
 \tf@lof=\write9
 \openout9 = `bach.lof'.
 
@@ -1327,7 +1276,7 @@ File: bilder/fzk2.png Graphic file (type png)
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[53] (./bach.lol)
+[55] (./bach.lol)
 \tf@lol=\write10
 \openout10 = `bach.lol'.
 
@@ -1336,7 +1285,7 @@ File: bilder/fzk2.png Graphic file (type png)
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[54]
+[56]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -1365,7 +1314,7 @@ File: bilder/fzk2.png Graphic file (type png)
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[55]
+[57]
 Underfull \hbox (badness 10000) in paragraph at lines 160--161
 \T1/aer/m/n/12 Quelle: []$\T1/aett/m/n/12 http : / / download-[]west . oracle .
  com / docs / cd /
@@ -1399,7 +1348,7 @@ File: bilder/fzk2.png Graphic file (type png)
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[56] (./bach.gls
+[58] (./bach.gls
 Underfull \hbox (badness 10000) in paragraph at lines 10--11
 []|[]\T1/aer/m/n/12 9[], []11[],
  []
@@ -1419,25 +1368,25 @@ File: bilder/fzk2.png Graphic file (type png)
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[57])
+[59])
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png>
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[58] (./bach.aux)
+[60] (./bach.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 11293 strings out of 94074
- 154338 string characters out of 1165153
- 272331 words of memory out of 1500000
- 13903 multiletter control sequences out of 10000+50000
- 53148 words of font info for 102 fonts, out of 1200000 for 2000
+ 11312 strings out of 94074
+ 154661 string characters out of 1165153
+ 272536 words of memory out of 1500000
+ 13918 multiletter control sequences out of 10000+50000
+ 49994 words of font info for 96 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
- 48i,16n,93p,1128b,1573s stack positions out of 5000i,500n,6000p,200000b,5000s
+ 48i,16n,93p,1128b,1567s stack positions out of 5000i,500n,6000p,200000b,5000s
 pdfTeX warning (dest): name{Hfootnote.27} has been referenced but does not ex
 ist, replaced by a fixed one
 
@@ -1517,19 +1466,18 @@ pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 , replaced by a fixed one
 
 </usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmbx12.pfb></usr/share/texmf-t
-exlive/fonts/type1/bluesky/cm/cmbx6.pfb></usr/share/texmf-texlive/fonts/type1/b
-luesky/cm/cmmi12.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmr10.pfb
-></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmr12.pfb></usr/share/texmf-t
-exlive/fonts/type1/bluesky/cm/cmr7.pfb></usr/share/texmf-texlive/fonts/type1/bl
-uesky/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmsl12.pfb><
-/usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmsy10.pfb></usr/share/texmf-te
-xlive/fonts/type1/bluesky/cm/cmti12.pfb></usr/share/texmf-texlive/fonts/type1/b
-luesky/cm/cmtt10.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmtt12.pf
-b></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmtt8.pfb></usr/share/texmf-
-texlive/fonts/type1/bluesky/ams/msam10.pfb>
-Output written on bach.pdf (63 pages, 2139044 bytes).
+exlive/fonts/type1/bluesky/cm/cmmi12.pfb></usr/share/texmf-texlive/fonts/type1/
+bluesky/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmr12.pfb
+></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmr7.pfb></usr/share/texmf-te
+xlive/fonts/type1/bluesky/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/blu
+esky/cm/cmsl12.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmsy10.pfb>
+</usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmti12.pfb></usr/share/texmf-t
+exlive/fonts/type1/bluesky/cm/cmtt10.pfb></usr/share/texmf-texlive/fonts/type1/
+bluesky/cm/cmtt12.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmtt8.pf
+b></usr/share/texmf-texlive/fonts/type1/bluesky/ams/msam10.pfb>
+Output written on bach.pdf (65 pages, 2167986 bytes).
 PDF statistics:
- 1209 PDF objects out of 1440 (max. 8388607)
- 301 named destinations out of 1000 (max. 131072)
- 625 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1229 PDF objects out of 1440 (max. 8388607)
+ 308 named destinations out of 1000 (max. 131072)
+ 640 words of extra memory for PDF output out of 10000 (max. 10000000)
 
