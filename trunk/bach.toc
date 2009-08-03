@@ -65,17 +65,19 @@
 \contentsline {subsection}{\numberline {8.2}Markt\IeC {\"u}bersicht Nagios-Agenten}{43}{subsection.8.2}
 \contentsline {subsubsection}{\numberline {8.2.1}Unix-Agenten}{44}{subsubsection.8.2.1}
 \contentsline {subsubsection}{\numberline {8.2.2}Windows-Agenten}{46}{subsubsection.8.2.2}
-\contentsline {subsection}{\numberline {8.3}Einrichten/Konfiguration der Nagios-Agenten}{47}{subsection.8.3}
-\contentsline {subsection}{\numberline {8.4}\IeC {\"U}berpr\IeC {\"u}fen der Prozesse und Services}{48}{subsection.8.4}
-\contentsline {subsection}{\numberline {8.5}Umsetzung der Funktionlit\IeC {\"a}tstest}{48}{subsection.8.5}
-\contentsline {subsection}{\numberline {8.6}Auswertung der Logs + Stopw\IeC {\"o}rterdefinition}{48}{subsection.8.6}
-\contentsline {subsection}{\numberline {8.7}Benutzersimulation}{48}{subsection.8.7}
-\contentsline {section}{\numberline {9}Ergebnis}{50}{section.9}
-\contentsline {section}{\numberline {10}Zusammenfassung und Ausblick}{51}{section.10}
-\contentsline {section}{\numberline {11}Anhang}{52}{section.11}
-\contentsline {subsection}{\numberline {11.1}Abbildungsverzeichnis}{52}{subsection.11.1}
-\contentsline {subsection}{\numberline {11.2}Codelistingverzeichnis}{54}{subsection.11.2}
-\contentsline {subsection}{\numberline {11.3}Quellverzeichnis}{55}{subsection.11.3}
-\contentsline {subsubsection}{\numberline {11.3.1}Literaturverzeichnis}{55}{subsubsection.11.3.1}
-\contentsline {subsubsection}{\numberline {11.3.2}Internetquellen}{56}{subsubsection.11.3.2}
-\contentsline {subsection}{\numberline {11.4}Glossar}{57}{subsection.11.4}
+\contentsline {subsubsection}{\numberline {8.2.3}Auswahl und Konfiguration des Windows-Agenten}{47}{subsubsection.8.2.3}
+\contentsline {paragraph}{Auswahl}{47}{section*.21}
+\contentsline {paragraph}{Installation und Konfiguration}{47}{section*.22}
+\contentsline {subsection}{\numberline {8.3}\IeC {\"U}berpr\IeC {\"u}fen der Prozesse und Services}{50}{subsection.8.3}
+\contentsline {subsection}{\numberline {8.4}Umsetzung der Funktionlit\IeC {\"a}tstest}{50}{subsection.8.4}
+\contentsline {subsection}{\numberline {8.5}Auswertung der Logs + Stopw\IeC {\"o}rterdefinition}{50}{subsection.8.5}
+\contentsline {subsection}{\numberline {8.6}Benutzersimulation}{50}{subsection.8.6}
+\contentsline {section}{\numberline {9}Ergebnis}{52}{section.9}
+\contentsline {section}{\numberline {10}Zusammenfassung und Ausblick}{53}{section.10}
+\contentsline {section}{\numberline {11}Anhang}{54}{section.11}
+\contentsline {subsection}{\numberline {11.1}Abbildungsverzeichnis}{54}{subsection.11.1}
+\contentsline {subsection}{\numberline {11.2}Codelistingverzeichnis}{56}{subsection.11.2}
+\contentsline {subsection}{\numberline {11.3}Quellverzeichnis}{57}{subsection.11.3}
+\contentsline {subsubsection}{\numberline {11.3.1}Literaturverzeichnis}{57}{subsubsection.11.3.1}
+\contentsline {subsubsection}{\numberline {11.3.2}Internetquellen}{58}{subsubsection.11.3.2}
+\contentsline {subsection}{\numberline {11.4}Glossar}{59}{subsection.11.4}
