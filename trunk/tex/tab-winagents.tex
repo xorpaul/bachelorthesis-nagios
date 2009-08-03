@@ -1,0 +1,23 @@
+%Tabelle Windows-Agenten
+\begin{table}[!cht]
+\centering
+\begin{threeparttable}
+\begin{tabular}{l p{1.3cm} l p{1.3cm} l p{1.3cm} l p{1.3cm} l p{1.3cm} l p{1.3cm} l p{1.3cm} p{1.3cm} p{1.3cm} p{1.3cm} p{1.3cm}}
+ & \begin{turn}{50}\textbf{NSClient}\end{turn} & \begin{turn}{50}\textbf{NRPE_NT}\end{turn} & \begin{turn}{50}\textbf{NSClient\begin{tiny}++\end{tiny}}\end{turn} & \begin{turn}{50}\textbf{SNMP}\end{turn} & \begin{turn}{50}\textbf{SNMP Traps}\end{turn} & \begin{turn}{50}\textbf{NC\_net}\end{turn}\\ 
+\hline
+\textbf{Methode} & & & & & & \\
+\textit{aktiv} & \checkmark & \checkmark & \checkmark & \checkmark & - & \checkmark\\
+\textit{passiv} & - & - & - & - & \checkmark & \checkmark\\
+\textbf{Sicherheit} &  &  &  &  &  & \\
+\textit{Passwort} & \checkmark & \checkmark & \checkmark & \checkmark (v3) & \checkmark (v3) & -\\
+\textit{Accesslist} & - & - & \checkmark & \checkmark (v2) & \checkmark (v2) & \checkmark\\
+\textit{Verschlüsselung} & - & \checkmark & \checkmark & \checkmark (v3) & \checkmark (v3) & \checkmark\\
+\textbf{Aufwand} & \begin{footnotesize}normal\end{footnotesize} & \begin{footnotesize}normal\end{footnotesize} & \begin{footnotesize}normal\end{footnotesize} & \begin{footnotesize}hoch\end{footnotesize} & \begin{footnotesize}hoch\end{footnotesize} & \begin{footnotesize}normal\end{footnotesize}\\
+\end{tabular}
+\begin{tablenotes}\footnotesize
+        \item[*] Einschränkung der Abfrage der Überwachungsinformationen anhand der \gls{IP}-Adresse
+        \item[**] Subjektive Einschätzung
+    \end{tablenotes}
+\caption{Übersicht der verschiedenen Windows-Agenten}
+\end{threeparttable}
+\end{table}

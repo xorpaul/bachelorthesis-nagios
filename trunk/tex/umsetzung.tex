@@ -15,7 +15,60 @@ Damit dies nicht auf dem produktiven Nagios-Server durchgeführt werden muss, wi
 Für die Simulation der verschiedenen Fehlerzuständen der einzelnen Überwachungselemente wird eine virtuelle Maschine mit einer \gls{OracleUCM} Prototypinstallation, die extra als Entwicklungsplattform erstellt wurde, verwendet.
 
 
-\subsection{Einrichten des Windows Agenten}
+\subsection{Marktübersicht Nagios-Agenten}
+Im vorherigen Kapitel \ref{methoden} wurde erklärt, dass für das Überwachen von Diensten, die nicht über das Netzwerk zugreifbar sind, ein Agent auf dem jeweiligen Rechner benötigt wird.
+
+In diesem Unterkapitel werden die populärsten Agenten für Unix und Windows Betriebsysteme aufgelistet und nach/in den Punkten Sicherheit, subjektiver Aufwand für die Konfiguration und Art der Abfragemethode (aktiv oder passiv) vergleicht.
+\newpage
+\subsubsection{Unix-Agenten}
+Für die auf Unix basierenden Betriebsysteme werden fünf verschiedene Möglichkeiten angeboten, die (auch) zuvor in der Abbildung \ref{nagios-kern} als verschiedene Überwachungsmöglichkeiten von Nagios aufgelistet wurden.
+
+\input{tex/tab-unixagents.tex}
+
+Dabei werden drei Agenten genannt, die eine aktive Ausführung der Nagios-Plugins benutzten.
+Alle drei Agenten unterscheiden sich jedoch in den (anderen) Punkten Sicherheit und Aufwand.
+Der auf \gls{SSH} basierende Agent besitzt einen relativ geringen Aufwand für die Installation, da für den Aufbau der Kommunikation zwischen Nagios-Server und Client nur der öffentliche Schlüssel des Servers auf dem Client eingetragen werden muss.
+Dadurch kann der Nagios-Server sich ohne Passwortabfrage an dem zu überwachendem Host anmelden und die sich darauf befindlichen Nagios-Plugins ausführen.
+Da auf den meisten Unixservern bereits ein \gls{SSH}-Server läuft und deshalb kein weiterer Port geöffnet oder eine weitere Software installiert werden muss, ist diese Methode den anderen meist vorzuziehen.
+
+Bei der \gls{NRPE}-Methode wird eine weitere Softwarekomponente auf dem Client installiert, die einen separaten Port für die Kommunikation mit dem Nagios-Server öffnet.
+Wie bei dem Aufruf per \gls{SSH} müssen sich hier die Nagios-Plugins bereits auf dem Rechner befinden.
+Dabei gilt als Unterschied dieser zwei ähnlichen Methoden zu beachten, dass für die Ausführung der Checks per \gls{SSH} ein extra Benutzerkonto auf dem Client erstellt werden muss und somit beliebige Systembefehle ausgeführt werden können, während die Ausführung von Kommandos bei \gls{NRPE} nur auf vorkonfigurierte Befehle beschränkt ist.
+Siehe auch Kapitel \ref{sshnrpe}.
+
+Da \gls{SNMP} plattformunabhängig funktioniert ist es mögliche diese Variante bei Unix- sowie bei Windowsservern einzusetzten.
+Die verwendete \gls{SNMP}-Version bestimmt welche Sicherheitsmerkmale zur Verfügung stehen.
+Zwar gibt es bereits seit Version 1 die Möglichkeit den Zugriff per Passwort in drei Gruppen aufzuteilen: kein Zugriff, Leserecht und Lese- mit Schreibrecht\footnote{Quelle: \cite{Barth08} S. 237}, jedoch wird dieses Passwort im Klartext übertragen, so dass es leicht auslesbar ist.
+Auch noch die Version 2 inklusive der erweiterten Version 2c verwendet die gleiche unsichere Authentifizierung.
+Erst ab Version 3 wird das Passwort verschlüsselt übertragen.
+Während Barth behauptet, dass man bei \gls{SNMP} generell kein Passwort verwenden soll\footnote{Quelle: \cite{Barth08} S. 238}, da es leicht per Netzwerkmitschnittprogramme wie WireShark ausgelesen werden kann, wird in \cite{Jose07} S. 121} klargestellt, dass die Version 3 eine verschlüsselte Authentifizierung durch den MD5- oder SHA-Algorithmus ermöglicht.
+Die passive Variante über \gls{SNMP} bei der der Client die Ergebnisse der Checks an den Nagios-Server sendet, auch \gls{SNMP}-Traps genannt, funktioniert nach dem gleichen Prinzip.
+Da das Auslesen der \gls{MIB} per SNMP im Gegensatz zu den anderen Varianten deutlich komplexer ist, wird der Aufwand als hoch eingestuft.
+
+Der andere Vertreter, der passive Checks ermöglicht, ist der \gls{NSCA}-Agent.
+Wie die anderen Unix-Agenten bietet es die Möglichkeit den Datenaustausch zwischen Nagios-Server und Client zu verschlüsseln.
+Alle Unix-Agenten erlauben es den Zugriff auf die Nagios-Plugins auf bestimmte \gls{IP}-Adressen zu beschränken.
+Die Liste mit diesen \gls{IP}-Adressen nennt man auch \textit{Accesslist}.
+
+\subsubsection{Windows-Agenten}
+Da die zu überwachende Oracle UCM Anwendung auf einem Windows-Server betrieben wird und die bereits vorgestellten Agenten mit Ausnahme der \gls{SNMP}-Varianten nur unter Unix einsetzbar sind, müssen zusätzlich die explizit für Windows entwickelten Nagios-Agenten untersucht werden.
+Dabei wird die Auswahl der Kandiaten auf folgende Auswahl eingeschränkt:
+
+\input{tex/tab-winagents.tex}
+
+Das erste und zugleich älteste Programm NSClient wird nicht mehr aktiv entwickelt und ist als aktuelleste Version 2.0.1 aus dem Jahre 2003 bereits recht alt.
+Daher wird auch keine Verschlüsselung der ein- und ausgehenden Daten unterstützt.
+Auch bietet NSClient keine Möglichkeit aktiv vom Nagios-Server aus Nagios-Plugins auszuführen, die sich auf dem zu überwachendem Host befinden.
+
+Um dies auch für Windows-Server zu ermöglich gibt es eine auf Windows portierte \gls{NRPE}-Variante, die sich NRPE\_NT nennt.
+Hier lassen sich die Plugins direkt über den Nagios-Server aufrufen und die ausgetauschten Informationen werden verschlüsselt über das Netzwerk übertragen.
+
+Beide bisher genannte Windows-Agenten bieten keine Möglichkeit eine Accesslist anzulegen, erst das Programm NSClient++ bietet diese Möglichkeit inklusive der anderen Sicheheitsmerkmale wie Verschlüsselung und Passwort an.
+Außerdem können durch den eingebauten \gls{NRPE}-Dienst aktiv Nagios-Plugins auf dem Client aufgerufen werden.
+
+
+
+\subsection{Einrichten/Konfiguration der Nagios-Agenten}
 \begin{itemize}
 \item Port ändern -> RPC
 \item Verschlüsselung durch PW und/oder Algo
