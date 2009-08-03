@@ -3,5 +3,5 @@
 \contentsline {lstlisting}{\numberline {3}Verk\IeC {\"u}rzte Definition eines Hostobjektes}{23}{lstlisting.3}
 \contentsline {lstlisting}{\numberline {4}Verk\IeC {\"u}rzte Definition eines Hostobjektes}{24}{lstlisting.4}
 \contentsline {lstlisting}{\numberline {5}Beispielhafte (Definition) eines Servicechecks}{25}{lstlisting.5}
-\contentsline {lstlisting}{\numberline {6}Aufruf eines aktiven Checks}{44}{lstlisting.6}
-\contentsline {lstlisting}{\numberline {7}Nagios-Befehls Definition f\IeC {\"u}r den Host}{45}{lstlisting.7}
+\contentsline {lstlisting}{\numberline {6}Aufruf eines aktiven Checks}{47}{lstlisting.6}
+\contentsline {lstlisting}{\numberline {7}Nagios-Befehls Definition f\IeC {\"u}r den Host}{47}{lstlisting.7}

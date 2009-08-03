@@ -1,5 +1,5 @@
 \subsection{Überprüfungsmethoden}
-
+\label{methoden}
 
 
 Man unterscheidet generell zwischen aktiven und passiven Checks.
@@ -74,7 +74,7 @@ Hier muss auf dem Client ein "`Agent"' installiert werden, welcher einen Port ö
 Der Nagios Server kann dann Anforderungen über das Nagios-Plugin \pictext{check\_nrpe} an den Client verschicken.
 Ein Aufruf dieses Plugins ist dem des \pictext{check\_by\_ssh} Plugins, siehe dazu Abbildung \ref{check-ssh}, sehr ähnlich.
 
-Der Nachteil dieser Variante ist ein zusätzlich geöffneter Port und der höhere / erhöhte Aufwand beim Installieren des Agenten im Gegensatz zum (vermutlich /meistens) bereits laufendem \gls{SSH}-Dienst.
+Der Nachteil dieser Variante ist ein zusätzlich geöffneter Port und der höhere / erhöhte Aufwand beim Installieren des Agenten im Gegensatz zum (vermutlich /meistens) bereits laufendem \gls{SSH}-Dienst.\label{sshnrpe}
 Zusätzlich gibt es nur die Möglichkeit die Anfragen auf diesem Port auf bestimmte IPs zu beschränken, jedoch nicht den Zugriff durch ein Passwort zu sichern.
 Dafür beschränkt sich der \gls{NRPE} (lediglich) auf die auf dem entfernten Client liegenden Nagios Plugins und kann nicht System- bzw. Benutzerkommandos aufrufen, wie bspw. das \pictext{rm} Kommando zum Löschen von Dateien, welche durch den Einsatz von \pictext{check\_by\_ssh} standardmäßig möglich wären.
 Sicherheitstechnisch gesehen ist die SSH-Variante kritischer, da es einem Angreifer ermöglicht auf diese System- bzw. Benutzerkommandos zuzugreifen, wenn er die Kontrolle über den Nagios Server erlangt.
