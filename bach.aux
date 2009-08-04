@@ -36,6 +36,7 @@
 \@writefile{toc}{\contentsline {paragraph}{\IeC {\"U}berwachungsredundanzen vermeiden}{5}{section*.4}}
 \@writefile{toc}{\contentsline {paragraph}{Minimale Netzwerkbelastung}{6}{section*.5}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.3}Sicherheitsaspekte}{6}{subsubsection.4.1.3}}
+\newlabel{changeport}{{4.1.3}{6}{Sicherheitsaspekte\relax }{subsubsection.4.1.3}{}}
 \citation{DMS08}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Dokumenten-Management-Systeme}{7}{subsection.4.2}}
 \citation{DMS08}
@@ -168,6 +169,7 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {19}{\ignorespaces Bilddatenbank als Anwendung}}{37}{figure.19}}
 \newlabel{bdbanw}{{19}{37}{Bilddatenbank als Anwendung\relax }{figure.19}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {7.1}Statusabfragen}{37}{subsection.7.1}}
+\newlabel{syschecks}{{7.1}{37}{Statusabfragen\relax }{subsection.7.1}{}}
 \@writefile{toc}{\contentsline {paragraph}{System}{37}{section*.18}}
 \@writefile{toc}{\contentsline {paragraph}{Prozesse}{38}{section*.19}}
 \@writefile{toc}{\contentsline {paragraph}{Services}{38}{section*.20}}
@@ -181,7 +183,7 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {8.1}Aufbau der Testumgebung}{43}{subsection.8.1}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {8.1.1}Aufsetzen eines Nagios-Test-Systems}{43}{subsubsection.8.1.1}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {8.1.2}Bilddatenbank als VM}{43}{subsubsection.8.1.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.2}Markt\IeC {\"u}bersicht Nagios-Agenten}{43}{subsection.8.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.2}\IeC {\"U}bersicht Nagios-Agenten}{43}{subsection.8.2}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {8.2.1}Unix-Agenten}{44}{subsubsection.8.2.1}}
 \@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces \IeC {\"U}bersicht der verschiedenen Unix-Agenten}}{44}{table.2}}
 \citation{Barth08}
@@ -191,51 +193,58 @@
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {8.2.2}Windows-Agenten}{46}{subsubsection.8.2.2}}
 \@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces \IeC {\"U}bersicht der verschiedenen Windows-Agenten}}{46}{table.3}}
 \newlabel{tab:winagents}{{3}{46}{Übersicht der verschiedenen Windows-Agenten\relax }{table.3}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {8.2.3}Auswahl und Konfiguration des Windows-Agenten}{47}{subsubsection.8.2.3}}
-\@writefile{toc}{\contentsline {paragraph}{Auswahl}{47}{section*.21}}
-\@writefile{toc}{\contentsline {paragraph}{Installation und Konfiguration}{47}{section*.22}}
-\@writefile{lof}{\contentsline {figure}{\numberline {21}{\ignorespaces Installation des NSClient++ 1}}{48}{figure.21}}
-\newlabel{nscs1}{{21}{48}{Installation des NSClient++ 1\relax }{figure.21}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces Installation des NSClient++ 2}}{49}{figure.22}}
-\newlabel{nscs2}{{22}{49}{Installation des NSClient++ 2\relax }{figure.22}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {23}{\ignorespaces Installation des NSClient++ 3}}{49}{figure.23}}
-\newlabel{nscs3}{{23}{49}{Installation des NSClient++ 3\relax }{figure.23}{}}
-\newlabel{activecheckexample}{{6}{49}{Installation und Konfiguration\relax }{lstlisting.6}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {6}Aufruf eines aktiven Checks}{49}{lstlisting.6}}
-\newlabel{cmddefbdb}{{7}{49}{Installation und Konfiguration\relax }{lstlisting.7}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {7}Nagios-Befehls Definition f\IeC {\"u}r den Host}{49}{lstlisting.7}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.3}\IeC {\"U}berpr\IeC {\"u}fen der Prozesse und Services}{50}{subsection.8.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.4}Umsetzung der Funktionlit\IeC {\"a}tstest}{50}{subsection.8.4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.5}Auswertung der Logs + Stopw\IeC {\"o}rterdefinition}{50}{subsection.8.5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.6}Benutzersimulation}{50}{subsection.8.6}}
-\@writefile{lof}{\contentsline {figure}{\numberline {24}{\ignorespaces Ablauf der Benutzersimulation}}{51}{figure.24}}
-\newlabel{usersim}{{24}{51}{Ablauf der Benutzersimulation\relax }{figure.24}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {25}{\ignorespaces \IeC {\"U}berpr\IeC {\"u}fung der Benutzersimulation}}{52}{figure.25}}
-\newlabel{usersim2}{{25}{52}{Überprüfung der Benutzersimulation\relax }{figure.25}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {9}Ergebnis}{52}{section.9}}
+\@writefile{lof}{\contentsline {figure}{\numberline {21}{\ignorespaces Zugriff auf den NSClient Dienst durch check\_nt}}{47}{figure.21}}
+\newlabel{fig:cknt}{{21}{47}{Zugriff auf den NSClient Dienst durch check\_nt\relax }{figure.21}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {8.2.3}Auswahl und Konfiguration des Windows-Agenten}{48}{subsubsection.8.2.3}}
+\@writefile{toc}{\contentsline {paragraph}{Auswahl}{48}{section*.21}}
+\@writefile{toc}{\contentsline {paragraph}{Installation und Konfiguration}{48}{section*.22}}
+\@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces Installation des NSClient++}}{48}{figure.22}}
+\newlabel{nscs1}{{22}{48}{Installation des NSClient++\relax }{figure.22}{}}
+\citation{Barth08}
+\@writefile{lof}{\contentsline {figure}{\numberline {23}{\ignorespaces Konfiguration des NSClient++ w\IeC {\"a}hrend der Installation}}{49}{figure.23}}
+\newlabel{nscs2}{{23}{49}{Konfiguration des NSClient++ während der Installation\relax }{figure.23}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {24}{\ignorespaces Kommunikation zwischen Nagios und NSClient++}}{49}{figure.24}}
+\newlabel{nscs2}{{24}{49}{Kommunikation zwischen Nagios und NSClient++\relax }{figure.24}{}}
+\newlabel{code:nsc}{{6}{50}{Installation und Konfiguration\relax }{lstlisting.6}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {6}NSClient++ Konfigurationsdatei}{50}{lstlisting.6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {25}{\ignorespaces NSClient++ Windowsdiensteintrag}}{51}{figure.25}}
+\newlabel{nscs3}{{25}{51}{NSClient++ Windowsdiensteintrag\relax }{figure.25}{}}
+\newlabel{activecheckexample}{{7}{51}{Installation und Konfiguration\relax }{lstlisting.7}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {7}Aufruf eines aktiven Checks}{51}{lstlisting.7}}
+\newlabel{cmddefbdb}{{8}{51}{Installation und Konfiguration\relax }{lstlisting.8}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {8}Nagios-Befehls Definition f\IeC {\"u}r den Host}{51}{lstlisting.8}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.3}\IeC {\"U}berpr\IeC {\"u}fen der Prozesse und Services}{52}{subsection.8.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.4}Umsetzung der Funktionlit\IeC {\"a}tstest}{52}{subsection.8.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.5}Auswertung der Logs + Stopw\IeC {\"o}rterdefinition}{52}{subsection.8.5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.6}Benutzersimulation}{52}{subsection.8.6}}
 \@writefile{lof}{\contentsline {figure}{\numberline {26}{\ignorespaces Ablauf der Benutzersimulation}}{53}{figure.26}}
-\newlabel{user-sim}{{26}{53}{Ablauf der Benutzersimulation\relax }{figure.26}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {10}Zusammenfassung und Ausblick}{53}{section.10}}
-\@writefile{lof}{\contentsline {figure}{\numberline {27}{\ignorespaces Webinterface von Nagios}}{54}{figure.27}}
-\newlabel{user-sim}{{27}{54}{Webinterface von Nagios\relax }{figure.27}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {11}Anhang}{54}{section.11}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {11.1}Abbildungsverzeichnis}{54}{subsection.11.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {11.2}Codelistingverzeichnis}{56}{subsection.11.2}}
+\newlabel{usersim}{{26}{53}{Ablauf der Benutzersimulation\relax }{figure.26}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {9}Ergebnis}{53}{section.9}}
+\@writefile{lof}{\contentsline {figure}{\numberline {27}{\ignorespaces \IeC {\"U}berpr\IeC {\"u}fung der Benutzersimulation}}{54}{figure.27}}
+\newlabel{usersim2}{{27}{54}{Überprüfung der Benutzersimulation\relax }{figure.27}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {10}Zusammenfassung und Ausblick}{54}{section.10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {28}{\ignorespaces Ablauf der Benutzersimulation}}{55}{figure.28}}
+\newlabel{user-sim}{{28}{55}{Ablauf der Benutzersimulation\relax }{figure.28}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {11}Anhang}{55}{section.11}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {11.1}Abbildungsverzeichnis}{55}{subsection.11.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {29}{\ignorespaces Webinterface von Nagios}}{56}{figure.29}}
+\newlabel{user-sim}{{29}{56}{Webinterface von Nagios\relax }{figure.29}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {11.2}Codelistingverzeichnis}{58}{subsection.11.2}}
 \bibcite{DMS08}{DMS08}
 \bibcite{Barth08}{Barth08}
 \bibcite{Huff06}{Huff06}
 \bibcite{Jose07}{Jose07}
 \bibcite{SOA07}{SOA07}
 \bibcite{Melzer08}{Melzer08}
-\@writefile{toc}{\contentsline {subsection}{\numberline {11.3}Quellverzeichnis}{57}{subsection.11.3}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {11.3.1}Literaturverzeichnis}{57}{subsubsection.11.3.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {11.3}Quellverzeichnis}{59}{subsection.11.3}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {11.3.1}Literaturverzeichnis}{59}{subsubsection.11.3.1}}
 \bibcite{UCM07}{UCM07}
 \bibcite{UCMlog09}{UCMlog09}
 \bibcite{Mu08}{Munin08}
 \bibcite{OraPress}{OraPress}
 \bibcite{W3WS04}{W3WS04}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {11.3.2}Internetquellen}{58}{subsubsection.11.3.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {11.4}Glossar}{59}{subsection.11.4}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {11.3.2}Internetquellen}{60}{subsubsection.11.3.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {11.4}Glossar}{61}{subsection.11.4}}
 \gdef \LT@i {\LT@entry 
     {1}{85.64351pt}\LT@entry 
     {1}{246.00238pt}\LT@entry 

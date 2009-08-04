@@ -105,13 +105,13 @@ Wenn auf einem Rechner eigene Ergebnisse in der \gls{MIB} abgespeichert werden s
 Dessen Konfiguration ist im Vergleich zu den anderen Überwachungsmethoden deutlich komplexer.
 
 Es gibt zwei verschiendene Möglichkeiten Dienste mit \gls{SNMP} zu überwachen.
-Der Server frägt aktiv den Inhalt der entsprechenden MIB Einträgen periodisch ab oder der Client sendet asychron seine Statusmeldungen an den Nagios-Server.
+Der Server frägt aktiv den Inhalt der entsprechenden \gls{MIB} Einträgen periodisch ab oder der Client sendet asychron seine Statusmeldungen über \gls{SNMP} an den Nagios-Server.
 Bei der letzteren passiven Variante spricht man auch von sogenannten \gls{SNMP}-Traps.
 
 
 \begin{itemize}
 \item Warum wird SNMP nicht verwendet?
-\item klartextübertragung bis SNMP 2c
+\item klartextübertragung des PW bis SNMP 2c
 \item Schreibrechte können Schaden anrichten
 \item Brute Force attacken ausgesetzt
 \item Beschränkte Ausgabemögliochkeit / maximale Datengrösse der Ausgabe -> Logüberwachung nur mit Aufwand möglich autarkes Programm von Nöten, dann muss selbst das Ergebniss in die MIB geschrieben werden, damit Nagios darauf Zugriff erlangt -> zu aufwändig im Vergleich mit Agenten
