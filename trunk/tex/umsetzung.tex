@@ -15,7 +15,7 @@ Damit dies nicht auf dem produktiven Nagios-Server durchgeführt werden muss, wi
 Für die Simulation der verschiedenen Fehlerzuständen der einzelnen Überwachungselemente wird eine virtuelle Maschine mit einer \gls{OracleUCM} Prototypinstallation, die extra als Entwicklungsplattform erstellt wurde, verwendet.
 
 
-\subsection{Marktübersicht Nagios-Agenten}
+\subsection{Übersicht Nagios-Agenten}
 Im vorherigen Kapitel \ref{methoden} wurde erklärt, dass für das Überwachen von Diensten, die nicht über das Netzwerk zugreifbar sind, ein Nagios-Agent auf dem jeweiligen Rechner benötigt wird.
 
 In diesem Unterkapitel werden die populärsten Agenten für Unix und Windows Betriebsysteme aufgelistet und nach/in den Punkten Sicherheit, subjektiver Aufwand für die Konfiguration und Art der Abfragemethode (aktiv oder passiv) vergleicht.
@@ -44,7 +44,7 @@ Erst ab Version 3 wird das Passwort verschlüsselt übertragen.
 Während Barth behauptet, dass man bei \gls{SNMP} generell kein Passwort verwenden soll\footnote{Quelle: \cite{Barth08} S. 238}, da es leicht per Netzwerkmitschnittprogramme wie WireShark ausgelesen werden kann, wird in \cite{Jose07} S. 121} klargestellt, dass die Version 3 eine verschlüsselte Authentifizierung durch den MD5- oder SHA-Algorithmus ermöglicht.
 
 Die passive Variante über \gls{SNMP} bei der der Client die Ergebnisse der Checks an den Nagios-Server sendet, auch \gls{SNMP}-Traps genannt, funktioniert nach dem gleichen Prinzip.
-Da das Auslesen der \gls{MIB} per SNMP im Gegensatz zu den anderen Varianten deutlich komplexer ist, wird der Aufwand als hoch eingestuft.
+Da das Auslesen der \gls{MIB} per \gls{SNMP} im Gegensatz zu den anderen Varianten deutlich komplexer ist, wird der Aufwand als hoch eingestuft.
 
 Der andere Vertreter, der passive Checks ermöglicht, ist der \gls{NSCA}-Agent.
 Wie die anderen Unix-Agenten bietet es die Möglichkeit den Datenaustausch zwischen Nagios-Server und Client zu verschlüsseln.
@@ -60,6 +60,19 @@ Dabei wird die Auswahl der Kandiaten auf folgende Auswahl eingeschränkt:
 Das erste und zugleich älteste Programm NSClient wird nicht mehr aktiv entwickelt und ist als aktuelleste Version 2.0.1 aus dem Jahre 2003 bereits recht alt.
 Daher wird auch keine Verschlüsselung der ein- und ausgehenden Daten unterstützt.
 Auch bietet NSClient keine Möglichkeit aktiv vom Nagios-Server aus Nagios-Plugins auszuführen, die sich auf dem zu überwachendem Host befinden.
+
+Der NSClient liefert als Grundlage die Möglichkeit lokale Windows-Ressourcen über einen Dienst abzufragen, der sich über das Netzwerk mit eigenem Port (Standport 1248) ansprechen lässt.
+Das Plugin \textit{check\_nt} wurde explizit für diesen NSClient-Dienst entwickelt und steht durch die Nagios-Plugins standardmäßig zur Verfügung.
+Dadurch können grundlegende Informationen für die Systemüberwachung wie Zustände von Prozesse, Services, CPU-Auslastung, Festplattenplatz, usw. abgefragt werden, siehe Kapitel \ref{syscheck}.
+
+Diese Abfrage kann durch die Ausführung auf der Kommandozeile getestet werden:
+
+\begin{figure}[ht]
+	\centering
+	   \fbox{\includegraphics[width=0.75\textwidth]{bilder/check_nt-stdp.png}}
+		\caption{Zugriff auf den NSClient Dienst durch check\_nt}
+		\label{fig:cknt}
+\end{figure}
 
 Um dies auch für Windows-Server zu ermöglich gibt es eine auf Windows portierte \gls{NRPE}-Variante, die sich NRPE\_NT nennt.
 Hier lassen sich die Plugins direkt über den Nagios-Server aufrufen und die ausgetauschten Informationen werden verschlüsselt über das Netzwerk übertragen.
@@ -81,30 +94,72 @@ Da nur ein Windows-Agent alle drei Sicherheitsmerkmale anbietet und dabei aktiv 
 
 \paragraph{Installation und Konfiguration}
 
-Der Nagios-Agent NSClient++ kann im Gegensatz zu den meisten anderen Windows-Agenten komfortabel über eine graphische Benutzerdialog (Installationsroutine) (konfiguriert / eingerichtet) installiert werden.
+Der Nagios-Agent NSClient++ kann im Gegensatz zu den meisten anderen Windows-Agenten komfortabel über einen graphischen Benutzerdialog installiert werden.
 
 \begin{figure}[ht]
 	\centering
-	   \fbox{\includegraphics[width=0.85\textwidth]{bilder/nsc1.png}}
-		\caption{Installation des NSClient++ 1}
+	   \fbox{\includegraphics[width=0.75\textwidth]{bilder/nsc1.png}}
+		\caption{Installation des NSClient++}
 		\label{nscs1}
 \end{figure}
-Während der Installation kann auch festgelegt werden welche Komponenten installiert werden sollen.
 
+Während der Installation kann auch festgelegt werden welche Komponenten installiert werden sollen.
+Dabei werden diese Komponenten nicht standardmäßig geladen, sondern im nächsten Dialogfenster als Auswahl explizit/extra abgefragt:
 
 \begin{figure}[ht]
 	\centering
-	   \fbox{\includegraphics[width=0.85\textwidth]{bilder/nsc2.png}}
-		\caption{Installation des NSClient++ 2}
+	   \fbox{\includegraphics[width=0.7\textwidth]{bilder/nsc2.png}}
+		\caption{Konfiguration des NSClient++ während der Installation}
 		\label{nscs2}
 \end{figure}
-Dabei werden diese Komponenten nicht standardmäßig geladen, sondern im nächsten Dialogfenster als Auswahl explizit/extra abgefragt.
+
+Außerdem können direkt während der Installation die \gls{IP}-Adresse bzw. der \gls{FQDN} des Nagios-Servers und das gewünschte Passwort eingetragen werden.
+
+Durch die während des Installationsprozesses geladenen Komponenten für den NSClient- und \gls{NRPE}-Dienst können die Standard-Nagios-Plugins \textit{check\_nt} und \textit{check\_nrpe} mit dem Windows-Server verwendet werden.
+Dabei läuft die Kommunikation zwischen dem Nagios- und dem Windows-Server folgendermaßen ab:
+
+\begin{figure}[ht]
+	\centering
+	   \fbox{\includegraphics[width=0.85\textwidth]{bilder/nagios-active-nsclient-and-nrpe.png}}
+		\caption[Kommunikation zwischen Nagios und NSClient++]{Kommunikation zwischen Nagios und NSClient++\protect\footnote}
+		\label{nscs2}
+\end{figure}
+\footnotetext{\url{http://nsclient.org/nscp/}}
+%http://nsclient.org/nscp/raw-attachment/wiki/doc/usage/nagios/nagios-active-nsclient.png
+
+Da es bei Windows-Server mit vielen Verbindungen und Diensten zu Remote Procedure Calls (\gls{RPC}) kommen kann, bei denen dynamisch Ports ab 1025 verwendet werden, könnte der Standardport des NSClient-Dienstes (1248) unter Umständen bereits vor dem Start des Dienstes belegt sein.\footnote{Quelle: \cite{Barth08} S. 481}
+Um dies zu verhindern wurde der Port beim NSClient++ bereits auf einen höheren Port (12489) gewechselt.
+
+Diesen Standardport der Anwendung wird zusätzlich noch verändert, damit die Tatsache, dass sich ein Nagios-Agent auf dem Computer befindet, nicht sofort ersichtlich ist.
+Dieser sicherheitstechnische Aspekt wurde bereits in Kapitel \ref{changeport} behandelt.
+
+Alle bisherigen Einstellungen können in der Konfigurationsdatei \textit{NSC.ini}, die sich in dem Installationsverzeichnis des NSClient++ befindet, verändert werden.
+In dieser Datei befinden sich noch mehr Einstellungsmöglichkeiten; im Folgenden werden nur für die Umsetzung relevanten (notwendig essentiell benötigten) Parameter aufgelistet.
+
+\begin{lstlisting}[captionpos=b, caption=NSClient++ Konfigurationsdatei, label=code:nsc, breaklines = true, language=sh]
+;# NSCLIENT PORT NUMMER
+;#  Die Portnummer des NSClient-Dienstes
+port=13596
+
+;# NRPE PORT NUMMER
+;#  Die Portnummer des NRPE-Dienstes
+port=13597
+
+;# SSL SOCKET
+;#  Die Aktivierung der Verschlüsselung der Kommunikation zwischen Nagios- und Windows-Server durch SSL
+use_ssl=1
+
+;# NRPE BEFEHLS DEFINITIONEN
+;# Befehlsdefinition, die durch den NRPE-Dienst aufrufbar sind
+check_uname=scripts\check_uname.exe
+check_reflog=scripts\check_logfiles.exe -f scripts\logfile.cfg
+\end{lstlisting}
 
 
 \begin{figure}[ht]
 	\centering
 	   \fbox{\includegraphics[width=0.85\textwidth]{bilder/nsc3.png}}
-		\caption{Installation des NSClient++ 3}
+		\caption{NSClient++ Windowsdiensteintrag}
 		\label{nscs3}
 \end{figure}
 
@@ -139,12 +194,12 @@ Das auf dem Nagios Server liegende Script \pictext{check\_nc\_net} stellt eine V
 Danach command definition hinzufügen, weil PW und Port verändert wurde:
 \begin{lstlisting}[captionpos=b, caption=Nagios-Befehls Definition für den Host, label=cmddefbdb, breaklines = true, language=sh]
 # 'check_nt_bdb' command definition
-#	_NSCLIENT_PORT	13599
-#	_NSCLIENT_PW	KAnqloaQk
+#	_NSCLIENT_PORT	1337
+#	_NSCLIENT_PW	asdasdasd
 #
 define command{
     command_name    check_nc_net_bdb
-	command_line 	/usr/lib/nagios/plugins/check_nc_net -H $HOSTNAME$ -p 13599 -s KAnqloaQk -v $ARG1$
+	command_line 	/usr/lib/nagios/plugins/check_nc_net -H $HOSTNAME$ -p 1337 -s asdasdasd -v $ARG1$
         }
 \end{lstlisting}
 

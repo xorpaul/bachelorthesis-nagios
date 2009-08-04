@@ -12,7 +12,7 @@
 \textit{passiv} & - & - & - & \checkmark & \checkmark\\
 \textbf{Sicherheit} &  &  &  &  &  \\
 \textit{Passwort} & - & - & \checkmark (v3) & \checkmark (v3) & -\\
-\textit{Accesslist}\tnote{2} & \checkmark &  \checkmark & \checkmark (v2) & \checkmark (v2) & \checkmark \\
+\textit{Accesslist}\tnote{1} & \checkmark\tnote{2} &  \checkmark & \checkmark (v2) & \checkmark (v2) & \checkmark \\
 \textit{Verschlüsselung} &  \checkmark & \checkmark & \checkmark (v3) & \checkmark (v3) &  \checkmark \\
 \textbf{Aufwand}\tnote{3} & \begin{footnotesize}niedrig\end{footnotesize} & \begin{footnotesize}normal\end{footnotesize} & \begin{footnotesize}hoch\end{footnotesize} & \begin{footnotesize}hoch\end{footnotesize} & \begin{footnotesize}normal\end{footnotesize} \\
 \end{tabular}
@@ -21,8 +21,8 @@
 %\\
 %** Subjektive Einschätzung
 \begin{tablenotes}\footnotesize
-	\item[1] Über zuvor ausgetauschte SSH-Schlüssel
-	\item[2] Einschränkung der Abfrage der Überwachungsinformationen anhand der \gls{IP}-Adresse
+	\item[1] Einschränkung der Abfrage der Überwachungsinformationen anhand der \gls{IP}-Adresse
+		\item[2] Über zuvor ausgetauschte \gls{SSH}-Schlüssel
 	\item[3] Subjektive Einschätzung
 \end{tablenotes}
 \caption{Übersicht der verschiedenen Unix-Agenten}
