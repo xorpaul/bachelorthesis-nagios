@@ -46,7 +46,7 @@ Während Barth behauptet, dass man bei \gls{SNMP} generell kein Passwort verwend
 Die passive Variante über \gls{SNMP} bei der der Client die Ergebnisse der Checks an den Nagios-Server sendet, auch \gls{SNMP}-Traps genannt, funktioniert nach dem gleichen Prinzip.
 Da das Auslesen der \gls{MIB} per \gls{SNMP} im Gegensatz zu den anderen Varianten deutlich komplexer ist, wird der Aufwand als hoch eingestuft.
 
-Der andere Vertreter, der passive Checks ermöglicht, ist der \gls{NSCA}-Agent.
+Ein weiterer Vertreter, der passive Checks ermöglicht, ist der \gls{NSCA}-Agent.
 Wie die anderen Unix-Agenten bietet es die Möglichkeit den Datenaustausch zwischen Nagios-Server und Client zu verschlüsseln.
 Alle Unix-Agenten erlauben es den Zugriff auf die Nagios-Plugins auf bestimmte \gls{IP}-Adressen zu beschränken.
 Die Liste mit diesen \gls{IP}-Adressen nennt man auch \textit{Accesslist}.
@@ -128,33 +128,33 @@ Dabei läuft die Kommunikation zwischen dem Nagios- und dem Windows-Server folge
 %http://nsclient.org/nscp/raw-attachment/wiki/doc/usage/nagios/nagios-active-nsclient.png
 
 Da es bei Windows-Server mit vielen Verbindungen und Diensten zu Remote Procedure Calls (\gls{RPC}) kommen kann, bei denen dynamisch Ports ab 1025 verwendet werden, könnte der Standardport des NSClient-Dienstes (1248) unter Umständen bereits vor dem Start des Dienstes belegt sein.\footnote{Quelle: \cite{Barth08} S. 481}
-Um dies zu verhindern wurde der Port beim NSClient++ bereits auf einen höheren Port (12489) gewechselt.
+Um dies zu verhindern wurde der Port des NSClient-Dienstes beim NSClient++ bereits auf einen höheren Port (12489) gewechselt.
 
-Diesen Standardport der Anwendung wird zusätzlich noch verändert, damit die Tatsache, dass sich ein Nagios-Agent auf dem Computer befindet, nicht sofort ersichtlich ist.
-Dieser sicherheitstechnische Aspekt wurde bereits in Kapitel \ref{changeport} behandelt.
+
 
 Alle bisherigen Einstellungen können in der Konfigurationsdatei \textit{NSC.ini}, die sich in dem Installationsverzeichnis des NSClient++ befindet, verändert werden.
 In dieser Datei befinden sich noch mehr Einstellungsmöglichkeiten; im Folgenden werden nur für die Umsetzung relevanten (notwendig essentiell benötigten) Parameter aufgelistet.
 
 \begin{lstlisting}[captionpos=b, caption=NSClient++ Konfigurationsdatei, label=code:nsc, breaklines = true, language=sh]
-;# NSCLIENT PORT NUMMER
+;# NSCLIENT PORTNUMMER
 ;#  Die Portnummer des NSClient-Dienstes
 port=13596
 
-;# NRPE PORT NUMMER
+;# NRPE PORTNUMMER
 ;#  Die Portnummer des NRPE-Dienstes
 port=13597
 
 ;# SSL SOCKET
-;#  Die Aktivierung der Verschlüsselung der Kommunikation zwischen Nagios- und Windows-Server durch SSL
+;#  Die Aktivierung von SSL der Kommunikation zwischen Nagios- und Windows-Server 
 use_ssl=1
 
-;# NRPE BEFEHLS DEFINITIONEN
-;# Befehlsdefinition, die durch den NRPE-Dienst aufrufbar sind
+;# NRPE BEFEHLSDEFINITIONEN
+;# Definitionen der Befehle, die durch den NRPE-Dienst aufrufbar sind
 check_uname=scripts\check_uname.exe
 check_reflog=scripts\check_logfiles.exe -f scripts\logfile.cfg
 \end{lstlisting}
 
+Damit die vorgenommen Änderung übernommen werden, muss der Dienst des NSClient++ neugestartet werden. 
 
 \begin{figure}[ht]
 	\centering
@@ -163,33 +163,32 @@ check_reflog=scripts\check_logfiles.exe -f scripts\logfile.cfg
 		\label{nscs3}
 \end{figure}
 
+Durch das Ausweichen auf höher gelegene Portnummern können die zuvor genannten Probleme aufgrund der \gls{RPC}s verhindert werden.
+
+Der bereits höher liegende Standardport des NSClient-Dienstes beim NSClient++ wird zusätzlich noch abgeändert, damit die Tatsache, dass sich ein Nagios-Agent auf dem Computer befindet, nicht sofort ersichtlich ist.
+Dieser sicherheitstechnische Aspekt wurde bereits in Kapitel \ref{changeport} behandelt.
+
+Damit die \gls{SSL}-Verschlüsselung zwischen den Servern aktiviert wird, muss man es explizit in der Konfigurationsdatei angeben.
+
+Die Definitionen der \gls{NRPE}-Kommandos dienen dafür, dass durch den Nagios-Server per \textit{check\_nrpe} mit dem Befehlsnamen der darauf folgende Befehl ausgeführt wird.
+
+Ein Aufruf eines solchen \gls{NRPE}-Kommandos vom Nagios-Server wird im folgendem Code-Listing gezeigt:
+
+\begin{lstlisting}[captionpos=b, caption=Aufruf eines NRPE-Kommandos, label=nrpe-command-example, breaklines = true]
+root@iwrpaul:/usr/local/nagios/plugins# ./check_nrpe -H secret.kit.edu -p 123456 -c check_uname
+Operating System OK - Microsoft(R) Windows(R) Server 2003 Standard Edition Service Pack 2
+\end{lstlisting}
+
+Aufgrund des Befehlsnamens führt der \gls{NRPE}-Dienst die in der Konfigurationsdatei eingetragene Datei \textit{check\_uname.exe} aus.
+
 
 
 
 \begin{itemize}
-\item Port ändern -> RPC
-\item Verschlüsselung durch PW und/oder Algo
 \item Hinzufügen der Plugins
 \item Bsp Aufruf aktiver Check
 \item WireShark bild von der Verschlüsselung
 \end{itemize}
-
-.Net 2.0 Framework essentiell
-NC\_Net installieren
-nagios server ip zur sicherheit angeben
-port ändern
-pw hinzufügen
--> dienst starten
-
-test vom nagios host:
-
-\begin{lstlisting}[captionpos=b, caption=Aufruf eines aktiven Checks, label=activecheckexample, breaklines = true]
-root@iwrpaul:/usr/local/nagios/libexec# ./check_nc_net -H secret.kit.edu -p 123456 -s secret -v RUNSCRIPT -l check_uname.exe
-Operating System OK - Microsoft(R) Windows(R) Server 2003 Standard Edition Service Pack 2
-\end{lstlisting}
-
-Das auf dem Nagios Server liegende Script \pictext{check\_nc\_net} stellt eine Verbindung zum angegebenen Server her und führt die mit dem Parameter \pictext{l} angegebene Datei aus. Dafür muss sich diese Datei in dem Script Verzeichnis des NC\_Net befinden.
-
 
 Danach command definition hinzufügen, weil PW und Port verändert wurde:
 \begin{lstlisting}[captionpos=b, caption=Nagios-Befehls Definition für den Host, label=cmddefbdb, breaklines = true, language=sh]
