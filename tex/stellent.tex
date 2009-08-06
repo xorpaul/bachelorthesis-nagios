@@ -4,14 +4,7 @@
 Oracle Universal Content Management basiert auf der Software Stellent von der gleichnamigen Firma Stellent, welche im November 2006\footnote{Quelle: \cite{OraPress}} von Oracle gekauft / erworben wurde.
 
 
-\begin{figure}[ht]
-	\centering
-	   %\fbox{\includegraphics[width=0.85\textwidth]{bilder/rechability.png}}
-	   \fbox{Quelle: \cite{Huff06} S. 17}
-		\caption[Beispielhafter Einsatz eines Content Servers]{Beispielhafter Einsatz eines Content Servers\protect\footnote}
-		\label{ucm-cs}
-\end{figure}
-\footnotetext{Quelle: \cite{Huff06} S. 17}
+
 
 Sessionanzahl
 
@@ -32,6 +25,15 @@ Die Architektur des Oracle UCM Systems gliedert sich in separate Komponenten auf
 \subsubsection{Content Server}
 Der Content Server ist das Herzstück der Oracle UCM Anwendung.
 Er dient als Grundgerüst (Framework) für darüberliegende Funktionen, da er für die Ablage der Dokumente sowie der Verwaltung der drei Teilbereiche, siehe Abbildung \ref{lifecircle}, verantwortlich ist.
+
+\begin{figure}[ht]
+	\centering
+	   %\fbox{\includegraphics[width=0.85\textwidth]{bilder/rechability.png}}
+	   \fbox{Quelle: \cite{Huff06} S. 17}
+		\caption[Beispielhafter Einsatz eines Content Servers]{Beispielhafter Einsatz eines Content Servers\protect\footnote}
+		\label{ucm-cs}
+\end{figure}
+\footnotetext{Quelle: \cite{Huff06} S. 17}
 
 Dieses Framework ist als Service-Oriented Architecture (\gls{SOA}) aufgebaut.
 Im Kontext des Content Servers wird als Service ein diskreter Aufruf einer Funktion verstanden.
@@ -182,7 +184,7 @@ Zur Systemüberwachung gehören auch allgemeine Informationen über die Systemre
 
 Die nächste Grundlage für die darüberliegenden Tests bildet die Überprüfung der laufenden Prozesse und der Status verschiedener Dienste bzw. Services.
 Sollten bestimmte Prozesse nicht gefunden werden oder wichtige Dienste nicht gestartet sein, können auf diese Prozesse und Dienste aufbauende Checks nicht funktionieren.
-Beispielweise kann der Funktionalitätstest der Benutzeranmeldung nicht realisierbar sein, wenn bereits zuvor in der Systemüberwachung der Prozess für den Webserver IIS nicht gefunden werden konnte.
+Beispielweise kann der Funktionalitätstest der Benutzeranmeldung nicht realisierbar sein, wenn bereits zuvor in der Systemüberwachung der Prozess für den Webserver \gls{IIS} nicht gefunden werden konnte.
 
 
 

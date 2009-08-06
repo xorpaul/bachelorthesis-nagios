@@ -47,7 +47,7 @@ define host{
 \end{lstlisting}
 
 In der Praxis werden öfters verwendete Attribute wie die Kontaktgruppe oder der Zeitraum für die aktiven Checks durch Verwendung eines übergeordneten Host-Objektes nach unten vererbt.
-Dadurch müssen nurnoch die spezifischen Informationen und der Name des übergeordneten Host-Objektes eingetragen werden.
+Dadurch müssen nur noch die spezifischen Informationen und der Name des übergeordneten Host-Objektes eingetragen werden.
 \begin{lstlisting}[captionpos=b, caption=Verkürzte Definition eines Hostobjektes, label=vhostobj, breaklines = true, language=sh]
 define host {
         use             windows-server #Oberklasse dieses Host-Objektes
@@ -77,7 +77,7 @@ define service{
         use                     generic-service #Oberklasse dieses Service-Objektes
         host_name               example.kit.edu
         service_description     HTTP Server #Bezeichnung des Checks
-        check_command           check_http #Angabe des NagiosPlugins (hier ohne Parameter)
+        check_command           check_http #Angabe des Nagios-Plugins (hier ohne Parameter)
         }
 
 \end{lstlisting}
@@ -103,7 +103,7 @@ Dieses Plugin liefert noch zusätzliche Performance-Informationen, die mit exter
 Standardmäßig werden die Performancedaten von der normalen Ausgabe mit einem \pictext{|} getrennt.
 Jedoch können auch Werte aus der normalen Textausgabe für die Visualisierung verwendet werden, so dass in diesem Beispiel keine Berechnung des Prozentsatzes notwendig wäre.
 
-Um diesen Service mit den angegebenen Schwellwerten von Nagios überwachenzulassen, muss folgende Servicedefinition in die Konfigurationsdatei eingetragen werden:
+Um diesen Service mit den angegebenen Schwellwerten von Nagios überwachen zulassen, muss folgende Servicedefinition in die Konfigurationsdatei eingetragen werden:
 
 \begin{lstlisting}[captionpos=b, caption=Beispielhafte (Definition) eines Servicechecks, label=servdef, breaklines = true, language=bash]
 # Define a service to check the swap disk space
@@ -140,7 +140,6 @@ Dabei wird in vier verschiedene Rückgabewerte / Antworten der Plugins unterschi
 %\hline
 3 & UNKNOWN &  Innerhalb des Plugins trat ein Fehler auf (zum Beispiel weil falsche Parameter verwendet wurden)\\
 %\hline
-\bottomrule
 \end{tabular}
 \caption[Rückgabewerte für Nagios Plugins]{Rückgabewerte für Nagios Plugins\protect\footnote} %\protect\footnote
 %\end{twoparttable}
@@ -162,7 +161,7 @@ Hier im Beispiel wechselt der Zustand nach CRITICAL, zunächst allerdings als So
 Daher wird durch Nagios noch keine Benachrichtigung versendet, da es sich um eine Falschmeldung, auch False Positive genannt, handeln kann.
 Aufgrund einer kurzweiligen / kurzfristigen (besseres Wort? peak mäßig) hohen Auslastung des Netzwerkes oder um ein kurzzeitiges Problem, welches sich von alleine wieder normalisiert. (Bspw. Prozessorauslastung)
 
-Um einen False Positive auszuschliessen, wird der im Soft State befindliche Service bzw. Host mit einer höheren Frequenz überprüft.
+Um einen False Positive auszuschließen, wird der im Soft State befindliche Service bzw. Host mit einer höheren Frequenz überprüft.
 Sollten diese Überprüfungen den vorherigen Zustand bestätigen, verfestigt sich der aktuelle Zustand, man spricht nun von einem Hard State / wechselt der Zustand in den Hard State.
 Erst in diesem Moment werden die entsprechenden Kontaktpersonen über den in diesem Beispiel kritischen Zustand benachrichtigt.
 Sollte sich der Zustand wieder in den Normalzustand begeben und dieser Zustandsübergang wird von dem (von Nagios ausgeführten) Plugin festgestellt, wird dies an den Nagios Server gemeldet.
