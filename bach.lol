@@ -7,3 +7,4 @@
 \contentsline {lstlisting}{\numberline {7}Servicedefinition des NSClient-Checks}{51}{lstlisting.7}
 \contentsline {lstlisting}{\numberline {8}Server spezifische Befehlsdefinition}{52}{lstlisting.8}
 \contentsline {lstlisting}{\numberline {9}Verk\IeC {\"u}rzte Servicedefinition des NSClient-Checks}{52}{lstlisting.9}
+\contentsline {lstlisting}{\numberline {10}Prozess- und Service-Check Servicedefintionen}{52}{lstlisting.10}

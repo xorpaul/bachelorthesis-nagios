@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2009.1.26)  6 AUG 2009 12:23
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2009.1.26)  6 AUG 2009 14:24
 entering extended mode
  %&-line parsing enabled.
 **bach.tex
@@ -660,7 +660,7 @@ on with the same identifier (name{page.4}) has been already used, duplicate ign
 ored
 <to be read again> 
                    \relax 
-l.22 
+l.26 
      
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png>
@@ -775,7 +775,7 @@ File: bilder/fzk2.png Graphic file (type png)
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[13] <bilder/ucm.png, id=488, 513.92pt x 288.07625pt>
+[13] <bilder/ucm.png, id=487, 513.92pt x 288.07625pt>
 File: bilder/ucm.png Graphic file (type png)
  <use bilder/ucm.png>
 File: bilder/fzk2.png Graphic file (type png)
@@ -811,7 +811,7 @@ File: bilder/fzk2.png Graphic file (type png)
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[16] <bilder/soa1.png, id=535, 1095.09125pt x 136.51pt>
+[16] <bilder/soa1.png, id=534, 1095.09125pt x 136.51pt>
 File: bilder/soa1.png Graphic file (type png)
  <use bilder/soa1.png>
 Overfull \hbox (1.82156pt too wide) in paragraph at lines 30--31
@@ -819,7 +819,7 @@ Overfull \hbox (1.82156pt too wide) in paragraph at lines 30--31
 e \T1/aer/m/it/12 Cre-dit Checking
  []
 
-<bilder/soa2.png, id=539, 1088.065pt x 229.85875pt>
+<bilder/soa2.png, id=538, 1088.065pt x 229.85875pt>
 File: bilder/soa2.png Graphic file (type png)
  <use bilder/soa2.png>
 File: bilder/fzk2.png Graphic file (type png)
@@ -868,7 +868,7 @@ File: bilder/fzk2.png Graphic file (type png)
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[21] <bilder/activechecks.png, id=623, 169.63374pt x 287.0725pt>
+[21] <bilder/activechecks.png, id=622, 169.63374pt x 287.0725pt>
 File: bilder/activechecks.png Graphic file (type png)
 
 <use bilder/activechecks.png>
@@ -893,7 +893,7 @@ File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 (/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
 File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 )
-<bilder/example-ping.png, id=632, 795.97375pt x 50.1875pt>
+<bilder/example-ping.png, id=631, 795.97375pt x 50.1875pt>
 File: bilder/example-ping.png Graphic file (type png)
 
 <use bilder/example-ping.png>
@@ -905,7 +905,7 @@ Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 [23] (/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
 File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 )
-<bilder/check-swap-white.png, id=664, 471.7625pt x 29.10875pt>
+<bilder/check-swap-white.png, id=663, 471.7625pt x 29.10875pt>
 File: bilder/check-swap-white.png Graphic file (type png)
 
 <use bilder/check-swap-white.png>
@@ -926,7 +926,7 @@ File: bilder/fzk2.png Graphic file (type png)
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[25] <bilder/hs-states.png, id=698, 762.85pt x 216.81pt>
+[25] <bilder/hs-states.png, id=697, 762.85pt x 216.81pt>
 File: bilder/hs-states.png Graphic file (type png)
 
 <use bilder/hs-states.png>
@@ -942,11 +942,11 @@ Overfull \hbox (58.05164pt too wide) in paragraph at lines 178--179
  []
 
 ) (./tex/services.tex
-<bilder/nagios-kern.png, id=712, 860.21375pt x 595.22375pt>
+<bilder/nagios-kern.png, id=711, 860.21375pt x 595.22375pt>
 File: bilder/nagios-kern.png Graphic file (type png)
 
 <use bilder/nagios-kern.png>
-<bilder/check-http.png, id=717, 638.385pt x 29.10875pt>
+<bilder/check-http.png, id=716, 638.385pt x 29.10875pt>
 File: bilder/check-http.png Graphic file (type png)
 
 <use bilder/check-http.png>
@@ -962,11 +962,11 @@ Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
 [28 <./bilder/nagios-kern.png> <./bilder/check-http.png (PNG copy)>]
-<bilder/check_by_ssh.png, id=738, 718.685pt x 28.105pt>
+<bilder/check_by_ssh.png, id=737, 718.685pt x 28.105pt>
 File: bilder/check_by_ssh.png Graphic file (type png)
 
 <use bilder/check_by_ssh.png>
-<bilder/nrpe.png, id=740, 665.6983pt x 164.89775pt>
+<bilder/nrpe.png, id=739, 665.6983pt x 164.89775pt>
 File: bilder/nrpe.png Graphic file (type png)
  <use bilder/nrpe.png>
 Overfull \hbox (27.42967pt too wide) in paragraph at lines 74--76
@@ -996,7 +996,7 @@ File: bilder/fzk2.png Graphic file (type png)
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[30] <bilder/mib.png, id=777, 310.2792pt x 151.767pt>
+[30] <bilder/mib.png, id=776, 310.2792pt x 151.767pt>
 File: bilder/mib.png Graphic file (type png)
  <use bilder/mib.png>
 File: bilder/fzk2.png Graphic file (type png)
@@ -1005,7 +1005,7 @@ File: bilder/fzk2.png Graphic file (type png)
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[31 <./bilder/mib.png>] <bilder/nsca.png, id=800, 645.41125pt x 202.7575pt>
+[31 <./bilder/mib.png>] <bilder/nsca.png, id=799, 645.41125pt x 202.7575pt>
 File: bilder/nsca.png Graphic file (type png)
 
 <use bilder/nsca.png>
@@ -1032,7 +1032,7 @@ Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
 [34] (./tex/stellent.tex
-<bilder/basic_architecture.png, id=827, 513.92pt x 760.8425pt>
+<bilder/basic_architecture.png, id=826, 513.92pt x 760.8425pt>
 File: bilder/basic_architecture.png Graphic file (type png)
 
 <use bilder/basic_architecture.png>
@@ -1048,7 +1048,7 @@ Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
 [35 <./bilder/basic_architecture.png (PNG copy)>]
-<bilder/bdb.png, id=844, 1096.095pt x 683.55376pt>
+<bilder/bdb.png, id=843, 1096.095pt x 683.55376pt>
 File: bilder/bdb.png Graphic file (type png)
  <use bilder/bdb.png>
 File: bilder/fzk2.png Graphic file (type png)
@@ -1091,7 +1091,7 @@ File: bilder/fzk2.png Graphic file (type png)
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[40] <bilder/pyramide_fertig2.png, id=877, 333.8874pt x 272.6988pt>
+[40] <bilder/pyramide_fertig2.png, id=876, 333.8874pt x 272.6988pt>
 File: bilder/pyramide_fertig2.png Graphic file (type png)
 
 <use bilder/pyramide_fertig2.png>
@@ -1145,11 +1145,11 @@ File: bilder/fzk2.png Graphic file (type png)
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[46] <bilder/monitoring-windows.png, id=944, 438.63875pt x 152.57pt>
+[46] <bilder/monitoring-windows.png, id=943, 438.63875pt x 152.57pt>
 File: bilder/monitoring-windows.png Graphic file (type png)
 
 <use bilder/monitoring-windows.png>
-<bilder/check_nt-stdp.png, id=945, 604.2575pt x 27.10126pt>
+<bilder/check_nt-stdp.png, id=944, 604.2575pt x 27.10126pt>
 File: bilder/check_nt-stdp.png Graphic file (type png)
 
 <use bilder/check_nt-stdp.png>
@@ -1159,10 +1159,10 @@ Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
 [47 <./bilder/monitoring-windows.png> <./bilder/check_nt-stdp.png>]
-<bilder/nsc1.png, id=958, 500.87125pt x 386.44376pt>
+<bilder/nsc1.png, id=957, 500.87125pt x 386.44376pt>
 File: bilder/nsc1.png Graphic file (type png)
  <use bilder/nsc1.png>
-<bilder/nsc2.png, id=959, 500.87125pt x 386.44376pt>
+<bilder/nsc2.png, id=958, 500.87125pt x 386.44376pt>
 File: bilder/nsc2.png Graphic file (type png)
  <use bilder/nsc2.png>
 Overfull \hbox (7.97778pt too wide) in paragraph at lines 125--127
@@ -1170,7 +1170,7 @@ Overfull \hbox (7.97778pt too wide) in paragraph at lines 125--127
 -Plugins \T1/aer/m/it/12 check_nt
  []
 
-<bilder/nagios-active-nsclient-and-nrpe.png, id=963, 379.4175pt x 186.6975pt>
+<bilder/nagios-active-nsclient-and-nrpe.png, id=962, 379.4175pt x 186.6975pt>
 File: bilder/nagios-active-nsclient-and-nrpe.png Graphic file (type png)
 
 <use bilder/nagios-active-nsclient-and-nrpe.png>
@@ -1199,11 +1199,11 @@ Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
 [50 <./bilder/nsc2.png>]
-<bilder/nrpe-check.png, id=1012, 666.49pt x 27.10126pt>
+<bilder/nrpe-check.png, id=1011, 666.49pt x 27.10126pt>
 File: bilder/nrpe-check.png Graphic file (type png)
 
 <use bilder/nrpe-check.png>
-<bilder/nsclient-check.png, id=1014, 687.56876pt x 27.10126pt>
+<bilder/nsclient-check.png, id=1013, 687.56876pt x 27.10126pt>
 File: bilder/nsclient-check.png Graphic file (type png)
 
 <use bilder/nsclient-check.png>
@@ -1221,25 +1221,36 @@ File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 ) (/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
 File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 )
+Overfull \hbox (11.24226pt too wide) in paragraph at lines 238--240
+\T1/aer/m/n/12 Die in Ka-pi-tel []7.1[] auf-ge-lis-ten Pro-zes-se und Ser-vices
+ kön-nen durch den NSClient-
+ []
+
+(/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
+File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
+)
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png>
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[52]
-Overfull \hbox (18.04457pt too wide) in paragraph at lines 280--281
+[52] <bilder/servproc.png, id=1065, 584.1825pt x 29.10875pt>
+File: bilder/servproc.png Graphic file (type png)
+
+<use bilder/servproc.png>
+Overfull \hbox (18.04457pt too wide) in paragraph at lines 293--294
 [][]$\T1/aett/m/n/12 http : / / www . w3schools . com / soap / default . asp$[]
  \T1/aer/m/n/12 Web Ser-vices und SOAP 
  []
 
-<bilder/wsdl.png, id=1050, 511.511pt x 273.02pt>
+<bilder/wsdl.png, id=1068, 511.511pt x 273.02pt>
 File: bilder/wsdl.png Graphic file (type png)
  <use bilder/wsdl.png>
-<bilder/wsdl-valid.png, id=1051, 1149.29375pt x 715.67375pt>
+<bilder/wsdl-valid.png, id=1069, 1149.29375pt x 715.67375pt>
 File: bilder/wsdl-valid.png Graphic file (type png)
 
 <use bilder/wsdl-valid.png>
-<bilder/Benutzersimulation.png, id=1052, 630.355pt x 472.76625pt>
+<bilder/Benutzersimulation.png, id=1070, 630.355pt x 472.76625pt>
 File: bilder/Benutzersimulation.png Graphic file (type png)
 
 <use bilder/Benutzersimulation.png>)
@@ -1248,8 +1259,8 @@ File: bilder/fzk2.png Graphic file (type png)
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[53 <./bilder/wsdl.png>] (./tex/ergebnis.tex
-<bilder/demo.png, id=1059, 835.12pt x 687.56876pt>
+[53 <./bilder/servproc.png>] (./tex/ergebnis.tex
+<bilder/demo.png, id=1077, 835.12pt x 687.56876pt>
 File: bilder/demo.png Graphic file (type png)
  <use bilder/demo.png>)
 File: bilder/fzk2.png Graphic file (type png)
@@ -1258,19 +1269,25 @@ File: bilder/fzk2.png Graphic file (type png)
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[54 <./bilder/wsdl-valid.png>] (./tex/ausblick.tex)
+[54 <./bilder/wsdl.png>] (./tex/ausblick.tex)
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png>
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[55 <./bilder/Benutzersimulation.png>] (./bach.lof
+[55 <./bilder/wsdl-valid.png>] (./bach.lof
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png>
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[56 <./bilder/demo.png (PNG copy)>])
+[56 <./bilder/Benutzersimulation.png>]
+File: bilder/fzk2.png Graphic file (type png)
+ <use bilder/fzk2.png>
+Overfull \vbox (1.68883pt too high) has occurred while \output is active []
+
+
+[57 <./bilder/demo.png (PNG copy)>])
 \tf@lof=\write9
 \openout9 = `bach.lof'.
 
@@ -1279,7 +1296,7 @@ File: bilder/fzk2.png Graphic file (type png)
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[57] (./bach.lol)
+[58] (./bach.lol)
 \tf@lol=\write10
 \openout10 = `bach.lol'.
 
@@ -1288,7 +1305,7 @@ File: bilder/fzk2.png Graphic file (type png)
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[58]
+[59]
 Underfull \hbox (badness 10000) in paragraph at lines 135--139
 []\T1/aer/m/n/12 Götzer; Schma-le; Mai-er; Kom-ke (2008) ^^RDokumenten-
  []
@@ -1308,13 +1325,13 @@ File: bilder/fzk2.png Graphic file (type png)
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[59]
+[60]
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png>
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[60]
+[61]
 Underfull \hbox (badness 10000) in paragraph at lines 160--161
 \T1/aer/m/n/12 Quelle: []$\T1/aett/m/n/12 http : / / download-[]west . oracle .
  com / docs / cd /
@@ -1355,7 +1372,7 @@ File: bilder/fzk2.png Graphic file (type png)
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[61] (./bach.gls
+[62] (./bach.gls
 Underfull \hbox (badness 10000) in paragraph at lines 10--11
 []|[]\T1/aer/m/n/12 9[], []11[],
  []
@@ -1395,28 +1412,28 @@ File: bilder/fzk2.png Graphic file (type png)
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[62]
+[63]
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png>
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[63])
+[64])
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png>
 Overfull \vbox (1.68883pt too high) has occurred while \output is active []
 
 
-[64] (./bach.aux)
+[65] (./bach.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 11242 strings out of 94074
- 154624 string characters out of 1165153
- 267938 words of memory out of 1500000
- 13813 multiletter control sequences out of 10000+50000
+ 11291 strings out of 94074
+ 155362 string characters out of 1165153
+ 272085 words of memory out of 1500000
+ 13841 multiletter control sequences out of 10000+50000
  41062 words of font info for 91 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
  48i,17n,93p,1128b,1573s stack positions out of 5000i,500n,6000p,200000b,5000s
@@ -1517,9 +1534,9 @@ esky/cm/cmsl12.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmsy10.pfb>
 exlive/fonts/type1/bluesky/cm/cmtt10.pfb></usr/share/texmf-texlive/fonts/type1/
 bluesky/cm/cmtt12.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmtt8.pf
 b></usr/share/texmf-texlive/fonts/type1/bluesky/ams/msam10.pfb>
-Output written on bach.pdf (69 pages, 2249258 bytes).
+Output written on bach.pdf (70 pages, 2285825 bytes).
 PDF statistics:
- 1348 PDF objects out of 1440 (max. 8388607)
- 348 named destinations out of 1000 (max. 131072)
- 660 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1378 PDF objects out of 1440 (max. 8388607)
+ 366 named destinations out of 1000 (max. 131072)
+ 665 words of extra memory for PDF output out of 10000 (max. 10000000)
 
