@@ -13,7 +13,7 @@
 \glsgroupheading{D}\relax \glsresetentrylist %
 \glossaryentryfield{DMS}{\glsnamefont{DMS}}{Dokumenten-Management-System}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter{page}\glsnumberformat{7}\delimN 
-		\setentrycounter{page}\glsnumberformat{13\delimN 14}}}%
+		\setentrycounter{page}\glsnumberformat{10\delimR 14}}}%
 \glossaryentryfield{DNS}{\glsnamefont{DNS}}{Domain Name System}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter{page}\glsnumberformat{31}}}%
 \glossaryentryfield{DoS}{\glsnamefont{DoS}}{Denial of Service}{\relax }{\glossaryentrynumbers{\relax 
@@ -30,6 +30,8 @@
 \glossaryentryfield{HTTP}{\glsnamefont{HTTP}}{Hypertext Transfer Protocol}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter{page}\glsnumberformat{18}}}\glsgroupskip
 \glsgroupheading{I}\relax \glsresetentrylist %
+\glossaryentryfield{IIS}{\glsnamefont{IIS}}{Internet Information Service}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{42}}}%
 \glossaryentryfield{IP}{\glsnamefont{IP}}{Identifikation Protokoll}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter{page}\glsnumberformat{5}\delimN 
 		\setentrycounter{page}\glsnumberformat{7}\delimN 
@@ -52,7 +54,8 @@
 		\setentrycounter{page}\glsnumberformat{29\delimN 30}\delimN 
 		\setentrycounter{page}\glsnumberformat{45}\delimN 
 		\setentrycounter{page}\glsnumberformat{47}\delimN 
-		\setentrycounter{page}\glsnumberformat{49}}}%
+		\setentrycounter{page}\glsnumberformat{49}\delimN 
+		\setentrycounter{page}\glsnumberformat{51}}}%
 \glossaryentryfield{NSCA}{\glsnamefont{NSCA}}{Nagios Service Check Acceptor}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter{page}\glsnumberformat{32}\delimN 
 		\setentrycounter{page}\glsnumberformat{45}}}\glsgroupskip
@@ -64,18 +67,23 @@
 \glsgroupheading{P}\relax \glsresetentrylist %
 \glossaryentryfield{PDF}{\glsnamefont{PDF}}{Portable Document Format}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter{page}\glsnumberformat{11}}}\glsgroupskip
+\glsgroupheading{R}\relax \glsresetentrylist %
+\glossaryentryfield{RPC}{\glsnamefont{RPC}}{Remote Procedure Call}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{49\delimN 50}}}\glsgroupskip
 \glsgroupheading{S}\relax \glsresetentrylist %
 \glossaryentryfield{SNMP}{\glsnamefont{SNMP}}{Simple Network Management Protocol}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter{page}\glsnumberformat{30\delimN 31}\delimN 
 		\setentrycounter{page}\glsnumberformat{45\delimR 47}}}%
 \glossaryentryfield{SOA}{\glsnamefont{SOA}}{Service-Oriented Architecture}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter{page}\glsnumberformat{16\delimR 18}\delimN 
-		\setentrycounter{page}\glsnumberformat{35}}}%
+		\setentrycounter{page}\glsnumberformat{36}}}%
 \glossaryentryfield{SOAP}{\glsnamefont{SOAP}}{Simple Object Access Protocol}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter{page}\glsnumberformat{18\delimR 20}}}%
 \glossaryentryfield{SSH}{\glsnamefont{SSH}}{Secure Shell}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter{page}\glsnumberformat{29\delimN 30}\delimN 
-		\setentrycounter{page}\glsnumberformat{44\delimN 45}}}\glsgroupskip
+		\setentrycounter{page}\glsnumberformat{44\delimN 45}}}%
+\glossaryentryfield{SSL}{\glsnamefont{SSL}}{Secure Sockets Layer}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{51}}}\glsgroupskip
 \glsgroupheading{U}\relax \glsresetentrylist %
 \glossaryentryfield{UCM}{\glsnamefont{UCM}}{Universal-Content-Management}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter{page}\glsnumberformat{16}}}%

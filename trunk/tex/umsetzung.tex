@@ -4,24 +4,24 @@ In diesem Kapitel wird die Vorgehensweise der zuvor beschriebenen Problemstellun
 \subsection{Aufbau der Testumgebung}
 
 
-
-
 \subsubsection{Aufsetzen eines Nagios-Test-Systems}
-Da die einzelnen Überwachungselemente in der Überwachungssoftware Nagios nach und nach eingetragen (/ definiert / assoziiert / verbunden) werden müssen, ist ein häufiges Neustarten der Nagios Anwendung notwendig, damit die neuen Konfigurationsdateien übernommen werden.
+Da die einzelnen Überwachungselemente in der Überwachungssoftware Nagios nach und nach eingetragen (/ definiert / assoziiert / verbunden) werden müssen, ist ein häufiges Neustarten der Nagios-Anwendung notwendig, damit die neuen Konfigurationsdateien übernommen werden.
 
-Damit dies nicht auf dem produktiven Nagios-Server durchgeführt werden muss, wird ein Nagios-Testserver für diesen Zwecks eingesetzt.
+Damit dies nicht auf dem bereits verwendetem Nagios-Server durchgeführt werden muss, wird ein Nagios-Testserver für diesen Zweck eingesetzt.
 
-\subsubsection{Bilddatenbank als VM}
+Da Nagios ein Unix-ähnliches Betriebssystem erfordert, wird für diesen Zweck die Linux-Distribution Debian als Betriebssystem des Testservers verwendet.
+
+\subsubsection{Bilddatenbank als virtuelle Maschine}
 Für die Simulation der verschiedenen Fehlerzuständen der einzelnen Überwachungselemente wird eine virtuelle Maschine mit einer \gls{OracleUCM} Prototypinstallation, die extra als Entwicklungsplattform erstellt wurde, verwendet.
 
 
 \subsection{Übersicht Nagios-Agenten}
 Im vorherigen Kapitel \ref{methoden} wurde erklärt, dass für das Überwachen von Diensten, die nicht über das Netzwerk zugreifbar sind, ein Nagios-Agent auf dem jeweiligen Rechner benötigt wird.
 
-In diesem Unterkapitel werden die populärsten Agenten für Unix und Windows Betriebsysteme aufgelistet und nach/in den Punkten Sicherheit, subjektiver Aufwand für die Konfiguration und Art der Abfragemethode (aktiv oder passiv) vergleicht.
-\newpage
+In diesem Unterkapitel werden die populärsten Agenten für Unix und Windows Betriebssysteme aufgelistet und nach/in den Punkten Sicherheit, subjektiver Aufwand für die Konfiguration und Art der Abfragemethode (aktiv oder passiv) vergleicht.
+
 \subsubsection{Unix-Agenten}
-Für die auf Unix basierenden Betriebsysteme werden fünf verschiedene Möglichkeiten angeboten, die (auch) zuvor in der Abbildung \ref{nagios-kern} als verschiedene Überwachungsmöglichkeiten von Nagios aufgelistet wurden.
+Für die auf Unix basierenden Betriebssysteme werden fünf verschiedene Möglichkeiten angeboten, die (auch) zuvor in der Abbildung \ref{nagios-kern} als verschiedene Überwachungsmöglichkeiten von Nagios aufgelistet wurden.
 
 \input{tex/tab-unixagents.tex}
 
@@ -29,19 +29,19 @@ Dabei werden drei Agenten genannt, die eine aktive Ausführung der Nagios-Plugin
 Alle drei Agenten unterscheiden sich jedoch in den (anderen) Punkten Sicherheit und Aufwand.
 Der auf \gls{SSH} basierende Agent besitzt einen relativ geringen Aufwand für die Installation, da für den Aufbau der Kommunikation zwischen Nagios-Server und Client nur der öffentliche Schlüssel des Servers auf dem Client eingetragen werden muss.
 Dadurch kann der Nagios-Server sich ohne Passwortabfrage an dem zu überwachendem Host anmelden und die sich darauf befindlichen Nagios-Plugins ausführen.
-Da auf den meisten Unixservern bereits ein \gls{SSH}-Server läuft und deshalb kein weiterer Port geöffnet oder eine weitere Software installiert werden muss, ist diese Methode den anderen meist vorzuziehen.
+Da auf den meisten Unix-Servern bereits ein \gls{SSH}-Server läuft und deshalb kein weiterer Port geöffnet oder eine weitere Software installiert werden muss, ist diese Methode den anderen meist vorzuziehen.
 
 Bei der \gls{NRPE}-Methode wird eine weitere Softwarekomponente auf dem Client installiert, die einen separaten Port für die Kommunikation mit dem Nagios-Server öffnet.
 Wie bei dem Aufruf per \gls{SSH} müssen sich hier die Nagios-Plugins bereits auf dem Rechner befinden.
 Dabei gilt als Unterschied dieser zwei ähnlichen Methoden zu beachten, dass für die Ausführung der Checks per \gls{SSH} ein extra Benutzerkonto auf dem Client erstellt werden muss und somit beliebige Systembefehle ausgeführt werden können, während die Ausführung von Kommandos bei \gls{NRPE} nur auf vorkonfigurierte Befehle beschränkt ist.
 Siehe auch Kapitel \ref{sshnrpe}.
 \label{unixagents}
-Da \gls{SNMP} plattformunabhängig funktioniert ist es mögliche diese Variante bei Unix- sowie bei Windowsservern einzusetzten.
+Da \gls{SNMP} plattformunabhängig funktioniert ist es mögliche diese Variante bei Unix- sowie bei Windowsservern einzusetzen.
 Die verwendete \gls{SNMP}-Version bestimmt welche Sicherheitsmerkmale zur Verfügung stehen.
 Zwar gibt es bereits seit Version 1 die Möglichkeit den Zugriff per Passwort in drei Gruppen aufzuteilen: kein Zugriff, Leserecht und Lese- mit Schreibrecht\footnote{Quelle: \cite{Barth08} S. 237}, jedoch wird dieses Passwort im Klartext übertragen, so dass es leicht auslesbar ist.
-Auch noch die Version 2 inklusive der erweiterten Version 2c verwendet die gleiche unsichere Authentifizierung.
+Auch die \gls{SNMP}-Version 2 inklusive der erweiterten Version 2c verwendet die gleiche unsichere Authentifizierung.
 Erst ab Version 3 wird das Passwort verschlüsselt übertragen.
-Während Barth behauptet, dass man bei \gls{SNMP} generell kein Passwort verwenden soll\footnote{Quelle: \cite{Barth08} S. 238}, da es leicht per Netzwerkmitschnittprogramme wie WireShark ausgelesen werden kann, wird in \cite{Jose07} S. 121} klargestellt, dass die Version 3 eine verschlüsselte Authentifizierung durch den MD5- oder SHA-Algorithmus ermöglicht.
+Während Barth behauptet, dass man bei \gls{SNMP} generell kein Passwort verwenden soll\footnote{Quelle: \cite{Barth08} S. 238}, da es leicht per Netzwerkmitschnittprogramme wie WireShark ausgelesen werden kann, wird in \cite{Jose07} S. 121 klargestellt, dass die Version 3 eine verschlüsselte Authentifizierung durch den MD5- oder SHA-Algorithmus ermöglicht.
 
 Die passive Variante über \gls{SNMP} bei der der Client die Ergebnisse der Checks an den Nagios-Server sendet, auch \gls{SNMP}-Traps genannt, funktioniert nach dem gleichen Prinzip.
 Da das Auslesen der \gls{MIB} per \gls{SNMP} im Gegensatz zu den anderen Varianten deutlich komplexer ist, wird der Aufwand als hoch eingestuft.
@@ -53,17 +53,17 @@ Die Liste mit diesen \gls{IP}-Adressen nennt man auch \textit{Accesslist}.
 
 \subsubsection{Windows-Agenten}
 Da die zu überwachende Oracle UCM Anwendung auf einem Windows-Server betrieben wird und die bereits vorgestellten Agenten mit Ausnahme der \gls{SNMP}-Varianten nur unter Unix einsetzbar sind, müssen zusätzlich die explizit für Windows entwickelten Nagios-Agenten untersucht werden.
-Dabei wird die Auswahl der Kandiaten auf folgende Auswahl eingeschränkt:
+Dabei wird die Auswahl der Kandidaten auf folgende Auswahl eingeschränkt:
 
 \input{tex/tab-winagents.tex}
 
-Das erste und zugleich älteste Programm NSClient wird nicht mehr aktiv entwickelt und ist als aktuelleste Version 2.0.1 aus dem Jahre 2003 bereits recht alt.
+Das erste und zugleich älteste Programm NSClient wird nicht mehr aktiv entwickelt und ist als aktuellste Version 2.0.1 aus dem Jahre 2003 bereits recht alt.
 Daher wird auch keine Verschlüsselung der ein- und ausgehenden Daten unterstützt.
 Auch bietet NSClient keine Möglichkeit aktiv vom Nagios-Server aus Nagios-Plugins auszuführen, die sich auf dem zu überwachendem Host befinden.
 
 Der NSClient liefert als Grundlage die Möglichkeit lokale Windows-Ressourcen über einen Dienst abzufragen, der sich über das Netzwerk mit eigenem Port (Standport 1248) ansprechen lässt.
 Das Plugin \textit{check\_nt} wurde explizit für diesen NSClient-Dienst entwickelt und steht durch die Nagios-Plugins standardmäßig zur Verfügung.
-Dadurch können grundlegende Informationen für die Systemüberwachung wie Zustände von Prozesse, Services, CPU-Auslastung, Festplattenplatz, usw. abgefragt werden, siehe Kapitel \ref{syscheck}.
+Dadurch können grundlegende Informationen für die Systemüberwachung wie Zustände von Prozesse, Services, CPU-Auslastung, Festplattenplatz, usw. abgefragt werden, siehe Kapitel \ref{syschecks}.
 
 Diese Abfrage kann durch die Ausführung auf der Kommandozeile getestet werden:
 
@@ -74,10 +74,10 @@ Diese Abfrage kann durch die Ausführung auf der Kommandozeile getestet werden:
 		\label{fig:cknt}
 \end{figure}
 
-Um dies auch für Windows-Server zu ermöglich gibt es eine auf Windows portierte \gls{NRPE}-Variante, die sich NRPE\_NT nennt.
+Um dies auch für Windows-Server zu ermöglichen gibt es eine auf Windows portierte \gls{NRPE}-Variante, die sich NRPE\_NT nennt.
 Hier lassen sich die Plugins direkt über den Nagios-Server aufrufen und die ausgetauschten Informationen werden verschlüsselt über das Netzwerk übertragen.
 
-Beide bisher genannte Windows-Agenten bieten keine Möglichkeit eine Accesslist anzulegen, erst das Programm NC\_net bietet diese Möglichkeit inklusive dem Sicheheitsmerkmal Verschlüsselung an.
+Beide bisher genannte Windows-Agenten bieten keine Möglichkeit eine \textit{Accesslist} anzulegen, erst das Programm NC\_net bietet diese Möglichkeit inklusive dem Sicherheitsmerkmal Verschlüsselung an.
 Außerdem können durch den eingebauten \gls{NRPE}-Dienst aktiv Nagios-Plugins auf dem Client aufgerufen werden.
 Als Besonderheit lassen sich durch NC\_net sowohl aktiv als auch passiv Testergebnisse an den Nagios-Server übertragen. 
 
@@ -86,7 +86,7 @@ Der Nagios-Agent NSClient++ besitzt diesselben Merkmale wie NC\_net, jedoch kann
 Die Möglichkeit Informationen per \gls{SNMP} und \gls{SNMP}-Traps abzufragen ist auch unter Windows möglich.
 Dabei gelten die gleichen Richtlinien, Hinweise und Einschränkungen wie zuvor in Kapitel \ref{unixagents}.
 
-\subsubsection{Auswahl und Konfiguration des Windows-Agenten}
+\subsubsection{Auswahl und Konfiguration des Nagios-Agenten}
 
 \paragraph{Auswahl}
 Anhand der im vorherigen Kapitel beschriebenen Übersicht der Windows-Agenten und der daraus resultierenden Übersichtstabelle \ref{tab:winagents} wird ein geeigneter Kandidat für die Testumgebung ausgewählt.
@@ -98,7 +98,7 @@ Der Nagios-Agent NSClient++ kann im Gegensatz zu den meisten anderen Windows-Age
 
 \begin{figure}[ht]
 	\centering
-	   \fbox{\includegraphics[width=0.75\textwidth]{bilder/nsc1.png}}
+	   \fbox{\includegraphics[width=0.85\textwidth]{bilder/nsc1.png}}
 		\caption{Installation des NSClient++}
 		\label{nscs1}
 \end{figure}
@@ -130,8 +130,6 @@ Dabei läuft die Kommunikation zwischen dem Nagios- und dem Windows-Server folge
 Da es bei Windows-Server mit vielen Verbindungen und Diensten zu Remote Procedure Calls (\gls{RPC}) kommen kann, bei denen dynamisch Ports ab 1025 verwendet werden, könnte der Standardport des NSClient-Dienstes (1248) unter Umständen bereits vor dem Start des Dienstes belegt sein.\footnote{Quelle: \cite{Barth08} S. 481}
 Um dies zu verhindern wurde der Port des NSClient-Dienstes beim NSClient++ bereits auf einen höheren Port (12489) gewechselt.
 
-
-
 Alle bisherigen Einstellungen können in der Konfigurationsdatei \textit{NSC.ini}, die sich in dem Installationsverzeichnis des NSClient++ befindet, verändert werden.
 In dieser Datei befinden sich noch mehr Einstellungsmöglichkeiten; im Folgenden werden nur für die Umsetzung relevanten (notwendig essentiell benötigten) Parameter aufgelistet.
 
@@ -154,32 +152,78 @@ check_uname=scripts\check_uname.exe
 check_reflog=scripts\check_logfiles.exe -f scripts\logfile.cfg
 \end{lstlisting}
 
-Damit die vorgenommen Änderung übernommen werden, muss der Dienst des NSClient++ neugestartet werden. 
+Damit die vorgenommen Änderung übernommen werden, muss der Dienst des NSClient++ neu gestartet werden. 
 
-\begin{figure}[ht]
-	\centering
-	   \fbox{\includegraphics[width=0.85\textwidth]{bilder/nsc3.png}}
-		\caption{NSClient++ Windowsdiensteintrag}
-		\label{nscs3}
-\end{figure}
+%\begin{figure}[ht]
+%	\centering
+%	   \fbox{\includegraphics[width=0.85\textwidth]{bilder/nsc3.png}}
+%		\caption{NSClient++ Windowsdiensteintrag}
+%		\label{nscs3}
+%\end{figure}
 
 Durch das Ausweichen auf höher gelegene Portnummern können die zuvor genannten Probleme aufgrund der \gls{RPC}s verhindert werden.
 
 Der bereits höher liegende Standardport des NSClient-Dienstes beim NSClient++ wird zusätzlich noch abgeändert, damit die Tatsache, dass sich ein Nagios-Agent auf dem Computer befindet, nicht sofort ersichtlich ist.
 Dieser sicherheitstechnische Aspekt wurde bereits in Kapitel \ref{changeport} behandelt.
 
-Damit die \gls{SSL}-Verschlüsselung zwischen den Servern aktiviert wird, muss man es explizit in der Konfigurationsdatei angeben.
+Damit die \gls{SSL}-Verschlüsselung zwischen den Servern aktiviert wird, muss man es explizit in der Konfigurationsdatei mit der Option \textit{use\_ssl=1} angeben.
 
 Die Definitionen der \gls{NRPE}-Kommandos dienen dafür, dass durch den Nagios-Server per \textit{check\_nrpe} mit dem Befehlsnamen der darauf folgende Befehl ausgeführt wird.
 
-Ein Aufruf eines solchen \gls{NRPE}-Kommandos vom Nagios-Server wird im folgendem Code-Listing gezeigt:
+Aufgrund der abgeänderten Portnummer muss man den Port bei dem Aufruf explizit angeben.
+Ein Aufruf eines solchen \gls{NRPE}-Kommandos vom Nagios-Server wird in der folgenden Abbildung gezeigt:
 
-\begin{lstlisting}[captionpos=b, caption=Aufruf eines NRPE-Kommandos, label=nrpe-command-example, breaklines = true]
-root@iwrpaul:/usr/local/nagios/plugins# ./check_nrpe -H secret.kit.edu -p 123456 -c check_uname
-Operating System OK - Microsoft(R) Windows(R) Server 2003 Standard Edition Service Pack 2
+\begin{figure}[ht]
+	\centering
+	   \fbox{\includegraphics[width=0.85\textwidth]{bilder/nrpe-check.png}}
+		\caption{Aufruf eines NRPE-Kommandos}
+		\label{nrpecheck}
+\end{figure}
+
+
+
+Anhand des Befehlsnamens \textit{check\_uname} führt der \gls{NRPE}-Dienst die in der Konfigurationsdatei eingetragene Datei \textit{check\_uname.exe} aus.
+
+Der Aufruf um Informationen durch den NSClient-Dienst abzufragen sieht ähnlich aus:
+
+\begin{figure}[ht]
+	\centering
+	   \fbox{\includegraphics[width=0.85\textwidth]{bilder/nsclient-check.png}}
+		\caption{Aufruf des NSClient-Dienstes}
+		\label{ntcheck}
+\end{figure}
+
+Die Servicedefinition des vorherigen NSClient-Aufrufs muss wie nachfolgend/folgt in der Nagios-Konfiguration eingetragen:
+\begin{lstlisting}[captionpos=b, caption=Servicedefinition des NSClient-Checks, label=nt-servdef, breaklines = true, language=sh]
+define service{
+        use                     generic-service
+        host_name               example.kit.edu
+        service_description     Uptime
+        check_command           check_nt!-p 13596 -s secret -v UPTIME
+        }
 \end{lstlisting}
 
-Aufgrund des Befehlsnamens führt der \gls{NRPE}-Dienst die in der Konfigurationsdatei eingetragene Datei \textit{check\_uname.exe} aus.
+Damit nicht jeder einzelne Serviceeintrag abgeändert werden muss, falls sich der Port oder das Passwort des zu überwachenden Computers ändert, können eigene Befehlsdefinitionen erstellt werden.
+
+\begin{lstlisting}[captionpos=b, caption=Server spezifische Befehlsdefinition, label=cus-nt-servdef, breaklines = true, language=sh]        
+define command{
+        command_name    check_nt_example
+        command_line    /usr/lib/nagios/plugins/check_nt -H $HOSTNAME$ -p 13597 -p secret -v $ARG1$
+        }
+\end{lstlisting}
+
+Dadurch muss nur diese Befehlsdefinition bei einer Änderung bearbeitet werden.
+Die vorherige Servicedefinition \ref{ntcheck} kann dann in verkürzter Form eingetragen werden:
+
+\begin{lstlisting}[captionpos=b, caption=Verkürzte Servicedefinition des NSClient-Checks, label=nt-servdef, breaklines = true, language=sh]
+define service{
+        use                     generic-service
+        host_name               example.kit.edu
+        service_description     Uptime
+        check_command           check_nt_example!UPTIME
+        }
+\end{lstlisting}
+
 
 
 
@@ -190,17 +234,6 @@ Aufgrund des Befehlsnamens führt der \gls{NRPE}-Dienst die in der Konfiguration
 \item WireShark bild von der Verschlüsselung
 \end{itemize}
 
-Danach command definition hinzufügen, weil PW und Port verändert wurde:
-\begin{lstlisting}[captionpos=b, caption=Nagios-Befehls Definition für den Host, label=cmddefbdb, breaklines = true, language=sh]
-# 'check_nt_bdb' command definition
-#	_NSCLIENT_PORT	1337
-#	_NSCLIENT_PW	asdasdasd
-#
-define command{
-    command_name    check_nc_net_bdb
-	command_line 	/usr/lib/nagios/plugins/check_nc_net -H $HOSTNAME$ -p 1337 -s asdasdasd -v $ARG1$
-        }
-\end{lstlisting}
 
 Danach
 \begin{itemize}
