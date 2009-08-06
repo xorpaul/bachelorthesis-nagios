@@ -21,13 +21,13 @@
 \contentsline {figure}{\numberline {20}{\ignorespaces \IeC {\"U}berwachungselemente}}{42}{figure.20}
 \contentsline {figure}{\numberline {21}{\ignorespaces Abfrage von Windows-Ressourcen durch \textit {check\_nt}}}{47}{figure.21}
 \contentsline {figure}{\numberline {22}{\ignorespaces Zugriff auf den NSClient-Dienst durch check\_nt}}{47}{figure.22}
-\contentsline {figure}{\numberline {23}{\ignorespaces Installation des NSClient++}}{49}{figure.23}
-\contentsline {figure}{\numberline {24}{\ignorespaces Konfiguration des NSClient++ w\IeC {\"a}hrend der Installation}}{50}{figure.24}
-\contentsline {figure}{\numberline {25}{\ignorespaces Kommunikation zwischen Nagios und NSClient++}}{51}{figure.25}
+\contentsline {figure}{\numberline {23}{\ignorespaces Installation des NSClient++}}{48}{figure.23}
+\contentsline {figure}{\numberline {24}{\ignorespaces Konfiguration des NSClient++ w\IeC {\"a}hrend der Installation}}{49}{figure.24}
+\contentsline {figure}{\numberline {25}{\ignorespaces Kommunikation zwischen Nagios und NSClient++}}{49}{figure.25}
 \contentsline {figure}{\numberline {26}{\ignorespaces Aufruf eines NRPE-Kommandos}}{51}{figure.26}
 \contentsline {figure}{\numberline {27}{\ignorespaces Aufruf des NSClient-Dienstes}}{51}{figure.27}
 \contentsline {figure}{\numberline {28}{\ignorespaces Prozess- und Dienst\IeC {\"u}berwachung im Nagios-Webinterface}}{53}{figure.28}
-\contentsline {figure}{\numberline {29}{\ignorespaces Ablauf der Benutzersimulation}}{54}{figure.29}
-\contentsline {figure}{\numberline {30}{\ignorespaces \IeC {\"U}berpr\IeC {\"u}fung der Benutzersimulation}}{55}{figure.30}
-\contentsline {figure}{\numberline {31}{\ignorespaces Ablauf der Benutzersimulation}}{56}{figure.31}
-\contentsline {figure}{\numberline {32}{\ignorespaces Webinterface von Nagios}}{57}{figure.32}
+\contentsline {figure}{\numberline {29}{\ignorespaces Ablauf der Benutzersimulation}}{56}{figure.29}
+\contentsline {figure}{\numberline {30}{\ignorespaces \IeC {\"U}berpr\IeC {\"u}fung der Benutzersimulation}}{57}{figure.30}
+\contentsline {figure}{\numberline {31}{\ignorespaces Ablauf der Benutzersimulation}}{58}{figure.31}
+\contentsline {figure}{\numberline {32}{\ignorespaces Webinterface von Nagios}}{59}{figure.32}
