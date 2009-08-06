@@ -68,9 +68,9 @@ define service{
 #CPU Auslastung der letzten 5 Minuten
 define service{
         use                     generic-service
-        host_name               bilddatenbank.ka.fzk.de
+        host_name               example.kit.edu
         service_description     CPU Load
-        check_command           check_nc_net_bdb!CPULOAD -l 5,80,100
+        check_command           check_nt_example!CPULOAD -l 5,80,100
         }
 \end{lstlisting}
 
@@ -78,21 +78,34 @@ Für diese Festplattenüberwachung versendet Nagios eine Warnung, wenn der beleg
 Bei der Prozessorüberwachung schlägt Nagios Alarm, wenn der Mittelwert der Auslastung in den letzten fünf Minuten mehr als 80\% bzw. 100\%  betragen hat.
 
 
-\subsection{Umsetzung der Funktionlitätstest}
-\begin{itemize}
-\item batchloader + .blo Dateien
-\item einloggen mit lokalem und ads benutzer
-\end{itemize}
+\input{tex/funkttests.tex}
+
+\subsection{Auswertung der Logdateien}
+
+Um die drei genannten Logdateien aus Kapitel \ref{checklog} auszuwerten wird durch den \gls{NRPE}-Dienst das Plugin \textit{check\_logfiles} von Gerhard Laußer eingesetzt.
+
+Dieses Plugin besitzt bereits einige nützliche Funktionen für die Überwachung von Logdateien.
+Durch das Setzten eines Zeitstempels filter das Plugin veraltete Einträge heraus und untersucht nur neu hinzugekommene Zeilen.
+Der Rotationsalgorithmus der Oracle UCM-Logdateien kann dem Plugin durch die Verwendung einer Konfigurationsdatei mitgeteilt werden.
+
+Die Konfigurationsdatei für das \textit{check\_logfiles}-Plugin wird im folgendem Listing gezeigt:
 
 
+\begin{lstlisting}[captionpos=b, caption=Konfigurationsdatei für \textit{check\_logfiles}, label=chklogcfg, breaklines = true, language=sh]
+@searches = ({
+  tag => 'ucmlogs',
+  type => 'rotating::uniform',
+  logfile => 'D:/bdb2/weblayout/groups/secure/logs/bdb/IdcLnLog.htm',
+  rotation => 'refinery\d{2}\.htm',
+  options => 'maxlength=623,nologfilenocry',
+  warningpatterns => [
+        'Cannot identify file',
+	  'Bad CRC value in IHDR chunk',
+	  'Der Dateiname darf nicht länger als 80 Zeichen sein',
+    ],
+});
+\end{lstlisting}
 
-\subsection{Auswertung der Logs + Stopwörterdefinition}
-\begin{itemize}
-\item Logfiles check.exe 
-\item batchloader.exe script
-\item check\_logfiles
-\item check\_logfiles cfg file inkl. Rotation
-\end{itemize}
 
 \subsection{Benutzersimulation}
 

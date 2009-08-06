@@ -84,17 +84,16 @@
 \glossaryentry{SOA?\glossaryentryfield{SOA}{\glsnamefont{SOA}}{Service-Oriented Architecture}{\relax }|setentrycounter{page}\glsnumberformat}{36}
 \glossaryentry{SOA?\glossaryentryfield{SOA}{\glsnamefont{SOA}}{Service-Oriented Architecture}{\relax }|setentrycounter{page}\glsnumberformat}{36}
 \glossaryentry{IIS?\glossaryentryfield{IIS}{\glsnamefont{IIS}}{Internet Information Service}{\relax }|setentrycounter{page}\glsnumberformat}{42}
-\glossaryentry{OracleUCM?\glossaryentryfield{OracleUCM}{\glsnamefont{OracleUCM}}{Content-Management-System von Oracle}{\relax }|setentrycounter{page}\glsnumberformat}{43}
+\glossaryentry{SSH?\glossaryentryfield{SSH}{\glsnamefont{SSH}}{Secure Shell}{\relax }|setentrycounter{page}\glsnumberformat}{43}
+\glossaryentry{SSH?\glossaryentryfield{SSH}{\glsnamefont{SSH}}{Secure Shell}{\relax }|setentrycounter{page}\glsnumberformat}{43}
 \glossaryentry{IP?\glossaryentryfield{IP}{\glsnamefont{IP}}{Identifikation Protokoll}{\relax }|setentrycounter{page}\glsnumberformat}{44}
 \glossaryentry{SSH?\glossaryentryfield{SSH}{\glsnamefont{SSH}}{Secure Shell}{\relax }|setentrycounter{page}\glsnumberformat}{44}
+\glossaryentry{NRPE?\glossaryentryfield{NRPE}{\glsnamefont{NRPE}}{Nagios Remote Plugin Executor}{\relax }|setentrycounter{page}\glsnumberformat}{44}
 \glossaryentry{SSH?\glossaryentryfield{SSH}{\glsnamefont{SSH}}{Secure Shell}{\relax }|setentrycounter{page}\glsnumberformat}{44}
 \glossaryentry{SSH?\glossaryentryfield{SSH}{\glsnamefont{SSH}}{Secure Shell}{\relax }|setentrycounter{page}\glsnumberformat}{44}
-\glossaryentry{NRPE?\glossaryentryfield{NRPE}{\glsnamefont{NRPE}}{Nagios Remote Plugin Executor}{\relax }|setentrycounter{page}\glsnumberformat}{45}
-\glossaryentry{SSH?\glossaryentryfield{SSH}{\glsnamefont{SSH}}{Secure Shell}{\relax }|setentrycounter{page}\glsnumberformat}{45}
-\glossaryentry{SSH?\glossaryentryfield{SSH}{\glsnamefont{SSH}}{Secure Shell}{\relax }|setentrycounter{page}\glsnumberformat}{45}
-\glossaryentry{NRPE?\glossaryentryfield{NRPE}{\glsnamefont{NRPE}}{Nagios Remote Plugin Executor}{\relax }|setentrycounter{page}\glsnumberformat}{45}
-\glossaryentry{SNMP?\glossaryentryfield{SNMP}{\glsnamefont{SNMP}}{Simple Network Management Protocol}{\relax }|setentrycounter{page}\glsnumberformat}{45}
-\glossaryentry{SNMP?\glossaryentryfield{SNMP}{\glsnamefont{SNMP}}{Simple Network Management Protocol}{\relax }|setentrycounter{page}\glsnumberformat}{45}
+\glossaryentry{NRPE?\glossaryentryfield{NRPE}{\glsnamefont{NRPE}}{Nagios Remote Plugin Executor}{\relax }|setentrycounter{page}\glsnumberformat}{44}
+\glossaryentry{SNMP?\glossaryentryfield{SNMP}{\glsnamefont{SNMP}}{Simple Network Management Protocol}{\relax }|setentrycounter{page}\glsnumberformat}{44}
+\glossaryentry{SNMP?\glossaryentryfield{SNMP}{\glsnamefont{SNMP}}{Simple Network Management Protocol}{\relax }|setentrycounter{page}\glsnumberformat}{44}
 \glossaryentry{SNMP?\glossaryentryfield{SNMP}{\glsnamefont{SNMP}}{Simple Network Management Protocol}{\relax }|setentrycounter{page}\glsnumberformat}{45}
 \glossaryentry{SNMP?\glossaryentryfield{SNMP}{\glsnamefont{SNMP}}{Simple Network Management Protocol}{\relax }|setentrycounter{page}\glsnumberformat}{45}
 \glossaryentry{SNMP?\glossaryentryfield{SNMP}{\glsnamefont{SNMP}}{Simple Network Management Protocol}{\relax }|setentrycounter{page}\glsnumberformat}{45}
@@ -102,21 +101,24 @@
 \glossaryentry{MIB?\glossaryentryfield{MIB}{\glsnamefont{MIB}}{Management Information Base}{\relax }|setentrycounter{page}\glsnumberformat}{45}
 \glossaryentry{SNMP?\glossaryentryfield{SNMP}{\glsnamefont{SNMP}}{Simple Network Management Protocol}{\relax }|setentrycounter{page}\glsnumberformat}{45}
 \glossaryentry{NSCA?\glossaryentryfield{NSCA}{\glsnamefont{NSCA}}{Nagios Service Check Acceptor}{\relax }|setentrycounter{page}\glsnumberformat}{45}
+\glossaryentry{IP?\glossaryentryfield{IP}{\glsnamefont{IP}}{Identifikation Protokoll}{\relax }|setentrycounter{page}\glsnumberformat}{45}
+\glossaryentry{IP?\glossaryentryfield{IP}{\glsnamefont{IP}}{Identifikation Protokoll}{\relax }|setentrycounter{page}\glsnumberformat}{45}
+\glossaryentry{SNMP?\glossaryentryfield{SNMP}{\glsnamefont{SNMP}}{Simple Network Management Protocol}{\relax }|setentrycounter{page}\glsnumberformat}{45}
 \glossaryentry{IP?\glossaryentryfield{IP}{\glsnamefont{IP}}{Identifikation Protokoll}{\relax }|setentrycounter{page}\glsnumberformat}{46}
-\glossaryentry{IP?\glossaryentryfield{IP}{\glsnamefont{IP}}{Identifikation Protokoll}{\relax }|setentrycounter{page}\glsnumberformat}{46}
-\glossaryentry{SNMP?\glossaryentryfield{SNMP}{\glsnamefont{SNMP}}{Simple Network Management Protocol}{\relax }|setentrycounter{page}\glsnumberformat}{46}
-\glossaryentry{IP?\glossaryentryfield{IP}{\glsnamefont{IP}}{Identifikation Protokoll}{\relax }|setentrycounter{page}\glsnumberformat}{46}
+\glossaryentry{NRPE?\glossaryentryfield{NRPE}{\glsnamefont{NRPE}}{Nagios Remote Plugin Executor}{\relax }|setentrycounter{page}\glsnumberformat}{46}
 \glossaryentry{NRPE?\glossaryentryfield{NRPE}{\glsnamefont{NRPE}}{Nagios Remote Plugin Executor}{\relax }|setentrycounter{page}\glsnumberformat}{47}
-\glossaryentry{NRPE?\glossaryentryfield{NRPE}{\glsnamefont{NRPE}}{Nagios Remote Plugin Executor}{\relax }|setentrycounter{page}\glsnumberformat}{48}
-\glossaryentry{SNMP?\glossaryentryfield{SNMP}{\glsnamefont{SNMP}}{Simple Network Management Protocol}{\relax }|setentrycounter{page}\glsnumberformat}{48}
-\glossaryentry{SNMP?\glossaryentryfield{SNMP}{\glsnamefont{SNMP}}{Simple Network Management Protocol}{\relax }|setentrycounter{page}\glsnumberformat}{48}
+\glossaryentry{SNMP?\glossaryentryfield{SNMP}{\glsnamefont{SNMP}}{Simple Network Management Protocol}{\relax }|setentrycounter{page}\glsnumberformat}{47}
+\glossaryentry{SNMP?\glossaryentryfield{SNMP}{\glsnamefont{SNMP}}{Simple Network Management Protocol}{\relax }|setentrycounter{page}\glsnumberformat}{47}
 \glossaryentry{IP?\glossaryentryfield{IP}{\glsnamefont{IP}}{Identifikation Protokoll}{\relax }|setentrycounter{page}\glsnumberformat}{48}
 \glossaryentry{FQDN?\glossaryentryfield{FQDN}{\glsnamefont{FQDN}}{Fully Qualified Domain Name}{\relax }|setentrycounter{page}\glsnumberformat}{48}
 \glossaryentry{NRPE?\glossaryentryfield{NRPE}{\glsnamefont{NRPE}}{Nagios Remote Plugin Executor}{\relax }|setentrycounter{page}\glsnumberformat}{48}
 \glossaryentry{RPC?\glossaryentryfield{RPC}{\glsnamefont{RPC}}{Remote Procedure Call}{\relax }|setentrycounter{page}\glsnumberformat}{49}
 \glossaryentry{RPC?\glossaryentryfield{RPC}{\glsnamefont{RPC}}{Remote Procedure Call}{\relax }|setentrycounter{page}\glsnumberformat}{50}
 \glossaryentry{SSL?\glossaryentryfield{SSL}{\glsnamefont{SSL}}{Secure Sockets Layer}{\relax }|setentrycounter{page}\glsnumberformat}{50}
+\glossaryentry{NRPE?\glossaryentryfield{NRPE}{\glsnamefont{NRPE}}{Nagios Remote Plugin Executor}{\relax }|setentrycounter{page}\glsnumberformat}{50}
+\glossaryentry{NRPE?\glossaryentryfield{NRPE}{\glsnamefont{NRPE}}{Nagios Remote Plugin Executor}{\relax }|setentrycounter{page}\glsnumberformat}{50}
 \glossaryentry{NRPE?\glossaryentryfield{NRPE}{\glsnamefont{NRPE}}{Nagios Remote Plugin Executor}{\relax }|setentrycounter{page}\glsnumberformat}{51}
-\glossaryentry{NRPE?\glossaryentryfield{NRPE}{\glsnamefont{NRPE}}{Nagios Remote Plugin Executor}{\relax }|setentrycounter{page}\glsnumberformat}{51}
-\glossaryentry{NRPE?\glossaryentryfield{NRPE}{\glsnamefont{NRPE}}{Nagios Remote Plugin Executor}{\relax }|setentrycounter{page}\glsnumberformat}{51}
+\glossaryentry{OracleUCM?\glossaryentryfield{OracleUCM}{\glsnamefont{OracleUCM}}{Content-Management-System von Oracle}{\relax }|setentrycounter{page}\glsnumberformat}{52}
 \glossaryentry{IIS?\glossaryentryfield{IIS}{\glsnamefont{IIS}}{Internet Information Service}{\relax }|setentrycounter{page}\glsnumberformat}{53}
+\glossaryentry{SSL?\glossaryentryfield{SSL}{\glsnamefont{SSL}}{Secure Sockets Layer}{\relax }|setentrycounter{page}\glsnumberformat}{54}
+\glossaryentry{NRPE?\glossaryentryfield{NRPE}{\glsnamefont{NRPE}}{Nagios Remote Plugin Executor}{\relax }|setentrycounter{page}\glsnumberformat}{55}

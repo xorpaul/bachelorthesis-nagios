@@ -100,6 +100,7 @@ Dabei können weitere Untergruppen gebildet werden.
 \end{itemize}
 
 \subsection{Überwachung der Funktionalität}
+\label{funztest}
 Durch die vorherigen Tests kann herausgefunden werden, ob eine Anwendung oder ein Dienst auf dem Server gestarten wurde.
 Die Funktionalität kann durch solche Überprüfungen jedoch \textbf{nicht} sichergestellt werden.
 Da beispielsweise der Prozess bzw. Dienst des Webservers gestartet ist, jedoch keine Webseite aufgerufen werden kann.
@@ -119,10 +120,11 @@ Dies wird mit Anmeldungsdaten eines lokalen Benutzers und eines Active Directory
 %\item \textbf{Status von Cronjobs} In periodischen Zeitabständen werden Programme aufgerufen, deren Aufruf und Endstatus/Endergebniss überwacht werden muss. 
 %Damit nicht das vorherige Ergebnis zu einem False Negative führt, müssen hier zusätzliche Zeitinformationen/zeitliche Parameter beachtet/bedacht werden.
 
-\item \textbf{Verbindungen zur Datenbank} Anzahl der Verbindungen zur Datenbank, da aus Performanzgründen eine Obergrenze mit einer maximalen Anzahl festgelegt ist.
+\item \textbf{Anzahl Datenbankverbindungen} Anzahl der Verbindungen zur Datenbank, da aus Performanzgründen eine Obergrenze mit einer maximalen Anzahl festgelegt ist.
 \end{itemize}
 
 \subsection{Auswerten von Logdateien}
+\label{checklog}
 %Die zwei bisherigen Kategorien beinhalten simple Zustandsüberprüfungen oder aktive Funktionaltests.
 In dieser Kategorie werden zusätzlich verschiedene Logdateien auf spezielle Warnungs- und Fehlermeldungen mit eindeutigen Stopwörtern untersucht.
 Dies ist notwendig um reaktiv Fehlverhalten der Anwendung zu erkennen, das nicht mit den vorherigen Überwachungselementen entdeckt wurde.
