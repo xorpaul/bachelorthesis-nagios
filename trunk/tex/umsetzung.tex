@@ -57,22 +57,29 @@ Dabei wird die Auswahl der Kandidaten auf folgende Auswahl eingeschränkt:
 
 \input{tex/tab-winagents.tex}
 
-Das erste und zugleich älteste Programm NSClient wird nicht mehr aktiv entwickelt und ist als aktuellste Version 2.0.1 aus dem Jahre 2003 bereits recht alt.
-Daher wird auch keine Verschlüsselung der ein- und ausgehenden Daten unterstützt.
-Auch bietet NSClient keine Möglichkeit aktiv vom Nagios-Server aus Nagios-Plugins auszuführen, die sich auf dem zu überwachendem Host befinden.
-
-Der NSClient liefert als Grundlage die Möglichkeit lokale Windows-Ressourcen über einen Dienst abzufragen, der sich über das Netzwerk mit eigenem Port (Standport 1248) ansprechen lässt.
+Der NSClient-Dienst liefert die Möglichkeit lokale Windows-Ressourcen über das Netzwerk mit eigenem Port (Standport 1248) abzufragen.
 Das Plugin \textit{check\_nt} wurde explizit für diesen NSClient-Dienst entwickelt und steht durch die Nagios-Plugins standardmäßig zur Verfügung.
 Dadurch können grundlegende Informationen für die Systemüberwachung wie Zustände von Prozesse, Services, CPU-Auslastung, Festplattenplatz, usw. abgefragt werden, siehe Kapitel \ref{syschecks}.
+
+\begin{figure}[ht]
+	\centering
+	   \fbox{\includegraphics[width=0.75\textwidth]{bilder/monitoring-windows.png}}
+		\caption{Abfrage von Windows-Ressourcen durch \textit{check\_nt}}
+		\label{fig:cknt}
+\end{figure}
 
 Diese Abfrage kann durch die Ausführung auf der Kommandozeile getestet werden:
 
 \begin{figure}[ht]
 	\centering
 	   \fbox{\includegraphics[width=0.75\textwidth]{bilder/check_nt-stdp.png}}
-		\caption{Zugriff auf den NSClient Dienst durch check\_nt}
+		\caption{Zugriff auf den NSClient-Dienst durch check\_nt}
 		\label{fig:cknt}
 \end{figure}
+
+Der erste und zugleich älteste Agent NSClient wird nicht mehr aktiv entwickelt und ist als aktuellste Version 2.0.1 aus dem Jahre 2003 bereits recht alt.
+Daher wird auch keine Verschlüsselung der ein- und ausgehenden Daten unterstützt.
+Auch bietet NSClient keine Möglichkeit aktiv vom Nagios-Server aus Nagios-Plugins auszuführen, die sich auf dem zu überwachendem Host befinden.
 
 Um dies auch für Windows-Server zu ermöglichen gibt es eine auf Windows portierte \gls{NRPE}-Variante, die sich NRPE\_NT nennt.
 Hier lassen sich die Plugins direkt über den Nagios-Server aufrufen und die ausgetauschten Informationen werden verschlüsselt über das Netzwerk übertragen.
