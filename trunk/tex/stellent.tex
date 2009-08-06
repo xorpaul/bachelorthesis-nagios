@@ -82,7 +82,6 @@ Dabei können weitere Untergruppen gebildet werden.
 \item \textbf{Prozessorauslastung} Überwacht die Auslastung des Prozessors und schlägt bei ungewöhnlich hohen Werten Alarm.
 \item \textbf{Festplattenspeicherausnutzung} Überwacht die Speicherplatzauslastungen der verschiedenen Festplattenpartitionen, damit immer genügend Speicherplatz für Anwendungen und Betriebssystem verfügbar ist.
 \item \textbf{Arbeitsspeicherauslastung} Beobachtet wieviel Arbeitsspeicher vom System verwendet wird und wieviel davon noch zur Verfügung steht.
-\item \textbf{Sessionanzahl} Anzahl der am CMS angemeldeten Benutzer, da aus Performanzgründen eine Obergrenze mit einer maximalen Anzahl festgelegt ist.
 \end{itemize}
 
 \paragraph{Prozesse}
@@ -110,16 +109,17 @@ Daher muss eine weitere Art von Überprüfungen/Checks die Anwendungen auf ihre 
 \begin{itemize}
 \item \textbf{Webserver} Aufruf einer Webseite auf dem Server. Wenn auf diese Anfrage eine gültige Antwort in Form einer Statuscode-Meldung erfolgt, kann der reale/wirkliche Zustand des Webservers festgestellt werden.
 
-\item \textbf{Webinterface des Oracle UCM} Zusätzlich wird mit dieser Abfrage die Integration des Conten-Management-Systems in den Webserver überwacht, da hier nicht nur der Webserver, sondern eine UCM spezifische Webseite abgefragt wird.
+\item \textbf{Webinterface des Oracle UCM} Zusätzlich wird mit dieser Abfrage die Integration des Content-Management-Systems in den Webserver überwacht, da hier nicht nur der Webserver, sondern eine UCM spezifische Webseite abgefragt wird.
 
-\item \textbf{Benutzeranmeldung am Oracle UCM} Hier wird getesten, ob sich ein Benutzer erfolgreich am System anmelden kann.
+\item \textbf{Benutzeranmeldung am Oracle UCM} Hier wird getestet, ob sich ein Benutzer erfolgreich am System anmelden kann.
 Dies wird mit Anmeldungsdaten eines lokalen Benutzers und eines Active Directory-Benutzers durchgeführt um gleichzeitig/zusätzlich die Verbindung zum ADS-Server zu testen.
 
 \item \textbf{Oracle Datenbank} Wenn keine Verbindung zur Oracle Datenbank möglich ist, können keine neuen Informationen gespeichert werden. 
-(zitat riester: läuft das system noch pseudomäßig, wirft aber jede Menge Fehler)
 
-\item \textbf{Status von Cronjobs} In periodischen Zeitabständen werden Programme aufgerufen, deren Aufruf und Endstatus/Endergebniss überwacht werden muss. 
-Damit nicht das vorherige Ergebnis zu einem False Negative führt, müssen hier zusätzliche Zeitinformationen/zeitliche Parameter beachtet/bedacht werden.
+%\item \textbf{Status von Cronjobs} In periodischen Zeitabständen werden Programme aufgerufen, deren Aufruf und Endstatus/Endergebniss überwacht werden muss. 
+%Damit nicht das vorherige Ergebnis zu einem False Negative führt, müssen hier zusätzliche Zeitinformationen/zeitliche Parameter beachtet/bedacht werden.
+
+\item \textbf{Verbindungen zur Datenbank} Anzahl der Verbindungen zur Datenbank, da aus Performanzgründen eine Obergrenze mit einer maximalen Anzahl festgelegt ist.
 \end{itemize}
 
 \subsection{Auswerten von Logdateien}

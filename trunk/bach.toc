@@ -68,7 +68,7 @@
 \contentsline {subsubsection}{\numberline {8.2.3}Auswahl und Konfiguration des Nagios-Agenten}{48}{subsubsection.8.2.3}
 \contentsline {paragraph}{Auswahl}{48}{section*.21}
 \contentsline {paragraph}{Installation und Konfiguration}{48}{section*.22}
-\contentsline {subsection}{\numberline {8.3}\IeC {\"U}berpr\IeC {\"u}fen der Prozesse und Services}{52}{subsection.8.3}
+\contentsline {subsection}{\numberline {8.3}\IeC {\"U}berpr\IeC {\"u}fen der Prozesse und Dienste}{52}{subsection.8.3}
 \contentsline {subsection}{\numberline {8.4}Umsetzung der Funktionlit\IeC {\"a}tstest}{53}{subsection.8.4}
 \contentsline {subsection}{\numberline {8.5}Auswertung der Logs + Stopw\IeC {\"o}rterdefinition}{53}{subsection.8.5}
 \contentsline {subsection}{\numberline {8.6}Benutzersimulation}{53}{subsection.8.6}
@@ -76,8 +76,8 @@
 \contentsline {section}{\numberline {10}Zusammenfassung und Ausblick}{55}{section.10}
 \contentsline {section}{\numberline {11}Anhang}{56}{section.11}
 \contentsline {subsection}{\numberline {11.1}Abbildungsverzeichnis}{56}{subsection.11.1}
-\contentsline {subsection}{\numberline {11.2}Codelistingverzeichnis}{58}{subsection.11.2}
-\contentsline {subsection}{\numberline {11.3}Quellverzeichnis}{59}{subsection.11.3}
-\contentsline {subsubsection}{\numberline {11.3.1}Literaturverzeichnis}{59}{subsubsection.11.3.1}
-\contentsline {subsubsection}{\numberline {11.3.2}Internetquellen}{61}{subsubsection.11.3.2}
-\contentsline {subsection}{\numberline {11.4}Glossar}{62}{subsection.11.4}
+\contentsline {subsection}{\numberline {11.2}Codelistingverzeichnis}{59}{subsection.11.2}
+\contentsline {subsection}{\numberline {11.3}Quellverzeichnis}{60}{subsection.11.3}
+\contentsline {subsubsection}{\numberline {11.3.1}Literaturverzeichnis}{60}{subsubsection.11.3.1}
+\contentsline {subsubsection}{\numberline {11.3.2}Internetquellen}{62}{subsubsection.11.3.2}
+\contentsline {subsection}{\numberline {11.4}Glossar}{63}{subsection.11.4}
