@@ -1,9 +1,9 @@
 \section{Nagios}
 
 \subsection{Allgemein}
-Nagios dient zum Überwachen von Hosts und deren Services in komplexen Infrastrukturen(Host und Services erklären?) und wurde von dem Amerikaner Ethan Galstad seit 1999\footnote{Quelle: \url{http://www.netsaint.org/changelog.php}} - damals unter der Vorgängerversion NetSaint - entwickelt und bis heute gepflegt.
+Nagios dient zum Überwachen von Hosts und deren Services in komplexen Infrastrukturen und wurde von dem Amerikaner Ethan Galstad seit 1999\footnote{Quelle: \url{http://www.netsaint.org/changelog.php}} - damals unter der Vorgängerversion NetSaint - entwickelt und bis heute gepflegt.
 
-Der Name Nagios ist ein Akronym für "´Nagios Ain't Gonna Insist On Sainthood"', dabei ist der Begriff Sainthood eine Anspielung auf die Vorgängerversion NetSaint.\footnote{Quelle: \cite{NagiosFAQ}}
+Der Name Nagios ist ein Akronym für "`Nagios Ain't Gonna Insist On Sainthood"', dabei ist der Begriff Sainthood eine Anspielung auf die Vorgängerversion NetSaint.\footnote{Quelle: \cite{NagiosFAQ}}
 
 Galstad gründete aufgrund der vielfältigen(ansturmmäßig) und positiven Resonanz am 9. November 2007 die "`Nagios Enterprises LLC"', welche Nagios als kommerzielle Dienstleistung anbietet.
 Die Software selbst blieb weiterhin unter der freien Lizenz "`GNU General Public License version 2"'\footnote{Quelle: \url{http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt}} verfügbar.
@@ -20,33 +20,5 @@ Nagios benötigt eine Unix-ähnliche Plattform und kann nicht unter Windows-Betr
 
 \input{tex/services.tex}
 
-\subsection{Plugins}
-Gedacht für Linux umgebung
 
-Verschiedene Möglichkeiten Checks zu realisieren unter Unix Systemen:
-
-Leicht programmierbar -> perl 
-Extra Plugins für Windows
-
-\subsection{(Windows) Agenten oder allgemein Einholen von Infos}
-Warum nicht einfach alles über SNMP? -> ODI muss man erst beantragen, hoher Aufwand und dann doch nicht so universell/alles abdeckend wie aktive checks, man kann keine logfiles durchuchen -> könnte es aber als standalone prog auf dem client laufen lassen und dieser sendet dann passive checks
-
-Sagen das auf alten NSClient verzichtet wird und OpMon Agent nicht behandelt
-\begin{enumerate}
-\item Bilder ausm Nagios Buch Seite 472ff!
-\item NSClient++
-\item NC\_Net
-\item NRPE\_NT
-\end{enumerate}
-
-Zusammenfassung?
-
-
-Welche wird jetzt eingesetzt und warum?
-
-Erwähne sichheitsstechnisch Parameter erlauben oder nicht erlauben
-
-Dabei sagen, dass wenn nicht erlaubt sind keine zentrale Konfiguration der Checks auf dem Nagios server möglich ist -> abwägen
-
-\subsection{Visualisierung der eingesammelten Daten}
 
