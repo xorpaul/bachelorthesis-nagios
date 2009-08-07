@@ -11,20 +11,14 @@
 \BOOKMARK [3][-]{subsubsection.4.2.2}{Verwaltung und Archivierung}{subsection.4.2}
 \BOOKMARK [3][-]{subsubsection.4.2.3}{Ausgabe}{subsection.4.2}
 \BOOKMARK [2][-]{subsection.4.3}{Content-Management-Systeme}{section.4}
-\BOOKMARK [2][-]{subsection.4.4}{[Enterprise-Content-Management-Systeme]}{section.4}
-\BOOKMARK [2][-]{subsection.4.5}{Universal-Content-Management-Systeme}{section.4}
-\BOOKMARK [2][-]{subsection.4.6}{Service-Orientierte Architektur}{section.4}
-\BOOKMARK [2][-]{subsection.4.7}{Web-Services-Architektur}{section.4}
+\BOOKMARK [2][-]{subsection.4.4}{Service-Orientierte Architektur}{section.4}
+\BOOKMARK [2][-]{subsection.4.5}{Web-Services-Architektur}{section.4}
 \BOOKMARK [1][-]{section.5}{Nagios}{}
 \BOOKMARK [2][-]{subsection.5.1}{Allgemein}{section.5}
 \BOOKMARK [2][-]{subsection.5.2}{Aufbau / Architektur}{section.5}
 \BOOKMARK [2][-]{subsection.5.3}{\334berpr\374fungsmethoden}{section.5}
 \BOOKMARK [3][-]{subsubsection.5.3.1}{Aktive Checks}{subsection.5.3}
 \BOOKMARK [3][-]{subsubsection.5.3.2}{Passive Checks}{subsection.5.3}
-\BOOKMARK [2][-]{subsection.5.4}{\334berwachungslogik \(mit Alarmierung/Benachrichtigung\)}{section.5}
-\BOOKMARK [2][-]{subsection.5.5}{Plugins}{section.5}
-\BOOKMARK [2][-]{subsection.5.6}{\(Windows\) Agenten oder allgemein Einholen von Infos}{section.5}
-\BOOKMARK [2][-]{subsection.5.7}{Visualisierung der eingesammelten Daten}{section.5}
 \BOOKMARK [1][-]{section.6}{Oracle UCM}{}
 \BOOKMARK [2][-]{subsection.6.1}{Allgemein}{section.6}
 \BOOKMARK [2][-]{subsection.6.2}{Aufbau / Architektur}{section.6}

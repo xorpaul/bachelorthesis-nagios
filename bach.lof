@@ -1,20 +1,20 @@
 \select@language {ngerman}
-\contentsline {figure}{\numberline {1}{\ignorespaces Zus\IeC {\"a}tzliche Netzwerkabh\IeC {\"a}ngigkeit und Netzwerkbelastung}}{5}{figure.1}
-\contentsline {figure}{\numberline {2}{\ignorespaces Aufgabenbereiche eines Dokumenten-Management-Systems}}{10}{figure.2}
-\contentsline {figure}{\numberline {3}{\ignorespaces "`any-to-any"' Content-Management Konzept}}{15}{figure.3}
-\contentsline {figure}{\numberline {4}{\ignorespaces Simple Software Architektur eines Webshops}}{17}{figure.4}
-\contentsline {figure}{\numberline {5}{\ignorespaces Erweiterte Software Architektur mit Service-Orientierte Komponente}}{17}{figure.5}
-\contentsline {figure}{\numberline {6}{\ignorespaces Ablauf einer Web Service Benutzung}}{19}{figure.6}
-\contentsline {figure}{\numberline {7}{\ignorespaces Plugins als separate Komponente}}{22}{figure.7}
-\contentsline {figure}{\numberline {8}{\ignorespaces Anzeige des Servers im Webinterface von Nagios}}{24}{figure.8}
-\contentsline {figure}{\numberline {9}{\ignorespaces Beispielhafte manuelle Ausf\IeC {\"u}hrung eines Servicechecks}}{24}{figure.9}
-\contentsline {figure}{\numberline {10}{\ignorespaces Beispiel f\IeC {\"u}r den zeitlichen Verlauf durch vers. Zust\IeC {\"a}nde}}{26}{figure.10}
-\contentsline {figure}{\numberline {11}{\ignorespaces Verschiedene \IeC {\"U}berwachungsm\IeC {\"o}glichkeiten von Nagios}}{28}{figure.11}
-\contentsline {figure}{\numberline {12}{\ignorespaces Beispielhafte manuelle Ausf\IeC {\"u}hrung eines netzwerkbasierenden Servicechecks / HTTP Server Check}}{28}{figure.12}
-\contentsline {figure}{\numberline {13}{\ignorespaces Manuelle Ausf\IeC {\"u}hrung eines Servicechecks \IeC {\"u}ber SSH}}{29}{figure.13}
-\contentsline {figure}{\numberline {14}{\ignorespaces Aktive Checks mit NRPE}}{29}{figure.14}
-\contentsline {figure}{\numberline {15}{\ignorespaces Struktur der Management Information Base}}{31}{figure.15}
-\contentsline {figure}{\numberline {16}{\ignorespaces Passive Checks mit NSCA}}{32}{figure.16}
+\contentsline {figure}{\numberline {1}{\ignorespaces Zus\IeC {\"a}tzliche Netzwerkabh\IeC {\"a}ngigkeit und Netzwerkbelastung}}{6}{figure.1}
+\contentsline {figure}{\numberline {2}{\ignorespaces Aufgabenbereiche eines Dokumenten-Management-Systems}}{12}{figure.2}
+\contentsline {figure}{\numberline {3}{\ignorespaces "`any-to-any"' Content-Management Konzept}}{17}{figure.3}
+\contentsline {figure}{\numberline {4}{\ignorespaces Simple Software Architektur eines Webshops}}{18}{figure.4}
+\contentsline {figure}{\numberline {5}{\ignorespaces Erweiterte Software Architektur mit Service-Orientierte Komponente}}{18}{figure.5}
+\contentsline {figure}{\numberline {6}{\ignorespaces Ablauf einer Web Service Benutzung}}{20}{figure.6}
+\contentsline {figure}{\numberline {7}{\ignorespaces Plugins als separate Komponente}}{23}{figure.7}
+\contentsline {figure}{\numberline {8}{\ignorespaces Anzeige des Servers im Webinterface von Nagios}}{25}{figure.8}
+\contentsline {figure}{\numberline {9}{\ignorespaces Beispielhafte manuelle Ausf\IeC {\"u}hrung eines Servicechecks}}{25}{figure.9}
+\contentsline {figure}{\numberline {10}{\ignorespaces Beispiel f\IeC {\"u}r den zeitlichen Verlauf durch vers. Zust\IeC {\"a}nde}}{27}{figure.10}
+\contentsline {figure}{\numberline {11}{\ignorespaces Verschiedene \IeC {\"U}berwachungsm\IeC {\"o}glichkeiten von Nagios}}{29}{figure.11}
+\contentsline {figure}{\numberline {12}{\ignorespaces Beispielhafte manuelle Ausf\IeC {\"u}hrung eines netzwerkbasierenden Servicechecks / HTTP Server Check}}{29}{figure.12}
+\contentsline {figure}{\numberline {13}{\ignorespaces Manuelle Ausf\IeC {\"u}hrung eines Servicechecks \IeC {\"u}ber SSH}}{30}{figure.13}
+\contentsline {figure}{\numberline {14}{\ignorespaces Aktive Checks mit NRPE}}{30}{figure.14}
+\contentsline {figure}{\numberline {15}{\ignorespaces Struktur der Management Information Base}}{32}{figure.15}
+\contentsline {figure}{\numberline {16}{\ignorespaces Passive Checks mit NSCA}}{33}{figure.16}
 \contentsline {figure}{\numberline {17}{\ignorespaces Oracle UCM Architektur}}{35}{figure.17}
 \contentsline {figure}{\numberline {18}{\ignorespaces Beispielhafter Einsatz eines Content Servers}}{36}{figure.18}
 \contentsline {figure}{\numberline {19}{\ignorespaces Bilddatenbank als Anwendung}}{37}{figure.19}

@@ -15,7 +15,7 @@ define service{
 \end{lstlisting}
 
 
-Dabei werden dem Nagios-Plugin \textit{check\_http} mit dem \pictext{u}-Parameter die URL zur Benuteranmeldungseite und mit dem Parameter \pictext{a} der benutzername und -passwort mitgegeben.
+Dabei werden dem Nagios-Plugin \textit{check\_http} mit dem \pictext{u}-Parameter die URL zur Benutzeranmeldungseite und mit dem Parameter \pictext{a} der Benutzername und -passwort mitgegeben.
 Der nach dem Parameter \pictext{e} folgende String wird dann in der Antwort des Servers gesucht.
 Sollte dieser String nicht gefunden werden ist die Authentifizierung fehlgeschlagen und es wird durch Nagios eine Meldung versendet.
 Mit dem Parameter \pictext{S} wird angegeben, dass eine \gls{SSL}-verschlüsselte Verbindung zum Webserver über HTTPS hergestellt werden soll, ansonsten würden die Benutzerinformationen im Klartext übertragen werden, wodurch sie leicht für Angreifer auslesbar wären.
@@ -38,6 +38,6 @@ echo $DBCONNECTIONS
 \end{lstlisting}
 
 Dabei muss als URL die Seite mit den Datenbankverbindungen und gültige Benutzerinformationen mitgegeben werden.
-Anschliessend wird die aufgerufene Seite nach der gewünschte Informationen untersucht und ausgegeben.
+Anschließend wird die aufgerufene Seite nach der gewünschte Informationen untersucht und ausgegeben.
 
 Dieses einfaches Script kann auch dazu verwendet um andere Informationen von der Statusseite abzufragen.

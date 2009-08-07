@@ -51,29 +51,24 @@ Darunter fallen laut \cite{DMS08} S. 3 folgende Punkte:
 \end{itemize}
 
 Der Begriff \textbf{"`Dokumenten-Management-System"'} muss auch in zwei verschiedene Sichtweisen differenziert werden:
-\begin{quote}"`Bei \textbf{Dokumenten-Management-Systemen im engeren Sinne} geht es um die Logik der Verwaltung von Dokumenten, deren Status, Struktur, Lebenzyklus und Inhalt. Dokumente werden beschrieben, klassifiziert und in einer bestimmten logischen Struktur eingeordnet, damit sie einfach wieder gefunden werden können. Dokumente entstehen, werden verändert und (irgendwann) vernichtet.
+\begin{quote}"`Bei \textbf{Dokumenten-Management-Systemen im engeren Sinne} geht es um die Logik der Verwaltung von Dokumenten, deren Status, Struktur, Lebenszyklus und Inhalt. Dokumente werden beschrieben, klassifiziert und in einer bestimmten logischen Struktur eingeordnet, damit sie einfach wieder gefunden werden können. Dokumente entstehen, werden verändert und (irgendwann) vernichtet.
 
 Den \textbf{Dokumenten-Management-Systemen im weiteren Sinne} ordnet man auch noch weitere Funktionalitäten zu, wie z. B. Schrifterkennung, automatische Indizierung, [...], Publizierung. Hier lassen sich die Grenzen nicht mehr genau bestimmten!"' \begin{flushright}\cite{DMS08} S. 5\end{flushright}\end{quote}
 
 Die Grundstruktur eines Dokumenten-Management-Systemes kann man dadurch grob in folgender Abbildung zusammenfassen:
-
-\begin{center}
-
-\end{center}
-
 \begin{figure}[ht]
 	\centering
-	   \fbox{Bild \cite{DMS08} S. 38}
+	   \fbox{\includegraphics[scale=0.5]{bilder/dms-struktur.png}}
 		\caption[Aufgabenbereiche eines Dokumenten-Management-Systems]{Aufgabenbereiche eines Dokumenten-Management-Systems\protect\footnote}
 		\label{lifecircle}
 \end{figure} 
-\footnotetext{Quelle: \cite{Barth08} S. 38}
+\footnotetext{Quelle: \cite{DMS08} S. 38}
 
 Dabei wird ein \gls{DMS}-System in drei verschiedene Teilbereiche aufgegliedert:
 
 \subsubsection{Eingabe}
 Unabhängig des Ursprungs oder der Art des Dokumentes besitzt der Funktionsbereich Eingabe die Aufgabe diese Dokumente dem Dokumenten-Management-System zuzuführen.
-(Darunter fallen auch Post, Email, Andere anwendungen, fax usw. - Hier Hinweis auf WSDL)
+%(Darunter fallen auch Post, Email, Andere Anwendungen, fax usw. - Hier Hinweis auf WSDL)
 
 Laut \cite{DMS08} S. 40fff fallen in diesen Bereich zwei Funktionen:
 
@@ -82,7 +77,7 @@ Hier wird die Zuspielung der Dokumente in das \gls{DMS}-System durch verschieden
 Als mögliche Eingabe von Dokumenten kann sowohl das Einscannen von Textdokumente oder Bilder als auch der elektronische Eingang von Dokumenten durch E-Mail oder externen Anwendungen fungieren.
 
 Auch hier gilt zu unterscheiden, dass durch den Einscannvorgang erstellte Dokumente als \gls{NCI}-Dokument abgelegt werden und bereits digitalisierte Dokumente sich zur Umwandlung zu \gls{CI}-Dokumenten anbieten.
-Sobald der Inhalt von eingescannten Dokumenten zur weiteren Verarbeitung ausgelesen bzw. ausgewertet werden soll, müssen die Dokumente in ein \gls{CI}-Format transformatiert werden.
+Sobald der Inhalt von eingescannten Dokumenten zur weiteren Verarbeitung ausgelesen bzw. ausgewertet werden soll, müssen die Dokumente in ein \gls{CI}-Format transformiert werden.
 Dies wird häufig durch eine \gls{OCR}-Software realisiert, die beispielsweise das Bild eines eingescannten Briefes in (bearbeitbaren) Text umwandelt.
 
 Bereits im \gls{CI}-Format vorliegende Dokumente müssen nicht transformiert werden, jedoch werden die Dokumente oft in anderen Formaten zusätzlich abgespeichert.
@@ -90,18 +85,18 @@ Ein Beispiel ist die Umwandlung eines Microsoft Word-Dokumentes in ein \gls{PDF}
 
 \paragraph{Indizierung}
 Bei der Indizierung werden Dokumente zur eindeutigen Identifikation mit Attributen versehen.
-Diese Attribute werden teilweise automatisch durch das DMS-System anhand einer hochzählenden Identifikationsnummer oder manuell durch den Benutzer beim Einstellen des Dokumentes hinzugefügt.
+Diese Attribute werden teilweise automatisch durch das \gls{DMS}-System anhand einer hoch zählenden Identifikationsnummer oder manuell durch den Benutzer beim Einstellen des Dokumentes hinzugefügt.
 Solche Attribute werden auch als Metadaten des Dokumentes bezeichnet und meist als zusätzliche Suchkriterien angeboten.
 
 Dabei werden in \cite{DMS08} S. 44 zwei verschiedene Methoden zur automatischen Klassifizierung genannt.
-Beim wissenbasiertem Ansatz wird mittels umfangreichem Wissen über das Umfeld der Dokumente und dadurch abgeleitete Regeln dem System ermöglicht diese Dokumente automatisch einzuordnen und zu indizieren.
+Beim wissensbasiertem Ansatz wird mittels umfangreichem Wissen über das Umfeld der Dokumente und dadurch abgeleitete Regeln dem System ermöglicht diese Dokumente automatisch einzuordnen und zu indizieren.
 Eine weitere Möglichkeit eröffnet sich durch das Verwenden von neuronalen Netzen.
 Hierbei wird durch die Vorarbeit eines Menschen Beispiele geschaffen anhand welcher sich das System selbstständig (Auswahl)Kriterien erzeugt.
 Je mehr korrekte Beispiele vorgegeben werden, desto besser und zuverlässiger arbeitet die automatische Klassifizierung.
 
 \subsubsection{Verwaltung und Archivierung}
-Bei der \textbf{Verwaltung} werden die Probleme beim \textit{Check-in} (Einspielen des Dokumentes), Bearbeitung und \textit{Check-out} (Signalisierung der Weiterbearbeitung) behandelt, siehe auch Abbildung \cite{DMS08} S. 38 ???.
-Wie auch bei einer Datenbank müssen Dokumente, die gerade bearbeitet werden, für andere Benutzer für Änderungen gesperrt werden, damit keine Inkonsistenzen auftretten können.
+Bei der \textbf{Verwaltung} werden die Probleme beim \textit{Check-in} (Einspielen des Dokumentes), Bearbeitung und \textit{Check-out} (Signalisieren der Weiterbearbeitung) behandelt, siehe auch Abbildung \cite{DMS08} S. 38 ???.
+Wie auch bei einer Datenbank müssen Dokumente, die gerade bearbeitet werden, für andere Benutzer für Änderungen gesperrt werden, damit keine Inkonsistenzen auftreten können.
 Nach einer Bearbeitung und dem Check-in des abgeänderten Dokumentes muss die Versionsverwaltung des \gls{DMS}-Systems beide Versionen beibehalten und (dabei) die ursprüngliche Version als veraltet und die neue Version als solche kennzeichnen.
 Zusätzlich muss die Wiederherstellung einer älteren Revision als aktuelles Dokument unterstützt werden.
 
@@ -121,9 +116,9 @@ Dabei müssen laut \cite{DMS08} S. 288 unter anderem bestimmte Punkte beachtet /
 Wie die Eingabe besteht die Ausgabe aus zwei Funktionen:
 
 \paragraph{Recherche}
-Die Recherche ist die Suche nach einem Dokument entweder durch eine strukturierte Suche anhand von zuvor eingetragenen Attributen (Author, Erstellungsdatum, Speichergröße usw.) oder durch eine Volltextsuche.
+Die Recherche ist die Suche nach einem Dokument entweder durch eine strukturierte Suche anhand von zuvor eingetragenen Attributen (Autor, Erstellungsdatum, Speichergröße usw.) oder durch eine Volltextsuche.
 
-Die \textbf{strukturierte Suche} ist nur bei einer qualitativ hochwertigen Indizierung effizient, bietet dafür auch mit guter zeitlichen Performanz die besten / genauersten Ergebnisse, sofern die Indizierung entsprechend aufgebaut / eingehalten wurde.
+Die \textbf{strukturierte Suche} ist nur bei einer qualitativ hochwertigen Indizierung effizient, bietet dafür auch mit guter zeitlichen Performanz die besten / genauesten Ergebnisse, sofern die Indizierung entsprechend aufgebaut / eingehalten wurde.
 
 Die \textbf{Volltextsuche} besteht aus einer ordinären Suche durch den Inhalt der Dokumente nach den eingegebenen Suchbegriffen.
 Daher ist die Qualität der Suchergebnisse unabhängig von der Qualität der Indizierung.
@@ -173,16 +168,16 @@ Dieses Konzept soll in Abbildung \ref{ucm-a2a} verdeutlicht werden.
 Das \gls{CMS} steht hier in der Mitte der Abbildung als Medium zwischen den verschiedenen Inhalten, eingestellt von den \textit{Contributors} (links), und den Anwendern, die auf transformierte Versionen der Inhalte durch unterschiedliche Arten zugreifen (rechts).
 
 
-\subsection{[Enterprise-Content-Management-Systeme]}
-In diesem Zusammenhang / Kontext sei auch der Begriff Enterprise-Content-Management (\gls{ECM}) genannt.
-Laut der "`Association for Information and Image Management"' (\gls{AIIM}\footnote{Die AIIM ist eine Gesellschaft von internationalen Herstellern und Anwendern von Informations- und Dokumenten-Mangement-Systemen}), welche sich mit umfasst dieser Begriff die Verwaltungfunktionen von Unternehmensinformationen in unterschiedlichen Dokumentformaten.\footnote{Quelle: \url{http://www.aiim.org/What-is-ECM-Enterprise-Content-Management.aspx}}
-Diese Funktionen werden laut \cite{DMS08} S. 116 durch verschiedene "`Systeme wie Dokumenten-Management, Groupware, Workflow, Input- und Output-Management, (Web-)Content-management, Archivierung, Records-Management und andere"' bereitsgestellt.
+%\subsection{[Enterprise-Content-Management-Systeme]}
+%In diesem Zusammenhang / Kontext sei auch der Begriff Enterprise-Content-Management (\gls{ECM}) genannt.
+%Laut der "`Association for Information and Image Management"' (\gls{AIIM}\footnote{Die AIIM ist eine Gesellschaft von internationalen Herstellern und Anwendern von Informations- und Dokumenten-Mangement-Systemen}), welche sich mit umfasst dieser Begriff die Verwaltungfunktionen von Unternehmensinformationen in unterschiedlichen Dokumentformaten.\footnote{Quelle: \url{http://www.aiim.org/What-is-ECM-Enterprise-Content-Management.aspx}}
+%Diese Funktionen werden laut \cite{DMS08} S. 116 durch verschiedene "`Systeme wie Dokumenten-Management, Groupware, Workflow, Input- und Output-Management, (Web-)Content-management, Archivierung, Records-Management und andere"' bereitsgestellt.
 
 
-\subsection{Universal-Content-Management-Systeme}
-Im Gegensatz zu anderen \gls{CMS}-Systemen, wie Typo3 oder Joomla, bezeichnet Oracle seine Softwarelösung in diesem Bereich als Universal-Content-Management (\gls{UCM}).
-Jedoch unterscheidet es sich in der technisches Umsetzung nicht von anderen \gls{CMS}-Systemen.
-Es wir vermutet, dass sich Oracle durch diese Bezeichnung von den anderen \gls{CMS}-Systemen abheben / absetzten wollte, also nur aufgrund von Marketing-Vorteilen ihr Produkt so nannte.
+%\subsection{Universal-Content-Management-Systeme}
+%Im Gegensatz zu anderen \gls{CMS}-Systemen, wie Typo3 oder Joomla, bezeichnet Oracle seine Softwarelösung in diesem Bereich als Universal-Content-Management (\gls{UCM}).
+%Jedoch unterscheidet es sich in der technisches Umsetzung nicht von anderen \gls{CMS}-Systemen.
+%Es wir vermutet, dass sich Oracle durch diese Bezeichnung von den anderen \gls{CMS}-Systemen abheben / absetzten wollte, also nur aufgrund von Marketing-Vorteilen ihr Produkt so nannte.
 
 
 

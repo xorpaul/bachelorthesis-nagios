@@ -1,10 +1,23 @@
 \subsection{Überwachungssysteme}
+Überwachungssysteme wurden für den Zweck entwickelt den Status von verschiedenen Objekten meist über das Netwerk zu überwachen und im Falle einer Statusänderung diese Information an die zugewiesenen Kontaktpersonen weiterleitet.
+
+Bei diesen Objekten kann es sich um viele verschiedene Komponenten handeln.
+Generell unterscheidet man zwischen der Überwachung ermöglichten zu Grunde liegenden Hardware den so genannten Hosts und den auf diesen Hardwarekomponenten aufsitzenden Diensten auch Services genannt.
+
+Unter Hosts fallen nicht nur Server bzw. Computer, sondern auch Switches, Router oder auch explizite / dedizierte / (nur für den/einen Zweck der Überwachung halt) Überwachungshardware wie Sensoren für Temperatur, Luftfeuchtigkeit oder Rauchmelder.
+Die Services dieser Hosts weichen je nach Art der Hosts stark voneinander ab.
+Auf einem Server kann als Service ein Webserver im Betrieb sein, dessen Funktionalität sich simpel über einen Aufruf einer Webseite überprüfen lässt.
+Bei einem Switch können beispielsweise als Service die Übertragungsrate, der Paketverlust oder der Portzustand überwacht werden.
+
+Sehr wichtig ist bei einem Überwachungssystem die Gewichtung der erhaltenen Überwachungsinformationen.
+
+
 \begin{center}
-was ist wichtig was nicht, gewichtung, klassifizierung, organisationsstrategie
-HOst,Services erklären
+was ist wichtig was nicht, Gewichtung, Klassifizierung, Organisationsstrategie
+Host,Services erklären
 \end{center}
 
-Geräte nicht nur Server bzw. Rechner, sondern auch Switches Router, oder auch explizite Hardwarekomponenten wie Sensoren für Temperatur, Luftfeuchtigkeit oder Rauchmelder.
+Vor der Einführung eines Überwachungssystems muss sich mit den folgenden Punkten auseinandergesetzt werden.
 
 \subsubsection{Ressourcenbelastung}
 Die Einführung einer Überwachungssoftware bringt bei größeren Serverlandschaften eine nicht zu verachtende Netzwerk- und Prozessorbelastung mit sich.

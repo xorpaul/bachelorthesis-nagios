@@ -8,10 +8,8 @@ level of service by linking together business processes."' \begin{flushright}\ci
 \gls{SOA} ist ein Ansatz im Bereich der Informationstechnik um Anwendungen oder einzelne Dienste aus verschiedenen Geschäftsprozessen zu bilden.
 
 Melzer bietet eine ausführlichere Definition:
-\begin{quote}"`Unter einer \gls{SOA} versteht man eine Systemarchitektur, die vielfältige, verschiedene und eventuell inkompatible Methoden oder Applikationen als wiederverwendbare und offen zugreifbare Dienste repräsentiert und dadruch eine plattform- und sprachenunabhängige Nutzung und Wiederverwendung ermöglicht.
+\begin{quote}"`Unter einer \gls{SOA} versteht man eine Systemarchitektur, die vielfältige, verschiedene und eventuell inkompatible Methoden oder Applikationen als wiederverwendbare und offen zugreifbare Dienste repräsentiert und dadurch eine plattform- und sprachenunabhängige Nutzung und Wiederverwendung ermöglicht.
 "' \begin{flushright}\cite{Melzer08} S. 13\end{flushright}\end{quote}
-
-\newpage
                                                  
 Zur Verdeutlichung einer \gls{SOA} kann ein beispielhafter und vereinfachter Aufbau eines Online-Shops verwendet werden.
 
@@ -37,9 +35,9 @@ Dieser Struktur wird nun ein Service-Orientierte Komponente \textit{Credit Check
 \end{figure}
 \footnotetext{Quelle: \cite{SOA07} S. 20}
 
-Dabei hat die eigentliche Anwendung des Webshops keine Kenntniss wie die Komponente \textit{Credit Checking} intern abläuft, sondern übergibt nur die essentiellen Informationen, in diesem Fall die Kreditkartendaten, an die Komponente.
-Es ist unrelevant, ob diese Komponenten eine externe Datenbank oder Webseite nach der Kreditwürdigkeit des Benutzers befragen, solange die Komponente auswertbare Informationen (zahlungsfähig ja/nein) an die Webshop Anwendung liefert.
-Für die Anwendung \textit{Order Processing} ist die Komponente \textit{Credit Checking} eine sogennante \textbf{black box}.
+Dabei hat die eigentliche Anwendung des Webshops keine Kenntnis wie die Komponente \textit{Credit Checking} intern abläuft, sondern übergibt nur die essentiellen Informationen, in diesem Fall die Kreditkartendaten, an die Komponente.
+Für die Anwendung ist irrelevant, ob diese Komponenten eine externe Datenbank oder Webseite nach der Kreditwürdigkeit des Benutzers befragen, solange die Komponente auswertbare Informationen (zahlungsfähig ja/nein) an die Webshop Anwendung liefert.
+Für die Anwendung \textit{Order Processing} ist die Komponente \textit{Credit Checking} eine so genannte \textbf{black box}.
 
 Die komplexen Berechnungen und Algorithmen zur Bestimmung der Kreditwürdigkeit des Benutzers werden komplett verdeckt, so dass nur die Kreditkarteninformationen der Komponente zu übergeben sind.
 
@@ -64,7 +62,7 @@ Daraus leitet Melzer folgende Spezifikationen für eine Web-Services-Architektur
 \paragraph{SOAP}
 beschreibt das \gls{XML}-basierte Nachrichtenformat der Kommunikation und dessen Einbettung in ein Transportprotokoll.
 \paragraph{WSDL}
-ist eine - ebenfalls \gls{XML}-basierte - Bschreibungssprache, um Web Services (Dienste) zu beschreiben.
+ist eine - ebenfalls \gls{XML}-basierte - Beschreibungssprache, um Web Services (Dienste) zu beschreiben.
 \paragraph{UDDI}
 beschreibt einen Verzeichnisdienst für Web Services. \gls{UDDI} (Universal Description, Discovery and Integration protocol) spezifiziert eine standardisierte Verzeichnisstruktur für die Verwaltung von Web-Services-Metadaten.
 Zu den Metadaten zählen allgemeine Anfornderungen, Web-Services-Eigenschaften oder die benötigten Informationen zum Auffinden von Web Services.
@@ -84,8 +82,8 @@ Der Ablauf der Benutzung eines Web Services soll durch folgende Abbildung verdeu
 \end{figure}
 \footnotetext{Quelle: \cite{Melzer08} S. 56}
 \begin{enumerate}
-\item Der Anbieter des Web Services muss seinen Dienst durch eine \gls{WSDL}-Datei in Form einer \gls{XML}-Datei dem Diensverzeichnis bekannt geben.
-\item Erst dann können mögliche Nutzer dieses Dienstes den Web Service im \gls{UDDI}-basiertem Diensverzeichnis finden. Die Suchanfrage findet über eine \gls{SOAP}-Schnittstelle statt.
+\item Der Anbieter des Web Services muss seinen Dienst durch eine \gls{WSDL}-Datei in Form einer \gls{XML}-Datei dem Dienstverzeichnis bekannt geben.
+\item Erst dann können mögliche Nutzer dieses Dienstes den Web Service im \gls{UDDI}-basiertem Dienstverzeichnis finden. Die Suchanfrage findet über eine \gls{SOAP}-Schnittstelle statt.
 \item Ein Verweis auf den Dienst in Form einer \gls{WSDL}-Datei wird an den Dienstbenutzer als Antwort der Suchanfrage gesendet.
 \item Durch diesen Verweis erfährt der Benutzer die Adresse des Dienstanbieters und kann die Beschreibung des Web Services abfragen.
 \item Nach Erhalt dieser Beschreibung kann der eigentliche Webdienst mittels \gls{SOAP} verwendet werden.

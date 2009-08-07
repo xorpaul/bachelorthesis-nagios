@@ -1,47 +1,41 @@
 \select@language {ngerman}
 \contentsline {section}{\numberline {1}Einleitung}{1}{section.1}
-\contentsline {section}{\numberline {2}Abstract}{2}{section.2}
-\contentsline {section}{\numberline {3}Aufgabenstellung}{3}{section.3}
-\contentsline {section}{\numberline {4}Grundlagen}{4}{section.4}
-\contentsline {subsection}{\numberline {4.1}\IeC {\"U}berwachungssysteme}{4}{subsection.4.1}
-\contentsline {subsubsection}{\numberline {4.1.1}Ressourcenbelastung}{4}{subsubsection.4.1.1}
-\contentsline {paragraph}{Lokale / Zentrale Bearbeitung}{4}{section*.2}
-\contentsline {paragraph}{Entfernte / Ausgelagerte Bearbeitung}{4}{section*.3}
-\contentsline {subsubsection}{\numberline {4.1.2}Netzwerkstruktur und Abh\IeC {\"a}ngigkeiten}{5}{subsubsection.4.1.2}
-\contentsline {paragraph}{\IeC {\"U}berwachungsredundanzen vermeiden}{5}{section*.4}
-\contentsline {paragraph}{Minimale Netzwerkbelastung}{6}{section*.5}
-\contentsline {subsubsection}{\numberline {4.1.3}Sicherheitsaspekte}{6}{subsubsection.4.1.3}
-\contentsline {subsection}{\numberline {4.2}Dokumenten-Management-Systeme}{7}{subsection.4.2}
-\contentsline {subsubsection}{\numberline {4.2.1}Eingabe}{10}{subsubsection.4.2.1}
-\contentsline {paragraph}{Dokumenteneingang}{11}{section*.6}
-\contentsline {paragraph}{Indizierung}{11}{section*.7}
-\contentsline {subsubsection}{\numberline {4.2.2}Verwaltung und Archivierung}{12}{subsubsection.4.2.2}
-\contentsline {subsubsection}{\numberline {4.2.3}Ausgabe}{13}{subsubsection.4.2.3}
-\contentsline {paragraph}{Recherche}{13}{section*.8}
-\contentsline {paragraph}{Reproduktion}{13}{section*.9}
-\contentsline {subsection}{\numberline {4.3}Content-Management-Systeme}{13}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}[Enterprise-Content-Management-Systeme]}{15}{subsection.4.4}
-\contentsline {subsection}{\numberline {4.5}Universal-Content-Management-Systeme}{16}{subsection.4.5}
-\contentsline {subsection}{\numberline {4.6}Service-Orientierte Architektur}{16}{subsection.4.6}
-\contentsline {subsection}{\numberline {4.7}Web-Services-Architektur}{18}{subsection.4.7}
-\contentsline {paragraph}{SOAP}{19}{section*.10}
-\contentsline {paragraph}{WSDL}{19}{section*.11}
-\contentsline {paragraph}{UDDI}{19}{section*.12}
-\contentsline {section}{\numberline {5}Nagios}{21}{section.5}
-\contentsline {subsection}{\numberline {5.1}Allgemein}{21}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Aufbau / Architektur}{22}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}\IeC {\"U}berpr\IeC {\"u}fungsmethoden}{27}{subsection.5.3}
-\contentsline {subsubsection}{\numberline {5.3.1}Aktive Checks}{27}{subsubsection.5.3.1}
-\contentsline {subsubsection}{\numberline {5.3.2}Passive Checks}{27}{subsubsection.5.3.2}
-\contentsline {paragraph}{Methode 1 - Netzwerkdienste}{27}{section*.13}
-\contentsline {paragraph}{Methode 2 - SSH}{29}{section*.14}
-\contentsline {paragraph}{Methode 3 - NRPE}{29}{section*.15}
-\contentsline {paragraph}{Methode 4 - SNMP}{30}{section*.16}
-\contentsline {paragraph}{Methode 5 - NSCA}{32}{section*.17}
-\contentsline {subsection}{\numberline {5.4}\IeC {\"U}berwachungslogik (mit Alarmierung/Benachrichtigung)}{33}{subsection.5.4}
-\contentsline {subsection}{\numberline {5.5}Plugins}{33}{subsection.5.5}
-\contentsline {subsection}{\numberline {5.6}(Windows) Agenten oder allgemein Einholen von Infos}{33}{subsection.5.6}
-\contentsline {subsection}{\numberline {5.7}Visualisierung der eingesammelten Daten}{34}{subsection.5.7}
+\contentsline {section}{\numberline {2}Abstract}{3}{section.2}
+\contentsline {section}{\numberline {3}Aufgabenstellung}{4}{section.3}
+\contentsline {section}{\numberline {4}Grundlagen}{5}{section.4}
+\contentsline {subsection}{\numberline {4.1}\IeC {\"U}berwachungssysteme}{5}{subsection.4.1}
+\contentsline {subsubsection}{\numberline {4.1.1}Ressourcenbelastung}{6}{subsubsection.4.1.1}
+\contentsline {paragraph}{Lokale / Zentrale Bearbeitung}{6}{section*.2}
+\contentsline {paragraph}{Entfernte / Ausgelagerte Bearbeitung}{6}{section*.3}
+\contentsline {subsubsection}{\numberline {4.1.2}Netzwerkstruktur und Abh\IeC {\"a}ngigkeiten}{6}{subsubsection.4.1.2}
+\contentsline {paragraph}{\IeC {\"U}berwachungsredundanzen vermeiden}{7}{section*.4}
+\contentsline {paragraph}{Minimale Netzwerkbelastung}{7}{section*.5}
+\contentsline {subsubsection}{\numberline {4.1.3}Sicherheitsaspekte}{8}{subsubsection.4.1.3}
+\contentsline {subsection}{\numberline {4.2}Dokumenten-Management-Systeme}{9}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}Eingabe}{12}{subsubsection.4.2.1}
+\contentsline {paragraph}{Dokumenteneingang}{12}{section*.6}
+\contentsline {paragraph}{Indizierung}{13}{section*.7}
+\contentsline {subsubsection}{\numberline {4.2.2}Verwaltung und Archivierung}{14}{subsubsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.3}Ausgabe}{14}{subsubsection.4.2.3}
+\contentsline {paragraph}{Recherche}{14}{section*.8}
+\contentsline {paragraph}{Reproduktion}{15}{section*.9}
+\contentsline {subsection}{\numberline {4.3}Content-Management-Systeme}{15}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Service-Orientierte Architektur}{17}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.5}Web-Services-Architektur}{19}{subsection.4.5}
+\contentsline {paragraph}{SOAP}{20}{section*.10}
+\contentsline {paragraph}{WSDL}{20}{section*.11}
+\contentsline {paragraph}{UDDI}{20}{section*.12}
+\contentsline {section}{\numberline {5}Nagios}{22}{section.5}
+\contentsline {subsection}{\numberline {5.1}Allgemein}{22}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Aufbau / Architektur}{23}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}\IeC {\"U}berpr\IeC {\"u}fungsmethoden}{28}{subsection.5.3}
+\contentsline {subsubsection}{\numberline {5.3.1}Aktive Checks}{28}{subsubsection.5.3.1}
+\contentsline {subsubsection}{\numberline {5.3.2}Passive Checks}{28}{subsubsection.5.3.2}
+\contentsline {paragraph}{Methode 1 - Netzwerkdienste}{28}{section*.13}
+\contentsline {paragraph}{Methode 2 - SSH}{30}{section*.14}
+\contentsline {paragraph}{Methode 3 - NRPE}{30}{section*.15}
+\contentsline {paragraph}{Methode 4 - SNMP}{31}{section*.16}
+\contentsline {paragraph}{Methode 5 - NSCA}{33}{section*.17}
 \contentsline {section}{\numberline {6}Oracle UCM}{35}{section.6}
 \contentsline {subsection}{\numberline {6.1}Allgemein}{35}{subsection.6.1}
 \contentsline {subsection}{\numberline {6.2}Aufbau / Architektur}{35}{subsection.6.2}
@@ -74,10 +68,10 @@
 \contentsline {subsection}{\numberline {8.6}Benutzersimulation}{55}{subsection.8.6}
 \contentsline {section}{\numberline {9}Ergebnis}{57}{section.9}
 \contentsline {section}{\numberline {10}Zusammenfassung und Ausblick}{58}{section.10}
-\contentsline {section}{\numberline {11}Anhang}{59}{section.11}
-\contentsline {subsection}{\numberline {11.1}Abbildungsverzeichnis}{59}{subsection.11.1}
-\contentsline {subsection}{\numberline {11.2}Codelistingverzeichnis}{61}{subsection.11.2}
-\contentsline {subsection}{\numberline {11.3}Quellverzeichnis}{62}{subsection.11.3}
-\contentsline {subsubsection}{\numberline {11.3.1}Literaturverzeichnis}{62}{subsubsection.11.3.1}
-\contentsline {subsubsection}{\numberline {11.3.2}Internetquellen}{64}{subsubsection.11.3.2}
-\contentsline {subsection}{\numberline {11.4}Glossar}{65}{subsection.11.4}
+\contentsline {section}{\numberline {11}Anhang}{60}{section.11}
+\contentsline {subsection}{\numberline {11.1}Abbildungsverzeichnis}{60}{subsection.11.1}
+\contentsline {subsection}{\numberline {11.2}Codelistingverzeichnis}{62}{subsection.11.2}
+\contentsline {subsection}{\numberline {11.3}Quellverzeichnis}{63}{subsection.11.3}
+\contentsline {subsubsection}{\numberline {11.3.1}Literaturverzeichnis}{63}{subsubsection.11.3.1}
+\contentsline {subsubsection}{\numberline {11.3.2}Internetquellen}{65}{subsubsection.11.3.2}
+\contentsline {subsection}{\numberline {11.4}Glossar}{66}{subsection.11.4}
