@@ -20,13 +20,12 @@ Siehe hierfür auch Abbildung \ref{aktivechecks}.
 
 Damit Nagios die gewünschten Server überwachen kann, müssen sie der Anwendung zuerst bekannt gemacht werden.
 Dies wird über das Anlegen einer Konfigurationsdatei mit einem Host-Objekt erreicht.
-Dabei richtet sich die Definition des Host-Objektes nach dem Schema, welches für alle Objektedefinitionen (Services, Kontakt, Gruppen, Kommandos etc.) gilt:
+Dabei richtet sich die Definition des Host-Objektes nach dem Schema, welches für alle Objektdefinitionen (Services, Kontakt, Gruppen, Kommandos etc.) gilt:
 
 \begin{lstlisting}[captionpos=b, caption=Nagiosschema für Objektdefinitionen, label=schmeaobj, breaklines = false]
 define object-type {
 	parameter value
-	parameter value
-	...
+	parameter value ...
 }
 \end{lstlisting}
 
@@ -47,7 +46,8 @@ define host{
 \end{lstlisting}
 
 In der Praxis werden öfters verwendete Attribute wie die Kontaktgruppe oder der Zeitraum für die aktiven Checks durch Verwendung eines übergeordneten Host-Objektes nach unten vererbt.
-Dadurch müssen nur noch die spezifischen Informationen und der Name des übergeordneten Host-Objektes eingetragen werden.
+Dadurch müssen nur noch die spezifischen Informationen des Servers eingetragen werden.
+%und der Name des übergeordneten Host-Objektes
 \begin{lstlisting}[captionpos=b, caption=Verkürzte Definition eines Hostobjektes, label=vhostobj, breaklines = true, language=sh]
 define host {
         use             windows-server #Oberklasse dieses Host-Objektes
@@ -61,7 +61,7 @@ Mit dieser Hostdefinition wird der Rechner im Webinterface von Nagios bereits an
 
 \begin{figure}[ht]
 	\centering
-	   \fbox{\includegraphics[width=0.95\textwidth]{bilder/example-ping.png}}
+	   \fbox{\includegraphics[width=0.85\textwidth]{bilder/example-ping.png}}
 		\caption{Anzeige des Servers im Webinterface von Nagios}
 		\label{check-swap}
 \end{figure}
@@ -168,12 +168,12 @@ Sollte sich der Zustand wieder in den Normalzustand begeben und dieser Zustands�
 
 Ein Übergang zu dem OK Status wird sofort als Hard State festgelegt / festgehalten / festgesetzt / und führt dadurch zur sofortigen Benachrichtigung durch Nagios.
 
-Diese Benachrichtigung
+%Diese Benachrichtigung
 
-\begin{itemize}
-\item Betroffene OSI Schichten auflisten und erklären
-\item Wie werden die Info von Nagios gesammelt und wie gespeichert -> FlapDetection
-\item FLapping \footnote{\url{http://nagios.sourceforge.net/docs/2\_0/flapping.html}}
-\item Benachrichtigung durch email oder sms sogar per Telefon geht usw.
-\item Hierarchie \url{http://nagios.sourceforge.net/docs/3_0/networkreachability.html}
-\end{itemize}
+%\begin{itemize}
+%\item Betroffene OSI Schichten auflisten und erklären
+%\item Wie werden die Info von Nagios gesammelt und wie gespeichert -> FlapDetection
+%\item FLapping \footnote{\url{http://nagios.sourceforge.net/docs/2\_0/flapping.html}}
+%\item Benachrichtigung durch email oder sms sogar per Telefon geht usw.
+%\item Hierarchie \url{http://nagios.sourceforge.net/docs/3_0/networkreachability.html}
+%\end{itemize}

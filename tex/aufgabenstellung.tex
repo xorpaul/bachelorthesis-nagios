@@ -1,30 +1,37 @@
 \section{Aufgabenstellung}
 
-Um den Mitarbeitern des Forschungszentrums Karlsruhe eine möglichst ausfallsichere Plattform für die zentrale Speicherung, Bearbeitung und Verwaltung von Dokumenten anzubieten soll eine Elemente gefunden und der einwandfreie Status/Zustand dieser Objekte mit den passenden Überprüfungen sichergestellt werden 
-
-reaktiv -> logs
-
+Um den Mitarbeitern des Forschungszentrums Karlsruhe eine möglichst ausfallsichere Plattform für die zentrale Speicherung, Bearbeitung und Verwaltung von Dokumenten anzubieten soll eine Überwachung realisiert werden, die nicht nur die Anwendung, sondern auch den darunterliegenden Server auf seine Systemressourcen überwacht.
+Dabei müssen diese Elemente gefunden werden, mit deren Überprüfung der eindeutige Zustand der Anwendung festgestellt und den störungsfreie Betrieb sichergestellt werden kann.
 
 Im Forschungszentrum Karlsruhe wird für die Verwaltung von Webseiten, Dokumenten und Bilder das Dokumenten-Management-System \textit{\gls{OracleUCM}} der Firma Oracle  eingesetzt.
+Daher muss sich für die Ermittlung der zu überwachenden Objekte mit dem Aufbau und der spezifischen Funktions- und Arbeitsweise des verwendeten Dokumenten-Management-Systems auseinandergesetzt werden.
 
-Im Laufe dieser Arbeit soll eine Überwachung eines Dokumenten-Management-Systems unter Berücksichtigung der Funktions- und Arbeitsweise des eingesetzten Dokumenten-Management-Systems durch eine Open Source (Netzwerk)Überwachungsandwendung realisiert werden.
+Als Überwachungssoftware wird im Forschungszentrum Karlsruhe das Open Source-Projekt \textit{Nagios} eingesetzt.
+Damit der fehlerfreie Betrieb von \gls{OracleUCM} als Dienst durch die Überwachung der ermittelten Überwachungselemente eindeutig festgestellt werden kann, muss sich mit dem Aufbau, der internen Funktionsweise und den verschiedenen Methoden bezüglich der Ermittlung der Statusinformationen untersucht werden.
+Dabei soll eine Übersicht über die unterschiedlichen Überwachungsmethoden von Nagios erstellt werden und unter Berücksichtigung des späteren Einsatzes bewertet werden.
+Hierbei sind für die spätere Umsetzung beispielsweise die verschlüsselte Datenübertragung zwischen Überwachungs- und Anwendungsserver ein Kriterium.
+Mit der durch diese Bewertung ausgewählte Methode soll die Überwachung auf verschiedenen Ebenen realisiert werden.
 
-Sich mit Nagios und dem DMS Oracle UCM auseinandersetzten.
+Die Kategorisierung der Überwachungselemente ergibt sich aus der Gewichtung der einzelnen Elemente.
+%In diesem Schritt werden die zuvor gefunden 
+Essentielle Merkmale / Informationen wie die simple Erreichbarkeit über das Netzwerk bilden die Grundlage der darüber liegende Überwachungsobjekte wie der Zustand eines Prozesses.
+Dabei soll die Anwendung auch reaktiv durch eine Auswertung von Logdateien auf Fehler überwacht werden.
 
-Einsatz von Oracle UCM als ECM für 
 
-Überwachungselemente finden und der Überwachung realisieren.
+Zum eindeutigen Erkennen von Fehlern, die während der Benutzung durch die Anwender auftreten, sollen die typischen Aktionen der Benutzer simuliert werden. 
+Für die Realisierung dieser Benutzersimulation muss die Anwendung über eine Schnittstelle verfügen, die sich durch ein Programm über das Netzwerk ansprechen lässt.
+Dieses Programm soll die Benutzeraktionen automatisch/selbständig durchführen und der Überwachungssoftware Nagios die Ergebnisse der einzelnen Schritte übermitteln, damit der Fehlerzustand (möglichst) sofort erkannt und gleichzeitig seine Ursache eingegrenzt werden kann.
 
-Benutzersimulation -> damit Störung frühzeitig erkannt werden können,
+Dabei müssen bei der Programmentwicklung mögliche Konsequenzen aufgrund verschiedener Szenarien bedacht werden.
+Sollte die Anwendung bereits durch eine Vielzahl von Benutzern stark belastet sein, wird dadurch auch der Ablauf der Benutzersimulation verzögert
+In diesem Fall soll die Überwachungssoftware bzw. Benutzersimulation keine falsche Informationen melden.
 
-Verwendung von Nagios als Vorraussetzung, da Standard
-Keinen "Schaden" am DMS anrichten
-Sichheitsaspekte nicht unbeachtet lassen, Klartextübertragung.
+Durch die Benutzersimulation darf die Nutzung der Anwendung durch die eigentlichen Benutzer nicht beeinträchtigt werden.
+Da die Ausführung der Benutzersimulation durch Nagios in kurzen Zeitabständen periodisch aufgerufen wird, müssen auch langfristige Auswirkungen wie das Überlaufen der Datenbank der Anwendung oder die Überfüllung des Festplattenspeichers des Anwendungsservers bedacht werden.
 
-Export auf vorhanden Nagios-Server ermöglichen.
+Da als Entwicklungsumgebung ein eigener Nagios-Server eingesetzt werden soll, muss die entwickelte Lösung auf den bereits vorhanden Nagios-Server exportierbar sein.
 
-Hinzufügen von Services ermöglichen
-Konfigurieren der Überwachungsparameter ermöglichen (CPU last, df)
+%\textit{Export auf vorhanden Nagios-Server ermöglichen.
 
-Oracle UCM werden im FZK eingesetzt, bisher nur rudimentäre Überwachung durch Nagios möglich.
-Diese Arbeit soll die spezifischen Überwachungselemente erurieren und umsetzten.
+%Hinzufügen von Services ermöglichen%
+%Konfigurieren der Überwachungsparameter ermöglichen (CPU last, df) protokollieren}
