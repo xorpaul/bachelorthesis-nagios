@@ -3,7 +3,7 @@ In diesem Kapitel wird die Vorgehensweise der zuvor beschriebenen Problemstellun
 
 \subsection{Aufbau der Testumgebung}
 
-\input{tex/agents.tex}
+
 
 \subsubsection{Aufsetzen eines Nagios-Test-Systems}
 Da die einzelnen Überwachungselemente in der Überwachungssoftware Nagios nach und nach eingetragen (/ definiert / assoziiert / verbunden) werden müssen, ist ein häufiges Neustarten der Nagios-Anwendung notwendig, damit die neuen Konfigurationsdateien übernommen werden.
@@ -15,7 +15,7 @@ Da Nagios ein Unix-ähnliches Betriebssystem erfordert, wird für diesen Zweck d
 \subsubsection{Bilddatenbank als virtuelle Maschine}
 Für die Simulation der verschiedenen Fehlerzuständen der einzelnen Überwachungselemente wird eine virtuelle Maschine mit einer \gls{OracleUCM} Prototypinstallation, die extra als Entwicklungsplattform erstellt wurde, verwendet.
 
-
+\input{tex/agents.tex}
 
 \subsection{Umsetzung der Systemüberwachung}
 
@@ -85,7 +85,7 @@ Bei der Prozessorüberwachung schlägt Nagios Alarm, wenn der Mittelwert der Aus
 Um die drei genannten Logdateien aus Kapitel \ref{checklog} auszuwerten wird durch den \gls{NRPE}-Dienst das Plugin \textit{check\_logfiles} von Gerhard Laußer eingesetzt.
 
 Dieses Plugin besitzt bereits einige nützliche Funktionen für die Überwachung von Logdateien.
-Durch das Setzten eines Zeitstempels filter das Plugin veraltete Einträge heraus und untersucht nur neu hinzugekommene Zeilen.
+Durch das Setzten eines Zeitstempels filtert das Plugin veraltete Einträge heraus und untersucht nur neu hinzugekommene Zeilen.
 Der Rotationsalgorithmus der Oracle UCM-Logdateien kann dem Plugin durch die Verwendung einer Konfigurationsdatei mitgeteilt werden.
 
 Die Konfigurationsdatei für das \textit{check\_logfiles}-Plugin wird im folgendem Listing gezeigt:
@@ -97,7 +97,6 @@ Die Konfigurationsdatei für das \textit{check\_logfiles}-Plugin wird im folgend
   type => 'rotating::uniform',
   logfile => 'D:/bdb2/weblayout/groups/secure/logs/bdb/IdcLnLog.htm',
   rotation => 'refinery\d{2}\.htm',
-  options => 'maxlength=623,nologfilenocry',
   warningpatterns => [
         'Cannot identify file',
 	  'Bad CRC value in IHDR chunk',
@@ -106,39 +105,126 @@ Die Konfigurationsdatei für das \textit{check\_logfiles}-Plugin wird im folgend
 });
 \end{lstlisting}
 
+Mit dem \pictext{tag}-Attribut wird diese Auswertung eindeutig identifizierbar gemacht, da man in der gleichen Konfigurationsdatei mehrere Logdateien bzw. weitere Durchsuchungen definieren kann.
+Das Attribut \pictext{type} muss hier so gesetzt werden, da die aktuelle Logdatei und die wegrotierte Logdatei das gleichen Namensschema benutzten.
+Der Pfad zu den Logdateien wird über das Attribut \pictext{logfile} gesetzt.
+Da die einzelnen Logdateien mit einem bestimmten Namensmuster erstellt werden (siehe Kapitel \cite{checklog}), muss dieses Namensmuster hier direkt angegeben werden.
+In diesem Falle durchsucht das \textit{check\_logfiles}-Plugin alle Logdateien mit dem Namen \textit{refinery00.htm} bis \textit{refinery99.htm}.
+Alle gefundenen Dateien werden dem Datum nach sortiert und die aktuellste Datei wird untersucht.
+Nach welchen Stopwörtern gesucht werden soll wird mit dem Attribut \pictext{warningpatterns} angegeben, sofern mindestens einer dieser Strings gefunden wurde liefert das Plugin ein WARNING als Rückmeldung inklusive der Zeile in dem das Stopwort gefunden wurde.
+
+\begin{figure}[ht]
+	\centering
+	   \fbox{\includegraphics[width=0.95\textwidth]{bilder/logcheckwarn.png}}
+		\caption{Ausgabe der betreffenden Zeile in der Logdatei}
+		\label{checklogwarn}
+\end{figure}
+
 
 \subsection{Benutzersimulation}
 
+Um die Funktionalität der Anwendung eindeutig festzustellen werden typische Benutzeraktionen simuliert und die Ergebnisse an Nagios übermittelt.
+
+Solche typische Aktionen sind das Einchecken eines Bildes, Suche nach einem Bild und schließlich die Anforderung des Originalbildes und der konvertierten Bilder.
+%Benutzertätigkeiten, Handlungen
+Da Nagios standardmäßig ein Plugin periodisch jede fünf Minuten aufruft, würde sich die Festplatte und die Datenbank des \gls{OracleUCM}-Servers im Laufe der Zeit an ihre Kapazitäten stoßen.
+Daher werden nach der Anforderung und Überprüfung der Bilder alle Testbilder vom Server entfernt.
+
+Der Ablauf der Benutzersimulation soll in verkürzter Form durch folgendes Struktogramm verdeutlicht werden:
+
+\begin{figure}[ht]
+	\centering
+	   \includegraphics[width=0.9\textwidth]{bilder/Benutzersimulation.png}
+		\caption{Geplanter Ablauf der Benutzersimulation}
+		\label{user-sim}
+\end{figure}
 
 
 
+Per Webservice soll ein Testbild an den Server geschickt und eingecheckt werden.
+In diesem ersten Schritt wird auch gleichzeitig die Erreichbarkeit der Anwendung über das Netzwerk getestet.
 
-\begin{itemize}
-\item \url{http://www.w3schools.com/soap/default.asp} Web Services und SOAP
-\item \url{http://www.w3schools.com/wsdl/wsdl_summary.asp} WSDL
-\item max attempts bei Search erhöhen, da Auslastung der InboundRef -> möglichst keine/geringe False Positives -> auf Ausblick verweisen, Rahmenbedingungen müssen im Feld in der Praxis erst noch gefunden werden
-\end{itemize}ron
+Wenn die Übertragung des Bildes erfolgreich wird anschließend nach dem soeben eingecheckten Bild per Dateinamen gesucht um die Funktionalität der Indizierung zu kontrollieren.
+
+Sollte das Bild gefunden werden, wird es vom Nagios-Server angefordert und auf seine Korrektheit überprüft.
+Der gleiche Test wird mit den konvertieren Bildversion durchgeführt, um die Funktion der Konvertierung zu überwachen.
+
+Falls alle Tests erfolgreich waren, wird das Testbild und alle konvertierten Bilder vom \gls{OracleUCM}-Server gelöscht.
+Bei den anderen Szenarien gibt das Plugin den Wert 2 für den Status CRITICAL zurück.\\
+
+Die Realisierung dieser Simulation wird durch zwei Plugins realisiert.
+
+Das erste Plugin dient zum Einchecken des Testbildes.
+Dabei ruft der Nagios-Server ein auf PHP-basierendes Script auf.
+In diesem Script wird die PHP-Klasse \textit{nuSOAP} eingebunden, damit man vereinfacht auf Web Services zugreifen kann.
+Die Kommunikation zwischen Client und Server bei der Benutzung eines Web Services findet im \gls{XML}-Format statt.
+Um den Aufwand zu vermeiden diese \gls{XML}-Datei immer selbst zu erstellen, wird mit Hilfe der \gls{WSDL}-Datei auf dem \gls{OracleUCM}-Server die benötigten Parameter beim Aufruf eines Web Services von \textit{nuSOAP} ausgelesen.
+
+\begin{figure}[ht]
+	\centering
+	   \fbox{\includegraphics[width=0.85\textwidth]{bilder/wsdlscrn.png}}
+		\caption{Anforderungsparameter aus der WSDL-Datei}
+		\label{wsdl1}
+\end{figure}
+
+
+%\begin{lstlisting}[captionpos=b, caption=Anforderungsparameter aus der WSDL-Datei, label=1stwsdl, breaklines = true, language=xml]
+%<s:element name="CheckInUniversal">
+% <s:complexType>
+%  <s:sequence>
+%   <s:element minOccurs="0" maxOccurs="1" name="dDocTitle" type="s:string"/>
+%   <s:element minOccurs="0" maxOccurs="1" name="dDocType" type="s:string"/>
+%   <s:element minOccurs="0" maxOccurs="1" name="dDocAuthor" type="s:string"/>
+%   <s:element minOccurs="0" maxOccurs="1" name="dSecurityGroup" type="s:string"/>
+%   <s:element minOccurs="0" maxOccurs="1" name="dDocAccount" type="s:string"/>
+%   <s:element minOccurs="0" maxOccurs="1" name="primaryFile" type="s0:IdcFile"/>
+%  </s:sequence>
+% </s:complexType>
+%</s:element>
+%\end{lstlisting}
+
+\begin{lstlisting}[captionpos=b, caption=Anforderungsparameter des ersten Plugins, label=1stplugin, breaklines = true, language=php]
+$ergebnis = $soap->CheckInUniversal(array(
+ 'dDocAuthor'=>$stellentuser,
+ 'dDocTitle'=>$page['title'],
+ 'dSecurityGroup'=>$page['stellent_secgroup'],
+ 'dDocAccount'=>$page['stellent_konto'],
+ 'dInDate'=>date("d.m.y H:i"),
+ 'dDocType'=>$page['stellent_docType'],
+ 'doFileCopy'=>'1',
+ 'dDocFormat'=>'image/png',
+ 'primaryFile'=>array(
+	'fileName'=>$page['title'],
+	'fileContent'=>$content)
+));
+
+\end{lstlisting}
+
+
+Dafür enthält das erste PHP-Script die URL zu der \gls{WSDL}-Datei für den Web Service \textit{CheckInUniversal}.
+Durch diese \gls{WSDL}-Datei
 
 \begin{figure}[ht]
 	\centering
 	   \fbox{\includegraphics[width=0.93\textwidth]{bilder/wsdl.png}}
-		\caption{Ablauf der Benutzersimulation}
+		\caption{Technischer Ablauf der Benutzersimulation}
 		\label{usersim}
 \end{figure}
+
+
 
 \begin{figure}[ht]
 	\centering
 	   \fbox{\includegraphics[width=0.93\textwidth]{bilder/wsdl-valid.png}}
-		\caption{Überprüfung der Benutzersimulation}
+		\caption{Technischer Ablauf der Benutzersimulation 2}
 		\label{usersim2}
 \end{figure}
 %
-\begin{figure}[ht]
-	\centering
-	   \includegraphics[width=0.9\textwidth]{bilder/Benutzersimulation.png}
-		\caption{Ablauf der Benutzersimulation}
-		\label{user-sim}
-\end{figure}
+\begin{itemize}
+\item \url{http://www.w3schools.com/soap/default.asp} Web Services und SOAP
+\item \url{http://www.w3schools.com/wsdl/wsdl_summary.asp} WSDL
+\item max attempts bei Search erhöhen, da Auslastung der InboundRef -> möglichst keine/geringe False Positives -> auf Ausblick verweisen, Rahmenbedingungen müssen im Feld in der Praxis erst noch gefunden werden
+\end{itemize}
 
 
 

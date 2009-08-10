@@ -2,76 +2,76 @@
 \contentsline {section}{\numberline {1}Einleitung}{1}{section.1}
 \contentsline {section}{\numberline {2}Abstract}{3}{section.2}
 \contentsline {section}{\numberline {3}Aufgabenstellung}{4}{section.3}
-\contentsline {section}{\numberline {4}Grundlagen}{5}{section.4}
-\contentsline {subsection}{\numberline {4.1}\IeC {\"U}berwachungssysteme}{5}{subsection.4.1}
+\contentsline {section}{\numberline {4}Grundlagen}{6}{section.4}
+\contentsline {subsection}{\numberline {4.1}\IeC {\"U}berwachungssysteme}{6}{subsection.4.1}
 \contentsline {subsubsection}{\numberline {4.1.1}Ressourcenbelastung}{6}{subsubsection.4.1.1}
-\contentsline {paragraph}{Lokale / Zentrale Bearbeitung}{6}{section*.2}
-\contentsline {paragraph}{Entfernte / Ausgelagerte Bearbeitung}{6}{section*.3}
-\contentsline {subsubsection}{\numberline {4.1.2}Netzwerkstruktur und Abh\IeC {\"a}ngigkeiten}{6}{subsubsection.4.1.2}
-\contentsline {paragraph}{\IeC {\"U}berwachungsredundanzen vermeiden}{7}{section*.4}
-\contentsline {paragraph}{Minimale Netzwerkbelastung}{7}{section*.5}
-\contentsline {subsubsection}{\numberline {4.1.3}Sicherheitsaspekte}{8}{subsubsection.4.1.3}
-\contentsline {subsection}{\numberline {4.2}Dokumenten-Management-Systeme}{9}{subsection.4.2}
-\contentsline {subsubsection}{\numberline {4.2.1}Eingabe}{12}{subsubsection.4.2.1}
-\contentsline {paragraph}{Dokumenteneingang}{12}{section*.6}
-\contentsline {paragraph}{Indizierung}{13}{section*.7}
-\contentsline {subsubsection}{\numberline {4.2.2}Verwaltung und Archivierung}{14}{subsubsection.4.2.2}
-\contentsline {subsubsection}{\numberline {4.2.3}Ausgabe}{14}{subsubsection.4.2.3}
-\contentsline {paragraph}{Recherche}{14}{section*.8}
-\contentsline {paragraph}{Reproduktion}{15}{section*.9}
-\contentsline {subsection}{\numberline {4.3}Content-Management-Systeme}{15}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}Service-Orientierte Architektur}{17}{subsection.4.4}
-\contentsline {subsection}{\numberline {4.5}Web-Services-Architektur}{19}{subsection.4.5}
-\contentsline {paragraph}{SOAP}{20}{section*.10}
-\contentsline {paragraph}{WSDL}{20}{section*.11}
-\contentsline {paragraph}{UDDI}{20}{section*.12}
-\contentsline {section}{\numberline {5}Nagios}{22}{section.5}
-\contentsline {subsection}{\numberline {5.1}Allgemein}{22}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Aufbau / Architektur}{23}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}\IeC {\"U}berpr\IeC {\"u}fungsmethoden}{28}{subsection.5.3}
-\contentsline {subsubsection}{\numberline {5.3.1}Aktive Checks}{28}{subsubsection.5.3.1}
-\contentsline {subsubsection}{\numberline {5.3.2}Passive Checks}{28}{subsubsection.5.3.2}
-\contentsline {paragraph}{Methode 1 - Netzwerkdienste}{28}{section*.13}
-\contentsline {paragraph}{Methode 2 - SSH}{30}{section*.14}
-\contentsline {paragraph}{Methode 3 - NRPE}{30}{section*.15}
-\contentsline {paragraph}{Methode 4 - SNMP}{31}{section*.16}
-\contentsline {paragraph}{Methode 5 - NSCA}{33}{section*.17}
-\contentsline {section}{\numberline {6}Oracle UCM}{35}{section.6}
-\contentsline {subsection}{\numberline {6.1}Allgemein}{35}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Aufbau / Architektur}{35}{subsection.6.2}
-\contentsline {subsubsection}{\numberline {6.2.1}Content Server}{36}{subsubsection.6.2.1}
-\contentsline {subsubsection}{\numberline {6.2.2}Vault und Web Layout}{36}{subsubsection.6.2.2}
-\contentsline {subsubsection}{\numberline {6.2.3}Inbound Refinery}{36}{subsubsection.6.2.3}
-\contentsline {subsubsection}{\numberline {6.2.4}Search Engine}{36}{subsubsection.6.2.4}
-\contentsline {subsubsection}{\numberline {6.2.5}Webserver}{36}{subsubsection.6.2.5}
-\contentsline {section}{\numberline {7}\IeC {\"U}berwachungselemente}{36}{section.7}
-\contentsline {subsection}{\numberline {7.1}Statusabfragen}{37}{subsection.7.1}
-\contentsline {paragraph}{System}{37}{section*.18}
-\contentsline {paragraph}{Prozesse}{38}{section*.19}
-\contentsline {paragraph}{Services}{38}{section*.20}
-\contentsline {subsection}{\numberline {7.2}\IeC {\"U}berwachung der Funktionalit\IeC {\"a}t}{38}{subsection.7.2}
-\contentsline {subsection}{\numberline {7.3}Auswerten von Logdateien}{39}{subsection.7.3}
-\contentsline {subsection}{\numberline {7.4}Benutzersimulation}{40}{subsection.7.4}
-\contentsline {section}{\numberline {8}Umsetzung}{43}{section.8}
-\contentsline {subsection}{\numberline {8.1}Aufbau der Testumgebung}{43}{subsection.8.1}
-\contentsline {subsection}{\numberline {8.2}\IeC {\"U}bersicht Nagios-Agenten}{43}{subsection.8.2}
-\contentsline {subsubsection}{\numberline {8.2.1}Unix-Agenten}{43}{subsubsection.8.2.1}
-\contentsline {subsubsection}{\numberline {8.2.2}Windows-Agenten}{45}{subsubsection.8.2.2}
-\contentsline {subsubsection}{\numberline {8.2.3}Auswahl und Konfiguration des Nagios-Agenten}{47}{subsubsection.8.2.3}
-\contentsline {paragraph}{Auswahl}{47}{section*.21}
-\contentsline {paragraph}{Installation und Konfiguration}{48}{section*.22}
-\contentsline {subsubsection}{\numberline {8.2.4}Aufsetzen eines Nagios-Test-Systems}{52}{subsubsection.8.2.4}
-\contentsline {subsubsection}{\numberline {8.2.5}Bilddatenbank als virtuelle Maschine}{52}{subsubsection.8.2.5}
-\contentsline {subsection}{\numberline {8.3}Umsetzung der System\IeC {\"u}berwachung}{52}{subsection.8.3}
-\contentsline {subsection}{\numberline {8.4}Umsetzung der Funktionlit\IeC {\"a}tstest}{54}{subsection.8.4}
-\contentsline {subsection}{\numberline {8.5}Auswertung der Logdateien}{55}{subsection.8.5}
-\contentsline {subsection}{\numberline {8.6}Benutzersimulation}{55}{subsection.8.6}
-\contentsline {section}{\numberline {9}Ergebnis}{57}{section.9}
-\contentsline {section}{\numberline {10}Zusammenfassung und Ausblick}{58}{section.10}
-\contentsline {section}{\numberline {11}Anhang}{60}{section.11}
-\contentsline {subsection}{\numberline {11.1}Abbildungsverzeichnis}{60}{subsection.11.1}
-\contentsline {subsection}{\numberline {11.2}Codelistingverzeichnis}{62}{subsection.11.2}
-\contentsline {subsection}{\numberline {11.3}Quellverzeichnis}{63}{subsection.11.3}
-\contentsline {subsubsection}{\numberline {11.3.1}Literaturverzeichnis}{63}{subsubsection.11.3.1}
-\contentsline {subsubsection}{\numberline {11.3.2}Internetquellen}{65}{subsubsection.11.3.2}
-\contentsline {subsection}{\numberline {11.4}Glossar}{66}{subsection.11.4}
+\contentsline {paragraph}{Lokale / Zentrale Bearbeitung}{7}{section*.2}
+\contentsline {paragraph}{Entfernte / Ausgelagerte Bearbeitung}{7}{section*.3}
+\contentsline {subsubsection}{\numberline {4.1.2}Netzwerkstruktur und Abh\IeC {\"a}ngigkeiten}{7}{subsubsection.4.1.2}
+\contentsline {paragraph}{\IeC {\"U}berwachungsredundanzen vermeiden}{8}{section*.4}
+\contentsline {paragraph}{Minimale Netzwerkbelastung}{8}{section*.5}
+\contentsline {subsubsection}{\numberline {4.1.3}Sicherheitsaspekte}{9}{subsubsection.4.1.3}
+\contentsline {subsection}{\numberline {4.2}Dokumenten-Management-Systeme}{10}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}Eingabe}{14}{subsubsection.4.2.1}
+\contentsline {paragraph}{Dokumenteneingang}{14}{section*.6}
+\contentsline {paragraph}{Indizierung}{14}{section*.7}
+\contentsline {subsubsection}{\numberline {4.2.2}Verwaltung und Archivierung}{15}{subsubsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.3}Ausgabe}{16}{subsubsection.4.2.3}
+\contentsline {paragraph}{Recherche}{16}{section*.8}
+\contentsline {paragraph}{Reproduktion}{16}{section*.9}
+\contentsline {subsection}{\numberline {4.3}Content-Management-Systeme}{17}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Service-Orientierte Architektur}{19}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.5}Web-Services-Architektur}{21}{subsection.4.5}
+\contentsline {paragraph}{SOAP}{22}{section*.10}
+\contentsline {paragraph}{WSDL}{22}{section*.11}
+\contentsline {paragraph}{UDDI}{22}{section*.12}
+\contentsline {section}{\numberline {5}Nagios}{24}{section.5}
+\contentsline {subsection}{\numberline {5.1}Allgemein}{24}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Aufbau / Architektur}{25}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}\IeC {\"U}berpr\IeC {\"u}fungsmethoden}{30}{subsection.5.3}
+\contentsline {subsubsection}{\numberline {5.3.1}Aktive Checks}{30}{subsubsection.5.3.1}
+\contentsline {subsubsection}{\numberline {5.3.2}Passive Checks}{30}{subsubsection.5.3.2}
+\contentsline {paragraph}{Methode 1 - Netzwerkdienste}{31}{section*.13}
+\contentsline {paragraph}{Methode 2 - SSH}{31}{section*.14}
+\contentsline {paragraph}{Methode 3 - NRPE}{32}{section*.15}
+\contentsline {paragraph}{Methode 4 - SNMP}{33}{section*.16}
+\contentsline {paragraph}{Methode 5 - NSCA}{34}{section*.17}
+\contentsline {section}{\numberline {6}Oracle UCM}{36}{section.6}
+\contentsline {subsection}{\numberline {6.1}Allgemein}{36}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Aufbau / Architektur}{36}{subsection.6.2}
+\contentsline {subsubsection}{\numberline {6.2.1}Content Server}{37}{subsubsection.6.2.1}
+\contentsline {subsubsection}{\numberline {6.2.2}Vault und Web Layout}{38}{subsubsection.6.2.2}
+\contentsline {subsubsection}{\numberline {6.2.3}Inbound Refinery}{38}{subsubsection.6.2.3}
+\contentsline {subsubsection}{\numberline {6.2.4}Search Engine}{38}{subsubsection.6.2.4}
+\contentsline {subsubsection}{\numberline {6.2.5}Webserver}{38}{subsubsection.6.2.5}
+\contentsline {section}{\numberline {7}\IeC {\"U}berwachungselemente}{38}{section.7}
+\contentsline {subsection}{\numberline {7.1}Statusabfragen}{39}{subsection.7.1}
+\contentsline {paragraph}{System}{39}{section*.18}
+\contentsline {paragraph}{Prozesse}{39}{section*.19}
+\contentsline {paragraph}{Services}{40}{section*.20}
+\contentsline {subsection}{\numberline {7.2}\IeC {\"U}berwachung der Funktionalit\IeC {\"a}t}{40}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Auswerten von Logdateien}{41}{subsection.7.3}
+\contentsline {subsection}{\numberline {7.4}Benutzersimulation}{42}{subsection.7.4}
+\contentsline {section}{\numberline {8}Umsetzung}{45}{section.8}
+\contentsline {subsection}{\numberline {8.1}Aufbau der Testumgebung}{45}{subsection.8.1}
+\contentsline {subsubsection}{\numberline {8.1.1}Aufsetzen eines Nagios-Test-Systems}{45}{subsubsection.8.1.1}
+\contentsline {subsubsection}{\numberline {8.1.2}Bilddatenbank als virtuelle Maschine}{45}{subsubsection.8.1.2}
+\contentsline {subsection}{\numberline {8.2}\IeC {\"U}bersicht Nagios-Agenten}{45}{subsection.8.2}
+\contentsline {subsubsection}{\numberline {8.2.1}Unix-Agenten}{46}{subsubsection.8.2.1}
+\contentsline {subsubsection}{\numberline {8.2.2}Windows-Agenten}{48}{subsubsection.8.2.2}
+\contentsline {subsubsection}{\numberline {8.2.3}Auswahl und Konfiguration des Nagios-Agenten}{50}{subsubsection.8.2.3}
+\contentsline {paragraph}{Auswahl}{50}{section*.21}
+\contentsline {paragraph}{Installation und Konfiguration}{50}{section*.22}
+\contentsline {subsection}{\numberline {8.3}Umsetzung der System\IeC {\"u}berwachung}{54}{subsection.8.3}
+\contentsline {subsection}{\numberline {8.4}Umsetzung der Funktionlit\IeC {\"a}tstest}{56}{subsection.8.4}
+\contentsline {subsection}{\numberline {8.5}Auswertung der Logdateien}{57}{subsection.8.5}
+\contentsline {subsection}{\numberline {8.6}Benutzersimulation}{58}{subsection.8.6}
+\contentsline {section}{\numberline {9}Ergebnis}{61}{section.9}
+\contentsline {section}{\numberline {10}Zusammenfassung und Ausblick}{62}{section.10}
+\contentsline {section}{\numberline {11}Anhang}{64}{section.11}
+\contentsline {subsection}{\numberline {11.1}Abbildungsverzeichnis}{64}{subsection.11.1}
+\contentsline {subsection}{\numberline {11.2}Codelistingverzeichnis}{66}{subsection.11.2}
+\contentsline {subsection}{\numberline {11.3}Quellverzeichnis}{67}{subsection.11.3}
+\contentsline {subsubsection}{\numberline {11.3.1}Literaturverzeichnis}{67}{subsubsection.11.3.1}
+\contentsline {subsubsection}{\numberline {11.3.2}Internetquellen}{69}{subsubsection.11.3.2}
+\contentsline {subsection}{\numberline {11.4}Glossar}{70}{subsection.11.4}

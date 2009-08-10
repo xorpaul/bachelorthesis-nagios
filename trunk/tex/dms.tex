@@ -6,26 +6,31 @@ In \cite{DMS08} S. 2 wird ein Dokument durch folgende Punkte definiert:
 \begin{itemize}
 \item Ein Dokument fasst inhaltlich zusammengehörende Informationen strukturiert zusammen, die nicht ohne erheblichen Bedeutungsverlust weiter unterteilt werden können. 
 \item Die Gesamtheit der Information ist für einen gewissen Zeitraum zu erhalten.
-\item Dokumente dienen oft dem Nachweis von Tatsachen.
+%item Dokumente dienen oft dem Nachweis von Tatsachen.
 \item Ein Dokument ist als Einheit ablegbar (speicherbar) und/oder versendbar und/oder wahrnehmbar (sehen, hören, fühlen).
 \item Das Dokument ist eigentlich der Träger, der die Informationen speichert, egal ob das Dokument ein Stück Paper, eine Datei auf einem Rechner, ein Videoband oder eine Tontafel etc. ist. Dies bedeutet auch, dass es keine Bindung an Papier oder ein geschriebenes Wort gibt.
 \end{itemize}
 
-Desweiteren gibt es eine Differenzierung in zwei Definitionen:
+Des weiteren gibt es eine Differenzierung in zwei Definitionen:
 
 \begin{quote}"`Als \textbf{Dokument im konventionellen Sinne} werden Dokumente bezeichnet, die als körperliches Dokumente (z. B. Papier) vorliegen, ursprünglich als körperliches Dokument vorlagen oder für die Publizierung auf einem körperlichen Medium vorgesehen sind.
 
-Die Begrifflichkeit des \textbf{Dokuments im weiteren Sinne} erweitert den Begriff des Dokuments um semantisch zusammengehörende Informationsbestände, die für die Publikation in nicht-körperlichen Medien, z. B. Webseiten, Radio, Fernsehen o. ä. vorgesehen sind. Derartige Dokumente werden oft dynamisch gestaltet und zusammengestellt."' \begin{flushright}\cite{DMS08} S. 2\end{flushright}\end{quote}
+Die Begrifflichkeit des \textbf{Dokuments im weiteren Sinne} erweitert den Begriff des Dokuments um semantisch zusammengehörende Informationsbestände, die für die Publikation in nicht-körperlichen Medien, z.B. Webseiten, Radio, Fernsehen o. ä. vorgesehen sind. Derartige Dokumente werden oft dynamisch gestaltet und zusammengestellt."' \begin{flushright}\cite{DMS08} S. 2\end{flushright}\end{quote}
 
 Dabei müssen auch Daten und Dokumente voneinander abgegrenzt werden.
 In \cite{DMS08} S. 33 werden Daten im Allgemeinen als eher stark strukturierte Informationen gesehen, wobei Dokumente zumeist aus unstrukturierte bis zu schwach strukturierte Informationen bestehen.
 Eine eindeutige Klassifizierung eines vorhandenen Dokumentes lässt ist jedoch nicht immer möglich, da sich oft Mischungen beider Klassen finden (lassen).
 Ohne die dazugehörigen Metadaten besteht ein (graphisches) Bild aus unstrukturierten Informationen, daher auch \gls{NCI}-Dokument für None-Coded Information genannt.
-Der Anteil von strukturierten Informationen in einem Dokument nimmt von Bildern über Text zu Tabellen zu, da hier die Dokumente vollautomatisch auswertbar sind, siehe hierzu Abbildung ???.
+Der Anteil von strukturierten Informationen in einem Dokument nimmt von Bildern über Text zu Tabellen zu, da hier die Dokumente vollautomatisch auswertbar sind, siehe hierzu Abbildung \ref{ncici}.
 
-\begin{center}
-Bild \cite{DMS08} S. 33
-\end{center}
+
+\begin{figure}[ht]
+	\centering
+	   \fbox{\includegraphics[width=0.73\textwidth]{bilder/ci-nci.png}}
+		\caption[Anteil an strukturierten Informationen]{Anteil an strukturierten Informationen\protect\footnote}
+		\label{ncici}
+\end{figure}
+\footnotetext{Quelle: \cite{DMS08} S. 33}
 
 Die Einordnung, wann ein Dokument strukturierte oder unstrukturierte Informationen enthält, lässt an folgenden Beispielen verdeutlichen.
 Bei einem Bild oder Foto lassen sich die enthaltenen Informationen nicht durch Computer bestimmen.
@@ -34,7 +39,7 @@ Daher ist ein Bild, solange keine Metadaten darüber bekannt sind, ein eindeutig
 Im Gegensatz dazu lassen sich die Werte einer Tabelle oder eines Datensatzes durch die Spaltennamen eindeutig bestimmen und durch den Computer auslesen.
 Solche Daten mit strukturierten Informationen werden daher auch als Dokumententyp mit Coded Information (\gls{CI}) bezeichnet.
 
-Unter \textbf{Dokumenten-Management} werden primär die Verwaltungsfunktionen Erfassung, Bearbeitung, Verwaltung und Speicherung von Dokumenten verstanden. \cite{DMS08} S. 344.
+Unter \textbf{Dokumenten-Management} werden primär die Verwaltungsfunktionen Erfassung, Bearbeitung, Verwaltung und Speicherung von Dokumenten verstanden. \cite{DMS08} S. 344.\\
 
 Darunter fallen laut \cite{DMS08} S. 3 folgende Punkte:
 
@@ -49,7 +54,7 @@ Darunter fallen laut \cite{DMS08} S. 3 folgende Punkte:
 \item Lebenslauf und Vernichtung von Dokumenten
 \item Regelung von Verantwortlichkeiten für Inhalt und Verwaltung von Dokumenten
 \end{itemize}
-
+%\newpage
 Der Begriff \textbf{"`Dokumenten-Management-System"'} muss auch in zwei verschiedene Sichtweisen differenziert werden:
 \begin{quote}"`Bei \textbf{Dokumenten-Management-Systemen im engeren Sinne} geht es um die Logik der Verwaltung von Dokumenten, deren Status, Struktur, Lebenszyklus und Inhalt. Dokumente werden beschrieben, klassifiziert und in einer bestimmten logischen Struktur eingeordnet, damit sie einfach wieder gefunden werden können. Dokumente entstehen, werden verändert und (irgendwann) vernichtet.
 
@@ -58,7 +63,7 @@ Den \textbf{Dokumenten-Management-Systemen im weiteren Sinne} ordnet man auch no
 Die Grundstruktur eines Dokumenten-Management-Systemes kann man dadurch grob in folgender Abbildung zusammenfassen:
 \begin{figure}[ht]
 	\centering
-	   \fbox{\includegraphics[scale=0.5]{bilder/dms-struktur.png}}
+	   \fbox{\includegraphics[scale=0.54]{bilder/dms-struktur.png}}
 		\caption[Aufgabenbereiche eines Dokumenten-Management-Systems]{Aufgabenbereiche eines Dokumenten-Management-Systems\protect\footnote}
 		\label{lifecircle}
 \end{figure} 
@@ -143,9 +148,15 @@ Der Unterschied zwischen einem \gls{DMS} und einem \gls{CMS} besteht laut \cite{
 
 Die folgende Abbildung soll den (charakteristischen) Unterschied zwischen \gls{CMS}-Systemen und \gls{DMS}-Systemen verdeutlichen.
 
-\begin{center}
-Bild \cite{DMS08} S. 115
-\end{center}
+
+\begin{figure}[ht]
+	\centering
+	   \fbox{\includegraphics[scale=0.25]{bilder/cmsview.png}}
+		\caption[Sichtweise CMS gegenüber DMS]{Sichtweise CMS gegenüber DMS\protect\footnote}
+		\label{dmsvscms}
+\end{figure} 
+\footnotetext{Quelle: \cite{DMS08} S. 115}
+
 
 Wie zuvor beschrieben ist die Sichtweise eines \gls{DMS} nur auf die einzelnen Dokumente beschränkt, während ein \gls{CMS} einzelne Elemente / Informationen aus den Dokumenten extrahieren und ggf. zu einem neuen Dokument verschmelzen kann. Die Sichtweise des \gls{CMS} wird durch das gestrichelte Polygon dargestellt, welches hier dokumentenübergreifend abgebildet ist.
 
@@ -159,7 +170,7 @@ Dieses Konzept soll in Abbildung \ref{ucm-a2a} verdeutlicht werden.
 
 \begin{figure}[ht]
 	\centering
-	   \fbox{\includegraphics[width=0.95\textwidth]{bilder/ucm.png}}
+	   \fbox{\includegraphics[width=0.8\textwidth]{bilder/ucm.png}}
 		\caption["`any-to-any"' Content-Management Konzept]{"`any-to-any"' Content-Management Konzept\protect\footnote}
 		\label{ucm-a2a}
 \end{figure}

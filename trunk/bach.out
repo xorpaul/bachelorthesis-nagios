@@ -34,12 +34,12 @@
 \BOOKMARK [2][-]{subsection.7.4}{Benutzersimulation}{section.7}
 \BOOKMARK [1][-]{section.8}{Umsetzung}{}
 \BOOKMARK [2][-]{subsection.8.1}{Aufbau der Testumgebung}{section.8}
+\BOOKMARK [3][-]{subsubsection.8.1.1}{Aufsetzen eines Nagios-Test-Systems}{subsection.8.1}
+\BOOKMARK [3][-]{subsubsection.8.1.2}{Bilddatenbank als virtuelle Maschine}{subsection.8.1}
 \BOOKMARK [2][-]{subsection.8.2}{\334bersicht Nagios-Agenten}{section.8}
 \BOOKMARK [3][-]{subsubsection.8.2.1}{Unix-Agenten}{subsection.8.2}
 \BOOKMARK [3][-]{subsubsection.8.2.2}{Windows-Agenten}{subsection.8.2}
 \BOOKMARK [3][-]{subsubsection.8.2.3}{Auswahl und Konfiguration des Nagios-Agenten}{subsection.8.2}
-\BOOKMARK [3][-]{subsubsection.8.2.4}{Aufsetzen eines Nagios-Test-Systems}{subsection.8.2}
-\BOOKMARK [3][-]{subsubsection.8.2.5}{Bilddatenbank als virtuelle Maschine}{subsection.8.2}
 \BOOKMARK [2][-]{subsection.8.3}{Umsetzung der System\374berwachung}{section.8}
 \BOOKMARK [2][-]{subsection.8.4}{Umsetzung der Funktionlit\344tstest}{section.8}
 \BOOKMARK [2][-]{subsection.8.5}{Auswertung der Logdateien}{section.8}

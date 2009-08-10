@@ -28,8 +28,8 @@ Er dient als Grundgerüst (Framework) für darüberliegende Funktionen, da er f�
 
 \begin{figure}[ht]
 	\centering
-	   %\fbox{\includegraphics[width=0.85\textwidth]{bilder/rechability.png}}
-	   \fbox{Quelle: \cite{Huff06} S. 17}
+	   \fbox{\includegraphics[width=0.85\textwidth]{bilder/contenserver.png}}
+	  % \fbox{Quelle: \cite{Huff06} S. 17}
 		\caption[Beispielhafter Einsatz eines Content Servers]{Beispielhafter Einsatz eines Content Servers\protect\footnote}
 		\label{ucm-cs}
 \end{figure}
@@ -72,9 +72,7 @@ Dabei lässt sich aus den verschiedenen Überwachungselemente folgende drei Kate
 \subsection{Statusabfragen}
 \label{syschecks}
 Diese Kategorie besteht aus einfacheren Überprüfungen, die jeweils den Status des Überwachungselementes überwachen.
-Dabei können weitere Untergruppen gebildet werden.
-
-(Irgendwie Hierarchie verdeutlichen: zuerst ping als Grundlage, dann prozesse und services dann funktionschecks, bloss wie? Visio Bild?)
+Dabei können weitere Untergruppen gebildet werden:
 
 \paragraph{System}
 \begin{itemize}
@@ -101,7 +99,7 @@ Dabei können weitere Untergruppen gebildet werden.
 
 \subsection{Überwachung der Funktionalität}
 \label{funztest}
-Durch die vorherigen Tests kann herausgefunden werden, ob eine Anwendung oder ein Dienst auf dem Server gestarten wurde.
+Durch die vorherigen Tests kann herausgefunden werden, ob eine Anwendung oder ein Dienst auf dem Server gestartet wurde.
 Die Funktionalität kann durch solche Überprüfungen jedoch \textbf{nicht} sichergestellt werden.
 Da beispielsweise der Prozess bzw. Dienst des Webservers gestartet ist, jedoch keine Webseite aufgerufen werden kann.
 %Da beispielsweise der Webserver aufgrund eines kritischen Fehlers nicht erreichbar ist, der Prozess bzw. Dienst dennoch läuft.
@@ -126,10 +124,10 @@ Dies wird mit Anmeldungsdaten eines lokalen Benutzers und eines Active Directory
 \subsection{Auswerten von Logdateien}
 \label{checklog}
 %Die zwei bisherigen Kategorien beinhalten simple Zustandsüberprüfungen oder aktive Funktionaltests.
-In dieser Kategorie werden zusätzlich verschiedene Logdateien auf spezielle Warnungs- und Fehlermeldungen mit eindeutigen Stopwörtern untersucht.
+In dieser Kategorie werden zusätzlich verschiedene Logdateien auf spezielle Warnungs- und Fehlermeldungen anhand eindeutigen Stopwörtern untersucht.
 Dies ist notwendig um reaktiv Fehlverhalten der Anwendung zu erkennen, das nicht mit den vorherigen Überwachungselementen entdeckt wurde.
-Desweiteren können durch die Analyse der Logdateien etwaige Alarmmeldungen der bisherigen Tests bestätigt, begründet oder aufgehoben werden.
-Somit bietet das Auswerten der Logdateien zusätzliche Sicherheit False Positive- oder False Negative-Meldungen auszuschliessen.
+Des weiteren können durch die Analyse der Logdateien etwaige Alarmmeldungen der bisherigen Tests bestätigt, begründet oder aufgehoben werden.
+Somit bietet das Auswerten der Logdateien zusätzliche Sicherheit False Positive- oder False Negative-Meldungen auszuschließen.
 
 Die Oracle UCM Anwendung erstellt drei verschiedene Arten von Logdateien:\footnote{Quelle: \cite{UCMlog09}}
 
@@ -160,7 +158,7 @@ Wird beispielsweise ein Bild eingecheckt, wird dieses mehrfach in verschiedenen 
 Ob diese Transformation erfolgreich ablief, kann anhand dieser neuen Dateien festgestellt werden.
 
 \item \textbf{Indizierung} Bei dem Einchecken sollen auch gleichzeitig zusätzliche Informationen über das Dokument festgehalten werden. 
-Diese Informationen können beispielsweise der Name des Authors, das Erstellungsdatum der Datei oder - bei Bildern - der verwendete Farbraum sein. 
+Diese Informationen können beispielsweise der Name des Autors, das Erstellungsdatum der Datei oder - bei Bildern - der verwendete Farbraum sein. 
 Bei der Suche nach einem Dokument können diese Informationen als zusätzliche Suchkriterien verwendet werden.
 Daher müss überprüft werden, ob diese Daten richtig ausgelesen werden, der Datenbank hinzugefügt und vom Anwender abgefragt werden können. Dabei werden auch zuvor festgelegte/ausgewählte Testdateien verwendet.
 
@@ -184,7 +182,7 @@ An erster Stelle der Systemüberwachung steht die schlichte Erreichbarkeit über
 Wenn der Server nicht erreichbar ist, können auch keine weiterführende Prüfungen durchgeführt werden.
 Zur Systemüberwachung gehören auch allgemeine Informationen über die Systemressourcen wie freier Festplattenspeicher oder CPU Auslastung.
 
-Die nächste Grundlage für die darüberliegenden Tests bildet die Überprüfung der laufenden Prozesse und der Status verschiedener Dienste bzw. Services.
+Die nächste Grundlage für die darüber liegenden Tests bildet die Überprüfung der laufenden Prozesse und der Status verschiedener Dienste bzw. Services.
 Sollten bestimmte Prozesse nicht gefunden werden oder wichtige Dienste nicht gestartet sein, können auf diese Prozesse und Dienste aufbauende Checks nicht funktionieren.
 Beispielweise kann der Funktionalitätstest der Benutzeranmeldung nicht realisierbar sein, wenn bereits zuvor in der Systemüberwachung der Prozess für den Webserver \gls{IIS} nicht gefunden werden konnte.
 

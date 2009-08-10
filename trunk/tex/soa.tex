@@ -5,12 +5,13 @@ Einen Versuch einer Definition wird in \cite{SOA07} beschrieben:
 architecture is an architecture for building business applications as a set of
 loosely coupled black-box components orchestrated to deliver a well-defined
 level of service by linking together business processes."' \begin{flushright}\cite{SOA07} S. 27\end{flushright}\end{quote}
-\gls{SOA} ist ein Ansatz im Bereich der Informationstechnik um Anwendungen oder einzelne Dienste aus verschiedenen Geschäftsprozessen zu bilden.
+\gls{SOA} ist ein Ansatz im Bereich der Informationstechnik um Anwendungen oder einzelne Dienste aus verschiedenen Geschäftsprozessen zu bilden.\\
+
 
 Melzer bietet eine ausführlichere Definition:
 \begin{quote}"`Unter einer \gls{SOA} versteht man eine Systemarchitektur, die vielfältige, verschiedene und eventuell inkompatible Methoden oder Applikationen als wiederverwendbare und offen zugreifbare Dienste repräsentiert und dadurch eine plattform- und sprachenunabhängige Nutzung und Wiederverwendung ermöglicht.
 "' \begin{flushright}\cite{Melzer08} S. 13\end{flushright}\end{quote}
-                                                 
+   \newpage                                              
 Zur Verdeutlichung einer \gls{SOA} kann ein beispielhafter und vereinfachter Aufbau eines Online-Shops verwendet werden.
 
 \begin{figure}[ht]
@@ -65,22 +66,16 @@ beschreibt das \gls{XML}-basierte Nachrichtenformat der Kommunikation und dessen
 ist eine - ebenfalls \gls{XML}-basierte - Beschreibungssprache, um Web Services (Dienste) zu beschreiben.
 \paragraph{UDDI}
 beschreibt einen Verzeichnisdienst für Web Services. \gls{UDDI} (Universal Description, Discovery and Integration protocol) spezifiziert eine standardisierte Verzeichnisstruktur für die Verwaltung von Web-Services-Metadaten.
-Zu den Metadaten zählen allgemeine Anfornderungen, Web-Services-Eigenschaften oder die benötigten Informationen zum Auffinden von Web Services.
+Zu den Metadaten zählen allgemeine Anforderungen, Web-Services-Eigenschaften oder die benötigten Informationen zum Auffinden von Web Services.
 \begin{flushright}\cite{Melzer08} S. 55\end{flushright}
 
 Dabei erwähnt Metzer (\cite{Melzer08} S. 56), dass ein Verzeichnisdienst keine Notwendigkeit für die Verwendung eines Web Services ist, "`sondern vielmehr die Infrastruktur zum Auffinden von geeigneten Web Services beschreibt."'
 
 
-Der Ablauf der Benutzung eines Web Services soll durch folgende Abbildung verdeutlicht werden:
+Der Ablauf der Benutzung eines Web Services soll durch Abbildung \ref{soa-3eck} verdeutlicht werden.
 
-\begin{figure}[ht]
-	\centering
-	   %\fbox{\includegraphics[width=0.85\textwidth]{bilder/rechability.png}}
-	   \fbox{Quelle: \cite{Melzer08} S. 56}
-		\caption[Ablauf einer Web Service Benutzung]{Ablauf einer Web Service Benutzung\protect\footnote}
-		\label{soa-3eck}
-\end{figure}
-\footnotetext{Quelle: \cite{Melzer08} S. 56}
+Die folgenden Punkte beschreiben die einzelnen Schritte der Web Server-Benutzung:
+
 \begin{enumerate}
 \item Der Anbieter des Web Services muss seinen Dienst durch eine \gls{WSDL}-Datei in Form einer \gls{XML}-Datei dem Dienstverzeichnis bekannt geben.
 \item Erst dann können mögliche Nutzer dieses Dienstes den Web Service im \gls{UDDI}-basiertem Dienstverzeichnis finden. Die Suchanfrage findet über eine \gls{SOAP}-Schnittstelle statt.
@@ -88,6 +83,16 @@ Der Ablauf der Benutzung eines Web Services soll durch folgende Abbildung verdeu
 \item Durch diesen Verweis erfährt der Benutzer die Adresse des Dienstanbieters und kann die Beschreibung des Web Services abfragen.
 \item Nach Erhalt dieser Beschreibung kann der eigentliche Webdienst mittels \gls{SOAP} verwendet werden.
 \end{enumerate}
+
+\begin{figure}[ht]
+	\centering
+	   \fbox{\includegraphics[width=0.85\textwidth]{bilder/soap-dreieck.png}}
+	  
+		\caption[Ablauf einer Web Service-Benutzung]{Ablauf einer Web Service-Benutzung\protect\footnote}
+		\label{soa-3eck}
+\end{figure}
+\footnotetext{Quelle: \cite{Melzer08} S. 56}
+
 
 
 

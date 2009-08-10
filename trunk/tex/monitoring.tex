@@ -12,10 +12,10 @@ Bei einem Switch können beispielsweise als Service die Übertragungsrate, der P
 Sehr wichtig ist bei einem Überwachungssystem die Gewichtung der erhaltenen Überwachungsinformationen.
 
 
-\begin{center}
-was ist wichtig was nicht, Gewichtung, Klassifizierung, Organisationsstrategie
-Host,Services erklären
-\end{center}
+%\begin{center}
+%was ist wichtig was nicht, Gewichtung, Klassifizierung, Organisationsstrategie
+%Host,Services erklären
+%\end{center}
 
 Vor der Einführung eines Überwachungssystems muss sich mit den folgenden Punkten auseinandergesetzt werden.
 
@@ -24,7 +24,7 @@ Die Einführung einer Überwachungssoftware bringt bei größeren Serverlandscha
 Dabei gilt es die anfallende Belastung durch zwei unterschiedliche Arten der Überwachung zu unterscheiden:
 
 \paragraph{Lokale / Zentrale Bearbeitung}
-Die Durchführung der Überprüfungen findet durch einen zentralen Überwachungsserver statt, der die Informationen über die einzelnen Hosts und Services über das Netzwerk abfrägt /  abfragt.
+Die Durchführung der Überprüfungen findet durch einen zentralen Überwachungsserver statt, der die Informationen über die einzelnen Hosts und Services über das Netzwerk abfragt.
 Diese Methode ist in der Regel vorzuziehen, da hierbei die zu überwachenden Geräte weniger belastet werden und die Konfiguration der einzelnen Kontrollschritte zentral möglich / realisierbar ist.
 
 \paragraph{Entfernte / Ausgelagerte Bearbeitung}
@@ -39,14 +39,14 @@ Das bedeutet, dass jede Überquerung weiterer Netzwerkknoten, die zwischen dem �
 
 \begin{figure}[ht]
 	\centering
-	   %\fbox{\includegraphics[width=0.85\textwidth]{bilder/rechability.png}}
-	   \fbox{Quelle: \cite{Jose07} S. 5}
+	   \fbox{\includegraphics[width=0.38\textwidth]{bilder/dependent.png}}
+	   %\fbox{Quelle: \cite{Jose07} S. 5}
 		\caption[Zusätzliche Netzwerkabhängigkeit und Netzwerkbelastung]{Zusätzliche Netzwerkabhängigkeit und Netzwerkbelastung\protect\footnote}
-		\label{ucm-a2a}
+		\label{depend}
 \end{figure}
 \footnotetext{Quelle: \cite{Jose07} S. 5}
-
-In der obigen Abbildung erzeugt der Router 1 die zuvor beschriebene zusätzliche Netzwerkabhängigkeit und Netzwerkbelastung, da der Server 1 bei einem Ausfall des Routers nicht mehr durch den Überwachungsserver erreichbar ist und jede Überprüfung, die vom Überwachungsserver gesendet wird den Router mit dem Routing der Pakete belastet.
+\newpage
+In der Abbildung \ref{depend} erzeugt der Router 1 die zuvor beschriebene zusätzliche Netzwerkabhängigkeit und Netzwerkbelastung, da der Server 1 bei einem Ausfall des Routers nicht mehr durch den Überwachungsserver erreichbar ist und jede Überprüfung, die vom Überwachungsserver gesendet wird den Router mit dem Routing der Pakete belastet.
 
 Deshalb gilt es laut \cite{Jose07} S. 5 folgende zwei Punkte beim Erstellen eines Überwachungssystems zu beachten:
 
