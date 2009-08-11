@@ -54,12 +54,26 @@ Ein Web Service ist so aufgebaut, dass ein Zusammenspiel zwischen Rechner über 
 Dabei ist Schnittstelle des Web Services in einem maschinell interpretierbaren Format gehalten, so dass andere Systeme auf diese Schnittstelle zugreifen können.
 Dieser Zugriff findet durch das Simple Object Access Protocol (\gls{SOAP}) statt, welches üblicherweise über das Hypertext Transfer Protocol (\gls{HTTP}) versendet wird.
 Die \gls{SOAP}-Nachrichten sind nach dem \gls{XML}-Schema zusammen mit anderen Web-Standards aufgebaut.
+Dadurch können die Nachrichten von beiden Seiten (Client und Server) interpretiert werden.
+
+Als Beispiel verschickt der Client zwei Zahlenwerte, die vom Server addiert werden sollen:
+\begin{figure}[ht]
+	\centering
+	   \fbox{\includegraphics[width=0.7\textwidth]{bilder/nusoap.png}}
+	  
+		\caption[Kommunikationprotokoll SOAP]{Kommunikationprotokoll SOAP\protect\footnote}
+		\label{soa-3eck}
+\end{figure}
+\footnotetext{\url{http://www.devarticles.com/c/a/PHP/Building-XML-Web-Services-with-PHP-NuSOAP/1/}}
+
+Der Server entpackt die \gls{SOAP}-Nachricht und führt mit den zwei Zahlenwerte die Addition aus.
+Das Ergebnis der Rechnung wird im Anschluss wieder als Nachricht im \gls{SOAP}-Format an den Client zurückgesendet.
 
 
 
+%This layer is responsible for encoding messages in a common XML format so that messages can be understood at either end. Currently, this includes XML-RPC and SOAP. For example, the client program bundles up two values (see Figure 1) to be added into a SOAP message, which is sent to the Web service by sending it as the body of an HTTP POST request. The server unpacks the SOAP request that the application can understand and executes Add operation. Next, the server packages up that result of summation as response into another SOAP message, which it sends back to the client program in response to its HTTP request. The client program unpacks the SOAP message to obtain the results of the summation. So, SOAP=XML + HTTP. 
 
 Daraus leitet Melzer folgende Spezifikationen für eine Web-Services-Architektur ab:
-
 \paragraph{SOAP}
 beschreibt das \gls{XML}-basierte Nachrichtenformat der Kommunikation und dessen Einbettung in ein Transportprotokoll.
 \paragraph{WSDL}
@@ -74,7 +88,14 @@ Dabei erwähnt Metzer (\cite{Melzer08} S. 56), dass ein Verzeichnisdienst keine 
 
 Der Ablauf der Benutzung eines Web Services soll durch Abbildung \ref{soa-3eck} verdeutlicht werden.
 
-Die folgenden Punkte beschreiben die einzelnen Schritte der Web Server-Benutzung:
+\begin{figure}[ht]
+	\centering
+	   \fbox{\includegraphics[width=0.85\textwidth]{bilder/soap-dreieck.png}}
+	  
+		\caption[Ablauf einer Web Service-Benutzung]{Ablauf einer Web Service-Benutzung\protect\footnote}
+		\label{soa-3eck}
+\end{figure}
+\footnotetext{Quelle: \cite{Melzer08} S. 56}
 
 \begin{enumerate}
 \item Der Anbieter des Web Services muss seinen Dienst durch eine \gls{WSDL}-Datei in Form einer \gls{XML}-Datei dem Dienstverzeichnis bekannt geben.
@@ -84,14 +105,7 @@ Die folgenden Punkte beschreiben die einzelnen Schritte der Web Server-Benutzung
 \item Nach Erhalt dieser Beschreibung kann der eigentliche Webdienst mittels \gls{SOAP} verwendet werden.
 \end{enumerate}
 
-\begin{figure}[ht]
-	\centering
-	   \fbox{\includegraphics[width=0.85\textwidth]{bilder/soap-dreieck.png}}
-	  
-		\caption[Ablauf einer Web Service-Benutzung]{Ablauf einer Web Service-Benutzung\protect\footnote}
-		\label{soa-3eck}
-\end{figure}
-\footnotetext{Quelle: \cite{Melzer08} S. 56}
+
 
 
 
