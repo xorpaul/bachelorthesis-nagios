@@ -86,12 +86,12 @@ Da nur ein Windows-Agent alle drei Sicherheitsmerkmale anbietet und dabei aktiv 
 
 Der Nagios-Agent NSClient++ kann im Gegensatz zu den meisten anderen Windows-Agenten komfortabel über einen graphischen Benutzerdialog installiert werden.
 
-\begin{figure}[ht]
-	\centering
-	   \fbox{\includegraphics[width=0.85\textwidth]{bilder/nsc1.png}}
-		\caption{Installation des NSClient++}
-		\label{nscs1}
-\end{figure}
+%\begin{figure}[ht]
+%	\centering
+%	   \fbox{\includegraphics[width=0.85\textwidth]{bilder/nsc1.png}}
+%		\caption{Installation des NSClient++}
+%		\label{nscs1}
+%\end{figure}
 
 Während der Installation kann auch festgelegt werden welche Komponenten installiert werden sollen.
 Dabei werden diese Komponenten nicht standardmäßig geladen, sondern im nächsten Dialogfenster als Auswahl explizit/extra abgefragt:
@@ -203,7 +203,7 @@ define command{
 \end{lstlisting}
 
 Dadurch muss nur diese Befehlsdefinition bei einer Änderung bearbeitet werden.
-Die vorherige Servicedefinition \ref{ntcheck} kann dann in verkürzter Form eingetragen werden:
+Die vorherige Servicedefinition in Listing \ref{ntcheck} kann dann in verkürzter Form eingetragen werden:
 
 \begin{lstlisting}[captionpos=b, caption=Verkürzte Servicedefinition des NSClient-Checks, label=nt-servdef, breaklines = true, language=sh]
 define service{

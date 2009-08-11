@@ -5,20 +5,20 @@
 Man unterscheidet generell zwischen aktiven und passiven Checks.
 
 \subsubsection{Aktive Checks}
-asdaasdadasdasdads
-asdasd
+Aktive Checks werden vom Nagios-Server direkt ausgeführt und holen die Informationen über die Zustände auf verschiedene Art und Weise ein.
+Nagios erwartet nach einem bestimmten Zeitintervall neue aktualisierte Informationen und gibt eine Alarmmeldung aus, wenn keine neuen Informationen angekommen sind.
 
-
-asdasdas
 \subsubsection{Passive Checks}
-asdasdasdasdas
+Bei passiven Checks werden die Scripts und Programme, die die Ergebnisse der zu überwachenden Objekte sammeln, selbständig von dem zu überwachendem Computer ausgeführt.
+Der Nagios-Server nimmt die Ergebnisse von diesen Checks nur entgegen und führt sich nicht selbst aus.
+Da Nagios somit keine Kontrolle über die Ausführung der Plugins hat, können die Ergebnisse auch asynchron zu den anderen Plugins eintreffen.
 
 
 Nagios bietet verschiedene Möglichkeiten an solche Dienste zu überprüfen:
 
 \begin{figure}[ht]
 	\centering
-	   \fbox{\includegraphics[width=0.95\textwidth]{bilder/nagios-kern.png}}
+	   \fbox{\includegraphics[width=0.7\textwidth]{bilder/nagios-kern.png}}
 		\caption[Verschiedene Überwachungsmöglichkeiten von Nagios]{Verschiedene Überwachungsmöglichkeiten von Nagios\protect\footnote}
 		\label{nagios-kern}
 \end{figure} 
@@ -29,31 +29,28 @@ Nagios bietet verschiedene Möglichkeiten an solche Dienste zu überprüfen:
 
 Dienste, die im Netzwerk zur Verfügung stehen (Netzwerkdienste), wie ein Web- oder \gls{FTP}-Server , lassen sich einfach / simpel direkt über das Netz auf ihren Zustand (hin) überprüfen /  testen.
 Hierfür muss dem entsprechende Plugin lediglich die Netzwerkadresse mitgeteilt werden, siehe Abbildung \ref{check-http} als beispielhafte Überprüfung eines Webservers.
-
 \begin{figure}[ht]  
 	\centering
-	   \fbox{\includegraphics[width=0.85\textwidth]{bilder/check-http.png}}
-		\caption{Beispielhafte manuelle Ausführung eines netzwerkbasierenden Servicechecks / HTTP Server Check}
+	   \fbox{\includegraphics[width=0.8\textwidth]{bilder/check-http2.png}}
+		\caption{Ausführung eines netzwerkbasierenden Servicechecks}
 		\label{check-http}
 \end{figure}
-
-Der zuvor gezeigte Test eines netzwerkbasierenden Dienstes wird im obigen Bild mit dem Client-Rechner 1 abgebildet.
+Der zuvor gezeigte Test eines netzwerkbasierenden Dienstes wird in Abbildung \ref{nagios-kern} mit dem Client-Rechner 1 abgebildet.
 %Die Überprüfung von nicht netzwerkbasierenden Diensten soll mit den restlichen Client-Rechnern aufgezeigt werden.
 Dies ist die einfachste Überwachungsmethode, da keine zusätzlichen Programme oder aufwändige Konfiguration benötigt wird.
 Vorteilhaft ist auch, dass der Dienst über das Netzwerk getestet wird, so wie der Benutzer auch auf den Dienst zugreift.
 Damit können auch gleichzeitig andere Knotenpunkte wie Switches überwacht werden.
 
 \paragraph{Methode 2 - SSH}
-
-Falls es sich beim Client um ein Unixderivat handelt, ist der entfernte Zugriff auf diesen Client per SSH\footnote{Durch eine Secure Shell (\gls{SSH}) kann man sich eine verschlüsselte Netzwerkverbindung zum entfernten Rechner aufbauen.}-Dienst möglich.
+Falls es sich beim Client um einen auf Unix basierenden Server handelt, ist der entfernte Zugriff auf diesen Client per \gls{SSH}-Dienst möglich.
+%\footnote{Durch eine Secure Shell (\gls{SSH}) kann man sich eine verschlüsselte Netzwerkverbindung zum entfernten Rechner aufbauen.}
 Dazu muss auf dem Client ein \gls{SSH}-Benutzerkonto angelegt sein, mit dem sich Nagios anmelden kann und die öffentlichen Schlüssel (zwischen Nagios Server und Client) ausgetauscht werden, damit keine passwortabhängige Benutzerauthentifizierung (Eingabe von PW) notwendig ist.
 Danach können lokale Ressourcen, wie Festplattenkapazität oder Logdateien mit dem entsprechenden Plugin direkt auf dem entfernten Rechner überwacht werden.
 Damit der Client diese Plugins verwenden kann, müssen sich die gewünschten Plugins (auch) auf dem Client (lokal) befinden.
 Eine beispielhafte Verwendung mit dem dafür gedachten Nagios Plugin \pictext{check\_by\_ssh} (von dieser Überwachungsmethode) wird in Abbildung \ref{check-ssh} gezeigt.
-
 \begin{figure}[ht]
 	\centering
-	   \fbox{\includegraphics[width=0.85\textwidth]{bilder/check_by_ssh.png}}
+	   \fbox{\includegraphics[width=0.8\textwidth]{bilder/check_by_ssh.png}}
 		\caption{Manuelle Ausführung eines Servicechecks über SSH}
 		\label{check-ssh}
 \end{figure}

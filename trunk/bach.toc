@@ -28,53 +28,56 @@
 \contentsline {section}{\numberline {5}Nagios}{25}{section.5}
 \contentsline {subsection}{\numberline {5.1}Allgemein}{25}{subsection.5.1}
 \contentsline {subsection}{\numberline {5.2}Aufbau / Architektur}{26}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}\IeC {\"U}berpr\IeC {\"u}fungsmethoden}{31}{subsection.5.3}
-\contentsline {subsubsection}{\numberline {5.3.1}Aktive Checks}{31}{subsubsection.5.3.1}
-\contentsline {subsubsection}{\numberline {5.3.2}Passive Checks}{31}{subsubsection.5.3.2}
-\contentsline {paragraph}{Methode 1 - Netzwerkdienste}{31}{section*.15}
-\contentsline {paragraph}{Methode 2 - SSH}{32}{section*.16}
-\contentsline {paragraph}{Methode 3 - NRPE}{33}{section*.17}
-\contentsline {paragraph}{Methode 4 - SNMP}{33}{section*.18}
-\contentsline {paragraph}{Methode 5 - NSCA}{35}{section*.19}
-\contentsline {section}{\numberline {6}Oracle UCM}{37}{section.6}
-\contentsline {subsection}{\numberline {6.1}Allgemein}{37}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Aufbau / Architektur}{37}{subsection.6.2}
-\contentsline {paragraph}{Content Server}{38}{section*.20}
-\contentsline {paragraph}{Vault und Web Layout}{39}{section*.21}
-\contentsline {paragraph}{Search Engine}{39}{section*.22}
-\contentsline {paragraph}{Webserver}{39}{section*.23}
-\contentsline {paragraph}{Inbound Refinery}{39}{section*.24}
-\contentsline {subsection}{\numberline {6.3}Konkrete Verwendung / Einsatzgebiet}{39}{subsection.6.3}
-\contentsline {section}{\numberline {7}\IeC {\"U}berwachungselemente}{41}{section.7}
-\contentsline {subsection}{\numberline {7.1}Statusabfragen}{41}{subsection.7.1}
-\contentsline {paragraph}{System}{41}{section*.25}
-\contentsline {paragraph}{Prozesse}{42}{section*.26}
-\contentsline {paragraph}{Services}{42}{section*.27}
-\contentsline {subsection}{\numberline {7.2}\IeC {\"U}berwachung der Funktionalit\IeC {\"a}t}{42}{subsection.7.2}
-\contentsline {subsection}{\numberline {7.3}Auswerten von Logdateien}{43}{subsection.7.3}
-\contentsline {subsection}{\numberline {7.4}Benutzersimulation}{44}{subsection.7.4}
-\contentsline {section}{\numberline {8}Umsetzung}{47}{section.8}
-\contentsline {subsection}{\numberline {8.1}Aufbau der Testumgebung}{47}{subsection.8.1}
-\contentsline {subsubsection}{\numberline {8.1.1}Aufsetzen eines Nagios-Test-Systems}{47}{subsubsection.8.1.1}
-\contentsline {subsubsection}{\numberline {8.1.2}Bilddatenbank als virtuelle Maschine}{47}{subsubsection.8.1.2}
-\contentsline {subsection}{\numberline {8.2}\IeC {\"U}bersicht Nagios-Agenten}{47}{subsection.8.2}
-\contentsline {subsubsection}{\numberline {8.2.1}Unix-Agenten}{48}{subsubsection.8.2.1}
-\contentsline {subsubsection}{\numberline {8.2.2}Windows-Agenten}{50}{subsubsection.8.2.2}
-\contentsline {subsubsection}{\numberline {8.2.3}Auswahl und Konfiguration des Nagios-Agenten}{52}{subsubsection.8.2.3}
-\contentsline {paragraph}{Auswahl}{52}{section*.28}
-\contentsline {paragraph}{Installation und Konfiguration}{52}{section*.29}
+\contentsline {paragraph}{Nagios-Plugins und Ausgabe}{28}{section*.15}
+\contentsline {paragraph}{Hard und Soft States}{30}{section*.16}
+\contentsline {paragraph}{Flapping}{31}{section*.17}
+\contentsline {subsection}{\numberline {5.3}\IeC {\"U}berpr\IeC {\"u}fungsmethoden}{32}{subsection.5.3}
+\contentsline {subsubsection}{\numberline {5.3.1}Aktive Checks}{32}{subsubsection.5.3.1}
+\contentsline {subsubsection}{\numberline {5.3.2}Passive Checks}{32}{subsubsection.5.3.2}
+\contentsline {paragraph}{Methode 1 - Netzwerkdienste}{33}{section*.18}
+\contentsline {paragraph}{Methode 2 - SSH}{33}{section*.19}
+\contentsline {paragraph}{Methode 3 - NRPE}{34}{section*.20}
+\contentsline {paragraph}{Methode 4 - SNMP}{34}{section*.21}
+\contentsline {paragraph}{Methode 5 - NSCA}{36}{section*.22}
+\contentsline {section}{\numberline {6}Oracle UCM}{38}{section.6}
+\contentsline {subsection}{\numberline {6.1}Allgemein}{38}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Aufbau / Architektur}{38}{subsection.6.2}
+\contentsline {paragraph}{Content Server}{39}{section*.23}
+\contentsline {paragraph}{Vault und Web Layout}{40}{section*.24}
+\contentsline {paragraph}{Search Engine}{40}{section*.25}
+\contentsline {paragraph}{Webserver}{40}{section*.26}
+\contentsline {paragraph}{Inbound Refinery}{40}{section*.27}
+\contentsline {subsection}{\numberline {6.3}Konkrete Verwendung / Einsatzgebiet}{40}{subsection.6.3}
+\contentsline {section}{\numberline {7}\IeC {\"U}berwachungselemente}{42}{section.7}
+\contentsline {subsection}{\numberline {7.1}Statusabfragen}{42}{subsection.7.1}
+\contentsline {paragraph}{System}{42}{section*.28}
+\contentsline {paragraph}{Prozesse}{43}{section*.29}
+\contentsline {paragraph}{Services}{43}{section*.30}
+\contentsline {subsection}{\numberline {7.2}\IeC {\"U}berwachung der Funktionalit\IeC {\"a}t}{43}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Auswerten von Logdateien}{44}{subsection.7.3}
+\contentsline {subsection}{\numberline {7.4}Benutzersimulation}{45}{subsection.7.4}
+\contentsline {section}{\numberline {8}Umsetzung}{48}{section.8}
+\contentsline {subsection}{\numberline {8.1}Aufbau der Testumgebung}{48}{subsection.8.1}
+\contentsline {subsubsection}{\numberline {8.1.1}Aufsetzen eines Nagios-Test-Systems}{48}{subsubsection.8.1.1}
+\contentsline {subsubsection}{\numberline {8.1.2}Bilddatenbank als virtuelle Maschine}{48}{subsubsection.8.1.2}
+\contentsline {subsection}{\numberline {8.2}\IeC {\"U}bersicht Nagios-Agenten}{48}{subsection.8.2}
+\contentsline {subsubsection}{\numberline {8.2.1}Unix-Agenten}{49}{subsubsection.8.2.1}
+\contentsline {subsubsection}{\numberline {8.2.2}Windows-Agenten}{51}{subsubsection.8.2.2}
+\contentsline {subsubsection}{\numberline {8.2.3}Auswahl und Konfiguration des Nagios-Agenten}{53}{subsubsection.8.2.3}
+\contentsline {paragraph}{Auswahl}{53}{section*.31}
+\contentsline {paragraph}{Installation und Konfiguration}{53}{section*.32}
 \contentsline {subsection}{\numberline {8.3}Umsetzung der System\IeC {\"u}berwachung}{56}{subsection.8.3}
-\contentsline {subsection}{\numberline {8.4}Umsetzung der Funktionlit\IeC {\"a}tstest}{57}{subsection.8.4}
+\contentsline {subsection}{\numberline {8.4}Umsetzung der Funktionlit\IeC {\"a}tstest}{58}{subsection.8.4}
 \contentsline {subsection}{\numberline {8.5}Auswertung der Logdateien}{59}{subsection.8.5}
 \contentsline {subsection}{\numberline {8.6}Benutzersimulation}{60}{subsection.8.6}
-\contentsline {paragraph}{Einchecken eines Testbildes}{61}{section*.30}
-\contentsline {paragraph}{Validierung der Indizierung und Konvertierung}{63}{section*.31}
-\contentsline {section}{\numberline {9}Ergebnis}{67}{section.9}
-\contentsline {section}{\numberline {10}Zusammenfassung und Ausblick}{68}{section.10}
-\contentsline {section}{\numberline {11}Anhang}{69}{section.11}
-\contentsline {subsection}{\numberline {11.1}Abbildungsverzeichnis}{69}{subsection.11.1}
-\contentsline {subsection}{\numberline {11.2}Codelistingverzeichnis}{71}{subsection.11.2}
-\contentsline {subsection}{\numberline {11.3}Tabellenverzeichnis}{72}{subsection.11.3}
-\contentsline {subsection}{\numberline {11.4}Quellverzeichnis}{73}{subsection.11.4}
-\contentsline {subsubsection}{\numberline {11.4.1}Literaturverzeichnis}{73}{subsubsection.11.4.1}
-\contentsline {subsubsection}{\numberline {11.4.2}Internetquellen}{75}{subsubsection.11.4.2}
+\contentsline {paragraph}{Einchecken eines Testbildes}{62}{section*.33}
+\contentsline {paragraph}{Validierung der Indizierung und Konvertierung}{64}{section*.34}
+\contentsline {section}{\numberline {9}Ergebnis}{68}{section.9}
+\contentsline {section}{\numberline {10}Zusammenfassung und Ausblick}{70}{section.10}
+\contentsline {section}{\numberline {11}Anhang}{71}{section.11}
+\contentsline {subsection}{\numberline {11.1}Abbildungsverzeichnis}{71}{subsection.11.1}
+\contentsline {subsection}{\numberline {11.2}Codelistingverzeichnis}{73}{subsection.11.2}
+\contentsline {subsection}{\numberline {11.3}Tabellenverzeichnis}{74}{subsection.11.3}
+\contentsline {subsection}{\numberline {11.4}Quellverzeichnis}{75}{subsection.11.4}
+\contentsline {subsubsection}{\numberline {11.4.1}Literaturverzeichnis}{75}{subsubsection.11.4.1}
+\contentsline {subsubsection}{\numberline {11.4.2}Internetquellen}{77}{subsubsection.11.4.2}

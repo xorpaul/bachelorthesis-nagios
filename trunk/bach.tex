@@ -60,8 +60,6 @@
 \renewcommand\subitem{\@idxitem \hspace*{30\p@}}
  % Tiefe der Nummerierung einstellen %
 \setcounter{secnumdepth}{3} 
-\setlength{\textheight}{660pt}
-\addtolength{\voffset}{-40pt}
 \makeatother 
 \renewcommand{\refname}{Quellenverzeichnis} 
 \linespread{1.50} %zeilenabstand 1.5}
@@ -74,15 +72,13 @@
 %\maketitle
 \thispagestyle{empty}
 \newpage 
-
+\setlength{\textheight}{690pt}
+\addtolength{\voffset}{-80pt}
 \thispagestyle{empty}
 \renewcommand{\contentsname}{Inhalt}
 \tableofcontents
 \thispagestyle{empty}
-
 \newpage
-%\subsection{Glossar}
-%\renewcommand{\glossaryname}{}
 \thispagestyle{empty}
 \makeglossaries
 \thispagestyle{empty}
@@ -93,13 +89,12 @@
 %\chead{\rightmark}
 \chead{\leftmark}
 \cfoot{Andreas Paul - Forschungszentrum Karlsruhe}
-
 \newpage
 \input{tex/preamble.tex}
 \newpage
-
 \input{tex/glossar.tex} 
-
+\setlength{\textheight}{660pt}
+\addtolength{\voffset}{+40pt}
 \pagenumbering{arabic}
 
 \input{tex/einleitung.tex} 

@@ -78,6 +78,7 @@ Da die Bilddatenbank unter einem Windows-Server betrieben werden soll, muss dies
 
 \newpage
 \section{Überwachungselemente}
+\label{elemente}
 Die Überwachung einer Dienstes über ein Netzwerk verteilt sich auf verschiedenen Ebenen mit unterschiedlichen Gewichtungen.
 Zum Beispiel stellt das simple Senden eines Pings an den entsprechenden Server die niedrigste und primitivste Stufe dar, da hier lediglich die Netzwerkschnittstelle des Servers auf ihre Funktionalität und dabei der Status der Netzwerkstrecke getestet wird.(Rechner an und Netzwerk ok)
 Ob die Anwendung überhaupt auf dem Server läuft und wenn, in welchem Zustand sie sich befindet (betriebsfähig, reagiert nicht mehr usw.), muss auf eine andere Weise herausgefunden werden.
@@ -106,10 +107,10 @@ Dabei können weitere Untergruppen gebildet werden:
 
 \paragraph{Services}
 \begin{itemize}
-\item \textbf{IdcContentService???}  Den Zustand des "`Content-Dienstes"'-\pictext{sccdms01} überprüfen.
-\item \textbf{IdcAdminService???}  Den Zustand des "`Administrations-Dienstes"'-\pictext{sccdms01\_admin} überprüfen.
-\item \textbf{Zeitsynchronisationsdienst:} Überprüfen, ob der \pictext{W32TIME}-Dienst, der für den Zeitabgleich mit einem Zeitserver zuständig ist, läuft und die Abweichung zwischen Client und Zeitserver festhalten.
-\item \textbf{Antivirusdienst}: Den Zustand den Dienstes überprüfen, der für die ständig Updates des Virusscanners Symantec AntiVirus notwendig ist.
+\item \textbf{IdcContentService}  Den Zustand des \pictext{sccdms01}-Dienst überprüfen.
+\item \textbf{IdcAdminService}  Den Zustand des \pictext{sccdms01\_admin}-Dienst für die Administration überprüfen.
+\item \textbf{Zeitsynchronisationsdienst} Überprüfen, ob der \pictext{W32TIME}-Dienst, der für den Zeitabgleich mit einem Zeitserver zuständig ist, läuft und die Abweichung zwischen Client und Zeitserver festhalten.
+\item \textbf{Antivirusdienst} Den Zustand den Dienstes überprüfen, der für die ständig Updates des Virusscanners Symantec AntiVirus notwendig ist.
 \end{itemize}
 
 \subsection{Überwachung der Funktionalität}
