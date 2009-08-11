@@ -3,15 +3,9 @@
 \subsection{Allgemein}
 Oracle Universal Content Management basiert auf der Software Stellent von der gleichnamigen Firma Stellent, welche im November 2006\footnote{Quelle: \cite{OraPress}} von Oracle gekauft / erworben wurde.
 
-
-
-
-Sessionanzahl
-
-
 \subsection{Aufbau / Architektur}
 
-Die Architektur des Oracle UCM Systems gliedert sich in separate Komponenten auf wie in Abbildung \ref{ucm-arch} gezeigt.
+Die Architektur des \gls{OracleUCM}-Systems gliedert sich in separate Komponenten auf wie in Abbildung \ref{ucm-arch} gezeigt wird.
 
 \begin{figure}[ht]
 	\centering
@@ -21,10 +15,12 @@ Die Architektur des Oracle UCM Systems gliedert sich in separate Komponenten auf
 \end{figure}
 \footnotetext{Quelle: \url{http://www.club-oracle.com/forums/oracle-universal-content-management-ucm-aka-stellent-t146/}}
 
+Die Anwendung \gls{OracleUCM} ist aus folgenden Kernkomponenten aufgebaut:
 
-\subsubsection{Content Server}
-Der Content Server ist das Herzstück der Oracle UCM Anwendung.
-Er dient als Grundgerüst (Framework) für darüberliegende Funktionen, da er für die Ablage der Dokumente sowie der Verwaltung der drei Teilbereiche, siehe Abbildung \ref{lifecircle}, verantwortlich ist.
+\paragraph{Content Server}
+
+Der Content Server ist das Herzstück der Oracle UCM Anwendung und basiert auf einer Java-Anwendung.
+Er dient als Grundgerüst (Framework) für darüber liegende Funktionen, da er für die Ablage der Dokumente sowie der Verwaltung der drei Teilbereiche, siehe Abbildung \ref{lifecircle}, verantwortlich ist.
 
 \begin{figure}[ht]
 	\centering
@@ -38,23 +34,37 @@ Er dient als Grundgerüst (Framework) für darüberliegende Funktionen, da er f�
 Dieses Framework ist als Service-Oriented Architecture (\gls{SOA}) aufgebaut.
 Im Kontext des Content Servers wird als Service ein diskreter Aufruf einer Funktion verstanden.
 Dabei kann diese Funktion das Hinzufügen, die Bearbeitung, die Konvertierung oder das Herunterladen eines Dokumentes bedeuten.
-Diese Services und ihre einzelnen Funktionen werden durch das \gls{SOA}-Framework verdeckt und stehen durch höhere abstrahierte Dienste zur Verfügung.
+Diese Services und ihre einzelnen Funktionen werden durch das \gls{SOA}-Framework verdeckt und stehen als Web Service zur Verfügung.
 
+Zusätzlich verwaltet der Content Server die Datenbank, die die Metadaten über die Dokumente beinhaltet.
+Diese Metadaten werden für die Versionierung, Verwaltung und Suchanfragen verwendet.
 
+\paragraph{Vault und Web Layout}
+Der \textbf{Vault} ist ein Ordner auf dem Server in dem die Originaldateien der Benutzer in ihrem nativen Format gespeichert werden.
+Im Gegensatz dazu werden im \textbf{Web Layout} die konvertierten Versionen der Dokumente abgelegt. Beispielsweise eine \gls{PDF}-Version einer Microsoft Word-Datei.
 
+\paragraph{Search Engine}
+Eine Suchanfrage eines Benutzers wird zuerst an den Webserver gesendet, der die Anfrage an den Content Server weitergibt.
+Der Content Server verwendet anschließend seine Search Engine um ein Suchergebnis zu erhalten.
+Das Suchergebnis wird wieder zum Webserver gesendet, der das Ergebnis an den Benutzer sendet.
+Die Search Engine verwendet einen Suchindex, der aus den Metadaten und Referenzen zu den Volltextversionen der Dokumente besteht.
 
+\paragraph{Webserver}
+Der Webserver ist hauptsächlich für die Präsentation und Ausgabe der gespeicherten Dokumenten und Informationen zuständig.
+Dabei ist er auch für die Authentifizierung der Benutzer zuständig.
+\paragraph{Inbound Refinery}
+Die Inbound Refinery ist für die Konvertierung der Dokumente zuständig und ist keine interne Komponente des Content Servers, sondern kann sich auch auf einem anderen Server befinden.
+Dabei werden spezielle Add-ons (Filter) für die Konvertierung verwendet.
+In zeitlichen Abständen überprüft die Inbound Refinery, ob die bisher eingecheckten Dokumente konvertiert werden müssen, und speichert die konvertierte Datei in den Web Layout-Ordner.
 
+\subsection{Konkrete Verwendung / Einsatzgebiet}
 
- %steht für Service-Oriented Architecture und benutzt das Simple Object Access Protocol (\gls{SOAP}), welches ein \gls{XML}-basierendes Protokoll zur Ausführung von Programmen / Befehle auf entfernten Rechnern ist.
+\gls{OracleUCM} wird als \gls{ECM} für die Verwaltung von Webseiten, Dokumenten und Bilder im Forschungszentrum Karlsruhe eingesetzt.
 
-\subsubsection{Vault und Web Layout}
-\subsubsection{Inbound Refinery}
-\subsubsection{Search Engine}
-\subsubsection{Webserver}
+Dabei wird im konkreten Anwendungsfall \gls{OracleUCM} als Bilddatenbank verwendet.
+Diese Bilddatenbank nimmt Fotos und Bilder der Benutzer entgegen (\textit{Einchecken}) und konvertiert das Originalbild dabei in andere Bildversionen wie eine verkleinerte Version für Webseiten.
 
-
-
-Für was wird sie im FZK benutzt, auch Windows nennen
+Dieser typische Ablauf soll durch Abblidung \ref{bdbanw} verdeutlicht werden.
 \begin{figure}[ht]
 	\centering
 	   \fbox{\includegraphics[width=0.85\textwidth]{bilder/bdb.png}}
@@ -62,6 +72,11 @@ Für was wird sie im FZK benutzt, auch Windows nennen
 		\label{bdbanw}
 \end{figure}
 
+Die untere Tabelle zeigt die verschiedenen Bildversionen einer bereits konvertierten Bilddatei.\\
+
+Da die Bilddatenbank unter einem Windows-Server betrieben werden soll, muss dies für die Überwachung bei der Auswahl der Überwachungselemente und Realisierung der Überwachung durch Nagios berücksichtigt werden.
+
+\newpage
 \section{Überwachungselemente}
 Die Überwachung einer Dienstes über ein Netzwerk verteilt sich auf verschiedenen Ebenen mit unterschiedlichen Gewichtungen.
 Zum Beispiel stellt das simple Senden eines Pings an den entsprechenden Server die niedrigste und primitivste Stufe dar, da hier lediglich die Netzwerkschnittstelle des Servers auf ihre Funktionalität und dabei der Status der Netzwerkstrecke getestet wird.(Rechner an und Netzwerk ok)
@@ -79,7 +94,7 @@ Dabei können weitere Untergruppen gebildet werden:
 \item \textbf{Ping} Überprüft, ob der Rechner vom Nagios-Server über das Netzwerk erreichbar ist.
 \item \textbf{Prozessorauslastung} Überwacht die Auslastung des Prozessors und schlägt bei ungewöhnlich hohen Werten Alarm.
 \item \textbf{Festplattenspeicherausnutzung} Überwacht die Speicherplatzauslastungen der verschiedenen Festplattenpartitionen, damit immer genügend Speicherplatz für Anwendungen und Betriebssystem verfügbar ist.
-\item \textbf{Arbeitsspeicherauslastung} Beobachtet wieviel Arbeitsspeicher vom System verwendet wird und wieviel davon noch zur Verfügung steht.
+\item \textbf{Arbeitsspeicherauslastung} Beobachtet wie viel Arbeitsspeicher vom System verwendet wird und wieviel davon noch zur Verfügung steht.
 \end{itemize}
 
 \paragraph{Prozesse}
