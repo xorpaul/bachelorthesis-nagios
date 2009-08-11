@@ -1,4 +1,5 @@
 \documentclass[12pt, a4paper, headsepline]{article}
+%\documentclass[12pt, a4paper, headsepline]{scrbook}
 \usepackage[utf8x]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[ngerman]{babel}
@@ -66,7 +67,7 @@
 \linespread{1.50} %zeilenabstand 1.5}
 \setlength{\headheight}{3.0\baselineskip}
 \setlength{\fboxsep}{3mm}
-
+\textwidth=5.8in
 \begin{document}
 \setlength{\parindent}{0mm}
 \includepdf{Titelblatt.pdf}
@@ -79,6 +80,14 @@
 \tableofcontents
 \thispagestyle{empty}
 
+\newpage
+%\subsection{Glossar}
+%\renewcommand{\glossaryname}{}
+\thispagestyle{empty}
+\makeglossaries
+\thispagestyle{empty}
+\printglossaries
+\thispagestyle{empty}
 \pagestyle{scrheadings}
 \ihead{\includegraphics[width=0.06\textwidth]{bilder/fzk2.png}}
 %\chead{\rightmark}
@@ -173,12 +182,6 @@
  	 
 	 	 
 \end{thebibliography}
-
-\newpage
-\subsection{Glossar}
-\renewcommand{\glossaryname}{}
-\makeglossaries
-\printglossaries
 
 \end{document}
 
