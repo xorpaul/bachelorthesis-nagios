@@ -121,7 +121,7 @@ if(!mb_eregi('JFIF', $outputGetThumbnail))
 
 Sofern das Bild gefunden wurde, wird es vom Plugin anschließend angefordert und nach dem Dateityp untersucht.
 Die Konvertierung wird dadurch überprüft indem die konvertierten Versionen des Testbildes angefordert werden und wie das Originalbild auf einen gültigen Dateityp getestet werden.
-
+\newpage
 Der Ablauf dieses Plugins ist dem ersten sehr ähnlich, siehe Abbildung \ref{usersim2}
 
 \begin{figure}[ht]
@@ -136,6 +136,9 @@ Der Ablauf dieses Plugins ist dem ersten sehr ähnlich, siehe Abbildung \ref{use
 \item Diese Bilder werden wieder byteweise innerhalb der \gls{XML}-Datei der Serverantwort an den Nagios-Server übertragen und auf ihre Korrektheit überprüft. Sollten alle bisherigen Tests ohne Probleme abgelaufen sein, wird das Testbild und die konvertierten Bilder vom Server entfernt.
 \end{enumerate}
 
+Damit nicht unnötiger Festplattenplatz durch die Testbilder verschwendet wird, sollen die Testbilder mit den konvertierten Version vom Server gelöscht werden.
+
+\newpage
 Standardmäßig bietet \gls{OracleUCM} keinen Web Service zum Löschen von Dokumenten an.
 Daher muss zunächst eine \gls{WSDL}-Datei dafür erstellt werden, siehe Abbildung \ref{cwsdl}.
 
