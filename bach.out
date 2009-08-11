@@ -22,11 +22,7 @@
 \BOOKMARK [1][-]{section.6}{Oracle UCM}{}
 \BOOKMARK [2][-]{subsection.6.1}{Allgemein}{section.6}
 \BOOKMARK [2][-]{subsection.6.2}{Aufbau / Architektur}{section.6}
-\BOOKMARK [3][-]{subsubsection.6.2.1}{Content Server}{subsection.6.2}
-\BOOKMARK [3][-]{subsubsection.6.2.2}{Vault und Web Layout}{subsection.6.2}
-\BOOKMARK [3][-]{subsubsection.6.2.3}{Inbound Refinery}{subsection.6.2}
-\BOOKMARK [3][-]{subsubsection.6.2.4}{Search Engine}{subsection.6.2}
-\BOOKMARK [3][-]{subsubsection.6.2.5}{Webserver}{subsection.6.2}
+\BOOKMARK [2][-]{subsection.6.3}{Konkrete Verwendung / Einsatzgebiet}{section.6}
 \BOOKMARK [1][-]{section.7}{\334berwachungselemente}{}
 \BOOKMARK [2][-]{subsection.7.1}{Statusabfragen}{section.7}
 \BOOKMARK [2][-]{subsection.7.2}{\334berwachung der Funktionalit\344t}{section.7}
@@ -49,7 +45,8 @@
 \BOOKMARK [1][-]{section.11}{Anhang}{}
 \BOOKMARK [2][-]{subsection.11.1}{Abbildungsverzeichnis}{section.11}
 \BOOKMARK [2][-]{subsection.11.2}{Codelistingverzeichnis}{section.11}
-\BOOKMARK [2][-]{subsection.11.3}{Quellverzeichnis}{section.11}
-\BOOKMARK [3][-]{subsubsection.11.3.1}{Literaturverzeichnis}{subsection.11.3}
-\BOOKMARK [3][-]{subsubsection.11.3.2}{Internetquellen}{subsection.11.3}
-\BOOKMARK [2][-]{subsection.11.4}{Glossar}{section.11}
+\BOOKMARK [2][-]{subsection.11.3}{Tabellenverzeichnis}{section.11}
+\BOOKMARK [2][-]{subsection.11.4}{Quellverzeichnis}{section.11}
+\BOOKMARK [3][-]{subsubsection.11.4.1}{Literaturverzeichnis}{subsection.11.4}
+\BOOKMARK [3][-]{subsubsection.11.4.2}{Internetquellen}{subsection.11.4}
+\BOOKMARK [2][-]{subsection.11.5}{Glossar}{section.11}
