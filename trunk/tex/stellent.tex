@@ -181,8 +181,14 @@ Daher müss überprüft werden, ob diese Daten richtig ausgelesen werden, der Da
 \item \textbf{Suchfunktion} Nach einer erfolgreichen Indizierung muss das eingecheckte Dokument per Suchanfrage gefunden werden.
 Ob die Suche und Indizierung erfolgreich abgelaufen ist, wird zusätzlich überprüft. 
 \end{itemize}
-
-Alle Überwachungselemente lassen sich inklusive ihrer Abhängigkeiten in einer Pyramide darstellen.
+Die Basis für die alle anderen Tests bildet die Systemüberwachung.
+An erster Stelle der Systemüberwachung steht die schlichte Erreichbarkeit über das Netzwerk per Ping.
+Wenn der Server nicht erreichbar ist, können auch keine weiterführende Prüfungen durchgeführt werden.
+Zur Systemüberwachung gehören auch allgemeine Informationen über die Systemressourcen wie freier Festplattenspeicher oder CPU Auslastung.
+Die nächste Grundlage für die darüber liegenden Tests bildet die Überprüfung der laufenden Prozesse und der Status verschiedener Dienste bzw. Services.
+Sollten bestimmte Prozesse nicht gefunden werden oder wichtige Dienste nicht gestartet sein, können auf diese Prozesse und Dienste aufbauende Checks nicht funktionieren.
+Beispielweise kann der Funktionalitätstest der Benutzeranmeldung nicht realisierbar sein, wenn bereits zuvor in der Systemüberwachung der Prozess für den Webserver \gls{IIS} nicht gefunden werden konnte.
+Alle Überwachungselemente lassen sich inklusive ihrer Abhängigkeiten in einer Pyramide darstellen, siehe Abbildung \ref{moniele}.
 
 \begin{figure}[ht]
 	\centering
@@ -190,14 +196,3 @@ Alle Überwachungselemente lassen sich inklusive ihrer Abhängigkeiten in einer 
 		\caption{Überwachungselemente}
 		\label{moniele}
 \end{figure}
-
-
-Die Basis für die alle anderen Tests bildet die Systemüberwachung.
-
-An erster Stelle der Systemüberwachung steht die schlichte Erreichbarkeit über das Netzwerk per Ping.
-Wenn der Server nicht erreichbar ist, können auch keine weiterführende Prüfungen durchgeführt werden.
-Zur Systemüberwachung gehören auch allgemeine Informationen über die Systemressourcen wie freier Festplattenspeicher oder CPU Auslastung.
-
-Die nächste Grundlage für die darüber liegenden Tests bildet die Überprüfung der laufenden Prozesse und der Status verschiedener Dienste bzw. Services.
-Sollten bestimmte Prozesse nicht gefunden werden oder wichtige Dienste nicht gestartet sein, können auf diese Prozesse und Dienste aufbauende Checks nicht funktionieren.
-Beispielweise kann der Funktionalitätstest der Benutzeranmeldung nicht realisierbar sein, wenn bereits zuvor in der Systemüberwachung der Prozess für den Webserver \gls{IIS} nicht gefunden werden konnte.

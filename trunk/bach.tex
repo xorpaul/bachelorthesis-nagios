@@ -21,7 +21,7 @@
 \usepackage{listings}
 %\usepackage{listingsutf8}
 \usepackage[style=super3colheader]{glossaries}
-\usepackage{verbatim} %Mehrzeilige Kommentare durch \begin{comment} mglich  ??
+\usepackage{verbatim} %Mehrzeilige Kommentare durch \begin{coent} mglich  ??
 \usepackage{blindtext} % Erzeugung von lngeren Textpassage
 \usepackage{xcolor}  
 
@@ -70,12 +70,12 @@
 \setlength{\parindent}{0mm}
 \includepdf{Titelblatt.pdf}
 
-
+\input{tex/glossar.tex} 
 \setlength{\textheight}{630pt}
 \addtolength{\voffset}{-40pt}
-\input{tex/glossar.tex} 
 
-\pagenumbering{roman}
+
+%\pagenumbering{roman}
 
 %\pagestyle{scrheadings}
 %\chead{\leftmark}
@@ -117,30 +117,18 @@
 \input{tex/umsetzung.tex} \newpage
 \input{tex/ergebnis.tex} \newpage
 \input{tex/ausblick.tex} \newpage
-
-
-
-%\pagenumbering{Alph}
 \chead{GLOSSAR}
-%\thispagestyle{empty}
 \makeglossaries
-%\thispagestyle{empty}
 \printglossaries
-%\thispagestyle{empty}
 \newpage
 \chead{\leftmark}
-%\subsection{Abbildungsverzeichnis}
 \listoffigures
-
 \newpage
 
 \renewcommand{\lstlistlistingname}{Codelistingverzeichnis}
-%\subsection{Codelistingverzeichnis}
 \lstlistoflistings
 \newpage
-
 \renewcommand{\listtablename}{Tabellenverzeichnis}
-%\subsection{Tabellenverzeichnis}
 \listoftables
 \newpage
 
@@ -191,7 +179,7 @@
 \end{thebibliography}
 
 %\section{Anhang}
-\section{\appendixname}
+%\section{\appendixname}
 %\appendix
 
 
