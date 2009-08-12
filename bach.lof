@@ -1,40 +1,40 @@
 \select@language {ngerman}
-\contentsline {figure}{\numberline {1}{\ignorespaces Zus\IeC {\"a}tzliche Netzwerkabh\IeC {\"a}ngigkeit und Netzwerkbelastung}}{7}{figure.1}
-\contentsline {figure}{\numberline {2}{\ignorespaces Anteil an strukturierten Informationen}}{11}{figure.2}
-\contentsline {figure}{\numberline {3}{\ignorespaces Aufgabenbereiche eines Dokumenten-Management-Systems}}{13}{figure.3}
-\contentsline {figure}{\numberline {4}{\ignorespaces Sichtweise CMS gegen\IeC {\"u}ber DMS}}{17}{figure.4}
-\contentsline {figure}{\numberline {5}{\ignorespaces "`any-to-any"' Content-Management Konzept}}{18}{figure.5}
-\contentsline {figure}{\numberline {6}{\ignorespaces Simple Software Architektur eines Webshops}}{20}{figure.6}
-\contentsline {figure}{\numberline {7}{\ignorespaces Hinzugef\IeC {\"u}gte Service-orientierte Komponente}}{20}{figure.7}
-\contentsline {figure}{\numberline {8}{\ignorespaces Kommunikationprotokoll SOAP}}{22}{figure.8}
-\contentsline {figure}{\numberline {9}{\ignorespaces Ablauf einer Web Service-Benutzung}}{23}{figure.9}
-\contentsline {figure}{\numberline {10}{\ignorespaces Plugins als separate Komponente}}{26}{figure.10}
-\contentsline {figure}{\numberline {11}{\ignorespaces Anzeige des Servers im Webinterface von Nagios}}{27}{figure.11}
-\contentsline {figure}{\numberline {12}{\ignorespaces Beispielhafte manuelle Ausf\IeC {\"u}hrung eines Servicechecks}}{28}{figure.12}
-\contentsline {figure}{\numberline {13}{\ignorespaces Beispiel f\IeC {\"u}r den zeitlichen Verlauf durch vers. Zust\IeC {\"a}nde}}{30}{figure.13}
-\contentsline {figure}{\numberline {14}{\ignorespaces Verlauf von sich schnell wechselnden Zust\IeC {\"a}nden}}{31}{figure.14}
-\contentsline {figure}{\numberline {15}{\ignorespaces Verschiedene \IeC {\"U}berwachungsm\IeC {\"o}glichkeiten von Nagios}}{32}{figure.15}
-\contentsline {figure}{\numberline {16}{\ignorespaces Ausf\IeC {\"u}hrung eines netzwerkbasierenden Servicechecks}}{33}{figure.16}
-\contentsline {figure}{\numberline {17}{\ignorespaces Manuelle Ausf\IeC {\"u}hrung eines Servicechecks \IeC {\"u}ber SSH}}{33}{figure.17}
-\contentsline {figure}{\numberline {18}{\ignorespaces Aktive Checks mit NRPE}}{34}{figure.18}
-\contentsline {figure}{\numberline {19}{\ignorespaces Struktur der Management Information Base}}{35}{figure.19}
-\contentsline {figure}{\numberline {20}{\ignorespaces Passive Checks mit NSCA}}{37}{figure.20}
-\contentsline {figure}{\numberline {21}{\ignorespaces Oracle UCM Architektur}}{38}{figure.21}
-\contentsline {figure}{\numberline {22}{\ignorespaces Beispielhafter Einsatz eines Content Servers}}{39}{figure.22}
-\contentsline {figure}{\numberline {23}{\ignorespaces Bilddatenbank als Anwendung}}{41}{figure.23}
-\contentsline {figure}{\numberline {24}{\ignorespaces \IeC {\"U}berwachungselemente}}{46}{figure.24}
+\contentsline {figure}{\numberline {1}{\ignorespaces Zus\IeC {\"a}tzliche Netzwerkabh\IeC {\"a}ngigkeit und Netzwerkbelastung}}{8}{figure.1}
+\contentsline {figure}{\numberline {2}{\ignorespaces Anteil an strukturierten Informationen}}{12}{figure.2}
+\contentsline {figure}{\numberline {3}{\ignorespaces Aufgabenbereiche eines Dokumenten-Management-Systems}}{14}{figure.3}
+\contentsline {figure}{\numberline {4}{\ignorespaces Sichtweise CMS gegen\IeC {\"u}ber DMS}}{18}{figure.4}
+\contentsline {figure}{\numberline {5}{\ignorespaces "`any-to-any"' Content-Management Konzept}}{19}{figure.5}
+\contentsline {figure}{\numberline {6}{\ignorespaces Simple Software Architektur eines Webshops}}{21}{figure.6}
+\contentsline {figure}{\numberline {7}{\ignorespaces Hinzugef\IeC {\"u}gte Service-orientierte Komponente}}{21}{figure.7}
+\contentsline {figure}{\numberline {8}{\ignorespaces Kommunikationprotokoll SOAP}}{23}{figure.8}
+\contentsline {figure}{\numberline {9}{\ignorespaces Ablauf einer Web Service-Benutzung}}{24}{figure.9}
+\contentsline {figure}{\numberline {10}{\ignorespaces Plugins als separate Komponente}}{27}{figure.10}
+\contentsline {figure}{\numberline {11}{\ignorespaces Anzeige des Servers im Webinterface von Nagios}}{29}{figure.11}
+\contentsline {figure}{\numberline {12}{\ignorespaces Beispielhafte manuelle Ausf\IeC {\"u}hrung eines Servicechecks}}{30}{figure.12}
+\contentsline {figure}{\numberline {13}{\ignorespaces Beispiel f\IeC {\"u}r den zeitlichen Verlauf durch vers. Zust\IeC {\"a}nde}}{31}{figure.13}
+\contentsline {figure}{\numberline {14}{\ignorespaces Verlauf von sich schnell wechselnden Zust\IeC {\"a}nden}}{33}{figure.14}
+\contentsline {figure}{\numberline {15}{\ignorespaces Verschiedene \IeC {\"U}berwachungsm\IeC {\"o}glichkeiten von Nagios}}{34}{figure.15}
+\contentsline {figure}{\numberline {16}{\ignorespaces Ausf\IeC {\"u}hrung eines netzwerkbasierenden Servicechecks}}{34}{figure.16}
+\contentsline {figure}{\numberline {17}{\ignorespaces Manuelle Ausf\IeC {\"u}hrung eines Servicechecks \IeC {\"u}ber SSH}}{35}{figure.17}
+\contentsline {figure}{\numberline {18}{\ignorespaces Aktive Checks mit NRPE}}{35}{figure.18}
+\contentsline {figure}{\numberline {19}{\ignorespaces Struktur der Management Information Base}}{37}{figure.19}
+\contentsline {figure}{\numberline {20}{\ignorespaces Passive Checks mit NSCA}}{38}{figure.20}
+\contentsline {figure}{\numberline {21}{\ignorespaces Oracle UCM Architektur}}{39}{figure.21}
+\contentsline {figure}{\numberline {22}{\ignorespaces Beispielhafter Einsatz eines Content Servers}}{40}{figure.22}
+\contentsline {figure}{\numberline {23}{\ignorespaces Bilddatenbank als Anwendung}}{42}{figure.23}
+\contentsline {figure}{\numberline {24}{\ignorespaces \IeC {\"U}berwachungselemente}}{48}{figure.24}
 \contentsline {figure}{\numberline {25}{\ignorespaces Abfrage von Windows-Ressourcen durch \textit {check\_nt}}}{52}{figure.25}
-\contentsline {figure}{\numberline {26}{\ignorespaces Zugriff auf den NSClient-Dienst durch check\_nt}}{52}{figure.26}
-\contentsline {figure}{\numberline {27}{\ignorespaces Konfiguration des NSClient++ w\IeC {\"a}hrend der Installation}}{53}{figure.27}
-\contentsline {figure}{\numberline {28}{\ignorespaces Kommunikation zwischen Nagios und NSClient++}}{54}{figure.28}
-\contentsline {figure}{\numberline {29}{\ignorespaces Aufruf eines NRPE-Kommandos}}{55}{figure.29}
-\contentsline {figure}{\numberline {30}{\ignorespaces Aufruf des NSClient-Dienstes}}{56}{figure.30}
-\contentsline {figure}{\numberline {31}{\ignorespaces Prozess- und Dienst\IeC {\"u}berwachung im Nagios-Webinterface}}{57}{figure.31}
-\contentsline {figure}{\numberline {32}{\ignorespaces Ausgabe der betreffenden Zeile in der Logdatei}}{60}{figure.32}
-\contentsline {figure}{\numberline {33}{\ignorespaces Geplanter Ablauf der Benutzersimulation}}{61}{figure.33}
-\contentsline {figure}{\numberline {34}{\ignorespaces Anforderungsparameter f\IeC {\"u}r CheckInUniversal aus der WSDL-Datei}}{62}{figure.34}
-\contentsline {figure}{\numberline {35}{\ignorespaces Einchecken eines Testbildes}}{63}{figure.35}
-\contentsline {figure}{\numberline {36}{\ignorespaces Validierung der Indizierung und Konvertierung}}{65}{figure.36}
-\contentsline {figure}{\numberline {37}{\ignorespaces Anlegen eines eigenen Web Services}}{66}{figure.37}
-\contentsline {figure}{\numberline {38}{\ignorespaces Webinterface von Nagios}}{68}{figure.38}
-\contentsline {figure}{\numberline {39}{\ignorespaces Details der Prozessorauslastung}}{69}{figure.39}
+\contentsline {figure}{\numberline {26}{\ignorespaces Zugriff auf den NSClient-Dienst durch check\_nt}}{53}{figure.26}
+\contentsline {figure}{\numberline {27}{\ignorespaces Konfiguration des NSClient++ w\IeC {\"a}hrend der Installation}}{55}{figure.27}
+\contentsline {figure}{\numberline {28}{\ignorespaces Kommunikation zwischen Nagios und NSClient++}}{56}{figure.28}
+\contentsline {figure}{\numberline {29}{\ignorespaces Aufruf eines NRPE-Kommandos}}{57}{figure.29}
+\contentsline {figure}{\numberline {30}{\ignorespaces Aufruf des NSClient-Dienstes}}{57}{figure.30}
+\contentsline {figure}{\numberline {31}{\ignorespaces Prozess- und Dienst\IeC {\"u}berwachung im Nagios-Webinterface}}{59}{figure.31}
+\contentsline {figure}{\numberline {32}{\ignorespaces Ausgabe der betreffenden Zeile in der Logdatei}}{62}{figure.32}
+\contentsline {figure}{\numberline {33}{\ignorespaces Geplanter Ablauf der Benutzersimulation}}{63}{figure.33}
+\contentsline {figure}{\numberline {34}{\ignorespaces Anforderungsparameter f\IeC {\"u}r CheckInUniversal aus der WSDL-Datei}}{64}{figure.34}
+\contentsline {figure}{\numberline {35}{\ignorespaces Einchecken eines Testbildes}}{65}{figure.35}
+\contentsline {figure}{\numberline {36}{\ignorespaces Validierung der Indizierung und Konvertierung}}{68}{figure.36}
+\contentsline {figure}{\numberline {37}{\ignorespaces Anlegen eines eigenen Web Services}}{69}{figure.37}
+\contentsline {figure}{\numberline {38}{\ignorespaces Webinterface von Nagios}}{71}{figure.38}
+\contentsline {figure}{\numberline {39}{\ignorespaces Details der Prozessorauslastung}}{72}{figure.39}
