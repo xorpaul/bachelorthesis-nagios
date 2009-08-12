@@ -36,7 +36,7 @@ Die Liste mit diesen \gls{IP}-Adressen nennt man auch \textit{Accesslist}.
 
 \subsubsection{Windows-Agenten}
 Da die zu überwachende Oracle UCM Anwendung auf einem Windows-Server betrieben wird und die bereits vorgestellten Agenten mit Ausnahme der \gls{SNMP}-Varianten nur unter Unix einsetzbar sind, müssen zusätzlich die explizit für Windows entwickelten Nagios-Agenten untersucht werden.
-Dabei wird die Auswahl der Kandidaten auf folgende Auswahl eingeschränkt:
+Dabei wird die Auswahl der Kandidaten auf 4 Bewerber beschränkt, siehe Tabelle \ref{tab:winagents}.
 
 \input{tex/tab-winagents.tex}
 
@@ -50,7 +50,7 @@ Dadurch können grundlegende Informationen für die Systemüberwachung wie Zust�
 		\caption{Abfrage von Windows-Ressourcen durch \textit{check\_nt}}
 		\label{fig:cknt}
 \end{figure}
-
+\newpage
 Diese Abfrage kann durch die Ausführung auf der Kommandozeile getestet werden:
 
 \begin{figure}[ht]
@@ -85,20 +85,12 @@ Da nur ein Windows-Agent alle drei Sicherheitsmerkmale anbietet und dabei aktiv 
 \paragraph{Installation und Konfiguration}
 
 Der Nagios-Agent NSClient++ kann im Gegensatz zu den meisten anderen Windows-Agenten komfortabel über einen graphischen Benutzerdialog installiert werden.
-
-%\begin{figure}[ht]
-%	\centering
-%	   \fbox{\includegraphics[width=0.85\textwidth]{bilder/nsc1.png}}
-%		\caption{Installation des NSClient++}
-%		\label{nscs1}
-%\end{figure}
-
 Während der Installation kann auch festgelegt werden welche Komponenten installiert werden sollen.
 Dabei werden diese Komponenten nicht standardmäßig geladen, sondern im nächsten Dialogfenster als Auswahl explizit/extra abgefragt:
 
 \begin{figure}[ht]
 	\centering
-	   \fbox{\includegraphics[width=0.7\textwidth]{bilder/nsc2.png}}
+	   \fbox{\includegraphics[width=0.6\textwidth]{bilder/nsc2.png}}
 		\caption{Konfiguration des NSClient++ während der Installation}
 		\label{nscs2}
 \end{figure}
@@ -110,7 +102,7 @@ Dabei läuft die Kommunikation zwischen dem Nagios- und dem Windows-Server folge
 
 \begin{figure}[ht]
 	\centering
-	   \fbox{\includegraphics[width=0.85\textwidth]{bilder/nagios-active-nsclient-and-nrpe.png}}
+	   \fbox{\includegraphics[width=0.7\textwidth]{bilder/nagios-active-nsclient-and-nrpe.png}}
 		\caption[Kommunikation zwischen Nagios und NSClient++]{Kommunikation zwischen Nagios und NSClient++\protect\footnote}
 		\label{nscs2}
 \end{figure}

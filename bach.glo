@@ -10,7 +10,7 @@
 \glossaryentry{NCI?\glossaryentryfield{NCI}{\glsnamefont{NCI}}{None-Coded Information}{\relax }|setentrycounter{page}\glsnumberformat}{11}
 \glossaryentry{CI?\glossaryentryfield{CI}{\glsnamefont{CI}}{Coded Information}{\relax }|setentrycounter{page}\glsnumberformat}{12}
 \glossaryentry{DMS?\glossaryentryfield{DMS}{\glsnamefont{DMS}}{Dokumenten-Management-System}{\relax }|setentrycounter{page}\glsnumberformat}{14}
-\glossaryentry{DMS?\glossaryentryfield{DMS}{\glsnamefont{DMS}}{Dokumenten-Management-System}{\relax }|setentrycounter{page}\glsnumberformat}{14}
+\glossaryentry{DMS?\glossaryentryfield{DMS}{\glsnamefont{DMS}}{Dokumenten-Management-System}{\relax }|setentrycounter{page}\glsnumberformat}{15}
 \glossaryentry{NCI?\glossaryentryfield{NCI}{\glsnamefont{NCI}}{None-Coded Information}{\relax }|setentrycounter{page}\glsnumberformat}{15}
 \glossaryentry{CI?\glossaryentryfield{CI}{\glsnamefont{CI}}{Coded Information}{\relax }|setentrycounter{page}\glsnumberformat}{15}
 \glossaryentry{CI?\glossaryentryfield{CI}{\glsnamefont{CI}}{Coded Information}{\relax }|setentrycounter{page}\glsnumberformat}{15}
@@ -22,17 +22,17 @@
 \glossaryentry{CI?\glossaryentryfield{CI}{\glsnamefont{CI}}{Coded Information}{\relax }|setentrycounter{page}\glsnumberformat}{17}
 \glossaryentry{NCI?\glossaryentryfield{NCI}{\glsnamefont{NCI}}{None-Coded Information}{\relax }|setentrycounter{page}\glsnumberformat}{17}
 \glossaryentry{CMS?\glossaryentryfield{CMS}{\glsnamefont{CMS}}{Content-Management-System}{\relax }|setentrycounter{page}\glsnumberformat}{17}
-\glossaryentry{DMS?\glossaryentryfield{DMS}{\glsnamefont{DMS}}{Dokumenten-Management-System}{\relax }|setentrycounter{page}\glsnumberformat}{17}
-\glossaryentry{CMS?\glossaryentryfield{CMS}{\glsnamefont{CMS}}{Content-Management-System}{\relax }|setentrycounter{page}\glsnumberformat}{17}
+\glossaryentry{DMS?\glossaryentryfield{DMS}{\glsnamefont{DMS}}{Dokumenten-Management-System}{\relax }|setentrycounter{page}\glsnumberformat}{18}
+\glossaryentry{CMS?\glossaryentryfield{CMS}{\glsnamefont{CMS}}{Content-Management-System}{\relax }|setentrycounter{page}\glsnumberformat}{18}
 \glossaryentry{DMS?\glossaryentryfield{DMS}{\glsnamefont{DMS}}{Dokumenten-Management-System}{\relax }|setentrycounter{page}\glsnumberformat}{18}
 \glossaryentry{CMS?\glossaryentryfield{CMS}{\glsnamefont{CMS}}{Content-Management-System}{\relax }|setentrycounter{page}\glsnumberformat}{18}
 \glossaryentry{DMS?\glossaryentryfield{DMS}{\glsnamefont{DMS}}{Dokumenten-Management-System}{\relax }|setentrycounter{page}\glsnumberformat}{18}
 \glossaryentry{DMS?\glossaryentryfield{DMS}{\glsnamefont{DMS}}{Dokumenten-Management-System}{\relax }|setentrycounter{page}\glsnumberformat}{18}
 \glossaryentry{CMS?\glossaryentryfield{CMS}{\glsnamefont{CMS}}{Content-Management-System}{\relax }|setentrycounter{page}\glsnumberformat}{18}
-\glossaryentry{CMS?\glossaryentryfield{CMS}{\glsnamefont{CMS}}{Content-Management-System}{\relax }|setentrycounter{page}\glsnumberformat}{18}
 \glossaryentry{CMS?\glossaryentryfield{CMS}{\glsnamefont{CMS}}{Content-Management-System}{\relax }|setentrycounter{page}\glsnumberformat}{19}
 \glossaryentry{CMS?\glossaryentryfield{CMS}{\glsnamefont{CMS}}{Content-Management-System}{\relax }|setentrycounter{page}\glsnumberformat}{19}
 \glossaryentry{CMS?\glossaryentryfield{CMS}{\glsnamefont{CMS}}{Content-Management-System}{\relax }|setentrycounter{page}\glsnumberformat}{19}
+\glossaryentry{CMS?\glossaryentryfield{CMS}{\glsnamefont{CMS}}{Content-Management-System}{\relax }|setentrycounter{page}\glsnumberformat}{20}
 \glossaryentry{SOA?\glossaryentryfield{SOA}{\glsnamefont{SOA}}{Service-Oriented Architecture}{\relax }|setentrycounter{page}\glsnumberformat}{20}
 \glossaryentry{SOA?\glossaryentryfield{SOA}{\glsnamefont{SOA}}{Service-Oriented Architecture}{\relax }|setentrycounter{page}\glsnumberformat}{20}
 \glossaryentry{SOA?\glossaryentryfield{SOA}{\glsnamefont{SOA}}{Service-Oriented Architecture}{\relax }|setentrycounter{page}\glsnumberformat}{20}
@@ -63,7 +63,9 @@
 \glossaryentry{SSH?\glossaryentryfield{SSH}{\glsnamefont{SSH}}{Secure Shell}{\relax }|setentrycounter{page}\glsnumberformat}{34}
 \glossaryentry{NRPE?\glossaryentryfield{NRPE}{\glsnamefont{NRPE}}{Nagios Remote Plugin Executor}{\relax }|setentrycounter{page}\glsnumberformat}{35}
 \glossaryentry{SSH?\glossaryentryfield{SSH}{\glsnamefont{SSH}}{Secure Shell}{\relax }|setentrycounter{page}\glsnumberformat}{35}
+\glossaryentry{IP?\glossaryentryfield{IP}{\glsnamefont{IP}}{Identifikation Protokoll}{\relax }|setentrycounter{page}\glsnumberformat}{35}
 \glossaryentry{NRPE?\glossaryentryfield{NRPE}{\glsnamefont{NRPE}}{Nagios Remote Plugin Executor}{\relax }|setentrycounter{page}\glsnumberformat}{35}
+\glossaryentry{SSH?\glossaryentryfield{SSH}{\glsnamefont{SSH}}{Secure Shell}{\relax }|setentrycounter{page}\glsnumberformat}{35}
 \glossaryentry{SNMP?\glossaryentryfield{SNMP}{\glsnamefont{SNMP}}{Simple Network Management Protocol}{\relax }|setentrycounter{page}\glsnumberformat}{36}
 \glossaryentry{SNMP?\glossaryentryfield{SNMP}{\glsnamefont{SNMP}}{Simple Network Management Protocol}{\relax }|setentrycounter{page}\glsnumberformat}{36}
 \glossaryentry{SNMP?\glossaryentryfield{SNMP}{\glsnamefont{SNMP}}{Simple Network Management Protocol}{\relax }|setentrycounter{page}\glsnumberformat}{36}
@@ -72,11 +74,11 @@
 \glossaryentry{MIB?\glossaryentryfield{MIB}{\glsnamefont{MIB}}{Management Information Base}{\relax }|setentrycounter{page}\glsnumberformat}{36}
 \glossaryentry{SNMP?\glossaryentryfield{SNMP}{\glsnamefont{SNMP}}{Simple Network Management Protocol}{\relax }|setentrycounter{page}\glsnumberformat}{36}
 \glossaryentry{MIB?\glossaryentryfield{MIB}{\glsnamefont{MIB}}{Management Information Base}{\relax }|setentrycounter{page}\glsnumberformat}{36}
+\glossaryentry{SNMP?\glossaryentryfield{SNMP}{\glsnamefont{SNMP}}{Simple Network Management Protocol}{\relax }|setentrycounter{page}\glsnumberformat}{36}
 \glossaryentry{MIB?\glossaryentryfield{MIB}{\glsnamefont{MIB}}{Management Information Base}{\relax }|setentrycounter{page}\glsnumberformat}{36}
 \glossaryentry{SNMP?\glossaryentryfield{SNMP}{\glsnamefont{SNMP}}{Simple Network Management Protocol}{\relax }|setentrycounter{page}\glsnumberformat}{36}
 \glossaryentry{DNS?\glossaryentryfield{DNS}{\glsnamefont{DNS}}{Domain Name System}{\relax }|setentrycounter{page}\glsnumberformat}{36}
 \glossaryentry{LDAP?\glossaryentryfield{LDAP}{\glsnamefont{LDAP}}{Lightweight Directory Access Protocol}{\relax }|setentrycounter{page}\glsnumberformat}{36}
-\glossaryentry{SNMP?\glossaryentryfield{SNMP}{\glsnamefont{SNMP}}{Simple Network Management Protocol}{\relax }|setentrycounter{page}\glsnumberformat}{37}
 \glossaryentry{SNMP?\glossaryentryfield{SNMP}{\glsnamefont{SNMP}}{Simple Network Management Protocol}{\relax }|setentrycounter{page}\glsnumberformat}{37}
 \glossaryentry{MIB?\glossaryentryfield{MIB}{\glsnamefont{MIB}}{Management Information Base}{\relax }|setentrycounter{page}\glsnumberformat}{37}
 \glossaryentry{SNMP?\glossaryentryfield{SNMP}{\glsnamefont{SNMP}}{Simple Network Management Protocol}{\relax }|setentrycounter{page}\glsnumberformat}{37}
@@ -90,7 +92,7 @@
 \glossaryentry{OracleUCM?\glossaryentryfield{OracleUCM}{\glsnamefont{OracleUCM}}{Content-Management-System von Oracle}{\relax }|setentrycounter{page}\glsnumberformat}{41}
 \glossaryentry{ECM?\glossaryentryfield{ECM}{\glsnamefont{ECM}}{Enterprise-Content-Management}{\relax }|setentrycounter{page}\glsnumberformat}{41}
 \glossaryentry{OracleUCM?\glossaryentryfield{OracleUCM}{\glsnamefont{OracleUCM}}{Content-Management-System von Oracle}{\relax }|setentrycounter{page}\glsnumberformat}{42}
-\glossaryentry{IIS?\glossaryentryfield{IIS}{\glsnamefont{IIS}}{Internet Information Service}{\relax }|setentrycounter{page}\glsnumberformat}{48}
+\glossaryentry{IIS?\glossaryentryfield{IIS}{\glsnamefont{IIS}}{Internet Information Service}{\relax }|setentrycounter{page}\glsnumberformat}{47}
 \glossaryentry{OracleUCM?\glossaryentryfield{OracleUCM}{\glsnamefont{OracleUCM}}{Content-Management-System von Oracle}{\relax }|setentrycounter{page}\glsnumberformat}{49}
 \glossaryentry{IP?\glossaryentryfield{IP}{\glsnamefont{IP}}{Identifikation Protokoll}{\relax }|setentrycounter{page}\glsnumberformat}{50}
 \glossaryentry{SSH?\glossaryentryfield{SSH}{\glsnamefont{SSH}}{Secure Shell}{\relax }|setentrycounter{page}\glsnumberformat}{50}
@@ -120,19 +122,19 @@
 \glossaryentry{IP?\glossaryentryfield{IP}{\glsnamefont{IP}}{Identifikation Protokoll}{\relax }|setentrycounter{page}\glsnumberformat}{55}
 \glossaryentry{FQDN?\glossaryentryfield{FQDN}{\glsnamefont{FQDN}}{Fully Qualified Domain Name}{\relax }|setentrycounter{page}\glsnumberformat}{55}
 \glossaryentry{NRPE?\glossaryentryfield{NRPE}{\glsnamefont{NRPE}}{Nagios Remote Plugin Executor}{\relax }|setentrycounter{page}\glsnumberformat}{55}
-\glossaryentry{RPC?\glossaryentryfield{RPC}{\glsnamefont{RPC}}{Remote Procedure Call}{\relax }|setentrycounter{page}\glsnumberformat}{55}
+\glossaryentry{RPC?\glossaryentryfield{RPC}{\glsnamefont{RPC}}{Remote Procedure Call}{\relax }|setentrycounter{page}\glsnumberformat}{56}
 \glossaryentry{RPC?\glossaryentryfield{RPC}{\glsnamefont{RPC}}{Remote Procedure Call}{\relax }|setentrycounter{page}\glsnumberformat}{56}
 \glossaryentry{SSL?\glossaryentryfield{SSL}{\glsnamefont{SSL}}{Secure Sockets Layer}{\relax }|setentrycounter{page}\glsnumberformat}{57}
 \glossaryentry{NRPE?\glossaryentryfield{NRPE}{\glsnamefont{NRPE}}{Nagios Remote Plugin Executor}{\relax }|setentrycounter{page}\glsnumberformat}{57}
 \glossaryentry{NRPE?\glossaryentryfield{NRPE}{\glsnamefont{NRPE}}{Nagios Remote Plugin Executor}{\relax }|setentrycounter{page}\glsnumberformat}{57}
 \glossaryentry{NRPE?\glossaryentryfield{NRPE}{\glsnamefont{NRPE}}{Nagios Remote Plugin Executor}{\relax }|setentrycounter{page}\glsnumberformat}{57}
-\glossaryentry{IIS?\glossaryentryfield{IIS}{\glsnamefont{IIS}}{Internet Information Service}{\relax }|setentrycounter{page}\glsnumberformat}{59}
+\glossaryentry{IIS?\glossaryentryfield{IIS}{\glsnamefont{IIS}}{Internet Information Service}{\relax }|setentrycounter{page}\glsnumberformat}{58}
 \glossaryentry{SSL?\glossaryentryfield{SSL}{\glsnamefont{SSL}}{Secure Sockets Layer}{\relax }|setentrycounter{page}\glsnumberformat}{60}
 \glossaryentry{NRPE?\glossaryentryfield{NRPE}{\glsnamefont{NRPE}}{Nagios Remote Plugin Executor}{\relax }|setentrycounter{page}\glsnumberformat}{61}
 \glossaryentry{OracleUCM?\glossaryentryfield{OracleUCM}{\glsnamefont{OracleUCM}}{Content-Management-System von Oracle}{\relax }|setentrycounter{page}\glsnumberformat}{62}
 \glossaryentry{OracleUCM?\glossaryentryfield{OracleUCM}{\glsnamefont{OracleUCM}}{Content-Management-System von Oracle}{\relax }|setentrycounter{page}\glsnumberformat}{63}
-\glossaryentry{PHP?\glossaryentryfield{PHP}{\glsnamefont{PHP}}{PHP: Hypertext Preprocessor}{\relax }|setentrycounter{page}\glsnumberformat}{64}
-\glossaryentry{PHP?\glossaryentryfield{PHP}{\glsnamefont{PHP}}{PHP: Hypertext Preprocessor}{\relax }|setentrycounter{page}\glsnumberformat}{64}
+\glossaryentry{PHP?\glossaryentryfield{PHP}{\glsnamefont{PHP}}{PHP: Hypertext Preprocessor}{\relax }|setentrycounter{page}\glsnumberformat}{63}
+\glossaryentry{PHP?\glossaryentryfield{PHP}{\glsnamefont{PHP}}{PHP: Hypertext Preprocessor}{\relax }|setentrycounter{page}\glsnumberformat}{63}
 \glossaryentry{XML?\glossaryentryfield{XML}{\glsnamefont{XML}}{Extensible Markup Language}{\relax }|setentrycounter{page}\glsnumberformat}{64}
 \glossaryentry{XML?\glossaryentryfield{XML}{\glsnamefont{XML}}{Extensible Markup Language}{\relax }|setentrycounter{page}\glsnumberformat}{64}
 \glossaryentry{WSDL?\glossaryentryfield{WSDL}{\glsnamefont{WSDL}}{Web Services Description Language}{\relax }|setentrycounter{page}\glsnumberformat}{64}
@@ -142,28 +144,26 @@
 \glossaryentry{OracleUCM?\glossaryentryfield{OracleUCM}{\glsnamefont{OracleUCM}}{Content-Management-System von Oracle}{\relax }|setentrycounter{page}\glsnumberformat}{64}
 \glossaryentry{HTTP?\glossaryentryfield{HTTP}{\glsnamefont{HTTP}}{Hypertext Transfer Protocol}{\relax }|setentrycounter{page}\glsnumberformat}{65}
 \glossaryentry{PHP?\glossaryentryfield{PHP}{\glsnamefont{PHP}}{PHP: Hypertext Preprocessor}{\relax }|setentrycounter{page}\glsnumberformat}{65}
-\glossaryentry{WSDL?\glossaryentryfield{WSDL}{\glsnamefont{WSDL}}{Web Services Description Language}{\relax }|setentrycounter{page}\glsnumberformat}{66}
-\glossaryentry{XML?\glossaryentryfield{XML}{\glsnamefont{XML}}{Extensible Markup Language}{\relax }|setentrycounter{page}\glsnumberformat}{66}
-\glossaryentry{XML?\glossaryentryfield{XML}{\glsnamefont{XML}}{Extensible Markup Language}{\relax }|setentrycounter{page}\glsnumberformat}{66}
-\glossaryentry{SOAP?\glossaryentryfield{SOAP}{\glsnamefont{SOAP}}{Simple Object Access Protocol}{\relax }|setentrycounter{page}\glsnumberformat}{66}
-\glossaryentry{OracleUCM?\glossaryentryfield{OracleUCM}{\glsnamefont{OracleUCM}}{Content-Management-System von Oracle}{\relax }|setentrycounter{page}\glsnumberformat}{66}
+\glossaryentry{WSDL?\glossaryentryfield{WSDL}{\glsnamefont{WSDL}}{Web Services Description Language}{\relax }|setentrycounter{page}\glsnumberformat}{65}
+\glossaryentry{XML?\glossaryentryfield{XML}{\glsnamefont{XML}}{Extensible Markup Language}{\relax }|setentrycounter{page}\glsnumberformat}{65}
+\glossaryentry{XML?\glossaryentryfield{XML}{\glsnamefont{XML}}{Extensible Markup Language}{\relax }|setentrycounter{page}\glsnumberformat}{65}
+\glossaryentry{SOAP?\glossaryentryfield{SOAP}{\glsnamefont{SOAP}}{Simple Object Access Protocol}{\relax }|setentrycounter{page}\glsnumberformat}{65}
+\glossaryentry{OracleUCM?\glossaryentryfield{OracleUCM}{\glsnamefont{OracleUCM}}{Content-Management-System von Oracle}{\relax }|setentrycounter{page}\glsnumberformat}{65}
 \glossaryentry{XML?\glossaryentryfield{XML}{\glsnamefont{XML}}{Extensible Markup Language}{\relax }|setentrycounter{page}\glsnumberformat}{66}
 \glossaryentry{WSDL?\glossaryentryfield{WSDL}{\glsnamefont{WSDL}}{Web Services Description Language}{\relax }|setentrycounter{page}\glsnumberformat}{66}
 \glossaryentry{PHP?\glossaryentryfield{PHP}{\glsnamefont{PHP}}{PHP: Hypertext Preprocessor}{\relax }|setentrycounter{page}\glsnumberformat}{66}
 \glossaryentry{WSDL?\glossaryentryfield{WSDL}{\glsnamefont{WSDL}}{Web Services Description Language}{\relax }|setentrycounter{page}\glsnumberformat}{66}
+\glossaryentry{WSDL?\glossaryentryfield{WSDL}{\glsnamefont{WSDL}}{Web Services Description Language}{\relax }|setentrycounter{page}\glsnumberformat}{67}
+\glossaryentry{XML?\glossaryentryfield{XML}{\glsnamefont{XML}}{Extensible Markup Language}{\relax }|setentrycounter{page}\glsnumberformat}{67}
+\glossaryentry{XML?\glossaryentryfield{XML}{\glsnamefont{XML}}{Extensible Markup Language}{\relax }|setentrycounter{page}\glsnumberformat}{67}
+\glossaryentry{OracleUCM?\glossaryentryfield{OracleUCM}{\glsnamefont{OracleUCM}}{Content-Management-System von Oracle}{\relax }|setentrycounter{page}\glsnumberformat}{68}
 \glossaryentry{WSDL?\glossaryentryfield{WSDL}{\glsnamefont{WSDL}}{Web Services Description Language}{\relax }|setentrycounter{page}\glsnumberformat}{68}
-\glossaryentry{XML?\glossaryentryfield{XML}{\glsnamefont{XML}}{Extensible Markup Language}{\relax }|setentrycounter{page}\glsnumberformat}{68}
-\glossaryentry{XML?\glossaryentryfield{XML}{\glsnamefont{XML}}{Extensible Markup Language}{\relax }|setentrycounter{page}\glsnumberformat}{68}
+\glossaryentry{WSDL?\glossaryentryfield{WSDL}{\glsnamefont{WSDL}}{Web Services Description Language}{\relax }|setentrycounter{page}\glsnumberformat}{68}
 \glossaryentry{OracleUCM?\glossaryentryfield{OracleUCM}{\glsnamefont{OracleUCM}}{Content-Management-System von Oracle}{\relax }|setentrycounter{page}\glsnumberformat}{69}
-\glossaryentry{WSDL?\glossaryentryfield{WSDL}{\glsnamefont{WSDL}}{Web Services Description Language}{\relax }|setentrycounter{page}\glsnumberformat}{69}
-\glossaryentry{WSDL?\glossaryentryfield{WSDL}{\glsnamefont{WSDL}}{Web Services Description Language}{\relax }|setentrycounter{page}\glsnumberformat}{69}
-\glossaryentry{OracleUCM?\glossaryentryfield{OracleUCM}{\glsnamefont{OracleUCM}}{Content-Management-System von Oracle}{\relax }|setentrycounter{page}\glsnumberformat}{70}
+\glossaryentry{OracleUCM?\glossaryentryfield{OracleUCM}{\glsnamefont{OracleUCM}}{Content-Management-System von Oracle}{\relax }|setentrycounter{page}\glsnumberformat}{72}
+\glossaryentry{OracleUCM?\glossaryentryfield{OracleUCM}{\glsnamefont{OracleUCM}}{Content-Management-System von Oracle}{\relax }|setentrycounter{page}\glsnumberformat}{72}
 \glossaryentry{OracleUCM?\glossaryentryfield{OracleUCM}{\glsnamefont{OracleUCM}}{Content-Management-System von Oracle}{\relax }|setentrycounter{page}\glsnumberformat}{73}
-\glossaryentry{DMS?\glossaryentryfield{DMS}{\glsnamefont{DMS}}{Dokumenten-Management-System}{\relax }|setentrycounter{page}\glsnumberformat}{73}
-\glossaryentry{CMS?\glossaryentryfield{CMS}{\glsnamefont{CMS}}{Content-Management-System}{\relax }|setentrycounter{page}\glsnumberformat}{73}
-\glossaryentry{SOAP?\glossaryentryfield{SOAP}{\glsnamefont{SOAP}}{Simple Object Access Protocol}{\relax }|setentrycounter{page}\glsnumberformat}{74}
-\glossaryentry{WSDL?\glossaryentryfield{WSDL}{\glsnamefont{WSDL}}{Web Services Description Language}{\relax }|setentrycounter{page}\glsnumberformat}{74}
+\glossaryentry{OracleUCM?\glossaryentryfield{OracleUCM}{\glsnamefont{OracleUCM}}{Content-Management-System von Oracle}{\relax }|setentrycounter{page}\glsnumberformat}{73}
 \glossaryentry{OracleUCM?\glossaryentryfield{OracleUCM}{\glsnamefont{OracleUCM}}{Content-Management-System von Oracle}{\relax }|setentrycounter{page}\glsnumberformat}{74}
 \glossaryentry{OracleUCM?\glossaryentryfield{OracleUCM}{\glsnamefont{OracleUCM}}{Content-Management-System von Oracle}{\relax }|setentrycounter{page}\glsnumberformat}{74}
-\glossaryentry{OracleUCM?\glossaryentryfield{OracleUCM}{\glsnamefont{OracleUCM}}{Content-Management-System von Oracle}{\relax }|setentrycounter{page}\glsnumberformat}{75}
-\glossaryentry{PDF?\glossaryentryfield{PDF}{\glsnamefont{PDF}}{Portable Document Format}{\relax }|setentrycounter{page}\glsnumberformat}{76}
+\glossaryentry{PDF?\glossaryentryfield{PDF}{\glsnamefont{PDF}}{Portable Document Format}{\relax }|setentrycounter{page}\glsnumberformat}{75}

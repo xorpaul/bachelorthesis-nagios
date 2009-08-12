@@ -26,7 +26,7 @@
 \contentsline {figure}{\numberline {25}{\ignorespaces Abfrage von Windows-Ressourcen durch \textit {check\_nt}}}{52}{figure.25}
 \contentsline {figure}{\numberline {26}{\ignorespaces Zugriff auf den NSClient-Dienst durch check\_nt}}{53}{figure.26}
 \contentsline {figure}{\numberline {27}{\ignorespaces Konfiguration des NSClient++ w\IeC {\"a}hrend der Installation}}{55}{figure.27}
-\contentsline {figure}{\numberline {28}{\ignorespaces Kommunikation zwischen Nagios und NSClient++}}{56}{figure.28}
+\contentsline {figure}{\numberline {28}{\ignorespaces Kommunikation zwischen Nagios und NSClient++}}{55}{figure.28}
 \contentsline {figure}{\numberline {29}{\ignorespaces Aufruf eines NRPE-Kommandos}}{57}{figure.29}
 \contentsline {figure}{\numberline {30}{\ignorespaces Aufruf des NSClient-Dienstes}}{57}{figure.30}
 \contentsline {figure}{\numberline {31}{\ignorespaces Prozess- und Dienst\IeC {\"u}berwachung im Nagios-Webinterface}}{59}{figure.31}
@@ -34,7 +34,7 @@
 \contentsline {figure}{\numberline {33}{\ignorespaces Geplanter Ablauf der Benutzersimulation}}{63}{figure.33}
 \contentsline {figure}{\numberline {34}{\ignorespaces Anforderungsparameter f\IeC {\"u}r CheckInUniversal aus der WSDL-Datei}}{64}{figure.34}
 \contentsline {figure}{\numberline {35}{\ignorespaces Einchecken eines Testbildes}}{65}{figure.35}
-\contentsline {figure}{\numberline {36}{\ignorespaces Validierung der Indizierung und Konvertierung}}{68}{figure.36}
-\contentsline {figure}{\numberline {37}{\ignorespaces Anlegen eines eigenen Web Services}}{69}{figure.37}
-\contentsline {figure}{\numberline {38}{\ignorespaces Webinterface von Nagios}}{71}{figure.38}
-\contentsline {figure}{\numberline {39}{\ignorespaces Details der Prozessorauslastung}}{72}{figure.39}
+\contentsline {figure}{\numberline {36}{\ignorespaces Validierung der Indizierung und Konvertierung}}{67}{figure.36}
+\contentsline {figure}{\numberline {37}{\ignorespaces Anlegen eines eigenen Web Services}}{68}{figure.37}
+\contentsline {figure}{\numberline {38}{\ignorespaces Webinterface von Nagios}}{70}{figure.38}
+\contentsline {figure}{\numberline {39}{\ignorespaces Details der Prozessorauslastung}}{71}{figure.39}

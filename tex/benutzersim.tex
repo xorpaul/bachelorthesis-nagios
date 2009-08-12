@@ -6,8 +6,9 @@ Solche typische Aktionen sind das Einchecken eines Bildes, Suche nach einem Bild
 %Benutzertätigkeiten, Handlungen
 Da Nagios standardmäßig ein Plugin periodisch jede fünf Minuten aufruft, würde sich die Festplatte und die Datenbank des \gls{OracleUCM}-Servers im Laufe der Zeit an ihre Kapazitäten stoßen.
 Daher werden nach der Anforderung und Überprüfung der Bilder alle Testbilder vom Server entfernt.
+Per Webservice soll ein Testbild an den Server geschickt und eingecheckt werden.
 
-Der Ablauf der Benutzersimulation soll in verkürzter Form durch folgendes Struktogramm verdeutlicht werden:
+Der Ablauf der Benutzersimulation soll in verkürzter Form durch das Struktogramm \ref{user-sim} verdeutlicht werden.
 
 \begin{figure}[ht]
 	\centering
@@ -16,9 +17,6 @@ Der Ablauf der Benutzersimulation soll in verkürzter Form durch folgendes Struk
 		\label{user-sim}
 \end{figure}
 
-
-
-Per Webservice soll ein Testbild an den Server geschickt und eingecheckt werden.
 In diesem ersten Schritt wird auch gleichzeitig die Erreichbarkeit der Anwendung über das Netzwerk getestet.
 
 Wenn die Übertragung des Bildes erfolgreich wird anschließend nach dem soeben eingecheckten Bild per Dateinamen gesucht um die Funktionalität der Indizierung zu kontrollieren.
@@ -27,7 +25,7 @@ Sollte das Bild gefunden werden, wird es vom Nagios-Server angefordert und auf s
 Der gleiche Test wird mit den konvertieren Bildversionen durchgeführt, um die Funktion der Konvertierung zu überwachen.
 
 Falls alle Tests erfolgreich waren, wird das Testbild und alle konvertierten Bilder vom \gls{OracleUCM}-Server gelöscht.
-Bei den anderen Szenarien gibt das Plugin den Wert 2 für den Status CRITICAL zurück.\\
+Bei den anderen Szenarien gibt das Plugin den Wert 2 für den Status \pictext{CRITICAL} zurück.\\
 
 Die Realisierung dieser Simulation wird durch zwei Plugins realisiert.
 
@@ -121,7 +119,7 @@ if(!mb_eregi('JFIF', $outputGetThumbnail))
 
 Sofern das Bild gefunden wurde, wird es vom Plugin anschließend angefordert und nach dem Dateityp untersucht.
 Die Konvertierung wird dadurch überprüft indem die konvertierten Versionen des Testbildes angefordert werden und wie das Originalbild auf einen gültigen Dateityp getestet werden.
-\newpage
+
 Der Ablauf dieses Plugins ist dem ersten sehr ähnlich, siehe Abbildung \ref{usersim2}
 
 \begin{figure}[ht]
@@ -171,7 +169,7 @@ define command{
 \end{lstlisting}
 
 Die Aufteilung der Benutzersimulation in zwei Nagios-Kommandos sorgt dafür, dass es keine Garantie für die Reihenfolge der Ausführung der Plugins gibt.
-Aufgrund diese Asynchronität und dem Umstand, dass die Indizierung und Konvertierung des Testbildes abhängig von der Auslastung des \gls{OracleUCM}-Servers ist, wird die Anzahl der Ausführungen des Plugins für den Wechsel von Soft- zum Hardstate erhöht.
+Aufgrund diese Asynchronität und dem Umstand, dass die Indizierung und Konvertierung des Testbildes abhängig von der Auslastung des \gls{OracleUCM}-Servers ist, wird die Anzahl der Ausführungen des Plugins für den Wechsel von Soft zum Hard State erhöht.
 
 \begin{lstlisting}[captionpos=b, caption=Angepasste Servicedefinition für die Benutzersimulation, label=phpdef, breaklines = true, language=sh]
 define service{
