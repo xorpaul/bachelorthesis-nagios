@@ -7,8 +7,7 @@ Barth schreibt über Nagios: \begin{quote}"`Die große Stärke von Nagios - auch
 
 Dieser "`Kern"' beinhaltet das komplette Benachrichtigungssystem mit Kontaktadressen und Benachrichtigungsvorgaben (Zeit, Art, zusätzliche Kriterien), die Hosts- und Servicedefinitionen inklusive deren Gruppierungen und schließlich das Webinterface.
 
-Die eigentlichen Checks in Form der selbständigen Plugins sind abgekapselt von diesem Kern.
-Siehe hierfür auch Abbildung \ref{aktivechecks}.
+Die eigentlichen Checks in Form der selbständigen Plugins sind ab gekapselt von diesem Kern, siehe Abbildung \ref{aktivechecks}.
 
 \begin{figure}[ht]
 	\centering
@@ -25,8 +24,7 @@ Dabei richtet sich die Definition des Host-Objektes nach dem Schema, welches fü
 \begin{lstlisting}[captionpos=b, caption=Nagiosschema für Objektdefinitionen, label=schmeaobj, breaklines = false]
 define object-type {
 	parameter value
-	parameter value ...
-}
+	parameter value ...		}
 \end{lstlisting}
 
 
@@ -53,8 +51,7 @@ define host {
         use             windows-server #Oberklasse dieses Host-Objektes
         host_name       example.kit.edu
         alias           Oracle UCM Server
-        address         example.kit.edu
-}
+        address         example.kit.edu		}
 \end{lstlisting}
 
 Mit dieser Hostdefinition wird der Rechner im Webinterface von Nagios bereits angezeigt:
@@ -69,26 +66,22 @@ Mit dieser Hostdefinition wird der Rechner im Webinterface von Nagios bereits an
 Jedoch wird nur die Erreichbarkeit über das Netzwerk mit einem Ping überwacht.
 %Umfangreichere / Komplexere / Weitergehende / 
 Um andere Dienste zu überwachen müssen die gewünschten Plugins explizit aus dem Nagios Repertoire dem zu überwachendem Computer mit einem ähnlichen Schema zugeteilt werden.
-
 Eine beispielhafte Servicedefinition für die Überwachung des Webservers auf dem Host \textit{example.kit.edu} wird in Codelisting \ref{servdef} gezeigt.
 
 \begin{lstlisting}[captionpos=b, caption=Verkürzte Definition eines Hostobjektes, label=servdef, breaklines = true, language=sh]
 define service{
-        use                     generic-service #Oberklasse dieses Service-Objektes
-        host_name               example.kit.edu
+        use		generic-service #Oberklasse dieses Service-Objektes
+        host_name		example.kit.edu
         service_description     HTTP Server #Bezeichnung des Checks
-        check_command           check_http #Angabe des Nagios-Plugins (hier ohne Parameter)
+        check_command		check_http #Angabe des Nagios-Plugins (hier ohne Parameter)
         }
-
 \end{lstlisting}
 
 Die Plugins werden durch die Servicedefinitionen mit den jeweiligen Hosts verbunden und durch das Attribut \textit{check\_command} mit ggf. veränderten Parametern durch Nagios aufgerufen.
-
-Nagios wird in einem festlegbarem / veränderbarem Zeitintervall alle vom Benutzer definierten Host- und Servicechecks überprüfen und die Ergebnisse der entsprechenden Plugins verarbeiten / auswerten.
+Nagios wird in einem modifizierbarem Zeitintervall alle vom Benutzer definierten Host- und Servicechecks überprüfen und die Ergebnisse der entsprechenden Plugins auswerten.
 \paragraph{Nagios-Plugins und Ausgabe}
 Weiterhin beschreibt Barth die Plugins folgendermaßen:
 \begin{quote}"`Jedes Plugin, das bei Host- und Service-Checks zum Einsatz kommt, ist ein eigenes, selbständiges Programm, das sich auch unabhängig von Nagios benutzen lässt."' \begin{flushright}\cite{Barth08} S. 105\end{flushright}\end{quote} 
-
 Daher lassen sich die Parameter eines Plugins folgendermaßen überprüfen:
 
 \begin{figure}[ht]
@@ -106,22 +99,17 @@ Jedoch können auch Werte aus der normalen Textausgabe für die Visualisierung v
 
 Um den Service mit den angegebenen Schwellwerten in Abbildung \ref{check-swap} von Nagios überwachen zulassen, muss folgende Servicedefinition in die Konfigurationsdatei eingetragen werden:
 
-\begin{lstlisting}[captionpos=b, caption=Beispielhafte (Definition) eines Servicechecks, label=servdef, breaklines = true, language=bash]
-# Define a service to check the swap disk space
-# on the local machine.  Warning if =< 20% free, 
-# critical if =< 10% free space on swap partition.
+\begin{lstlisting}[captionpos=b, caption=Beispielhafte Definition eines Servicechecks, label=servdef, breaklines = true, language=bash]
+#Test des Swap-Speichers mit WARNING und CRITICAL Schwellwertparameter
 define service{
  use	generic-service 
  host_name	example.kit.edu 	
  service_description	Swap Disk Space
- check_command	check_swap!-w 20% -c 10% # Angabe des zu verwendenden Plugins mit WARNING (respektiv) CRITICAL Schwellwertparameter
+ check_command	check_swap!-w 20% -c 10%
 }
 \end{lstlisting}
 
-
-
-Dabei wird in vier verschiedene Rückgabewerte / Antworten der Plugins unterschieden:
-
+Die Plugins liefern dabei verschiedene Rückgabewerte:
 %\setlength{\tabcolsep}{50pt}
 \begin{table}[!htbp]
 \centering
@@ -141,13 +129,12 @@ Dabei wird in vier verschiedene Rückgabewerte / Antworten der Plugins unterschi
 3 & UNKNOWN &  Innerhalb des Plugins trat ein Fehler auf (zum Beispiel weil falsche Parameter verwendet wurden)\\
 %\hline
 \end{tabular}
-\caption[Rückgabewerte für Nagios Plugins]{Rückgabewerte für Nagios Plugins\protect\footnote} %\protect\footnote
+\caption[Rückgabewerte für Nagios-Plugins]{Rückgabewerte für Nagios-Plugins\protect\footnote} %\protect\footnote
 %\end{twoparttable}
 \end{table}
 \footnotetext{Quelle: \cite{Barth08} S. 105f}
 
-Anhand dieser Werte wertet Nagios gezielt den Status des jeweiligen Objektes (Host oder Service) aus.\\
-
+Anhand dieser Werte wertet Nagios gezielt den Status des jeweiligen Objektes (Host oder Service) aus.
 \paragraph{Hard und Soft States}
 Weiterhin gibt es weiche (Soft States) und harte Zustände (Hard States):
 
@@ -158,17 +145,16 @@ Weiterhin gibt es weiche (Soft States) und harte Zustände (Hard States):
 		\label{hs-states}
 \end{figure}
 \footnotetext{Quelle: \cite{Barth08} S. 95}
-Ausgehend von einem \pictext{OK} Zustand wird in diesem Beispiel jede fünf Minuten periodisch überprüft, ob sich der Status des überwachten Objektes verändert hat.                                                                                                                                                                                         Nach zehn Minuten wird ein Umschwenken / Änderung des Zustandes durch das jeweilige Plugin gemeldet.
-Hier im Beispiel wechselt der Zustand nach \pictext{CRITICAL}, zunächst allerdings als Soft State
+Ausgehend von einem \pictext{OK}-Zustand wird in diesem Beispiel jede fünf Minuten periodisch überprüft, ob sich der Status des überwachten Objektes verändert hat.                                                                                                                                                                                         Nach zehn Minuten wird ein Umschwenken / Änderung des Zustandes durch das jeweilige Plugin gemeldet.
+Hier im Beispiel wechselt der Zustand nach \pictext{CRITICAL}, zunächst allerdings als Soft State.
 Daher wird durch Nagios noch keine Benachrichtigung versendet, da es sich um eine Falschmeldung, auch \textit{False Positive} genannt, handeln kann.
-Aufgrund einer kurzweiligen / kurzfristigen (besseres Wort? peak mäßig) hohen Auslastung des Netzwerkes oder um ein kurzzeitiges Problem, welches sich von alleine wieder normalisiert wie bspw. die Prozessorauslastung nach Beenden einer Rechnung.
+Aufgrund einer kurzfristigen hohen Auslastung des Netzwerkes oder um ein kurzzeitiges Problem, welches sich von alleine wieder normalisiert wie bspw. die Prozessorauslastung nach Beenden einer Anwendung.
 
-Um einen False Positive-Meldungen zu verhindern, wird der im Soft State befindliche Service bzw. Host mit einer höheren Frequenz überprüft.
-Sollten diese Überprüfungen den vorherigen Zustand bestätigen, verfestigt sich der aktuelle Zustand, man spricht nun von einem Hard State / wechselt der Zustand in den Hard State.
-Erst in diesem Moment werden die entsprechenden Kontaktpersonen über den in diesem Beispiel kritischen Zustand benachrichtigt.
-Sollte sich der Zustand wieder in den Normalzustand begeben und dieser Zustandsübergang wird von dem (von Nagios ausgeführten) Plugin festgestellt, wird dies an den Nagios Server gemeldet.
-
-Ein Übergang zu dem OK Status wird sofort als Hard State festgelegt / festgehalten / festgesetzt / und führt dadurch zur sofortigen Benachrichtigung durch Nagios.
+Um False Positive-Meldungen zu verhindern, wird der im Soft State befindliche Service bzw. Host mit einer höheren Frequenz überprüft.
+Sollten diese Überprüfungen den vorherigen Zustand bestätigen, verfestigt sich der aktuelle Zustand, man spricht nun von einem Hard State.
+Erst in diesem Moment werden die entsprechenden Kontaktpersonen über den kritischen Zustand benachrichtigt.
+Sollte sich der Zustand wieder in den Normalzustand begeben und dieser Zustandsübergang wird von dem Plugin festgestellt, wird dies an den Nagios-Server gemeldet.
+Ein Übergang zu dem \pictext{OK}-Status wird sofort als Hard State festgesetzt und führt zur sofortigen Benachrichtigung durch Nagios.
 
 \paragraph{Flapping}
 Nagios besitzt eine spezielle Funktion um sich zu schnell ändernde Zustände automatisch zu erkennen und die Benachrichtigung von diesen Objekten zu unterbinden.

@@ -9,11 +9,11 @@
 \contentsline {figure}{\numberline {8}{\ignorespaces Kommunikationprotokoll SOAP}}{23}{figure.8}
 \contentsline {figure}{\numberline {9}{\ignorespaces Ablauf einer Web Service-Benutzung}}{24}{figure.9}
 \contentsline {figure}{\numberline {10}{\ignorespaces Plugins als separate Komponente}}{27}{figure.10}
-\contentsline {figure}{\numberline {11}{\ignorespaces Anzeige des Servers im Webinterface von Nagios}}{29}{figure.11}
-\contentsline {figure}{\numberline {12}{\ignorespaces Beispielhafte manuelle Ausf\IeC {\"u}hrung eines Servicechecks}}{30}{figure.12}
+\contentsline {figure}{\numberline {11}{\ignorespaces Anzeige des Servers im Webinterface von Nagios}}{28}{figure.11}
+\contentsline {figure}{\numberline {12}{\ignorespaces Beispielhafte manuelle Ausf\IeC {\"u}hrung eines Servicechecks}}{29}{figure.12}
 \contentsline {figure}{\numberline {13}{\ignorespaces Beispiel f\IeC {\"u}r den zeitlichen Verlauf durch vers. Zust\IeC {\"a}nde}}{31}{figure.13}
-\contentsline {figure}{\numberline {14}{\ignorespaces Verlauf von sich schnell wechselnden Zust\IeC {\"a}nden}}{33}{figure.14}
-\contentsline {figure}{\numberline {15}{\ignorespaces Verschiedene \IeC {\"U}berwachungsm\IeC {\"o}glichkeiten von Nagios}}{34}{figure.15}
+\contentsline {figure}{\numberline {14}{\ignorespaces Verlauf von sich schnell wechselnden Zust\IeC {\"a}nden}}{32}{figure.14}
+\contentsline {figure}{\numberline {15}{\ignorespaces Verschiedene \IeC {\"U}berwachungsm\IeC {\"o}glichkeiten von Nagios}}{33}{figure.15}
 \contentsline {figure}{\numberline {16}{\ignorespaces Ausf\IeC {\"u}hrung eines netzwerkbasierenden Servicechecks}}{34}{figure.16}
 \contentsline {figure}{\numberline {17}{\ignorespaces Manuelle Ausf\IeC {\"u}hrung eines Servicechecks \IeC {\"u}ber SSH}}{35}{figure.17}
 \contentsline {figure}{\numberline {18}{\ignorespaces Aktive Checks mit NRPE}}{35}{figure.18}

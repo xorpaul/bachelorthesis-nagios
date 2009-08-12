@@ -2,7 +2,7 @@
 \contentsline {lstlisting}{\numberline {2}Definition eines Hostobjektes}{28}{lstlisting.2}
 \contentsline {lstlisting}{\numberline {3}Verk\IeC {\"u}rzte Definition eines Hostobjektes}{28}{lstlisting.3}
 \contentsline {lstlisting}{\numberline {4}Verk\IeC {\"u}rzte Definition eines Hostobjektes}{29}{lstlisting.4}
-\contentsline {lstlisting}{\numberline {5}Beispielhafte (Definition) eines Servicechecks}{30}{lstlisting.5}
+\contentsline {lstlisting}{\numberline {5}Beispielhafte Definition eines Servicechecks}{30}{lstlisting.5}
 \contentsline {lstlisting}{\numberline {6}NSClient++ Konfigurationsdatei}{56}{lstlisting.6}
 \contentsline {lstlisting}{\numberline {7}Servicedefinition des NSClient-Checks}{57}{lstlisting.7}
 \contentsline {lstlisting}{\numberline {8}Server spezifische Befehlsdefinition}{58}{lstlisting.8}
