@@ -17,12 +17,12 @@ Sehr wichtig ist bei einem Überwachungssystem die Gewichtung der erhaltenen Üb
 %was ist wichtig was nicht, Gewichtung, Klassifizierung, Organisationsstrategie
 %Host,Services erklären
 %\end{center}
-
+\newpage
 Vor der Einführung eines Überwachungssystems muss sich mit den folgenden Punkten auseinandergesetzt werden.
 
 \subsubsection{Ressourcenbelastung}
 Die Einführung einer Überwachungssoftware bringt bei größeren Serverlandschaften eine nicht zu verachtende Netzwerk- und Prozessorbelastung mit sich.
-Dabei gilt es die anfallende Belastung durch zwei unterschiedliche Arten der Überwachung zu unterscheiden:
+Dabei unterscheidet Josephsen die anfallende Belastung in zwei unterschiedliche Arten der Überwachung\footnote{Quelle: \cite{Jose07} S. 4}:
 
 \paragraph{Lokale / Zentrale Bearbeitung}
 Die Durchführung der Überprüfungen findet durch einen zentralen Überwachungsserver statt, der die Informationen über die einzelnen Hosts und Services über das Netzwerk abfragt.
@@ -31,6 +31,9 @@ Diese Methode ist in der Regel vorzuziehen, da hierbei die zu überwachenden Ger
 \paragraph{Entfernte / Ausgelagerte Bearbeitung}
 Bei einer sehr hohen Anzahl von zu überwachenden Objekten ist eine zentralisierte Ausführung nicht mehr von einem einzelnen Server tragbar.
 In diesem Fall ist das Überwachungssystem darauf angewiesen, dass die einzelnen Hosts die kontrollierenden Überprüfungen selbständig durchführen und deren Ergebnisse an den Überwachungsserver weiterzuleiten.
+
+%Kascadierende Überwachungssysteme kannst Du noch erwähnen
+
 
 %Nagios bietet zusätzlich noch eine weitere, dritte Möglichkeit durch das \textit{Distributed Monitoring} (Verteilte Überwachung) an, siehe Kapitel \ref{dismoni}.
 
