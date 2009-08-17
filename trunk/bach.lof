@@ -7,9 +7,9 @@
 \contentsline {figure}{\numberline {6}{\ignorespaces Sichtweise CMS gegen\IeC {\"u}ber DMS}}{18}{figure.6}
 \contentsline {figure}{\numberline {7}{\ignorespaces "`any-to-any"' Content-Management Konzept}}{19}{figure.7}
 \contentsline {figure}{\numberline {8}{\ignorespaces Simple Software Architektur eines Webshops}}{21}{figure.8}
-\contentsline {figure}{\numberline {9}{\ignorespaces Hinzugef\IeC {\"u}gte Service-orientierte Komponente}}{21}{figure.9}
+\contentsline {figure}{\numberline {9}{\ignorespaces Hinzugef\IeC {\"u}gte Serviceorientierte Komponente}}{21}{figure.9}
 \contentsline {figure}{\numberline {10}{\ignorespaces Kommunikationprotokoll SOAP}}{23}{figure.10}
-\contentsline {figure}{\numberline {11}{\ignorespaces Ablauf einer Web Service-Benutzung}}{24}{figure.11}
+\contentsline {figure}{\numberline {11}{\ignorespaces Ablauf einer Web Service-Benutzung}}{25}{figure.11}
 \contentsline {figure}{\numberline {12}{\ignorespaces Plugins als separate Komponente}}{27}{figure.12}
 \contentsline {figure}{\numberline {13}{\ignorespaces Anzeige des Servers im Webinterface von Nagios}}{28}{figure.13}
 \contentsline {figure}{\numberline {14}{\ignorespaces Beispielhafte manuelle Ausf\IeC {\"u}hrung eines Servicechecks}}{30}{figure.14}
@@ -28,7 +28,7 @@
 \contentsline {figure}{\numberline {27}{\ignorespaces Abfrage von Windows-Ressourcen durch \textit {check\_nt}}}{52}{figure.27}
 \contentsline {figure}{\numberline {28}{\ignorespaces Zugriff auf den NSClient-Dienst durch check\_nt}}{53}{figure.28}
 \contentsline {figure}{\numberline {29}{\ignorespaces Konfiguration des NSClient++ w\IeC {\"a}hrend der Installation}}{55}{figure.29}
-\contentsline {figure}{\numberline {30}{\ignorespaces Kommunikation zwischen Nagios und NSClient++}}{55}{figure.30}
+\contentsline {figure}{\numberline {30}{\ignorespaces Kommunikation zwischen Nagios und NSClient++}}{56}{figure.30}
 \contentsline {figure}{\numberline {31}{\ignorespaces Aufruf eines NRPE-Kommandos}}{57}{figure.31}
 \contentsline {figure}{\numberline {32}{\ignorespaces Aufruf des NSClient-Dienstes}}{57}{figure.32}
 \contentsline {figure}{\numberline {33}{\ignorespaces Prozess- und Dienst\IeC {\"u}berwachung im Nagios-Webinterface}}{59}{figure.33}
@@ -37,6 +37,6 @@
 \contentsline {figure}{\numberline {36}{\ignorespaces Anforderungsparameter f\IeC {\"u}r CheckInUniversal aus der WSDL-Datei}}{64}{figure.36}
 \contentsline {figure}{\numberline {37}{\ignorespaces Einchecken eines Testbildes}}{65}{figure.37}
 \contentsline {figure}{\numberline {38}{\ignorespaces Validierung der Indizierung und Konvertierung}}{67}{figure.38}
-\contentsline {figure}{\numberline {39}{\ignorespaces Anlegen eines eigenen Web Services}}{68}{figure.39}
-\contentsline {figure}{\numberline {40}{\ignorespaces Webinterface von Nagios}}{70}{figure.40}
-\contentsline {figure}{\numberline {41}{\ignorespaces Details der Prozessorauslastung}}{71}{figure.41}
+\contentsline {figure}{\numberline {39}{\ignorespaces Anlegen eines eigenen Web Services}}{69}{figure.39}
+\contentsline {figure}{\numberline {40}{\ignorespaces Webinterface von Nagios}}{71}{figure.40}
+\contentsline {figure}{\numberline {41}{\ignorespaces Details der Prozessorauslastung}}{72}{figure.41}

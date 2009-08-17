@@ -15,6 +15,6 @@
 \contentsline {lstlisting}{\numberline {15}Aufruf des Web Services CheckInUniversal}{64}{lstlisting.15}
 \contentsline {lstlisting}{\numberline {16}\IeC {\"U}berpr\IeC {\"u}fen der Indizierung anhand einer Suchanfrage}{66}{lstlisting.16}
 \contentsline {lstlisting}{\numberline {17}\IeC {\"U}berpr\IeC {\"u}fen der Indizierung anhand einer Suchanfrage}{66}{lstlisting.17}
-\contentsline {lstlisting}{\numberline {18}Aufruf des eigenen Web Services}{68}{lstlisting.18}
-\contentsline {lstlisting}{\numberline {19}Befehldefinitionen der Benutzersimulation}{68}{lstlisting.19}
-\contentsline {lstlisting}{\numberline {20}Angepasste Servicedefinition f\IeC {\"u}r die Benutzersimulation}{69}{lstlisting.20}
+\contentsline {lstlisting}{\numberline {18}Aufruf des eigenen Web Services}{69}{lstlisting.18}
+\contentsline {lstlisting}{\numberline {19}Befehldefinitionen der Benutzersimulation}{69}{lstlisting.19}
+\contentsline {lstlisting}{\numberline {20}Angepasste Servicedefinition f\IeC {\"u}r die Benutzersimulation}{70}{lstlisting.20}

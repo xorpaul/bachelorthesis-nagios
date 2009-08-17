@@ -10,18 +10,19 @@
 \BOOKMARK [3][-]{subsubsection.3.2.2}{Verwaltung und Archivierung}{subsection.3.2}
 \BOOKMARK [3][-]{subsubsection.3.2.3}{Ausgabe}{subsection.3.2}
 \BOOKMARK [2][-]{subsection.3.3}{Content-Management-Systeme}{section.3}
-\BOOKMARK [2][-]{subsection.3.4}{Service-Orientierte Architektur}{section.3}
-\BOOKMARK [2][-]{subsection.3.5}{Web-Services-Architektur}{section.3}
+\BOOKMARK [2][-]{subsection.3.4}{Enterprise-Content-Management-Systeme}{section.3}
+\BOOKMARK [2][-]{subsection.3.5}{Serviceorientierte Architektur}{section.3}
+\BOOKMARK [2][-]{subsection.3.6}{Web-Services-Architektur}{section.3}
 \BOOKMARK [1][-]{section.4}{Nagios}{}
 \BOOKMARK [2][-]{subsection.4.1}{Allgemein}{section.4}
-\BOOKMARK [2][-]{subsection.4.2}{Aufbau / Architektur}{section.4}
+\BOOKMARK [2][-]{subsection.4.2}{Aufbau}{section.4}
 \BOOKMARK [2][-]{subsection.4.3}{\334berpr\374fungsmethoden}{section.4}
 \BOOKMARK [3][-]{subsubsection.4.3.1}{Aktive Checks}{subsection.4.3}
 \BOOKMARK [3][-]{subsubsection.4.3.2}{Passive Checks}{subsection.4.3}
 \BOOKMARK [1][-]{section.5}{Oracle UCM}{}
 \BOOKMARK [2][-]{subsection.5.1}{Allgemein}{section.5}
-\BOOKMARK [2][-]{subsection.5.2}{Aufbau / Architektur}{section.5}
-\BOOKMARK [2][-]{subsection.5.3}{Konkrete Verwendung / Einsatzgebiet}{section.5}
+\BOOKMARK [2][-]{subsection.5.2}{Aufbau}{section.5}
+\BOOKMARK [2][-]{subsection.5.3}{Konkrete Verwendung}{section.5}
 \BOOKMARK [1][-]{section.6}{\334berwachungselemente}{}
 \BOOKMARK [2][-]{subsection.6.1}{Statusabfragen}{section.6}
 \BOOKMARK [2][-]{subsection.6.2}{\334berwachung der Funktionalit\344t}{section.6}

@@ -12,7 +12,7 @@ Der Nagios-Server nimmt die Ergebnisse von diesen Checks nur entgegen und führt
 Da Nagios somit keine Kontrolle über die Ausführung der Plugins hat, können die Ergebnisse auch asynchron zu den anderen Plugins eintreffen.
 
 
-Nagios bietet verschiedene Möglichkeiten an solche Dienste zu überprüfen:
+Nagios bietet verschiedene Möglichkeiten an Informationen einzuholen:
 
 \begin{figure}[ht]
 	\centering
@@ -144,4 +144,6 @@ Folgende Abbildung soll das Prinzip der passiven Checks verdeutlichen:
 \footnotetext{Quelle: \url{http://www.nagios.org/images/addons/nsca/nsca.png}}
 
 Das Testprogramm \textit{Remote Application} wird selbständig vom zu überwachenden Rechner \textit{Remote Host} aufgerufen und übermittelt durch das \pictext{send\_ncsa} Plugin die Ergebnisse über das Netzwerk an den Nagios-Server \textit{Monitoring Host}.
-Da auf diesem der NSCA als Daemon läuft können die Ergebnisse an die Nagios-Anwendung zur Auswertung weitergegeben werden.
+Da auf diesem der NSCA als Daemon läuft können die Ergebnisse an die Nagios-Anwendung zur Auswertung weitergegeben werden.\\
+
+Die Wertung der verschiedenen Methoden und die Auswahl für die Umsetzung wird in Kapitel \ref{sectunixagents} beschrieben.

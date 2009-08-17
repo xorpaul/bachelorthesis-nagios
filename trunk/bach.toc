@@ -19,14 +19,15 @@
 \contentsline {paragraph}{Recherche}{17}{section*.8}
 \contentsline {paragraph}{Reproduktion}{17}{section*.9}
 \contentsline {subsection}{\numberline {3.3}Content-Management-Systeme}{17}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}Service-Orientierte Architektur}{20}{subsection.3.4}
-\contentsline {subsection}{\numberline {3.5}Web-Services-Architektur}{22}{subsection.3.5}
-\contentsline {paragraph}{SOAP}{23}{section*.10}
-\contentsline {paragraph}{WSDL}{23}{section*.11}
+\contentsline {subsection}{\numberline {3.4}Enterprise-Content-Management-Systeme}{20}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Serviceorientierte Architektur}{20}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.6}Web-Services-Architektur}{22}{subsection.3.6}
+\contentsline {paragraph}{SOAP}{24}{section*.10}
+\contentsline {paragraph}{WSDL}{24}{section*.11}
 \contentsline {paragraph}{UDDI}{24}{section*.12}
 \contentsline {section}{\numberline {4}Nagios}{26}{section.4}
 \contentsline {subsection}{\numberline {4.1}Allgemein}{26}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Aufbau / Architektur}{27}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.2}Aufbau}{27}{subsection.4.2}
 \contentsline {paragraph}{Nagios-Plugins und Ausgabe}{29}{section*.13}
 \contentsline {paragraph}{Hard und Soft States}{31}{section*.14}
 \contentsline {paragraph}{Flapping}{32}{section*.15}
@@ -40,18 +41,20 @@
 \contentsline {paragraph}{Methode 5 - NSCA}{37}{section*.20}
 \contentsline {section}{\numberline {5}Oracle UCM}{39}{section.5}
 \contentsline {subsection}{\numberline {5.1}Allgemein}{39}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Aufbau / Architektur}{39}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.2}Aufbau}{39}{subsection.5.2}
 \contentsline {paragraph}{Content Server}{40}{section*.21}
-\contentsline {paragraph}{Vault und Web Layout}{41}{section*.22}
-\contentsline {paragraph}{Search Engine}{41}{section*.23}
-\contentsline {paragraph}{Webserver}{41}{section*.24}
-\contentsline {paragraph}{Inbound Refinery}{41}{section*.25}
-\contentsline {subsection}{\numberline {5.3}Konkrete Verwendung / Einsatzgebiet}{41}{subsection.5.3}
+\contentsline {paragraph}{Inbound Refinery}{40}{section*.22}
+\contentsline {paragraph}{Data Storage}{41}{section*.23}
+\contentsline {paragraph}{Content Storage}{41}{section*.24}
+\contentsline {paragraph}{Vault und Web Layout}{41}{section*.25}
+\contentsline {paragraph}{Search Engine}{41}{section*.26}
+\contentsline {paragraph}{Webserver}{41}{section*.27}
+\contentsline {subsection}{\numberline {5.3}Konkrete Verwendung}{42}{subsection.5.3}
 \contentsline {section}{\numberline {6}\IeC {\"U}berwachungselemente}{43}{section.6}
 \contentsline {subsection}{\numberline {6.1}Statusabfragen}{43}{subsection.6.1}
-\contentsline {paragraph}{System}{43}{section*.26}
-\contentsline {paragraph}{Prozesse}{44}{section*.27}
-\contentsline {paragraph}{Services}{44}{section*.28}
+\contentsline {paragraph}{System}{43}{section*.28}
+\contentsline {paragraph}{Prozesse}{44}{section*.29}
+\contentsline {paragraph}{Services}{44}{section*.30}
 \contentsline {subsection}{\numberline {6.2}\IeC {\"U}berwachung der Funktionalit\IeC {\"a}t}{44}{subsection.6.2}
 \contentsline {subsection}{\numberline {6.3}Auswerten von Logdateien}{45}{subsection.6.3}
 \contentsline {subsection}{\numberline {6.4}Benutzersimulation}{46}{subsection.6.4}
@@ -63,13 +66,13 @@
 \contentsline {subsubsection}{\numberline {7.2.1}Unix-Agenten}{50}{subsubsection.7.2.1}
 \contentsline {subsubsection}{\numberline {7.2.2}Windows-Agenten}{52}{subsubsection.7.2.2}
 \contentsline {subsubsection}{\numberline {7.2.3}Auswahl und Konfiguration des Nagios-Agenten}{54}{subsubsection.7.2.3}
-\contentsline {paragraph}{Auswahl}{54}{section*.29}
-\contentsline {paragraph}{Installation und Konfiguration}{54}{section*.30}
+\contentsline {paragraph}{Auswahl}{54}{section*.31}
+\contentsline {paragraph}{Installation und Konfiguration}{54}{section*.32}
 \contentsline {subsection}{\numberline {7.3}Umsetzung der System\IeC {\"u}berwachung}{58}{subsection.7.3}
-\contentsline {subsection}{\numberline {7.4}Umsetzung der Funktionlit\IeC {\"a}tstest}{59}{subsection.7.4}
+\contentsline {subsection}{\numberline {7.4}Umsetzung der Funktionlit\IeC {\"a}tstest}{60}{subsection.7.4}
 \contentsline {subsection}{\numberline {7.5}Auswertung der Logdateien}{61}{subsection.7.5}
 \contentsline {subsection}{\numberline {7.6}Benutzersimulation}{62}{subsection.7.6}
-\contentsline {paragraph}{Einchecken eines Testbildes}{63}{section*.31}
-\contentsline {paragraph}{Validierung der Indizierung und Konvertierung}{66}{section*.32}
-\contentsline {section}{\numberline {8}Ergebnis}{70}{section.8}
-\contentsline {section}{\numberline {9}Zusammenfassung und Ausblick}{72}{section.9}
+\contentsline {paragraph}{Einchecken eines Testbildes}{64}{section*.33}
+\contentsline {paragraph}{Validierung der Indizierung und Konvertierung}{66}{section*.34}
+\contentsline {section}{\numberline {8}Ergebnis}{71}{section.8}
+\contentsline {section}{\numberline {9}Zusammenfassung und Ausblick}{73}{section.9}
