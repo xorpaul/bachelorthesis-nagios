@@ -24,15 +24,37 @@ Vor der Einführung eines Überwachungssystems muss sich mit den folgenden Punkt
 Die Einführung einer Überwachungssoftware bringt bei größeren Serverlandschaften eine nicht zu verachtende Netzwerk- und Prozessorbelastung mit sich.
 Dabei unterscheidet Josephsen die anfallende Belastung in zwei unterschiedliche Arten der Überwachung\footnote{Quelle: \cite{Jose07} S. 4}:
 
-\paragraph{Lokale / Zentrale Bearbeitung}
+\paragraph{Zentralisierte Überwachung}
 Die Durchführung der Überprüfungen findet durch einen zentralen Überwachungsserver statt, der die Informationen über die einzelnen Hosts und Services über das Netzwerk abfragt.
 Diese Methode ist in der Regel vorzuziehen, da hierbei die zu überwachenden Geräte weniger belastet werden und die Konfiguration der einzelnen Kontrollschritte zentral möglich / realisierbar ist.
 
-\paragraph{Entfernte / Ausgelagerte Bearbeitung}
+\begin{figure}[ht]
+	\centering
+	   \fbox{\includegraphics[width=0.5\textwidth]{bilder/dist_mon12.png}}
+	   %\fbox{Quelle: \cite{Jose07} S. 5}
+		\caption[Zentralistische Bearbeitung]{Zentralistische Bearbeitung}
+		\label{distmon2}
+\end{figure}
+%\footnotetext{Quelle: \url{http://www.nagios-wiki.de/\_media/nagios/howtos/dist\_mon.png}}
+
+
+\paragraph{Dezentralisierte Überwachung}
 Bei einer sehr hohen Anzahl von zu überwachenden Objekten ist eine zentralisierte Ausführung nicht mehr von einem einzelnen Server tragbar.
 In diesem Fall ist das Überwachungssystem darauf angewiesen, dass die einzelnen Hosts die kontrollierenden Überprüfungen selbständig durchführen und deren Ergebnisse an den Überwachungsserver weiterzuleiten.
 
 %Kascadierende Überwachungssysteme kannst Du noch erwähnen
+
+%Uberwachungsredundanzen vermeiden: Dein Beispiel mit dem Port führt in beiden Fällen dazu, dass der Test 1 überflüssig ist. Wenn die Webseite über 2 Ports abgefragt wird, z.B. 8000 Intranet, 8080 Internet, so wäre der Test 1 sinnvoll
+\begin{figure}[ht]
+	\centering
+	   \fbox{\includegraphics[width=0.45\textwidth]{bilder/dist_monp.png}}
+	   %\fbox{Quelle: \cite{Jose07} S. 5}
+		\caption{Ausgelagerte Bearbeitung}
+		\label{distmonp}
+\end{figure}
+
+Um nicht komplett vom Überwachungsserver abhängig zu sein, kann ein zweiter Überwachungsserver bzw. weitere Server hinzugefügt werden.
+Diese können bei einem Ausfall des Hauptüberwachungsservers die Verantwortlichen informieren oder die zu überwachenden Objekte zur Lastenteilung untereinander aufteilen.
 
 
 %Nagios bietet zusätzlich noch eine weitere, dritte Möglichkeit durch das \textit{Distributed Monitoring} (Verteilte Überwachung) an, siehe Kapitel \ref{dismoni}.
