@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2009.1.26)  17 AUG 2009 08:57
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2009.1.26)  17 AUG 2009 14:51
 entering extended mode
  %&-line parsing enabled.
 **bach.tex
@@ -577,7 +577,7 @@ LaTeX Info: Redefining \pageref on input line 69.
 \openout7 = `bach.out'.
 
  ABD: EveryShipout initializing macros
-<Titelblatt.pdf, id=185, page=1, 597.23125pt x 845.1575pt>
+<Titelblatt.pdf, id=181, page=1, 597.23125pt x 845.1575pt>
 File: Titelblatt.pdf Graphic file (type pdf)
 
 <use Titelblatt.pdf, page 1>
@@ -617,7 +617,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 2.
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2002/01/19 v2.2g AMS font definitions
 ) [3]
-Overfull \hbox (0.37392pt too wide) in paragraph at lines 66--66
+Overfull \hbox (0.37392pt too wide) in paragraph at lines 65--65
  [][] [][]\T1/aer/m/n/12 Auswahl und Kon-fi-gu-ra-ti-on des Nagios-Agenten[] []
 []  
  []
@@ -636,7 +636,7 @@ been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.46 
-      <bilder/fzk2.png, id=267, 132.495pt x 231.264pt>
+      <bilder/fzk2.png, id=262, 132.495pt x 231.264pt>
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png>
 [1 <./bilder/fzk2.png>]
@@ -687,26 +687,41 @@ d auf Service-
 (./tex/monitoring.tex
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png> [5]
-<bilder/dependent.png, id=297, 1167.36125pt x 795.97375pt>
+<bilder/dist_mon12.png, id=290, 222.8325pt x 248.72925pt>
+File: bilder/dist_mon12.png Graphic file (type png)
+
+<use bilder/dist_mon12.png>
+Overfull \hbox (2.4214pt too wide) in paragraph at lines 42--44
+ \T1/aer/bx/n/12 De-zen-tra-li-sier-te Über-wa-chung[] \T1/aer/m/n/12 Bei ei-ne
+r sehr ho-hen An-zahl von zu über-
+ []
+
+File: bilder/fzk2.png Graphic file (type png)
+<use bilder/fzk2.png> [6 <./bilder/dist_mon12.png>]
+<bilder/dist_monp.png, id=303, 226.446pt x 248.72925pt>
+File: bilder/dist_monp.png Graphic file (type png)
+
+<use bilder/dist_monp.png>
+<bilder/dependent.png, id=305, 1167.36125pt x 795.97375pt>
 File: bilder/dependent.png Graphic file (type png)
 
 <use bilder/dependent.png>
 File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png> [6]
-Overfull \hbox (2.79346pt too wide) in paragraph at lines 58--62
+ <use bilder/fzk2.png> [7 <./bilder/dist_monp.png>]
+Overfull \hbox (2.79346pt too wide) in paragraph at lines 80--84
  \T1/aer/bx/n/12 Über-wa-chungs-red-un-dan-zen ver-mei-den[] \T1/aer/m/n/12 Red
 -un-dan-te Über-wa-chung ent-
  []
 
 File: bilder/fzk2.png Graphic file (type png)
-<use bilder/fzk2.png> [7 <./bilder/dependent.png>]
-Overfull \hbox (5.07245pt too wide) in paragraph at lines 69--71
+<use bilder/fzk2.png> [8 <./bilder/dependent.png>]
+Overfull \hbox (5.07245pt too wide) in paragraph at lines 91--93
  \T1/aer/bx/n/12 Mi-ni-ma-le Netz-werk-be-las-tung[] \T1/aer/m/n/12 Um be-reits
  stark be-las-te-te Netz-werk-punk-
  []
 
 File: bilder/fzk2.png Graphic file (type png)
-<use bilder/fzk2.png> [8]) (./tex/dms.tex
+<use bilder/fzk2.png> [9]) (./tex/dms.tex
 LaTeX Font Info:    Try loading font information for OMS+aer on input line 7.
 
 (/usr/share/texmf-texlive/tex/latex/ae/omsaer.fd
@@ -721,14 +736,14 @@ or-ma-tio-nen struk-
  []
 
 File: bilder/fzk2.png Graphic file (type png)
-<use bilder/fzk2.png> [9]
+<use bilder/fzk2.png> [10]
 Overfull \hbox (34.72449pt too wide) in paragraph at lines 18--18
 \T1/aer/m/n/12 ren-de In-for-ma-ti-ons-be-stän-de, die für die Pu-bli-ka-ti-on 
 in nicht-körperlichen
  []
 
 File: bilder/fzk2.png Graphic file (type png)
-<use bilder/fzk2.png> [10]
+<use bilder/fzk2.png> [11]
 <bilder/ci-nci.png, id=353, 1522.68875pt x 982.67125pt>
 File: bilder/ci-nci.png Graphic file (type png)
 
@@ -738,7 +753,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 42--43
  []
 
 File: bilder/fzk2.png Graphic file (type png)
-<use bilder/fzk2.png> [11 <./bilder/ci-nci.png>]
+<use bilder/fzk2.png> [12 <./bilder/ci-nci.png>]
 Overfull \hbox (2.51434pt too wide) in paragraph at lines 59--60
 []\T1/aer/m/n/12 ^^RBei \T1/aer/bx/n/12 Dokumenten-Management-Systemen im en-ge
 -ren Sin-
@@ -751,7 +766,7 @@ en Sin-
  []
 
 File: bilder/fzk2.png Graphic file (type png)
-<use bilder/fzk2.png> [12]
+<use bilder/fzk2.png> [13]
 <bilder/dms-circle.png, id=370, 252.2223pt x 266.31496pt>
 File: bilder/dms-circle.png Graphic file (type png)
 
@@ -762,30 +777,30 @@ umenten-Management-
  []
 
 File: bilder/fzk2.png Graphic file (type png)
-<use bilder/fzk2.png> [13 <./bilder/dms-circle.png>]
+<use bilder/fzk2.png> [14 <./bilder/dms-circle.png>]
 Overfull \hbox (11.5494pt too wide) in paragraph at lines 88--90
 \T1/aer/m/n/12 ge-spei-chert. Ein Bei-spiel ist die Um-wand-lung ei-nes Mi-cro-
 soft Word-Dokumentes
  []
 
 File: bilder/fzk2.png Graphic file (type png)
-<use bilder/fzk2.png> [14]
+<use bilder/fzk2.png> [15]
 File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png> [15]
+ <use bilder/fzk2.png> [16]
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png>
-[16] <bilder/cmsview.png, id=428, 1430.34375pt x 904.37875pt>
+[17] <bilder/cmsview.png, id=424, 1430.34375pt x 904.37875pt>
 File: bilder/cmsview.png Graphic file (type png)
 
 <use bilder/cmsview.png>
 File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png> [17 <./bilder/cmsview.png>]
-<bilder/ucm.png, id=445, 513.92pt x 288.07625pt>
+ <use bilder/fzk2.png> [18 <./bilder/cmsview.png>]
+<bilder/ucm.png, id=441, 513.92pt x 288.07625pt>
 File: bilder/ucm.png Graphic file (type png)
  <use bilder/ucm.png>
 File: bilder/fzk2.png Graphic file (type png)
 
-<use bilder/fzk2.png> [18 <./bilder/ucm.png (PNG copy)>]) (./tex/soa.tex
+<use bilder/fzk2.png> [19 <./bilder/ucm.png (PNG copy)>]) (./tex/soa.tex
 Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
  []
@@ -797,7 +812,7 @@ Overfull \hbox (0.24751pt too wide) in paragraph at lines 12--13
  []
 
 File: bilder/fzk2.png Graphic file (type png)
-<use bilder/fzk2.png> [19] <bilder/soa1.png, id=472, 1095.09125pt x 136.51pt>
+<use bilder/fzk2.png> [20] <bilder/soa1.png, id=467, 1095.09125pt x 136.51pt>
 File: bilder/soa1.png Graphic file (type png)
 
 <use bilder/soa1.png>
@@ -806,16 +821,16 @@ Overfull \hbox (1.82156pt too wide) in paragraph at lines 29--30
 e \T1/aer/m/it/12 Cre-dit Checking
  []
 
-<bilder/soa2.png, id=476, 1088.065pt x 229.85875pt>
+<bilder/soa2.png, id=471, 1088.065pt x 229.85875pt>
 File: bilder/soa2.png Graphic file (type png)
  <use bilder/soa2.png>
 File: bilder/fzk2.png Graphic file (type png)
 
-<use bilder/fzk2.png> [20 <./bilder/soa1.png> <./bilder/soa2.png>]
+<use bilder/fzk2.png> [21 <./bilder/soa1.png> <./bilder/soa2.png>]
 File: bilder/fzk2.png Graphic file (type png)
 
-<use bilder/fzk2.png> [21]
-<bilder/nusoap.png, id=511, 406.13704pt x 254.47183pt>
+<use bilder/fzk2.png> [22]
+<bilder/nusoap.png, id=505, 406.13704pt x 254.47183pt>
 File: bilder/nusoap.png Graphic file (type png)
  <use bilder/nusoap.png>
 LaTeX Font Info:    Try loading font information for T1+aett on input line 68.
@@ -841,35 +856,29 @@ Overfull \hbox (20.41092pt too wide) in paragraph at lines 83--85
  []
 
 File: bilder/fzk2.png Graphic file (type png)
-<use bilder/fzk2.png> [22 <./bilder/nusoap.png (PNG copy)>]
-<bilder/soap-dreieck.png, id=532, 1254.6875pt x 960.58875pt>
+<use bilder/fzk2.png> [23 <./bilder/nusoap.png (PNG copy)>]
+<bilder/soap-dreieck.png, id=526, 1254.6875pt x 960.58875pt>
 File: bilder/soap-dreieck.png Graphic file (type png)
 
 <use bilder/soap-dreieck.png>
 File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png> [23 <./bilder/soap-dreieck.png>]))
+ <use bilder/fzk2.png> [24 <./bilder/soap-dreieck.png>]))
 File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png> [24] (./tex/nagios.tex
+ <use bilder/fzk2.png> [25] (./tex/nagios.tex
 Overfull \hbox (16.32967pt too wide) in paragraph at lines 6--7
 []\T1/aer/m/n/12 Der Na-me Na-gi-os ist ein Akro-nym für ^^RNa-gi-os Ain't Gon-
 na In-sist On Sainthood^^P,
  []
 
-
-Overfull \hbox (6.74178pt too wide) in paragraph at lines 12--14
-[]\T1/aer/m/n/12 Nagios er-freut sich ho-her Be-liebt-heit auf-grund der (be-re
-its vor-han-de-nen [macht
- []
-
 (./tex/aufbau.tex
 File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png> [25]
-<bilder/activechecks.png, id=575, 169.63374pt x 287.0725pt>
+ <use bilder/fzk2.png> [26]
+<bilder/activechecks.png, id=569, 169.63374pt x 287.0725pt>
 File: bilder/activechecks.png Graphic file (type png)
 
 <use bilder/activechecks.png>
 File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png> [26 <./bilder/activechecks.png (PNG copy)>]
+ <use bilder/fzk2.png> [27 <./bilder/activechecks.png (PNG copy)>]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 24.
  (/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
@@ -884,21 +893,21 @@ File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 (/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
 File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 )
-<bilder/example-ping.png, id=585, 795.97375pt x 50.1875pt>
+<bilder/example-ping.png, id=580, 795.97375pt x 50.1875pt>
 File: bilder/example-ping.png Graphic file (type png)
 
 <use bilder/example-ping.png>
 File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png> [27 <./bilder/example-ping.png (PNG copy)>] (/usr/share/
+ <use bilder/fzk2.png> [28 <./bilder/example-ping.png (PNG copy)>] (/usr/share/
 texmf-texlive/tex/latex/ucs/utf8x.def
 File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 )
-<bilder/check-swap-white.png, id=616, 471.7625pt x 29.10875pt>
+<bilder/check-swap-white.png, id=610, 471.7625pt x 29.10875pt>
 File: bilder/check-swap-white.png Graphic file (type png)
 
 <use bilder/check-swap-white.png>
 File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png> [28 <./bilder/check-swap-white.png (PNG copy)>]
+ <use bilder/fzk2.png> [29]
 (/usr/share/texmf-texlive/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2004/09/05 1.3 listings language file
 )
@@ -907,72 +916,73 @@ File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 )
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png>
-[29] <bilder/hs-states.png, id=648, 762.85pt x 216.81pt>
+[30 <./bilder/check-swap-white.png (PNG copy)>]
+<bilder/hs-states.png, id=641, 762.85pt x 216.81pt>
 File: bilder/hs-states.png Graphic file (type png)
-
-<use bilder/hs-states.png>
+ <use bilder/hs-states.png>
 File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png> [30 <./bilder/hs-states.png>]
-<bilder/statetransitions.png, id=659, 434.62375pt x 181.67876pt>
+
+<use bilder/fzk2.png> [31 <./bilder/hs-states.png>]
+<bilder/statetransitions.png, id=652, 434.62375pt x 181.67876pt>
 File: bilder/statetransitions.png Graphic file (type png)
 
 <use bilder/statetransitions.png>) (./tex/services.tex
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png>
-[31 <./bilder/statetransitions.png (PNG copy)>]
-<bilder/nagios-kern.png, id=671, 860.21375pt x 595.22375pt>
+[32 <./bilder/statetransitions.png (PNG copy)>]
+<bilder/nagios-kern.png, id=664, 860.21375pt x 595.22375pt>
 File: bilder/nagios-kern.png Graphic file (type png)
 
 <use bilder/nagios-kern.png>
 File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png> [32 <./bilder/nagios-kern.png>] <bilder/check-http2.png,
- id=685, 652.4375pt x 27.10126pt>
+ <use bilder/fzk2.png> [33 <./bilder/nagios-kern.png>] <bilder/check-http2.png,
+ id=677, 652.4375pt x 27.10126pt>
 File: bilder/check-http2.png Graphic file (type png)
 
 <use bilder/check-http2.png>
-<bilder/check_by_ssh.png, id=690, 718.685pt x 28.105pt>
+<bilder/check_by_ssh.png, id=682, 718.685pt x 28.105pt>
 File: bilder/check_by_ssh.png Graphic file (type png)
 
 <use bilder/check_by_ssh.png>
 File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png> [33 <./bilder/check-http2.png>] <bilder/nrpe.png, id=703
+ <use bilder/fzk2.png> [34 <./bilder/check-http2.png>] <bilder/nrpe.png, id=694
 , 665.6983pt x 164.89775pt>
 File: bilder/nrpe.png Graphic file (type png)
  <use bilder/nrpe.png>
-Overfull \hbox (27.42967pt too wide) in paragraph at lines 69--71
+Overfull \hbox (20.78146pt too wide) in paragraph at lines 69--71
 []\T1/aer/m/n/12 Der Na-gi-os Ser-ver kann dann An-for-de-run-gen über das Nagi
-os-Plugin ^^R\T1/aett/m/n/12 check_nrpe\T1/aer/m/n/12 ^^P
+os-Plugin ^^R\T1/aer/m/it/12 check_nrpe\T1/aer/m/n/12 ^^P
  []
 
 
-Overfull \hbox (13.58977pt too wide) in paragraph at lines 69--71
+Overfull \hbox (3.76141pt too wide) in paragraph at lines 69--71
 \T1/aer/m/n/12 an den Cli-ent ver-schi-cken. Ein Auf-ruf die-ses Plug-ins ist d
-em des ^^R\T1/aett/m/n/12 check_by_ssh\T1/aer/m/n/12 ^^P
+em des ^^R\T1/aer/m/it/12 check_by_ssh\T1/aer/m/n/12 ^^P
  []
 
 File: bilder/fzk2.png Graphic file (type png)
-<use bilder/fzk2.png> [34 <./bilder/check_by_ssh.png> <./bilder/nrpe.png (PNG c
+<use bilder/fzk2.png> [35 <./bilder/check_by_ssh.png> <./bilder/nrpe.png (PNG c
 opy)>]
 Overfull \hbox (21.68184pt too wide) in paragraph at lines 84--84
 \T1/aer/m/n/12 nut-zen, um lo-ka-le Res-sour-cen wie Pro-zes-se, Fest-plat-ten 
 oder Interface-
  []
 
-<bilder/mib.png, id=734, 310.2792pt x 151.767pt>
+<bilder/mib.png, id=725, 310.2792pt x 151.767pt>
 File: bilder/mib.png Graphic file (type png)
  <use bilder/mib.png>
 File: bilder/fzk2.png Graphic file (type png)
 
-<use bilder/fzk2.png> [35]
+<use bilder/fzk2.png> [36]
 File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png> [36 <./bilder/mib.png>]
-<bilder/nsca.png, id=764, 645.41125pt x 202.7575pt>
+ <use bilder/fzk2.png> [37 <./bilder/mib.png>]
+<bilder/nsca.png, id=755, 645.41125pt x 202.7575pt>
 File: bilder/nsca.png Graphic file (type png)
  <use bilder/nsca.png>))
 File: bilder/fzk2.png Graphic file (type png)
 
-<use bilder/fzk2.png> [37 <./bilder/nsca.png (PNG copy)>] (./tex/stellent.tex
-<bilder/basic_architecture.png, id=777, 513.92pt x 760.8425pt>
+<use bilder/fzk2.png> [38 <./bilder/nsca.png (PNG copy)>] (./tex/stellent.tex
+<bilder/basic_architecture.png, id=768, 513.92pt x 760.8425pt>
 File: bilder/basic_architecture.png Graphic file (type png)
 
 <use bilder/basic_architecture.png>
@@ -983,20 +993,20 @@ nt-[]t146/$[]|
  []
 
 File: bilder/fzk2.png Graphic file (type png)
-<use bilder/fzk2.png> [38 <./bilder/basic_architecture.png (PNG copy)>]
-<bilder/contenserver.png, id=790, 1446.40375pt x 1048.91875pt>
+<use bilder/fzk2.png> [39 <./bilder/basic_architecture.png (PNG copy)>]
+<bilder/contenserver.png, id=782, 1446.40375pt x 1048.91875pt>
 File: bilder/contenserver.png Graphic file (type png)
 
 <use bilder/contenserver.png>
 File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png> [39 <./bilder/contenserver.png>]
+ <use bilder/fzk2.png> [40 <./bilder/contenserver.png>]
 Overfull \hbox (10.522pt too wide) in paragraph at lines 47--51
  \T1/aer/bx/n/12 Search En-gi-ne[] \T1/aer/m/n/12 Ei-ne Suchan-fra-ge ei-nes Be
 -nut-zers wird zu-erst an den Webser-
  []
 
 File: bilder/fzk2.png Graphic file (type png)
-<use bilder/fzk2.png> [40] <bilder/bdb.png, id=819, 1096.095pt x 683.55376pt>
+<use bilder/fzk2.png> [41] <bilder/bdb.png, id=810, 1096.095pt x 683.55376pt>
 File: bilder/bdb.png Graphic file (type png)
 
 <use bilder/bdb.png>
@@ -1005,24 +1015,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 75--76
  []
 
 File: bilder/fzk2.png Graphic file (type png)
-<use bilder/fzk2.png> [41 <./bilder/bdb.png>]
+<use bilder/fzk2.png> [42 <./bilder/bdb.png>]
 Overfull \hbox (1.49574pt too wide) in paragraph at lines 97--98
 []\T1/aer/bx/n/12 Festplattenspeicherausnutzung \T1/aer/m/n/12 Über-wacht die S
 pei-cher-platzaus-las-
  []
 
 File: bilder/fzk2.png Graphic file (type png)
-<use bilder/fzk2.png> [42]
+<use bilder/fzk2.png> [43]
+Overfull \hbox (2.12094pt too wide) in paragraph at lines 112--113
+[]\T1/aer/bx/n/12 Zeitsynchronisationsdienst \T1/aer/m/n/12 Über-prü-fen, ob de
+r ^^R\T1/aer/m/it/12 W32TIME\T1/aer/m/n/12 ^^P-Dienst,
+ []
+
 File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png> [43]
-File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png>
-[44]
+<use bilder/fzk2.png> [44]
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png> [45]
 File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png> [46]
-<bilder/pyramide_fertig2.png, id=857, 333.8874pt x 272.6988pt>
+ <use bilder/fzk2.png>
+[46]
+File: bilder/fzk2.png Graphic file (type png)
+ <use bilder/fzk2.png> [47]
+<bilder/pyramide_fertig2.png, id=847, 333.8874pt x 272.6988pt>
 File: bilder/pyramide_fertig2.png Graphic file (type png)
 
 <use bilder/pyramide_fertig2.png>
@@ -1032,16 +1047,16 @@ Overfull \hbox (17.87161pt too wide) in paragraph at lines 195--196
 
 )
 File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png> [47 <./bilder/pyramide_fertig2.png>]
+ <use bilder/fzk2.png> [48 <./bilder/pyramide_fertig2.png>]
 (./tex/umsetzung.tex (./tex/agents.tex
 File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png> [48]
+ <use bilder/fzk2.png> [49]
 (./tex/tab-unixagents.tex)
 File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png> [49]
+ <use bilder/fzk2.png> [50]
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png>
-[50] (./tex/tab-winagents.tex
+[51] (./tex/tab-winagents.tex
 Overfull \hbox (3.94008pt too wide) in paragraph at lines 7--7
 [][]| 
  []
@@ -1051,21 +1066,21 @@ Overfull \hbox (25.53879pt too wide) in paragraph at lines 7--8
 [][]| 
  []
 
-) <bilder/monitoring-windows.png, id=915, 438.63875pt x 152.57pt>
+) <bilder/monitoring-windows.png, id=903, 438.63875pt x 152.57pt>
 File: bilder/monitoring-windows.png Graphic file (type png)
 
 <use bilder/monitoring-windows.png>
 File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png> [51 <./bilder/monitoring-windows.png>] <bilder/check_nt-
-stdp.png, id=924, 604.2575pt x 27.10126pt>
+ <use bilder/fzk2.png> [52 <./bilder/monitoring-windows.png>] <bilder/check_nt-
+stdp.png, id=910, 604.2575pt x 27.10126pt>
 File: bilder/check_nt-stdp.png Graphic file (type png)
 
 <use bilder/check_nt-stdp.png>
 File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png> [52 <./bilder/check_nt-stdp.png>]
+ <use bilder/fzk2.png> [53 <./bilder/check_nt-stdp.png>]
 File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png> [53]
-<bilder/nsc2.png, id=943, 500.87125pt x 386.44376pt>
+ <use bilder/fzk2.png> [54]
+<bilder/nsc2.png, id=928, 500.87125pt x 386.44376pt>
 File: bilder/nsc2.png Graphic file (type png)
  <use bilder/nsc2.png>
 Overfull \hbox (7.97778pt too wide) in paragraph at lines 100--102
@@ -1073,29 +1088,29 @@ Overfull \hbox (7.97778pt too wide) in paragraph at lines 100--102
 -Plugins \T1/aer/m/it/12 check_nt
  []
 
-<bilder/nagios-active-nsclient-and-nrpe.png, id=947, 379.4175pt x 186.6975pt>
+<bilder/nagios-active-nsclient-and-nrpe.png, id=932, 379.4175pt x 186.6975pt>
 File: bilder/nagios-active-nsclient-and-nrpe.png Graphic file (type png)
 
 <use bilder/nagios-active-nsclient-and-nrpe.png>
 File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png> [54 <./bilder/nsc2.png> <./bilder/nagios-active-nsclient
+ <use bilder/fzk2.png> [55 <./bilder/nsc2.png> <./bilder/nagios-active-nsclient
 -and-nrpe.png>]
 (/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
 File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 )
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png>
-[55]
+[56]
 Overfull \hbox (1.63155pt too wide) in paragraph at lines 153--154
 []\T1/aer/m/n/12 Die De-fi-ni-tio-nen der [][]NR-PE[]-Kommandos die-nen da-für,
  dass durch den Nagios-
  []
 
-<bilder/nrpe-check.png, id=990, 666.49pt x 27.10126pt>
+<bilder/nrpe-check.png, id=975, 666.49pt x 27.10126pt>
 File: bilder/nrpe-check.png Graphic file (type png)
 
 <use bilder/nrpe-check.png>
-<bilder/nsclient-check.png, id=992, 687.56876pt x 27.10126pt>
+<bilder/nsclient-check.png, id=977, 687.56876pt x 27.10126pt>
 File: bilder/nsclient-check.png Graphic file (type png)
 
 <use bilder/nsclient-check.png>
@@ -1107,24 +1122,24 @@ File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 )
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png>
-[56 <./bilder/nrpe-check.png> <./bilder/nsclient-check.png>]
+[57 <./bilder/nrpe-check.png> <./bilder/nsclient-check.png>]
 (/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
 File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 ))
 Overfull \hbox (11.24226pt too wide) in paragraph at lines 22--24
-\T1/aer/m/n/12 Die in Ka-pi-tel []7.1[] auf-ge-lis-ten Pro-zes-se und Ser-vices
+\T1/aer/m/n/12 Die in Ka-pi-tel []6.1[] auf-ge-lis-ten Pro-zes-se und Ser-vices
  kön-nen durch den NSClient-
  []
 
 (/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
 File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 )
-<bilder/servproc.png, id=1011, 584.1825pt x 29.10875pt>
+<bilder/servproc.png, id=997, 584.1825pt x 29.10875pt>
 File: bilder/servproc.png Graphic file (type png)
 
 <use bilder/servproc.png>
 File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png> [57]
+ <use bilder/fzk2.png> [58]
 Overfull \hbox (1.78583pt too wide) in paragraph at lines 55--58
 []\T1/aer/m/n/12 Die Fest-plat-ten-spei-cher-aus-nut-zung und die Pro-zes-so-ra
 us-las-tung wird auf ähn-
@@ -1135,7 +1150,7 @@ File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 ) (./tex/funkttests.tex
 File: bilder/fzk2.png Graphic file (type png)
 
-<use bilder/fzk2.png> [58 <./bilder/servproc.png>]
+<use bilder/fzk2.png> [59 <./bilder/servproc.png>]
 (/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
 File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 )
@@ -1144,31 +1159,28 @@ File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 )
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png>
-[59]) (/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
+[60]) (/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
 File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 )
-
-LaTeX Warning: Citation `checklog' on page 60 undefined on input line 111.
-
 File: bilder/fzk2.png Graphic file (type png)
-<use bilder/fzk2.png> [60]
-<bilder/logcheckwarn.png, id=1112, 991.705pt x 106.3975pt>
+ <use bilder/fzk2.png>
+[61] <bilder/logcheckwarn.png, id=1097, 991.705pt x 106.3975pt>
 File: bilder/logcheckwarn.png Graphic file (type png)
 
 <use bilder/logcheckwarn.png> (./tex/benutzersim.tex
-<bilder/Benutzersimulation.png, id=1115, 630.355pt x 472.76625pt>
+<bilder/Benutzersimulation.png, id=1100, 630.355pt x 472.76625pt>
 File: bilder/Benutzersimulation.png Graphic file (type png)
 
 <use bilder/Benutzersimulation.png>
 File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png> [61 <./bilder/logcheckwarn.png (PNG copy)>]
+ <use bilder/fzk2.png> [62 <./bilder/logcheckwarn.png (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 27--29
 
  []
 
 File: bilder/fzk2.png Graphic file (type png)
-<use bilder/fzk2.png> [62 <./bilder/Benutzersimulation.png>]
-<bilder/wsdlscrn.png, id=1139, 746.79pt x 250.9375pt>
+<use bilder/fzk2.png> [63 <./bilder/Benutzersimulation.png>]
+<bilder/wsdlscrn.png, id=1124, 746.79pt x 250.9375pt>
 File: bilder/wsdlscrn.png Graphic file (type png)
 
 <use bilder/wsdlscrn.png> (./tex/plugin-checkin.tex
@@ -1183,12 +1195,12 @@ File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 )
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png>
-[63 <./bilder/wsdlscrn.png>]) <bilder/wsdl.png, id=1167, 511.511pt x 273.02pt>
+[64 <./bilder/wsdlscrn.png>]) <bilder/wsdl.png, id=1151, 511.511pt x 273.02pt>
 File: bilder/wsdl.png Graphic file (type png)
 
 <use bilder/wsdl.png>
 File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png> [64 <./bilder/wsdl.png>]
+ <use bilder/fzk2.png> [65 <./bilder/wsdl.png>]
 (/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
 File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 )
@@ -1197,13 +1209,13 @@ File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 )
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png>
-[65] <bilder/wsdl-valid.png, id=1223, 1149.29375pt x 715.67375pt>
+[66] <bilder/wsdl-valid.png, id=1207, 1149.29375pt x 715.67375pt>
 File: bilder/wsdl-valid.png Graphic file (type png)
 
 <use bilder/wsdl-valid.png>
 File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png> [66 <./bilder/wsdl-valid.png>] <bilder/cwsdl2.png, id=12
-37, 687.56876pt x 336.25626pt>
+ <use bilder/fzk2.png> [67 <./bilder/wsdl-valid.png>] <bilder/cwsdl2.png, id=12
+21, 687.56876pt x 336.25626pt>
 File: bilder/cwsdl2.png Graphic file (type png)
 
 <use bilder/cwsdl2.png> (./tex/plugin-del.tex
@@ -1215,12 +1227,12 @@ File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 )
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png>
-[67 <./bilder/cwsdl2.png>] (/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
+[68 <./bilder/cwsdl2.png>] (/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
 File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 )))
 File: bilder/fzk2.png Graphic file (type png)
-<use bilder/fzk2.png> [68] (./tex/ergebnis.tex
-<bilder/demo.png, id=1276, 835.12pt x 687.56876pt>
+<use bilder/fzk2.png> [69] (./tex/ergebnis.tex
+<bilder/demo.png, id=1261, 835.12pt x 687.56876pt>
 File: bilder/demo.png Graphic file (type png)
  <use bilder/demo.png>
 Underfull \hbox (badness 10000) in paragraph at lines 21--24
@@ -1228,13 +1240,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 21--24
  []
 
 File: bilder/fzk2.png Graphic file (type png)
-<use bilder/fzk2.png> [69 <./bilder/demo.png (PNG copy)>]
-<bilder/cpu-load2.png, id=1284, 512.91624pt x 315.1775pt>
+<use bilder/fzk2.png> [70 <./bilder/demo.png (PNG copy)>]
+<bilder/cpu-load2.png, id=1268, 512.91624pt x 315.1775pt>
 File: bilder/cpu-load2.png Graphic file (type png)
 
 <use bilder/cpu-load2.png>)
 File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png> [70 <./bilder/cpu-load2.png>] (./tex/ausblick.tex
+ <use bilder/fzk2.png> [71 <./bilder/cpu-load2.png>] (./tex/ausblick.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--7
 
  []
@@ -1251,162 +1263,157 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--18
  []
 
 File: bilder/fzk2.png Graphic file (type png)
-<use bilder/fzk2.png> [71]
+<use bilder/fzk2.png> [72]
 File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png> [72]
+ <use bilder/fzk2.png> [73]
 Underfull \hbox (badness 10000) in paragraph at lines 57--60
 
  []
 
 File: bilder/fzk2.png Graphic file (type png)
-<use bilder/fzk2.png> [73])
+<use bilder/fzk2.png> [74])
 File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png> [74] (./bach.gls
+ <use bilder/fzk2.png> [75] (./bach.gls
 Underfull \hbox (badness 1776) in paragraph at lines 7--8
-[]|[]\T1/aer/m/n/12 12[], []15[],
+[]|[]\T1/aer/m/n/12 11[], []14[],
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14--15
-[]|[]\T1/aer/m/n/12 1[], []10[],
+Underfull \hbox (badness 10000) in paragraph at lines 15--16
+[]|[]\T1/aer/m/n/12 1[], []9[],
  []
 
 
-Underfull \hbox (badness 1776) in paragraph at lines 30--30
-[]|[]\T1/aer/m/n/12 22[], []23[],
+Underfull \hbox (badness 10000) in paragraph at lines 15--16
+[]\T1/aer/m/n/12 13[]--[]15[],
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--41
-[]|[]\T1/aer/m/n/12 7[], []10[],
+Underfull \hbox (badness 1776) in paragraph at lines 31--31
+[]|[]\T1/aer/m/n/12 21[], []22[],
  []
 
 
-Underfull \hbox (badness 1776) in paragraph at lines 41--41
-[]\T1/aer/m/n/12 35[], []50[],
+Underfull \hbox (badness 1776) in paragraph at lines 42--42
+[]\T1/aer/m/n/12 49[], []51[],
  []
 
 
-Underfull \hbox (badness 1776) in paragraph at lines 41--41
-[]\T1/aer/m/n/12 52[], []53[],
+Underfull \hbox (badness 1776) in paragraph at lines 49--49
+[]|[]\T1/aer/m/n/12 35[], []36[],
  []
 
 
-Underfull \hbox (badness 1776) in paragraph at lines 48--48
-[]|[]\T1/aer/m/n/12 36[], []37[],
+Underfull \hbox (badness 1776) in paragraph at lines 54--55
+[]|[]\T1/aer/m/n/12 10[], []11[],
  []
 
 
-Underfull \hbox (badness 1776) in paragraph at lines 53--54
-[]|[]\T1/aer/m/n/12 11[], []15[],
+Underfull \hbox (badness 1776) in paragraph at lines 60--61
+[]|[]\T1/aer/m/n/12 34[], []50[],
  []
 
 
-Underfull \hbox (badness 1776) in paragraph at lines 59--60
-[]|[]\T1/aer/m/n/12 35[], []51[],
+Underfull \hbox (badness 1776) in paragraph at lines 60--61
+[]\T1/aer/m/n/12 53[], []54[],
  []
 
 
-Underfull \hbox (badness 1776) in paragraph at lines 59--60
-[]\T1/aer/m/n/12 54[], []55[],
+Underfull \hbox (badness 10000) in paragraph at lines 74--74
+[]|[]\T1/aer/m/n/12 3[], []38[],
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--73
-[]|[]\T1/aer/m/n/12 4[], []39[],
+Underfull \hbox (badness 10000) in paragraph at lines 74--74
+[]\T1/aer/m/n/12 40[],
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--73
-[]\T1/aer/m/n/12 41[],
+Underfull \hbox (badness 1776) in paragraph at lines 74--74
+[]\T1/aer/m/n/12 41[], []48[],
  []
 
 
-Underfull \hbox (badness 1776) in paragraph at lines 73--73
-[]\T1/aer/m/n/12 42[], []49[],
+Underfull \hbox (badness 10000) in paragraph at lines 74--74
+[]\T1/aer/m/n/12 61[]--[]64[],
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--73
-[]\T1/aer/m/n/12 62[]--[]65[],
+Underfull \hbox (badness 1776) in paragraph at lines 74--74
+[]\T1/aer/m/n/12 67[], []68[],
  []
 
 
-Underfull \hbox (badness 1776) in paragraph at lines 73--73
-[]\T1/aer/m/n/12 68[], []69[],
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
+[]|[]\T1/aer/m/n/12 1[], []14[],
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--80
-[]|[]\T1/aer/m/n/12 1[], []15[],
+Underfull \hbox (badness 1776) in paragraph at lines 83--83
+[]|[]\T1/aer/m/n/12 62[], []64[],
  []
 
 
-Underfull \hbox (badness 1776) in paragraph at lines 82--82
-[]|[]\T1/aer/m/n/12 63[], []65[],
+Underfull \hbox (badness 1776) in paragraph at lines 91--92
+[]|[]\T1/aer/m/n/12 35[], []36[],
  []
 
 
-Underfull \hbox (badness 1776) in paragraph at lines 90--91
-[]|[]\T1/aer/m/n/12 36[], []37[],
+Underfull \hbox (badness 1776) in paragraph at lines 91--92
+[]\T1/aer/m/n/12 50[], []51[],
  []
 
 
-Underfull \hbox (badness 1776) in paragraph at lines 90--91
-[]\T1/aer/m/n/12 51[], []52[],
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
+[]|[]\T1/aer/m/n/12 19[]--[]21[],
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--94
-[]|[]\T1/aer/m/n/12 20[]--[]22[],
+Underfull \hbox (badness 1776) in paragraph at lines 98--99
+[]|[]\T1/aer/m/n/12 21[], []22[],
  []
 
 
-Underfull \hbox (badness 1776) in paragraph at lines 97--98
-[]|[]\T1/aer/m/n/12 22[], []23[],
+Underfull \hbox (badness 1776) in paragraph at lines 101--102
+[]|[]\T1/aer/m/n/12 33[], []34[],
  []
 
 
-Underfull \hbox (badness 1776) in paragraph at lines 100--101
-[]|[]\T1/aer/m/n/12 34[], []35[],
+Underfull \hbox (badness 1776) in paragraph at lines 114--114
+[]|[]\T1/aer/m/n/12 21[], []23[],
  []
 
 
-Underfull \hbox (badness 1776) in paragraph at lines 113--113
-[]|[]\T1/aer/m/n/12 22[], []24[],
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 117--118
-[]|[]\T1/aer/m/n/12 22[]--[]24[],
+Underfull \hbox (badness 10000) in paragraph at lines 118--119
+[]|[]\T1/aer/m/n/12 21[]--[]23[],
  []
 
 File: bilder/fzk2.png Graphic file (type png)
-<use bilder/fzk2.png> [75]
+<use bilder/fzk2.png> [76]
 File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png> [76])
+ <use bilder/fzk2.png> [77])
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png>
-[77] (./bach.lof
+[78] (./bach.lof
 File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png> [78])
+ <use bilder/fzk2.png> [79])
 \tf@lof=\write9
 \openout9 = `bach.lof'.
 
 File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png> [79]
+ <use bilder/fzk2.png> [80]
 (./bach.lol)
 \tf@lol=\write10
 \openout10 = `bach.lol'.
 
 File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png> [80] (./bach.lot)
+ <use bilder/fzk2.png> [81] (./bach.lot)
 \tf@lot=\write11
 \openout11 = `bach.lot'.
 
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png>
-[81]
+[82]
 Underfull \hbox (badness 10000) in paragraph at lines 144--148
 []\T1/aer/m/n/12 Götzer; Schma-le; Mai-er; Kom-ke (2008) ^^RDokumenten-
  []
@@ -1422,7 +1429,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 161--163
  []
 
 File: bilder/fzk2.png Graphic file (type png)
-<use bilder/fzk2.png> [82]
+<use bilder/fzk2.png> [83]
 Underfull \hbox (badness 10000) in paragraph at lines 166--167
 \T1/aer/m/n/12 Quelle: []$\T1/aett/m/n/12 http : / / download-[]west . oracle .
  com / docs / cd /
@@ -1459,21 +1466,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 174--175
  []
 
 File: bilder/fzk2.png Graphic file (type png)
-<use bilder/fzk2.png> [83]
+<use bilder/fzk2.png> [84]
 File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png> [84] (./bach.aux)
-
-LaTeX Warning: There were undefined references.
-
+ <use bilder/fzk2.png> [85] (./bach.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 13594 strings out of 94074
- 195083 string characters out of 1165153
- 625230 words of memory out of 1500000
- 15937 multiletter control sequences out of 10000+50000
+ 13585 strings out of 94074
+ 194966 string characters out of 1165153
+ 625402 words of memory out of 1500000
+ 15945 multiletter control sequences out of 10000+50000
  41062 words of font info for 91 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
  48i,17n,93p,1128b,3394s stack positions out of 5000i,500n,6000p,200000b,5000s
@@ -1570,72 +1574,6 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 , replaced by a fixed one
 
-pdfTeX warning (dest): name{section.10} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.8.6} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.8.5} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.8.4} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.8.3} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.8.2.3} has been referenced but does n
-ot exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.8.2.2} has been referenced but does n
-ot exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.8.2.1} has been referenced but does n
-ot exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.8.2} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.8.1.2} has been referenced but does n
-ot exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.8.1.1} has been referenced but does n
-ot exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.8.1} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.5.3.2} has been referenced but does n
-ot exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.5.3.1} has been referenced but does n
-ot exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.5} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.4} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.4.2.3} has been referenced but does n
-ot exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.4.2.2} has been referenced but does n
-ot exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.4.2.1} has been referenced but does n
-ot exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.4.1.3} has been referenced but does n
-ot exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.4.1.2} has been referenced but does n
-ot exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.4.1.1} has been referenced but does n
-ot exist, replaced by a fixed one
-
 </usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmbx12.pfb></usr/share/texmf-t
 exlive/fonts/type1/bluesky/cm/cmmi12.pfb></usr/share/texmf-texlive/fonts/type1/
 bluesky/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmr12.pfb
@@ -1646,9 +1584,9 @@ esky/cm/cmsl12.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmsy10.pfb>
 exlive/fonts/type1/bluesky/cm/cmtt10.pfb></usr/share/texmf-texlive/fonts/type1/
 bluesky/cm/cmtt12.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmtt8.pf
 b></usr/share/texmf-texlive/fonts/type1/bluesky/ams/msam10.pfb>
-Output written on bach.pdf (88 pages, 12437185 bytes).
+Output written on bach.pdf (89 pages, 12440775 bytes).
 PDF statistics:
- 1682 PDF objects out of 1728 (max. 8388607)
- 520 named destinations out of 1000 (max. 131072)
- 584 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1667 PDF objects out of 1728 (max. 8388607)
+ 501 named destinations out of 1000 (max. 131072)
+ 586 words of extra memory for PDF output out of 10000 (max. 10000000)
 

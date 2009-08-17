@@ -7,7 +7,7 @@ Barth schreibt über Nagios: \begin{quote}"`Die große Stärke von Nagios - auch
 
 Dieser "`Kern"' beinhaltet das komplette Benachrichtigungssystem mit Kontaktadressen und Benachrichtigungsvorgaben (Zeit, Art, zusätzliche Kriterien), die Hosts- und Servicedefinitionen inklusive deren Gruppierungen und schließlich das Webinterface.
 
-Die eigentlichen Checks in Form der selbständigen Plugins sind ab gekapselt von diesem Kern, siehe Abbildung \ref{aktivechecks}.
+Die eigentlichen Checks in Form der selbständigen Plugins sind abgekapselt von diesem Kern, siehe Abbildung \ref{aktivechecks}.
 
 \begin{figure}[ht]
 	\centering
@@ -63,9 +63,9 @@ Mit dieser Hostdefinition wird der Rechner im Webinterface von Nagios bereits an
 		\label{check-swap}
 \end{figure}
 
-Jedoch wird nur die Erreichbarkeit über das Netzwerk mit einem Ping überwacht.
+Damit wird die Erreichbarkeit über das Netzwerk mit einem Ping getestet.
 %Umfangreichere / Komplexere / Weitergehende / 
-Um andere Dienste zu überwachen müssen die gewünschten Plugins explizit aus dem Nagios Repertoire dem zu überwachendem Computer mit einem ähnlichen Schema zugeteilt werden.
+Um weite Informationen zu erhalten, müssen die gewünschten Plugins explizit aus dem Nagios-Repertoire dem zu überwachendem Computer mit einem ähnlichen Schema zugeteilt werden.
 Eine beispielhafte Servicedefinition für die Überwachung des Webservers auf dem Host \textit{example.kit.edu} wird in Codelisting \ref{servdef} gezeigt.
 
 \begin{lstlisting}[captionpos=b, caption=Verkürzte Definition eines Hostobjektes, label=servdef, breaklines = true, language=sh]
@@ -82,7 +82,7 @@ Nagios wird in einem modifizierbarem Zeitintervall alle vom Benutzer definierten
 \paragraph{Nagios-Plugins und Ausgabe}
 Weiterhin beschreibt Barth die Plugins folgendermaßen:
 \begin{quote}"`Jedes Plugin, das bei Host- und Service-Checks zum Einsatz kommt, ist ein eigenes, selbständiges Programm, das sich auch unabhängig von Nagios benutzen lässt."' \begin{flushright}\cite{Barth08} S. 105\end{flushright}\end{quote} 
-Daher lassen sich die Parameter eines Plugins folgendermaßen überprüfen:
+Daher lassen sich die Parameter eines Plugins in der Kommandozeile überprüfen:
 
 \begin{figure}[ht]
 	\centering
@@ -92,9 +92,9 @@ Daher lassen sich die Parameter eines Plugins folgendermaßen überprüfen:
 \end{figure}
 
 Die Ausgabe des Plugins gibt den Zustand des Services an.
-In diesem Fall wird kein Schwellwert überschritten, daher die Meldung \pictext{SWAP OK}.
+In diesem Fall wird kein Schwellwert überschritten, daher die Meldung \textit{SWAP OK}.
 Dieses Plugin liefert noch zusätzliche Performance-Informationen, die mit externen Programmen ausgewertet, gespeichert und visualisiert werden können.
-Standardmäßig werden die Performanzdaten von der normalen Ausgabe mit einem \pictext{|} getrennt.
+Standardmäßig werden die Performanzdaten von der normalen Ausgabe mit einem "`\textit{|}"' getrennt.
 Jedoch können auch Werte aus der normalen Textausgabe für die Visualisierung verwendet werden, so dass in diesem Beispiel keine Berechnung des Prozentsatzes notwendig wäre.
 
 Um den Service mit den angegebenen Schwellwerten in Abbildung \ref{check-swap} von Nagios überwachen zulassen, muss folgende Servicedefinition in die Konfigurationsdatei eingetragen werden:
@@ -145,8 +145,8 @@ Weiterhin gibt es weiche (Soft States) und harte Zustände (Hard States):
 		\label{hs-states}
 \end{figure}
 \footnotetext{Quelle: \cite{Barth08} S. 95}
-Ausgehend von einem \pictext{OK}-Zustand wird in diesem Beispiel jede fünf Minuten periodisch überprüft, ob sich der Status des überwachten Objektes verändert hat.                                                                                                                                                                                         Nach zehn Minuten wird ein Umschwenken / Änderung des Zustandes durch das jeweilige Plugin gemeldet.
-Hier im Beispiel wechselt der Zustand nach \pictext{CRITICAL}, zunächst allerdings als Soft State.
+Ausgehend von einem \textit{OK}-Zustand wird in diesem Beispiel jede fünf Minuten periodisch überprüft, ob sich der Status des überwachten Objektes verändert hat.                                                                                                                                                                                         Nach zehn Minuten wird eine Änderung des Zustandes durch das jeweilige Plugin gemeldet.
+Hier im Beispiel wechselt der Zustand nach \textit{CRITICAL}, zunächst allerdings als Soft State.
 Daher wird durch Nagios noch keine Benachrichtigung versendet, da es sich um eine Falschmeldung, auch \textit{False Positive} genannt, handeln kann.
 Aufgrund einer kurzfristigen hohen Auslastung des Netzwerkes oder um ein kurzzeitiges Problem, welches sich von alleine wieder normalisiert wie bspw. die Prozessorauslastung nach Beenden einer Anwendung.
 
@@ -154,7 +154,7 @@ Um False Positive-Meldungen zu verhindern, wird der im Soft State befindliche Se
 Sollten diese Überprüfungen den vorherigen Zustand bestätigen, verfestigt sich der aktuelle Zustand, man spricht nun von einem Hard State.
 Erst in diesem Moment werden die entsprechenden Kontaktpersonen über den kritischen Zustand benachrichtigt.
 Sollte sich der Zustand wieder in den Normalzustand begeben und dieser Zustandsübergang wird von dem Plugin festgestellt, wird dies an den Nagios-Server gemeldet.
-Ein Übergang zu dem \pictext{OK}-Status wird sofort als Hard State festgesetzt und führt zur sofortigen Benachrichtigung durch Nagios.
+Ein Übergang zu dem \textit{OK}-Status wird sofort als Hard State festgesetzt und führt zur sofortigen Benachrichtigung durch Nagios.
 
 \paragraph{Flapping}
 Nagios besitzt eine spezielle Funktion um sich zu schnell ändernde Zustände automatisch zu erkennen und die Benachrichtigung von diesen Objekten zu unterbinden.

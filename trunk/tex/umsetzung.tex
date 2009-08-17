@@ -108,7 +108,7 @@ Die Konfigurationsdatei für das \textit{check\_logfiles}-Plugin wird im folgend
 Mit dem \pictext{tag}-Attribut wird diese Auswertung eindeutig identifizierbar gemacht, da man in der gleichen Konfigurationsdatei mehrere Logdateien bzw. weitere Durchsuchungen definieren kann.
 Das Attribut \pictext{type} muss hier so gesetzt werden, da die aktuelle Logdatei und die wegrotierte Logdatei das gleichen Namensschema benutzten.
 Der Pfad zu den Logdateien wird über das Attribut \pictext{logfile} gesetzt.
-Da die einzelnen Logdateien mit einem bestimmten Namensmuster erstellt werden (siehe Kapitel \cite{checklog}), muss dieses Namensmuster hier direkt angegeben werden.
+Da die einzelnen Logdateien mit einem bestimmten Namensmuster erstellt werden (siehe Kapitel \ref{checklog}), muss dieses Namensmuster hier direkt angegeben werden.
 In diesem Falle durchsucht das \textit{check\_logfiles}-Plugin alle Logdateien mit dem Namen \textit{refinery00.htm} bis \textit{refinery99.htm}.
 Alle gefundenen Dateien werden dem Datum nach sortiert und die aktuellste Datei wird untersucht.
 Nach welchen Stopwörtern gesucht werden soll wird mit dem Attribut \pictext{warningpatterns} angegeben, sofern mindestens einer dieser Strings gefunden wurde liefert das Plugin ein WARNING als Rückmeldung inklusive der Zeile in dem das Stopwort gefunden wurde.

@@ -6,12 +6,13 @@
 		\setentrycounter{page}\glsnumberformat{15}\delimN 
 		\setentrycounter{page}\glsnumberformat{17}}}%
 \glossaryentryfield{CMS}{\glsnamefont{CMS}}{Content-Management-System}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter{page}\glsnumberformat{17\delimR 19}}}\glsgroupskip
+		\setentrycounter{page}\glsnumberformat{17\delimR 20}}}\glsgroupskip
 \glsgroupheading{D}\relax \glsresetentrylist %
 \glossaryentryfield{DMS}{\glsnamefont{DMS}}{Dokumenten-Management-System}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter{page}\glsnumberformat{1}\delimN 
 		\setentrycounter{page}\glsnumberformat{10}\delimN 
-		\setentrycounter{page}\glsnumberformat{14\delimR 18}}}%
+		\setentrycounter{page}\glsnumberformat{14\delimR 16}\delimN 
+		\setentrycounter{page}\glsnumberformat{18}}}%
 \glossaryentryfield{DNS}{\glsnamefont{DNS}}{Domain Name System}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter{page}\glsnumberformat{36}}}%
 \glossaryentryfield{DoS}{\glsnamefont{DoS}}{Denial of Service}{\relax }{\glossaryentrynumbers{\relax 
@@ -48,7 +49,7 @@
 		\setentrycounter{page}\glsnumberformat{51}}}\glsgroupskip
 \glsgroupheading{N}\relax \glsresetentrylist %
 \glossaryentryfield{NCI}{\glsnamefont{NCI}}{None-Coded Information}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter{page}\glsnumberformat{11}\delimN 
+		\setentrycounter{page}\glsnumberformat{11\delimN 12}\delimN 
 		\setentrycounter{page}\glsnumberformat{15}\delimN 
 		\setentrycounter{page}\glsnumberformat{17}}}%
 \glossaryentryfield{NRPE}{\glsnamefont{NRPE}}{Nagios Remote Plugin Executor}{\relax }{\glossaryentrynumbers{\relax 
@@ -64,7 +65,7 @@
 \glossaryentryfield{OCR}{\glsnamefont{OCR}}{Optical Character Recognition}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter{page}\glsnumberformat{15}}}%
 \glossaryentryfield{OracleUCM}{\glsnamefont{OracleUCM}}{Content-Management-System von Oracle}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter{page}\glsnumberformat{4}\delimN 
+		\setentrycounter{page}\glsnumberformat{3}\delimN 
 		\setentrycounter{page}\glsnumberformat{39}\delimN 
 		\setentrycounter{page}\glsnumberformat{41\delimN 42}\delimN 
 		\setentrycounter{page}\glsnumberformat{49}\delimN 
