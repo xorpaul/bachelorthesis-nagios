@@ -1,30 +1,33 @@
 \section{Aufgabenstellung}
 
-Um den Mitarbeitern des Forschungszentrums Karlsruhe eine möglichst ausfallsichere Plattform für die zentrale Speicherung, Bearbeitung und Verwaltung von Dokumenten anzubieten soll eine Überwachung realisiert werden, die nicht nur die Anwendung, sondern auch den darunterliegenden Server auf seine Systemressourcen überwacht.
-Dabei müssen diese Elemente gefunden werden, mit deren Überprüfung der eindeutige Zustand der Anwendung festgestellt und den störungsfreie Betrieb sichergestellt werden kann.
+Um den Mitarbeitern des Karlsruhe Insitute of Technology eine möglichst ausfallsichere Plattform für die zentrale Speicherung, Bearbeitung und Verwaltung von Dokumenten anzubieten soll eine Überwachung implementiert werden
+Diese Überwachung soll sich nicht nur die Anwendung, sondern auch den darunterliegenden Server und seine Systemressourcen berücksichtigen.
+Dabei müssen Überwachungselemente gefunden werden, mit deren Überprüfung der eindeutige Zustand der Anwendung festgestellt und der störungsfreie Betrieb sichergestellt werden kann.
 
-Im Forschungszentrum Karlsruhe wird für die Verwaltung von Webseiten, Dokumenten und Bilder das Dokumenten-Management-System \gls{OracleUCM} der Firma Oracle  eingesetzt.
-Daher muss sich für die Ermittlung der zu überwachenden Objekte mit dem Aufbau und der spezifischen Funktions- und Arbeitsweise des verwendeten Dokumenten-Management-Systems auseinandergesetzt werden.
+Für die Verwaltung von Webseiten, Dokumenten und Bilder das Dokumenten-Management-System \gls{OracleUCM} der Firma Oracle eingesetzt.
+Um die zu überwachenden Objekte zu ermitteln, muss sich mit dem Aufbau und der spezifischen Funktions- und Arbeitsweise des verwendeten Dokumenten-Management-Systems auseinandergesetzt werden.
 
-Als Überwachungssoftware wird im Forschungszentrum Karlsruhe das Open Source-Projekt Nagios eingesetzt.
-Damit der fehlerfreie Betrieb von \gls{OracleUCM} als Dienst durch die Überwachung der ermittelten Überwachungselemente eindeutig festgestellt werden kann, muss sich mit dem Aufbau, der internen Funktionsweise und den verschiedenen Methoden bezüglich der Ermittlung der Statusinformationen untersucht werden.
-Dabei soll eine Übersicht über die unterschiedlichen Überwachungsmethoden von Nagios erstellt werden und unter Berücksichtigung des späteren Einsatzes bewertet werden.
-Hierbei sind für die spätere Umsetzung beispielsweise die verschlüsselte Datenübertragung zwischen Überwachungs- und Anwendungsserver ein Kriterium.
+Als Überwachungssoftware wird das Open Source-Projekt Nagios verwendet.
+%Damit der fehlerfreie Betrieb von \gls{OracleUCM} als Dienst durch die Überwachung der ermittelten Überwachungselemente eindeutig festgestellt werden kann, muss sich mit dem Aufbau, der internen Funktionsweise und den verschiedenen Methoden bezüglich der Ermittlung der Statusinformationen untersucht werden.
+Zur Realisierung der Überwachung muss auf die interne Logik und auf die verschiedenen Methoden bezüglich der Ermittlung der Statusinformationen eingegangen werden.
+Dabei soll eine Übersicht über die unterschiedlichen Überwachungsmethoden von Nagios erstellt und unter Berücksichtigung des späteren Einsatzes bewertet werden.
+%Hierbei sind für die spätere Umsetzung beispielsweise die verschlüsselte Datenübertragung zwischen Überwachungs- und Anwendungsserver ein Kriterium.
 Mit der durch diese Bewertung ausgewählte Methode soll die Überwachung auf verschiedenen Ebenen realisiert werden.
 
-Die Kategorisierung der Überwachungselemente ergibt sich aus der Gewichtung der einzelnen Elemente.
+Die Klassifizierung der Überwachungselemente ergibt sich aus der Gewichtung der einzelnen Elemente.
 %In diesem Schritt werden die zuvor gefunden 
-Essentielle Merkmale / Informationen wie die simple Erreichbarkeit über das Netzwerk bilden die Grundlage der darüber liegende Überwachungsobjekte wie der Zustand eines Prozesses.
+Die Erreichbarkeit über das Netzwerk bildet die Grundlage der darüber liegende Überwachungsobjekte wie der Zustand eines Prozesses.
 Dabei soll die Anwendung auch reaktiv durch eine Auswertung von Logdateien auf Fehler überwacht werden.
 
 
 Zum eindeutigen Erkennen von Fehlern, die während der Benutzung durch die Anwender auftreten, sollen die typischen Aktionen der Benutzer simuliert werden. 
 Für die Realisierung dieser Benutzersimulation muss die Anwendung über eine Schnittstelle verfügen, die sich durch ein Programm über das Netzwerk ansprechen lässt.
-Dieses Programm soll die Benutzeraktionen automatisch/selbständig durchführen und der Überwachungssoftware Nagios die Ergebnisse der einzelnen Schritte übermitteln, damit der Fehlerzustand (möglichst) sofort erkannt und gleichzeitig seine Ursache eingegrenzt werden kann.
+Dieses Programm soll die Benutzeraktionen automatisiert durchführen und der Überwachungssoftware Nagios die Ergebnisse der einzelnen Schritte übermitteln, damit der Fehlerzustand sofort erkannt und gleichzeitig seine Ursache eingegrenzt werden kann.
 
 Dabei müssen bei der Programmentwicklung mögliche Konsequenzen aufgrund verschiedener Szenarien bedacht werden.
-Sollte die Anwendung bereits durch eine Vielzahl von Benutzern stark belastet sein, wird dadurch auch der Ablauf der Benutzersimulation verzögert
-In diesem Fall soll die Überwachungssoftware bzw. Benutzersimulation keine falsche Informationen melden.
+Sollte die Anwendung bereits durch eine Vielzahl von Benutzern stark belastet sein, wird dadurch auch der Ablauf der Benutzersimulation verzögert.
+%In diesem Fall soll die Überwachungssoftware bzw. Benutzersimulation keine falsche Informationen melden.
+Eine solche Verzögerung soll von der Überwachungssoftware bzw. Benutzersimulation bei der Auswertung berücksichtigt werden.
 
 Durch die Benutzersimulation darf die Nutzung der Anwendung durch die eigentlichen Benutzer nicht beeinträchtigt werden.
 Da die Ausführung der Benutzersimulation durch Nagios in kurzen Zeitabständen periodisch aufgerufen wird, müssen auch langfristige Auswirkungen wie das Überlaufen der Datenbank der Anwendung oder die Überfüllung des Festplattenspeichers des Anwendungsservers bedacht werden.

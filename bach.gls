@@ -1,5 +1,8 @@
 \glossarysection[\glossarytoctitle]{\glossarytitle}\glossarypreamble
 \begin{theglossary}\glossaryheader
+\glsgroupheading{A}\relax \glsresetentrylist %
+\glossaryentryfield{AIIM}{\glsnamefont{AIIM}}{Association for Information and Image Management}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{20}}}\glsgroupskip
 \glsgroupheading{C}\relax \glsresetentrylist %
 \glossaryentryfield{CI}{\glsnamefont{CI}}{Coded Information}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter{page}\glsnumberformat{12}\delimN 
@@ -11,15 +14,15 @@
 \glossaryentryfield{DMS}{\glsnamefont{DMS}}{Dokumenten-Management-System}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter{page}\glsnumberformat{1}\delimN 
 		\setentrycounter{page}\glsnumberformat{10}\delimN 
-		\setentrycounter{page}\glsnumberformat{14\delimR 16}\delimN 
-		\setentrycounter{page}\glsnumberformat{18}}}%
+		\setentrycounter{page}\glsnumberformat{14\delimR 18}\delimN 
+		\setentrycounter{page}\glsnumberformat{20}}}%
 \glossaryentryfield{DNS}{\glsnamefont{DNS}}{Domain Name System}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter{page}\glsnumberformat{36}}}%
 \glossaryentryfield{DoS}{\glsnamefont{DoS}}{Denial of Service}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter{page}\glsnumberformat{10}}}\glsgroupskip
 \glsgroupheading{E}\relax \glsresetentrylist %
 \glossaryentryfield{ECM}{\glsnamefont{ECM}}{Enterprise-Content-Management}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter{page}\glsnumberformat{41}}}\glsgroupskip
+		\setentrycounter{page}\glsnumberformat{20}}}\glsgroupskip
 \glsgroupheading{F}\relax \glsresetentrylist %
 \glossaryentryfield{FQDN}{\glsnamefont{FQDN}}{Fully Qualified Domain Name}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter{page}\glsnumberformat{55}}}%
@@ -32,7 +35,7 @@
 \glsgroupheading{I}\relax \glsresetentrylist %
 \glossaryentryfield{IIS}{\glsnamefont{IIS}}{Internet Information Service}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter{page}\glsnumberformat{47}\delimN 
-		\setentrycounter{page}\glsnumberformat{58}}}%
+		\setentrycounter{page}\glsnumberformat{59}}}%
 \glossaryentryfield{IP}{\glsnamefont{IP}}{Identifikation Protokoll}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter{page}\glsnumberformat{7}\delimN 
 		\setentrycounter{page}\glsnumberformat{10}\delimN 
@@ -67,35 +70,36 @@
 \glossaryentryfield{OracleUCM}{\glsnamefont{OracleUCM}}{Content-Management-System von Oracle}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter{page}\glsnumberformat{3}\delimN 
 		\setentrycounter{page}\glsnumberformat{39}\delimN 
-		\setentrycounter{page}\glsnumberformat{41\delimN 42}\delimN 
+		\setentrycounter{page}\glsnumberformat{42}\delimN 
+		\setentrycounter{page}\glsnumberformat{44\delimN 45}\delimN 
 		\setentrycounter{page}\glsnumberformat{49}\delimN 
-		\setentrycounter{page}\glsnumberformat{62\delimR 65}\delimN 
-		\setentrycounter{page}\glsnumberformat{68\delimN 69}\delimN 
-		\setentrycounter{page}\glsnumberformat{72\delimR 74}}}\glsgroupskip
+		\setentrycounter{page}\glsnumberformat{62\delimR 64}\delimN 
+		\setentrycounter{page}\glsnumberformat{66}\delimN 
+		\setentrycounter{page}\glsnumberformat{69\delimN 70}\delimN 
+		\setentrycounter{page}\glsnumberformat{73\delimR 75}}}\glsgroupskip
 \glsgroupheading{P}\relax \glsresetentrylist %
 \glossaryentryfield{PDF}{\glsnamefont{PDF}}{Portable Document Format}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter{page}\glsnumberformat{1}\delimN 
 		\setentrycounter{page}\glsnumberformat{15}\delimN 
 		\setentrycounter{page}\glsnumberformat{41}\delimN 
-		\setentrycounter{page}\glsnumberformat{75}}}%
+		\setentrycounter{page}\glsnumberformat{76}}}%
 \glossaryentryfield{PHP}{\glsnamefont{PHP}}{PHP: Hypertext Preprocessor}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter{page}\glsnumberformat{63}\delimN 
-		\setentrycounter{page}\glsnumberformat{65\delimN 66}}}\glsgroupskip
+		\setentrycounter{page}\glsnumberformat{64\delimR 66}}}\glsgroupskip
 \glsgroupheading{R}\relax \glsresetentrylist %
 \glossaryentryfield{RPC}{\glsnamefont{RPC}}{Remote Procedure Call}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter{page}\glsnumberformat{56}}}\glsgroupskip
+		\setentrycounter{page}\glsnumberformat{55\delimN 56}}}\glsgroupskip
 \glsgroupheading{S}\relax \glsresetentrylist %
 \glossaryentryfield{SNMP}{\glsnamefont{SNMP}}{Simple Network Management Protocol}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter{page}\glsnumberformat{36\delimN 37}\delimN 
 		\setentrycounter{page}\glsnumberformat{51\delimN 52}\delimN 
 		\setentrycounter{page}\glsnumberformat{54}}}%
 \glossaryentryfield{SOA}{\glsnamefont{SOA}}{Service-Oriented Architecture}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{5}\delimN 
 		\setentrycounter{page}\glsnumberformat{20\delimR 22}\delimN 
 		\setentrycounter{page}\glsnumberformat{40}}}%
 \glossaryentryfield{SOAP}{\glsnamefont{SOAP}}{Simple Object Access Protocol}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter{page}\glsnumberformat{22\delimN 23}\delimN 
-		\setentrycounter{page}\glsnumberformat{25}\delimN 
-		\setentrycounter{page}\glsnumberformat{65}}}%
+		\setentrycounter{page}\glsnumberformat{22\delimR 25}\delimN 
+		\setentrycounter{page}\glsnumberformat{66}}}%
 \glossaryentryfield{SSH}{\glsnamefont{SSH}}{Secure Shell}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter{page}\glsnumberformat{34\delimN 35}\delimN 
 		\setentrycounter{page}\glsnumberformat{50\delimN 51}}}%
@@ -104,14 +108,15 @@
 		\setentrycounter{page}\glsnumberformat{60}}}\glsgroupskip
 \glsgroupheading{U}\relax \glsresetentrylist %
 \glossaryentryfield{UDDI}{\glsnamefont{UDDI}}{Universal Description, Discovery and Integration protocol}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter{page}\glsnumberformat{24\delimN 25}}}\glsgroupskip
+		\setentrycounter{page}\glsnumberformat{24}}}\glsgroupskip
 \glsgroupheading{W}\relax \glsresetentrylist %
 \glossaryentryfield{W3C}{\glsnamefont{W3C}}{World Wide Web Consortium}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter{page}\glsnumberformat{22}}}%
 \glossaryentryfield{WSDL}{\glsnamefont{WSDL}}{Web Services Description Language}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter{page}\glsnumberformat{22}\delimN 
-		\setentrycounter{page}\glsnumberformat{24\delimN 25}\delimN 
-		\setentrycounter{page}\glsnumberformat{64\delimR 68}}}\glsgroupskip
+		\setentrycounter{page}\glsnumberformat{24}\delimN 
+		\setentrycounter{page}\glsnumberformat{64\delimR 67}\delimN 
+		\setentrycounter{page}\glsnumberformat{69}}}\glsgroupskip
 \glsgroupheading{X}\relax \glsresetentrylist %
 \glossaryentryfield{XML}{\glsnamefont{XML}}{Extensible Markup Language}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter{page}\glsnumberformat{22\delimR 24}\delimN 

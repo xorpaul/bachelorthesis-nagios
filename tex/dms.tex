@@ -78,12 +78,12 @@ Unabhängig des Ursprungs oder der Art des Dokumentes besitzt der Funktionsberei
 Laut \cite{DMS08} S. 40fff fallen in diesen Bereich zwei Funktionen:
 
 \paragraph{Dokumenteneingang}
-Hier wird die Zuspielung der Dokumente in das \gls{DMS}-System durch verschiedene Methoden behandelt / realisiert.
+Hier wird die Zuspielung der Dokumente in das \gls{DMS}-System durch verschiedene Methoden realisiert.
 Als mögliche Eingabe von Dokumenten kann sowohl das Einscannen von Textdokumente oder Bilder als auch der elektronische Eingang von Dokumenten durch E-Mail oder externen Anwendungen fungieren.
 
 Auch hier gilt zu unterscheiden, dass durch den Einscannvorgang erstellte Dokumente als \gls{NCI}-Dokument abgelegt werden und bereits digitalisierte Dokumente sich zur Umwandlung zu \gls{CI}-Dokumenten anbieten.
 Sobald der Inhalt von eingescannten Dokumenten zur weiteren Verarbeitung ausgelesen bzw. ausgewertet werden soll, müssen die Dokumente in ein \gls{CI}-Format transformiert werden.
-Dies wird häufig durch eine \gls{OCR}-Software realisiert, die beispielsweise das Bild eines eingescannten Briefes in (bearbeitbaren) Text umwandelt.
+Dies wird häufig durch eine \gls{OCR}-Software realisiert, die beispielsweise das Bild eines eingescannten Briefes in Text umwandelt.
 
 Bereits im \gls{CI}-Format vorliegende Dokumente müssen nicht transformiert werden, jedoch werden die Dokumente oft in anderen Formaten zusätzlich abgespeichert.
 Ein Beispiel ist die Umwandlung eines Microsoft Word-Dokumentes in ein \gls{PDF}-Dokument oder von unterschiedlichen Bildformaten in ein einheitliches Format.
@@ -100,7 +100,7 @@ Hierbei wird durch die Vorarbeit eines Menschen Beispiele geschaffen anhand welc
 Je mehr korrekte Beispiele vorgegeben werden, desto besser und zuverlässiger arbeitet die automatische Klassifizierung.
 
 \subsubsection{Verwaltung und Archivierung}
-Bei der \textbf{Verwaltung} werden die Probleme beim \textit{Check-in} (Einspielen des Dokumentes), Bearbeitung und \textit{Check-out} (Signalisieren der Weiterbearbeitung) behandelt, siehe auch Abbildung \cite{DMS08} S. 38 ???.
+Bei der \textbf{Verwaltung} werden die Probleme beim \textit{Check-in} (Einspielen des Dokumentes), Bearbeitung und \textit{Check-out} (Signalisieren der Weiterbearbeitung) behandelt, siehe auch Abbildung \ref{lifecircle}.
 Wie auch bei einer Datenbank müssen Dokumente, die gerade bearbeitet werden, für andere Benutzer für Änderungen gesperrt werden, damit keine Inkonsistenzen auftreten können.
 Nach einer Bearbeitung und dem Check-in des abgeänderten Dokumentes muss die Versionsverwaltung des \gls{DMS}-Systems beide Versionen beibehalten und (dabei) die ursprüngliche Version als veraltet und die neue Version als solche kennzeichnen.
 Zusätzlich muss die Wiederherstellung einer älteren Revision als aktuelles Dokument unterstützt werden.
@@ -108,7 +108,7 @@ Zusätzlich muss die Wiederherstellung einer älteren Revision als aktuelles Dok
 
 Die \textbf{Archivierung} befasst sich mit der Sicherung und Wiederherstellung von Dokumenten und deren Metadaten.
 Im Zusammenhang mit DMS-Systemen springt man auch von einer revisionssicheren Archivierung.
-Dabei müssen laut \cite{DMS08} S. 288 unter anderem bestimmte Punkte beachtet / eingehalten werden:
+Dabei müssen laut \cite{DMS08} S. 288 unter anderem bestimmte Punkte eingehalten werden:
 
 \begin{itemize}
 \item Jedes Dokument muss unveränderbar archiviert werden.
@@ -123,7 +123,7 @@ Wie die Eingabe besteht die Ausgabe aus zwei Funktionen:
 \paragraph{Recherche}
 Die Recherche ist die Suche nach einem Dokument entweder durch eine strukturierte Suche anhand von zuvor eingetragenen Attributen (Autor, Erstellungsdatum, Speichergröße usw.) oder durch eine Volltextsuche.
 
-Die \textbf{strukturierte Suche} ist nur bei einer qualitativ hochwertigen Indizierung effizient, bietet dafür auch mit guter zeitlichen Performanz die besten / genauesten Ergebnisse, sofern die Indizierung entsprechend aufgebaut / eingehalten wurde.
+Die \textbf{strukturierte Suche} ist nur bei einer qualitativ hochwertigen Indizierung effizient, bietet dafür auch mit guter zeitlichen Performanz die besten Ergebnisse, sofern die Indizierung entsprechend eingehalten wurde.
 
 Die \textbf{Volltextsuche} besteht aus einer ordinären Suche durch den Inhalt der Dokumente nach den eingegebenen Suchbegriffen.
 Daher ist die Qualität der Suchergebnisse unabhängig von der Qualität der Indizierung.
@@ -138,7 +138,7 @@ Dies ist durch eine einfach Anzeige im Webbrowser, eine Weiterleitung per E-Mail
 
 \subsection{Content-Management-Systeme}
 Bei einem Content-Management-System (\gls{CMS})  steht nicht mehr das eigentliche Dokument im Vordergrund, sondern vielmehr der enthaltene Informationsgehalt des Dokuments.
-Der Unterschied zwischen einem \gls{DMS} und einem \gls{CMS} besteht laut \cite{DMS08} S. 114 im/in Folgenden/m:
+Der Unterschied zwischen einem \gls{DMS} und einem \gls{CMS} besteht laut \cite{DMS08} S. 114 im folgenden:
 
 %Abgrenzend zum Dokumenten-Management handelt es sich beim Content-Management nicht vordergründig um die Verwaltung von Dokumenten, sondern um die Verwaltung von Informationseinheiten, die miteinander verknüpft sein können. [...] Je nach Ausprägung kann nun ein konkretes System als Dokumenten-Management-System mit Content-Management-Funktionen definiert werden und umgekehrt. [...]
 
@@ -146,7 +146,7 @@ Der Unterschied zwischen einem \gls{DMS} und einem \gls{CMS} besteht laut \cite{
 \begin{quote}"`Ein \gls{DMS} hat als kleinstes Objekt der Betrachtung eines einzelnen Dokument. [...] Content-Management ist auf logische Informationseinheiten ausgerichtet. Es ist z.B. das Ziel des Content-Managements, Inhalte, die auf mehrere Quellen verteilt sind, neue zusammenzustellen und daraus z.B. ein neues Dokument zu generieren."'
 \begin{flushright}\cite{DMS08} S. 114f\end{flushright}\end{quote}
 
-Die folgende Abbildung soll den (charakteristischen) Unterschied zwischen \gls{CMS}-Systemen und \gls{DMS}-Systemen verdeutlichen.
+Die folgende Abbildung soll den charakteristischen Unterschied zwischen \gls{CMS}-Systemen und \gls{DMS}-Systemen verdeutlichen.
 
 
 \begin{figure}[ht]
@@ -158,14 +158,14 @@ Die folgende Abbildung soll den (charakteristischen) Unterschied zwischen \gls{C
 \footnotetext{Quelle: \cite{DMS08} S. 115}
 
 
-Wie zuvor beschrieben ist die Sichtweise eines \gls{DMS} nur auf die einzelnen Dokumente beschränkt, während ein \gls{CMS} einzelne Elemente / Informationen aus den Dokumenten extrahieren und ggf. zu einem neuen Dokument verschmelzen kann. Die Sichtweise des \gls{CMS} wird durch das gestrichelte Polygon dargestellt, welches hier dokumentenübergreifend abgebildet ist.
+Wie zuvor beschrieben ist die Sichtweise eines \gls{DMS} nur auf die einzelnen Dokumente beschränkt, während ein \gls{CMS} einzelne Elemente aus den Dokumenten extrahieren und ggf. zu einem neuen Dokument verschmelzen kann. Die Sichtweise des \gls{CMS} wird durch das gestrichelte Polygon dargestellt, welches hier dokumentenübergreifend abgebildet ist.
 
-Der (theoretische/beabsichtigte) Zweck, weshalb ein \gls{CMS}-System eingesetzt wird, ist laut Oracle folgendermaßen definiert:
+Das Ziel eines \gls{CMS}-Systems ist laut Oracle folgendermaßen definiert:
 
 \begin{quote}"`The key to a successful content management implementation is unlocking the value of content by making it as easy as possible for it to be consumed. This means that any piece of content must be available to any consumer, no matter what their method of access."'
 \begin{flushright}\cite{UCM07} S. 12\end{flushright}\end{quote}
 
-Ein \gls{CMS} soll die Informationen jedes/jedwedem (Inhalts) extrahieren/aufnehmen und jedes Einzelteil / Element dieser Information den Benutzern zugänglich machen, unabhängig von der Art des Zugriffs.
+Ein \gls{CMS} soll jede Darstellungsart von Informationen aufnehmen und jedes Element dieser Information den Benutzern zugänglich machen, unabhängig von der Art des Zugriffs.
 Dieses Konzept soll in Abbildung \ref{ucm-a2a} verdeutlicht werden.
 
 \begin{figure}[ht]
@@ -179,10 +179,10 @@ Dieses Konzept soll in Abbildung \ref{ucm-a2a} verdeutlicht werden.
 Das \gls{CMS} steht hier in der Mitte der Abbildung als Medium zwischen den verschiedenen Inhalten, eingestellt von den \textit{Contributors} (links), und den Anwendern, die auf transformierte Versionen der Inhalte durch unterschiedliche Arten zugreifen (rechts).
 
 
-%\subsection{[Enterprise-Content-Management-Systeme]}
-%In diesem Zusammenhang / Kontext sei auch der Begriff Enterprise-Content-Management (\gls{ECM}) genannt.
-%Laut der "`Association for Information and Image Management"' (\gls{AIIM}\footnote{Die AIIM ist eine Gesellschaft von internationalen Herstellern und Anwendern von Informations- und Dokumenten-Mangement-Systemen}), welche sich mit umfasst dieser Begriff die Verwaltungfunktionen von Unternehmensinformationen in unterschiedlichen Dokumentformaten.\footnote{Quelle: \url{http://www.aiim.org/What-is-ECM-Enterprise-Content-Management.aspx}}
-%Diese Funktionen werden laut \cite{DMS08} S. 116 durch verschiedene "`Systeme wie Dokumenten-Management, Groupware, Workflow, Input- und Output-Management, (Web-)Content-management, Archivierung, Records-Management und andere"' bereitsgestellt.
+\subsection{Enterprise-Content-Management-Systeme}
+Der Begriff Enterprise-Content-Management (\gls{ECM}) wird auch häufig in Verbindung mit \gls{CMS}-Systemen und \gls{DMS}-Systemen genannt.
+Laut der "`Association for Information and Image Management"' (\gls{AIIM}\footnote{Die AIIM ist eine Gesellschaft von internationalen Herstellern und Anwendern von Informations- und Dokumenten-Mangement-Systemen}) umfasst dieser Begriff die Verwaltungsfunktionen von Unternehmensinformationen in unterschiedlichen Dokumentformaten.\footnote{Quelle: \url{http://www.aiim.org/What-is-ECM-Enterprise-Content-Management.aspx}}
+Diese Funktionen werden laut \cite{DMS08} S. 116 durch verschiedene "`Systeme wie Dokumenten-Management, Groupware, Workflow, Input- und Output-Management, (Web-)Content-management, Archivierung, Records-Management und andere"' bereitsgestellt.
 
 
 %\subsection{Universal-Content-Management-Systeme}

@@ -1,5 +1,5 @@
 \newpage
-\subsection{Aufbau / Architektur}
+\subsection{Aufbau}
 
 
 Barth schreibt über Nagios: \begin{quote}"`Die große Stärke von Nagios - auch im Vergleich zu anderen Netzwerküberwachungstools - liegt in seinem modularen Aufbau: Der Nagios-Kern enthält keinen einzigen Test, stattdessen verwendet er für Service- und Host-Checks externe Programme, die als \textit{Plugins} bezeichnet werden."'
@@ -94,7 +94,7 @@ Daher lassen sich die Parameter eines Plugins in der Kommandozeile überprüfen:
 Die Ausgabe des Plugins gibt den Zustand des Services an.
 In diesem Fall wird kein Schwellwert überschritten, daher die Meldung \textit{SWAP OK}.
 Dieses Plugin liefert noch zusätzliche Performance-Informationen, die mit externen Programmen ausgewertet, gespeichert und visualisiert werden können.
-Standardmäßig werden die Performanzdaten von der normalen Ausgabe mit einem "`\textit{|}"' getrennt.
+Standardmäßig werden die Performanzdaten von der normalen Ausgabe mit einem \pictext{|} getrennt.
 Jedoch können auch Werte aus der normalen Textausgabe für die Visualisierung verwendet werden, so dass in diesem Beispiel keine Berechnung des Prozentsatzes notwendig wäre.
 
 Um den Service mit den angegebenen Schwellwerten in Abbildung \ref{check-swap} von Nagios überwachen zulassen, muss folgende Servicedefinition in die Konfigurationsdatei eingetragen werden:
@@ -136,7 +136,7 @@ Die Plugins liefern dabei verschiedene Rückgabewerte:
 
 Anhand dieser Werte wertet Nagios gezielt den Status des jeweiligen Objektes (Host oder Service) aus.
 \paragraph{Hard und Soft States}
-Weiterhin gibt es weiche (Soft States) und harte Zustände (Hard States):
+Weiterhin gibt es weiche (\pictext{Soft States}) und harte Zustände (\pictext{Hard States}):
 
 \begin{figure}[ht]
 	\centering
