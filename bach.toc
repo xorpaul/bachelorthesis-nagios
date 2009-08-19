@@ -77,4 +77,5 @@
 \contentsline {paragraph}{Einchecken eines Testbildes}{64}{section*.33}
 \contentsline {paragraph}{Validierung der Indizierung und Konvertierung}{67}{section*.34}
 \contentsline {section}{\numberline {8}Ergebnis}{71}{section.8}
-\contentsline {section}{\numberline {9}Zusammenfassung und Ausblick}{73}{section.9}
+\contentsline {section}{\numberline {9}Zusammenfassung}{73}{section.9}
+\contentsline {section}{\numberline {10}Ausblick}{76}{section.10}

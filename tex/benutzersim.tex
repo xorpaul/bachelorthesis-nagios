@@ -19,7 +19,7 @@ Der Ablauf der Benutzersimulation soll in verkürzter Form durch das Struktogram
 
 In diesem ersten Schritt wird auch gleichzeitig die Erreichbarkeit der Anwendung über das Netzwerk getestet.
 
-Wenn die Übertragung des Bildes erfolgreich wird anschließend nach dem soeben eingecheckten Bild per Dateinamen gesucht um die Funktionalität der Indizierung zu kontrollieren.
+Wenn die Übertragung des Bildes erfolgreich war, wird anschließend nach dem soeben eingecheckten Bild per Dateinamen gesucht um die Funktionalität der Indizierung zu kontrollieren.
 
 Sollte das Bild gefunden werden, wird es vom Nagios-Server angefordert und auf seine Korrektheit überprüft.
 Der gleiche Test wird mit den konvertieren Bildversionen durchgeführt, um die Funktion der Konvertierung zu überwachen.
@@ -68,7 +68,7 @@ Im PHP-Script werden nach dem Einlesen dieser \gls{WSDL}-Datei und der Authentif
 Die Bilddatei muss für die Übertragung über \gls{HTTP} zuerst byteweise eingelesen werden und anschließend mit dem Base64-Algorithmus kodiert werden.
 Dabei übernimmt die nuSOAP-Klasse die Base64-Enkodierung.
 
-Der Ablauf dieses Plugins soll durch folgende Abbildung verdeutlicht werden: 
+Der Ablauf dieses Plugins soll durch das folgende Schaubild verdeutlicht werden.
 \begin{figure}[ht]
 	\centering
 	   \fbox{\includegraphics[width=0.93\textwidth]{bilder/wsdl.png}}
@@ -119,8 +119,20 @@ if(!mb_eregi('JFIF', $outputGetThumbnail))
 
 Sofern das Bild gefunden wurde, wird es vom Plugin anschließend angefordert und nach dem Dateityp untersucht.
 Die Konvertierung wird dadurch überprüft indem die konvertierten Versionen des Testbildes angefordert werden und wie das Originalbild auf einen gültigen Dateityp getestet werden.
+Für die Überprüfung auf den gültigen Datentyp wird direkt in den Bytecode der verschiedenen Versionen des Testbildes geschaut.
 
-Der Ablauf dieses Plugins ist dem ersten sehr ähnlich, siehe Abbildung \ref{usersim2}
+\begin{figure}[ht]
+	\centering
+	   \fbox{\subfigure[PNG-Bild]{\includegraphics[scale=0.6]{bilder/eregi-png.png}} \quad \quad
+	   \subfigure[JPEG-Bild]{\includegraphics[scale=0.6]{bilder/jpg-eregi.png}}
+	   }
+		\caption{Bytecode von PNG- und JPEG-Bilddateien}
+		\label{bytecode}
+\end{figure}
+
+Dabei wird für das Originalbild nach PNG und für die in JPEG konvertierten Version nach JFIF (JPEG File Interchange Format) geschaut.
+
+Der Ablauf dieses Plugins ist dem ersten sehr ähnlich, wie Abbildung \ref{usersim2} zeigt.
 
 \begin{figure}[ht]
 	\centering
@@ -136,7 +148,6 @@ Der Ablauf dieses Plugins ist dem ersten sehr ähnlich, siehe Abbildung \ref{use
 
 Damit nicht unnötiger Festplattenplatz durch die Testbilder verschwendet wird, sollen die Testbilder mit den konvertierten Version vom Server gelöscht werden.
 
-\newpage
 Standardmäßig bietet \gls{OracleUCM} keinen Web Service zum Löschen von Dokumenten an.
 Daher muss zunächst eine \gls{WSDL}-Datei dafür erstellt werden, siehe Abbildung \ref{cwsdl}.
 
