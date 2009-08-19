@@ -1,0 +1,28 @@
+\begin{lstlisting}[captionpos=b, caption=Aufruf des Web Services CheckInUniversal, label=1stplugin, breaklines = true, language=PHP]
+$soap = new soapclient($WSDL-URL,  //WSDL-Datei einlesen 
+array('login' => $user, 'password' => $password)); //Authentifizierung am Oracle UCM-Server
+
+//Aufruf des Web Services
+$ergebnis = $soap->CheckInUniversal(array(
+	'dDocAuthor'=>$user, //Autor des Bildes
+	'dDocTitle'=>'testBild4nagios', //Titel des Bildes
+	'dSecurityGroup'=>'private', //Sichtbarkeit des Bildes
+	'dDocAccount'=>'NAGIOS/TEST', //Angabe einer Gruppe
+	'dInDate'=>date("d.m.y H:i"), //Aktuelles Datum
+	'dDocType'=>'Picture', //Dokumententyp
+	'doFileCopy'=>'1', //Datei nur kopieren, nicht verschieben
+	'dDocFormat'=>'image/png', //MIME-Type
+	'primaryFile'=>array(
+		'fileName'=>'testBild4nagios',
+ 		'fileContent'=>$content) //Byteweise eingelesenes Bild
+));
+[...]
+//Auswertung der Antwort des Servers
+if (ereg(' erfolgreich eingecheckt.', $output)) {
+  echo('CHECKIN OK - '.$output);
+  die(0); //Einchecken erfolgreich
+} else {
+ echo('CHECKIN CRITICAL - '.$output);
+ die(2); //Einchecken fehlgeschlagen
+}
+\end{lstlisting}

@@ -1,0 +1,32 @@
+%Tabelle Unix-Agenten
+
+
+\begin{table}[h!]
+\centering
+\begin{threeparttable}[ht]
+\begin{tabular}{l p{1.5cm} l p{1.5cm} l p{1.5cm} l p{1.5cm} l p{1.5cm} l p{1.5cm} p{1.5cm} p{1.5cm} p{1.5cm} p{1.5cm}}
+ & \begin{turn}{50}\textbf{SSH}\end{turn} & \begin{turn}{50}\textbf{NRPE}\end{turn} & \begin{turn}{50}\textbf{SNMP}\end{turn} & \begin{turn}{50}\textbf{SNMP Traps}\end{turn} & \begin{turn}{50}\textbf{NSCA}\end{turn}\\ 
+\hline
+\textbf{Methode} & & & & & \\
+\textit{aktiv} & \checkmark & \checkmark & \checkmark & - & - \\
+\textit{passiv} & - & - & - & \checkmark & \checkmark\\
+\textbf{Sicherheit} &  &  &  &  &  \\
+\textit{Passwort} & - & - & \checkmark (v3) & \checkmark (v3) & -\\
+\textit{Accesslist}\tnote{1} & \checkmark\tnote{2} &  \checkmark & \checkmark (v2) & \checkmark (v2) & \checkmark \\
+\textit{Verschlüsselung} &  \checkmark & \checkmark & \checkmark (v3) & \checkmark (v3) &  \checkmark \\
+\textbf{Aufwand}\tnote{3} & \begin{footnotesize}niedrig\end{footnotesize} & \begin{footnotesize}normal\end{footnotesize} & \begin{footnotesize}hoch\end{footnotesize} & \begin{footnotesize}hoch\end{footnotesize} & \begin{footnotesize}normal\end{footnotesize} \\
+\end{tabular}
+%\footnotesize
+%* Einschränkung der Abfrage der Überwachungsinformationen anhand der \gls{IP}-Adresse
+%\\
+%** Subjektive Einschätzung
+\begin{tablenotes}\footnotesize
+	\item[1] Einschränkung der Abfrage der Überwachungsinformationen anhand der \gls{IP}-Adresse
+		\item[2] Über zuvor ausgetauschte \gls{SSH}-Schlüssel
+	\item[3] Subjektive Einschätzung
+\end{tablenotes}
+\caption{Übersicht der verschiedenen Unix-Agenten}
+\end{threeparttable}
+\end{table}
+
+

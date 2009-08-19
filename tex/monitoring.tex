@@ -2,12 +2,12 @@
 \label{monitor}
 Überwachungssysteme wurden für den Zweck entwickelt den Status von verschiedenen Objekten meist über das Netwerk zu überwachen und im Falle einer Statusänderung diese Information an die zugewiesenen Kontaktpersonen weiterleitet.
 
-Bei diesen Objekten kann es sich um viele verschiedene Komponenten handeln.
+%Bei diesen Objekten kann es sich um viele verschiedene Komponenten handeln.
 Generell unterscheidet man zwischen der Überwachung ermöglichten zu Grunde liegenden Hardware den so genannten Hosts und den auf diesen Hardwarekomponenten aufsitzenden Diensten auch Services genannt.
 
 Unter Hosts fallen nicht nur Server bzw. Computer, sondern auch Switches, Router oder auch dedizierte Überwachungshardware wie Sensoren für Temperatur, Luftfeuchtigkeit oder Rauchmelder.
 Die Services dieser Hosts weichen je nach Art der Hosts stark voneinander ab.
-Auf einem Server kann als Service ein Webserver im Betrieb sein, dessen Funktionalität sich simpel über einen Aufruf einer Webseite überprüfen lässt.
+Auf einem Server kann als Service ein Webserver im Betrieb sein, dessen Funktionalität sich über einen Aufruf einer Webseite überprüfen lässt.
 Bei einem Switch können beispielsweise als Service die Übertragungsrate, der Paketverlust oder der Portzustand überwacht werden.
 
 Sehr wichtig ist bei einem Überwachungssystem die Gewichtung der erhaltenen Überwachungsinformationen.
@@ -77,31 +77,34 @@ In der Abbildung \ref{depend} erzeugt der Router 1 die zuvor beschriebene zusät
 Deshalb gilt es laut \cite{Jose07} S. 5 folgende zwei Punkte beim Erstellen eines Überwachungssystems zu beachten:
 
 \paragraph{Überwachungsredundanzen vermeiden}
-Redundante Überwachung entsteht dadurch, dass der gleiche Service durch zwei Arten mit unterschiedlichen Tiefen / Tiefgang geprüft wird.
+Redundante Überwachung entsteht dadurch, dass der gleiche Service durch zwei Arten in unterschiedlicher Tiefe geprüft wird.
 Ein einfaches Beispiel ist die Überwachung eines Webservers auf dem Standardport 80.
 Eine Überwachungsmethode ist es diesen Port abzufragen und die entsprechende Rückantwort des Servers auszuwerten.
-Soll die auf dem Webserver laufende Webseite überwacht werden, kann die jeweilige Webseite über die Adresse nach einem bestimmten Inhalt untersucht werden.
+Als zweiter Test soll die auf dem Webserver laufende Webseite überwacht werden. 
+Dafür kann die jeweilige Webseite über die Adresse nach einem bestimmten Inhalt untersucht werden.
 
-In beiden Fällen wird getestet, ob der Webserver über das Netzwerk ansprechbar ist, jedoch sagt der zweite Test zusätzlich noch aus, dass die Webseite korrekt angezeigt wird, somit wäre der erste Test überflüssig.
+In beiden Fällen wird getestet, ob der Webserver über das Netzwerk ansprechbar ist, jedoch sagt der zweite Test zusätzlich noch aus, dass die korrekte Webseite angezeigt wird, somit wäre der erste Test überflüssig.
 Jedoch muss zuvor abgewogen werden, ob eine redundante Überwachung nicht sogar hilfreich bei der Ermittlung der Fehlerursache ist.
-Wenn im oberen Beispiel der Inhalt der überwachten Webseite verändert wird, ist dies nur aus dem zweiten Test ersichtlich.
+%Wenn im oberen Beispiel der Inhalt der überwachten Webseite verändert wird, so können beide Tests die Fehlerursache eingrenzen.
+So können beide Tests die Fehlerursache eingrenzen.
+Der erste Test überprüft, ob der Webserver erreichbar ist und der zweite Test kann erkennen, ob eine falsche bzw. veraltete Seite ausgeliefert wird.
 %, dass der Webserver einwandfrei funktioniert.
 
 \paragraph{Minimale Netzwerkbelastung}
-Um bereits stark belastete Netzwerkpunkte zu entlasten, bietet es sich an die Frequenz mit der die Test über das Netzwerk gesendet werden zu verringern.
-Die Aufstellung des Überwachungsservers ist dadurch gerade bei größeren Serverlandschaften sehr wichtig, da durch eine effiziente Platzierung womögliche Flaschenhälse / Engstellen in Form von veralteten Switches oder ähnlichem vermieden werden können.
+Um bereits stark belastete Netzwerkpunkte zu entlasten, bietet es sich an, die Frequenz mit der die Test über das Netzwerk gesendet werden zu verringern.
+Die Aufstellung des Überwachungsservers ist dadurch gerade bei größeren Serverlandschaften sehr wichtig, da durch eine effiziente Platzierung womögliche Flaschenhälse  in Form von veralteten Switches oder ähnlichem vermieden werden können.
 
 \subsubsection{Sicherheitsaspekte}
-Um erweiterte Statusinformationen über einen Prozess oder über die Arbeitsspeicherauslastung auszulesen ist (meistens) zusätzliche Software auf den Hosts nötig.
-Diese Software benötigt einen zusätzlichen geöffneten Port auf dem zu überwachendem Rechner, die einen neuen Angriffspunkt für Angreifer darstellen kann.
-Außerdem erhält der Überwachungsserver Ausführungsrechte auf dem Client, so dass eine weitere potentielle Sicherheitslücke in einem (vermeintlich) zuvor sicherem System entsteht.
+Um erweiterte Statusinformationen über einen Prozess oder über die Arbeitsspeicherauslastung auszulesen, ist zusätzliche Software auf den Hosts nötig.
+Diese Software benötigt oft einen zusätzlichen geöffneten Port auf dem zu überwachendem Rechner, die einen neuen Angriffspunkt für Angreifer darstellen kann.
+Außerdem erhält der Überwachungsserver Ausführungsrechte auf dem Client, so dass eine weitere potentielle Sicherheitslücke in einem vermeintlich zuvor sicherem System entsteht.
 Jeder, der die Kontrolle über den Überwachungsserver besitzt oder sich als solcher ausgibt, kontrolliert somit gleichzeitig alle anderen überwachten Hosts.
 
 Um dies zu verhindern gibt es verschiedene Ansätze.
-Als ersten Ansatz sollte der Port durch den der Überwachungsserver mit dem Host kommuniziert vom Standardwert abweichen, damit nicht sofort erkennbar ist, dass sich eine (womöglich) angreifbare Überwachungssoftware auf dem Rechner befindet.\label{changeport}
+Als ersten Ansatz sollte der Port durch den der Überwachungsserver mit dem Host kommuniziert vom Standardwert abweichen, damit nicht sofort erkennbar ist, dass sich eine angreifbare Überwachungssoftware auf dem Rechner befindet.\label{changeport}
 Damit die über diesen Port versendeten Informationen nicht für Dritte zugänglich sind, bietet es sich an die auszutauschende Informationen mit einem Algorithmus zu verschlüsseln.
 Durch den Einsatz eines Verschlüsselungsalgorithmus werden die Informationen nicht mehr im Klartext ausgetauscht, sondern
-Da die Möglichkeit einer Verschlüsselung der Datenübertragung nicht von jeder Überwachungssoftware angeboten wird, gilt diese Option als Auswahlkriterium in der späteren Umsetzung bzw. im produktivem Betrieb. (Verweis auf Windows Agenten Übersicht?)
+Da die Möglichkeit einer Verschlüsselung der Datenübertragung nicht von jeder Überwachungssoftware angeboten wird, gilt diese Option als Auswahlkriterium in der späteren Umsetzung bzw. im produktivem Betrieb.
 
 Des weiteren sollte die Erlaubnis der Abfrage der Überwachungsinformationen anhand der \gls{IP}-Adresse eingeschränkt werden, so dass der Client nur Anfragen des Überwachungsservers akzeptiert.
 Durch diese Einschränkung kann vermieden werden, dass sensible Informationen aus den Antworten an unberechtigte Dritte übermittelt werden oder ein Denial of Service-Angriff (\gls{DoS}) durch eine übermäßig hohe Anzahl an Anfragen an den Client gesendet wird, um eine Überlastung des Servers zu erreichen und diesen somit arbeitsunfähig zu machen.
