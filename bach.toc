@@ -63,17 +63,18 @@
 \contentsline {subsection}{\numberline {7.1}Aufbau der Testumgebung}{49}{subsection.7.1}
 \contentsline {subsubsection}{\numberline {7.1.1}Aufsetzen eines Nagios-Test-Systems}{49}{subsubsection.7.1.1}
 \contentsline {subsubsection}{\numberline {7.1.2}Bilddatenbank als virtuelle Maschine}{49}{subsubsection.7.1.2}
-\contentsline {subsection}{\numberline {7.2}\IeC {\"U}bersicht Nagios-Agenten}{49}{subsection.7.2}
-\contentsline {subsubsection}{\numberline {7.2.1}Unix-Agenten}{50}{subsubsection.7.2.1}
-\contentsline {subsubsection}{\numberline {7.2.2}Windows-Agenten}{52}{subsubsection.7.2.2}
-\contentsline {subsubsection}{\numberline {7.2.3}Auswahl und Konfiguration des Nagios-Agenten}{54}{subsubsection.7.2.3}
-\contentsline {paragraph}{Auswahl}{54}{section*.31}
-\contentsline {paragraph}{Installation und Konfiguration}{54}{section*.32}
-\contentsline {subsection}{\numberline {7.3}Umsetzung der System\IeC {\"u}berwachung}{58}{subsection.7.3}
-\contentsline {subsection}{\numberline {7.4}Umsetzung der Funktionlit\IeC {\"a}tstest}{60}{subsection.7.4}
-\contentsline {subsection}{\numberline {7.5}Auswertung der Logdateien}{61}{subsection.7.5}
-\contentsline {subsection}{\numberline {7.6}Benutzersimulation}{62}{subsection.7.6}
+\contentsline {subsection}{\numberline {7.2}Auswahl der geeigneten \IeC {\"U}berwachungsmethode}{49}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}\IeC {\"U}bersicht Nagios-Agenten}{50}{subsection.7.3}
+\contentsline {subsubsection}{\numberline {7.3.1}Unix-Agenten}{50}{subsubsection.7.3.1}
+\contentsline {subsubsection}{\numberline {7.3.2}Windows-Agenten}{53}{subsubsection.7.3.2}
+\contentsline {subsubsection}{\numberline {7.3.3}Auswahl und Konfiguration des Nagios-Agenten}{55}{subsubsection.7.3.3}
+\contentsline {paragraph}{Auswahl}{55}{section*.31}
+\contentsline {paragraph}{Installation und Konfiguration}{55}{section*.32}
+\contentsline {subsection}{\numberline {7.4}Umsetzung der System\IeC {\"u}berwachung}{59}{subsection.7.4}
+\contentsline {subsection}{\numberline {7.5}Umsetzung der Funktionlit\IeC {\"a}tstest}{60}{subsection.7.5}
+\contentsline {subsection}{\numberline {7.6}Auswertung der Logdateien}{62}{subsection.7.6}
+\contentsline {subsection}{\numberline {7.7}Benutzersimulation}{63}{subsection.7.7}
 \contentsline {paragraph}{Einchecken eines Testbildes}{64}{section*.33}
-\contentsline {paragraph}{Validierung der Indizierung und Konvertierung}{66}{section*.34}
+\contentsline {paragraph}{Validierung der Indizierung und Konvertierung}{67}{section*.34}
 \contentsline {section}{\numberline {8}Ergebnis}{71}{section.8}
 \contentsline {section}{\numberline {9}Zusammenfassung und Ausblick}{73}{section.9}
