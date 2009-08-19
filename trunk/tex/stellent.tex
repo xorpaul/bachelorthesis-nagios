@@ -182,16 +182,18 @@ Die Benutzersimulation hat die Aufgabe alle Schritte der Zustandsänderung durch
 Dabei wird die Antwort der Anwendung auf das Hinzufügen der Dateien analysiert.
 
 \item \textbf{Konvertierung} Da das hinzugefügte Dokument nicht nur einfach auf dem Server gespeichert wird, sondern dabei auch in ein anderes Format umgewandelt wird, muss diese Konvertierung zusätzlich überwacht werden. 
-Wird beispielsweise ein Bild eingecheckt, wird dieses mehrfach in verschiedenen Auflösung oder als anderes Bilddateiformat gespeichert. 
+Wird beispielsweise ein Bild eingecheckt, wird dieses mehrfach in verschiedenen Auflösungen oder in einem anderen Bilddateiformat gespeichert. 
 Ob diese Transformation erfolgreich ablief, kann anhand dieser neuen Dateien festgestellt werden.
 
 \item \textbf{Indizierung} Bei dem Einchecken sollen auch gleichzeitig zusätzliche Informationen über das Dokument festgehalten werden. 
 Diese Informationen können beispielsweise der Name des Autors, das Erstellungsdatum der Datei oder - bei Bildern - der verwendete Farbraum sein. 
 Bei der Suche nach einem Dokument können diese Informationen als zusätzliche Suchkriterien verwendet werden.
-Daher muss überprüft werden, ob diese Daten richtig ausgelesen, der Datenbank hinzugefügt und vom Anwender abgefragt werden können. %Dabei werden auch zuvor festgelegten Testdateien verwendet.
+Daher muss überprüft werden, ob diese Dateien richtig ausgelesen, der Datenbank hinzugefügt und vom Anwender abgefragt werden können.
+Dabei werden auch zuvor ausgewählte Testdateien verwendet.
 
 \item \textbf{Suchfunktion} Nach einer erfolgreichen Indizierung muss das eingecheckte Dokument per Suchanfrage gefunden werden.
-Ob die Suche und Indizierung erfolgreich abgelaufen ist, wird zusätzlich überprüft. 
+%Ob die Suche und Indizierung erfolgreich abgelaufen ist, wird zusätzlich überprüft. 
+Dabei wird der Suchbegriff an dem Dateinamen des Testbildes festgelegt.
 \end{itemize}
 
 \subsection{Zusammenfassung}
@@ -200,12 +202,12 @@ Die Basis für die alle anderen Tests bildet die Systemüberwachung.
 An erster Stelle der Systemüberwachung steht die schlichte Erreichbarkeit über das Netzwerk per Ping.
 Wenn der Server nicht erreichbar ist, können auch keine weiterführende Prüfungen durchgeführt werden.
 Zur Systemüberwachung gehören auch allgemeine Informationen über die Systemressourcen wie freier Festplattenspeicher oder Prozessorauslastung.
-Die nächste Grundlage für die darüber liegenden Tests bildet die Überprüfung der laufenden Prozesse und der Status verschiedener Dienste bzw. Services.
+Die nächste Stufe bildet die Überprüfung der laufenden Prozesse und der Status verschiedener Dienste bzw. Services.
 Sollten bestimmte Prozesse nicht gefunden werden oder wichtige Dienste nicht gestartet sein, können auf diese Prozesse und Dienste aufbauende Checks nicht funktionieren.
 Beispielweise kann der Funktionalitätstest der Benutzeranmeldung nicht realisierbar sein, wenn bereits zuvor in der Systemüberwachung der Prozess für den Webserver \gls{IIS} nicht gefunden werden konnte.\\
 
 
-Alle Überwachungselemente lassen sich inklusive ihrer Abhängigkeiten in Form einer Pyramide darstellen, siehe Abbildung \ref{moniele}.
+Alle Überwachungselemente lassen sich inklusive ihrer Abhängigkeiten in Form der Pyramide (Abbildung \ref{moniele}) darstellen.
 
 \begin{figure}[ht]
 	\centering

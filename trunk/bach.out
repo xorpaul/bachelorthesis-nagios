@@ -33,13 +33,14 @@
 \BOOKMARK [2][-]{subsection.7.1}{Aufbau der Testumgebung}{section.7}
 \BOOKMARK [3][-]{subsubsection.7.1.1}{Aufsetzen eines Nagios-Test-Systems}{subsection.7.1}
 \BOOKMARK [3][-]{subsubsection.7.1.2}{Bilddatenbank als virtuelle Maschine}{subsection.7.1}
-\BOOKMARK [2][-]{subsection.7.2}{\334bersicht Nagios-Agenten}{section.7}
-\BOOKMARK [3][-]{subsubsection.7.2.1}{Unix-Agenten}{subsection.7.2}
-\BOOKMARK [3][-]{subsubsection.7.2.2}{Windows-Agenten}{subsection.7.2}
-\BOOKMARK [3][-]{subsubsection.7.2.3}{Auswahl und Konfiguration des Nagios-Agenten}{subsection.7.2}
-\BOOKMARK [2][-]{subsection.7.3}{Umsetzung der System\374berwachung}{section.7}
-\BOOKMARK [2][-]{subsection.7.4}{Umsetzung der Funktionlit\344tstest}{section.7}
-\BOOKMARK [2][-]{subsection.7.5}{Auswertung der Logdateien}{section.7}
-\BOOKMARK [2][-]{subsection.7.6}{Benutzersimulation}{section.7}
+\BOOKMARK [2][-]{subsection.7.2}{Auswahl der geeigneten \334berwachungsmethode}{section.7}
+\BOOKMARK [2][-]{subsection.7.3}{\334bersicht Nagios-Agenten}{section.7}
+\BOOKMARK [3][-]{subsubsection.7.3.1}{Unix-Agenten}{subsection.7.3}
+\BOOKMARK [3][-]{subsubsection.7.3.2}{Windows-Agenten}{subsection.7.3}
+\BOOKMARK [3][-]{subsubsection.7.3.3}{Auswahl und Konfiguration des Nagios-Agenten}{subsection.7.3}
+\BOOKMARK [2][-]{subsection.7.4}{Umsetzung der System\374berwachung}{section.7}
+\BOOKMARK [2][-]{subsection.7.5}{Umsetzung der Funktionlit\344tstest}{section.7}
+\BOOKMARK [2][-]{subsection.7.6}{Auswertung der Logdateien}{section.7}
+\BOOKMARK [2][-]{subsection.7.7}{Benutzersimulation}{section.7}
 \BOOKMARK [1][-]{section.8}{Ergebnis}{}
 \BOOKMARK [1][-]{section.9}{Zusammenfassung und Ausblick}{}

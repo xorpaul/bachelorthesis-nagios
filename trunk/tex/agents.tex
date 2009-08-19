@@ -1,31 +1,27 @@
 \subsection{Übersicht Nagios-Agenten}
-Im vorherigen Kapitel \ref{methoden} wurde erklärt, dass für das Überwachen von Diensten, die nicht über das Netzwerk zugreifbar sind, ein Nagios-Agent auf dem jeweiligen Rechner benötigt wird.
-
-In diesem Unterkapitel werden die populärsten Agenten für Unix und Windows Betriebssysteme aufgelistet und nach/in den Punkten Sicherheit, subjektiver Aufwand für die Konfiguration und Art der Abfragemethode (aktiv oder passiv) vergleicht.
+In diesem Unterkapitel werden die populärsten Agenten für Unix und Windows Betriebssysteme aufgelistet und nach den Punkten Sicherheit, subjektiver Aufwand für die Konfiguration und Art der Abfragemethode (aktiv oder passiv) verglichen.
 
 \subsubsection{Unix-Agenten}
-\label{sectunixagents}
-Für die auf Unix basierenden Betriebssysteme werden fünf verschiedene Möglichkeiten angeboten, die (auch) zuvor in der Abbildung \ref{nagios-kern} als verschiedene Überwachungsmöglichkeiten von Nagios aufgelistet wurden.
+Für die auf Unix basierenden Betriebssysteme werden fünf verschiedene Möglichkeiten angeboten, die in Abbildung \ref{nagios-kern} als verschiedene Überwachungsmöglichkeiten von Nagios aufgelistet wurden.
 
 \input{tex/tab-unixagents.tex}
 
 Dabei werden drei Agenten genannt, die eine aktive Ausführung der Nagios-Plugins benutzten.
-Alle drei Agenten unterscheiden sich jedoch in den (anderen) Punkten Sicherheit und Aufwand.
+Alle drei Agenten unterscheiden sich jedoch in den Punkten Sicherheit und Aufwand.
 Der auf \gls{SSH} basierende Agent besitzt einen relativ geringen Aufwand für die Installation, da für den Aufbau der Kommunikation zwischen Nagios-Server und Client nur der öffentliche Schlüssel des Servers auf dem Client eingetragen werden muss.
 Dadurch kann der Nagios-Server sich ohne Passwortabfrage an dem zu überwachendem Host anmelden und die sich darauf befindlichen Nagios-Plugins ausführen.
 Da auf den meisten Unix-Servern bereits ein \gls{SSH}-Server läuft und deshalb kein weiterer Port geöffnet oder eine weitere Software installiert werden muss, ist diese Methode den anderen meist vorzuziehen.
 
 Bei der \gls{NRPE}-Methode wird eine weitere Softwarekomponente auf dem Client installiert, die einen separaten Port für die Kommunikation mit dem Nagios-Server öffnet.
 Wie bei dem Aufruf per \gls{SSH} müssen sich hier die Nagios-Plugins bereits auf dem Rechner befinden.
-Dabei gilt als Unterschied dieser zwei ähnlichen Methoden zu beachten, dass für die Ausführung der Checks per \gls{SSH} ein extra Benutzerkonto auf dem Client erstellt werden muss und somit beliebige Systembefehle ausgeführt werden können, während die Ausführung von Kommandos bei \gls{NRPE} nur auf vorkonfigurierte Befehle beschränkt ist.
-Siehe auch Kapitel \ref{sshnrpe}.
+Dabei gilt als Unterschied dieser zwei ähnlichen Methoden zu beachten, dass für die Ausführung der Checks per \gls{SSH} ein extra Benutzerkonto auf dem Client erstellt werden muss und somit beliebige Systembefehle ausgeführt werden können, während die Ausführung von Kommandos bei \gls{NRPE} nur auf vorkonfigurierte Befehle beschränkt ist, wie in Kapitel \ref{sshnrpe} aufgeführt.
 \label{unixagents}
-Da \gls{SNMP} plattformunabhängig funktioniert ist es mögliche diese Variante bei Unix- sowie bei Windowsservern einzusetzen.
+Da \gls{SNMP} plattformunabhängig funktioniert ist es möglich diese Variante bei Unix- sowie bei Windowsservern einzusetzen.
 Die verwendete \gls{SNMP}-Version bestimmt welche Sicherheitsmerkmale zur Verfügung stehen.
 Zwar gibt es bereits seit Version 1 die Möglichkeit den Zugriff per Passwort in drei Gruppen aufzuteilen: kein Zugriff, Leserecht und Lese- mit Schreibrecht\footnote{Quelle: \cite{Barth08} S. 237}, jedoch wird dieses Passwort im Klartext übertragen, so dass es leicht auslesbar ist.
 Auch die \gls{SNMP}-Version 2 inklusive der erweiterten Version 2c verwendet die gleiche unsichere Authentifizierung.
 Erst ab Version 3 wird das Passwort verschlüsselt übertragen.
-Während Barth behauptet, dass man bei \gls{SNMP} generell kein Passwort verwenden soll\footnote{Quelle: \cite{Barth08} S. 238}, da es leicht per Netzwerkmitschnittprogramme wie WireShark ausgelesen werden kann, wird in \cite{Jose07} S. 121 klargestellt, dass die Version 3 eine verschlüsselte Authentifizierung durch den MD5- oder SHA-Algorithmus ermöglicht.
+Während Barth behauptet, dass man bei \gls{SNMP} generell kein Passwort verwenden soll\footnote{Quelle: \cite{Barth08} S. 238}, da es leicht per Netzwerkmitschnittprogramme, wie WireShark, ausgelesen werden kann, wird in \cite{Jose07} S. 121 klargestellt, dass die Version 3 eine verschlüsselte Authentifizierung durch den MD5- oder SHA-Algorithmus ermöglicht.
 
 Die passive Variante über \gls{SNMP} bei der der Client die Ergebnisse der Checks an den Nagios-Server sendet, auch \gls{SNMP}-Traps genannt, funktioniert nach dem gleichen Prinzip.
 Da das Auslesen der \gls{MIB} per \gls{SNMP} im Gegensatz zu den anderen Varianten deutlich komplexer ist, wird der Aufwand als hoch eingestuft.
@@ -39,10 +35,11 @@ Die Liste mit diesen \gls{IP}-Adressen nennt man auch \textit{Accesslist}.
 Da die zu überwachende Oracle UCM Anwendung auf einem Windows-Server betrieben wird und die bereits vorgestellten Agenten mit Ausnahme der \gls{SNMP}-Varianten nur unter Unix einsetzbar sind, müssen zusätzlich die explizit für Windows entwickelten Nagios-Agenten untersucht werden.
 Dabei wird die Auswahl der Kandidaten auf vier Bewerber beschränkt, siehe Tabelle \ref{tab:winagents}.
 \input{tex/tab-winagents.tex}
+\newpage
 Der NSClient-Dienst liefert die Möglichkeit lokale Windows-Ressourcen über das Netzwerk mit eigenem Port (Standport 1248) abzufragen.
 Das Plugin \textit{check\_nt} wurde explizit für diesen NSClient-Dienst entwickelt und steht durch die Nagios-Plugins standardmäßig zur Verfügung.
-Dadurch können grundlegende Informationen für die Systemüberwachung wie Zustände von Prozesse, Services, CPU-Auslastung, Festplattenplatz, usw. abgefragt werden, siehe Kapitel \ref{syschecks}.
-
+Dadurch können die grundlegende Informationen für die Systemüberwachung aus Kapitel \ref{syschecks}, wie Zustände von Prozesse, Services, CPU-Auslastung, Festplattenplatz, usw. abgefragt werden.
+Der Zugriff auf den NSClient-Dienst per \textit{check\_nt} wird in Abbildung \ref{fig:cknt} gezeigt.
 \begin{figure}[ht]
 	\centering
 	   \fbox{\includegraphics[width=0.8\textwidth]{bilder/monitoring-windows.png}}
@@ -51,14 +48,13 @@ Dadurch können grundlegende Informationen für die Systemüberwachung wie Zust�
 \end{figure}
 \footnotetext{Quelle: \url{http://nagios.sourceforge.net/docs/3\_0/images/monitoring-windows.png}}
 
-\newpage
 Diese Abfrage kann durch die Ausführung auf der Kommandozeile getestet werden:
 
 \begin{figure}[ht]
 	\centering
 	   \fbox{\includegraphics[width=0.75\textwidth]{bilder/check_nt-stdp.png}}
 		\caption{Zugriff auf den NSClient-Dienst durch check\_nt}
-		\label{fig:cknt}
+		\label{fig:ckntsh}
 \end{figure}
 
 Der erste und zugleich älteste Agent NSClient wird nicht mehr aktiv entwickelt und ist als aktuellste Version 2.0.1 aus dem Jahre 2003 bereits recht alt.
@@ -75,19 +71,19 @@ Als Besonderheit lassen sich durch NC\_net sowohl aktiv als auch passiv Testerge
 Der Nagios-Agent NSClient++ besitzt diesselben Merkmale wie NC\_net, jedoch kann der Nagios-Server noch über ein Passwort zusätzlich verifiziert werden.
 
 Die Möglichkeit Informationen per \gls{SNMP} und \gls{SNMP}-Traps abzufragen ist auch unter Windows möglich.
-Dabei gelten die gleichen Richtlinien, Hinweise und Einschränkungen wie zuvor in Kapitel \ref{unixagents}.
+Dabei gelten die gleichen Richtlinien, Hinweise und Einschränkungen wie zuvor in Kapitel \ref{unixagents} aufgeführt.
 
 \subsubsection{Auswahl und Konfiguration des Nagios-Agenten}
 
 \paragraph{Auswahl}
 Anhand der im vorherigen Kapitel beschriebenen Übersicht der Windows-Agenten und der daraus resultierenden Übersichtstabelle \ref{tab:winagents} wird ein geeigneter Kandidat für die Testumgebung ausgewählt.
-Da nur ein Windows-Agent alle drei Sicherheitsmerkmale anbietet und dabei aktiv und passive (passiv eigntl nicht relevant zur Aufgabenlösung, jedoch nice2have) Überwachungsmethoden erlaubt, fällt die Wahl auf das Programm \textbf{NSClient++}.
+Da nur ein Windows-Agent alle drei Sicherheitsmerkmale anbietet und dabei aktive und passive Überwachungsmethoden erlaubt, fällt die Wahl auf das Programm \textbf{NSClient++}.
 
 \paragraph{Installation und Konfiguration}
 
 Der Nagios-Agent NSClient++ kann im Gegensatz zu den meisten anderen Windows-Agenten komfortabel über einen graphischen Benutzerdialog installiert werden.
-Während der Installation kann auch festgelegt werden welche Komponenten installiert werden sollen.
-Dabei werden diese Komponenten nicht standardmäßig geladen, sondern im nächsten Dialogfenster als Auswahl explizit/extra abgefragt:
+Während des Installationsvorgangs kann auch festgelegt werden welche Komponenten installiert werden sollen.
+Dabei werden diese Komponenten nicht standardmäßig geladen, sondern im nächsten Dialogfenster auswählbar:
 
 \begin{figure}[ht]
 	\centering
@@ -110,8 +106,8 @@ Dabei läuft die Kommunikation zwischen dem Nagios- und dem Windows-Server folge
 \footnotetext{\url{http://nsclient.org/nscp/}}
 %http://nsclient.org/nscp/raw-attachment/wiki/doc/usage/nagios/nagios-active-nsclient.png
 
-Da es bei Windows-Server mit vielen Verbindungen und Diensten zu Remote Procedure Calls (\gls{RPC}) kommen kann, bei denen dynamisch Ports ab 1025 verwendet werden, könnte der Standardport des NSClient-Dienstes (1248) unter Umständen bereits vor dem Start des Dienstes belegt sein.\footnote{Quelle: \cite{Barth08} S. 481}
-Um dies zu verhindern wurde der Port des NSClient-Dienstes beim NSClient++ bereits auf einen höheren Port (12489) gewechselt.
+Bei Windows-Server mit vielen Verbindungen und Diensten können Remote Procedure Calls (\gls{RPC}), bei denen dynamisch Ports ab 1025 verwendet werden, bereits den Standardport des NSClient-Dienstes (1248) unter Umständen bereits vor dem Start des Dienstes belegen.\footnote{Quelle: \cite{Barth08} S. 481}
+Um dies zu verhindern wurde der Port des NSClient-Dienstes beim NSClient++ bereits vom Entwickler auf einen höheren Port (12489) gewechselt.
 
 Alle bisherigen Einstellungen können in der Konfigurationsdatei \textit{NSC.ini}, die sich in dem Installationsverzeichnis des NSClient++ befindet, verändert werden.
 In dieser Datei befinden sich noch mehr Einstellungsmöglichkeiten; im Folgenden werden nur für die Umsetzung relevanten (notwendig essentiell benötigten) Parameter aufgelistet.
