@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2009.1.26)  19 AUG 2009 12:27
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2009.1.26)  19 AUG 2009 14:29
 entering extended mode
  %&-line parsing enabled.
 **bach.tex
@@ -1224,39 +1224,49 @@ File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 )
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png>
-[67] <bilder/wsdl-valid.png, id=1257, 1149.29375pt x 715.67375pt>
+[67] <bilder/eregi-png.png, id=1256, 292.09125pt x 78.2925pt>
+File: bilder/eregi-png.png Graphic file (type png)
+
+<use bilder/eregi-png.png>
+<bilder/jpg-eregi.png, id=1257, 269.005pt x 79.29625pt>
+File: bilder/jpg-eregi.png Graphic file (type png)
+
+<use bilder/jpg-eregi.png>
+<bilder/wsdl-valid.png, id=1259, 1149.29375pt x 715.67375pt>
 File: bilder/wsdl-valid.png Graphic file (type png)
 
 <use bilder/wsdl-valid.png>
 File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png> [68 <./bilder/wsdl-valid.png>] <bilder/cwsdl2.png, id=12
-71, 687.56876pt x 336.25626pt>
+ <use bilder/fzk2.png> [68 <./bilder/eregi-png.png> <./bilder/jpg-eregi.png> <.
+/bilder/wsdl-valid.png>]
+<bilder/cwsdl2.png, id=1275, 687.56876pt x 336.25626pt>
 File: bilder/cwsdl2.png Graphic file (type png)
 
-<use bilder/cwsdl2.png> (./tex/plugin-del.tex
-(/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
+<use bilder/cwsdl2.png>
+File: bilder/fzk2.png Graphic file (type png)
+ <use bilder/fzk2.png> [69 <./bilder/cwsdl2.png>]
+(./tex/plugin-del.tex (/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
 File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 ))
 (/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
 File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 )
-File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png>
-[69 <./bilder/cwsdl2.png>] (/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
+(/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
 File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 )))
 File: bilder/fzk2.png Graphic file (type png)
-<use bilder/fzk2.png> [70] (./tex/ergebnis.tex
-<bilder/demo.png, id=1311, 835.12pt x 687.56876pt>
+ <use bilder/fzk2.png>
+[70] (./tex/ergebnis.tex <bilder/demo.png, id=1316, 835.12pt x 687.56876pt>
 File: bilder/demo.png Graphic file (type png)
- <use bilder/demo.png>
-Underfull \hbox (badness 10000) in paragraph at lines 21--24
+
+<use bilder/demo.png>
+Underfull \hbox (badness 10000) in paragraph at lines 24--27
 
  []
 
 File: bilder/fzk2.png Graphic file (type png)
 <use bilder/fzk2.png> [71 <./bilder/demo.png (PNG copy)>]
-<bilder/cpu-load2.png, id=1318, 512.91624pt x 315.1775pt>
+<bilder/cpu-load2.png, id=1323, 512.91624pt x 315.1775pt>
 File: bilder/cpu-load2.png Graphic file (type png)
 
 <use bilder/cpu-load2.png>)
@@ -1281,12 +1291,9 @@ File: bilder/fzk2.png Graphic file (type png)
 <use bilder/fzk2.png> [73]
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png> [74]
-Underfull \hbox (badness 10000) in paragraph at lines 57--60
-
- []
-
 File: bilder/fzk2.png Graphic file (type png)
-<use bilder/fzk2.png> [75])
+ <use bilder/fzk2.png>
+[75])
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png> [76] (./bach.gls
 Underfull \hbox (badness 1776) in paragraph at lines 10--11
@@ -1507,10 +1514,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 13599 strings out of 94074
- 195125 string characters out of 1165153
- 625600 words of memory out of 1500000
- 15950 multiletter control sequences out of 10000+50000
+ 13614 strings out of 94074
+ 195406 string characters out of 1165153
+ 625664 words of memory out of 1500000
+ 15959 multiletter control sequences out of 10000+50000
  41062 words of font info for 91 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
  48i,17n,93p,1130b,3394s stack positions out of 5000i,500n,6000p,200000b,5000s
@@ -1626,9 +1633,9 @@ esky/cm/cmsl12.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmsy10.pfb>
 exlive/fonts/type1/bluesky/cm/cmtt10.pfb></usr/share/texmf-texlive/fonts/type1/
 bluesky/cm/cmtt12.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmtt8.pf
 b></usr/share/texmf-texlive/fonts/type1/bluesky/ams/msam10.pfb>
-Output written on bach.pdf (89 pages, 7577328 bytes).
+Output written on bach.pdf (89 pages, 7583318 bytes).
 PDF statistics:
- 1715 PDF objects out of 1728 (max. 8388607)
- 510 named destinations out of 1000 (max. 131072)
- 610 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1724 PDF objects out of 1728 (max. 8388607)
+ 514 named destinations out of 1000 (max. 131072)
+ 620 words of extra memory for PDF output out of 10000 (max. 10000000)
 
