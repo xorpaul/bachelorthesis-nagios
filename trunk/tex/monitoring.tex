@@ -62,16 +62,16 @@ Diese können bei einem Ausfall des Hauptüberwachungsservers die Verantwortlich
 \subsubsection{Netzwerkstruktur und Abhängigkeiten}
 Die Überwachung von Hosts und Services über das Netzwerk erzeugt normalerweise immer zusätzlichen \gls{IP}-Traffic.
 Das bedeutet, dass jede Überquerung weiterer Netzwerkknoten, die zwischen dem Überwachungsserver und den zu überwachenden Geräten liegen, eine weitere Belastung für das Netzwerk bedeutet, sowie eine Abhängigkeit zwischen Host und Server einführt.
-
+\newpage
 \begin{figure}[ht]
 	\centering
-	   \fbox{\includegraphics[width=0.5\textwidth]{bilder/dependent.png}}
+	   \fbox{\includegraphics[width=0.55\textwidth]{bilder/dependent2.png}}
 	   %\fbox{Quelle: \cite{Jose07} S. 5}
-		\caption[Zusätzliche Netzwerkabhängigkeit und Netzwerkbelastung]{Zusätzliche Netzwerkabhängigkeit und Netzwerkbelastung\protect\footnote}
+		\caption[Zusätzliche Netzwerkabhängigkeit und Netzwerkbelastung]{Zusätzliche Netzwerkabhängigkeit und Netzwerkbelastung}
 		\label{depend}
 \end{figure}
-\footnotetext{Quelle: \cite{Jose07} S. 5}
-\newpage
+%\footnotetext{Quelle: \cite{Jose07} S. 5}
+
 In der Abbildung \ref{depend} erzeugt der Router 1 die zuvor beschriebene zusätzliche Netzwerkabhängigkeit und Netzwerkbelastung, da der Server 1 bei einem Ausfall des Routers nicht mehr durch den Überwachungsserver erreichbar ist und jede Überprüfung, die vom Überwachungsserver gesendet wird den Router mit dem Routing der Pakete belastet.
 
 Deshalb gilt es laut \cite{Jose07} S. 5 folgende zwei Punkte beim Erstellen eines Überwachungssystems zu beachten:
