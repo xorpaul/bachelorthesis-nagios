@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2009.1.26)  19 AUG 2009 10:02
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2009.1.26)  19 AUG 2009 10:58
 entering extended mode
  %&-line parsing enabled.
 **bach.tex
@@ -577,7 +577,7 @@ LaTeX Info: Redefining \pageref on input line 69.
 \openout7 = `bach.out'.
 
  ABD: EveryShipout initializing macros
-<Titelblatt.pdf, id=185, page=1, 597.23125pt x 845.1575pt>
+<Titelblatt.pdf, id=189, page=1, 597.23125pt x 845.1575pt>
 File: Titelblatt.pdf Graphic file (type pdf)
 
 <use Titelblatt.pdf, page 1>
@@ -607,26 +607,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 32--32
  []
 
 ) [2{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./bach.toc
-LaTeX Font Info:    Try loading font information for U+msa on input line 2.
+LaTeX Font Info:    Try loading font information for U+msa on input line 5.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2002/01/19 v2.2g AMS font definitions
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 2.
+LaTeX Font Info:    Try loading font information for U+msb on input line 5.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2002/01/19 v2.2g AMS font definitions
-) [3]
-Overfull \hbox (0.37392pt too wide) in paragraph at lines 68--68
- [][] [][]\T1/aer/m/n/12 Auswahl und Kon-fi-gu-ra-ti-on des Nagios-Agenten[] []
-[]  
- []
-
-)
+) [3])
 \tf@toc=\write8
 \openout8 = `bach.toc'.
 
- [4] (./tex/einleitung.tex
+ [4]
+(./tex/einleitung.tex
 Underfull \hbox (badness 10000) in paragraph at lines 43--46
 
  []
@@ -636,7 +631,7 @@ been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.46 
-      <bilder/fzk2.png, id=267, 132.495pt x 231.264pt>
+      <bilder/fzk2.png, id=272, 132.495pt x 231.264pt>
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png>
 [1 <./bilder/fzk2.png>]
@@ -693,7 +688,7 @@ Overfull \hbox (1.52225pt too wide) in paragraph at lines 6--7
 
 File: bilder/fzk2.png Graphic file (type png)
 <use bilder/fzk2.png> [5]
-<bilder/dist_mon12.png, id=300, 222.8325pt x 248.72925pt>
+<bilder/dist_mon12.png, id=305, 222.8325pt x 248.72925pt>
 File: bilder/dist_mon12.png Graphic file (type png)
 
 <use bilder/dist_mon12.png>
@@ -704,23 +699,23 @@ r sehr ho-hen An-zahl von zu über-
 
 File: bilder/fzk2.png Graphic file (type png)
 <use bilder/fzk2.png> [6 <./bilder/dist_mon12.png>]
-<bilder/dist_monp.png, id=310, 226.446pt x 248.72925pt>
+<bilder/dist_monp.png, id=315, 226.446pt x 248.72925pt>
 File: bilder/dist_monp.png Graphic file (type png)
 
 <use bilder/dist_monp.png>
-<bilder/dependent.png, id=312, 1167.36125pt x 795.97375pt>
-File: bilder/dependent.png Graphic file (type png)
-
-<use bilder/dependent.png>
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png> [7 <./bilder/dist_monp.png>]
+<bilder/dependent2.png, id=325, 322.3242pt x 226.6869pt>
+File: bilder/dependent2.png Graphic file (type png)
+
+<use bilder/dependent2.png>
 Overfull \hbox (2.79346pt too wide) in paragraph at lines 80--85
  \T1/aer/bx/n/12 Über-wa-chungs-red-un-dan-zen ver-mei-den[] \T1/aer/m/n/12 Red
 -un-dan-te Über-wa-chung ent-
  []
 
 File: bilder/fzk2.png Graphic file (type png)
-<use bilder/fzk2.png> [8 <./bilder/dependent.png>]
+<use bilder/fzk2.png> [8 <./bilder/dependent2.png (PNG copy)>]
 Overfull \hbox (5.07245pt too wide) in paragraph at lines 94--96
  \T1/aer/bx/n/12 Mi-ni-ma-le Netz-werk-be-las-tung[] \T1/aer/m/n/12 Um be-reits
  stark be-las-te-te Netz-werk-punk-
@@ -749,7 +744,7 @@ in nicht-körperlichen
  []
 
 File: bilder/fzk2.png Graphic file (type png)
-<use bilder/fzk2.png> [11] <bilder/cci4.png, id=360, 338.2236pt x 213.9192pt>
+<use bilder/fzk2.png> [11] <bilder/cci4.png, id=362, 338.2236pt x 213.9192pt>
 File: bilder/cci4.png Graphic file (type png)
 
 <use bilder/cci4.png>
@@ -768,13 +763,19 @@ en Sin-
 
 File: bilder/fzk2.png Graphic file (type png)
 <use bilder/fzk2.png> [13]
-<bilder/3aufgaben.png, id=377, 256.3176pt x 270.0489pt>
+<bilder/3aufgaben.png, id=379, 256.3176pt x 270.0489pt>
 File: bilder/3aufgaben.png Graphic file (type png)
 
 <use bilder/3aufgaben.png>
-Overfull \hbox (24.65767pt too wide) in paragraph at lines 75--77
+Overfull \hbox (24.65767pt too wide) in paragraph at lines 75--79
 \T1/aer/m/n/12 ons-be-reich Ein-ga-be die Auf-ga-be die-se Do-ku-men-te dem Dok
 umenten-Management-
+ []
+
+
+Overfull \hbox (4.46178pt too wide) in paragraph at lines 81--83
+ \T1/aer/bx/n/12 Do-ku-men-ten-ein-gang[] \T1/aer/m/n/12 Hier wird das Zu-spie-
+len der Do-ku-men-te in das [][]DMS[]-
  []
 
 File: bilder/fzk2.png Graphic file (type png)
@@ -796,13 +797,13 @@ Overfull \hbox (5.9261pt too wide) in paragraph at lines 149--150
 -ter-schied zwi-schen [][]CMS[]-
  []
 
-<bilder/cmsdms3.png, id=431, 330.5148pt x 206.9331pt>
+<bilder/cmsdms3.png, id=433, 330.5148pt x 206.9331pt>
 File: bilder/cmsdms3.png Graphic file (type png)
  <use bilder/cmsdms3.png>
 File: bilder/fzk2.png Graphic file (type png)
 
 <use bilder/fzk2.png> [18 <./bilder/cmsdms3.png>]
-<bilder/ucm.png, id=447, 513.92pt x 288.07625pt>
+<bilder/ucm.png, id=450, 513.92pt x 288.07625pt>
 File: bilder/ucm.png Graphic file (type png)
  <use bilder/ucm.png>
 File: bilder/fzk2.png Graphic file (type png)
@@ -818,28 +819,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
  []
 
-
+File: bilder/fzk2.png Graphic file (type png)
+<use bilder/fzk2.png> [20]
 Overfull \hbox (0.24751pt too wide) in paragraph at lines 12--13
 \T1/aer/m/n/12 Ap-pli-ka-tio-nen als wie-der-ver-wend-ba-re und of-fen zu-greif
 -ba-re Diens-
  []
 
-File: bilder/fzk2.png Graphic file (type png)
-<use bilder/fzk2.png> [20] <bilder/soa1.png, id=484, 1095.09125pt x 136.51pt>
+<bilder/soa1.png, id=487, 1095.09125pt x 136.51pt>
 File: bilder/soa1.png Graphic file (type png)
-
-<use bilder/soa1.png> <bilder/soa2.png, id=488, 1088.065pt x 229.85875pt>
+ <use bilder/soa1.png>
+<bilder/soa2.png, id=491, 1088.065pt x 229.85875pt>
 File: bilder/soa2.png Graphic file (type png)
-
-<use bilder/soa2.png>
-File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png> [21 <./bilder/soa1.png>]
+ <use bilder/soa2.png>
 File: bilder/fzk2.png Graphic file (type png)
 
-<use bilder/fzk2.png> [22 <./bilder/soa2.png>]
-<bilder/nusoap.png, id=524, 406.13704pt x 254.47183pt>
+<use bilder/fzk2.png> [21 <./bilder/soa1.png>]
+File: bilder/fzk2.png Graphic file (type png)
+ <use bilder/fzk2.png> [22 <./bilder/soa2.png>] <bilder/nusoap.png, id=523, 406
+.13704pt x 254.47183pt>
 File: bilder/nusoap.png Graphic file (type png)
- <use bilder/nusoap.png>
+
+<use bilder/nusoap.png>
 Overfull \hbox (24.94504pt too wide) in paragraph at lines 71--71
 [][][][]$\T1/aett/m/n/10 http : / / www . devarticles . com / c / a / PHP / Bui
 lding-[]XML-[]Web-[]Services-[]with-[]PHP-[]NuSOAP /
@@ -860,7 +861,7 @@ Overfull \hbox (20.41092pt too wide) in paragraph at lines 82--84
 
 File: bilder/fzk2.png Graphic file (type png)
 <use bilder/fzk2.png> [24]
-<bilder/uddi-wsdl.png, id=560, 255.8358pt x 194.4063pt>
+<bilder/uddi-wsdl.png, id=561, 255.8358pt x 194.4063pt>
 File: bilder/uddi-wsdl.png Graphic file (type png)
 
 <use bilder/uddi-wsdl.png>))
@@ -874,7 +875,7 @@ na In-sist On Sainthood^^P,
 (./tex/aufbau.tex
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png> [26]
-<bilder/activechecks.png, id=586, 169.63374pt x 287.0725pt>
+<bilder/activechecks.png, id=589, 169.63374pt x 287.0725pt>
 File: bilder/activechecks.png Graphic file (type png)
 
 <use bilder/activechecks.png>
@@ -894,7 +895,7 @@ File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 (/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
 File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 )
-<bilder/example-ping.png, id=597, 795.97375pt x 50.1875pt>
+<bilder/example-ping.png, id=600, 795.97375pt x 50.1875pt>
 File: bilder/example-ping.png Graphic file (type png)
 
 <use bilder/example-ping.png>
@@ -903,7 +904,7 @@ File: bilder/fzk2.png Graphic file (type png)
 texmf-texlive/tex/latex/ucs/utf8x.def
 File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 )
-<bilder/check-swap-white.png, id=627, 471.7625pt x 29.10875pt>
+<bilder/check-swap-white.png, id=630, 471.7625pt x 29.10875pt>
 File: bilder/check-swap-white.png Graphic file (type png)
 
 <use bilder/check-swap-white.png>
@@ -918,35 +919,35 @@ File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png>
 [30 <./bilder/check-swap-white.png (PNG copy)>]
-<bilder/hs-states.png, id=658, 762.85pt x 216.81pt>
+<bilder/hs-states.png, id=661, 762.85pt x 216.81pt>
 File: bilder/hs-states.png Graphic file (type png)
  <use bilder/hs-states.png>
 File: bilder/fzk2.png Graphic file (type png)
 
 <use bilder/fzk2.png> [31 <./bilder/hs-states.png>]
-<bilder/statetransitions.png, id=669, 434.62375pt x 181.67876pt>
+<bilder/statetransitions.png, id=672, 434.62375pt x 181.67876pt>
 File: bilder/statetransitions.png Graphic file (type png)
 
 <use bilder/statetransitions.png>) (./tex/services.tex
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png>
 [32 <./bilder/statetransitions.png (PNG copy)>]
-<bilder/nagios-kern.png, id=681, 860.21375pt x 595.22375pt>
+<bilder/nagios-kern.png, id=684, 860.21375pt x 595.22375pt>
 File: bilder/nagios-kern.png Graphic file (type png)
 
 <use bilder/nagios-kern.png>
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png> [33 <./bilder/nagios-kern.png>] <bilder/check-http2.png,
- id=694, 652.4375pt x 27.10126pt>
+ id=697, 652.4375pt x 27.10126pt>
 File: bilder/check-http2.png Graphic file (type png)
 
 <use bilder/check-http2.png>
-<bilder/check_by_ssh.png, id=699, 718.685pt x 28.105pt>
+<bilder/check_by_ssh.png, id=702, 718.685pt x 28.105pt>
 File: bilder/check_by_ssh.png Graphic file (type png)
 
 <use bilder/check_by_ssh.png>
 File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png> [34 <./bilder/check-http2.png>] <bilder/nrpe.png, id=711
+ <use bilder/fzk2.png> [34 <./bilder/check-http2.png>] <bilder/nrpe.png, id=714
 , 665.6983pt x 164.89775pt>
 File: bilder/nrpe.png Graphic file (type png)
  <use bilder/nrpe.png>
@@ -969,7 +970,7 @@ Overfull \hbox (21.68184pt too wide) in paragraph at lines 84--84
 oder Interface-
  []
 
-<bilder/mib.png, id=742, 310.2792pt x 151.767pt>
+<bilder/mib.png, id=745, 310.2792pt x 151.767pt>
 File: bilder/mib.png Graphic file (type png)
  <use bilder/mib.png>
 File: bilder/fzk2.png Graphic file (type png)
@@ -977,7 +978,7 @@ File: bilder/fzk2.png Graphic file (type png)
 <use bilder/fzk2.png> [36]
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png> [37 <./bilder/mib.png>]
-<bilder/nsca.png, id=772, 645.41125pt x 202.7575pt>
+<bilder/nsca.png, id=775, 645.41125pt x 202.7575pt>
 File: bilder/nsca.png Graphic file (type png)
  <use bilder/nsca.png>
 Underfull \hbox (badness 10000) in paragraph at lines 146--148
@@ -988,7 +989,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 146--148
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png> [38 <./bilder/nsca.png (PNG copy)>]
 (./tex/stellent.tex
-<bilder/basic_architecture.png, id=786, 513.92pt x 760.8425pt>
+<bilder/basic_architecture.png, id=789, 513.92pt x 760.8425pt>
 File: bilder/basic_architecture.png Graphic file (type png)
 
 <use bilder/basic_architecture.png>
@@ -1000,7 +1001,7 @@ nt-[]t146/$[]|
 
 File: bilder/fzk2.png Graphic file (type png)
 <use bilder/fzk2.png> [39 <./bilder/basic_architecture.png (PNG copy)>]
-<bilder/contenserver.png, id=800, 1446.40375pt x 1048.91875pt>
+<bilder/contenserver.png, id=803, 1446.40375pt x 1048.91875pt>
 File: bilder/contenserver.png Graphic file (type png)
 
 <use bilder/contenserver.png>
@@ -1012,7 +1013,7 @@ Overfull \hbox (10.522pt too wide) in paragraph at lines 55--59
  []
 
 File: bilder/fzk2.png Graphic file (type png)
-<use bilder/fzk2.png> [41] <bilder/bdb.png, id=828, 1096.095pt x 683.55376pt>
+<use bilder/fzk2.png> [41] <bilder/bdb.png, id=831, 1096.095pt x 683.55376pt>
 File: bilder/bdb.png Graphic file (type png)
 
 <use bilder/bdb.png>
@@ -1038,16 +1039,24 @@ File: bilder/fzk2.png Graphic file (type png)
 <use bilder/fzk2.png> [44]
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png> [45]
+Overfull \hbox (0.22203pt too wide) in paragraph at lines 172--176
+\T1/aer/m/n/12 ne Zu-stän-de an. So kommt es nach dem Ein-che-cken in den Zu-st
+and ^^R\T1/aer/m/it/12 genwww\T1/aer/m/n/12 ^^P.
+ []
+
 File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png>
-[46]
+<use bilder/fzk2.png> [46]
+Underfull \hbox (badness 10000) in paragraph at lines 199--206
+
+ []
+
 File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png> [47]
-<bilder/pyramide_fertig2.png, id=869, 333.8874pt x 272.6988pt>
+<use bilder/fzk2.png> [47]
+<bilder/pyramide_fertig2.png, id=871, 333.8874pt x 272.6988pt>
 File: bilder/pyramide_fertig2.png Graphic file (type png)
 
 <use bilder/pyramide_fertig2.png>
-Overfull \hbox (17.87161pt too wide) in paragraph at lines 202--203
+Overfull \hbox (17.87161pt too wide) in paragraph at lines 212--213
  [][] 
  []
 
@@ -1072,7 +1081,7 @@ Overfull \hbox (25.53879pt too wide) in paragraph at lines 7--8
 [][]| 
  []
 
-) <bilder/monitoring-windows.png, id=925, 438.63875pt x 152.57pt>
+) <bilder/monitoring-windows.png, id=928, 438.63875pt x 152.57pt>
 File: bilder/monitoring-windows.png Graphic file (type png)
 
 <use bilder/monitoring-windows.png>
@@ -1083,7 +1092,7 @@ Underfull \hbox (badness 6204) in paragraph at lines 52--52
 
 File: bilder/fzk2.png Graphic file (type png)
 <use bilder/fzk2.png> [52 <./bilder/monitoring-windows.png>]
-<bilder/check_nt-stdp.png, id=935, 604.2575pt x 27.10126pt>
+<bilder/check_nt-stdp.png, id=938, 604.2575pt x 27.10126pt>
 File: bilder/check_nt-stdp.png Graphic file (type png)
 
 <use bilder/check_nt-stdp.png>
@@ -1091,7 +1100,7 @@ File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png> [53 <./bilder/check_nt-stdp.png>]
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png> [54]
-<bilder/nsc2.png, id=954, 500.87125pt x 386.44376pt>
+<bilder/nsc2.png, id=957, 500.87125pt x 386.44376pt>
 File: bilder/nsc2.png Graphic file (type png)
  <use bilder/nsc2.png>
 Overfull \hbox (7.97778pt too wide) in paragraph at lines 101--103
@@ -1099,7 +1108,7 @@ Overfull \hbox (7.97778pt too wide) in paragraph at lines 101--103
 -Plugins \T1/aer/m/it/12 check_nt
  []
 
-<bilder/nagios-active-nsclient-and-nrpe.png, id=958, 379.4175pt x 186.6975pt>
+<bilder/nagios-active-nsclient-and-nrpe.png, id=961, 379.4175pt x 186.6975pt>
 File: bilder/nagios-active-nsclient-and-nrpe.png Graphic file (type png)
 
 <use bilder/nagios-active-nsclient-and-nrpe.png>
@@ -1116,11 +1125,11 @@ Overfull \hbox (1.63155pt too wide) in paragraph at lines 154--155
  dass durch den Nagios-
  []
 
-<bilder/nrpe-check.png, id=1001, 666.49pt x 27.10126pt>
+<bilder/nrpe-check.png, id=1004, 666.49pt x 27.10126pt>
 File: bilder/nrpe-check.png Graphic file (type png)
 
 <use bilder/nrpe-check.png>
-<bilder/nsclient-check.png, id=1003, 687.56876pt x 27.10126pt>
+<bilder/nsclient-check.png, id=1006, 687.56876pt x 27.10126pt>
 File: bilder/nsclient-check.png Graphic file (type png)
 
 <use bilder/nsclient-check.png>
@@ -1146,7 +1155,7 @@ File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 )
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png>
-[58] <bilder/servproc.png, id=1055, 584.1825pt x 29.10875pt>
+[58] <bilder/servproc.png, id=1058, 584.1825pt x 29.10875pt>
 File: bilder/servproc.png Graphic file (type png)
 
 <use bilder/servproc.png>
@@ -1174,11 +1183,11 @@ File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 )
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png>
-[61] <bilder/logcheckwarn.png, id=1123, 991.705pt x 106.3975pt>
+[61] <bilder/logcheckwarn.png, id=1126, 991.705pt x 106.3975pt>
 File: bilder/logcheckwarn.png Graphic file (type png)
 
 <use bilder/logcheckwarn.png> (./tex/benutzersim.tex
-<bilder/Benutzersimulation.png, id=1126, 630.355pt x 472.76625pt>
+<bilder/Benutzersimulation.png, id=1129, 630.355pt x 472.76625pt>
 File: bilder/Benutzersimulation.png Graphic file (type png)
 
 <use bilder/Benutzersimulation.png>
@@ -1190,7 +1199,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--29
 
 File: bilder/fzk2.png Graphic file (type png)
 <use bilder/fzk2.png> [63 <./bilder/Benutzersimulation.png>]
-<bilder/wsdlscrn.png, id=1148, 746.79pt x 250.9375pt>
+<bilder/wsdlscrn.png, id=1151, 746.79pt x 250.9375pt>
 File: bilder/wsdlscrn.png Graphic file (type png)
 
 <use bilder/wsdlscrn.png> (./tex/plugin-checkin.tex
@@ -1205,7 +1214,7 @@ File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 )
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png>
-[64 <./bilder/wsdlscrn.png>]) <bilder/wsdl.png, id=1171, 511.511pt x 273.02pt>
+[64 <./bilder/wsdlscrn.png>]) <bilder/wsdl.png, id=1174, 511.511pt x 273.02pt>
 File: bilder/wsdl.png Graphic file (type png)
 
 <use bilder/wsdl.png>
@@ -1219,7 +1228,7 @@ File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 )
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png>
-[66] <bilder/wsdl-valid.png, id=1233, 1149.29375pt x 715.67375pt>
+[66] <bilder/wsdl-valid.png, id=1236, 1149.29375pt x 715.67375pt>
 File: bilder/wsdl-valid.png Graphic file (type png)
 
 <use bilder/wsdl-valid.png>
@@ -1227,7 +1236,7 @@ File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png> [67 <./bilder/wsdl-valid.png>]
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png> [68]
-<bilder/cwsdl2.png, id=1251, 687.56876pt x 336.25626pt>
+<bilder/cwsdl2.png, id=1254, 687.56876pt x 336.25626pt>
 File: bilder/cwsdl2.png Graphic file (type png)
 
 <use bilder/cwsdl2.png> (./tex/plugin-del.tex
@@ -1244,7 +1253,7 @@ File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 )))
 File: bilder/fzk2.png Graphic file (type png)
 <use bilder/fzk2.png> [70] (./tex/ergebnis.tex
-<bilder/demo.png, id=1291, 835.12pt x 687.56876pt>
+<bilder/demo.png, id=1294, 835.12pt x 687.56876pt>
 File: bilder/demo.png Graphic file (type png)
  <use bilder/demo.png>
 Underfull \hbox (badness 10000) in paragraph at lines 21--24
@@ -1253,7 +1262,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 21--24
 
 File: bilder/fzk2.png Graphic file (type png)
 <use bilder/fzk2.png> [71 <./bilder/demo.png (PNG copy)>]
-<bilder/cpu-load2.png, id=1298, 512.91624pt x 315.1775pt>
+<bilder/cpu-load2.png, id=1301, 512.91624pt x 315.1775pt>
 File: bilder/cpu-load2.png Graphic file (type png)
 
 <use bilder/cpu-load2.png>)
@@ -1504,23 +1513,20 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 13595 strings out of 94074
- 195060 string characters out of 1165153
- 618133 words of memory out of 1500000
- 15947 multiletter control sequences out of 10000+50000
+ 13596 strings out of 94074
+ 195083 string characters out of 1165153
+ 618161 words of memory out of 1500000
+ 15948 multiletter control sequences out of 10000+50000
  41062 words of font info for 91 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
  48i,17n,93p,1130b,3394s stack positions out of 5000i,500n,6000p,200000b,5000s
-pdfTeX warning (dest): name{Hfootnote.35} has been referenced but does not ex
+pdfTeX warning (dest): name{Hfootnote.34} has been referenced but does not ex
 ist, replaced by a fixed one
 
-pdfTeX warning (dest): name{Hfootnote.33} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{Hfootnote.34} has been referenced but does not exis
-t, replaced by a fixed one
-
 pdfTeX warning (dest): name{Hfootnote.32} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.33} has been referenced but does not exis
 t, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.31} has been referenced but does not exis
@@ -1626,9 +1632,9 @@ esky/cm/cmsl12.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmsy10.pfb>
 exlive/fonts/type1/bluesky/cm/cmtt10.pfb></usr/share/texmf-texlive/fonts/type1/
 bluesky/cm/cmtt12.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmtt8.pf
 b></usr/share/texmf-texlive/fonts/type1/bluesky/ams/msam10.pfb>
-Output written on bach.pdf (89 pages, 8281696 bytes).
+Output written on bach.pdf (89 pages, 7592990 bytes).
 PDF statistics:
- 1695 PDF objects out of 1728 (max. 8388607)
+ 1698 PDF objects out of 1728 (max. 8388607)
  509 named destinations out of 1000 (max. 131072)
- 594 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 602 words of extra memory for PDF output out of 10000 (max. 10000000)
 

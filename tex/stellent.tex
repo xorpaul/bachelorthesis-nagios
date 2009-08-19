@@ -106,7 +106,7 @@ Dabei können weitere Untergruppen gebildet werden:
 \paragraph{Prozesse}
 \begin{itemize}
 \item \textbf{IdcServerNT.exe} Der Prozess der \gls{OracleUCM}-Awendung.
-\item \textbf{IdcAdminNT.exe} Der Prozess für die Administration von \gls{OracleUCM}.
+\item \textbf{IdcAdminNT.exe} Der Prozess für das Administration-Webinterface von \gls{OracleUCM}.
 \item \textbf{w3wp.exe} Der Prozess des Webservers Microsoft "`Internet Information Services"'
 \end{itemize}
 
@@ -115,7 +115,7 @@ Dabei können weitere Untergruppen gebildet werden:
 \item \textbf{IdcContentService}  Den Zustand des \pictext{sccdms01}-Dienst überprüfen.
 \item \textbf{IdcAdminService}  Den Zustand des \pictext{sccdms01\_admin}-Dienst für die Administration überprüfen.
 \item \textbf{Zeitsynchronisationsdienst} Überprüfen, ob der \pictext{W32TIME}-Dienst, der für den Zeitabgleich mit einem Zeitserver zuständig ist, läuft und die Abweichung zwischen Client und Zeitserver festhalten.
-\item \textbf{Antivirusdienst} Den Zustand den Dienstes überprüfen, der für die ständig Updates des Virusscanners Symantec AntiVirus notwendig ist.
+\item \textbf{Antivirusdienst} Den Zustand des Dienstes \pictext{Symantec AntiVirus} überprüfen, der für die Updates des Virusscanners notwendig ist.
 \end{itemize}
 
 \subsection{Überwachung der Funktionalität}
@@ -124,17 +124,17 @@ Durch die vorherigen Tests kann herausgefunden werden, ob eine Anwendung oder ei
 Die Funktionalität kann durch solche Überprüfungen jedoch \textbf{nicht} sichergestellt werden.
 Da beispielsweise der Prozess bzw. Dienst des Webservers gestartet ist, jedoch keine Webseite aufgerufen werden kann.
 %Da beispielsweise der Webserver aufgrund eines kritischen Fehlers nicht erreichbar ist, der Prozess bzw. Dienst dennoch läuft.
-Daher muss eine weitere Art von Checks die Anwendungen auf ihre Funktionalität testen.
+Daher muss eine weitere Art von Überprüfungen die Anwendungen auf ihre Funktionalität testen.
 
 \begin{itemize}
-\item \textbf{Webserver} Aufruf einer Webseite auf dem Server. Wenn auf diese Anfrage eine gültige Antwort in Form einer Statuscode-Meldung erfolgt, kann der wirkliche Zustand des Webservers festgestellt werden.
+\item \textbf{Webserver} Aufruf einer Webseite auf dem Server. Wenn auf diese Anfrage eine gültige Antwort in Form einer Statuscode-Meldung erfolgt, kann die korrekte Funktion des Webservers festgestellt werden.
 
 \item \textbf{Webinterface des Oracle UCM} Zusätzlich wird mit dieser Abfrage die Integration des Content-Management-Systems in den Webserver überwacht, da hier nicht nur der Webserver, sondern eine \gls{OracleUCM} spezifische Webseite abgefragt wird.
 
 \item \textbf{Benutzeranmeldung am Oracle UCM} Hier wird getestet, ob sich ein Benutzer erfolgreich am System anmelden kann.
-Dies wird mit Anmeldungsdaten eines lokalen Benutzers und eines Active Directory-Benutzers durchgeführt um zusätzlich die Verbindung zum ADS-Server zu testen.
+Dies wird mit Anmeldungsdaten eines lokalen Benutzers und eines Active Directory-Benutzers durchgeführt um gleichzeitig die Verbindung zum Active Directory-Server zu testen.
 
-\item \textbf{Oracle Datenbank} Wenn keine Verbindung zur Oracle Datenbank möglich ist, können keine neuen Informationen gespeichert werden. 
+\item \textbf{Oracle Datenbank} Überprüft den Verbindungsaufbau zur Datenbank. Wenn keine Verbindung zur Oracle-Datenbank möglich ist, können keine neuen Informationen gespeichert werden. 
 
 %\item \textbf{Status von Cronjobs} In periodischen Zeitabständen werden Programme aufgerufen, deren Aufruf und Endstatus/Endergebniss überwacht werden muss. 
 %Damit nicht das vorherige Ergebnis zu einem False Negative führt, müssen hier zusätzliche Zeitinformationen/zeitliche Parameter beachtet/bedacht werden.
@@ -160,14 +160,21 @@ Die Oracle UCM Anwendung erstellt drei verschiedene Arten von Logdateien:\footno
 
 Um alle Logs ohne Probleme im Internetbrowser anzuzeigen, liegen alle Logdateien im HTML-Format vor.
 Alle drei Arten von Logs bestehen jeweils aus 30 verschiedenen Dateien, die sich täglich abwechseln.
-Dadurch wird für jeden Tag im Monat eine separate Datei verwendet, um bei vielen Warnungs- und Fehlermeldungen durch die chronologische Anordnung/Hierarchie den Überblick zu behalten.
+Dadurch wird für jeden Tag im Monat eine separate Datei verwendet, um bei vielen Warnungs- und Fehlermeldungen durch die chronologische Anordnung den Überblick zu behalten.
 Dabei werden die Logdateien zwangsweise nach 30 Tagen nacheinander überschrieben.
 
-Diese Rotation der Logdateien muss bei der Durchsuchung nach Stopwörter beachtet werden, damit stets die aktuelle Logdatei überwacht wird und keine veralteten Informationen für False Positives-Meldungen durch Nagios sorgen.
+Diese Rotation der Logdateien muss bei der Durchsuchung nach Stopwörter beachtet werden, damit stets die aktuelle Logdatei überwacht wird und keine veralteten Informationen für False Positive-Meldungen durch Nagios sorgen.
 
 %wieso nur plugin check\_log und nicht einfahc umfangreicheres Standalone Programmw ie syslog\_nd oder 8pussy
 
 \subsection{Benutzersimulation}
+
+Ein Dokument nimmt in seinem Lebenszyklus, siehe Abbildung \ref{lifecircle}, verschiedene Zustände an.
+So kommt es nach dem Einchecken in den Zustand \pictext{genwww}.
+Der darauf folgende Zustand \pictext{fertig} gibt die erfolgreiche Konvertierung des Dokumentes bekannt.
+Die folgende Indizierung wird durch den Zustand \pictext{freigegeben} angezeigt.
+
+Die Benutzersimulation hat die Aufgabe alle Schritte der Zustandsänderung durch typische Abfragen zu überprüfen.
 
 \begin{itemize}
 
@@ -186,14 +193,17 @@ Daher muss überprüft werden, ob diese Daten richtig ausgelesen, der Datenbank 
 \item \textbf{Suchfunktion} Nach einer erfolgreichen Indizierung muss das eingecheckte Dokument per Suchanfrage gefunden werden.
 Ob die Suche und Indizierung erfolgreich abgelaufen ist, wird zusätzlich überprüft. 
 \end{itemize}
+
+\subsection{Zusammenfassung}
+
 Die Basis für die alle anderen Tests bildet die Systemüberwachung.
 An erster Stelle der Systemüberwachung steht die schlichte Erreichbarkeit über das Netzwerk per Ping.
 Wenn der Server nicht erreichbar ist, können auch keine weiterführende Prüfungen durchgeführt werden.
 Zur Systemüberwachung gehören auch allgemeine Informationen über die Systemressourcen wie freier Festplattenspeicher oder Prozessorauslastung.
 Die nächste Grundlage für die darüber liegenden Tests bildet die Überprüfung der laufenden Prozesse und der Status verschiedener Dienste bzw. Services.
 Sollten bestimmte Prozesse nicht gefunden werden oder wichtige Dienste nicht gestartet sein, können auf diese Prozesse und Dienste aufbauende Checks nicht funktionieren.
-Beispielweise kann der Funktionalitätstest der Benutzeranmeldung nicht realisierbar sein, wenn bereits zuvor in der Systemüberwachung der Prozess für den Webserver \gls{IIS} nicht gefunden werden konnte.
-\newpage
+Beispielweise kann der Funktionalitätstest der Benutzeranmeldung nicht realisierbar sein, wenn bereits zuvor in der Systemüberwachung der Prozess für den Webserver \gls{IIS} nicht gefunden werden konnte.\\
+
 
 Alle Überwachungselemente lassen sich inklusive ihrer Abhängigkeiten in Form einer Pyramide darstellen, siehe Abbildung \ref{moniele}.
 
