@@ -29,10 +29,11 @@ Dienste, die über das Netzwerk ansprechbar sind, wie bei einem Web- oder \gls{F
 Hierfür muss dem entsprechendem Plugin nur die Netzwerkadresse mitgeteilt werden, siehe Abbildung \ref{check-http} als beispielhafte Überprüfung eines Webservers.
 \begin{figure}[ht]  
 	\centering
-	   \fbox{\includegraphics[width=0.8\textwidth]{bilder/check-http2.png}}
+	   \fbox{\includegraphics[width=0.7\textwidth]{bilder/check-http2.png}}
 		\caption{Ausführung eines netzwerkbasierenden Servicechecks}
 		\label{check-http}
 \end{figure}
+
 Der zuvor gezeigte Test eines netzwerkbasierenden Dienstes wird in Abbildung \ref{nagios-kern} mit dem Client-Rechner 1 abgebildet.
 %Die Überprüfung von nicht netzwerkbasierenden Diensten soll mit den restlichen Client-Rechnern aufgezeigt werden.
 Dies ist die einfachste Überwachungsmethode, da keine zusätzlichen Programme oder aufwändige Konfiguration benötigt wird.
@@ -48,7 +49,7 @@ Damit der Client diese Plugins verwenden kann, müssen sich die gewünschten Plu
 Eine beispielhafte Verwendung mit dem dafür gedachten Nagios-Plugin \pictext{check\_by\_ssh} wird in Abbildung \ref{check-ssh} gezeigt.
 \begin{figure}[ht]
 	\centering
-	   \fbox{\includegraphics[width=0.85\textwidth]{bilder/check_by_ssh.png}}
+	   \fbox{\includegraphics[width=0.7\textwidth]{bilder/check_by_ssh.png}}
 		\caption{Manuelle Ausführung eines Servicechecks über SSH}
 		\label{check-ssh}
 \end{figure}
@@ -56,7 +57,7 @@ Eine beispielhafte Verwendung mit dem dafür gedachten Nagios-Plugin \pictext{ch
 \paragraph{Methode 3 - NRPE}
 
 Eine alternative Möglichkeit solche Dienste auf entfernten Rechnern zu überwachen, ist durch den sogenannten Nagios Remote Plugin Executor (\gls{NRPE}).
-Hier muss auf dem Client ein "`Agent"' installiert werden, welcher einen Port öffnet mit dem der Agent mit dem Nagios-Server kommunizieren kann.
+Hier muss auf dem Client ein "`Agent"' installiert werden, welcher einen Port öffnet mit dem der Nagios-Server kommunizieren kann.
 
 \begin{figure}[ht]
 	\centering
@@ -64,7 +65,7 @@ Hier muss auf dem Client ein "`Agent"' installiert werden, welcher einen Port ö
 		\caption[Aktive Checks mit NRPE]{Aktive Checks mit NRPE\protect\footnote}
 		\label{aktivchecks}
 \end{figure}
-\footnotetext{Quelle: \url{http://www.nagios.org/images/addons/nrpe/nrpe.png}}
+\footnotetext{Quelle: \cite{Nagios}}
 
 Der Nagios Server kann dann Anforderungen über das Nagios-Plugin \pictext{check\_nrpe} an den Client verschicken.
 Ein Aufruf dieses Plugins ist dem des \pictext{check\_by\_ssh} Plugins, siehe Abbildung \ref{check-ssh}, sehr ähnlich.
@@ -141,7 +142,7 @@ Folgende Abbildung soll das Prinzip der passiven Checks verdeutlichen:
 		\caption[Passive Checks mit NSCA]{Passive Checks mit NSCA\protect\footnote}
 		\label{passivchecks}
 \end{figure}
-\footnotetext{Quelle: \url{http://www.nagios.org/images/addons/nsca/nsca.png}}
+\footnotetext{Quelle: \cite{Nagios}}
 
 Das Testprogramm \textit{Remote Application} wird selbständig vom zu überwachenden Rechner \textit{Remote Host} aufgerufen und übermittelt durch das \pictext{send\_ncsa} Plugin die Ergebnisse über das Netzwerk an den Nagios-Server \textit{Monitoring Host}.
 Da auf diesem der NSCA als Daemon läuft können die Ergebnisse an die Nagios-Anwendung zur Auswertung weitergegeben werden.\\

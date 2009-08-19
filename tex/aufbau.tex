@@ -73,7 +73,7 @@ define service{
         use		generic-service #Oberklasse dieses Service-Objektes
         host_name		example.kit.edu
         service_description     HTTP Server #Bezeichnung des Checks
-        check_command		check_http #Angabe des Nagios-Plugins (hier ohne Parameter)
+        check_command		check_http #Angabe des Nagios-Plugins
         }
 \end{lstlisting}
 
@@ -86,13 +86,13 @@ Daher lassen sich die Parameter eines Plugins in der Kommandozeile überprüfen:
 
 \begin{figure}[ht]
 	\centering
-	   \fbox{\includegraphics[width=0.85\textwidth]{bilder/check-swap-white.png}}
+	   \fbox{\includegraphics[width=0.7\textwidth]{bilder/check-swap-white.png}}
 		\caption{Beispielhafte manuelle Ausführung eines Servicechecks}
 		\label{check-swap}
 \end{figure}
 
 Die Ausgabe des Plugins gibt den Zustand des Services an.
-In diesem Fall wird kein Schwellwert überschritten, daher die Meldung \textit{SWAP OK}.
+In diesem Fall wird kein Schwellwert überschritten, daher die Meldung \pictext{SWAP OK}.
 Dieses Plugin liefert noch zusätzliche Performance-Informationen, die mit externen Programmen ausgewertet, gespeichert und visualisiert werden können.
 Standardmäßig werden die Performanzdaten von der normalen Ausgabe mit einem \pictext{|} getrennt.
 Jedoch können auch Werte aus der normalen Textausgabe für die Visualisierung verwendet werden, so dass in diesem Beispiel keine Berechnung des Prozentsatzes notwendig wäre.
@@ -145,8 +145,8 @@ Weiterhin gibt es weiche (\pictext{Soft States}) und harte Zustände (\pictext{H
 		\label{hs-states}
 \end{figure}
 \footnotetext{Quelle: \cite{Barth08} S. 95}
-Ausgehend von einem \textit{OK}-Zustand wird in diesem Beispiel jede fünf Minuten periodisch überprüft, ob sich der Status des überwachten Objektes verändert hat.                                                                                                                                                                                         Nach zehn Minuten wird eine Änderung des Zustandes durch das jeweilige Plugin gemeldet.
-Hier im Beispiel wechselt der Zustand nach \textit{CRITICAL}, zunächst allerdings als Soft State.
+Ausgehend von einem \pictext{OK}-Zustand wird in diesem Beispiel jede fünf Minuten periodisch überprüft, ob sich der Status des überwachten Objektes verändert hat.                                                                                                                                                                                         Nach zehn Minuten wird eine Änderung des Zustandes durch das jeweilige Plugin gemeldet.
+Hier im Beispiel wechselt der Zustand nach \pictext{CRITICAL}, zunächst allerdings als Soft State.
 Daher wird durch Nagios noch keine Benachrichtigung versendet, da es sich um eine Falschmeldung, auch \textit{False Positive} genannt, handeln kann.
 Aufgrund einer kurzfristigen hohen Auslastung des Netzwerkes oder um ein kurzzeitiges Problem, welches sich von alleine wieder normalisiert wie bspw. die Prozessorauslastung nach Beenden einer Anwendung.
 
@@ -154,11 +154,11 @@ Um False Positive-Meldungen zu verhindern, wird der im Soft State befindliche Se
 Sollten diese Überprüfungen den vorherigen Zustand bestätigen, verfestigt sich der aktuelle Zustand, man spricht nun von einem Hard State.
 Erst in diesem Moment werden die entsprechenden Kontaktpersonen über den kritischen Zustand benachrichtigt.
 Sollte sich der Zustand wieder in den Normalzustand begeben und dieser Zustandsübergang wird von dem Plugin festgestellt, wird dies an den Nagios-Server gemeldet.
-Ein Übergang zu dem \textit{OK}-Status wird sofort als Hard State festgesetzt und führt zur sofortigen Benachrichtigung durch Nagios.
+Ein Übergang zu dem \pictext{OK}-Status wird sofort als Hard State festgesetzt und führt zur sofortigen Benachrichtigung durch Nagios.
 
 \paragraph{Flapping}
 Nagios besitzt eine spezielle Funktion um sich zu schnell ändernde Zustände automatisch zu erkennen und die Benachrichtigung von diesen Objekten zu unterbinden.
-Das Verhalten dieser schnell wechselnde Zustände wird auch als \textit{Flapping} bezeichnet und deren Erkennung durch Nagios als \textit{Flap Detection}.
+Das Verhalten dieser schnell wechselnde Zustände wird auch als \textit{Flapping} bezeichnet und deren Erkennung durch Nagios als \pictext{Flap Detection}.
 Bei dieser Flap Detection speichert Nagios die letzten 20 Zustände und errechnet durch einen Algorithmus, welcher die aktuelleren Zustanden höher gewichtet, eine prozentuale Zustandsänderung.
 
 Im folgenden Beispiel wurden sieben Zustandswechsel erfasst.

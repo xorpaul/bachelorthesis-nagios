@@ -22,7 +22,7 @@
 \contentsline {subsection}{\numberline {3.4}Enterprise-Content-Management-Systeme}{20}{subsection.3.4}
 \contentsline {subsection}{\numberline {3.5}Serviceorientierte Architektur}{20}{subsection.3.5}
 \contentsline {subsection}{\numberline {3.6}Web-Services-Architektur}{22}{subsection.3.6}
-\contentsline {paragraph}{SOAP}{24}{section*.10}
+\contentsline {paragraph}{SOAP}{23}{section*.10}
 \contentsline {paragraph}{WSDL}{24}{section*.11}
 \contentsline {paragraph}{UDDI}{24}{section*.12}
 \contentsline {section}{\numberline {4}Nagios}{26}{section.4}
