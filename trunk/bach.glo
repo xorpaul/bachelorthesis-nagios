@@ -44,7 +44,7 @@
 \glossaryentry{SOA?\glossaryentryfield{SOA}{\glsnamefont{SOA}}{Service-Oriented Architecture}{\relax }|setentrycounter{page}\glsnumberformat}{21}
 \glossaryentry{SOA?\glossaryentryfield{SOA}{\glsnamefont{SOA}}{Service-Oriented Architecture}{\relax }|setentrycounter{page}\glsnumberformat}{22}
 \glossaryentry{W3C?\glossaryentryfield{W3C}{\glsnamefont{W3C}}{World Wide Web Consortium}{\relax }|setentrycounter{page}\glsnumberformat}{22}
-\glossaryentry{WSDL?\glossaryentryfield{WSDL}{\glsnamefont{WSDL}}{Web Services Description Language}{\relax }|setentrycounter{page}\glsnumberformat}{22}
+\glossaryentry{WSDL?\glossaryentryfield{WSDL}{\glsnamefont{WSDL}}{Web Services Description Language}{\relax }|setentrycounter{page}\glsnumberformat}{23}
 \glossaryentry{SOAP?\glossaryentryfield{SOAP}{\glsnamefont{SOAP}}{Simple Object Access Protocol}{\relax }|setentrycounter{page}\glsnumberformat}{23}
 \glossaryentry{HTTP?\glossaryentryfield{HTTP}{\glsnamefont{HTTP}}{Hypertext Transfer Protocol}{\relax }|setentrycounter{page}\glsnumberformat}{23}
 \glossaryentry{XML?\glossaryentryfield{XML}{\glsnamefont{XML}}{Extensible Markup Language}{\relax }|setentrycounter{page}\glsnumberformat}{23}
@@ -53,9 +53,9 @@
 \glossaryentry{SOAP?\glossaryentryfield{SOAP}{\glsnamefont{SOAP}}{Simple Object Access Protocol}{\relax }|setentrycounter{page}\glsnumberformat}{23}
 \glossaryentry{XML?\glossaryentryfield{XML}{\glsnamefont{XML}}{Extensible Markup Language}{\relax }|setentrycounter{page}\glsnumberformat}{23}
 \glossaryentry{SOAP?\glossaryentryfield{SOAP}{\glsnamefont{SOAP}}{Simple Object Access Protocol}{\relax }|setentrycounter{page}\glsnumberformat}{23}
-\glossaryentry{SOAP?\glossaryentryfield{SOAP}{\glsnamefont{SOAP}}{Simple Object Access Protocol}{\relax }|setentrycounter{page}\glsnumberformat}{24}
-\glossaryentry{SOAP?\glossaryentryfield{SOAP}{\glsnamefont{SOAP}}{Simple Object Access Protocol}{\relax }|setentrycounter{page}\glsnumberformat}{24}
-\glossaryentry{XML?\glossaryentryfield{XML}{\glsnamefont{XML}}{Extensible Markup Language}{\relax }|setentrycounter{page}\glsnumberformat}{24}
+\glossaryentry{SOAP?\glossaryentryfield{SOAP}{\glsnamefont{SOAP}}{Simple Object Access Protocol}{\relax }|setentrycounter{page}\glsnumberformat}{23}
+\glossaryentry{SOAP?\glossaryentryfield{SOAP}{\glsnamefont{SOAP}}{Simple Object Access Protocol}{\relax }|setentrycounter{page}\glsnumberformat}{23}
+\glossaryentry{XML?\glossaryentryfield{XML}{\glsnamefont{XML}}{Extensible Markup Language}{\relax }|setentrycounter{page}\glsnumberformat}{23}
 \glossaryentry{XML?\glossaryentryfield{XML}{\glsnamefont{XML}}{Extensible Markup Language}{\relax }|setentrycounter{page}\glsnumberformat}{24}
 \glossaryentry{UDDI?\glossaryentryfield{UDDI}{\glsnamefont{UDDI}}{Universal Description, Discovery and Integration protocol}{\relax }|setentrycounter{page}\glsnumberformat}{24}
 \glossaryentry{WSDL?\glossaryentryfield{WSDL}{\glsnamefont{WSDL}}{Web Services Description Language}{\relax }|setentrycounter{page}\glsnumberformat}{24}
