@@ -1,0 +1,127 @@
+\section{Umsetzung}
+In diesem Kapitel wird die Vorgehensweise der zuvor beschriebenen Problemstellungen erörtert.
+
+\subsection{Aufbau der Testumgebung}
+
+
+
+\subsubsection{Aufsetzen eines Nagios-Test-Systems}
+Da die einzelnen Überwachungselemente in der Überwachungssoftware Nagios nach und nach eingetragen (/ definiert / assoziiert / verbunden) werden müssen, ist ein häufiges Neustarten der Nagios-Anwendung notwendig, damit die neuen Konfigurationsdateien übernommen werden.
+
+Damit dies nicht auf dem bereits verwendetem Nagios-Server durchgeführt werden muss, wird ein Nagios-Testserver für diesen Zweck eingesetzt.
+
+Da Nagios ein Unix-ähnliches Betriebssystem erfordert, wird für diesen Zweck die Linux-Distribution Debian als Betriebssystem des Testservers verwendet.
+
+\subsubsection{Bilddatenbank als virtuelle Maschine}
+Für die Simulation der verschiedenen Fehlerzuständen der einzelnen Überwachungselemente wird eine virtuelle Maschine mit einer \gls{OracleUCM} Prototypinstallation, die extra als Entwicklungsplattform erstellt wurde, verwendet.
+
+\input{tex/agents.tex}
+
+\subsection{Umsetzung der Systemüberwachung}
+
+Die in Kapitel \ref{syschecks} aufgelisten Prozesse und Services können durch den NSClient-Dienst vom Nagios-Server überwacht werden.
+Dafür wird der in Listing \ref{cus-nt-servdef} definierte verkürzte Befehl für \textit{check\_nt} benutzt.
+
+\begin{lstlisting}[captionpos=b, caption=Prozess- und Service-Check Servicedefintionen, label=procservdef, breaklines = true, language=sh]
+#Prozess des IIS Webservers
+define service{
+        use                     generic-service
+        host_name               example.kit.edu
+        service_description     IIS Prozess
+        check_command           check_nt_example!PROCSTATE -l w3wp.exe
+        }
+
+#Zeitdienst
+define service{
+        use                     generic-service
+        host_name               example.kit.edu
+        service_description     Zeitdienst
+        check_command           check_nt_example!SERVICESTATE -l W32TIME
+        }
+\end{lstlisting}
+
+Mit diesen zwei Einträgen wird der Prozess des \gls{IIS}-Webservers und der Status des Dienstes zum Zeitabgleich überwacht.
+Andere Prozesse und Dienste lassen sich nach dem gleichen Schema überwachen.
+
+Nach einem Neustart von Nagios werden beide Einträge im Webinterface angezeigt:
+
+\begin{figure}[ht]
+	\centering
+	   \fbox{\includegraphics[width=0.95\textwidth]{bilder/servproc.png}}
+		\caption{Prozess- und Dienstüberwachung im Nagios-Webinterface}
+		\label{servprocgui}
+\end{figure}
+
+Die Festplattenspeicherausnutzung und die Prozessorauslastung wird auf ähnliche Weise überwacht.
+Hierbei muss beachtet werden, dass die Testergebnisse nicht eindeutig sind, im Gegensatz zu der Service- und Prozessüberwachung.
+Wann Nagios alarmieren soll muss vom Anwender in Form von Parametern festgelegt werden.
+
+\begin{lstlisting}[captionpos=b, caption=Überwachung der Festplatten- und Prozessorauslastung, label=cpuhdddef, breaklines = true, language=sh]
+#Belegung der Partition C:
+define service{
+        use                     generic-service
+        host_name               example.kit.edu
+        service_description     C:\ Drive Space
+        check_command           check_nt_example!USEDDISKSPACE -l c -w 85 -c 100
+        }
+        
+#CPU Auslastung der letzten 5 Minuten
+define service{
+        use                     generic-service
+        host_name               example.kit.edu
+        service_description     CPU Load
+        check_command           check_nt_example!CPULOAD -l 5,80,100
+        }
+\end{lstlisting}
+
+Für diese Festplattenüberwachung versendet Nagios eine Warnung, wenn der belegte Speicherplatz auf der C-Partition die 85\% Marke überschreitet und meldet einen kritischen Fehler bei 100\%.
+Bei der Prozessorüberwachung schlägt Nagios Alarm, wenn der Mittelwert der Auslastung in den letzten fünf Minuten mehr als 80\% bzw. 100\%  betragen hat.
+
+
+\input{tex/funkttests.tex}
+
+\subsection{Auswertung der Logdateien}
+
+Um die drei genannten Logdateien aus Kapitel \ref{checklog} auszuwerten wird durch den \gls{NRPE}-Dienst das Plugin \textit{check\_logfiles} von Gerhard Laußer eingesetzt.
+
+Dieses Plugin besitzt bereits einige nützliche Funktionen für die Überwachung von Logdateien.
+Durch das Setzten eines Zeitstempels filtert das Plugin veraltete Einträge heraus und untersucht nur neu hinzugekommene Zeilen.
+Der Rotationsalgorithmus der Oracle UCM-Logdateien kann dem Plugin durch die Verwendung einer Konfigurationsdatei mitgeteilt werden.
+
+Die Konfigurationsdatei für das \textit{check\_logfiles}-Plugin wird im folgendem Listing gezeigt:
+
+
+\begin{lstlisting}[captionpos=b, caption=Konfigurationsdatei für \textit{check\_logfiles}, label=chklogcfg, breaklines = true, language=sh]
+@searches = ({
+  tag => 'ucmlogs',
+  type => 'rotating::uniform',
+  logfile => 'D:/bdb2/weblayout/groups/secure/logs/bdb/IdcLnLog.htm',
+  rotation => 'refinery\d{2}\.htm',
+  warningpatterns => [
+        'Cannot identify file',
+	  'Bad CRC value in IHDR chunk',
+	  'Der Dateiname darf nicht länger als 80 Zeichen sein',
+    ],
+});
+\end{lstlisting}
+
+Mit dem \pictext{tag}-Attribut wird diese Auswertung eindeutig identifizierbar gemacht, da man in der gleichen Konfigurationsdatei mehrere Logdateien bzw. weitere Durchsuchungen definieren kann.
+Das Attribut \pictext{type} muss hier so gesetzt werden, da die aktuelle Logdatei und die wegrotierte Logdatei das gleichen Namensschema benutzten.
+Der Pfad zu den Logdateien wird über das Attribut \pictext{logfile} gesetzt.
+Da die einzelnen Logdateien mit einem bestimmten Namensmuster erstellt werden (siehe Kapitel \ref{checklog}), muss dieses Namensmuster hier direkt angegeben werden.
+In diesem Falle durchsucht das \textit{check\_logfiles}-Plugin alle Logdateien mit dem Namen \textit{refinery00.htm} bis \textit{refinery99.htm}.
+Alle gefundenen Dateien werden dem Datum nach sortiert und die aktuellste Datei wird untersucht.
+Nach welchen Stopwörtern gesucht werden soll wird mit dem Attribut \pictext{warningpatterns} angegeben, sofern mindestens einer dieser Strings gefunden wurde liefert das Plugin ein WARNING als Rückmeldung inklusive der Zeile in dem das Stopwort gefunden wurde.
+
+\begin{figure}[ht]
+	\centering
+	   \fbox{\includegraphics[width=0.95\textwidth]{bilder/logcheckwarn.png}}
+		\caption{Ausgabe der betreffenden Zeile in der Logdatei}
+		\label{checklogwarn}
+\end{figure}
+
+
+\input{tex/benutzersim.tex}
+
+
+

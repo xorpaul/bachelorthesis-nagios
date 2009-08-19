@@ -1,0 +1,29 @@
+%Tabelle Windows-Agenten
+%\vspace{1.6cm}
+\begin{table}[!cht]
+\centering
+\begin{threeparttable}
+\begin{tabular}{l p{1.3cm} l p{1.3cm} l p{1.3cm} l p{1.3cm} l p{1.3cm} l p{1.3cm} p{1.3cm} p{1.3cm} p{1.3cm} p{1.3cm}}
+ & \begin{turn}{50}\textbf{NSClient}\end{turn} & \begin{turn}{50}\textbf{NRPE\_NT}\end{turn} & \begin{turn}{50}\textbf{NC\_net}\end{turn} & \begin{turn}{50}\textbf{NSClient++}\end{turn} & \begin{turn}{50}\textbf{OpMon Agent}\end{turn}\\ 
+\hline
+\textbf{Methode} & & & & & \\
+\textit{aktiv} & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark\\
+\textit{passiv} & - & - & \checkmark & \checkmark & -\\
+\textit{NSClient}\tnote{1} & \checkmark & - & \checkmark & \checkmark & \checkmark\\
+\textit{NRPE}\tnote{2} & - & \checkmark & \checkmark & \checkmark & \checkmark\\
+\textbf{Sicherheit} &  &  &  &  &  & \\
+\textit{Passwort} & \checkmark & \checkmark & - & \checkmark & \checkmark\\
+\textit{Accesslist}\tnote{3} & - & - & \checkmark & \checkmark & \checkmark\\
+\textit{Verschlüsselung} & - & \checkmark & \checkmark & \checkmark & -\\
+\textbf{Aufwand}\tnote{4} & \begin{footnotesize}normal\end{footnotesize} & \begin{footnotesize}hoch\end{footnotesize} & \begin{footnotesize}normal\end{footnotesize} & \begin{footnotesize}normal\end{footnotesize} & \begin{footnotesize}normal\end{footnotesize}\\
+\end{tabular}
+\begin{tablenotes}\footnotesize
+		\item[1] Kompatibilität mit dem NSClient-Dienst
+		\item[2] Erlaubt Ausführung von vorkonfigurierten Kommandos
+        \item[3] Einschränkung der Abfrage der Überwachungsinformationen anhand der \gls{IP}-Adresse
+        \item[4] Subjektive Einschätzung
+    \end{tablenotes}
+\caption{Übersicht der verschiedenen Windows-Agenten}
+\label{tab:winagents}
+\end{threeparttable}
+\end{table}

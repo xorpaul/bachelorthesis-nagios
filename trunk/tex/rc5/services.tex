@@ -1,0 +1,149 @@
+\subsection{Überprüfungsmethoden}
+\label{methoden}
+Man unterscheidet generell zwischen aktiven und passiven Checks.
+
+\subsubsection{Aktive Checks}
+Aktive Checks werden vom Nagios-Server direkt ausgeführt und holen die Informationen über die Zustände auf verschiedene Art und Weise ein.
+Nagios erwartet nach einem bestimmten Zeitintervall neue aktualisierte Informationen und gibt eine Alarmmeldung aus, wenn keine neuen Informationen angekommen sind.
+
+\subsubsection{Passive Checks}
+Bei passiven Checks werden die Scripts und Programme, die die Ergebnisse der zu überwachenden Objekte sammeln, selbständig von dem zu überwachendem Computer ausgeführt.
+Der Nagios-Server nimmt die Ergebnisse von diesen Checks nur entgegen und führt sich nicht selbst aus.
+Da Nagios somit keine Kontrolle über die Ausführung der Plugins hat, können die Ergebnisse auch asynchron zu den anderen Plugins eintreffen.
+
+
+Nagios bietet verschiedene Möglichkeiten an Informationen einzuholen:
+
+\begin{figure}[ht]
+	\centering
+	   \fbox{\includegraphics[width=0.7\textwidth]{bilder/nagios-kern.png}}
+		\caption[Verschiedene Überwachungsmöglichkeiten von Nagios]{Verschiedene Überwachungsmöglichkeiten von Nagios\protect\footnote}
+		\label{nagios-kern}
+\end{figure} 
+\footnotetext{Quelle: \cite{Barth08} S. 98}
+
+
+\paragraph{Methode 1 - Netzwerkdienste}
+
+Dienste, die über das Netzwerk ansprechbar sind, wie bei einem Web- oder \gls{FTP}-Server, lassen sich direkt über das Netz auf ihren Zustand überprüfen.
+Hierfür muss dem entsprechendem Plugin nur die Netzwerkadresse mitgeteilt werden, siehe Abbildung \ref{check-http} als beispielhafte Überprüfung eines Webservers.
+\begin{figure}[ht]  
+	\centering
+	   \fbox{\includegraphics[width=0.8\textwidth]{bilder/check-http2.png}}
+		\caption{Ausführung eines netzwerkbasierenden Servicechecks}
+		\label{check-http}
+\end{figure}
+Der zuvor gezeigte Test eines netzwerkbasierenden Dienstes wird in Abbildung \ref{nagios-kern} mit dem Client-Rechner 1 abgebildet.
+%Die Überprüfung von nicht netzwerkbasierenden Diensten soll mit den restlichen Client-Rechnern aufgezeigt werden.
+Dies ist die einfachste Überwachungsmethode, da keine zusätzlichen Programme oder aufwändige Konfiguration benötigt wird.
+Vorteilhaft ist auch, dass der Dienst über das Netzwerk getestet wird, so wie der Benutzer auch auf den Dienst zugreift.
+Damit können auch gleichzeitig andere Knotenpunkte wie Switches überwacht werden.
+
+\paragraph{Methode 2 - SSH}
+Falls es sich beim Client um einen auf Unix basierenden Server handelt, ist meistens der Zugriff per \gls{SSH} verfügbar.
+%\footnote{Durch eine Secure Shell (\gls{SSH}) kann man sich eine verschlüsselte Netzwerkverbindung zum entfernten Rechner aufbauen.}
+Dazu muss auf dem Client ein \gls{SSH}-Benutzerkonto für Nagios angelegt sein und die öffentlichen Schlüssel auf dem Host abgelegt werden, damit keine passwortabhängige Benutzerauthentifizierung notwendig ist.
+Danach können lokale Ressourcen, wie Festplattenkapazität oder Logdateien mit dem entsprechenden Plugin direkt auf dem entfernten Rechner überwacht werden.
+Damit der Client diese Plugins verwenden kann, müssen sich die gewünschten Plugins auf dem zu überwachendem Computer befinden.
+Eine beispielhafte Verwendung mit dem dafür gedachten Nagios-Plugin \pictext{check\_by\_ssh} wird in Abbildung \ref{check-ssh} gezeigt.
+\begin{figure}[ht]
+	\centering
+	   \fbox{\includegraphics[width=0.85\textwidth]{bilder/check_by_ssh.png}}
+		\caption{Manuelle Ausführung eines Servicechecks über SSH}
+		\label{check-ssh}
+\end{figure}
+
+\paragraph{Methode 3 - NRPE}
+
+Eine alternative Möglichkeit solche Dienste auf entfernten Rechnern zu überwachen, ist durch den sogenannten Nagios Remote Plugin Executor (\gls{NRPE}).
+Hier muss auf dem Client ein "`Agent"' installiert werden, welcher einen Port öffnet mit dem der Agent mit dem Nagios-Server kommunizieren kann.
+
+\begin{figure}[ht]
+	\centering
+	   \fbox{\includegraphics[width=0.9\textwidth]{bilder/nrpe.png}}
+		\caption[Aktive Checks mit NRPE]{Aktive Checks mit NRPE\protect\footnote}
+		\label{aktivchecks}
+\end{figure}
+\footnotetext{Quelle: \url{http://www.nagios.org/images/addons/nrpe/nrpe.png}}
+
+Der Nagios Server kann dann Anforderungen über das Nagios-Plugin \pictext{check\_nrpe} an den Client verschicken.
+Ein Aufruf dieses Plugins ist dem des \pictext{check\_by\_ssh} Plugins, siehe Abbildung \ref{check-ssh}, sehr ähnlich.
+
+Der Nachteil dieser Variante ist ein zusätzlich geöffneter Port und der höhere Aufwand beim Installieren des Agenten im Gegensatz zur Lösung per \gls{SSH}.\label{sshnrpe}
+Zusätzlich gibt es nur die Möglichkeit die Anfragen auf diesem Port auf bestimmte \gls{IP}s zu beschränken, jedoch nicht den Zugriff durch ein Passwort zu sichern.
+Dafür beschränkt sich \gls{NRPE} auf die auf dem entfernten Client liegenden Nagios-Plugins und kann nicht System- bzw. Benutzerkommandos aufrufen, wie bspw. das \pictext{rm}-Kommando zum Löschen von Dateien, welche durch den Einsatz von \pictext{check\_by\_ssh} standardmäßig möglich wären.
+Sicherheitstechnisch gesehen ist daher die \gls{SSH}-Variante kritischer, da es einem Angreifer ermöglicht auf System- bzw. Benutzerkommandos zuzugreifen, wenn er die Kontrolle über den Nagios-Server erlangt.
+Beide Verfahren unterstützen die Verschlüsselung der Datenübertragung zwischen Nagios-Server und Client, so dass keine Informationen im Klartext übertragen werden.
+
+\paragraph{Methode 4 - SNMP}
+
+%nur grob angerissen / kurz / 
+Diese Variante wird nur verkürzt behandelt, da sich diese Arbeit hauptsächlich mit der Überwachung von Servern beschäftigt und nicht von Netzwerkkomponenten wie Switches oder Router, die nur durch das Simple Network Management Protocol (\gls{SNMP}) überwacht werden können, wenn mehr Informationen als eine schlichte Erreichbarkeit gesammelt werden sollen.
+
+Barth schreibt über diese Variante:
+\begin{quote}"`Mit dem Simple Network Management Protocol \gls{SNMP} lassen sich ebenfalls lokale Ressourcen übers Netz abfragen [...]. Ist auf dem Zielhost ein \gls{SNMP}-Daemon installiert [...] kann Nagios ihn nutzen, um lokale Ressourcen wie Prozesse, Festplatten oder Interface-Auslastung abzufragen."' \begin{flushright}\cite{Barth08} S. 101\end{flushright}\end{quote} 
+
+Durch \gls{SNMP} kann auf die strukturierte Datenhaltung der \gls{MIB}\footnote{Die Management Information Base (\gls{MIB}) dient als \gls{SNMP}-Informationstruktur und besteht aus einem hierarchischen, aus Zahlen aufgebauten Namensraum. Ähnliche Struktur wie andere hierarchische Verzeichnisdiensten wie \gls{DNS} oder \gls{LDAP}. Quelle: \cite{Barth08} S.233} in den entfernten Netzwerkknoten zugegriffen werden.
+%###########################
+Der Aufbau einer \gls{MIB} wird in Abbildung \ref{munin-mib} gezeigt.
+%Die Informationen in der \gls{MIB} wird durch einem speziellen \gls{SNMP}-Daemon wie bspw. \textit{NET-SNMP} bei Unix-Systeme zur Verfügung gestellt.. 
+Anhand dieser Anordnung können die \gls{SNMP}-Plugins von Nagios den gewünschten Wert über das Netzwerk abfragen.
+
+\begin{figure}[ht]
+	\centering
+	   \fbox{\includegraphics[width=0.95\textwidth]{bilder/mib.png}}
+		\caption[Struktur der Management Information Base]{Struktur der Management Information Base\protect\footnotemark}
+		\label{munin-mib}
+\end{figure}
+\footnotetext{Quelle: \cite{Mu08} S. 156}
+
+Bei einem Switch werden die auslesbaren Informationen vom Hersteller bestimmt.
+Wenn auf einem Rechner eigene Ergebnisse in der \gls{MIB} abgespeichert werden sollen, muss dies durch einen \gls{SNMP}-Daemon eingetragen werden.
+Dessen Konfiguration ist im Vergleich zu den anderen Überwachungsmethoden deutlich komplexer.
+
+Es gibt zwei verschiedene Möglichkeiten Dienste mit \gls{SNMP} zu überwachen.
+Der Nagios-Server fragt aktiv den Inhalt der entsprechenden \gls{MIB}-Einträgen periodisch ab oder der Client sendet asychron seine Statusmeldungen über \gls{SNMP} an Nagios.
+Bei der letzteren passiven Variante spricht man auch von sogenannten \gls{SNMP}-Traps.
+
+
+%\begin{itemize}
+%\item Warum wird SNMP nicht verwendet?
+%\item klartextübertragung des PW bis SNMP 2c
+%\item Schreibrechte können Schaden anrichten
+%\item Brute Force attacken ausgesetzt
+%\item Beschränkte Ausgabemögliochkeit / maximale Datengrösse der Ausgabe -> Logüberwachung nur mit Aufwand möglich autarkes Programm von Nöten, dann muss selbst das Ergebniss in die MIB geschrieben werden, damit Nagios darauf Zugriff erlangt -> zu aufwändig im Vergleich mit Agenten
+%\end{itemize}
+
+%Einen beispielhaften Zugriff auf SNMP-fähige Geräte wird in Abbildung \ref{munin-snmp} gezeigt.
+
+%\begin{figure}[ht]
+%	\centering
+%	   \fbox{\includegraphics[width=0.5\textwidth]{bilder/snmp.png}}
+%		\caption[Beispielhafter Zugriff auf SNMP-fähige Geräte]{Beispielhafter Zugriff auf SNMP-fähige Geräte\protect\footnotemark}
+%		\label{munin-snmp}
+%\end{figure}
+%\footnotetext{Quelle: \cite{Mu08} S. 156}
+
+%##################
+
+\paragraph{Methode 5 - NSCA}
+%asynchron!
+Diese Methode verwendet passive Checks.
+Bei passiven Tests führt der zu überwachende Computer das statuserzeugende Plugin selbst aus und sendet es über ein weiteres Plugin zum Nagios-Server.
+Hierfür muss das Testprogramm bzw. Script und das entsprechende Plugin \pictext{send\_ncsa}, welches zum Versenden der Informationen zuständig ist, auf dem Host vorhanden sein.
+Auf der anderen Seite muss der \pictext{\gls{NSCA}} (Nagios Service Check Acceptor) auf dem Nagios-Server als Daemon gestartet sein, damit die übermittelten Ergebnisse von Nagios entgegengenommen werden.
+\newpage
+Folgende Abbildung soll das Prinzip der passiven Checks verdeutlichen:
+%Das Prinzip der passiven Checks lässt sich durch folgende vereinfachte Abbildung
+\begin{figure}[ht]
+	\centering
+	   \fbox{\includegraphics[width=0.9\textwidth]{bilder/nsca.png}}
+		\caption[Passive Checks mit NSCA]{Passive Checks mit NSCA\protect\footnote}
+		\label{passivchecks}
+\end{figure}
+\footnotetext{Quelle: \url{http://www.nagios.org/images/addons/nsca/nsca.png}}
+
+Das Testprogramm \textit{Remote Application} wird selbständig vom zu überwachenden Rechner \textit{Remote Host} aufgerufen und übermittelt durch das \pictext{send\_ncsa} Plugin die Ergebnisse über das Netzwerk an den Nagios-Server \textit{Monitoring Host}.
+Da auf diesem der NSCA als Daemon läuft können die Ergebnisse an die Nagios-Anwendung zur Auswertung weitergegeben werden.\\
+
+Die Wertung der verschiedenen Methoden und die Auswahl für die Umsetzung wird in Kapitel \ref{sectunixagents} beschrieben.

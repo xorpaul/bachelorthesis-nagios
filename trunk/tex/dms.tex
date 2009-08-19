@@ -19,12 +19,12 @@ Die Begrifflichkeit des \textbf{Dokuments im weiteren Sinne} erweitert den Begri
 
 Dabei müssen auch Daten und Dokumente voneinander abgegrenzt werden.
 In \cite{DMS08} S. 33 werden Daten im Allgemeinen als eher stark strukturierte Informationen gesehen, wobei Dokumente zumeist aus unstrukturierte bis zu schwach strukturierte Informationen bestehen.
-Eine eindeutige Klassifizierung eines vorhandenen Dokumentes lässt ist jedoch nicht immer möglich, da sich oft Mischungen beider Klassen finden (lassen).
-Ohne die dazugehörigen Metadaten besteht ein (graphisches) Bild aus unstrukturierten Informationen, daher auch \gls{NCI}-Dokument für None-Coded Information genannt.
+Eine eindeutige Klassifizierung eines vorhandenen Dokumentes ist jedoch nicht immer möglich, da sich oft Mischungen beider Klassen finden lassen.
+Ohne die dazugehörigen Metadaten besteht ein Bild aus unstrukturierten Informationen, daher auch \gls{NCI}-Dokument für None-Coded Information genannt.
 
 Die Einordnung, wann ein Dokument strukturierte oder unstrukturierte Informationen enthält, lässt an folgenden Beispielen verdeutlichen.
-Bei einem Bild oder Foto lassen sich die enthaltenen Informationen nicht durch Computer bestimmen.
-Beispielsweise, ob sich eine Person auf dem Bild befindet oder wann und wo das Foto erstellt wurde.
+Bei einem Bild oder Foto lassen sich die enthaltenen Informationen ohne zusätzliche Metadaten nicht eindeutig durch Computer bestimmen.
+%Beispielsweise, ob sich eine Person auf dem Bild befindet oder wann und wo das Foto erstellt wurde.
 Daher ist ein Bild, solange keine Metadaten darüber bekannt sind, ein eindeutiges Beispiel für \gls{NCI}-Dokumente mit unstrukturierten Informationen.
 Im Gegensatz dazu lassen sich die Werte einer Tabelle oder eines Datensatzes durch die Spaltennamen eindeutig bestimmen und durch den Computer auslesen.
 Solche Daten mit strukturierten Informationen werden daher auch als Dokumententyp mit Coded Information (\gls{CI}) bezeichnet.
@@ -33,13 +33,13 @@ Der Anteil von strukturierten Informationen in einem Dokument nimmt von Bildern 
 
 \begin{figure}[ht]
 	\centering
-	   \fbox{\includegraphics[width=0.8\textwidth]{bilder/ci-nci.png}}
+	   \fbox{\includegraphics[width=0.85\textwidth]{bilder/cci4.png}}
 		\caption[Anteil an strukturierten Informationen]{Anteil an strukturierten Informationen\protect\footnote}
 		\label{ncici}
 \end{figure}
 \footnotetext{Quelle: \cite{DMS08} S. 33}
 
-Unter \textbf{Dokumenten-Management} werden primär die Verwaltungsfunktionen Erfassung, Bearbeitung, Verwaltung und Speicherung von Dokumenten verstanden. \cite{DMS08} S. 344.\\
+Unter \textbf{Dokumenten-Management} werden primär die Verwaltungsfunktionen Erfassung, Bearbeitung, Verwaltung und Speicherung von Dokumenten verstanden. \cite{DMS08} S. 344.\newpage
 
 Darunter fallen laut \cite{DMS08} S. 3 folgende Punkte:
 
@@ -63,7 +63,7 @@ Den \textbf{Dokumenten-Management-Systemen im weiteren Sinne} ordnet man auch no
 Die Grundstruktur eines Dokumenten-Management-Systemes kann man dadurch grob in folgender Abbildung zusammenfassen:
 \begin{figure}[ht]
 	\centering
-	   \fbox{\includegraphics[width=0.8\textwidth]{bilder/dms-circle.png}}
+	   \fbox{\includegraphics[width=0.57\textwidth]{bilder/3aufgaben.png}}
 		\caption[Aufgabenbereiche eines Dokumenten-Management-Systems]{Aufgabenbereiche eines Dokumenten-Management-Systems\protect\footnote}
 		\label{lifecircle}
 \end{figure} 
@@ -96,7 +96,7 @@ Solche Attribute werden auch als Metadaten des Dokumentes bezeichnet und meist a
 Dabei werden in \cite{DMS08} S. 44 zwei verschiedene Methoden zur automatischen Klassifizierung genannt.
 Beim wissensbasiertem Ansatz wird mittels umfangreichem Wissen über das Umfeld der Dokumente und dadurch abgeleitete Regeln dem System ermöglicht diese Dokumente automatisch einzuordnen und zu indizieren.
 Eine weitere Möglichkeit eröffnet sich durch das Verwenden von neuronalen Netzen.
-Hierbei wird durch die Vorarbeit eines Menschen Beispiele geschaffen anhand welcher sich das System selbstständig (Auswahl)Kriterien erzeugt.
+Hierbei wird durch die Vorarbeit eines Menschen Beispiele geschaffen anhand welcher sich das System selbstständig Auswahlkriterien erzeugt.
 Je mehr korrekte Beispiele vorgegeben werden, desto besser und zuverlässiger arbeitet die automatische Klassifizierung.
 
 \subsubsection{Verwaltung und Archivierung}
@@ -137,7 +137,7 @@ Dies ist durch eine einfach Anzeige im Webbrowser, eine Weiterleitung per E-Mail
 
 
 \subsection{Content-Management-Systeme}
-Bei einem Content-Management-System (\gls{CMS})  steht nicht mehr das eigentliche Dokument im Vordergrund, sondern vielmehr der enthaltene Informationsgehalt des Dokuments.
+Bei einem Content-Management-System (\gls{CMS})  steht nicht mehr das eigentliche Dokument im Vordergrund, sondern vielmehr der enthaltene Informationsgehalt des Dokuments. \newpage
 Der Unterschied zwischen einem \gls{DMS} und einem \gls{CMS} besteht laut \cite{DMS08} S. 114 im folgenden:
 
 %Abgrenzend zum Dokumenten-Management handelt es sich beim Content-Management nicht vordergründig um die Verwaltung von Dokumenten, sondern um die Verwaltung von Informationseinheiten, die miteinander verknüpft sein können. [...] Je nach Ausprägung kann nun ein konkretes System als Dokumenten-Management-System mit Content-Management-Funktionen definiert werden und umgekehrt. [...]
@@ -151,7 +151,7 @@ Die folgende Abbildung soll den charakteristischen Unterschied zwischen \gls{CMS
 
 \begin{figure}[ht]
 	\centering
-	   \fbox{\includegraphics[scale=0.25]{bilder/cmsview.png}}
+	   \fbox{\includegraphics[scale=0.9]{bilder/cmsdms3.png}}
 		\caption[Sichtweise CMS gegenüber DMS]{Sichtweise CMS gegenüber DMS\protect\footnote}
 		\label{dmsvscms}
 \end{figure} 

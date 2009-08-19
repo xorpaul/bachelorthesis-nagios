@@ -14,7 +14,8 @@
 \glossaryentryfield{DMS}{\glsnamefont{DMS}}{Dokumenten-Management-System}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter{page}\glsnumberformat{1}\delimN 
 		\setentrycounter{page}\glsnumberformat{10}\delimN 
-		\setentrycounter{page}\glsnumberformat{14\delimR 18}\delimN 
+		\setentrycounter{page}\glsnumberformat{14\delimR 16}\delimN 
+		\setentrycounter{page}\glsnumberformat{18}\delimN 
 		\setentrycounter{page}\glsnumberformat{20}}}%
 \glossaryentryfield{DNS}{\glsnamefont{DNS}}{Domain Name System}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter{page}\glsnumberformat{36}}}%
@@ -67,7 +68,7 @@
 \glsgroupheading{O}\relax \glsresetentrylist %
 \glossaryentryfield{OCR}{\glsnamefont{OCR}}{Optical Character Recognition}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter{page}\glsnumberformat{15}}}%
-\glossaryentryfield{OracleUCM}{\glsnamefont{OracleUCM}}{Content-Management-System von Oracle}{\relax }{\glossaryentrynumbers{\relax 
+\glossaryentryfield{OracleUCM}{\glsnamefont{Oracle UCM}}{Oracle Universal-Content-Management}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter{page}\glsnumberformat{3}\delimN 
 		\setentrycounter{page}\glsnumberformat{39}\delimN 
 		\setentrycounter{page}\glsnumberformat{42}\delimN 

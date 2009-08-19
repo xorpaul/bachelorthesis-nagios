@@ -1,0 +1,39 @@
+\begin{itemize}
+\item Kurz agenten, zeigen auf f. Kapitel -> SNMP erklären (MIB, OID) Sicherheitsrisiko
+\end{itemize}
+
+\subsection{Überwachungslogik (mit Alarmierung/Benachrichtigung)}
+\label{dismoni}
+\begin{center}
+TODO: Distributed Monitoring bezug auf allg überwachungssysteme
+\end{center}
+
+\subsection{Plugins}
+Gedacht für Linux umgebung
+
+Verschiedene Möglichkeiten Checks zu realisieren unter Unix Systemen:
+
+Leicht programmierbar -> perl 
+Extra Plugins für Windows
+
+\subsection{(Windows) Agenten oder allgemein Einholen von Infos}
+Warum nicht einfach alles über SNMP? -> ODI muss man erst beantragen, hoher Aufwand und dann doch nicht so universell/alles abdeckend wie aktive checks, man kann keine logfiles durchuchen -> könnte es aber als standalone prog auf dem client laufen lassen und dieser sendet dann passive checks
+
+Sagen das auf alten NSClient verzichtet wird und OpMon Agent nicht behandelt
+\begin{enumerate}
+\item Bilder ausm Nagios Buch Seite 472ff!
+\item NSClient++
+\item NC\_Net
+\item NRPE\_NT
+\end{enumerate}
+
+Zusammenfassung?
+
+
+Welche wird jetzt eingesetzt und warum?
+
+Erwähne sichheitsstechnisch Parameter erlauben oder nicht erlauben
+
+Dabei sagen, dass wenn nicht erlaubt sind keine zentrale Konfiguration der Checks auf dem Nagios server möglich ist -> abwägen
+
+\subsection{Visualisierung der eingesammelten Daten}

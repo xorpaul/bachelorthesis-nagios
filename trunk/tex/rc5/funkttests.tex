@@ -1,0 +1,43 @@
+\subsection{Umsetzung der Funktionlitätstest}
+
+Für die Ausführung der einfachen Funktionlitätstest aus Kapitel \ref{funztest} werden Benutzerinformationen zur Anmeldung benötigt.
+Nagios besitzt extra hierfür die Möglichkeit diese Benutzerinformationen in Variablen zu speichern, damit sie nicht einzeln bei jeder Servicedefinition verändert werden müssen.
+Da sich die Definition dieser Variablen in einer externen Datei befindet, können die Zugriffsrechte auf diese Datei eingeschränkt werden, wodurch die Anmeldedaten bei den Servicedefinitionen nicht auslesbar sind.
+
+\begin{lstlisting}[captionpos=b, caption=Funktionalitätstest der Benutzeranmeldung, label=userauthdef, breaklines = true, language=sh]
+#Anmeldung an Oracle UCM mit lokalem Benutzerkonto
+define service{
+        use                     generic-service
+        host_name               example.kit.edu
+        service_description     Anmeldung Oracle UCM als lokaler Benutzer
+        check_command           check_http!-u "/bdb/idcplg?IdcService=LOGIN&Action=GetTemplatePage&Page=HOME\_PAGE&Auth=Internet"  -a $USER3$:$USER4$ -e "Sie sind angemeldet als" -S
+        }
+\end{lstlisting}
+
+
+Dabei werden dem Nagios-Plugin \textit{check\_http} mit dem \pictext{u}-Parameter die URL zur Benutzeranmeldungseite und mit dem Parameter \pictext{a} der Benutzername und -passwort mitgegeben.
+Der nach dem Parameter \pictext{e} folgende String wird dann in der Antwort des Servers gesucht.
+Sollte dieser String nicht gefunden werden ist die Authentifizierung fehlgeschlagen und es wird durch Nagios eine Meldung versendet.
+Mit dem Parameter \pictext{S} wird angegeben, dass eine \gls{SSL}-verschlüsselte Verbindung zum Webserver über HTTPS hergestellt werden soll, ansonsten würden die Benutzerinformationen im Klartext übertragen werden, wodurch sie leicht für Angreifer auslesbar wären.
+
+Für das Auslesen von Informationen aus der Statusseite der Oracle UCM-Anwendung wurde ein einfaches BASH-Script entwickelt:
+
+\begin{lstlisting}[captionpos=b, caption=Auslesen der Verbindungen zur Datenbank, label=dbcon, breaklines = true, language=sh]
+#!/bin/bash
+E_BADARGS=2
+if [ ! -n "$6" ]
+then
+        echo "Usage: `basename $0` -url <URL> -u <username> -p <password>"
+        exit $E_BADARGS
+fi
+
+DBCONNECTIONS=$(wget -qO-  --user $4 --password $6 $2 | grep "System Database")
+DBCONNECTIONS=${DBCONNECTIONS##*>}
+DBCONNECTIONS=${DBCONNECTIONS%% *}
+echo $DBCONNECTIONS
+\end{lstlisting}
+
+Dabei muss als URL die Seite mit den Datenbankverbindungen und gültige Benutzerinformationen mitgegeben werden.
+Anschließend wird die aufgerufene Seite nach der gewünschte Informationen untersucht und ausgegeben.
+
+Dieses einfaches Script kann auch dazu verwendet um andere Informationen von der Statusseite abzufragen.

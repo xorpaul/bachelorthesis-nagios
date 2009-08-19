@@ -1,0 +1,93 @@
+\section{Zusammenfassung und Ausblick}
+
+Im Rahmen dieser Arbeit wurde eine Lösung entwickelt um mit der Open Source-Überwachungssoftware Nagios den Betrieb des im Forschungszentrum Karlsruhe verwendeten Dokumenten-Management-Systems \gls{OracleUCM} zu überwachen.
+Eine solche Überwachung ist notwendig um den Mitarbeitern des Forschungszentrums Karlsruhe einen möglichst zuverlässigen Dienst anbieten zu können.
+Dabei sollte die Überwachung proaktiv auf mögliche Fehlzustände testen und bei einer Störung eine Alarmmeldung an die verantwortlichen Kontaktpersonen versenden. 
+Das Überwachungssystem sorgt dafür, dass jeder Fehler sofort gemeldet wird, damit die Problemquellen gefunden und eventuell behoben werden können, bevor die Endbenutzer Störungen bei der Nutzung des Dienstes bemerken.\\
+
+Für die Bearbeitung der Aufgabe war es notwendig sich mit den Grundlagen von Überwachungssystemen auseinander zusetzten.
+Darunter fielen die Punkte Netzwerkstruktur , -abhängigkeit und verschiedene Sicherheitsaspekte die beim Einsatz einer Überwachungssoftware eine Rolle spielen.
+Um die eigentliche Funktions- und Arbeitsweise eines Dokumenten-Management-Systems zu verstehen wurde die grundsätzliche Art eines Dokumentes im Vergleich zu Daten betrachtet.
+%Dabei definiert die Strukturiertheit der enthaltenen Informationen die Zuordnung zu Daten oder Dokumente, obwohl die Grenzen nicht eindeutig festgelegt sind.
+Auf diesem Wissen aufbauend konnten die Aufgabenbereiche Eingabe, Verwaltung, Archivierung und Ausgabe eines Dokumenten-Management-Systems untersucht und Vergleiche zu Content-Management-Systemen gezogen werden.
+%Das kleinste Objekt in einem \gls{DMS} kann nur ein einzelnen Dokument sein, während ein \gls{CMS} einzelne Informationen aus verschiedenen Dokumenten erfassen kann, um ein neues Dokument zu generieren.
+
+Für die Umsetzung wurde die Service-orientierte Architektur der \gls{OracleUCM}-Anwendung in Verbindung mit Web-Services verwendet.
+Hierfür war es notwendig sich mit Grundprinzipien dieser Architekturen, deren Funktionsweise und verwendete Elemente vertraut zu machen.
+Dadurch konnte später korrekt auf die benötigten Funktionen zugegriffen werden.\\
+
+Im Forschungszentrum Karlsruhe wird als Überwachungssoftware das Open Source-Programm Nagios für die Überwachung von Netzwerken, Server und Dienste verwendet.
+Damit Fehler korrekt von Nagios erkannt werden, bestand die Notwendigkeit die Funktionsweise und den Aufbau dieser Software zu studieren.
+%Um die gewünschte Überwachung durch Nagios zu erreichen / ermöglichen
+%Die Realisierung der Aufgabenstellung wurde durch die Anpassung der verschiedenen Konfigurationsdateien erreicht, da über diese Dateien die zu überwachenden Dienste und Server mit Nagios verbunden werden.
+Das Einholen von Informationen zur Auswertung wird durch Plugins ermöglicht.
+Das Verständnis über die Struktur und Richtlinien dieser Plugins wurde benötigt um später eigene zu entwickeln und sie effektiv zu verwenden.
+Dabei galt es die speziellen Funktionen von Nagios wie die Hard und Soft States oder das Flapping von Zustände bei der spätere Verwendung zu berücksichtigen.
+Über die verschiedene Möglichkeiten die benötigten Informationen zu sammeln wurde ein kurzer Überblick gegeben.
+
+\gls{OracleUCM} wird im Forschungszentrum Karlsruhe für die Verwaltung von Webseiten, Dokumenten und Bilder eingesetzt.
+Für die Ermittlung der Überwachungselemente wurde der allgemeine interne Aufbau und die Arbeitsweise dieser Anwendung untersucht.
+Der konkrete Einsatz von \gls{OracleUCM} wurde als Bilddatenbank verwendet.
+Die dabei auftretenden typischen Benutzerinteraktionen wurden für die später folgende Benutzersimulation verwendet.
+
+Die einzelnen Überwachungselemente wurden in die Ebenen Statusabfragen, Funktionalitätstest, Auswerten von Logdateien und Benutzersimulation unterteilt.
+Dabei führte die Abhängigkeit der Elemente zueinander zu der Einordnung in die verschiedenen Ebenen.
+Unter den Statusabfragen befinden sich einfache Test wie ein Ping, Arbeitsspeicherauslastung oder der Zustand eines Prozesses.
+Bei den Funktionalitätstest werden Anwendungen verwendet und die Antwort ausgewertet wie beispielsweise eine Anmeldung an Webserver mit Benutzerdaten.
+Die Benutzersimulation beinhaltet verschiedene Benutzeraktionen und überprüft, ob die Anwendung noch alle Funktionen erfüllt.
+Diese Einteilung in die verschiedenen Überwachungsebenen gibt den Verantwortlichen einen besseren Überblick über die Fehlersituation, so dass Fehlerquellen schneller entdeckt werden können.
+
+Für die Umsetzung wurde ein Testsystem aufgesetzt, das aus einer separaten Nagios-Installation zum Testen der Überwachung und einer virtuellen Maschine, als Klon der Bilddatenbank zum Simulieren der einzelnen Fehlzustände, bestand.
+%Für den konkreten Einsatz von Nagios als Überwachungssystem musste sich mit den verschiedenen Nagios-Agenten auseinandergesetzt werden, da diese die benötigten Informationen von entfernten Servern generieren.
+%Die zuvor beschriebenen Überwachungsmethoden von Nagios wurden dabei in Verbindung mit den Agenten, die Unix- und Windows-Agenten aufgeteilt wurden, nochmals aufgegriffen.
+Da es sich bei der zu überwachenden Bilddatenbank um einen Windows-Server handelte, wurde ein passender Nagios-Agent ausgewählt und dessen Installation und Konfiguration erläutert.
+Durch den Einsatz dieses Agenten konnten die verschiedenen Ebenen der Überwachung durch Verwendung von verschiedenen Überwachungsmethoden realisiert werden.
+Dabei wurde für die Benutzersimulation eigene Plugins entwickelt, die die Benutzeraktionen per Web Service ausführen.
+%Zu den typischen Aktionen der Anwender zählt das Hochladen eines Bildes (Einchecken).
+Das Plugin testet mit dem Hinzufügen eines Testbildes die Erreichbarkeit und einen Teil der Funktionalität des \gls{OracleUCM}-Servers.
+Durch eine Suchanfrage wird die Indizierung überprüft.
+Die Konvertierung wird anhand der angeforderten Testbilder validiert.
+Dabei wurden weitere Web Services verwendet.
+Die Konsequenzen einer automatischen Benutzersimulation mussten beachtet werden.
+Durch die ständige Ausführung der Benutzersimulation würden die Ressourcen des Servers wie der Festplattenspeicherplatz an ihre Kapazitäten stoßen.
+Das Problem konnte durch das Löschen des Testbildes und der konvertierten Version gelöst werden.
+Standardmäßig gibt es keinen Web Service zum Löschen von Dokumenten.
+Daher wurde ein eigener Web Service im \gls{OracleUCM} angelegt.
+
+Dadurch konnte die Überwachung aller zuvor ermittelten Elemente realisiert, die Informationen der einzelnen Plugins von Nagios ausgewertet und im Webinterface angezeigt werden.
+Die korrekte Benachrichtigung über Störungen konnte durch die Simulation der Fehlzustände in der virtuellen Maschine sichergestellt werden.
+\\
+
+Bei einer Überwachung ist es es notwendig zuvor verschiedene Schwellwerte zu setzen.
+An diesen Werten kann die Überwachungssoftware festlegen, ob ein Objekt einen kritischen Zustand erreicht hat oder nicht.
+Für die Ermittelung dieser Größen müssen die Werte der Überwachungselemente über einen längeren Zeitraum beobachtet und analysiert werden.
+Aufgrund des begrenzten zeitlichen Rahmens dieser Arbeit konnte dies nicht vollständig umgesetzt werden, so dass es während dem Betrieb fortgesetzt werden muss.
+Hierunter fallen vor allem spezifische Merkmale eines bestimmten Servers.
+Eine ungewöhnlich hohe Prozessorauslastung, die durch eine zeitlich gesteuerte Sicherung entstehen kann, sollte von der Überwachungssoftware nicht als Fehlverhalten interpretiert werden.
+Auch die Liste der Stopwörter für die Auswertung der Logdateien muss für neue bisher unbekannte Fehler immer wieder erweitert werden.
+
+Das entwickelte Plugin für die Benutzersimulation kann auch mit zusätzliche Funktionen versehen werden.
+Durch die Verwendung von anderen Web Services können weitere Funktionalitäten überprüft werden.
+Dabei kann die Benutzersimulation auch auf anderen Dokumenten-Management-Systemen eingesetzt werden.
+Hierfür müsste nur anstatt eines Testbildes beispielsweise eine \gls{PDF}-Testdatei oder Word-Dokument verwendet werden.
+Für die Validierung der Indizierung und Konvertierung müsste das Plugin nur leicht angepasst werden.
+
+%Die angepassten Konfigurationsdateien können durch ihren Aufbau einfach auf einen anderen Nagios exportiert und verwendet werden.
+
+%\begin{itemize}
+%
+%\item Zusammenfassung
+%\item Eigener Nagios-Server aufgesetzt / Nagios
+%\item Verwendung der Bilddatenbank VM / Oracle UCM
+%\item Überwachung der verschiedenen Ebenen wurde realisiert
+%\item Dabei auf Sicherheit geachtet (Port, Passwort, Verschlüsselung)
+%
+%\item Ausblick
+%\item Übernahme der Konfigurationsdateien auf vorhandenen Nagios-Server möglich
+%\item Überwachung von anderen Content-Servern via Webservice möglich (PDF, DOC …)
+%
+%
+%\item Geeignete Stopwörter für Logdateien müssen noch gefunden / eruiert werden
+%\item Passende Schwellwertdefinitionen können erst nach einer gewissen Laufzeit festegelegt werden
+%\item Export der entwickelten Überwachung auf den produktiven Haupt-Nagios Server
+%\end{itemize}

@@ -1,0 +1,190 @@
+\documentclass[12pt, a4paper, headsepline]{article}
+%\documentclass[12pt, a4paper, headsepline]{scrbook}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{graphicx} 
+\usepackage[automark]{scrpage2}
+\usepackage{hyperref}
+\usepackage{subfigure} 
+\usepackage{ae} 
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{floatflt}
+\usepackage{pdfpages}
+%\usepackage{fancyhd}
+\usepackage{threeparttable}
+\usepackage{endnotes}
+%\usepackage{struktex}
+\usepackage{rotating}
+\usepackage{listings}
+%\usepackage{listingsutf8}
+\usepackage[style=super3colheader]{glossaries}
+\usepackage{verbatim} %Mehrzeilige Kommentare durch \begin{content} mglich  ??
+\usepackage{blindtext} % Erzeugung von lngeren Textpassage
+\usepackage{xcolor}  
+
+\definecolor{hellgrau}{rgb}{0.9,0.9,0.9}
+\definecolor{darkgreen}{rgb}{0,0.5,0}
+\definecolor{darkblue}{rgb}{0,0,2}
+
+\lstset{inputencoding=utf8x, extendedchars=\true, numbers=left, numberstyle=\small, numbersep=5pt, basicstyle=\ttfamily\scriptsize, backgroundcolor=\color{hellgrau}, commentstyle=\color{darkgreen}, keywordstyle=\color{blue}, showspaces=false, showtabs=false, emph={String}, emphstyle=\color{blue}, emph={Boolean}, emphstyle=\color{blue}, showstringspaces=false}
+
+\author{Andreas Paul}
+\usepackage[bottom,hang]{footmisc}
+\setlength{\footnotemargin}{0pt}
+%\addto{\captionsngerman}{\renewcommand*{\listfigurename}{}}
+\glossarystyle{long3colheader}
+\renewcommand*{\glsgroupskip}{}
+
+\makeatletter
+\makeindex
+\makeglossaries
+\glsenablehyper 
+\renewcommand{\entryname}{K\"urzel}
+\renewcommand{\descriptionname}{Beschreibung}
+%\renewcommand{\glspageheader}{S.}
+\renewcommand*\l@section{\@dottedtocline{1}{1.5em} {2.3em}}
+\renewcommand*\l@subsection{\@dottedtocline{2}{3.8 em}{3.2em}}
+\renewcommand*\l@subsubsection{\@dottedtocline{3}{ 7.0em}{4.1em}}
+\renewcommand*\l@paragraph{\@dottedtocline{4}{10em }{5em}}
+\renewcommand*\l@subparagraph{\@dottedtocline{5}{1 2em}{6em}}
+\renewcommand*\l@figure{\@dottedtocline{1}{1.5em}{ 2.3em}}
+\newcommand{\pictext}[1]{\glqq\textit{#1}\grqq }
+\renewcommand{\arraystretch}{1.5} %Tabellenreihenhoehe
+% Abb. anstatt Abbildung verwenden %
+\renewcommand{\figurename}{Abb.}
+% Tab. anstatt Tabelle verwenden %
+\renewcommand{\tablename}{Tab.} 
+\renewcommand\subitem{\@idxitem \hspace*{30\p@}}
+ % Tiefe der Nummerierung einstellen %
+\setcounter{secnumdepth}{3} 
+\makeatother 
+\renewcommand{\refname}{Quellenverzeichnis} 
+\linespread{1.50} %zeilenabstand 1.5}
+\setlength{\headheight}{4.0\baselineskip}
+\setlength{\fboxsep}{3mm}
+%\textwidth=5.7in
+\begin{document}
+\setlength{\parindent}{0mm}
+\includepdf{Titelblatt.pdf}
+
+\input{tex/glossar.tex} 
+\setlength{\textheight}{630pt}
+\addtolength{\voffset}{-40pt}
+
+
+%\pagenumbering{roman}
+
+%\pagestyle{scrheadings}
+%\chead{\leftmark}
+%\ihead{\includegraphics[width=0.06\textwidth]{bilder/fz2.png}}
+
+\newpage
+\input{tex/preamble.tex}
+\newpage
+
+%\thispagestyle{empty}
+\renewcommand{\contentsname}{Inhalt}
+\thispagestyle{empty}
+\tableofcontents
+\thispagestyle{empty}
+\newpage
+
+
+
+%\setlength{\textheight}{660pt}
+%\addtolength{\voffset}{+90pt}
+
+
+
+\pagenumbering{arabic}
+
+\pagestyle{scrheadings}
+\ihead{\includegraphics[width=0.06\textwidth]{bilder/fzk2.png}}
+%\chead{\rightmark}
+\chead{\leftmark - RC4}
+\cfoot{Andreas Paul - Forschungszentrum Karlsruhe}
+
+\input{tex/einleitung.tex} 
+\newpage
+%\input{tex/abstract.tex} \newpage
+\input{tex/aufgabenstellung.tex} \newpage
+\input{tex/grundlagen.tex} \newpage
+\input{tex/nagios.tex} \newpage
+\input{tex/stellent.tex} \newpage
+\input{tex/umsetzung.tex} \newpage
+\input{tex/ergebnis.tex} \newpage
+\input{tex/ausblick.tex} \newpage
+\chead{GLOSSAR}
+\makeglossaries
+\printglossaries
+\newpage
+\chead{\leftmark}
+\listoffigures
+\newpage
+
+\renewcommand{\lstlistlistingname}{Codelistingverzeichnis}
+\lstlistoflistings
+\newpage
+\renewcommand{\listtablename}{Tabellenverzeichnis}
+\listoftables
+\newpage
+
+\renewcommand{\refname}{Quellverzeichnis} 
+%\subsection{Literaturverzeichnis}
+%\subsection{Quellverzeichnis}
+
+%\subsubsection{Literaturverzeichnis}
+
+%\bibliographystyle{unsrt}   % this means that the order of references
+%			    % is dtermined by the order in which the
+%			    % \cite and \nocite commands appear
+%\bibliography{bach}  % list here all the bibliographies that
+%			     % you need. 
+
+\begin{thebibliography}{xxxxxxxxxxx}
+%\paragraph{Literatur}
+
+	 \bibitem[DMS08]{DMS08}Götzer; Schmale; Maier; Komke (2008) \pictext{Dokumenten-Management - Informationen im Unternehmen effizient nutzen} 4. Auflage,\\
+	 dpunkt.verlag GmbH Heidelberg,  
+	 ISBN13: 978-3-89864-529-4, Einsichtnahme: 25.06.2009
+
+	 \bibitem[Barth08]{Barth08}Wolfgang Barth (2008) \pictext{Nagios - System- und Netzwerk-Monitoring} 2. Auflage, \\
+	 ISBN13: 978-3-937514-46-8, Einsichtnahme: 25.05.2009
+	 
+	 \bibitem[Huff06]{Huff06}Brian Huff (2006) \pictext{The Definitive Guide to Stellent Content Server Development}, \newline ISBN13: 978-1-59059-684-5, Einsichtnahme: 25.05.2009
+
+	 \bibitem[Jose07]{Jose07}David Josephsen (2007) \pictext{Bulding a monitoring infrastructure with Nagios}, \newline ISBN13: 0-132-23693-1, Einsichtnahme: 16.06.2009
+
+	 \bibitem[SOA07]{SOA07}Hurwitz; Bloor; Baroudi; Kaufman; (2007) \pictext{Service Oriented Architecture For Dummies}, \newline ISBN13: 978-0-470-05435-2, Einsichtnahme: 29.07.2009
+	 
+		 \bibitem[Melzer08]{Melzer08}Ingo Melzer (2007) \pictext{Service-orientierte Architekturen mit Web Services: Konzepte - Standards - Praxis}, \newline ISBN13: 978-9-8274-1993-4, Einsichtnahme: 29.07.2009	 
+		 
+		 	 \bibitem[Munin08]{Mu08} Gabriele Pohl und Michael Renner (2008) 
+	 \pictext{Munin - Graphisches Netzwerk- und System-Monitoring}, \newline ISBN13: 978-3-937514-48-2, Einsichtnahme: 05.04.2009\\	
+	 	
+%\paragraph{Internetquellen}
+ 		 	 	 \bibitem[NagiosFAQ]{NagiosFAQ} Ethan Galstad (2009) \pictext{What does Nagios mean?}, \\ Quelle: \url{http://support.nagios.com/knowledgebase/faqs/index.php?option=com\_content&view=article&id=52&catid=35&faq\_id=2&expand=false&showdesc=true} \newline Stand: 02.06.2009, Einsichtnahme: 09.06.2009 	 
+	 
+	 \bibitem[UCM07]{UCM07} Ohne Verfasser (2007) \pictext{Oracle Application Server Documentation Libary - Oracle Content Management 10gR3}, \\ Quelle: \url{http://download-west.oracle.com/docs/cd/E10316_01/cs/cs\_doc\_10/documentation/integrator/getting\_started\_10en.pdf} \newline Einsichtnahme: 16.06.2009
+	 
+	 	 \bibitem[UCMlog09]{UCMlog09} Unbekannter Author "`vramanat} (2009) \pictext{Universal Content Management 10gR3 - Content Server Log File Information}, \\ Quelle: \url{http://www.oracle.com/technology/products/content-management/cdbs/loginfo.pdf} \newline Stand: 20.01.2009, Einsichtnahme: 05.06.2009
+	 	 
+	 	 \bibitem[OraPress]{OraPress} Letty Ledbetter (2009) \pictext{Oracle Press Release - Oracle Buys Stellent}, \\ Quelle: \url{http://www.oracle.com/corporate/press/2006_nov/stellent.html} \newline Stand: 02.11.2006, Einsichtnahme: 16.06.2009
+	 	 
+	 	 	 \bibitem[W3WS04]{W3WS04} Booth; Haas; McCabe u.a. (2004) \pictext{Web Services Architecture - W3C Working Group Note 11 February 2004}, \\ Quelle: \url{http://www.w3.org/TR/ws-arch/wsa.pdf} \newline Stand: 11.02.2004, Einsichtnahme: 29.07.2009
+	 
+\end{thebibliography}
+
+%\section{Anhang}
+%\section{\appendixname}
+%\appendix
+
+
+\end{document}
+
+%makeindex bach.glo -s bach.ist -o bach.gls && svn add tex/* bilder/* ppt/* * && svn ci
+
+
