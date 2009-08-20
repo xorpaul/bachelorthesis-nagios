@@ -1,9 +1,20 @@
 \section{Abstract}
 
-Diese Bachelorarbeit ermöglicht eine intensive Überwachung des Dokumenten-Management-Systems \gls{OracleUCM}\footnote{Oracle Universal-Content-Management} durch die Open Source-Software Nagios um proaktiv auftretende Fehler zu entdecken.
-Dabei werden die Grundlagen von Dokumenten-Management-Systemen, Aufbau von \gls{OracleUCM} und Nagios beleuchtet und beschrieben.
-Dadurch kann eine geeignete Methode aus den unterschiedlichen Überwachungsmethoden von Nagios ausgewählt werden.
-Notwendige Kenntnisse über Service-orientierte Architektur (\gls{SOA}) und Web Services werden für die Umsetzung angeeignet.
+
+Dokumenten-Management-Systeme bilden eine zentralen Dienstleistung im Karlsruhe Insitute of Technology.
+Diese Systeme sind komplex aufgebaut und benötigen ausgefeilte Kontrollmaßnahmen / Überwachungsroutinen um einen stabilen Betrieb zu garantieren / ermöglichen.
+Zum gegenwärtigen Zeitpunkt gibt es keine ausgereifte Überwachungssoftware, die diese Aufgabe zufriedenstellend erfüllt.
+
+Diese Bachelorarbeit beschreibt die Entwicklung von neuen Werkzeugen für die Open Source-Überwachungssoftware Nagios um das Dokumenten-Management-System \gls{OracleUCM}\footnote{Oracle Universal-Content-Management} auf Fehlverhalten hin zu kontrollieren.
+Diese sogenannten Plugins lassen sich in bestehende Nagios-basierende Systeme einbinden und erweitern deren Bandbreite an zu überwachenden Elementen.
+Da Hauptaugenmerk lag dabei, auf der Simulation von Benutzerverhalten und der Erkennung der dabei auftretenden Fehler.
+Die Verantwortlichen sollen durch die Benachrichtigung dieser Fehler sofort alarmiert werden und durch die unterschiedliche Tiefe der Überwachungstests die Problemquellen eingrenzen können.
+%, welche möglichst zu Laufzeit erkannt und deren Fehl
+%Meldungen können die Problemquellen vom Administrator gefunden und eventuell behoben werden,
+%Diese Bachelorarbeit beschäftigt sich mit der Entwicklung eines Plugins für die Open Source-Überwachungsoftware Nagios intensiven Überwachung des Dokumenten-Management-Systems \gls{OracleUCM}\footnote{Oracle Universal-Content-Management} durch  um proaktiv auftretende Fehler zu entdecken.
+%Dabei werden die Grundlagen von Dokumenten-Management-Systemen, Aufbau von \gls{OracleUCM} und Nagios beleuchtet und beschrieben.
+%Dadurch kann eine geeignete Methode aus den unterschiedlichen Überwachungsmethoden von Nagios ausgewählt werden.
+%Notwendige Kenntnisse über Service-orientierte Architektur (\gls{SOA}) und Web Services werden für die Umsetzung angeeignet.
 
 Die Überwachung besteht aus den Ebenen: Statusabfragen, Funktionalitätstests, Auswertung von Logdateien und Benutzersimulation.
 Auf dem Windows-Servers der \gls{OracleUCM}-Anwendung wird ein passender Nagios-Agent installiert, der aus einer vorherigen Übersicht ausgewählt wurde.

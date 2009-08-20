@@ -19,7 +19,8 @@
 \glossaryentryfield{DNS}{\glsnamefont{DNS}}{Domain Name System}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter{page}\glsnumberformat{37}}}%
 \glossaryentryfield{DoS}{\glsnamefont{DoS}}{Denial of Service}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter{page}\glsnumberformat{11}}}\glsgroupskip
+		\setentrycounter{page}\glsnumberformat{11}\delimN 
+		\setentrycounter{page}\glsnumberformat{51}}}\glsgroupskip
 \glsgroupheading{E}\relax \glsresetentrylist %
 \glossaryentryfield{ECM}{\glsnamefont{ECM}}{Enterprise-Content-Management}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter{page}\glsnumberformat{21}}}\glsgroupskip
@@ -96,7 +97,6 @@
 		\setentrycounter{page}\glsnumberformat{53\delimN 54}\delimN 
 		\setentrycounter{page}\glsnumberformat{56}}}%
 \glossaryentryfield{SOA}{\glsnamefont{SOA}}{Service-Oriented Architecture}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter{page}\glsnumberformat{3}\delimN 
 		\setentrycounter{page}\glsnumberformat{6}\delimN 
 		\setentrycounter{page}\glsnumberformat{21\delimR 23}\delimN 
 		\setentrycounter{page}\glsnumberformat{41}}}%

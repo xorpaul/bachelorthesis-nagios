@@ -30,7 +30,8 @@ Wie in Kapitel \ref{methoden} aufgeführt, bietet Nagios verschiedene Möglichke
 Für Dienste, die sich über das Netzwerk erreichen lassen, können die dafür entwickelten Nagios-Plugins direkt vom Nagios-Server verwendet werden.
 Da Windows als Betriebssystem auf dem \gls{OracleUCM}-Server eingesetzt wird, kann die \gls{SSH}-Variante nicht eingesetzt werden.
 Die \gls{NRPE}-Methode wird für die Auswertung der Logdateien verwendet.
-Die Überwachung per \gls{SNMP} wird aufgrund der höheren Komplexität dieser Variante und des begrenzten zeitlichen Rahmens dieser Arbeit nicht benutzt.\label{snmpkom}
+Die Überwachung per \gls{SNMP} wird im Karlsruhe Insitute of Technology nicht eingesetzt, da man eine \gls{DoS}-Attacke durch das Senden von vielen \gls{SNMP}-Traps zu dem Nagios-Server verhindern will.\label{snmpkom}
+%der höheren Komplexität dieser Variante und des begrenzten zeitlichen Rahmens dieser Arbeit nicht benutzt
 Die passive Vorgehensweise mit \gls{NSCA} wird für die Umsetzung nicht benötigt und deshalb nicht verwendet.
 
 Für die Überwachung von Windows-Servern wurde eine weitere Methode entwickelt, die auf dem Prinzip von \gls{NRPE} basiert.

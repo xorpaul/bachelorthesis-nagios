@@ -120,14 +120,14 @@ if(!mb_eregi('JFIF', $outputGetThumbnail))
 Sofern das Bild gefunden wurde, wird es vom Plugin anschließend angefordert und nach dem Dateityp untersucht.
 %Die Konvertierung wird dadurch überprüft indem die konvertierten Versionen des Testbildes angefordert werden und wie das Originalbild auf einen gültigen Dateityp getestet werden.
 %Die Konvertierung wird dadurch überprüft indem die konvertierten Versionen auf einen gültigen Dateityp getestet werden.
-Für die Überprüfung auf den gültigen Datentyp wird direkt in den Bytecode der verschiedenen Versionen des Testbildes geschaut.
+Für die Überprüfung auf den gültigen Datentyp wird direkt in den Binärcode der verschiedenen Versionen des Testbildes geschaut.
 
 \begin{figure}[ht]
 	\centering
 	   \fbox{\subfigure[PNG-Bild]{\includegraphics[scale=0.6]{bilder/eregi-png.png}} \quad \quad
 	   \subfigure[JPEG-Bild]{\includegraphics[scale=0.6]{bilder/jpg-eregi.png}}
 	   }
-		\caption{Bytecode von PNG- und JPEG-Bilddateien}
+		\caption{Binärcode von PNG- und JPEG-Bilddateien}
 		\label{bytecode}
 \end{figure}
 
