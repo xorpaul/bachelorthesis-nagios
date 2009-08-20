@@ -21,7 +21,7 @@
 \contentsline {subsection}{\numberline {3.3}Content-Management-Systeme}{18}{subsection.3.3}
 \contentsline {subsection}{\numberline {3.4}Enterprise-Content-Management-Systeme}{20}{subsection.3.4}
 \contentsline {subsection}{\numberline {3.5}Serviceorientierte Architektur}{20}{subsection.3.5}
-\contentsline {subsection}{\numberline {3.6}Web-Services-Architektur}{22}{subsection.3.6}
+\contentsline {subsection}{\numberline {3.6}Web Services-Architektur}{22}{subsection.3.6}
 \contentsline {paragraph}{SOAP}{23}{section*.10}
 \contentsline {paragraph}{WSDL}{24}{section*.11}
 \contentsline {paragraph}{UDDI}{24}{section*.12}
@@ -74,8 +74,8 @@
 \contentsline {subsection}{\numberline {7.5}Umsetzung der Funktionlit\IeC {\"a}tstest}{60}{subsection.7.5}
 \contentsline {subsection}{\numberline {7.6}Auswertung der Logdateien}{62}{subsection.7.6}
 \contentsline {subsection}{\numberline {7.7}Benutzersimulation}{63}{subsection.7.7}
-\contentsline {paragraph}{Einchecken eines Testbildes}{64}{section*.33}
+\contentsline {paragraph}{Einchecken eines Testbildes}{65}{section*.33}
 \contentsline {paragraph}{Validierung der Indizierung und Konvertierung}{67}{section*.34}
 \contentsline {section}{\numberline {8}Ergebnis}{71}{section.8}
-\contentsline {section}{\numberline {9}Zusammenfassung}{73}{section.9}
-\contentsline {section}{\numberline {10}Ausblick}{76}{section.10}
+\contentsline {section}{\numberline {9}Zusammenfassung}{74}{section.9}
+\contentsline {section}{\numberline {10}Ausblick}{77}{section.10}

@@ -105,11 +105,11 @@ Bei der Prozessorüberwachung schlägt Nagios Alarm, wenn der Mittelwert der Aus
 
 \subsection{Auswertung der Logdateien}
 
-Um die drei genannten Logdateien aus Kapitel \ref{checklog} auszuwerten wird durch den \gls{NRPE}-Dienst das Plugin \textit{check\_logfiles} von Gerhard Laußer eingesetzt.
+Um die drei genannten Logdateien aus Kapitel \ref{checklog} auszuwerten wird durch den \gls{NRPE}-Dienst das Plugin \textit{check\_logfiles} von Gerhard Laußer\footnote{Quelle: \url{http://www.consol.de/opensource/nagios/check-logfiles}} eingesetzt.
 
 Dieses Plugin besitzt bereits einige nützliche Funktionen für die Überwachung von Logdateien.
 Durch das Setzten eines Zeitstempels filtert das Plugin veraltete Einträge heraus und untersucht nur neu hinzugekommene Zeilen.
-Der Rotationsalgorithmus der Oracle UCM-Logdateien kann dem Plugin durch die Verwendung einer Konfigurationsdatei mitgeteilt werden.
+Der Rotationsalgorithmus der \gls{OracleUCM}-Logdateien kann dem Plugin durch die Verwendung einer Konfigurationsdatei mitgeteilt werden.
 
 Die Konfigurationsdatei für das \textit{check\_logfiles}-Plugin wird im folgendem Listing gezeigt:
 
@@ -121,9 +121,9 @@ Die Konfigurationsdatei für das \textit{check\_logfiles}-Plugin wird im folgend
   logfile => 'D:/bdb2/weblayout/groups/secure/logs/bdb/IdcLnLog.htm',
   rotation => 'refinery\d{2}\.htm',
   warningpatterns => [
-        'Cannot identify file',
-	  'Bad CRC value in IHDR chunk',
-	  'Der Dateiname darf nicht länger als 80 Zeichen sein',
+        'Cannot identify file', #Testbild korrupt
+	  'Bad CRC value in IHDR chunk', #Konvertierung nicht erfolgreich
+	  'Der Dateiname darf nicht länger als 80 Zeichen sein', #Zu langer Dateiname
     ],
 });
 \end{lstlisting}
