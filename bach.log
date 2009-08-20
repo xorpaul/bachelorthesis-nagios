@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2009.1.26)  20 AUG 2009 12:30
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2009.1.26)  20 AUG 2009 13:51
 entering extended mode
  %&-line parsing enabled.
 **bach.tex
@@ -650,6 +650,12 @@ Overfull \hbox (3.51381pt too wide) in paragraph at lines 3--7
 -chung des Dokumenten-
  []
 
+
+Overfull \hbox (6.7508pt too wide) in paragraph at lines 8--12
+\T1/aer/m/n/12 tests, Aus-wer-tung von Log-da-tei-en und Be-nut-zer-si-mu-la-ti
+-on. Auf dem Windows-
+ []
+
 )pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -1252,25 +1258,25 @@ File: bilder/ssl-text.png Graphic file (type png)
 File: bilder/cpu-load2.png Graphic file (type png)
 
 <use bilder/cpu-load2.png>
-<bilder/iwrp-load.png, id=1353, 518.93875pt x 210.7875pt>
+File: bilder/fzk2.png Graphic file (type png)
+ <use bilder/fzk2.png> [73 <./bilder/klartext.png> <./bilder/ssl-text.png> <./b
+ilder/cpu-load2.png>]
+<bilder/iwrp-load.png, id=1361, 518.93875pt x 210.7875pt>
 File: bilder/iwrp-load.png Graphic file (type png)
 
 <use bilder/iwrp-load.png>
-<bilder/bdbd-mem4.png, id=1354, 518.93875pt x 168.63pt>
+<bilder/bdbd-mem4.png, id=1362, 518.93875pt x 168.63pt>
 File: bilder/bdbd-mem4.png Graphic file (type png)
 
-<use bilder/bdbd-mem4.png>
+<use bilder/bdbd-mem4.png>)
 File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png> [73 <./bilder/klartext.png> <./bilder/ssl-text.png>])
-File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png> [74 <./bilder/cpu-load2.png> <./bilder/iwrp-load.png>] (
+ <use bilder/fzk2.png> [74 <./bilder/iwrp-load.png> <./bilder/bdbd-mem4.png>] (
 ./tex/ausblick.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--8
 
  []
 
-File: bilder/fzk2.png Graphic file (type png)
-<use bilder/fzk2.png> [75 <./bilder/bdbd-mem4.png>]
+
 Overfull \hbox (4.37785pt too wide) in paragraph at lines 16--19
 []\T1/aer/m/n/12 Für die Um-set-zung wur-de die Service-orientierte Ar-chi-tek-
 tur der [][]Oracle UCM[]-
@@ -1282,174 +1288,169 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--19
  []
 
 File: bilder/fzk2.png Graphic file (type png)
-<use bilder/fzk2.png> [76]
+<use bilder/fzk2.png> [75]
 File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png> [77]
+ <use bilder/fzk2.png> [76]
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png>
-[78])
+[77])
 File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png> [79] (./bach.gls
+ <use bilder/fzk2.png> [78] (./bach.gls
 Underfull \hbox (badness 1776) in paragraph at lines 10--11
-[]|[]\T1/aer/m/n/12 12[], []15[],
+[]|[]\T1/aer/m/n/12 13[], []16[],
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 18--19
-[]|[]\T1/aer/m/n/12 1[], []10[],
+[]|[]\T1/aer/m/n/12 1[], []11[],
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 18--19
-[]\T1/aer/m/n/12 14[]--[]16[],
+[]\T1/aer/m/n/12 15[]--[]17[],
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 45--45
-[]|[]\T1/aer/m/n/12 7[], []10[],
+[]|[]\T1/aer/m/n/12 8[], []11[],
  []
 
 
 Underfull \hbox (badness 1776) in paragraph at lines 45--45
-[]\T1/aer/m/n/12 35[], []51[],
+[]\T1/aer/m/n/12 36[], []52[],
  []
 
 
 Underfull \hbox (badness 1776) in paragraph at lines 52--52
-[]|[]\T1/aer/m/n/12 36[], []37[],
+[]|[]\T1/aer/m/n/12 37[], []38[],
  []
 
 
 Underfull \hbox (badness 1776) in paragraph at lines 57--58
-[]|[]\T1/aer/m/n/12 11[], []15[],
+[]|[]\T1/aer/m/n/12 12[], []16[],
  []
 
 
 Underfull \hbox (badness 1776) in paragraph at lines 63--64
-[]\T1/aer/m/n/12 52[], []55[],
+[]\T1/aer/m/n/12 53[], []56[],
  []
 
 
 Underfull \hbox (badness 1776) in paragraph at lines 63--64
-[]\T1/aer/m/n/12 56[], []58[],
+[]\T1/aer/m/n/12 57[], []59[],
  []
 
 
 Underfull \hbox (badness 1776) in paragraph at lines 67--67
-[]|[]\T1/aer/m/n/12 37[], []50[],
+[]|[]\T1/aer/m/n/12 38[], []51[],
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 80--80
-[]|[]\T1/aer/m/n/12 3[], []39[],
+[]|[]\T1/aer/m/n/12 3[], []4[],
  []
 
 
 Underfull \hbox (badness 1776) in paragraph at lines 80--80
-[]\T1/aer/m/n/12 40[], []42[],
+[]\T1/aer/m/n/12 40[], []41[],
  []
 
 
 Underfull \hbox (badness 1776) in paragraph at lines 80--80
-[]\T1/aer/m/n/12 44[], []45[],
+[]\T1/aer/m/n/12 43[], []45[],
  []
 
 
 Underfull \hbox (badness 1776) in paragraph at lines 80--80
-[]\T1/aer/m/n/12 49[], []50[],
+[]\T1/aer/m/n/12 46[], []50[],
+ []
+
+
+Underfull \hbox (badness 1776) in paragraph at lines 80--80
+[]\T1/aer/m/n/12 66[], []68[],
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 80--80
-[]\T1/aer/m/n/12 62[]--[]65[],
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 80--80
-[]\T1/aer/m/n/12 67[],
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 80--80
-[]\T1/aer/m/n/12 69[]--[]71[],
+[]\T1/aer/m/n/12 70[]--[]72[],
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 86--87
-[]|[]\T1/aer/m/n/12 1[], []15[],
+[]|[]\T1/aer/m/n/12 1[], []16[],
  []
 
 
 Underfull \hbox (badness 1776) in paragraph at lines 97--98
-[]|[]\T1/aer/m/n/12 36[], []37[],
+[]|[]\T1/aer/m/n/12 37[], []38[],
  []
 
 
 Underfull \hbox (badness 1776) in paragraph at lines 97--98
-[]\T1/aer/m/n/12 50[], []52[],
+[]\T1/aer/m/n/12 51[], []53[],
  []
 
 
-Underfull \hbox (badness 7796) in paragraph at lines 101--102
-[]|[]\T1/aer/m/n/12 5[], []20[]--
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
+[]|[]\T1/aer/m/n/12 3[], []6[],
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--105
-[]|[]\T1/aer/m/n/12 23[]--[]25[],
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
+[]\T1/aer/m/n/12 21[]--[]23[],
  []
 
 
-Underfull \hbox (badness 1776) in paragraph at lines 107--108
-[]|[]\T1/aer/m/n/12 34[], []35[],
+Underfull \hbox (badness 10000) in paragraph at lines 105--106
+[]|[]\T1/aer/m/n/12 24[]--[]26[],
+ []
+
+
+Underfull \hbox (badness 1776) in paragraph at lines 108--109
+[]|[]\T1/aer/m/n/12 35[], []36[],
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 120--120
-[]|[]\T1/aer/m/n/12 23[]--[]25[],
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 120--120
-[]\T1/aer/m/n/12 65[]--[]67[],
+[]|[]\T1/aer/m/n/12 24[]--[]26[],
  []
 
 
 Underfull \hbox (badness 1776) in paragraph at lines 126--127
-[]|[]\T1/aer/m/n/12 23[], []24[],
+[]|[]\T1/aer/m/n/12 24[], []25[],
  []
 
 
 Underfull \hbox (badness 1776) in paragraph at lines 126--127
-[]\T1/aer/m/n/12 65[], []67[],
+[]\T1/aer/m/n/12 66[], []68[],
  []
 
 File: bilder/fzk2.png Graphic file (type png)
-<use bilder/fzk2.png> [80]
+<use bilder/fzk2.png> [79]
 File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png> [81])
+ <use bilder/fzk2.png> [80])
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png>
-[82] (./bach.lof
+[81] (./bach.lof
 File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png> [83])
+ <use bilder/fzk2.png> [82])
 \tf@lof=\write9
 \openout9 = `bach.lof'.
 
 File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png> [84]
+ <use bilder/fzk2.png> [83]
 (./bach.lol)
 \tf@lol=\write10
 \openout10 = `bach.lol'.
 
 File: bilder/fzk2.png Graphic file (type png)
- <use bilder/fzk2.png> [85] (./bach.lot)
+ <use bilder/fzk2.png> [84] (./bach.lot)
 \tf@lot=\write11
 \openout11 = `bach.lot'.
 
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png>
-[86]
+[85]
 Underfull \hbox (badness 6001) in paragraph at lines 150--153
 []\T1/aer/m/n/12 Götzer; Schma-le; Mai-er; Kom-ke (2008) ^^R\T1/aer/m/it/12 Dok
 umenten-
@@ -1461,7 +1462,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 165--167
  []
 
 File: bilder/fzk2.png Graphic file (type png)
-<use bilder/fzk2.png> [87]
+<use bilder/fzk2.png> [86]
 Underfull \hbox (badness 10000) in paragraph at lines 171--172
 \T1/aer/m/n/12 Quelle: []$\T1/aett/m/n/12 http : / / support . nagios . com / k
 nowledgebase /
@@ -1492,7 +1493,7 @@ rate / press / 2006 _
  []
 
 File: bilder/fzk2.png Graphic file (type png)
-<use bilder/fzk2.png> [88]
+<use bilder/fzk2.png> [87]
 Underfull \hbox (badness 10000) in paragraph at lines 181--182
 \T1/aer/m/n/12 Quelle: []$\T1/aett/m/n/12 http : / / nsclient . org / nscp / wi
 ki / doc / usage /
@@ -1505,14 +1506,14 @@ c / a / PHP /
  []
 
 File: bilder/fzk2.png Graphic file (type png)
-<use bilder/fzk2.png> [89] (./bach.aux)
+<use bilder/fzk2.png> [88] (./bach.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 13662 strings out of 94074
- 196108 string characters out of 1165153
+ 13661 strings out of 94074
+ 196101 string characters out of 1165153
  620989 words of memory out of 1500000
  15985 multiletter control sequences out of 10000+50000
  41062 words of font info for 91 fonts, out of 1200000 for 2000
@@ -1645,9 +1646,9 @@ esky/cm/cmsl12.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmsy10.pfb>
 exlive/fonts/type1/bluesky/cm/cmtt10.pfb></usr/share/texmf-texlive/fonts/type1/
 bluesky/cm/cmtt12.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmtt8.pf
 b></usr/share/texmf-texlive/fonts/type1/bluesky/ams/msam10.pfb>
-Output written on bach.pdf (93 pages, 5731607 bytes).
+Output written on bach.pdf (92 pages, 5729519 bytes).
 PDF statistics:
- 1790 PDF objects out of 2073 (max. 8388607)
- 530 named destinations out of 1000 (max. 131072)
+ 1787 PDF objects out of 2073 (max. 8388607)
+ 529 named destinations out of 1000 (max. 131072)
  640 words of extra memory for PDF output out of 10000 (max. 10000000)
 
