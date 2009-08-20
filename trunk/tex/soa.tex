@@ -44,7 +44,7 @@ Die komplexen Berechnungen und Algorithmen zur Bestimmung der Kreditwürdigkeit 
 
 Die Komponente \textit{Credit Checking} steht der Webshop Anwendung als \textbf{abstrahierter Dienst bzw. Service} zur Verfügung.
 
-\subsection{Web-Services-Architektur}
+\subsection{Web Services-Architektur}
 \label{webservice}
 Wie bei dem Begriff \gls{SOA} gibt es für Web Services keine allgemein gültige Definition, jedoch überlappen sich Definitionsvorschläge in verschiedenen Gesichtspunkten.
 Laut Melzer (\cite{Melzer08} S. 55) bietet das World Wide Web Consortium (\gls{W3C}) den konkretesten Ansatz einer passenden Definition.
@@ -73,18 +73,15 @@ Als Beispiel für eine \gls{SOAP}-Kommunikation verschickt ein Client zwei Zahle
 Der Server entpackt die \gls{SOAP}-Nachricht und führt mit den zwei Zahlenwerte die Addition aus.
 Das Ergebnis der Rechnung wird im Anschluss wieder als Nachricht im \gls{SOAP}-Format an den Client zurückgesendet.
 
-Daraus leitet Melzer folgende Spezifikationen für eine Web-Services-Architektur ab:
+Daraus leitet Melzer folgende Spezifikationen für eine Web Services-Architektur ab:
 \paragraph{SOAP}
 beschreibt das \gls{XML}-basierte Nachrichtenformat der Kommunikation und dessen Einbettung in ein Transportprotokoll.
 \paragraph{WSDL}
 ist eine - ebenfalls \gls{XML}-basierte - Beschreibungssprache, um Web Services (Dienste) zu beschreiben.
 \paragraph{UDDI}
-beschreibt einen Verzeichnisdienst für Web Services. \gls{UDDI} (Universal Description, Discovery and Integration protocol) spezifiziert eine standardisierte Verzeichnisstruktur für die Verwaltung von Web-Services-Metadaten.
-Zu den Metadaten zählen allgemeine Anforderungen, Web-Services-Eigenschaften oder die benötigten Informationen zum Auffinden von Web Services.
+beschreibt einen Verzeichnisdienst für Web Services. \gls{UDDI} (Universal Description, Discovery and Integration protocol) spezifiziert eine standardisierte Verzeichnisstruktur für die Verwaltung von Web Services-Metadaten.
+Zu den Metadaten zählen allgemeine Anforderungen, Web Services-Eigenschaften oder die benötigten Informationen zum Auffinden von Web Services.
 \begin{flushright}\cite{Melzer08} S. 55\end{flushright}
-
-Dabei erwähnt Metzer (\cite{Melzer08} S. 56), dass ein Verzeichnisdienst keine Notwendigkeit für die Verwendung eines Web Services ist, "`sondern vielmehr die Infrastruktur zum Auffinden von geeigneten Web Services beschreibt."'
-
 
 Der Ablauf der Benutzung eines Web Services soll durch Abbildung \ref{soa-3eck} verdeutlicht werden.
 
@@ -105,7 +102,11 @@ Der Ablauf der Benutzung eines Web Services soll durch Abbildung \ref{soa-3eck} 
 \end{figure}
 \footnotetext{Quelle: \cite{Melzer08} S. 56}
 
+Dabei erwähnt Metzer, dass ein Verzeichnisdienst keine Notwendigkeit für die Verwendung eines Web Services ist\footnote{Quelle: \cite{Melzer08} S. 56} und, dass die Verwendung von \gls{UDDI} in Firmen immer mehr nachlässt\footnote{Quelle: \cite{Melzer08} S. 158}.
+%Weiterhin stellt Melzer folgende Aussage:
+%\begin{quote}"`Die treibenden Kräfte der UDDI-Spezifikation sind unter anderem Branchengrößen wie Mircosoft und IBM."' \begin{flushright}\cite{Melzer08} S. 139\end{flushright}\end{quote}
 
+%Jedoch wurde Ende 2005 bekannt gegeben, dass Microsoft, IBM und SAP
 
 
 

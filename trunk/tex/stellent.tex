@@ -14,7 +14,7 @@ Die Architektur des \gls{OracleUCM}-Systems gliedert sich in separate Komponente
 		\label{ucm-arch}
 \end{figure}
 \footnotetext{Quelle: \cite{ClubOra}}
-
+\newpage
 Die Anwendung \gls{OracleUCM} ist aus folgenden Kernkomponenten aufgebaut:
 
 \paragraph{Content Server}
@@ -24,7 +24,7 @@ Er dient als Grundgerüst (Framework) für darüber liegende Funktionen, da er f
 
 \begin{figure}[ht]
 	\centering
-	   \fbox{\includegraphics[width=0.85\textwidth]{bilder/contenserver.png}}
+	   \fbox{\includegraphics[width=0.85\textwidth]{bilder/contentserverrc6.png}}
 	  % \fbox{Quelle: \cite{Huff06} S. 17}
 		\caption[Beispielhafter Einsatz eines Content Servers]{Beispielhafter Einsatz eines Content Servers\protect\footnote}
 		\label{ucm-cs}
@@ -112,8 +112,8 @@ Dabei können weitere Untergruppen gebildet werden:
 
 \paragraph{Services}
 \begin{itemize}
-\item \textbf{IdcContentService}  Den Zustand des \pictext{sccdms01}-Dienst überprüfen.
-\item \textbf{IdcAdminService}  Den Zustand des \pictext{sccdms01\_admin}-Dienst für die Administration überprüfen.
+\item \textbf{IdcContentService}  Den Zustand des Content Server-Dienstes \pictext{sccdms01} überprüfen.
+\item \textbf{IdcAdminService}  Den Dienst für die Content Server-Administration \pictext{sccdms01\_admin} überwachen.
 \item \textbf{Zeitsynchronisationsdienst} Überprüfen, ob der \pictext{W32TIME}-Dienst, der für den Zeitabgleich mit einem Zeitserver zuständig ist, läuft und die Abweichung zwischen Client und Zeitserver festhalten.
 \item \textbf{Antivirusdienst} Den Zustand des Dienstes \pictext{Symantec AntiVirus} überprüfen, der für die Updates des Virusscanners notwendig ist.
 \end{itemize}
@@ -204,7 +204,7 @@ Wenn der Server nicht erreichbar ist, können auch keine weiterführende Prüfun
 Zur Systemüberwachung gehören auch allgemeine Informationen über die Systemressourcen wie freier Festplattenspeicher oder Prozessorauslastung.
 Die nächste Stufe bildet die Überprüfung der laufenden Prozesse und der Status verschiedener Dienste bzw. Services.
 Sollten bestimmte Prozesse nicht gefunden werden oder wichtige Dienste nicht gestartet sein, können auf diese Prozesse und Dienste aufbauende Checks nicht funktionieren.
-Beispielweise kann der Funktionalitätstest der Benutzeranmeldung nicht realisierbar sein, wenn bereits zuvor in der Systemüberwachung der Prozess für den Webserver \gls{IIS} nicht gefunden werden konnte.\\
+Beispielweise kann der Funktionalitätstest der Benutzeranmeldung nicht realisierbar sein, wenn bereits zuvor in der Systemüberwachung der Prozess für den Webserver \gls{IIS} nicht gefunden werden konnte.
 
 
 Alle Überwachungselemente lassen sich inklusive ihrer Abhängigkeiten in Form der Pyramide (Abbildung \ref{moniele}) darstellen.
