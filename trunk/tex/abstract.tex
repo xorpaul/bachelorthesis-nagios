@@ -1,14 +1,25 @@
-\section{Abstract}
+\section*{Abstract}
 
 
-Dokumenten-Management-Systeme bilden eine zentralen Dienstleistung im Karlsruhe Insitute of Technology.
-Diese Systeme sind komplex aufgebaut und benötigen ausgefeilte Kontrollmaßnahmen / Überwachungsroutinen um einen stabilen Betrieb zu garantieren / ermöglichen.
-Zum gegenwärtigen Zeitpunkt gibt es keine ausgereifte Überwachungssoftware, die diese Aufgabe zufriedenstellend erfüllt.
+Dokumenten-Management-Systeme (\gls{DMS}) bilden eine zentrale Dienstleistung im Karlsruhe Insitute of Technology (KIT).
+Diese Systeme sind komplex aufgebaut und müssen, um einen stabilen Betrieb zu ermöglichen, mit ausgefeilten Überwachungsroutinen getestet werden.
+Zum gegenwärtigen Zeitpunkt gibt es keine Überwachungslösung im KIT, die explizit diese Aufgabe zufriedenstellend erfüllt.
 
-Diese Bachelorarbeit beschreibt die Entwicklung von neuen Werkzeugen für die Open Source-Überwachungssoftware Nagios um das Dokumenten-Management-System \gls{OracleUCM}\footnote{Oracle Universal-Content-Management} auf Fehlverhalten hin zu kontrollieren.
+Diese Bachelorarbeit beschreibt die Entwicklung von neuen Werkzeugen für die Open Source"=Überwachungssoftware Nagios um in KIT verwendete Dokumenten"=Management"=System \gls{OracleUCM}\footnote{Oracle Universal-Content-Management} auf Fehlverhalten hin zu kontrollieren.
 Diese sogenannten Plugins lassen sich in bestehende Nagios-basierende Systeme einbinden und erweitern deren Bandbreite an zu überwachenden Elementen.
-Da Hauptaugenmerk lag dabei, auf der Simulation von Benutzerverhalten und der Erkennung der dabei auftretenden Fehler.
-Die Verantwortlichen sollen durch die Benachrichtigung dieser Fehler sofort alarmiert werden und durch die unterschiedliche Tiefe der Überwachungstests die Problemquellen eingrenzen können.
+Das Hauptaugenmerk lag, auf der Simulation von Benutzerverhalten und der Erkennung der dabei auftretenden Fehler.
+Die richtige Interpretation der Fehler liefert den verantwortlichen Personen wichtigen Hinweise auf die tatsächliche Ursache und erleichtert die Lösungsfindung. \\
+
+Document-management-systems present a vital service in the Karlsruhe Insitute of Technology.
+The complexity of these systems demands a sophisticated monitoring solution to provide a reliable operation of this service.
+At this point in time there are no satisfying solutions available for this task.
+
+This thesis describes the development of a way to monitor the document-management-system \gls{OracleUCM}, which is used in KIT, in combination with the open source software Nagios.
+These so-called plugins can be integrated in existing Nagios-based systems and can thus expand the range of controlled objects.
+The main focus was the simulation of typical user-actions and the detection of thereby occurring errors.
+The correct interpretation of theses errors will indicate  the cause of the problem to the responsible persons and can help in finding a possible solution.
+
+%Die Verantwortlichen sollen durch die Benachrichtigung dieser Fehler sofort alarmiert werden und durch die unterschiedliche Tiefe der Überwachungstests die Problemquellen eingrenzen können.
 %, welche möglichst zu Laufzeit erkannt und deren Fehl
 %Meldungen können die Problemquellen vom Administrator gefunden und eventuell behoben werden,
 %Diese Bachelorarbeit beschäftigt sich mit der Entwicklung eines Plugins für die Open Source-Überwachungsoftware Nagios intensiven Überwachung des Dokumenten-Management-Systems \gls{OracleUCM}\footnote{Oracle Universal-Content-Management} durch  um proaktiv auftretende Fehler zu entdecken.
@@ -16,10 +27,10 @@ Die Verantwortlichen sollen durch die Benachrichtigung dieser Fehler sofort alar
 %Dadurch kann eine geeignete Methode aus den unterschiedlichen Überwachungsmethoden von Nagios ausgewählt werden.
 %Notwendige Kenntnisse über Service-orientierte Architektur (\gls{SOA}) und Web Services werden für die Umsetzung angeeignet.
 
-Die Überwachung besteht aus den Ebenen: Statusabfragen, Funktionalitätstests, Auswertung von Logdateien und Benutzersimulation.
-Auf dem Windows-Servers der \gls{OracleUCM}-Anwendung wird ein passender Nagios-Agent installiert, der aus einer vorherigen Übersicht ausgewählt wurde.
-Die Konfiguration und der Einsatz von bereits erhältlichen Nagios-Plugins decken die ersten drei Ebenen ab.
-Die automatisierte Benutzersimulation verwendet verschiedene Web Services der \gls{OracleUCM}-Anwendung.
+%Die Überwachung besteht aus den Ebenen: Statusabfragen, Funktionalitätstests, Auswertung von Logdateien und Benutzersimulation.
+%Auf dem Windows-Servers der \gls{OracleUCM}-Anwendung wird ein passender Nagios-Agent installiert, der aus einer vorherigen Übersicht ausgewählt wurde.
+%Die Konfiguration und der Einsatz von bereits erhältlichen Nagios-Plugins decken die ersten drei Ebenen ab.
+%Die automatisierte Benutzersimulation verwendet verschiedene Web Services der \gls{OracleUCM}-Anwendung.
 
 
 %Ein Abstract ist eine prägnante Inhaltsangabe, ein Abriss ohne Interpretation und Wertung einer wissenschaftlichen Arbeit.
