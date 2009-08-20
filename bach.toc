@@ -1,82 +1,81 @@
 \select@language {ngerman}
-\contentsline {section}{\numberline {1}Einleitung}{1}{section.1}
-\contentsline {section}{\numberline {2}Abstract}{3}{section.2}
-\contentsline {section}{\numberline {3}Aufgabenstellung}{4}{section.3}
-\contentsline {section}{\numberline {4}Grundlagen}{6}{section.4}
-\contentsline {subsection}{\numberline {4.1}\IeC {\"U}berwachungssysteme}{6}{subsection.4.1}
-\contentsline {subsubsection}{\numberline {4.1.1}Ressourcenbelastung}{7}{subsubsection.4.1.1}
-\contentsline {paragraph}{Zentralisierte \IeC {\"U}berwachung}{7}{section*.2}
-\contentsline {paragraph}{Dezentralisierte \IeC {\"U}berwachung}{8}{section*.3}
-\contentsline {subsubsection}{\numberline {4.1.2}Netzwerkstruktur und Abh\IeC {\"a}ngigkeiten}{8}{subsubsection.4.1.2}
-\contentsline {paragraph}{\IeC {\"U}berwachungsredundanzen vermeiden}{9}{section*.4}
-\contentsline {paragraph}{Minimale Netzwerkbelastung}{10}{section*.5}
-\contentsline {subsubsection}{\numberline {4.1.3}Sicherheitsaspekte}{10}{subsubsection.4.1.3}
-\contentsline {subsection}{\numberline {4.2}Dokumenten-Management-Systeme}{11}{subsection.4.2}
-\contentsline {subsubsection}{\numberline {4.2.1}Eingabe}{15}{subsubsection.4.2.1}
-\contentsline {paragraph}{Dokumenteneingang}{15}{section*.6}
-\contentsline {paragraph}{Indizierung}{16}{section*.7}
-\contentsline {subsubsection}{\numberline {4.2.2}Verwaltung und Archivierung}{17}{subsubsection.4.2.2}
-\contentsline {subsubsection}{\numberline {4.2.3}Ausgabe}{17}{subsubsection.4.2.3}
-\contentsline {paragraph}{Recherche}{17}{section*.8}
-\contentsline {paragraph}{Reproduktion}{18}{section*.9}
-\contentsline {subsection}{\numberline {4.3}Content-Management-Systeme}{19}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}Enterprise-Content-Management-Systeme}{21}{subsection.4.4}
-\contentsline {subsection}{\numberline {4.5}Serviceorientierte Architektur}{21}{subsection.4.5}
-\contentsline {subsection}{\numberline {4.6}Web Services-Architektur}{23}{subsection.4.6}
-\contentsline {paragraph}{SOAP}{24}{section*.10}
-\contentsline {paragraph}{WSDL}{25}{section*.11}
-\contentsline {paragraph}{UDDI}{25}{section*.12}
-\contentsline {section}{\numberline {5}Nagios}{27}{section.5}
-\contentsline {subsection}{\numberline {5.1}Allgemein}{27}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Aufbau}{28}{subsection.5.2}
-\contentsline {paragraph}{Nagios-Plugins und Ausgabe}{30}{section*.13}
-\contentsline {paragraph}{Hard und Soft States}{32}{section*.14}
-\contentsline {paragraph}{Flapping}{33}{section*.15}
-\contentsline {subsection}{\numberline {5.3}\IeC {\"U}berpr\IeC {\"u}fungsmethoden}{34}{subsection.5.3}
-\contentsline {subsubsection}{\numberline {5.3.1}Aktive Checks}{34}{subsubsection.5.3.1}
-\contentsline {subsubsection}{\numberline {5.3.2}Passive Checks}{34}{subsubsection.5.3.2}
-\contentsline {paragraph}{Methode 1 - Netzwerkdienste}{35}{section*.16}
-\contentsline {paragraph}{Methode 2 - SSH}{35}{section*.17}
-\contentsline {paragraph}{Methode 3 - NRPE}{36}{section*.18}
-\contentsline {paragraph}{Methode 4 - SNMP}{37}{section*.19}
-\contentsline {paragraph}{Methode 5 - NSCA}{38}{section*.20}
-\contentsline {section}{\numberline {6}Oracle UCM}{40}{section.6}
-\contentsline {subsection}{\numberline {6.1}Allgemein}{40}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Aufbau}{40}{subsection.6.2}
-\contentsline {paragraph}{Content Server}{41}{section*.21}
-\contentsline {paragraph}{Inbound Refinery}{41}{section*.22}
-\contentsline {paragraph}{Data Storage}{42}{section*.23}
-\contentsline {paragraph}{Content Storage}{42}{section*.24}
-\contentsline {paragraph}{Vault und Web Layout}{42}{section*.25}
-\contentsline {paragraph}{Search Engine}{42}{section*.26}
-\contentsline {paragraph}{Webserver}{42}{section*.27}
-\contentsline {subsection}{\numberline {6.3}Konkrete Verwendung}{43}{subsection.6.3}
-\contentsline {section}{\numberline {7}\IeC {\"U}berwachungselemente}{44}{section.7}
-\contentsline {subsection}{\numberline {7.1}Statusabfragen}{44}{subsection.7.1}
-\contentsline {paragraph}{System}{44}{section*.28}
-\contentsline {paragraph}{Prozesse}{45}{section*.29}
-\contentsline {paragraph}{Services}{45}{section*.30}
-\contentsline {subsection}{\numberline {7.2}\IeC {\"U}berwachung der Funktionalit\IeC {\"a}t}{45}{subsection.7.2}
-\contentsline {subsection}{\numberline {7.3}Auswerten von Logdateien}{46}{subsection.7.3}
-\contentsline {subsection}{\numberline {7.4}Benutzersimulation}{47}{subsection.7.4}
-\contentsline {subsection}{\numberline {7.5}Zusammenfassung}{48}{subsection.7.5}
-\contentsline {section}{\numberline {8}Umsetzung}{50}{section.8}
-\contentsline {subsection}{\numberline {8.1}Aufbau der Testumgebung}{50}{subsection.8.1}
-\contentsline {paragraph}{Aufsetzen eines Nagios-Test-Systems}{50}{section*.31}
-\contentsline {paragraph}{Bilddatenbank als virtuelle Maschine}{50}{section*.32}
-\contentsline {subsection}{\numberline {8.2}Auswahl der geeigneten \IeC {\"U}berwachungsmethode}{50}{subsection.8.2}
-\contentsline {subsection}{\numberline {8.3}\IeC {\"U}bersicht Nagios-Agenten}{51}{subsection.8.3}
-\contentsline {subsubsection}{\numberline {8.3.1}Unix-Agenten}{51}{subsubsection.8.3.1}
-\contentsline {subsubsection}{\numberline {8.3.2}Windows-Agenten}{54}{subsubsection.8.3.2}
-\contentsline {subsubsection}{\numberline {8.3.3}Auswahl und Konfiguration des Nagios-Agenten}{56}{subsubsection.8.3.3}
-\contentsline {paragraph}{Auswahl}{56}{section*.33}
-\contentsline {paragraph}{Installation und Konfiguration}{56}{section*.34}
-\contentsline {subsection}{\numberline {8.4}Umsetzung der System\IeC {\"u}berwachung}{60}{subsection.8.4}
-\contentsline {subsection}{\numberline {8.5}Umsetzung der Funktionlit\IeC {\"a}tstest}{61}{subsection.8.5}
-\contentsline {subsection}{\numberline {8.6}Auswertung der Logdateien}{63}{subsection.8.6}
-\contentsline {subsection}{\numberline {8.7}Benutzersimulation}{64}{subsection.8.7}
-\contentsline {paragraph}{Einchecken eines Testbildes}{66}{section*.35}
-\contentsline {paragraph}{Validierung der Indizierung und Konvertierung}{68}{section*.36}
-\contentsline {section}{\numberline {9}Ergebnis}{72}{section.9}
-\contentsline {section}{\numberline {10}Zusammenfassung}{75}{section.10}
-\contentsline {section}{\numberline {11}Ausblick}{78}{section.11}
+\contentsline {section}{\numberline {1}Einleitung}{5}{section.1}
+\contentsline {section}{\numberline {2}Aufgabenstellung}{7}{section.2}
+\contentsline {section}{\numberline {3}Grundlagen}{9}{section.3}
+\contentsline {subsection}{\numberline {3.1}\IeC {\"U}berwachungssysteme}{9}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}Ressourcenbelastung}{10}{subsubsection.3.1.1}
+\contentsline {paragraph}{Zentralisierte \IeC {\"U}berwachung}{10}{section*.3}
+\contentsline {paragraph}{Dezentralisierte \IeC {\"U}berwachung}{11}{section*.4}
+\contentsline {subsubsection}{\numberline {3.1.2}Netzwerkstruktur und Abh\IeC {\"a}ngigkeiten}{11}{subsubsection.3.1.2}
+\contentsline {paragraph}{\IeC {\"U}berwachungsredundanzen vermeiden}{12}{section*.5}
+\contentsline {paragraph}{Minimale Netzwerkbelastung}{13}{section*.6}
+\contentsline {subsubsection}{\numberline {3.1.3}Sicherheitsaspekte}{13}{subsubsection.3.1.3}
+\contentsline {subsection}{\numberline {3.2}Dokumenten-Management-Systeme}{14}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Eingabe}{18}{subsubsection.3.2.1}
+\contentsline {paragraph}{Dokumenteneingang}{18}{section*.7}
+\contentsline {paragraph}{Indizierung}{19}{section*.8}
+\contentsline {subsubsection}{\numberline {3.2.2}Verwaltung und Archivierung}{20}{subsubsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.3}Ausgabe}{20}{subsubsection.3.2.3}
+\contentsline {paragraph}{Recherche}{20}{section*.9}
+\contentsline {paragraph}{Reproduktion}{21}{section*.10}
+\contentsline {subsection}{\numberline {3.3}Content-Management-Systeme}{22}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Enterprise-Content-Management-Systeme}{24}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Serviceorientierte Architektur}{24}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.6}Web Services-Architektur}{26}{subsection.3.6}
+\contentsline {paragraph}{SOAP}{27}{section*.11}
+\contentsline {paragraph}{WSDL}{28}{section*.12}
+\contentsline {paragraph}{UDDI}{28}{section*.13}
+\contentsline {section}{\numberline {4}Nagios}{30}{section.4}
+\contentsline {subsection}{\numberline {4.1}Allgemein}{30}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Aufbau}{31}{subsection.4.2}
+\contentsline {paragraph}{Nagios-Plugins und Ausgabe}{33}{section*.14}
+\contentsline {paragraph}{Hard und Soft States}{35}{section*.15}
+\contentsline {paragraph}{Flapping}{36}{section*.16}
+\contentsline {subsection}{\numberline {4.3}\IeC {\"U}berpr\IeC {\"u}fungsmethoden}{37}{subsection.4.3}
+\contentsline {subsubsection}{\numberline {4.3.1}Aktive Checks}{37}{subsubsection.4.3.1}
+\contentsline {subsubsection}{\numberline {4.3.2}Passive Checks}{37}{subsubsection.4.3.2}
+\contentsline {paragraph}{Methode 1 - Netzwerkdienste}{38}{section*.17}
+\contentsline {paragraph}{Methode 2 - SSH}{38}{section*.18}
+\contentsline {paragraph}{Methode 3 - NRPE}{39}{section*.19}
+\contentsline {paragraph}{Methode 4 - SNMP}{40}{section*.20}
+\contentsline {paragraph}{Methode 5 - NSCA}{41}{section*.21}
+\contentsline {section}{\numberline {5}Oracle UCM}{43}{section.5}
+\contentsline {subsection}{\numberline {5.1}Allgemein}{43}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Aufbau}{43}{subsection.5.2}
+\contentsline {paragraph}{Content Server}{44}{section*.22}
+\contentsline {paragraph}{Inbound Refinery}{44}{section*.23}
+\contentsline {paragraph}{Data Storage}{45}{section*.24}
+\contentsline {paragraph}{Content Storage}{45}{section*.25}
+\contentsline {paragraph}{Vault und Web Layout}{45}{section*.26}
+\contentsline {paragraph}{Search Engine}{45}{section*.27}
+\contentsline {paragraph}{Webserver}{45}{section*.28}
+\contentsline {subsection}{\numberline {5.3}Konkrete Verwendung}{46}{subsection.5.3}
+\contentsline {section}{\numberline {6}\IeC {\"U}berwachungselemente}{47}{section.6}
+\contentsline {subsection}{\numberline {6.1}Statusabfragen}{47}{subsection.6.1}
+\contentsline {paragraph}{System}{47}{section*.29}
+\contentsline {paragraph}{Prozesse}{48}{section*.30}
+\contentsline {paragraph}{Services}{48}{section*.31}
+\contentsline {subsection}{\numberline {6.2}\IeC {\"U}berwachung der Funktionalit\IeC {\"a}t}{48}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Auswerten von Logdateien}{49}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.4}Benutzersimulation}{50}{subsection.6.4}
+\contentsline {subsection}{\numberline {6.5}Zusammenfassung}{51}{subsection.6.5}
+\contentsline {section}{\numberline {7}Umsetzung}{53}{section.7}
+\contentsline {subsection}{\numberline {7.1}Aufbau der Testumgebung}{53}{subsection.7.1}
+\contentsline {paragraph}{Aufsetzen eines Nagios-Test-Systems}{53}{section*.32}
+\contentsline {paragraph}{Bilddatenbank als virtuelle Maschine}{53}{section*.33}
+\contentsline {subsection}{\numberline {7.2}Auswahl der geeigneten \IeC {\"U}berwachungsmethode}{53}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}\IeC {\"U}bersicht Nagios-Agenten}{54}{subsection.7.3}
+\contentsline {subsubsection}{\numberline {7.3.1}Unix-Agenten}{54}{subsubsection.7.3.1}
+\contentsline {subsubsection}{\numberline {7.3.2}Windows-Agenten}{57}{subsubsection.7.3.2}
+\contentsline {subsubsection}{\numberline {7.3.3}Auswahl und Konfiguration des Nagios-Agenten}{59}{subsubsection.7.3.3}
+\contentsline {paragraph}{Auswahl}{59}{section*.34}
+\contentsline {paragraph}{Installation und Konfiguration}{59}{section*.35}
+\contentsline {subsection}{\numberline {7.4}Umsetzung der System\IeC {\"u}berwachung}{63}{subsection.7.4}
+\contentsline {subsection}{\numberline {7.5}Umsetzung der Funktionlit\IeC {\"a}tstest}{64}{subsection.7.5}
+\contentsline {subsection}{\numberline {7.6}Auswertung der Logdateien}{66}{subsection.7.6}
+\contentsline {subsection}{\numberline {7.7}Benutzersimulation}{67}{subsection.7.7}
+\contentsline {paragraph}{Einchecken eines Testbildes}{69}{section*.36}
+\contentsline {paragraph}{Validierung der Indizierung und Konvertierung}{71}{section*.37}
+\contentsline {section}{\numberline {8}Ergebnis}{75}{section.8}
+\contentsline {section}{\numberline {9}Zusammenfassung}{78}{section.9}
+\contentsline {section}{\numberline {10}Ausblick}{81}{section.10}
