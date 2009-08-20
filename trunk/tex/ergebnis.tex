@@ -1,6 +1,6 @@
 \section{Ergebnis}
 
-In dieser Arbeit wurde ein Nagios-Umgebung realisiert, die eine umfassende Überwachung von \gls{OracleUCM} ermöglicht.
+In dieser Arbeit wurde eine Nagios-Umgebung entwickelt, die eine umfassende Überwachung von \gls{OracleUCM} ermöglicht.
 Das Ergebnis lässt sich im Webinterface von Nagios betrachten, siehe Abbildung \ref{nweb}.
 
 %Die in dieser Arbeit erbrachte Lösung ermöglicht die Überwachung der in Kapitel \ref{elemente} genannten Elemente.
@@ -24,7 +24,8 @@ Das Ergebnis lässt sich im Webinterface von Nagios betrachten, siehe Abbildung 
 Die einzelnen Elemente der Überwachung lassen sich mit Ausnahme der Benutzersimulation durch Konfiguration von bereits vorhandenen Nagios-Plugins überprüfen.
 Bei dieser Konfiguration müssen die bereits im Kapitel \ref{monitor} erörterten Gesichtspunkte wie Netzwerkabhängigkeiten, -belastung und sichherheitstechnische Aspekte bedacht werden.
 Gerade bei der Verwendung von Benutzerinformationen zur Authentifizierung ist es notwendig zu überprüfen, ob die Informationen als Klartext oder verschlüsselt übertragen werden.
-Diese Überprüfung lässt sich durch Programme, wie Wireshark, durchführen.
+Diese Überprüfung lässt sich durch Programme, wie Wireshark\footnote{Quelle: \url{http://www.wireshark.org/}}, durchführen.
+Wireshark protokolliert alle ein- und ausgehenden Netzwerkverbindungen mit.
 Bei einer Ausführung eines Checks mit einem Nagios-Agenten, welcher keine Verschlüsselung ermöglicht, lassen sich Informationen abfangen.
 \begin{figure}[ht]
 	\centering
@@ -63,8 +64,8 @@ Dieser wertet die Performanzinformationen der Nagios-Plugins aus und erstellt da
 		\label{iwrpload}
 \end{figure}
 
-Dabei kann die zeitliche Auflösung zwischen Minuten und Jahren dynamisch gewählt werden, um eventuelle Tendenzen zu erkennen.
-Gerade die Anzeige der Arbeitsspeicherauslastung über einen längeren Zeitraum kann speicherintensive Programme entdecken.
+Die zeitliche Auflösung kann zwischen Minuten und Jahren dynamisch gewählt werden, um eventuelle Tendenzen zu erkennen.
+Die Anzeige der Arbeitsspeicherauslastung über einen längeren Zeitraum kann helfen speicherintensive Programme zu entdecken.
 \begin{figure}[ht]
 	\centering
 	  \fbox{\includegraphics[width=0.85\textwidth]{bilder/bdbd-mem4.png}}

@@ -34,9 +34,9 @@ Die Benutzersimulation wird durch zwei Plugins realisiert.
 \paragraph{Einchecken eines Testbildes}
 Das erste Plugin dient zum Einchecken des Testbildes.
 Dabei ruft der Nagios-Server ein auf \gls{PHP}-basierendes Script auf.
-In diesem Script wird die \gls{PHP}-Klasse \textit{nuSOAP} eingebunden, damit man vereinfacht auf Web Services zugreifen kann.
+In diesem Script wird die \gls{PHP}-Bibliothek nuSOAP eingebunden, damit man vereinfacht auf Web Services zugreifen kann.
 Die Kommunikation zwischen Client und Server bei der Benutzung eines Web Services findet, wie im Kapitel \ref{webservice} beschrieben, im \gls{XML}-Format statt.
-Um den Aufwand zu vermeiden diese \gls{XML}-Datei immer selbst zu erstellen, wird mit Hilfe der \gls{WSDL}-Datei auf dem \gls{OracleUCM}-Server die benötigten Parameter beim Aufruf eines Web Services von \textit{nuSOAP} ausgelesen.
+Um den Aufwand zu vermeiden diese \gls{XML}-Datei immer selbst zu erstellen, wird mit Hilfe der \gls{WSDL}-Datei auf dem \gls{OracleUCM}-Server die benötigten Parameter beim Aufruf eines Web Services von nuSOAP ausgelesen.
 
 In der folgenden Abbildung werden aus der \gls{WSDL}-Datei alle möglichen Anforderungsparameter für den Web Service \textit{CheckInUniversal} gezeigt.
 
@@ -68,7 +68,7 @@ Im PHP-Script werden nach dem Einlesen dieser \gls{WSDL}-Datei und der Authentif
 \input{tex/plugin-checkin.tex}
 
 Die Bilddatei muss für die Übertragung über \gls{HTTP} zuerst byteweise eingelesen werden und anschließend mit dem Base64-Algorithmus kodiert werden.
-Dabei übernimmt die nuSOAP-Klasse die Base64-Enkodierung.
+Dabei übernimmt die nuSOAP-Bibliothek die Base64-Enkodierung.
 
 Der Ablauf dieses Plugins soll durch das folgende Schaubild verdeutlicht werden.
 \begin{figure}[ht]
@@ -79,7 +79,7 @@ Der Ablauf dieses Plugins soll durch das folgende Schaubild verdeutlicht werden.
 \end{figure}
 
 \begin{enumerate}
-\item Im ersten Schritt wird das \gls{PHP}-Script vom Nagios-Server aufgerufen und liest das Testbild ein. Anschließend verwendet es die \gls{WSDL}-Datei des Web Services um das entsprechende \gls{XML}-Dokument zu erstellen. Diese \gls{XML}-Datei wird anhand der nuSOAP-Klasse \gls{SOAP}-konform an den \gls{OracleUCM}-Servers gesendet.
+\item Im ersten Schritt wird das \gls{PHP}-Script vom Nagios-Server aufgerufen und liest das Testbild ein. Anschließend verwendet es die \gls{WSDL}-Datei des Web Services um das entsprechende \gls{XML}-Dokument zu erstellen. Diese \gls{XML}-Datei wird anhand der nuSOAP-Bibliothek \gls{SOAP}-konform an den \gls{OracleUCM}-Servers gesendet.
 \item Die \gls{XML}-basierende Rückantwort des Servers wird auch anhand der \gls{WSDL}-Datei erstellt und kann vom \gls{PHP}-Script ausgewertet werden.
 \end{enumerate}
 
@@ -118,7 +118,8 @@ if(!mb_eregi('JFIF', $outputGetThumbnail))
 \end{lstlisting}
 
 Sofern das Bild gefunden wurde, wird es vom Plugin anschließend angefordert und nach dem Dateityp untersucht.
-Die Konvertierung wird dadurch überprüft indem die konvertierten Versionen des Testbildes angefordert werden und wie das Originalbild auf einen gültigen Dateityp getestet werden.
+%Die Konvertierung wird dadurch überprüft indem die konvertierten Versionen des Testbildes angefordert werden und wie das Originalbild auf einen gültigen Dateityp getestet werden.
+%Die Konvertierung wird dadurch überprüft indem die konvertierten Versionen auf einen gültigen Dateityp getestet werden.
 Für die Überprüfung auf den gültigen Datentyp wird direkt in den Bytecode der verschiedenen Versionen des Testbildes geschaut.
 
 \begin{figure}[ht]
@@ -130,7 +131,7 @@ Für die Überprüfung auf den gültigen Datentyp wird direkt in den Bytecode de
 		\label{bytecode}
 \end{figure}
 
-Dabei wird für das Originalbild nach PNG und für die in JPEG konvertierten Version nach JFIF (JPEG File Interchange Format) geschaut.
+Dabei wird für das Originalbild nach PNG und für die in JPEG konvertierten Versionen nach JFIF (JPEG File Interchange Format) geschaut.
 
 Der Ablauf dieses Plugins ist dem ersten sehr ähnlich, wie Abbildung \ref{usersim2} zeigt.
 

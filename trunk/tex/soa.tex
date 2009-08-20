@@ -63,12 +63,12 @@ Dadurch können die Nachrichten von beiden Seiten (Client und Server) interpreti
 Als Beispiel für eine \gls{SOAP}-Kommunikation verschickt ein Client zwei Zahlenwerte, die vom Server addiert werden sollen:
 \begin{figure}[ht]
 	\centering
-	   \fbox{\includegraphics[width=0.85\textwidth]{bilder/nusoap.png}}
+	   \fbox{\includegraphics[width=0.8\textwidth]{bilder/nusoap.png}}
 	  
 		\caption[Kommunikationprotokoll SOAP]{Kommunikationprotokoll SOAP\protect\footnote}
 		\label{soa-3eck}
 \end{figure}
-\footnotetext{\url{http://www.devarticles.com/c/a/PHP/Building-XML-Web-Services-with-PHP-NuSOAP/1/}}
+\footnotetext{Quelle: \cite{nuSOAP}}
 
 Der Server entpackt die \gls{SOAP}-Nachricht und führt mit den zwei Zahlenwerte die Addition aus.
 Das Ergebnis der Rechnung wird im Anschluss wieder als Nachricht im \gls{SOAP}-Format an den Client zurückgesendet.
