@@ -1,44 +1,45 @@
 \section{Zusammenfassung}
 
-Im Rahmen dieser Arbeit wurde eine Lösung entwickelt um mit der Open Source-Überwachungssoftware Nagios den Betrieb des im Forschungszentrum Karlsruhe verwendeten Dokumenten-Management-Systems \gls{OracleUCM} zu überwachen.
-Eine solche Überwachung ist notwendig um den Mitarbeitern des Forschungszentrums Karlsruhe einen möglichst zuverlässigen Dienst anbieten zu können.
+Im Rahmen dieser Arbeit wurde eine Lösung entwickelt, um mit der Open Source-Überwachungssoftware Nagios den Betrieb des im Forschungszentrum Karlsruhe verwendeten Dokumenten-Management-Systems \gls{OracleUCM} zu überwachen.
+Eine solche Überwachung ist notwendig, um den Mitarbeitern des Forschungszentrums Karlsruhe einen möglichst zuverlässigen Dienst anbieten zu können.
 Dabei sollte die Überwachung proaktiv auf mögliche Fehlzustände testen und bei einer Störung eine Alarmmeldung an die verantwortlichen Kontaktpersonen versenden. 
-Das Überwachungssystem sorgt dafür, dass jeder Fehler sofort gemeldet wird, damit die Problemquellen vom Administrator gefunden und eventuell behoben werden können, bevor die Endbenutzer Störungen bei der Nutzung des Dienstes bemerken.\\
+Das Überwachungssystem sorgt dafür, dass jeder Fehler sofort gemeldet wird.
+Durch diese Meldungen können die Problemquellen vom Administrator gefunden und eventuell behoben werden, bevor die Endbenutzer Störungen bei der Nutzung des Dienstes bemerken.\\
 
-Für die Bearbeitung der Aufgabe war es notwendig sich mit den Grundlagen von Überwachungssystemen auseinander zusetzten.
-Darunter fielen die Punkte Netzwerkstruktur , -abhängigkeit und verschiedene Sicherheitsaspekte die beim Einsatz einer Überwachungssoftware eine Rolle spielen.
-Um die eigentliche Funktions- und Arbeitsweise eines Dokumenten-Management-Systems zu verstehen wurde die grundsätzliche Art eines Dokumentes im Vergleich zu Daten betrachtet.
+Für die Bearbeitung der Aufgabe war es notwendig sich mit Grundlagen von Überwachungssystemen auseinander zusetzen.
+Darunter fielen die Punkte Netzwerkstruktur, -abhängigkeit und verschiedene Sicherheitsaspekte, die beim Einsatz einer Überwachungssoftware eine Rolle spielen.
+Um die eigentliche Funktions- und Arbeitsweise eines Dokumenten-Management-Systems zu verstehen, wurde die grundsätzliche Art eines Dokumentes im Vergleich zu Daten betrachtet.
 %Dabei definiert die Strukturiertheit der enthaltenen Informationen die Zuordnung zu Daten oder Dokumente, obwohl die Grenzen nicht eindeutig festgelegt sind.
 Auf diesem Wissen aufbauend konnten die Aufgabenbereiche Eingabe, Verwaltung, Archivierung und Ausgabe eines Dokumenten-Management-Systems untersucht und Vergleiche zu Content-Management-Systemen gezogen werden.
 %Das kleinste Objekt in einem \gls{DMS} kann nur ein einzelnen Dokument sein, während ein \gls{CMS} einzelne Informationen aus verschiedenen Dokumenten erfassen kann, um ein neues Dokument zu generieren.
 
-Für die Umsetzung wurde die Service-orientierte Architektur der \gls{OracleUCM}-Anwendung in Verbindung mit Web-Services verwendet.
-Hierfür war es notwendig sich mit Grundprinzipien dieser Architekturen, deren Funktionsweise und verwendete Elemente vertraut zu machen.
+Für die Umsetzung wurde die Service-orientierte Architektur der \gls{OracleUCM}-Anwendung in Verbindung mit Web Services verwendet.
+Dafür war das Verständnis der Grundprinzipien dieser Architekturen, deren Funktionsweise und von den Web Services verwendeten Elementen erforderlich.
 Dadurch konnte später korrekt auf die benötigten Funktionen zugegriffen werden.\\
 
-Im Forschungszentrum Karlsruhe wird als Überwachungssoftware das Open Source-Programm Nagios für die Überwachung von Netzwerken, Server und Dienste verwendet.
-Damit Fehler korrekt von Nagios erkannt werden, bestand die Notwendigkeit die Funktionsweise und den Aufbau dieser Software zu studieren.
+Im Forschungszentrum Karlsruhe wird als Überwachungssoftware das Open Source-Programm Nagios für die Überwachung von Netzwerken, Servern und Diensten verwendet.
+Damit Störungen korrekt von Nagios erkannt werden, musste die Funktionsweise und der Aufbau dieser Software studiert werden.
 %Um die gewünschte Überwachung durch Nagios zu erreichen / ermöglichen
 %Die Realisierung der Aufgabenstellung wurde durch die Anpassung der verschiedenen Konfigurationsdateien erreicht, da über diese Dateien die zu überwachenden Dienste und Server mit Nagios verbunden werden.
-Das Einholen von Informationen zur Auswertung wird durch Plugins ermöglicht.
-Das Verständnis über die Struktur und Richtlinien dieser Plugins wurde benötigt um später eigene zu entwickeln und sie effektiv zu verwenden.
-Dabei galt es die speziellen Funktionen von Nagios wie die Hard und Soft States oder das Flapping von Zustände bei der spätere Verwendung zu berücksichtigen.
-Über die verschiedene Möglichkeiten die benötigten Informationen zu sammeln wurde ein kurzer Überblick gegeben.
+Die Informationen zur Auswertung werden durch Plugins gesammelt.
+Das Verständnis über die Struktur und Richtlinien dieser Plugins wurde benötigt, um später eigene zu entwickeln und sie effektiv zu verwenden.
+Dabei galt es, die speziellen Funktionen von Nagios wie die Hard- und Soft States oder das Flapping von Zustände bei der spätere Verwendung zu berücksichtigen.
+Über die verschiedenen Möglichkeiten von Nagios, um die benötigten Informationen zu sammeln, wurde ein kurzer Überblick gegeben.
 
 \gls{OracleUCM} wird im Forschungszentrum Karlsruhe für die Verwaltung von Webseiten, Dokumenten und Bilder eingesetzt.
-Durch die Untersuchung des allgemeinen internen Aufbaus und der Arbeitsweise dieser Anwendung konnten die notwendigen Überwachungselemente ermittelt werden.
+Durch die Untersuchung des internen Aufbaus und der Arbeitsweise dieser Anwendung im Allgemeinen konnten die notwendigen Überwachungselemente ermittelt werden.
 %Für die Ermittlung der Überwachungselemente wurde der  in allen Einsatzfällen untersucht.
 Für diese Arbeit wurde der konkrete Einsatz von \gls{OracleUCM} als Bilddatenbank verwendet.
 Die dabei auftretenden typischen Benutzerinteraktionen wurden für die später folgende Benutzersimulation verwendet.
 
 Die einzelnen Überwachungselemente wurden in die Ebenen Statusabfragen, Funktionalitätstest, Auswerten von Logdateien und Benutzersimulation unterteilt.
 Dabei führte die Abhängigkeit der Elemente zueinander zu der Einordnung in die verschiedenen Ebenen.
-Unter den Statusabfragen befinden sich einfache Test wie ein Ping, Arbeitsspeicherauslastung oder der Zustand eines Prozesses.
-Bei den Funktionalitätstest werden Anwendungen verwendet und die Antwort ausgewertet wie beispielsweise eine Anmeldung an Webserver mit Benutzerdaten.
-Die Benutzersimulation beinhaltet verschiedene Benutzeraktionen und überprüft, ob die Anwendung noch alle Funktionen erfüllt.
-Diese Einteilung in die verschiedenen Überwachungsebenen gibt den Verantwortlichen einen besseren Überblick über die Fehlersituation, so dass Fehlerquellen schneller entdeckt werden können.
+Unter den Statusabfragen befinden sich einfache Tests wie ein Ping, Arbeitsspeicherauslastung oder der Zustand eines Prozesses.
+Bei den Funktionalitätstests werden die zu überwachenden Anwendungen durch Plugins überprüft und die Antwort ausgewertet, wie beispielsweise eine Anmeldung am Webserver mit Benutzerdaten.
+Die Benutzersimulation beinhaltet verschiedene Benutzeraktionen und überprüft, ob die Anwendung alle Funktionen erfüllt.
+Diese Einteilung in verschiedene Überwachungsebenen gibt den Verantwortlichen einen besseren Überblick über die Fehlersituation, so dass Fehlerquellen schneller entdeckt werden können.
 
-Für die Umsetzung wurde ein Testsystem aufgesetzt, das aus einer separaten Nagios-Installation zum Testen der Überwachung und einer virtuellen Maschine, als Klon der Bilddatenbank zum Simulieren der einzelnen Fehlzustände, bestand.
+Für die Umsetzung wurde ein Testsystem aufgesetzt, dass aus einer eigenen Nagios-Installation zum Testen der Überwachung und einer virtuellen Maschine, als Klon der Bilddatenbank, zum Simulieren der einzelnen Fehlzustände, bestand.
 %Für den konkreten Einsatz von Nagios als Überwachungssystem musste sich mit den verschiedenen Nagios-Agenten auseinandergesetzt werden, da diese die benötigten Informationen von entfernten Servern generieren.
 %Die zuvor beschriebenen Überwachungsmethoden von Nagios wurden dabei in Verbindung mit den Agenten, die Unix- und Windows-Agenten aufgeteilt wurden, nochmals aufgegriffen.
 Da es sich bei der zu überwachenden Bilddatenbank um einen Windows-Server handelte, wurde ein passender Nagios-Agent ausgewählt und dessen Installation und Konfiguration erläutert.
@@ -56,18 +57,18 @@ Alle Überwachungselemente sind im Webinterface vom Nagios aufgeführt und erlau
 Die korrekte Benachrichtigung über Störungen konnte durch die Simulation der Fehlzustände in der virtuellen Maschine sichergestellt werden.
 \newpage
 \section{Ausblick}
-Bei einer Überwachung ist es notwendig zuvor verschiedene Schwellwerte zu setzen.
+Bei einer Überwachung ist es wichtig, geeignete Schwellwerte zu setzen.
 An diesen Werten kann die Überwachungssoftware festlegen, ob ein Objekt einen kritischen Zustand erreicht hat oder nicht.
-Für die Ermittelung dieser Größen müssen die Werte der Überwachungselemente über einen längeren Zeitraum beobachtet und analysiert werden.
+Für die Ermittlung dieser Größen müssen die Werte der Überwachungselemente über einen längeren Zeitraum beobachtet und analysiert werden.
 Aufgrund des begrenzten zeitlichen Rahmens dieser Arbeit konnte dies nicht vollständig umgesetzt werden, so dass es während dem Betrieb fortgesetzt werden muss.
 Hierunter fallen vor allem spezifische Merkmale eines bestimmten Servers.
 Eine ungewöhnlich hohe Prozessorauslastung, die durch eine zeitlich gesteuerte Sicherung entstehen kann, sollte von der Überwachungssoftware nicht als Fehlverhalten interpretiert werden.
-Auch die Liste der Stopwörter für die Auswertung der Logdateien muss für neue bisher unbekannte Fehler immer wieder erweitert werden.
+Auch die Liste der Stopwörter für die Auswertung der Logdateien muss für neue, bisher unbekannte Fehler immer wieder erweitert werden.
 
-Das entwickelte Plugin für die Benutzersimulation kann auch mit zusätzliche Funktionen versehen werden.
+Das entwickelte Plugin für die Benutzersimulation kann mit zusätzlichen Funktionen versehen werden.
 Durch die Verwendung von anderen Web Services können weitere Funktionalitäten überprüft werden.
-Dabei kann die Benutzersimulation auch auf anderen Dokumenten-Management-Systemen eingesetzt werden.
-Das Plugin kann leicht angepasst werden um, anstatt eines Testbildes, beispielsweise den Check-In, Indizierung und Konvertierung einer \gls{PDF}-Testdatei oder eines Word-Dokuments zu überwachen.
+Dabei kann die Benutzersimulation auf anderen Dokumenten-Management-Systemen eingesetzt werden.
+Das Plugin kann leicht angepasst werden, um anstatt eines Testbildes, beispielsweise den Check-In, Indizierung und Konvertierung einer \gls{PDF}-Testdatei oder eines Word-Dokuments zu überwachen.
 %Hierfür müsste nur anstatt eines Testbildes beispielsweise eine \gls{PDF}-Testdatei oder Word-Dokument verwendet werden.
 %Für die Validierung der Indizierung und Konvertierung müsste das Plugin nur leicht angepasst werden.
 

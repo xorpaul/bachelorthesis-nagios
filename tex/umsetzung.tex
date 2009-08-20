@@ -3,9 +3,8 @@ In diesem Kapitel wird die Vorgehensweise der zuvor beschriebenen Problemstellun
 
 \subsection{Aufbau der Testumgebung}
 
-Die für die Umsetzung notwendigen notwendigen Ressourcen in Form eines Test-Servers und einer virtuellen Maschine.
-
-\subsubsection{Aufsetzen eines Nagios-Test-Systems}
+Die für die Umsetzung notwendigen Ressourcen in Form eines Test-Servers und einer virtuellen Maschine.
+\paragraph{Aufsetzen eines Nagios-Test-Systems}
 Da die einzelnen Überwachungselemente in der Überwachungssoftware Nagios sukzessiv eingetragen werden müssen, ist ein häufiges Neustarten der Nagios-Anwendung notwendig, damit die neuen Konfigurationsdateien übernommen werden.
 
 Damit dies nicht auf dem bereits verwendetem Nagios-Server durchgeführt werden muss, wird ein Nagios-Testserver für diesen Zweck eingesetzt.
@@ -13,7 +12,7 @@ Damit dies nicht auf dem bereits verwendetem Nagios-Server durchgeführt werden 
 Da Nagios ein Unix-ähnliches Betriebssystem erfordert, wird für diesen Zweck die Linux-Distribution Debian als Betriebssystem des Testservers verwendet.
 Diese Distribution wird auch auf den Produktivservern des KIT verwendet.
 
-\subsubsection{Bilddatenbank als virtuelle Maschine}
+\paragraph{Bilddatenbank als virtuelle Maschine}
 Für die Simulation der verschiedenen Fehlerzuständen der einzelnen Überwachungselemente wird eine virtuelle Maschine mit einer \gls{OracleUCM} Prototypinstallation  als Entwicklungsplattform verwendet.
 
 \subsection{Auswahl der geeigneten Überwachungsmethode}
@@ -31,7 +30,7 @@ Wie in Kapitel \ref{methoden} aufgeführt, bietet Nagios verschiedene Möglichke
 Für Dienste, die sich über das Netzwerk erreichen lassen, können die dafür entwickelten Nagios-Plugins direkt vom Nagios-Server verwendet werden.
 Da Windows als Betriebssystem auf dem \gls{OracleUCM}-Server eingesetzt wird, kann die \gls{SSH}-Variante nicht eingesetzt werden.
 Die \gls{NRPE}-Methode wird für die Auswertung der Logdateien verwendet.
-Die Überwachung per \gls{SNMP} wird aufgrund der höheren Komplexität dieser Variante und des begrenzten zeitlichen Rahmens dieser Arbeit nicht benutzt.
+Die Überwachung per \gls{SNMP} wird aufgrund der höheren Komplexität dieser Variante und des begrenzten zeitlichen Rahmens dieser Arbeit nicht benutzt.\label{snmpkom}
 Die passive Vorgehensweise mit \gls{NSCA} wird für die Umsetzung nicht benötigt und deshalb nicht verwendet.
 
 Für die Überwachung von Windows-Servern wurde eine weitere Methode entwickelt, die auf dem Prinzip von \gls{NRPE} basiert.

@@ -2,126 +2,126 @@
 \begin{theglossary}\glossaryheader
 \glsgroupheading{A}\relax \glsresetentrylist %
 \glossaryentryfield{AIIM}{\glsnamefont{AIIM}}{Association for Information and Image Management}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter{page}\glsnumberformat{20}}}\glsgroupskip
+		\setentrycounter{page}\glsnumberformat{21}}}\glsgroupskip
 \glsgroupheading{C}\relax \glsresetentrylist %
 \glossaryentryfield{CI}{\glsnamefont{CI}}{Coded Information}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter{page}\glsnumberformat{12}\delimN 
-		\setentrycounter{page}\glsnumberformat{15}\delimN 
-		\setentrycounter{page}\glsnumberformat{17}}}%
+		\setentrycounter{page}\glsnumberformat{13}\delimN 
+		\setentrycounter{page}\glsnumberformat{16}\delimN 
+		\setentrycounter{page}\glsnumberformat{18}}}%
 \glossaryentryfield{CMS}{\glsnamefont{CMS}}{Content-Management-System}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter{page}\glsnumberformat{18\delimR 20}}}\glsgroupskip
+		\setentrycounter{page}\glsnumberformat{19\delimR 21}}}\glsgroupskip
 \glsgroupheading{D}\relax \glsresetentrylist %
 \glossaryentryfield{DMS}{\glsnamefont{DMS}}{Dokumenten-Management-System}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter{page}\glsnumberformat{1}\delimN 
-		\setentrycounter{page}\glsnumberformat{10}\delimN 
-		\setentrycounter{page}\glsnumberformat{14\delimR 16}\delimN 
-		\setentrycounter{page}\glsnumberformat{18\delimR 20}}}%
+		\setentrycounter{page}\glsnumberformat{11}\delimN 
+		\setentrycounter{page}\glsnumberformat{15\delimR 17}\delimN 
+		\setentrycounter{page}\glsnumberformat{19\delimR 21}}}%
 \glossaryentryfield{DNS}{\glsnamefont{DNS}}{Domain Name System}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter{page}\glsnumberformat{36}}}%
+		\setentrycounter{page}\glsnumberformat{37}}}%
 \glossaryentryfield{DoS}{\glsnamefont{DoS}}{Denial of Service}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter{page}\glsnumberformat{10}}}\glsgroupskip
+		\setentrycounter{page}\glsnumberformat{11}}}\glsgroupskip
 \glsgroupheading{E}\relax \glsresetentrylist %
 \glossaryentryfield{ECM}{\glsnamefont{ECM}}{Enterprise-Content-Management}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter{page}\glsnumberformat{20}}}\glsgroupskip
+		\setentrycounter{page}\glsnumberformat{21}}}\glsgroupskip
 \glsgroupheading{F}\relax \glsresetentrylist %
 \glossaryentryfield{FQDN}{\glsnamefont{FQDN}}{Fully Qualified Domain Name}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter{page}\glsnumberformat{56}}}%
+		\setentrycounter{page}\glsnumberformat{57}}}%
 \glossaryentryfield{FTP}{\glsnamefont{FTP}}{File Transfer Protokoll}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter{page}\glsnumberformat{34}}}\glsgroupskip
+		\setentrycounter{page}\glsnumberformat{35}}}\glsgroupskip
 \glsgroupheading{H}\relax \glsresetentrylist %
 \glossaryentryfield{HTTP}{\glsnamefont{HTTP}}{Hypertext Transfer Protocol}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter{page}\glsnumberformat{23}\delimN 
-		\setentrycounter{page}\glsnumberformat{66}}}\glsgroupskip
+		\setentrycounter{page}\glsnumberformat{24}\delimN 
+		\setentrycounter{page}\glsnumberformat{67}}}\glsgroupskip
 \glsgroupheading{I}\relax \glsresetentrylist %
 \glossaryentryfield{IIS}{\glsnamefont{IIS}}{Internet Information Service}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter{page}\glsnumberformat{48}\delimN 
-		\setentrycounter{page}\glsnumberformat{59}}}%
+		\setentrycounter{page}\glsnumberformat{49}\delimN 
+		\setentrycounter{page}\glsnumberformat{60}}}%
 \glossaryentryfield{IP}{\glsnamefont{IP}}{Identifikation Protokoll}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter{page}\glsnumberformat{7}\delimN 
-		\setentrycounter{page}\glsnumberformat{10}\delimN 
-		\setentrycounter{page}\glsnumberformat{35}\delimN 
-		\setentrycounter{page}\glsnumberformat{51}\delimN 
-		\setentrycounter{page}\glsnumberformat{53}\delimN 
-		\setentrycounter{page}\glsnumberformat{56}}}\glsgroupskip
+		\setentrycounter{page}\glsnumberformat{8}\delimN 
+		\setentrycounter{page}\glsnumberformat{11}\delimN 
+		\setentrycounter{page}\glsnumberformat{36}\delimN 
+		\setentrycounter{page}\glsnumberformat{52}\delimN 
+		\setentrycounter{page}\glsnumberformat{54}\delimN 
+		\setentrycounter{page}\glsnumberformat{57}}}\glsgroupskip
 \glsgroupheading{L}\relax \glsresetentrylist %
 \glossaryentryfield{LDAP}{\glsnamefont{LDAP}}{Lightweight Directory Access Protocol}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter{page}\glsnumberformat{36}}}\glsgroupskip
+		\setentrycounter{page}\glsnumberformat{37}}}\glsgroupskip
 \glsgroupheading{M}\relax \glsresetentrylist %
 \glossaryentryfield{MIB}{\glsnamefont{MIB}}{Management Information Base}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter{page}\glsnumberformat{36\delimN 37}\delimN 
-		\setentrycounter{page}\glsnumberformat{52}}}\glsgroupskip
+		\setentrycounter{page}\glsnumberformat{37\delimN 38}\delimN 
+		\setentrycounter{page}\glsnumberformat{53}}}\glsgroupskip
 \glsgroupheading{N}\relax \glsresetentrylist %
 \glossaryentryfield{NCI}{\glsnamefont{NCI}}{None-Coded Information}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter{page}\glsnumberformat{11}\delimN 
-		\setentrycounter{page}\glsnumberformat{15}\delimN 
-		\setentrycounter{page}\glsnumberformat{17}}}%
+		\setentrycounter{page}\glsnumberformat{12}\delimN 
+		\setentrycounter{page}\glsnumberformat{16}\delimN 
+		\setentrycounter{page}\glsnumberformat{18}}}%
 \glossaryentryfield{NRPE}{\glsnamefont{NRPE}}{Nagios Remote Plugin Executor}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter{page}\glsnumberformat{35}\delimN 
-		\setentrycounter{page}\glsnumberformat{50\delimR 52}\delimN 
-		\setentrycounter{page}\glsnumberformat{55\delimN 56}\delimN 
-		\setentrycounter{page}\glsnumberformat{58}\delimN 
-		\setentrycounter{page}\glsnumberformat{62}}}%
+		\setentrycounter{page}\glsnumberformat{36}\delimN 
+		\setentrycounter{page}\glsnumberformat{51\delimR 53}\delimN 
+		\setentrycounter{page}\glsnumberformat{56\delimN 57}\delimN 
+		\setentrycounter{page}\glsnumberformat{59}\delimN 
+		\setentrycounter{page}\glsnumberformat{63}}}%
 \glossaryentryfield{NSCA}{\glsnamefont{NSCA}}{Nagios Service Check Acceptor}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter{page}\glsnumberformat{37}\delimN 
-		\setentrycounter{page}\glsnumberformat{50}\delimN 
-		\setentrycounter{page}\glsnumberformat{52}}}\glsgroupskip
+		\setentrycounter{page}\glsnumberformat{38}\delimN 
+		\setentrycounter{page}\glsnumberformat{51}\delimN 
+		\setentrycounter{page}\glsnumberformat{53}}}\glsgroupskip
 \glsgroupheading{O}\relax \glsresetentrylist %
 \glossaryentryfield{OCR}{\glsnamefont{OCR}}{Optical Character Recognition}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter{page}\glsnumberformat{15}}}%
+		\setentrycounter{page}\glsnumberformat{16}}}%
 \glossaryentryfield{OracleUCM}{\glsnamefont{Oracle UCM}}{Oracle Universal-Content-Management}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter{page}\glsnumberformat{3}\delimN 
-		\setentrycounter{page}\glsnumberformat{39\delimN 40}\delimN 
-		\setentrycounter{page}\glsnumberformat{42}\delimN 
-		\setentrycounter{page}\glsnumberformat{44\delimN 45}\delimN 
-		\setentrycounter{page}\glsnumberformat{49\delimN 50}\delimN 
-		\setentrycounter{page}\glsnumberformat{62\delimR 65}\delimN 
-		\setentrycounter{page}\glsnumberformat{67}\delimN 
-		\setentrycounter{page}\glsnumberformat{69\delimR 71}\delimN 
-		\setentrycounter{page}\glsnumberformat{74\delimR 76}}}\glsgroupskip
+		\setentrycounter{page}\glsnumberformat{3\delimN 4}\delimN 
+		\setentrycounter{page}\glsnumberformat{40\delimN 41}\delimN 
+		\setentrycounter{page}\glsnumberformat{43}\delimN 
+		\setentrycounter{page}\glsnumberformat{45\delimN 46}\delimN 
+		\setentrycounter{page}\glsnumberformat{50\delimN 51}\delimN 
+		\setentrycounter{page}\glsnumberformat{63\delimR 66}\delimN 
+		\setentrycounter{page}\glsnumberformat{68}\delimN 
+		\setentrycounter{page}\glsnumberformat{70\delimR 72}\delimN 
+		\setentrycounter{page}\glsnumberformat{75\delimR 77}}}\glsgroupskip
 \glsgroupheading{P}\relax \glsresetentrylist %
 \glossaryentryfield{PDF}{\glsnamefont{PDF}}{Portable Document Format}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter{page}\glsnumberformat{1}\delimN 
-		\setentrycounter{page}\glsnumberformat{15}\delimN 
-		\setentrycounter{page}\glsnumberformat{41}\delimN 
-		\setentrycounter{page}\glsnumberformat{77}}}%
+		\setentrycounter{page}\glsnumberformat{16}\delimN 
+		\setentrycounter{page}\glsnumberformat{42}\delimN 
+		\setentrycounter{page}\glsnumberformat{79}}}%
 \glossaryentryfield{PHP}{\glsnamefont{PHP}}{PHP: Hypertext Preprocessor}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter{page}\glsnumberformat{65\delimR 67}}}\glsgroupskip
+		\setentrycounter{page}\glsnumberformat{66\delimR 68}}}\glsgroupskip
 \glsgroupheading{R}\relax \glsresetentrylist %
 \glossaryentryfield{RPC}{\glsnamefont{RPC}}{Remote Procedure Call}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter{page}\glsnumberformat{57}}}\glsgroupskip
+		\setentrycounter{page}\glsnumberformat{58}}}\glsgroupskip
 \glsgroupheading{S}\relax \glsresetentrylist %
 \glossaryentryfield{SNMP}{\glsnamefont{SNMP}}{Simple Network Management Protocol}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter{page}\glsnumberformat{36\delimN 37}\delimN 
-		\setentrycounter{page}\glsnumberformat{50}\delimN 
-		\setentrycounter{page}\glsnumberformat{52\delimN 53}\delimN 
-		\setentrycounter{page}\glsnumberformat{55}}}%
+		\setentrycounter{page}\glsnumberformat{37\delimN 38}\delimN 
+		\setentrycounter{page}\glsnumberformat{51}\delimN 
+		\setentrycounter{page}\glsnumberformat{53\delimN 54}\delimN 
+		\setentrycounter{page}\glsnumberformat{56}}}%
 \glossaryentryfield{SOA}{\glsnamefont{SOA}}{Service-Oriented Architecture}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter{page}\glsnumberformat{5}\delimN 
-		\setentrycounter{page}\glsnumberformat{20\delimR 22}\delimN 
-		\setentrycounter{page}\glsnumberformat{40}}}%
+		\setentrycounter{page}\glsnumberformat{3}\delimN 
+		\setentrycounter{page}\glsnumberformat{6}\delimN 
+		\setentrycounter{page}\glsnumberformat{21\delimR 23}\delimN 
+		\setentrycounter{page}\glsnumberformat{41}}}%
 \glossaryentryfield{SOAP}{\glsnamefont{SOAP}}{Simple Object Access Protocol}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter{page}\glsnumberformat{23\delimR 25}\delimN 
-		\setentrycounter{page}\glsnumberformat{67}}}%
+		\setentrycounter{page}\glsnumberformat{24\delimR 26}\delimN 
+		\setentrycounter{page}\glsnumberformat{68}}}%
 \glossaryentryfield{SSH}{\glsnamefont{SSH}}{Secure Shell}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter{page}\glsnumberformat{34\delimN 35}\delimN 
-		\setentrycounter{page}\glsnumberformat{50\delimR 52}}}%
+		\setentrycounter{page}\glsnumberformat{35\delimN 36}\delimN 
+		\setentrycounter{page}\glsnumberformat{50\delimR 53}}}%
 \glossaryentryfield{SSL}{\glsnamefont{SSL}}{Secure Sockets Layer}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter{page}\glsnumberformat{58}\delimN 
-		\setentrycounter{page}\glsnumberformat{61}}}\glsgroupskip
+		\setentrycounter{page}\glsnumberformat{59}\delimN 
+		\setentrycounter{page}\glsnumberformat{62}}}\glsgroupskip
 \glsgroupheading{U}\relax \glsresetentrylist %
 \glossaryentryfield{UDDI}{\glsnamefont{UDDI}}{Universal Description, Discovery and Integration protocol}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter{page}\glsnumberformat{24\delimN 25}}}\glsgroupskip
+		\setentrycounter{page}\glsnumberformat{25\delimN 26}}}\glsgroupskip
 \glsgroupheading{W}\relax \glsresetentrylist %
 \glossaryentryfield{W3C}{\glsnamefont{W3C}}{World Wide Web Consortium}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter{page}\glsnumberformat{22}}}%
+		\setentrycounter{page}\glsnumberformat{23}}}%
 \glossaryentryfield{WSDL}{\glsnamefont{WSDL}}{Web Services Description Language}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter{page}\glsnumberformat{23\delimR 25}\delimN 
-		\setentrycounter{page}\glsnumberformat{65\delimR 67}\delimN 
-		\setentrycounter{page}\glsnumberformat{69}}}\glsgroupskip
+		\setentrycounter{page}\glsnumberformat{24\delimR 26}\delimN 
+		\setentrycounter{page}\glsnumberformat{66\delimR 70}}}\glsgroupskip
 \glsgroupheading{X}\relax \glsresetentrylist %
 \glossaryentryfield{XML}{\glsnamefont{XML}}{Extensible Markup Language}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter{page}\glsnumberformat{23\delimN 24}\delimN 
-		\setentrycounter{page}\glsnumberformat{65}\delimN 
-		\setentrycounter{page}\glsnumberformat{67}\delimN 
-		\setentrycounter{page}\glsnumberformat{69}}}%
+		\setentrycounter{page}\glsnumberformat{24\delimN 25}\delimN 
+		\setentrycounter{page}\glsnumberformat{66}\delimN 
+		\setentrycounter{page}\glsnumberformat{68}\delimN 
+		\setentrycounter{page}\glsnumberformat{70}}}%
 \end{theglossary}\glossarypostamble

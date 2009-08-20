@@ -14,7 +14,7 @@ Da auf den meisten Unix-Servern bereits ein \gls{SSH}-Server läuft und deshalb 
 
 Bei der \gls{NRPE}-Methode wird eine weitere Softwarekomponente auf dem Client installiert, die einen separaten Port für die Kommunikation mit dem Nagios-Server öffnet.
 Wie bei dem Aufruf per \gls{SSH} müssen sich hier die Nagios-Plugins bereits auf dem Rechner befinden.
-Dabei gilt als Unterschied dieser zwei ähnlichen Methoden zu beachten, dass für die Ausführung der Checks per \gls{SSH} ein extra Benutzerkonto auf dem Client erstellt werden muss und somit beliebige Systembefehle ausgeführt werden können, während die Ausführung von Kommandos bei \gls{NRPE} nur auf vorkonfigurierte Befehle beschränkt ist, wie in Kapitel \ref{sshnrpe} aufgeführt.
+Dabei gilt als Unterschied dieser zwei ähnlichen Methoden zu beachten, dass für die Ausführung der Checks per \gls{SSH} ein extra Benutzerkonto auf dem Client erstellt werden muss und somit ohne Anpassung der Benutzerrechte Systembefehle ausgeführt werden können, während die Ausführung von Kommandos bei \gls{NRPE} nur auf vorkonfigurierte Befehle beschränkt ist, wie in Kapitel \ref{sshnrpe} aufgeführt.
 \label{unixagents}
 Da \gls{SNMP} plattformunabhängig funktioniert ist es möglich diese Variante bei Unix- sowie bei Windowsservern einzusetzen.
 Die verwendete \gls{SNMP}-Version bestimmt welche Sicherheitsmerkmale zur Verfügung stehen.
@@ -24,7 +24,7 @@ Erst ab Version 3 wird das Passwort verschlüsselt übertragen.
 Während Barth behauptet, dass man bei \gls{SNMP} generell kein Passwort verwenden soll\footnote{Quelle: \cite{Barth08} S. 238}, da es leicht per Netzwerkmitschnittprogramme, wie WireShark, ausgelesen werden kann, wird in \cite{Jose07} S. 121 klargestellt, dass die Version 3 eine verschlüsselte Authentifizierung durch den MD5- oder SHA-Algorithmus ermöglicht.
 
 Die passive Variante über \gls{SNMP} bei der der Client die Ergebnisse der Checks an den Nagios-Server sendet, auch \gls{SNMP}-Traps genannt, funktioniert nach dem gleichen Prinzip.
-Da das Auslesen der \gls{MIB} per \gls{SNMP} im Gegensatz zu den anderen Varianten deutlich komplexer ist, wird der Aufwand als hoch eingestuft.
+Da das Auslesen der \gls{MIB} per \gls{SNMP} im Gegensatz zu den anderen Varianten deutlich komplexer ist, wird der Aufwand als hoch eingestuft, siehe Bewertung in Kapitel \ref{snmpkom}.
 
 Ein weiterer Vertreter, der passive Checks ermöglicht, ist der \gls{NSCA}-Agent.
 Wie die anderen Unix-Agenten bietet es die Möglichkeit den Datenaustausch zwischen Nagios-Server und Client zu verschlüsseln.
@@ -46,7 +46,7 @@ Der Zugriff auf den NSClient-Dienst per \textit{check\_nt} wird in Abbildung \re
 		\caption[Abfrage von Windows-Ressourcen durch \textit{check\_nt}]{Abfrage von Windows-Ressourcen durch \textit{check\_nt}\protect\footnote}
 		\label{fig:cknt}
 \end{figure}
-\footnotetext{Quelle: \url{http://nagios.sourceforge.net/docs/3\_0/images/monitoring-windows.png}}
+\footnotetext{Quelle: \url{http://nagios.sourceforge.net/docs/3\_0/images/monitoring-windows.png} (modifiziert)}
 
 Diese Abfrage kann durch die Ausführung auf der Kommandozeile getestet werden:
 
@@ -77,7 +77,7 @@ Dabei gelten die gleichen Richtlinien, Hinweise und Einschränkungen wie zuvor i
 
 \paragraph{Auswahl}
 Anhand der im vorherigen Kapitel beschriebenen Übersicht der Windows-Agenten und der daraus resultierenden Übersichtstabelle \ref{tab:winagents} wird ein geeigneter Kandidat für die Testumgebung ausgewählt.
-Da nur ein Windows-Agent alle drei Sicherheitsmerkmale anbietet und dabei aktive und passive Überwachungsmethoden erlaubt, fällt die Wahl auf das Programm \textbf{NSClient++}.
+Da nur ein Windows-Agent alle drei Sicherheitsmerkmale anbietet und dabei aktive und passive Überwachungsmethoden erlaubt, fällt die Wahl \textbf{NSClient++}.
 
 \paragraph{Installation und Konfiguration}
 
@@ -172,7 +172,7 @@ Der Aufruf um Informationen durch den NSClient-Dienst abzufragen sieht ähnlich 
 		\label{ntcheck}
 \end{figure}
 
-Die Servicedefinition des vorherigen NSClient-Aufrufs muss wie nachfolgend/folgt in der Nagios-Konfiguration eingetragen:
+Die Servicedefinition des vorherigen NSClient-Aufrufs muss wie nachfolgend in der Nagios-Konfiguration eingetragen werden:
 \begin{lstlisting}[captionpos=b, caption=Servicedefinition des NSClient-Checks, label=nt-servdef, breaklines = true, language=sh]
 define service{
         use                     generic-service
