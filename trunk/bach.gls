@@ -83,7 +83,7 @@
 		\setentrycounter{page}\glsnumberformat{1}\delimN 
 		\setentrycounter{page}\glsnumberformat{16}\delimN 
 		\setentrycounter{page}\glsnumberformat{42}\delimN 
-		\setentrycounter{page}\glsnumberformat{79}}}%
+		\setentrycounter{page}\glsnumberformat{78}}}%
 \glossaryentryfield{PHP}{\glsnamefont{PHP}}{PHP: Hypertext Preprocessor}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter{page}\glsnumberformat{66\delimR 68}}}\glsgroupskip
 \glsgroupheading{R}\relax \glsresetentrylist %
