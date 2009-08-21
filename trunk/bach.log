@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2009.1.26)  21 AUG 2009 10:38
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2009.1.26)  21 AUG 2009 11:17
 entering extended mode
  %&-line parsing enabled.
 **bach.tex
@@ -471,26 +471,14 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 Package hyperref Warning: Option `bookmarks' has already been used,
 (hyperref)                setting the option has no effect on input line 52.
 
-Package hyperref Info: Option `unicode' set `false' on input line 52.
+Package hyperref Info: Option `unicode' set `true' on input line 52.
+
+Package hyperref Warning: Set package option `unicode' first
+(hyperref)                in order to load unicode support.
+
 Package hyperref Info: Option `pdftoolbar' set `true' on input line 52.
 Package hyperref Info: Option `pdfmenubar' set `true' on input line 52.
 Package hyperref Info: Option `pdffitwindow' set `false' on input line 52.
-
-Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\begingroup' on input line 52.
-
-
-Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\<let>-command' on input line 52.
-
-
-Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\utf@viii@undeferr' on input line 52.
-
-
-Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\endgroup' on input line 52.
-
 Package hyperref Info: Option `pdfnewwindow' set `true' on input line 52.
 Package hyperref Info: Option `colorlinks' set `true' on input line 52.
 
@@ -1531,7 +1519,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  13664 strings out of 94074
  196130 string characters out of 1165153
- 621578 words of memory out of 1500000
+ 621310 words of memory out of 1500000
  15985 multiletter control sequences out of 10000+50000
  41062 words of font info for 91 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
@@ -1663,7 +1651,7 @@ esky/cm/cmsl12.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmsy10.pfb>
 exlive/fonts/type1/bluesky/cm/cmtt10.pfb></usr/share/texmf-texlive/fonts/type1/
 bluesky/cm/cmtt12.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmtt8.pf
 b></usr/share/texmf-texlive/fonts/type1/bluesky/ams/msam10.pfb>
-Output written on bach.pdf (93 pages, 5728812 bytes).
+Output written on bach.pdf (93 pages, 5728678 bytes).
 PDF statistics:
  1788 PDF objects out of 2073 (max. 8388607)
  532 named destinations out of 1000 (max. 131072)
