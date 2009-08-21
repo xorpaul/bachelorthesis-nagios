@@ -30,7 +30,7 @@ Dieser Struktur wird nun ein Serviceorientierte Komponente \textit{Credit Checki
 
 \begin{figure}[ht]
 	\centering
-	   \fbox{\includegraphics[width=0.85\textwidth]{bilder/soa2.png}}
+	   \fbox{\includegraphics[width=0.8\textwidth]{bilder/soa2.png}}
 		\caption[Hinzugefügte Serviceorientierte Komponente]{Hinzugefügte Serviceorientierte Komponente\protect\footnote}
 		\label{soa2}
 \end{figure}
@@ -39,9 +39,7 @@ Dieser Struktur wird nun ein Serviceorientierte Komponente \textit{Credit Checki
 Dabei hat die eigentliche Anwendung des Webshops keine Kenntnis wie die Komponente \textit{Credit Checking} intern abläuft, sondern übergibt nur die essentiellen Informationen, in diesem Fall die Kreditkartendaten, an die Komponente.
 Für die Anwendung ist irrelevant, ob diese Komponenten eine externe Datenbank oder Webseite nach der Kreditwürdigkeit des Benutzers befragen, solange die Komponente auswertbare Informationen (zahlungsfähig ja/nein) an die Webshop-Anwendung liefert.
 Für die Anwendung \textit{Order Processing} ist die Komponente \textit{Credit Checking} eine so genannte \textbf{black box}.
-
 Die komplexen Berechnungen und Algorithmen zur Bestimmung der Kreditwürdigkeit des Benutzers werden komplett verdeckt, so dass nur die Kreditkarteninformationen der Komponente zu übergeben sind.
-
 Die Komponente \textit{Credit Checking} steht der Webshop Anwendung als \textbf{abstrahierter Dienst bzw. Service} zur Verfügung.
 
 \subsection{Web Services-Architektur}
@@ -57,22 +55,6 @@ Dieser Zugriff findet durch das Simple Object Access Protocol (\gls{SOAP}) statt
 Die \gls{SOAP}-Nachrichten sind nach dem \gls{XML}-Schema zusammen mit anderen Web-Standards aufgebaut.
 Dadurch können die Nachrichten von beiden Seiten (Client und Server) interpretiert werden.
 
-%This layer is responsible for encoding messages in a common XML format so that messages can be understood at either end. Currently, this includes XML-RPC and SOAP. For example, the client program bundles up two values (see Figure 1) to be added into a SOAP message, which is sent to the Web service by sending it as the body of an HTTP POST request. The server unpacks the SOAP request that the application can understand and executes Add operation. Next, the server packages up that result of summation as response into another SOAP message, which it sends back to the client program in response to its HTTP request. The client program unpacks the SOAP message to obtain the results of the summation. So, SOAP=XML + HTTP. 
-
-
-Als Beispiel für eine \gls{SOAP}-Kommunikation verschickt ein Client zwei Zahlenwerte, die vom Server addiert werden sollen:
-\begin{figure}[ht]
-	\centering
-	   \fbox{\includegraphics[width=0.8\textwidth]{bilder/nusoap.png}}
-	  
-		\caption[Kommunikationprotokoll SOAP]{Kommunikationprotokoll SOAP\protect\footnote}
-		\label{soa-3eck}
-\end{figure}
-\footnotetext{Quelle: \cite{nuSOAP}}
-
-Der Server entpackt die \gls{SOAP}-Nachricht und führt mit den zwei Zahlenwerte die Addition aus.
-Das Ergebnis der Rechnung wird im Anschluss wieder als Nachricht im \gls{SOAP}-Format an den Client zurückgesendet.
-
 Daraus leitet Melzer folgende Spezifikationen für eine Web Services-Architektur ab:
 \paragraph{SOAP}
 beschreibt das \gls{XML}-basierte Nachrichtenformat der Kommunikation und dessen Einbettung in ein Transportprotokoll.
@@ -82,6 +64,19 @@ ist eine - ebenfalls \gls{XML}-basierte - Beschreibungssprache, um Web Services 
 beschreibt einen Verzeichnisdienst für Web Services. \gls{UDDI} (Universal Description, Discovery and Integration protocol) spezifiziert eine standardisierte Verzeichnisstruktur für die Verwaltung von Web Services-Metadaten.
 Zu den Metadaten zählen allgemeine Anforderungen, Web Services-Eigenschaften oder die benötigten Informationen zum Auffinden von Web Services.
 \begin{flushright}\cite{Melzer08} S. 55\end{flushright}
+
+Als Beispiel für eine \gls{SOAP}-Kommunikation verschickt ein Client zwei Zahlenwerte, die vom Server addiert werden sollen:
+\begin{figure}[ht]
+	\centering
+	   \fbox{\includegraphics[width=0.7\textwidth]{bilder/nusoap.png}}
+	  
+		\caption[Kommunikationprotokoll SOAP]{Kommunikationprotokoll SOAP\protect\footnote}
+		\label{soa-3eck}
+\end{figure}
+\footnotetext{Quelle: \cite{nuSOAP}}
+
+Der Server entpackt die \gls{SOAP}-Nachricht und führt mit den zwei Zahlenwerte die Addition aus.
+Das Ergebnis der Rechnung wird im Anschluss wieder als Nachricht im \gls{SOAP}-Format an den Client zurückgesendet.
 
 Der Ablauf der Benutzung eines Web Services soll durch Abbildung \ref{soa-3eck} verdeutlicht werden.
 
