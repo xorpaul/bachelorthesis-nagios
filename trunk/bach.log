@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2009.1.26)  20 AUG 2009 17:35
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2009.1.26)  21 AUG 2009 08:36
 entering extended mode
  %&-line parsing enabled.
 **bach.tex
@@ -820,22 +820,24 @@ File: bilder/soa2.png Graphic file (type png)
 File: bilder/fzk2.png Graphic file (type png)
 
 <use bilder/fzk2.png> [26 <./bilder/soa2.png>]
-<bilder/nusoap.png, id=535, 406.13704pt x 254.47183pt>
-File: bilder/nusoap.png Graphic file (type png)
- <use bilder/nusoap.png>
-Overfull \hbox (8.66168pt too wide) in paragraph at lines 76--77
+Overfull \hbox (8.66168pt too wide) in paragraph at lines 58--59
 []\T1/aer/m/n/12 Daraus lei-tet Mel-zer fol-gen-de Spe-zi-fi-ka-tio-nen für ei-
 ne Web Services-Architektur
  []
 
-File: bilder/fzk2.png Graphic file (type png)
-<use bilder/fzk2.png> [27]
-Overfull \hbox (19.11502pt too wide) in paragraph at lines 82--84
+
+Overfull \hbox (19.11502pt too wide) in paragraph at lines 64--66
 \T1/aer/m/n/12 Zu den Me-ta-da-ten zäh-len all-ge-mei-ne An-for-de-run-gen, Web
  Services-Eigenschaften
  []
 
 File: bilder/fzk2.png Graphic file (type png)
+<use bilder/fzk2.png> [27]
+<bilder/nusoap.png, id=552, 406.13704pt x 254.47183pt>
+File: bilder/nusoap.png Graphic file (type png)
+ <use bilder/nusoap.png>
+File: bilder/fzk2.png Graphic file (type png)
+
 <use bilder/fzk2.png> [28 <./bilder/nusoap.png (PNG copy)>]
 <bilder/uddi-wsdl.png, id=574, 255.8358pt x 194.4063pt>
 File: bilder/uddi-wsdl.png Graphic file (type png)
@@ -1279,127 +1281,127 @@ File: bilder/fzk2.png Graphic file (type png)
 File: bilder/fzk2.png Graphic file (type png)
  <use bilder/fzk2.png> [81] (./bach.gls
 Underfull \hbox (badness 1776) in paragraph at lines 10--11
-[]|[]\T1/aer/m/n/12 13[], []16[],
+[]|[]\T1/aer/m/n/12 16[], []19[],
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 18--19
-[]|[]\T1/aer/m/n/12 1[], []11[],
+[]|[]\T1/aer/m/n/12 1[], []14[],
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 18--19
-[]\T1/aer/m/n/12 15[]--[]17[],
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 46--46
-[]|[]\T1/aer/m/n/12 8[], []11[],
+[]\T1/aer/m/n/12 18[]--[]20[],
  []
 
 
 Underfull \hbox (badness 1776) in paragraph at lines 46--46
-[]\T1/aer/m/n/12 36[], []52[],
+[]|[]\T1/aer/m/n/12 11[], []14[],
+ []
+
+
+Underfull \hbox (badness 1776) in paragraph at lines 46--46
+[]\T1/aer/m/n/12 39[], []55[],
  []
 
 
 Underfull \hbox (badness 1776) in paragraph at lines 53--53
-[]|[]\T1/aer/m/n/12 37[], []38[],
+[]|[]\T1/aer/m/n/12 40[], []41[],
  []
 
 
 Underfull \hbox (badness 1776) in paragraph at lines 58--59
-[]|[]\T1/aer/m/n/12 12[], []16[],
+[]|[]\T1/aer/m/n/12 15[], []19[],
  []
 
 
 Underfull \hbox (badness 1776) in paragraph at lines 64--65
-[]\T1/aer/m/n/12 53[], []56[],
+[]\T1/aer/m/n/12 56[], []59[],
  []
 
 
 Underfull \hbox (badness 1776) in paragraph at lines 64--65
-[]\T1/aer/m/n/12 57[], []59[],
+[]\T1/aer/m/n/12 60[], []62[],
  []
 
 
 Underfull \hbox (badness 1776) in paragraph at lines 68--68
-[]|[]\T1/aer/m/n/12 38[], []51[],
+[]|[]\T1/aer/m/n/12 41[], []54[],
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--81
-[]|[]\T1/aer/m/n/12 3[], []4[],
+Underfull \hbox (badness 10000) in paragraph at lines 82--82
+[]|[]\T1/aer/m/n/12 1[], []7[],
  []
 
 
-Underfull \hbox (badness 1776) in paragraph at lines 81--81
-[]\T1/aer/m/n/12 40[], []41[],
+Underfull \hbox (badness 1776) in paragraph at lines 82--82
+[]\T1/aer/m/n/12 43[], []44[],
  []
 
 
-Underfull \hbox (badness 1776) in paragraph at lines 81--81
-[]\T1/aer/m/n/12 43[], []45[],
+Underfull \hbox (badness 1776) in paragraph at lines 82--82
+[]\T1/aer/m/n/12 46[], []48[],
  []
 
 
-Underfull \hbox (badness 1776) in paragraph at lines 81--81
-[]\T1/aer/m/n/12 46[], []50[],
+Underfull \hbox (badness 1776) in paragraph at lines 82--82
+[]\T1/aer/m/n/12 49[], []53[],
  []
 
 
-Underfull \hbox (badness 1776) in paragraph at lines 81--81
-[]\T1/aer/m/n/12 66[], []68[],
+Underfull \hbox (badness 1776) in paragraph at lines 82--82
+[]\T1/aer/m/n/12 69[], []71[],
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--81
-[]\T1/aer/m/n/12 70[]--[]72[],
+Underfull \hbox (badness 10000) in paragraph at lines 82--82
+[]\T1/aer/m/n/12 73[]--[]75[],
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--88
-[]|[]\T1/aer/m/n/12 1[], []16[],
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
+[]|[]\T1/aer/m/n/12 5[], []19[],
  []
 
 
-Underfull \hbox (badness 1776) in paragraph at lines 98--99
-[]|[]\T1/aer/m/n/12 37[], []38[],
+Underfull \hbox (badness 1776) in paragraph at lines 99--100
+[]|[]\T1/aer/m/n/12 40[], []41[],
  []
 
 
-Underfull \hbox (badness 1776) in paragraph at lines 98--99
-[]\T1/aer/m/n/12 51[], []53[],
+Underfull \hbox (badness 1776) in paragraph at lines 99--100
+[]\T1/aer/m/n/12 54[], []56[],
  []
 
 
-Underfull \hbox (badness 7796) in paragraph at lines 102--103
-[]|[]\T1/aer/m/n/12 6[], []21[]--
+Underfull \hbox (badness 7796) in paragraph at lines 103--104
+[]|[]\T1/aer/m/n/12 9[], []24[]--
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--106
-[]|[]\T1/aer/m/n/12 24[]--[]26[],
+Underfull \hbox (badness 10000) in paragraph at lines 106--107
+[]|[]\T1/aer/m/n/12 27[]--[]29[],
  []
 
 
-Underfull \hbox (badness 1776) in paragraph at lines 108--109
-[]|[]\T1/aer/m/n/12 35[], []36[],
+Underfull \hbox (badness 1776) in paragraph at lines 109--110
+[]|[]\T1/aer/m/n/12 38[], []39[],
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 120--120
-[]|[]\T1/aer/m/n/12 24[]--[]26[],
+Underfull \hbox (badness 10000) in paragraph at lines 121--121
+[]|[]\T1/aer/m/n/12 27[]--[]29[],
  []
 
 
-Underfull \hbox (badness 1776) in paragraph at lines 126--127
-[]|[]\T1/aer/m/n/12 24[], []25[],
+Underfull \hbox (badness 1776) in paragraph at lines 127--128
+[]|[]\T1/aer/m/n/12 27[], []28[],
  []
 
 
-Underfull \hbox (badness 1776) in paragraph at lines 126--127
-[]\T1/aer/m/n/12 66[], []68[],
+Underfull \hbox (badness 1776) in paragraph at lines 127--128
+[]\T1/aer/m/n/12 69[], []71[],
  []
 
 File: bilder/fzk2.png Graphic file (type png)
@@ -1491,7 +1493,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  13663 strings out of 94074
  196111 string characters out of 1165153
- 620992 words of memory out of 1500000
+ 620978 words of memory out of 1500000
  15984 multiletter control sequences out of 10000+50000
  41062 words of font info for 91 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
@@ -1623,7 +1625,7 @@ esky/cm/cmsl12.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmsy10.pfb>
 exlive/fonts/type1/bluesky/cm/cmtt10.pfb></usr/share/texmf-texlive/fonts/type1/
 bluesky/cm/cmtt12.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmtt8.pf
 b></usr/share/texmf-texlive/fonts/type1/bluesky/ams/msam10.pfb>
-Output written on bach.pdf (93 pages, 5726099 bytes).
+Output written on bach.pdf (93 pages, 5724713 bytes).
 PDF statistics:
  1788 PDF objects out of 2073 (max. 8388607)
  532 named destinations out of 1000 (max. 131072)

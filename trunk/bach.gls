@@ -112,7 +112,7 @@
 		\setentrycounter{page}\glsnumberformat{65}}}\glsgroupskip
 \glsgroupheading{U}\relax \glsresetentrylist %
 \glossaryentryfield{UDDI}{\glsnamefont{UDDI}}{Universal Description, Discovery and Integration protocol}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter{page}\glsnumberformat{28\delimN 29}}}\glsgroupskip
+		\setentrycounter{page}\glsnumberformat{27\delimR 29}}}\glsgroupskip
 \glsgroupheading{W}\relax \glsresetentrylist %
 \glossaryentryfield{W3C}{\glsnamefont{W3C}}{World Wide Web Consortium}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter{page}\glsnumberformat{26}}}%
